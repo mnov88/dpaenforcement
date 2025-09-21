@@ -1,0 +1,145 @@
+{
+  "timestamp": "2025-09-20T16:58:19.213643",
+  "total_rows": 78,
+  "total_columns": 51,
+  "is_valid": false,
+  "error_count": 326,
+  "errors_by_column": {
+    "A1_Country": 12,
+    "A36_NoInfringement": 10,
+    "A38_NegligenceEstablished": 10,
+    "A37_LegalBasisInvalid": 10,
+    "A39_ManagementAuthorization": 10,
+    "A40_DefendantCooperation": 10,
+    "A30_DataMinimization": 10,
+    "A29_SecurityMeasures": 10,
+    "A31_SubjectRightsRequests": 10,
+    "A33_TransparencyObligations": 10,
+    "A44_PriorMeasuresConsidered": 11,
+    "A49_FineCalculationFactors": 11,
+    "A48_EDPBGuidelines": 10,
+    "A19_VulnerableSubjects": 1,
+    "A45_SanctionType": 1,
+    "A35_GDPRViolated": 1,
+    "A34_GDPREvaluated": 1,
+    "A32_RightsInvolved": 1,
+    "A25_SubjectsAffected": 1,
+    "A22_TransferMechanism": 1,
+    "A20_LegalBasis": 1,
+    "A17_SensitiveDataTypes": 1,
+    "A10_DefendantCount": 1,
+    "A3_DecisionDate": 1,
+    "A42_PriorNonCompliance": 10,
+    "A41_MitigatingMeasures": 10,
+    "A43_FinancialBenefit": 10,
+    "A6_DPARole": 10,
+    "A8_AppealSuccess": 10,
+    "A7_IsAppeal": 10,
+    "A9_PriorInfringements": 10,
+    "A12_DefendantRole": 10,
+    "A28_DPIARequired": 10,
+    "A4_CaseTrigger": 10,
+    "A5_CrossBorder": 10,
+    "A15_DefendantCategory": 10,
+    "A24_PowerImbalance": 10,
+    "A23_HighRiskProcessing": 10,
+    "A27_DamageEstablished": 10,
+    "A21_DataTransfers": 10,
+    "A16_SensitiveData": 10,
+    "A18_Cookies": 10,
+    "A46_FineAmount": 1
+  },
+  "errors_by_check": {
+    "isin(['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK', 'EU', 'UNKNOWN'])": 12,
+    "isin(['Y', 'N'])": 20,
+    "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])": 70,
+    "isin(['Cooperative', 'Partially_Cooperative', 'Uncooperative', 'Not_Discussed', 'UNKNOWN'])": 10,
+    "isin(['Compliant', 'Violated', 'Not_Evaluated', 'UNKNOWN'])": 20,
+    "isin(['Adequate', 'Inadequate', 'Not_Evaluated', 'UNKNOWN'])": 10,
+    "isin(['Y', 'N', 'UNKNOWN'])": 60,
+    "isin(['Mitigating_Factor', 'Aggravating_Factor', 'Neutral', 'Not_Considered', 'N_A'])": 11,
+    "isin(['Y', 'Partially', 'N', 'N_A'])": 11,
+    "Invalid vulnerable subjects": 1,
+    "Invalid sanction types": 1,
+    "Invalid GDPR article format": 2,
+    "Invalid rights types": 1,
+    "Must be integer, range (1000-5000), or UNKNOWN": 1,
+    "Invalid transfer mechanisms": 1,
+    "Invalid legal basis values": 1,
+    "Invalid sensitive data types": 1,
+    "Must be positive integer or UNKNOWN": 1,
+    "Invalid date format. Expected DD-MM-YYYY or UNKNOWN": 1,
+    "isin(['Before_Investigation', 'During_Investigation', 'None', 'Not_Discussed', 'UNKNOWN'])": 10,
+    "isin(['Lead_Authority', 'Concerned_Authority', 'N_A'])": 10,
+    "isin(['Successful', 'Unsuccessful', 'N_A'])": 10,
+    "isin(['PRIOR_INFRINGER_PRESENT', 'DISCUSSED_NO_PRIOR_FOUND', 'NOT_DISCUSSED', 'UNKNOWN'])": 10,
+    "isin(['Controller', 'Processor', 'Joint_Controller', 'UNKNOWN'])": 10,
+    "isin(['Required_And_Conducted', 'Required_Not_Conducted', 'Not_Required', 'Not_Assessed', 'UNKNOWN'])": 10,
+    "isin(['COMPLAINT', 'BREACH_NOTIFICATION', 'EX_OFFICIO_INVESTIGATION', 'OTHER', 'UNKNOWN'])": 10,
+    "isin(['PUBLIC_AUTHORITY', 'BUSINESS', 'NON_PROFIT', 'INDIVIDUAL', 'OTHER', 'UNKNOWN'])": 10,
+    "isin(['Material_Damage', 'Non_Material_Damage', 'Both', 'None', 'Not_Assessed', 'UNKNOWN'])": 10,
+    "Must be non-negative number, N_A, or UNKNOWN": 1
+  },
+  "sample_errors": [
+    {
+      "column": "A1_Country",
+      "check": "isin(['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GR', 'HU', 'IE', 'IS', 'IT', 'LI', 'LT', 'LU', 'LV', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK', 'EU', 'UNKNOWN'])",
+      "row_index": 1,
+      "invalid_value": "[NO]"
+    },
+    {
+      "column": "A36_NoInfringement",
+      "check": "isin(['Y', 'N'])",
+      "row_index": 27,
+      "invalid_value": "[N]"
+    },
+    {
+      "column": "A38_NegligenceEstablished",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 12,
+      "invalid_value": "[Y]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 67,
+      "invalid_value": "[Y]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 66,
+      "invalid_value": "[Not_Evaluated]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 65,
+      "invalid_value": "[N]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 62,
+      "invalid_value": "[Not_Evaluated]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 51,
+      "invalid_value": "[Not_Evaluated]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 38,
+      "invalid_value": "[Y]"
+    },
+    {
+      "column": "A37_LegalBasisInvalid",
+      "check": "isin(['Y', 'N', 'Not_Assessed', 'Not_Evaluated', 'Not_Discussed', 'UNKNOWN'])",
+      "row_index": 31,
+      "invalid_value": "[Not_Evaluated]"
+    }
+  ]
+}

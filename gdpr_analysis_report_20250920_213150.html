@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR Enforcement Analysis Report</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 8px; margin-top: 30px; }
+        h3 { color: #7f8c8d; margin-top: 25px; }
+        .executive-summary { background-color: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .insight-card { background-color: #f8f9fa; border-left: 4px solid #3498db; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .recommendation-card { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .metric { display: inline-block; background-color: #3498db; color: white; padding: 10px 15px; border-radius: 20px; margin: 5px; font-weight: bold; }
+        .high-significance { border-left-color: #e74c3c; }
+        .medium-significance { border-left-color: #f39c12; }
+        .low-significance { border-left-color: #95a5a6; }
+        .finding { font-weight: bold; color: #2c3e50; }
+        .detail { color: #7f8c8d; font-style: italic; margin-top: 5px; }
+        .implication { color: #27ae60; margin-top: 5px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .priority-high { background-color: #ffebee; }
+        .priority-medium { background-color: #fff3e0; }
+        .priority-low { background-color: #e8f5e8; }
+        .toc { background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .toc ul { list-style-type: none; padding-left: 0; }
+        .toc li { margin: 8px 0; }
+        .toc a { text-decoration: none; color: #3498db; }
+        .toc a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 GDPR Enforcement Analysis Report</h1>
+
+        <div class="executive-summary">
+            <h2>📋 Executive Summary</h2>
+            <div class="metric">78 Total Cases</div>
+            <div class="metric">Norwegian GDPR Enforcement Cases</div>
+            <div class="metric">2017-2023</div>
+
+            <h3>Key Findings</h3>
+            <ul>
+                
+                <li><strong>Enforcement Concentration:</strong> Norway dominates with 98.7% of cases</li>
+                
+                <li><strong>Fine Patterns:</strong> Mean fine €310,213, median €32,200, 7 extreme outliers detected</li>
+                
+                <li><strong>Regulatory Focus:</strong> Data subject rights</li>
+                
+                <li><strong>Temporal Trends:</strong> Stable enforcement activity (latest year: 1 cases)</li>
+                
+            </ul>
+
+            <h3>Data Quality</h3>
+            <p><strong>Assessment:</strong> Good (71.3% variables with <10% missing data)</p>
+        </div>
+
+        <div class="toc">
+            <h3>📑 Table of Contents</h3>
+            <ul>
+                <li><a href="#statistical-insights">Statistical Insights</a></li>
+                <li><a href="#business-insights">Business Insights</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#detailed-findings">Detailed Findings</a></li>
+            </ul>
+        </div>
+
+        <section id="statistical-insights">
+            <h2>📊 Statistical Insights</h2>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount is heavily right-skewed</div>
+                <div class="detail">Skewness = 8.008</div>
+                <div class="implication">💡 Consider log transformation for modeling</div>
+                <small><strong>Variable:</strong> A46_FineAmount | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount shows extremely high variability</div>
+                <div class="detail">Coefficient of variation = 5.03</div>
+                <div class="implication">💡 High uncertainty in outcomes; investigate underlying factors</div>
+                <small><strong>Variable:</strong> A46_FineAmount | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount has 10 extreme outliers (13.3% of cases)</div>
+                <div class="detail">Outlier values: [100000000.0, 10000000.0, 1600000.0, 1200000.0, 1000000.0, 2500000.0, 5000000.0, 2000000.0, 4000000.0, 20000000.0]</div>
+                <div class="implication">💡 Investigate these extreme cases for data quality or special circumstances</div>
+                <small><strong>Variable:</strong> A46_FineAmount | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">28 cases (37.3%) have zero fines</div>
+                <div class="detail">These likely represent compliance orders without monetary penalties</div>
+                <div class="implication">💡 Consider separate analysis for monetary vs non-monetary sanctions</div>
+                <small><strong>Variable:</strong> A46_FineAmount | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">Few very large fines dominate the distribution</div>
+                <div class="detail">Mean (€2,337,380) >> Median (€150,000)</div>
+                <div class="implication">💡 A small number of high-profile cases drive average fine amounts</div>
+                <small><strong>Variable:</strong> A46_FineAmount | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount_EUR is heavily right-skewed</div>
+                <div class="detail">Skewness = 6.684</div>
+                <div class="implication">💡 Consider log transformation for modeling</div>
+                <small><strong>Variable:</strong> A46_FineAmount_EUR | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount_EUR shows extremely high variability</div>
+                <div class="detail">Coefficient of variation = 4.16</div>
+                <div class="implication">💡 High uncertainty in outcomes; investigate underlying factors</div>
+                <small><strong>Variable:</strong> A46_FineAmount_EUR | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A46_FineAmount_EUR has 7 extreme outliers (13.5% of cases)</div>
+                <div class="detail">Outlier values: [9200000.0, 920000.0, 230000.0, 460000.0, 184000.0, 368000.0, 1840000.0]</div>
+                <div class="implication">💡 Investigate these extreme cases for data quality or special circumstances</div>
+                <small><strong>Variable:</strong> A46_FineAmount_EUR | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">5 cases (9.6%) have zero fines</div>
+                <div class="detail">These likely represent compliance orders without monetary penalties</div>
+                <div class="implication">💡 Consider separate analysis for monetary vs non-monetary sanctions</div>
+                <small><strong>Variable:</strong> A46_FineAmount_EUR | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">Few very large fines dominate the distribution</div>
+                <div class="detail">Mean (€310,213) >> Median (€32,200)</div>
+                <div class="implication">💡 A small number of high-profile cases drive average fine amounts</div>
+                <small><strong>Variable:</strong> A46_FineAmount_EUR | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A1_Country is heavily dominated by 'NO'</div>
+                <div class="detail">98.7% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A1_Country | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A1_Country has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['EE']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A1_Country | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A2_Authority has 12 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['The Data Inspectorate', 'The Privacy Board', 'Norwegian Privacy Board', 'The Norwegian Data Protection Authority (Datatilsynet)', 'Norwegian Data Inspectorate', 'Data Inspectorate', 'The Norwegian Data Inspectorate', 'Privacy Board (Personvernnemnda)', 'Estonian Data Protection Inspectorate', 'Norwegian Data Protection Authority (Datatilsynet)', 'Personvernnemnda', 'The Norwegian Privacy Board']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A2_Authority | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A9_PriorInfringements has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.804</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A9_PriorInfringements | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A10_DefendantCount is heavily dominated by '1.0'</div>
+                <div class="detail">96.1% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A10_DefendantCount | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A10_DefendantCount has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.191</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A10_DefendantCount | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A10_DefendantCount has 2 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['2.0', '3.0']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A10_DefendantCount | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A12_DefendantRole is heavily dominated by 'Controller'</div>
+                <div class="detail">96.9% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A12_DefendantRole | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A12_DefendantRole has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.159</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A12_DefendantRole | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A12_DefendantRole has 2 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Joint_Controller', 'Processor']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A12_DefendantRole | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A13_InstitutionalIdentity has 3 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['S.1311 - Central government', 'S.15 - Non-profit institutions serving households', 'S.15 - Non-profit institutions serving households (NPISH)']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A13_InstitutionalIdentity | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A14_EconomicSector has 24 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Code: 8610, Description: Hospital activities, Level: 4', 'Code: 6530, Description: Pension funding, Level: 4', 'Code: 6419, Description: Other monetary intermediation, Level: 4', 'Code: 7310, Description: Advertising, Level: 4', 'Code: 9491, Description: Activities of religious organizations, Level: 4', 'Code: 9311, Description: Operation of sports facilities, Level: 4', 'Code: O, Description: Public administration and defense; compulsory social security, Level: 1', 'Code: 8530, Description: Higher education, Level: 4', 'Code: 9492, Description: Activities of political organizations, Level: 4', 'Code: 4729, Description: Other retail sale of food in specialized stores, Level: 4', 'Code: 7010, Description: Activities of head offices, Level: 4', 'Code: 8030, Description: Investigation activities, Level: 4', 'Code: 61, Description: Telecommunications, Level: 2', 'Code: 8423, Description: Public order and safety activities, Level: 4', 'Code: 53, Description: Postal and courier activities, Level: 2', 'Code: C, Description: Manufacturing, Level: 1', 'Code: 6010, Description: Radio broadcasting, Level: 4', 'Code: 6120, Description: Wireless telecommunications activities, Level: 4', 'Code: 6312, Description: Web portals, Level: 4', 'Code: 47, Description: Retail trade, except of motor vehicles and motorcycles, Level: 2', 'Code: 4520, Description: Maintenance and repair of motor vehicles, Level: 4', 'Code: 8530, Description: Tertiary education, Level: 4', 'Code: 9602, Description: Hairdressing and other beauty treatment, Level: 4', 'Code: 8430, Description: Social security administration, Level: 4']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A14_EconomicSector | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A15_DefendantCategory has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.853</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A15_DefendantCategory | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A17_SensitiveDataTypes has 6 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Religious', 'Criminal', 'Health, Racial_Ethnic, Political, Religious, Trade_Union, Sexual', 'Health, Criminal', 'Health, Religious, Racial_Ethnic, Criminal', 'Racial_Ethnic']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A17_SensitiveDataTypes | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A19_VulnerableSubjects has 9 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Students', 'Patients', 'Children, Employees', 'Children,Employees', 'Children|Patients', 'Children, Students', 'Children,Students', 'Elderly, Other_Vulnerable', 'Employees, Students']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A19_VulnerableSubjects | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A20_LegalBasis has 7 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Consent', 'Contract, Legitimate_Interest', 'Consent, Contract, Legitimate_Interest', 'Contract, Legal_Obligation', 'Legitimate_Interest, Not_Specified', 'Contract', 'Legal_Obligation']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A20_LegalBasis | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A23_HighRiskProcessing is heavily dominated by 'Not_Assessed'</div>
+                <div class="detail">93.4% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A23_HighRiskProcessing | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A23_HighRiskProcessing has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.287</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A23_HighRiskProcessing | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A23_HighRiskProcessing has 2 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Y', 'N']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A23_HighRiskProcessing | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A24_PowerImbalance is heavily dominated by 'Not_Discussed'</div>
+                <div class="detail">96.1% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A24_PowerImbalance | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A24_PowerImbalance has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Y']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A24_PowerImbalance | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A25_SubjectsAffected has 20 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['3200000', '1053', '700000', '15', '27', '20', '10', '535900-1800000', '13', '500', '13800', '1300000', '2000', '2', '44000', '2-3', '120', '63000', '35601', '14000']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A25_SubjectsAffected | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A27_DamageEstablished is heavily dominated by 'Not_Assessed'</div>
+                <div class="detail">100.0% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A27_DamageEstablished | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A28_DPIARequired is heavily dominated by 'Not_Assessed'</div>
+                <div class="detail">94.7% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A28_DPIARequired | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A28_DPIARequired has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.236</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A28_DPIARequired | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A28_DPIARequired has 2 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Required_Not_Conducted', 'Required_And_Conducted']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A28_DPIARequired | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A29_SecurityMeasures has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.795</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A29_SecurityMeasures | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A29_SecurityMeasures has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Adequate']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A29_SecurityMeasures | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A30_DataMinimization is heavily dominated by 'Not_Evaluated'</div>
+                <div class="detail">92.1% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A30_DataMinimization | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A30_DataMinimization has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.326</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A30_DataMinimization | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A30_DataMinimization has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Compliant']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A30_DataMinimization | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A33_TransparencyObligations has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.582</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A33_TransparencyObligations | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A33_TransparencyObligations has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Compliant']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A33_TransparencyObligations | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A37_LegalBasisInvalid has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.977</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A37_LegalBasisInvalid | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A38_NegligenceEstablished has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.942</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A38_NegligenceEstablished | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A39_ManagementAuthorization is heavily dominated by 'Not_Assessed'</div>
+                <div class="detail">87.7% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A39_ManagementAuthorization | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A39_ManagementAuthorization has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.458</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A39_ManagementAuthorization | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A40_DefendantCooperation has low diversity despite 4 categories</div>
+                <div class="detail">Entropy = 0.889</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A40_DefendantCooperation | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A40_DefendantCooperation has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Uncooperative']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A40_DefendantCooperation | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A41_MitigatingMeasures has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.976</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A41_MitigatingMeasures | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A42_PriorNonCompliance has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.807</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A42_PriorNonCompliance | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A42_PriorNonCompliance has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Y']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A42_PriorNonCompliance | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A43_FinancialBenefit has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.621</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A43_FinancialBenefit | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A43_FinancialBenefit has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Y']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A43_FinancialBenefit | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A45_SanctionType has 8 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Fine|Compliance_Order', 'Fine,Compliance_Order', 'Processing_Ban_Permanent', 'Compliance_Order, Processing_Ban_Temporary', 'Reprimand, Compliance_Order', 'Fine, Reprimand, Compliance_Order', 'Processing_Ban_Temporary', 'Fine, Compliance_Order, Processing_Ban_Temporary']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A45_SanctionType | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">A47_FineCurrency is heavily dominated by 'NOK'</div>
+                <div class="detail">90.4% of cases</div>
+                <div class="implication">💡 Limited variability may reduce analytical power</div>
+                <small><strong>Variable:</strong> A47_FineCurrency | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">A49_FineCalculationFactors has low diversity despite 3 categories</div>
+                <div class="detail">Entropy = 0.602</div>
+                <div class="implication">💡 Consider grouping rare categories for analysis</div>
+                <small><strong>Variable:</strong> A49_FineCalculationFactors | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card low-significance">
+                <div class="finding">A49_FineCalculationFactors has 1 rare categories (<5% each)</div>
+                <div class="detail">Rare categories: ['Partially']</div>
+                <div class="implication">💡 Group rare categories or use caution in statistical analysis</div>
+                <small><strong>Variable:</strong> A49_FineCalculationFactors | <strong>Significance:</strong> low</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">FalseFalseFalseTrueFalseFalseFalseFalseTrueFalseTrueTrueTrueTrueTrueTrueFalseTrueTrueFalseTrueTrueTrueTrueTrueTrueFalseFalseFalseTrueTrueTrueTrueTrueTrueTrueTrueTrueFalseFalseTrueTrueTrueFalse out of 44 binary variables are rare events</div>
+                <div class="detail">Rare events have <10% or >90% positive rates</div>
+                <div class="implication">💡 Many binary variables may be challenging for predictive modeling</div>
+                <small><strong>Variable:</strong> all_binary | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">Most balanced binary variables for analysis</div>
+                <div class="detail">Top balanced: Sanction_Fine, LegalBasis_Not_Specified, A16_SensitiveData</div>
+                <div class="implication">💡 Focus on these variables for binary classification tasks</div>
+                <small><strong>Variable:</strong> binary_selection | <strong>Significance:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card high-significance">
+                <div class="finding">Most common legal basis: Not_Specified</div>
+                <div class="detail">57.7% of cases</div>
+                <div class="implication">💡 Understanding dominant legal basis helps predict enforcement patterns</div>
+                <small><strong>Variable:</strong> legal_basis | <strong>Significance:</strong> high</small>
+            </div>
+            
+            <div class="insight-card medium-significance">
+                <div class="finding">Peak enforcement activity in 3</div>
+                <div class="detail">9 cases vs 5.5 average</div>
+                <div class="implication">💡 Consider seasonal factors in enforcement planning</div>
+                <small><strong>Variable:</strong> A3_DecisionDate | <strong>Significance:</strong> medium</small>
+            </div>
+            
+        </section>
+
+        <section id="business-insights">
+            <h2>💼 Business Insights</h2>
+            
+            <div class="insight-card">
+                <div class="finding">Financial penalties used in 41.3% of enforcement cases</div>
+                <div class="detail">GDPR Article 83 allows fines up to 4% of annual turnover</div>
+                <div class="implication">💡 Monetary sanctions are a significant enforcement tool</div>
+                <div style="margin-top: 10px;"><strong>Recommendation:</strong> Organizations should budget for potential GDPR fines</div>
+                <small><strong>Category:</strong> regulatory_impact | <strong>Impact:</strong> high</small>
+            </div>
+            
+            <div class="insight-card">
+                <div class="finding">Cross-border cases represent 10.1% of enforcement actions</div>
+                <div class="detail">Cross-border cases involve multiple DPAs and complex coordination</div>
+                <div class="implication">💡 International data transfers face additional scrutiny</div>
+                <div style="margin-top: 10px;"><strong>Recommendation:</strong> Multinational organizations need robust data governance frameworks</div>
+                <small><strong>Category:</strong> regulatory_complexity | <strong>Impact:</strong> medium</small>
+            </div>
+            
+            <div class="insight-card">
+                <div class="finding">Children's data involved in 19.2% of cases</div>
+                <div class="detail">GDPR Article 8 provides enhanced protection for children's data</div>
+                <div class="implication">💡 Special attention required for services targeting minors</div>
+                <div style="margin-top: 10px;"><strong>Recommendation:</strong> Implement age verification and parental consent mechanisms</div>
+                <small><strong>Category:</strong> compliance_priority | <strong>Impact:</strong> high</small>
+            </div>
+            
+            <div class="insight-card">
+                <div class="finding">Data subject rights violations appear in 7.7% of cases</div>
+                <div class="detail">GDPR Chapter III establishes comprehensive individual rights</div>
+                <div class="implication">💡 Organizations must have robust processes for handling subject requests</div>
+                <div style="margin-top: 10px;"><strong>Recommendation:</strong> Implement automated systems for subject access requests</div>
+                <small><strong>Category:</strong> operational_compliance | <strong>Impact:</strong> high</small>
+            </div>
+            
+        </section>
+
+        <section id="recommendations">
+            <h2>💡 Actionable Recommendations</h2>
+            
+            <div class="recommendation-card priority-high">
+                <div class="finding">Improve data collection for high-missing variables</div>
+                <div class="detail"><strong>Details:</strong> Focus on: A6_DPARole, A8_AppealSuccess, A14_EconomicSector</div>
+                <div class="detail"><strong>Implementation:</strong> Review data collection processes and validation rules</div>
+                <div class="implication">📈 Expected Impact: Increased analytical power and insights accuracy</div>
+                <small><strong>Priority:</strong> HIGH | <strong>Type:</strong> data_quality</small>
+            </div>
+            
+            <div class="recommendation-card priority-medium">
+                <div class="finding">Apply data transformations for skewed continuous variables</div>
+                <div class="detail"><strong>Details:</strong> Variables needing transformation: A46_FineAmount, A46_FineAmount_EUR</div>
+                <div class="detail"><strong>Implementation:</strong> Use log transformation for right-skewed data</div>
+                <div class="implication">📈 Expected Impact: Improved model performance and assumption validity</div>
+                <small><strong>Priority:</strong> MEDIUM | <strong>Type:</strong> statistical_modeling</small>
+            </div>
+            
+            <div class="recommendation-card priority-medium">
+                <div class="finding">Consider grouping strategies for high-cardinality categorical variables</div>
+                <div class="detail"><strong>Details:</strong> High cardinality variables: A14_EconomicSector, A25_SubjectsAffected</div>
+                <div class="detail"><strong>Implementation:</strong> Group rare categories or use embedding techniques</div>
+                <div class="implication">📈 Expected Impact: Reduced model complexity and improved interpretability</div>
+                <small><strong>Priority:</strong> MEDIUM | <strong>Type:</strong> categorical_handling</small>
+            </div>
+            
+            <div class="recommendation-card priority-high">
+                <div class="finding">Develop predictive models for enforcement risk assessment</div>
+                <div class="detail"><strong>Details:</strong> Use balanced binary variables and transformed continuous variables</div>
+                <div class="detail"><strong>Implementation:</strong> Build classification models to predict fine likelihood and amount</div>
+                <div class="implication">📈 Expected Impact: Proactive compliance management and risk mitigation</div>
+                <small><strong>Priority:</strong> HIGH | <strong>Type:</strong> business_process</small>
+            </div>
+            
+            <div class="recommendation-card priority-high">
+                <div class="finding">Focus compliance efforts on high-impact areas</div>
+                <div class="detail"><strong>Details:</strong> Prioritize data subject rights, security measures, and transparency</div>
+                <div class="detail"><strong>Implementation:</strong> Allocate resources based on enforcement patterns</div>
+                <div class="implication">📈 Expected Impact: Reduced regulatory risk and improved compliance efficiency</div>
+                <small><strong>Priority:</strong> HIGH | <strong>Type:</strong> regulatory_strategy</small>
+            </div>
+            
+        </section>
+
+        <section id="detailed-findings">
+            <h2>📈 Detailed Analysis Results</h2>
+
+            <h3>Variable Classification Summary</h3>
+            <table>
+                <tr><th>Variable Type</th><th>Count</th><th>Description</th></tr>
+                <tr><td>Categorical</td><td>35</td><td>Discrete categories (country, authority, etc.)</td></tr>
+                <tr><td>Continuous</td><td>2</td><td>Numerical values (fine amounts, etc.)</td></tr>
+                <tr><td>Binary</td><td>44</td><td>Yes/No indicators</td></tr>
+                <tr><td>Temporal</td><td>1</td><td>Date/time variables</td></tr>
+            </table>
+
+            <h3>Critical Insights Summary</h3>
+            <ul>
+                
+                <li>A46_FineAmount is heavily right-skewed</li>
+                
+                <li>A46_FineAmount shows extremely high variability</li>
+                
+                <li>A46_FineAmount has 10 extreme outliers (13.3% of cases)</li>
+                
+                <li>Few very large fines dominate the distribution</li>
+                
+                <li>A46_FineAmount_EUR is heavily right-skewed</li>
+                
+            </ul>
+
+            <h3>Next Steps</h3>
+            <ol>
+                
+                <li>Implement predictive modeling for enforcement risk assessment</li>
+                
+                <li>Develop compliance monitoring dashboard</li>
+                
+                <li>Conduct deeper bivariate analysis of key relationships</li>
+                
+                <li>Expand dataset to include other EU countries for comparison</li>
+                
+            </ol>
+        </section>
+
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; color: #7f8c8d; text-align: center;">
+            <p>Generated by Enhanced GDPR Data Analysis Pipeline | 2025-09-20 21:31:50</p>
+            <p>🔍 Univariate Analysis Report | 📊 Interactive Charts Available Separately</p>
+        </footer>
+    </div>
+</body>
+</html>

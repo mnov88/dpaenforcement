@@ -1,0 +1,318 @@
+2025-09-20 17:11:54,130 - INFO - Initialized UnivariateAnalyzer with 78 rows, 88 columns
+2025-09-20 17:11:54,133 - INFO - Starting intelligent variable classification...
+2025-09-20 17:11:54,154 - INFO - Variable classification complete:
+2025-09-20 17:11:54,154 - INFO -   Categorical: 35 variables
+2025-09-20 17:11:54,154 - INFO -   Continuous: 2 variables
+2025-09-20 17:11:54,154 - INFO -   Binary: 44 variables
+2025-09-20 17:11:54,154 - INFO -   Date: 1 variables
+2025-09-20 17:11:54,154 - INFO -   Text: 5 variables
+2025-09-20 17:11:54,154 - INFO -   ID: 1 variables
+2025-09-20 17:11:54,154 - INFO - Creating detailed variable profiles...
+2025-09-20 17:11:54,254 - INFO - Created profiles for 87 variables
+2025-09-20 17:11:54,255 - INFO - Starting complete univariate analysis pipeline...
+2025-09-20 17:11:54,255 - INFO - Starting categorical variable analysis...
+2025-09-20 17:11:54,255 - INFO - Analyzing categorical variable: A1_Country
+2025-09-20 17:11:54,256 - INFO - Analyzing categorical variable: A2_Authority
+2025-09-20 17:11:54,257 - INFO - Analyzing categorical variable: A4_CaseTrigger
+2025-09-20 17:11:54,257 - INFO - Analyzing categorical variable: A6_DPARole
+2025-09-20 17:11:54,258 - INFO - Analyzing categorical variable: A8_AppealSuccess
+2025-09-20 17:11:54,258 - INFO - Analyzing categorical variable: A9_PriorInfringements
+2025-09-20 17:11:54,261 - INFO - Analyzing categorical variable: A10_DefendantCount
+2025-09-20 17:11:54,263 - INFO - Analyzing categorical variable: A12_DefendantRole
+2025-09-20 17:11:54,264 - INFO - Analyzing categorical variable: A13_InstitutionalIdentity
+2025-09-20 17:11:54,264 - INFO - Analyzing categorical variable: A14_EconomicSector
+2025-09-20 17:11:54,266 - INFO - Analyzing categorical variable: A15_DefendantCategory
+2025-09-20 17:11:54,273 - INFO - Analyzing categorical variable: A17_SensitiveDataTypes
+2025-09-20 17:11:54,304 - INFO - Analyzing categorical variable: A19_VulnerableSubjects
+2025-09-20 17:11:54,306 - INFO - Analyzing categorical variable: A20_LegalBasis
+2025-09-20 17:11:54,306 - INFO - Analyzing categorical variable: A22_TransferMechanism
+2025-09-20 17:11:54,307 - INFO - Analyzing categorical variable: A23_HighRiskProcessing
+2025-09-20 17:11:54,307 - INFO - Analyzing categorical variable: A24_PowerImbalance
+2025-09-20 17:11:54,308 - INFO - Analyzing categorical variable: A25_SubjectsAffected
+2025-09-20 17:11:54,308 - INFO - Analyzing categorical variable: A27_DamageEstablished
+2025-09-20 17:11:54,309 - INFO - Analyzing categorical variable: A28_DPIARequired
+2025-09-20 17:11:54,309 - INFO - Analyzing categorical variable: A29_SecurityMeasures
+2025-09-20 17:11:54,311 - INFO - Analyzing categorical variable: A30_DataMinimization
+2025-09-20 17:11:54,312 - INFO - Analyzing categorical variable: A32_RightsInvolved
+2025-09-20 17:11:54,312 - INFO - Analyzing categorical variable: A33_TransparencyObligations
+2025-09-20 17:11:54,313 - INFO - Analyzing categorical variable: A37_LegalBasisInvalid
+2025-09-20 17:11:54,313 - INFO - Analyzing categorical variable: A38_NegligenceEstablished
+2025-09-20 17:11:54,318 - INFO - Analyzing categorical variable: A39_ManagementAuthorization
+2025-09-20 17:11:54,322 - INFO - Analyzing categorical variable: A40_DefendantCooperation
+2025-09-20 17:11:54,325 - INFO - Analyzing categorical variable: A41_MitigatingMeasures
+2025-09-20 17:11:54,330 - INFO - Analyzing categorical variable: A42_PriorNonCompliance
+2025-09-20 17:11:54,331 - INFO - Analyzing categorical variable: A43_FinancialBenefit
+2025-09-20 17:11:54,331 - INFO - Analyzing categorical variable: A44_PriorMeasuresConsidered
+2025-09-20 17:11:54,332 - INFO - Analyzing categorical variable: A45_SanctionType
+2025-09-20 17:11:54,332 - INFO - Analyzing categorical variable: A47_FineCurrency
+2025-09-20 17:11:54,333 - INFO - Analyzing categorical variable: A49_FineCalculationFactors
+2025-09-20 17:11:54,333 - INFO - Completed categorical analysis for 35 variables
+2025-09-20 17:11:54,333 - INFO - Starting continuous variable analysis...
+2025-09-20 17:11:54,333 - INFO - Analyzing continuous variable: A46_FineAmount
+2025-09-20 17:11:54,437 - INFO - Analyzing continuous variable: A46_FineAmount_EUR
+2025-09-20 17:11:54,501 - INFO - Completed continuous analysis for 2 variables
+2025-09-20 17:11:54,501 - INFO - Starting binary variable analysis...
+2025-09-20 17:11:54,501 - INFO - Analyzing binary variable: A5_CrossBorder
+2025-09-20 17:11:54,502 - INFO - Analyzing binary variable: A7_IsAppeal
+2025-09-20 17:11:54,502 - INFO - Analyzing binary variable: A16_SensitiveData
+2025-09-20 17:11:54,503 - INFO - Analyzing binary variable: A18_Cookies
+2025-09-20 17:11:54,503 - INFO - Analyzing binary variable: A21_DataTransfers
+2025-09-20 17:11:54,504 - INFO - Analyzing binary variable: A31_SubjectRightsRequests
+2025-09-20 17:11:54,504 - INFO - Analyzing binary variable: A36_NoInfringement
+2025-09-20 17:11:54,504 - INFO - Analyzing binary variable: A48_EDPBGuidelines
+2025-09-20 17:11:54,504 - INFO - Analyzing binary variable: SensitiveType_Criminal
+2025-09-20 17:11:54,504 - INFO - Analyzing binary variable: SensitiveType_Health
+2025-09-20 17:11:54,505 - INFO - Analyzing binary variable: SensitiveType_Other
+2025-09-20 17:11:54,505 - INFO - Analyzing binary variable: SensitiveType_Political
+2025-09-20 17:11:54,505 - INFO - Analyzing binary variable: SensitiveType_Racial_Ethnic
+2025-09-20 17:11:54,505 - INFO - Analyzing binary variable: SensitiveType_Religious
+2025-09-20 17:11:54,506 - INFO - Analyzing binary variable: SensitiveType_Sexual
+2025-09-20 17:11:54,506 - INFO - Analyzing binary variable: SensitiveType_Trade_Union
+2025-09-20 17:11:54,506 - INFO - Analyzing binary variable: VulnerableSubject_Children
+2025-09-20 17:11:54,506 - INFO - Analyzing binary variable: VulnerableSubject_Children|Patients
+2025-09-20 17:11:54,506 - INFO - Analyzing binary variable: VulnerableSubject_Elderly
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: VulnerableSubject_Employees
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: VulnerableSubject_Other_Vulnerable
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: VulnerableSubject_Patients
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: VulnerableSubject_Students
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: LegalBasis_Consent
+2025-09-20 17:11:54,507 - INFO - Analyzing binary variable: LegalBasis_Contract
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: LegalBasis_Legal_Obligation
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: LegalBasis_Legitimate_Interest
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: LegalBasis_Not_Specified
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: LegalBasis_Public_Task
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: TransferMech_None_Specified
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: TransferMech_Standard_Contractual_Clauses
+2025-09-20 17:11:54,508 - INFO - Analyzing binary variable: Right_Access
+2025-09-20 17:11:54,509 - INFO - Analyzing binary variable: Right_Automated_Decision_Making
+2025-09-20 17:11:54,509 - INFO - Analyzing binary variable: Right_Erasure
+2025-09-20 17:11:54,509 - INFO - Analyzing binary variable: Right_Objection
+2025-09-20 17:11:54,509 - INFO - Analyzing binary variable: Right_Portability
+2025-09-20 17:11:54,509 - INFO - Analyzing binary variable: Right_Rectification
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Right_Restrict_Processing
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Sanction_Compliance_Order
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Sanction_Fine
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Sanction_Fine|Compliance_Order
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Permanent
+2025-09-20 17:11:54,510 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Temporary
+2025-09-20 17:11:54,511 - INFO - Analyzing binary variable: Sanction_Reprimand
+2025-09-20 17:11:54,511 - INFO - Completed binary analysis for 44 variables
+2025-09-20 17:11:54,511 - INFO - Starting temporal pattern analysis...
+2025-09-20 17:11:54,511 - INFO - Analyzing temporal variable: A3_DecisionDate
+2025-09-20 17:11:54,519 - INFO - Completed temporal analysis for 1 variables
+2025-09-20 17:11:54,519 - INFO - Generating executive summary...
+2025-09-20 17:11:54,519 - INFO - Complete univariate analysis finished in 0.26 seconds
+2025-09-20 17:11:54,519 - INFO - Analyzed 82 variables
+2025-09-20 17:11:54,525 - INFO - Analysis results saved to univariate_analysis_results_20250920_171154.json
+2025-09-20 17:27:21,010 - INFO - Initialized UnivariateAnalyzer with 78 rows, 88 columns
+2025-09-20 17:27:21,010 - INFO - Starting intelligent variable classification...
+2025-09-20 17:27:21,022 - INFO - Variable classification complete:
+2025-09-20 17:27:21,022 - INFO -   Categorical: 35 variables
+2025-09-20 17:27:21,022 - INFO -   Continuous: 2 variables
+2025-09-20 17:27:21,022 - INFO -   Binary: 44 variables
+2025-09-20 17:27:21,022 - INFO -   Date: 1 variables
+2025-09-20 17:27:21,022 - INFO -   Text: 5 variables
+2025-09-20 17:27:21,022 - INFO -   ID: 1 variables
+2025-09-20 17:27:21,022 - INFO - Creating detailed variable profiles...
+2025-09-20 17:27:21,053 - INFO - Created profiles for 87 variables
+2025-09-20 17:27:21,054 - INFO - Starting complete univariate analysis pipeline...
+2025-09-20 17:27:21,054 - INFO - Starting categorical variable analysis...
+2025-09-20 17:27:21,054 - INFO - Analyzing categorical variable: A1_Country
+2025-09-20 17:27:21,055 - INFO - Analyzing categorical variable: A2_Authority
+2025-09-20 17:27:21,055 - INFO - Analyzing categorical variable: A4_CaseTrigger
+2025-09-20 17:27:21,056 - INFO - Analyzing categorical variable: A6_DPARole
+2025-09-20 17:27:21,056 - INFO - Analyzing categorical variable: A8_AppealSuccess
+2025-09-20 17:27:21,057 - INFO - Analyzing categorical variable: A9_PriorInfringements
+2025-09-20 17:27:21,058 - INFO - Analyzing categorical variable: A10_DefendantCount
+2025-09-20 17:27:21,058 - INFO - Analyzing categorical variable: A12_DefendantRole
+2025-09-20 17:27:21,059 - INFO - Analyzing categorical variable: A13_InstitutionalIdentity
+2025-09-20 17:27:21,059 - INFO - Analyzing categorical variable: A14_EconomicSector
+2025-09-20 17:27:21,060 - INFO - Analyzing categorical variable: A15_DefendantCategory
+2025-09-20 17:27:21,061 - INFO - Analyzing categorical variable: A17_SensitiveDataTypes
+2025-09-20 17:27:21,061 - INFO - Analyzing categorical variable: A19_VulnerableSubjects
+2025-09-20 17:27:21,061 - INFO - Analyzing categorical variable: A20_LegalBasis
+2025-09-20 17:27:21,062 - INFO - Analyzing categorical variable: A22_TransferMechanism
+2025-09-20 17:27:21,062 - INFO - Analyzing categorical variable: A23_HighRiskProcessing
+2025-09-20 17:27:21,063 - INFO - Analyzing categorical variable: A24_PowerImbalance
+2025-09-20 17:27:21,063 - INFO - Analyzing categorical variable: A25_SubjectsAffected
+2025-09-20 17:27:21,064 - INFO - Analyzing categorical variable: A27_DamageEstablished
+2025-09-20 17:27:21,064 - INFO - Analyzing categorical variable: A28_DPIARequired
+2025-09-20 17:27:21,064 - INFO - Analyzing categorical variable: A29_SecurityMeasures
+2025-09-20 17:27:21,065 - INFO - Analyzing categorical variable: A30_DataMinimization
+2025-09-20 17:27:21,066 - INFO - Analyzing categorical variable: A32_RightsInvolved
+2025-09-20 17:27:21,066 - INFO - Analyzing categorical variable: A33_TransparencyObligations
+2025-09-20 17:27:21,067 - INFO - Analyzing categorical variable: A37_LegalBasisInvalid
+2025-09-20 17:27:21,068 - INFO - Analyzing categorical variable: A38_NegligenceEstablished
+2025-09-20 17:27:21,069 - INFO - Analyzing categorical variable: A39_ManagementAuthorization
+2025-09-20 17:27:21,069 - INFO - Analyzing categorical variable: A40_DefendantCooperation
+2025-09-20 17:27:21,070 - INFO - Analyzing categorical variable: A41_MitigatingMeasures
+2025-09-20 17:27:21,070 - INFO - Analyzing categorical variable: A42_PriorNonCompliance
+2025-09-20 17:27:21,071 - INFO - Analyzing categorical variable: A43_FinancialBenefit
+2025-09-20 17:27:21,071 - INFO - Analyzing categorical variable: A44_PriorMeasuresConsidered
+2025-09-20 17:27:21,071 - INFO - Analyzing categorical variable: A45_SanctionType
+2025-09-20 17:27:21,072 - INFO - Analyzing categorical variable: A47_FineCurrency
+2025-09-20 17:27:21,072 - INFO - Analyzing categorical variable: A49_FineCalculationFactors
+2025-09-20 17:27:21,073 - INFO - Completed categorical analysis for 35 variables
+2025-09-20 17:27:21,073 - INFO - Starting continuous variable analysis...
+2025-09-20 17:27:21,073 - INFO - Analyzing continuous variable: A46_FineAmount
+2025-09-20 17:27:21,136 - INFO - Analyzing continuous variable: A46_FineAmount_EUR
+2025-09-20 17:27:21,199 - INFO - Completed continuous analysis for 2 variables
+2025-09-20 17:27:21,199 - INFO - Starting binary variable analysis...
+2025-09-20 17:27:21,199 - INFO - Analyzing binary variable: A5_CrossBorder
+2025-09-20 17:27:21,199 - INFO - Analyzing binary variable: A7_IsAppeal
+2025-09-20 17:27:21,200 - INFO - Analyzing binary variable: A16_SensitiveData
+2025-09-20 17:27:21,200 - INFO - Analyzing binary variable: A18_Cookies
+2025-09-20 17:27:21,201 - INFO - Analyzing binary variable: A21_DataTransfers
+2025-09-20 17:27:21,201 - INFO - Analyzing binary variable: A31_SubjectRightsRequests
+2025-09-20 17:27:21,201 - INFO - Analyzing binary variable: A36_NoInfringement
+2025-09-20 17:27:21,201 - INFO - Analyzing binary variable: A48_EDPBGuidelines
+2025-09-20 17:27:21,201 - INFO - Analyzing binary variable: SensitiveType_Criminal
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Health
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Other
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Political
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Racial_Ethnic
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Religious
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Sexual
+2025-09-20 17:27:21,202 - INFO - Analyzing binary variable: SensitiveType_Trade_Union
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Children
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Children|Patients
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Elderly
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Employees
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Other_Vulnerable
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Patients
+2025-09-20 17:27:21,203 - INFO - Analyzing binary variable: VulnerableSubject_Students
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Consent
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Contract
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Legal_Obligation
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Legitimate_Interest
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Not_Specified
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: LegalBasis_Public_Task
+2025-09-20 17:27:21,204 - INFO - Analyzing binary variable: TransferMech_None_Specified
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: TransferMech_Standard_Contractual_Clauses
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Access
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Automated_Decision_Making
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Erasure
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Objection
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Portability
+2025-09-20 17:27:21,205 - INFO - Analyzing binary variable: Right_Rectification
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Right_Restrict_Processing
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Compliance_Order
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Fine
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Fine|Compliance_Order
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Permanent
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Temporary
+2025-09-20 17:27:21,206 - INFO - Analyzing binary variable: Sanction_Reprimand
+2025-09-20 17:27:21,206 - INFO - Completed binary analysis for 44 variables
+2025-09-20 17:27:21,207 - INFO - Starting temporal pattern analysis...
+2025-09-20 17:27:21,207 - INFO - Analyzing temporal variable: A3_DecisionDate
+2025-09-20 17:27:21,215 - INFO - Completed temporal analysis for 1 variables
+2025-09-20 17:27:21,216 - INFO - Generating executive summary...
+2025-09-20 17:27:21,216 - INFO - Complete univariate analysis finished in 0.16 seconds
+2025-09-20 17:27:21,216 - INFO - Analyzed 82 variables
+2025-09-20 17:27:21,224 - INFO - Analysis results saved to univariate_analysis_results_20250920_172721.json
+2025-09-20 21:31:38,102 - INFO - Initialized UnivariateAnalyzer with 78 rows, 88 columns
+2025-09-20 21:31:38,102 - INFO - Starting intelligent variable classification...
+2025-09-20 21:31:38,118 - INFO - Variable classification complete:
+2025-09-20 21:31:38,118 - INFO -   Categorical: 35 variables
+2025-09-20 21:31:38,118 - INFO -   Continuous: 2 variables
+2025-09-20 21:31:38,118 - INFO -   Binary: 44 variables
+2025-09-20 21:31:38,118 - INFO -   Date: 1 variables
+2025-09-20 21:31:38,118 - INFO -   Text: 5 variables
+2025-09-20 21:31:38,118 - INFO -   ID: 1 variables
+2025-09-20 21:31:38,118 - INFO - Creating detailed variable profiles...
+2025-09-20 21:31:38,153 - INFO - Created profiles for 87 variables
+2025-09-20 21:31:38,153 - INFO - Starting complete univariate analysis pipeline...
+2025-09-20 21:31:38,153 - INFO - Starting categorical variable analysis...
+2025-09-20 21:31:38,154 - INFO - Analyzing categorical variable: A1_Country
+2025-09-20 21:31:38,154 - INFO - Analyzing categorical variable: A2_Authority
+2025-09-20 21:31:38,155 - INFO - Analyzing categorical variable: A4_CaseTrigger
+2025-09-20 21:31:38,155 - INFO - Analyzing categorical variable: A6_DPARole
+2025-09-20 21:31:38,156 - INFO - Analyzing categorical variable: A8_AppealSuccess
+2025-09-20 21:31:38,156 - INFO - Analyzing categorical variable: A9_PriorInfringements
+2025-09-20 21:31:38,156 - INFO - Analyzing categorical variable: A10_DefendantCount
+2025-09-20 21:31:38,157 - INFO - Analyzing categorical variable: A12_DefendantRole
+2025-09-20 21:31:38,157 - INFO - Analyzing categorical variable: A13_InstitutionalIdentity
+2025-09-20 21:31:38,158 - INFO - Analyzing categorical variable: A14_EconomicSector
+2025-09-20 21:31:38,159 - INFO - Analyzing categorical variable: A15_DefendantCategory
+2025-09-20 21:31:38,159 - INFO - Analyzing categorical variable: A17_SensitiveDataTypes
+2025-09-20 21:31:38,160 - INFO - Analyzing categorical variable: A19_VulnerableSubjects
+2025-09-20 21:31:38,161 - INFO - Analyzing categorical variable: A20_LegalBasis
+2025-09-20 21:31:38,161 - INFO - Analyzing categorical variable: A22_TransferMechanism
+2025-09-20 21:31:38,161 - INFO - Analyzing categorical variable: A23_HighRiskProcessing
+2025-09-20 21:31:38,162 - INFO - Analyzing categorical variable: A24_PowerImbalance
+2025-09-20 21:31:38,162 - INFO - Analyzing categorical variable: A25_SubjectsAffected
+2025-09-20 21:31:38,163 - INFO - Analyzing categorical variable: A27_DamageEstablished
+2025-09-20 21:31:38,163 - INFO - Analyzing categorical variable: A28_DPIARequired
+2025-09-20 21:31:38,164 - INFO - Analyzing categorical variable: A29_SecurityMeasures
+2025-09-20 21:31:38,164 - INFO - Analyzing categorical variable: A30_DataMinimization
+2025-09-20 21:31:38,165 - INFO - Analyzing categorical variable: A32_RightsInvolved
+2025-09-20 21:31:38,165 - INFO - Analyzing categorical variable: A33_TransparencyObligations
+2025-09-20 21:31:38,166 - INFO - Analyzing categorical variable: A37_LegalBasisInvalid
+2025-09-20 21:31:38,166 - INFO - Analyzing categorical variable: A38_NegligenceEstablished
+2025-09-20 21:31:38,167 - INFO - Analyzing categorical variable: A39_ManagementAuthorization
+2025-09-20 21:31:38,167 - INFO - Analyzing categorical variable: A40_DefendantCooperation
+2025-09-20 21:31:38,168 - INFO - Analyzing categorical variable: A41_MitigatingMeasures
+2025-09-20 21:31:38,168 - INFO - Analyzing categorical variable: A42_PriorNonCompliance
+2025-09-20 21:31:38,169 - INFO - Analyzing categorical variable: A43_FinancialBenefit
+2025-09-20 21:31:38,169 - INFO - Analyzing categorical variable: A44_PriorMeasuresConsidered
+2025-09-20 21:31:38,169 - INFO - Analyzing categorical variable: A45_SanctionType
+2025-09-20 21:31:38,170 - INFO - Analyzing categorical variable: A47_FineCurrency
+2025-09-20 21:31:38,171 - INFO - Analyzing categorical variable: A49_FineCalculationFactors
+2025-09-20 21:31:38,171 - INFO - Completed categorical analysis for 35 variables
+2025-09-20 21:31:38,171 - INFO - Starting continuous variable analysis...
+2025-09-20 21:31:38,171 - INFO - Analyzing continuous variable: A46_FineAmount
+2025-09-20 21:31:38,233 - INFO - Analyzing continuous variable: A46_FineAmount_EUR
+2025-09-20 21:31:38,290 - INFO - Completed continuous analysis for 2 variables
+2025-09-20 21:31:38,291 - INFO - Starting binary variable analysis...
+2025-09-20 21:31:38,291 - INFO - Analyzing binary variable: A5_CrossBorder
+2025-09-20 21:31:38,291 - INFO - Analyzing binary variable: A7_IsAppeal
+2025-09-20 21:31:38,292 - INFO - Analyzing binary variable: A16_SensitiveData
+2025-09-20 21:31:38,292 - INFO - Analyzing binary variable: A18_Cookies
+2025-09-20 21:31:38,292 - INFO - Analyzing binary variable: A21_DataTransfers
+2025-09-20 21:31:38,292 - INFO - Analyzing binary variable: A31_SubjectRightsRequests
+2025-09-20 21:31:38,292 - INFO - Analyzing binary variable: A36_NoInfringement
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: A48_EDPBGuidelines
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Criminal
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Health
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Other
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Political
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Racial_Ethnic
+2025-09-20 21:31:38,293 - INFO - Analyzing binary variable: SensitiveType_Religious
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: SensitiveType_Sexual
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: SensitiveType_Trade_Union
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: VulnerableSubject_Children
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: VulnerableSubject_Children|Patients
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: VulnerableSubject_Elderly
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: VulnerableSubject_Employees
+2025-09-20 21:31:38,294 - INFO - Analyzing binary variable: VulnerableSubject_Other_Vulnerable
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: VulnerableSubject_Patients
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: VulnerableSubject_Students
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Consent
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Contract
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Legal_Obligation
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Legitimate_Interest
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Not_Specified
+2025-09-20 21:31:38,295 - INFO - Analyzing binary variable: LegalBasis_Public_Task
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: TransferMech_None_Specified
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: TransferMech_Standard_Contractual_Clauses
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: Right_Access
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: Right_Automated_Decision_Making
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: Right_Erasure
+2025-09-20 21:31:38,296 - INFO - Analyzing binary variable: Right_Objection
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Right_Portability
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Right_Rectification
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Right_Restrict_Processing
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Sanction_Compliance_Order
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Sanction_Fine
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Sanction_Fine|Compliance_Order
+2025-09-20 21:31:38,297 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Permanent
+2025-09-20 21:31:38,298 - INFO - Analyzing binary variable: Sanction_Processing_Ban_Temporary
+2025-09-20 21:31:38,298 - INFO - Analyzing binary variable: Sanction_Reprimand
+2025-09-20 21:31:38,298 - INFO - Completed binary analysis for 44 variables
+2025-09-20 21:31:38,298 - INFO - Starting temporal pattern analysis...
+2025-09-20 21:31:38,298 - INFO - Analyzing temporal variable: A3_DecisionDate
+2025-09-20 21:31:38,301 - INFO - Completed temporal analysis for 1 variables
+2025-09-20 21:31:38,301 - INFO - Generating executive summary...
+2025-09-20 21:31:38,301 - INFO - Complete univariate analysis finished in 0.15 seconds
+2025-09-20 21:31:38,301 - INFO - Analyzed 82 variables
+2025-09-20 21:31:38,307 - INFO - Analysis results saved to univariate_analysis_results_20250920_213138.json

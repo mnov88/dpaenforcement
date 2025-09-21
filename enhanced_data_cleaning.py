@@ -903,11 +903,14 @@ class GDPRDataCleaner:
         # Step 9: Validate logical consistency
         cleaned_df = self.validate_logical_consistency(cleaned_df)
 
-        # Step 10: Remove low quality rows (optional)
+        # Step 10: Parse structured fields (A13, A14, A25, A26)
+        cleaned_df = self.parse_structured_fields(cleaned_df)
+
+        # Step 11: Remove low quality rows (optional)
         if remove_low_quality:
             cleaned_df = self.remove_low_quality_rows(cleaned_df, quality_threshold)
 
-        # Step 11: Canonicalize column order for cross-file consistency
+        # Step 12: Canonicalize column order for cross-file consistency
         cleaned_df = self.canonicalize_column_order(original_df.columns.tolist(), cleaned_df)
 
         # Add dataset source column

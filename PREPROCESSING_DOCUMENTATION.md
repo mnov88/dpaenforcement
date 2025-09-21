@@ -87,7 +87,7 @@ Clean Data (4 formats + comprehensive metadata)
    - Normalized whitespace and formatting
    - Ensured proper "Art. X" format
 
-6. **Multi-Select Field Processing**: 37 new binary indicator columns
+6. **Multi-Select Field Processing**: fixed-vocabulary one-hot indicators
    - Split comma-separated values
    - Created binary flags for each unique value
    - Example: `A17_SensitiveDataTypes` → 8 binary columns
@@ -97,6 +97,17 @@ Clean Data (4 formats + comprehensive metadata)
    - Appeal status vs appeal success alignment
 
 8. **Quality-Based Row Filtering**: Optional low-quality row removal
+
+9. **Derived Features Added**
+   - `A34_Art_*`, `A35_Art_*`: top-level article indicators (1 present, NaN otherwise)
+   - Enum one-hot: A4, A6, A8, A9, A12, A15, A27–A30, A33, A37–A44, A49 (fixed vocab)
+   - Y/N binaries: `{field}_bin` for A5, A7, A16, A18, A21, A31, A36, A48
+   - Tri-state positive bins: `{field}_pos_bin` for A23, A24, A27, A28, A29, A30, A33, A37–A43
+   - Multi-select one-hot: `SensitiveType_*`, `VulnerableSubject_*`, `LegalBasis_*`, `TransferMech_*`, `Right_*`, `Sanction_*`
+   - Parsing: `A13_SNA_Code`, `A13_SNA_Desc`; `A14_ISIC_Code`, `A14_ISIC_Desc`, `A14_ISIC_Level`
+   - Numericization: `A25_SubjectsAffected_min/max/midpoint/is_range`
+   - Duration: `A26_Duration_Months`
+   - Provenance: `dataset_source`
    - Configurable quality threshold (default: 30%)
    - Preserves data integrity while removing incomplete records
 

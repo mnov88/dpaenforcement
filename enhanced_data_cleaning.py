@@ -17,9 +17,38 @@ from datetime import datetime
 import requests
 import json
 from typing import Dict, List, Tuple, Optional
+from pathlib import Path
 import argparse
 import warnings
 warnings.filterwarnings('ignore')
+
+# Optional schema-driven vocabularies for consistent one-hot expansion across files
+try:
+    from gdpr_schema_validation import (
+        SENSITIVE_DATA_TYPES,
+        VULNERABLE_SUBJECTS,
+        LEGAL_BASIS,
+        TRANSFER_MECHANISMS,
+        RIGHTS_TYPES,
+        SANCTION_TYPES,
+    )
+except Exception:
+    # Fallback minimal sets if schema module not available at runtime
+    SENSITIVE_DATA_TYPES = ['Health', 'Biometric', 'Genetic', 'Racial_Ethnic', 'Political',
+                            'Religious', 'Philosophical', 'Trade_Union', 'Sexual', 'Criminal', 'Other', 'N_A']
+    VULNERABLE_SUBJECTS = ['Children', 'Elderly', 'Employees', 'Patients', 'Students',
+                           'Other_Vulnerable', 'None_Mentioned', 'UNKNOWN']
+    LEGAL_BASIS = ['Consent', 'Contract', 'Legal_Obligation', 'Vital_Interests',
+                   'Public_Task', 'Legitimate_Interest', 'Not_Specified', 'UNKNOWN']
+    TRANSFER_MECHANISMS = ['Adequacy_Decision', 'Standard_Contractual_Clauses', 'Binding_Corporate_Rules',
+                           'Certification', 'Derogation', 'None_Specified', 'N_A']
+    RIGHTS_TYPES = ['Access', 'Rectification', 'Erasure', 'Portability', 'Objection',
+                    'Restrict_Processing', 'Automated_Decision_Making', 'N_A']
+    SANCTION_TYPES = ['Fine', 'Warning', 'Reprimand', 'Compliance_Order', 'Processing_Ban_Temporary',
+                      'Processing_Ban_Permanent', 'Data_Flow_Suspension', 'Other_Corrective_Measure', 'None']
+
+# Fixed top-level GDPR articles to standardize A35_Art_* columns across files
+FIXED_A35_TOP_LEVEL = [5, 6, 12, 13, 14, 15, 17, 21, 24, 25, 28, 30, 32, 33, 34, 35]
 
 class GDPRDataCleaner:
     """Enhanced data cleaner for GDPR enforcement dataset."""
@@ -212,6 +241,178 @@ class GDPRDataCleaner:
 
         return df_clean
 
+    def expand_a34_top_level_articles(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Create boolean indicators for top-level articles in A34_GDPREvaluated (fixed set).
+
+        Encoding: 1 where explicitly present; NaN otherwise.
+        """
+        print("🔧 Expanding A34_GDPREvaluated into top-level article indicators...")
+
+        df_clean = df.copy()
+        source_col = 'A34_GDPREvaluated'
+        if source_col not in df_clean.columns:
+            return df_clean
+
+        top_level_articles = [str(a) for a in FIXED_A35_TOP_LEVEL]
+        article_pattern = re.compile(r"Art\.\s*(\d+)")
+
+        created_cols = 0
+        for article in sorted(top_level_articles, key=lambda x: int(x)):
+            col_name = f"A34_Art_{article}"
+            if col_name not in df_clean.columns:
+                df_clean[col_name] = np.nan
+                created_cols += 1
+
+        for idx, value in df_clean[source_col].items():
+            if pd.notna(value) and str(value).strip() != '':
+                found = set(article_pattern.findall(str(value)))
+                for a in found:
+                    col_name = f"A34_Art_{a}"
+                    if col_name in df_clean.columns:
+                        df_clean.loc[idx, col_name] = 1
+
+        print(f"  Created {created_cols} A34 article indicator columns")
+        self.log_action("expand_a34_articles", f"Created {created_cols} top-level article indicators", created_cols)
+
+        return df_clean
+
+    def normalize_sanction_type(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Normalize A45_SanctionType tokens: unify separators, trim, deduplicate, sort stable."""
+        print("🔧 Normalizing sanction type tokens...")
+        df_clean = df.copy()
+        col = 'A45_SanctionType'
+        if col not in df_clean.columns:
+            return df_clean
+
+        normalized = 0
+        for idx, val in df_clean[col].items():
+            if pd.isna(val) or str(val).strip() in ('', 'UNKNOWN', 'N_A'):
+                continue
+            s = str(val)
+            # unify separators to comma
+            s = s.replace('|', ',')
+            # split, trim, filter empties
+            tokens = [t.strip() for t in s.split(',') if t.strip()]
+            # dedupe preserving order
+            seen = set()
+            uniq = []
+            for t in tokens:
+                if t not in seen:
+                    seen.add(t)
+                    uniq.append(t)
+            new_val = ', '.join(uniq)
+            if new_val != val:
+                df_clean.loc[idx, col] = new_val
+                normalized += 1
+
+        print(f"  Normalized {normalized} sanction entries")
+        self.log_action("normalize_sanction", f"Normalized {normalized} sanction entries", normalized)
+
+        return df_clean
+
+    def parse_structured_fields(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Parse A13, A14, numericize A25, and parse A26 duration to months."""
+        print("🔧 Parsing structured fields (A13, A14, A25, A26)...")
+        df_clean = df.copy()
+
+        # A13: SNA code and description
+        if 'A13_InstitutionalIdentity' in df_clean.columns:
+            df_clean['A13_SNA_Code'] = np.nan
+            df_clean['A13_SNA_Desc'] = np.nan
+            for idx, val in df_clean['A13_InstitutionalIdentity'].items():
+                if pd.isna(val) or str(val).strip() in ('', 'UNKNOWN'):
+                    continue
+                s = str(val).strip()
+                if ' - ' in s:
+                    code, desc = s.split(' - ', 1)
+                    df_clean.loc[idx, 'A13_SNA_Code'] = code.strip()
+                    df_clean.loc[idx, 'A13_SNA_Desc'] = desc.strip()
+                else:
+                    # Try pattern S.xx at start
+                    m = re.match(r'(S\.?\d+)', s)
+                    if m:
+                        df_clean.loc[idx, 'A13_SNA_Code'] = m.group(1)
+                        df_clean.loc[idx, 'A13_SNA_Desc'] = s[m.end():].lstrip(' -:').strip() or np.nan
+                    else:
+                        df_clean.loc[idx, 'A13_SNA_Desc'] = s
+
+        # A14: ISIC code, description, level
+        if 'A14_EconomicSector' in df_clean.columns:
+            df_clean['A14_ISIC_Code'] = np.nan
+            df_clean['A14_ISIC_Desc'] = np.nan
+            df_clean['A14_ISIC_Level'] = np.nan
+            for idx, val in df_clean['A14_EconomicSector'].items():
+                if pd.isna(val) or str(val).strip() in ('', 'UNKNOWN'):
+                    continue
+                s = str(val)
+                # Try explicit keys
+                mcode = re.search(r'Code\s*:\s*(\d+)', s)
+                mdesc = re.search(r'Description\s*:\s*([^,]+)', s)
+                mlev = re.search(r'Level\s*:\s*(\d+)', s)
+                code = mcode.group(1) if mcode else None
+                desc = mdesc.group(1).strip() if mdesc else None
+                lev = mlev.group(1) if mlev else None
+                if not code:
+                    mcode2 = re.search(r'\b(\d{2,5})\b', s)
+                    code = mcode2.group(1) if mcode2 else None
+                if not desc and code:
+                    # take text after code
+                    pos = s.find(code)
+                    tail = s[pos+len(code):] if pos>=0 else s
+                    # strip punctuation
+                    desc = tail.strip(' -,:') or None
+                if code:
+                    df_clean.loc[idx, 'A14_ISIC_Code'] = code
+                if desc:
+                    df_clean.loc[idx, 'A14_ISIC_Desc'] = desc
+                if lev:
+                    df_clean.loc[idx, 'A14_ISIC_Level'] = int(lev)
+
+        # A25: numericize
+        if 'A25_SubjectsAffected' in df_clean.columns:
+            df_clean['A25_SubjectsAffected_min'] = np.nan
+            df_clean['A25_SubjectsAffected_max'] = np.nan
+            df_clean['A25_SubjectsAffected_midpoint'] = np.nan
+            df_clean['A25_SubjectsAffected_is_range'] = 0
+            for idx, val in df_clean['A25_SubjectsAffected'].items():
+                if pd.isna(val) or str(val).strip() == '' or str(val).strip() == 'UNKNOWN':
+                    continue
+                s = str(val).replace(',', '')
+                if re.match(r'^\d+$', s):
+                    v = float(s)
+                    df_clean.loc[idx, 'A25_SubjectsAffected_min'] = v
+                    df_clean.loc[idx, 'A25_SubjectsAffected_max'] = v
+                    df_clean.loc[idx, 'A25_SubjectsAffected_midpoint'] = v
+                else:
+                    m = re.match(r'^(\d+)-(\d+)$', s)
+                    if m:
+                        lo = float(m.group(1)); hi = float(m.group(2))
+                        df_clean.loc[idx, 'A25_SubjectsAffected_min'] = lo
+                        df_clean.loc[idx, 'A25_SubjectsAffected_max'] = hi
+                        df_clean.loc[idx, 'A25_SubjectsAffected_midpoint'] = (lo+hi)/2
+                        df_clean.loc[idx, 'A25_SubjectsAffected_is_range'] = 1
+
+        # A26: duration months
+        if 'A26_InfringementDuration' in df_clean.columns:
+            df_clean['A26_Duration_Months'] = np.nan
+            for idx, val in df_clean['A26_InfringementDuration'].items():
+                if pd.isna(val) or str(val).strip() in ('', 'UNKNOWN'):
+                    continue
+                s = str(val).lower()
+                months = 0.0
+                y = re.search(r'(\d+)\s*year', s)
+                m = re.search(r'(\d+)\s*month', s)
+                w = re.search(r'(\d+)\s*week', s)
+                if y:
+                    months += int(y.group(1)) * 12
+                if m:
+                    months += int(m.group(1))
+                if w:
+                    months += int(w.group(1)) / 4.345
+                if months > 0:
+                    df_clean.loc[idx, 'A26_Duration_Months'] = round(months, 2)
+
+        return df_clean
     def expand_a35_top_level_articles(self, df: pd.DataFrame) -> pd.DataFrame:
         """Create boolean indicators for top-level articles in A35_GDPRViolated.
 
@@ -227,17 +428,9 @@ class GDPRDataCleaner:
         if source_col not in df_clean.columns:
             return df_clean
 
-        # Collect all unique top-level articles across dataset
-        top_level_articles = set()
+        # Use fixed vocabulary for top-level articles to ensure cross-file consistency
+        top_level_articles = [str(a) for a in FIXED_A35_TOP_LEVEL]
         article_pattern = re.compile(r"Art\.\s*(\d+)")
-
-        for value in df_clean[source_col].dropna():
-            # Expect comma-separated values like "Art. 5(1)(a), Art. 6(1)"
-            parts = [p.strip() for p in str(value).split(',') if str(value).strip() != '']
-            for part in parts:
-                match = article_pattern.search(part)
-                if match:
-                    top_level_articles.add(match.group(1))
 
         created_cols = 0
         # Initialize columns as NaN (unknown) to avoid implying false
@@ -325,54 +518,260 @@ class GDPRDataCleaner:
 
         return df_clean
 
+    def convert_tri_state_fields_to_pos_bin(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Create {field}_pos_bin indicating positive vs negative, others -> NaN.
+
+        Mappings:
+        - Generic Y/N sets: positive={'Y'}, negative={'N'}
+        - A27_DamageEstablished: positive={'Material_Damage','Non_Material_Damage','Both'}, negative={'None'}
+        - A28_DPIARequired: positive values startwith 'Required', negative={'Not_Required'}
+        - A29_SecurityMeasures: positive={'Adequate'}, negative={'Inadequate'}
+        - A30_DataMinimization, A33_TransparencyObligations: positive={'Compliant'}, negative={'Violated'}
+        - A40_DefendantCooperation: positive={'Cooperative'}, negative={'Uncooperative'} (Partially -> NaN)
+        - A41_MitigatingMeasures: positive={'Before_Investigation','During_Investigation'}, negative={'None'}
+        """
+        print("🔧 Creating tri-state positive bins (_pos_bin)...")
+
+        df_clean = df.copy()
+
+        def map_generic(val: Optional[str]) -> float:
+            if pd.isna(val):
+                return np.nan
+            if val == 'Y':
+                return 1
+            if val == 'N':
+                return 0
+            return np.nan
+
+        field_mappers: Dict[str, callable] = {}
+        # Generic Y/N with other statuses
+        for col in ['A23_HighRiskProcessing', 'A24_PowerImbalance', 'A37_LegalBasisInvalid',
+                    'A38_NegligenceEstablished', 'A39_ManagementAuthorization', 'A42_PriorNonCompliance',
+                    'A43_FinancialBenefit']:
+            field_mappers[col] = map_generic
+
+        # Specific mappings
+        def map_a27(val):
+            if pd.isna(val):
+                return np.nan
+            if val in ['Material_Damage', 'Non_Material_Damage', 'Both']:
+                return 1
+            if val == 'None':
+                return 0
+            return np.nan
+
+        def map_a28(val):
+            if pd.isna(val):
+                return np.nan
+            if str(val).startswith('Required'):
+                return 1
+            if val == 'Not_Required':
+                return 0
+            return np.nan
+
+        def map_a29(val):
+            if pd.isna(val):
+                return np.nan
+            if val == 'Adequate':
+                return 1
+            if val == 'Inadequate':
+                return 0
+            return np.nan
+
+        def map_compliance(val):
+            if pd.isna(val):
+                return np.nan
+            if val == 'Compliant':
+                return 1
+            if val == 'Violated':
+                return 0
+            return np.nan
+
+        def map_a40(val):
+            if pd.isna(val):
+                return np.nan
+            if val == 'Cooperative':
+                return 1
+            if val == 'Uncooperative':
+                return 0
+            return np.nan
+
+        def map_a41(val):
+            if pd.isna(val):
+                return np.nan
+            if val in ['Before_Investigation', 'During_Investigation']:
+                return 1
+            if val == 'None':
+                return 0
+            return np.nan
+
+        field_mappers.update({
+            'A27_DamageEstablished': map_a27,
+            'A28_DPIARequired': map_a28,
+            'A29_SecurityMeasures': map_a29,
+            'A30_DataMinimization': map_compliance,
+            'A33_TransparencyObligations': map_compliance,
+            'A40_DefendantCooperation': map_a40,
+            'A41_MitigatingMeasures': map_a41,
+        })
+
+        created = 0
+        for col, mapper in field_mappers.items():
+            if col in df_clean.columns:
+                out_col = f"{col}_pos_bin"
+                df_clean[out_col] = df_clean[col].apply(mapper)
+                created += 1
+
+        print(f"  Created {created} _pos_bin columns")
+        self.log_action("tri_state_pos_bin", f"Created {created} pos bins", created)
+
+        return df_clean
+
+    def one_hot_single_select_enums(self, df: pd.DataFrame) -> pd.DataFrame:
+        """One-hot expand single-select enums using fixed vocab, including UNKNOWN/N_A where defined."""
+        print("🔧 One-hot expanding single-select enums...")
+
+        df_clean = df.copy()
+
+        # Import vocab from schema where available
+        try:
+            from gdpr_schema_validation import (
+                CASE_TRIGGERS, DPA_ROLES, APPEAL_SUCCESS, PRIOR_INFRINGEMENTS,
+                DEFENDANT_ROLES, DEFENDANT_CATEGORIES, DAMAGE_TYPES, DPIA_STATUS,
+                SECURITY_STATUS, COMPLIANCE_STATUS, YES_NO_UNKNOWN
+            )
+        except Exception:
+            CASE_TRIGGERS = []
+            DPA_ROLES = []
+            APPEAL_SUCCESS = []
+            PRIOR_INFRINGEMENTS = []
+            DEFENDANT_ROLES = []
+            DEFENDANT_CATEGORIES = []
+            DAMAGE_TYPES = []
+            DPIA_STATUS = []
+            SECURITY_STATUS = []
+            COMPLIANCE_STATUS = []
+            YES_NO_UNKNOWN = []
+
+        enum_map: Dict[str, List[str]] = {
+            'A4_CaseTrigger': CASE_TRIGGERS,
+            'A6_DPARole': DPA_ROLES,
+            'A8_AppealSuccess': APPEAL_SUCCESS,
+            'A9_PriorInfringements': PRIOR_INFRINGEMENTS,
+            'A12_DefendantRole': DEFENDANT_ROLES,
+            'A15_DefendantCategory': DEFENDANT_CATEGORIES,
+            'A27_DamageEstablished': DAMAGE_TYPES,
+            'A28_DPIARequired': DPIA_STATUS,
+            'A29_SecurityMeasures': SECURITY_STATUS,
+            'A30_DataMinimization': COMPLIANCE_STATUS,
+            'A33_TransparencyObligations': COMPLIANCE_STATUS,
+            'A37_LegalBasisInvalid': ['Y', 'N', 'Not_Evaluated', 'UNKNOWN'],
+            'A38_NegligenceEstablished': ['Y', 'N', 'Not_Assessed', 'UNKNOWN'],
+            'A39_ManagementAuthorization': ['Y', 'N', 'Not_Assessed', 'UNKNOWN'],
+            'A40_DefendantCooperation': ['Cooperative', 'Partially_Cooperative', 'Uncooperative', 'Not_Discussed', 'UNKNOWN'],
+            'A41_MitigatingMeasures': ['Before_Investigation', 'During_Investigation', 'None', 'Not_Discussed', 'UNKNOWN'],
+            'A42_PriorNonCompliance': ['Y', 'N', 'Not_Assessed', 'UNKNOWN'],
+            'A43_FinancialBenefit': ['Y', 'N', 'Not_Assessed', 'UNKNOWN'],
+            'A49_FineCalculationFactors': ['Y', 'Partially', 'N', 'N_A']
+        }
+
+        total_created = 0
+        for col, allowed in enum_map.items():
+            if col not in df_clean.columns or not allowed:
+                continue
+            for v in allowed:
+                out_col = f"{col}__{v}"
+                df_clean[out_col] = (df_clean[col] == v).astype(int)
+                total_created += 1
+
+        print(f"  One-hot columns created: {total_created}")
+        self.log_action("one_hot_enums", f"Created {total_created} enum dummies", total_created)
+
+        return df_clean
+
     def split_multi_select_fields(self, df: pd.DataFrame) -> pd.DataFrame:
         """Split multi-select fields for easier analysis."""
         print("🔧 Processing multi-select fields...")
 
         df_clean = df.copy()
         multi_select_fields = {
-            'A17_SensitiveDataTypes': 'SensitiveType_',
-            'A19_VulnerableSubjects': 'VulnerableSubject_',
-            'A20_LegalBasis': 'LegalBasis_',
-            'A22_TransferMechanism': 'TransferMech_',
-            'A32_RightsInvolved': 'Right_',
-            'A45_SanctionType': 'Sanction_'
+            'A17_SensitiveDataTypes': ('SensitiveType_', SENSITIVE_DATA_TYPES),
+            'A19_VulnerableSubjects': ('VulnerableSubject_', VULNERABLE_SUBJECTS),
+            'A20_LegalBasis': ('LegalBasis_', LEGAL_BASIS),
+            'A22_TransferMechanism': ('TransferMech_', TRANSFER_MECHANISMS),
+            'A32_RightsInvolved': ('Right_', RIGHTS_TYPES),
+            'A45_SanctionType': ('Sanction_', SANCTION_TYPES)
         }
 
-        for field, prefix in multi_select_fields.items():
+        exclude_tokens = {'N_A', 'UNKNOWN', 'None_Mentioned', 'Not_Specified'}
+
+        for field, (prefix, allowed_values) in multi_select_fields.items():
             if field in df_clean.columns:
-                # Get all unique values across all rows
-                all_values = set()
-                for cell_value in df_clean[field].dropna():
-                    if cell_value not in ['N_A', 'UNKNOWN', 'None_Mentioned']:
-                        # Handle bracketed lists
-                        if cell_value.startswith('[') and cell_value.endswith(']'):
-                            cell_value = cell_value[1:-1]
-
-                        values = [v.strip() for v in str(cell_value).split(',')]
-                        all_values.update(values)
-
-                # Create binary columns for each unique value
-                for value in sorted(all_values):
-                    if value:  # Skip empty values
-                        col_name = f"{prefix}{value.replace(' ', '_').replace('(', '').replace(')', '')}"
+                # Create binary columns for the fixed vocabulary (excluding meta tokens)
+                fixed_values = [v for v in allowed_values if v not in exclude_tokens]
+                created = 0
+                for value in fixed_values:
+                    safe_value = str(value).strip()
+                    if not safe_value:
+                        continue
+                    col_name = f"{prefix}{safe_value.replace(' ', '_').replace('(', '').replace(')', '')}"
+                    if col_name not in df_clean.columns:
                         df_clean[col_name] = 0
+                    created += 1
 
-                        # Set 1 for rows that contain this value
-                        for idx, cell_value in df_clean[field].items():
-                            if pd.notna(cell_value) and cell_value not in ['N_A', 'UNKNOWN', 'None_Mentioned']:
-                                # Handle bracketed lists
-                                if cell_value.startswith('[') and cell_value.endswith(']'):
-                                    cell_value = cell_value[1:-1]
+                # Populate indicators from the cell contents
+                for idx, cell_value in df_clean[field].items():
+                    if pd.notna(cell_value) and cell_value not in exclude_tokens:
+                        cv = str(cell_value)
+                        if cv.startswith('[') and cv.endswith(']'):
+                            cv = cv[1:-1]
+                        values = [v.strip() for v in cv.split(',') if v.strip()]
+                        for v in values:
+                            if v in fixed_values:
+                                col_name = f"{prefix}{v.replace(' ', '_').replace('(', '').replace(')', '')}"
+                                df_clean.loc[idx, col_name] = 1
 
-                                values = [v.strip() for v in str(cell_value).split(',')]
-                                if value in values:
-                                    df_clean.loc[idx, col_name] = 1
-
-                print(f"  {field}: Created {len(all_values)} binary indicators")
-                self.log_action("split_multi_select", f"{field}: {len(all_values)} indicators", len(all_values))
+                print(f"  {field}: Created {created} binary indicators (fixed vocab)")
+                self.log_action("split_multi_select", f"{field}: {created} indicators (fixed)", created)
 
         return df_clean
+
+    def canonicalize_column_order(self, original_columns: List[str], df: pd.DataFrame) -> pd.DataFrame:
+        """Apply canonical column ordering for cross-file consistency."""
+        df_clean = df.copy()
+
+        # Prefer schema-defined base order when available
+        try:
+            from gdpr_schema_validation import gdpr_schema
+            base_cols = list(gdpr_schema.columns.keys())  # type: ignore[attr-defined]
+        except Exception:
+            base_cols = list(original_columns)
+        all_cols = set(df_clean.columns)
+
+        eur_cols = ['A46_FineAmount_EUR'] if 'A46_FineAmount_EUR' in all_cols else []
+
+        a35_cols = sorted([c for c in all_cols if c.startswith('A35_Art_')],
+                          key=lambda c: int(re.findall(r'\d+', c)[0]) if re.findall(r'\d+', c) else 0)
+
+        prefixes = ['SensitiveType_', 'VulnerableSubject_', 'LegalBasis_', 'TransferMech_', 'Right_', 'Sanction_']
+        by_prefix = []
+        for p in prefixes:
+            cols = sorted([c for c in all_cols if c.startswith(p)])
+            by_prefix.extend(cols)
+
+        bin_cols = sorted([c for c in all_cols if c.endswith('_bin')])
+
+        used = set(base_cols + eur_cols + a35_cols + by_prefix + bin_cols)
+        other_cols = sorted([c for c in all_cols if c not in used])
+
+        final_order = base_cols + eur_cols + a35_cols + by_prefix + bin_cols + other_cols
+
+        # Ensure all columns exist
+        for col in final_order:
+            if col not in df_clean.columns:
+                df_clean[col] = np.nan
+
+        return df_clean[final_order]
 
     def validate_logical_consistency(self, df: pd.DataFrame) -> pd.DataFrame:
         """Fix logical inconsistencies between related fields."""
@@ -483,6 +882,7 @@ class GDPRDataCleaner:
 
         # Step 5: Clean GDPR articles
         cleaned_df = self.clean_gdpr_articles(cleaned_df)
+        cleaned_df = self.expand_a34_top_level_articles(cleaned_df)
 
         # Step 6: Expand A35 top-level article indicators (1 for present, NaN otherwise)
         cleaned_df = self.expand_a35_top_level_articles(cleaned_df)
@@ -490,7 +890,14 @@ class GDPRDataCleaner:
         # Step 7: Convert Y/N style fields to binary indicators
         cleaned_df = self.convert_yes_no_fields_to_binary(cleaned_df)
 
-        # Step 8: Split multi-select fields
+        # Step 7b: Create tri-state positive bins
+        cleaned_df = self.convert_tri_state_fields_to_pos_bin(cleaned_df)
+
+        # Step 7c: One-hot selected single-select enums with fixed vocab
+        cleaned_df = self.one_hot_single_select_enums(cleaned_df)
+
+        # Step 8: Split multi-select fields (fixed vocab) after normalizing sanction tokens
+        cleaned_df = self.normalize_sanction_type(cleaned_df)
         cleaned_df = self.split_multi_select_fields(cleaned_df)
 
         # Step 9: Validate logical consistency
@@ -499,6 +906,13 @@ class GDPRDataCleaner:
         # Step 10: Remove low quality rows (optional)
         if remove_low_quality:
             cleaned_df = self.remove_low_quality_rows(cleaned_df, quality_threshold)
+
+        # Step 11: Canonicalize column order for cross-file consistency
+        cleaned_df = self.canonicalize_column_order(original_df.columns.tolist(), cleaned_df)
+
+        # Add dataset source column
+        if 'dataset_source' not in cleaned_df.columns:
+            cleaned_df.insert(0, 'dataset_source', '')
 
         # Generate statistics
         self.generate_cleaning_statistics(original_df, cleaned_df)
@@ -555,7 +969,13 @@ def main():
 
     # Save cleaned data
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    cleaned_file = f'dataNorway_cleaned_{timestamp}.csv'
+    base_name = Path(args.input_path).stem
+    cleaned_file = f'{base_name}_cleaned_{timestamp}.csv'
+    # Populate dataset_source with input filename
+    try:
+        cleaned_df['dataset_source'] = Path(args.input_path).name
+    except Exception:
+        cleaned_df['dataset_source'] = str(args.input_path)
     cleaned_df.to_csv(cleaned_file, index=False)
     print(f"📁 Cleaned data saved to: {cleaned_file}")
 

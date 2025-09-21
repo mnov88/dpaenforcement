@@ -1,0 +1,146 @@
+{
+  "timestamp": "2025-09-21T10:21:14.154991",
+  "statistics": {
+    "original_rows": 78,
+    "cleaned_rows": 78,
+    "rows_removed": 0,
+    "original_columns": 51,
+    "cleaned_columns": 235,
+    "columns_added": 184,
+    "total_cleaning_actions": 20,
+    "original_missing_values": "41",
+    "cleaned_missing_values": "3901",
+    "missing_values_handled": "-3860"
+  },
+  "cleaning_log": [
+    {
+      "timestamp": "2025-09-21T10:21:14.007550",
+      "action": "remove_brackets",
+      "details": "Removed brackets from 408 values",
+      "count": "408"
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.039832",
+      "action": "standardize_missing",
+      "details": "Standardized 783 missing values",
+      "count": "783"
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.046609",
+      "action": "clean_dates",
+      "details": "A3_DecisionDate: 66 valid, 0 invalid",
+      "count": 66
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.051632",
+      "action": "normalize_currency",
+      "details": "Converted 52 amounts to EUR",
+      "count": 52
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.052388",
+      "action": "clean_articles",
+      "details": "A34_GDPREvaluated: 0 cleaned",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.052654",
+      "action": "clean_articles",
+      "details": "A35_GDPRViolated: 0 cleaned",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.067613",
+      "action": "expand_a34_articles",
+      "details": "Created 16 top-level article indicators",
+      "count": 16
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.077096",
+      "action": "expand_a35_articles",
+      "details": "Created 16 top-level article indicators",
+      "count": 16
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.078554",
+      "action": "convert_yes_no_binary",
+      "details": "Created 9 binary columns",
+      "count": 9
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.080544",
+      "action": "tri_state_pos_bin",
+      "details": "Created 14 pos bins",
+      "count": 14
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.090191",
+      "action": "one_hot_enums",
+      "details": "Created 82 enum dummies",
+      "count": 82
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.091013",
+      "action": "normalize_sanction",
+      "details": "Normalized 4 sanction entries",
+      "count": 4
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.094074",
+      "action": "split_multi_select",
+      "details": "A17_SensitiveDataTypes: 11 indicators (fixed)",
+      "count": 11
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.097496",
+      "action": "split_multi_select",
+      "details": "A19_VulnerableSubjects: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.100721",
+      "action": "split_multi_select",
+      "details": "A20_LegalBasis: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.101520",
+      "action": "split_multi_select",
+      "details": "A22_TransferMechanism: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.104042",
+      "action": "split_multi_select",
+      "details": "A32_RightsInvolved: 7 indicators (fixed)",
+      "count": 7
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.112090",
+      "action": "split_multi_select",
+      "details": "A45_SanctionType: 9 indicators (fixed)",
+      "count": 9
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.113962",
+      "action": "validate_consistency",
+      "details": "Fixed 0 logical inconsistencies",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:21:14.146159",
+      "action": "remove_low_quality",
+      "details": "Removed 0 low-quality rows",
+      "count": "0"
+    }
+  ],
+  "currency_rates_used": {
+    "NOK": 0.092,
+    "SEK": 0.086,
+    "DKK": 0.134,
+    "PLN": 0.23,
+    "CZK": 0.041,
+    "HUF": 0.0025,
+    "EUR": 1.0
+  }
+}

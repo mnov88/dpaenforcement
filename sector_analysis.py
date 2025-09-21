@@ -50,11 +50,7 @@ def cliffs_delta(x: np.ndarray, y: np.ndarray) -> float:
     nx, ny = len(x), len(y)
     if nx == 0 or ny == 0:
         return np.nan
-    # Pairwise comparison (vectorized via sort)
-    xy = np.concatenate([x, y])
-    ranks = pd.Series(xy).rank(method='average').values
-    rx = ranks[:nx]
-    ry = ranks[nx:]
+    # Use relation with Mann-Whitney U: delta = 2*U/(nx*ny) - 1
     # Use relation with Mann-Whitney U: delta = 2*U/(nx*ny) - 1
     U, _ = mannwhitneyu(x, y, alternative='two-sided')
     return (2 * U / (nx * ny)) - 1
@@ -116,7 +112,6 @@ def analyze_fine_amount(df: pd.DataFrame) -> Dict[str, Any]:
         return result
 
     stat, p = mannwhitneyu(private, public, alternative='two-sided')
-    delta = cliffs_delta(private.values, public.values)
     delta_pt, delta_ci = bootstrap_ci_stat(private.values, public.values, 
                                            lambda a, b: cliffs_delta(a, b))
     med_diff_pt, med_diff_ci = bootstrap_ci_stat(private.values, public.values, median_diff)

@@ -24,6 +24,7 @@ from datetime import datetime
 import json
 import logging
 from typing import Dict, List, Tuple, Any, Optional
+import argparse
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -762,21 +763,26 @@ def main():
     print("Enhanced Univariate Analysis Engine")
     print("=" * 50)
 
+    # CLI args
+    parser = argparse.ArgumentParser(description="Enhanced Univariate Analysis Engine")
+    parser.add_argument('--data', '-d', dest='data_path', help='Path to cleaned CSV; defaults to latest dataNorway_cleaned_*.csv')
+    args = parser.parse_args()
+
     # Load cleaned data
     try:
-        import glob
-        cleaned_files = glob.glob('dataNorway_cleaned_*.csv')
+        if args.data_path:
+            latest_file = args.data_path
+        else:
+            import glob
+            cleaned_files = glob.glob('dataNorway_cleaned_*.csv')
+            if not cleaned_files:
+                print("❌ No cleaned data files found. Please run enhanced_data_cleaning.py first.")
+                return
+            latest_file = max(cleaned_files, key=lambda x: x.split('_')[-1])
 
-        if not cleaned_files:
-            print("❌ No cleaned data files found. Please run enhanced_data_cleaning.py first.")
-            return
-
-        latest_file = max(cleaned_files, key=lambda x: x.split('_')[-1])
         print(f"📂 Loading data from: {latest_file}")
-
         df = pd.read_csv(latest_file)
         print(f"✓ Loaded {len(df)} rows, {len(df.columns)} columns")
-
     except Exception as e:
         print(f"❌ Error loading data: {e}")
         return

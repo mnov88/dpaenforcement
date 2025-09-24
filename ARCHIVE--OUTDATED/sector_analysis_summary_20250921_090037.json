@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-21T09:00:36.277849",
+    "n_private": 39,
+    "n_public": 25,
+    "file_used": "dataNorway_cleaned_20250920_165937.csv"
+  },
+  "fine_amount": {
+    "outcome": "A46_FineAmount_EUR",
+    "test": "Mann-Whitney U",
+    "u_stat": 199.0,
+    "p_value": 0.17935521599229087,
+    "effect_cliffs_delta": -0.23461538461538467,
+    "effect_cliffs_delta_ci95": [
+      -0.5769711538461538,
+      0.117355769230769
+    ],
+    "median_private": 20700.0,
+    "median_public": 69000.0,
+    "median_diff_private_minus_public": -48300.0,
+    "median_diff_ci95": [
+      -85100.0,
+      -4600.0
+    ],
+    "n_private": 26,
+    "n_public": 20,
+    "p_value_excluding_zero": 0.05919773748781433
+  },
+  "fine_likelihood": {
+    "outcome": "Sanction_Fine",
+    "odds_ratio": 1.9870129870129871,
+    "ci95": [
+      0.6759152670246862,
+      5.841295208403795
+    ],
+    "p_value": 0.20879516843224788,
+    "table": {
+      "private": {
+        "no_fine": 17,
+        "fine": 22
+      },
+      "public": {
+        "no_fine": 7,
+        "fine": 18
+      }
+    }
+  },
+  "sanction_mix": {
+    "family": "sanction_mix",
+    "tests": [
+      {
+        "variable": "Sanction_Compliance_Order",
+        "odds_ratio": 0.4086687306501548,
+        "ci95": [
+          0.13402193597691778,
+          1.246140269455386
+        ],
+        "p_value": 0.11103726776984058,
+        "table": {
+          "0": {
+            "private": 22,
+            "public": 19
+          },
+          "1": {
+            "private": 17,
+            "public": 6
+          }
+        },
+        "q_value": 0.3331118033095217,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "Sanction_Fine",
+        "odds_ratio": 1.9870129870129871,
+        "ci95": [
+          0.6759152670246862,
+          5.841295208403795
+        ],
+        "p_value": 0.20879516843224788,
+        "table": {
+          "0": {
+            "private": 17,
+            "public": 7
+          },
+          "1": {
+            "private": 22,
+            "public": 18
+          }
+        },
+        "q_value": 0.41759033686449576,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "Sanction_Fine|Compliance_Order",
+        "odds_ratio": 0.24,
+        "ci95": [
+          0.011514107173540532,
+          5.002558959357706
+        ],
+        "p_value": 0.320482498309422,
+        "table": {
+          "0": {
+            "private": 36,
+            "public": 25
+          },
+          "1": {
+            "private": 3,
+            "public": 0
+          }
+        },
+        "q_value": 0.480723747464133,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "Sanction_Processing_Ban_Permanent",
+        "odds_ratio": 1.56,
+        "ci95": [
+          0.029978501280420778,
+          81.17817422678854
+        ],
+        "p_value": 0.8240976314389072,
+        "table": {
+          "0": {
+            "private": 39,
+            "public": 25
+          },
+          "1": {
+            "private": 0,
+            "public": 0
+          }
+        },
+        "q_value": 0.834970183205587,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "Sanction_Processing_Ban_Temporary",
+        "odds_ratio": 0.7708333333333334,
+        "ci95": [
+          0.06619905817792815,
+          8.975717240277719
+        ],
+        "p_value": 0.834970183205587,
+        "table": {
+          "0": {
+            "private": 37,
+            "public": 24
+          },
+          "1": {
+            "private": 2,
+            "public": 1
+          }
+        },
+        "q_value": 0.834970183205587,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "Sanction_Reprimand",
+        "odds_ratio": 0.09142857142857143,
+        "ci95": [
+          0.004948853294917081,
+          1.6891152708153687
+        ],
+        "p_value": 0.050180383595263556,
+        "table": {
+          "0": {
+            "private": 32,
+            "public": 25
+          },
+          "1": {
+            "private": 7,
+            "public": 0
+          }
+        },
+        "q_value": 0.30108230157158133,
+        "significant_fdr_05": false
+      }
+    ]
+  },
+  "key_binaries": {
+    "family": "key_binaries",
+    "tests": [
+      {
+        "variable": "A5_CrossBorder",
+        "odds_ratio": 0.11,
+        "ci95": [
+          0.00586533573839963,
+          2.062968010643073
+        ],
+        "p_value": 0.07994458485762812,
+        "table": {
+          "0": {
+            "private": 33,
+            "public": 25
+          },
+          "1": {
+            "private": 6,
+            "public": 0
+          }
+        },
+        "q_value": 0.11991687728644218,
+        "significant_fdr_05": false
+      },
+      {
+        "variable": "A16_SensitiveData",
+        "odds_ratio": 9.777777777777779,
+        "ci95": [
+          2.9652973880279117,
+          32.241264791045964
+        ],
+        "p_value": 6.466097436386153e-05,
+        "table": {
+          "0": {
+            "private": 33,
+            "public": 9
+          },
+          "1": {
+            "private": 6,
+            "public": 16
+          }
+        },
+        "q_value": 0.0001939829230915846,
+        "significant_fdr_05": true
+      },
+      {
+        "variable": "A21_DataTransfers",
+        "odds_ratio": 0.5,
+        "ci95": [
+          0.04907000353608442,
+          5.094762216924609
+        ],
+        "p_value": 0.5515983622129705,
+        "table": {
+          "0": {
+            "private": 36,
+            "public": 24
+          },
+          "1": {
+            "private": 3,
+            "public": 1
+          }
+        },
+        "q_value": 0.5515983622129705,
+        "significant_fdr_05": false
+      }
+    ]
+  }
+}

@@ -1,3 +1,73 @@
+## GDPR DPA Responses Parser
+
+This repository includes a small Python script that aggregates AI-extracted answers from JSON files into analysis-friendly CSVs.
+
+### What it does
+
+- Reads all `results_*.json` files under `raw_data/responses/`.
+- Each JSON file contains an array of objects with:
+  - `ID`, `English_Translation`, `response` (68-line answer block), and other metadata.
+- Parses the 68 answers from `response` into named columns.
+- Normalizes values by stripping prefixes like `TYPE:`, `ENUM:`, `MULTI_SELECT:`, `FORMAT:` and reduces `country_code` from `ISO_3166-1_ALPHA-2: FR` to `FR`.
+- Coerces numeric fields:
+  - `fine_amount_eur` (Answer 37)
+  - `annual_turnover_eur` (Answer 38)
+  into plain numeric strings when possible (e.g., `600000`, `84000000000`).
+- Sorts rows naturally by `ID` (e.g., `France_2` before `France_12`).
+- Writes two CSVs to `raw_data/responses/`:
+  - `parsed_responses.csv`: includes metadata + answers
+  - `parsed_responses_min.csv`: includes only `ID` + answers (no metadata)
+
+### Prerequisites
+
+- Python 3.8+ (no external dependencies)
+
+### How to run
+
+1. Ensure your JSON results are in `raw_data/responses/` and named like `results_YYYYMMDD_*.json` (the script matches `results_*.json`).
+2. Execute:
+
+```
+python3 parse_responses_to_csv.py
+```
+
+3. Outputs will appear as:
+   - `raw_data/responses/parsed_responses.csv`
+   - `raw_data/responses/parsed_responses_min.csv`
+
+If your data directory is different, edit the `RESPONSES_DIR` constant at the top of `parse_responses_to_csv.py`.
+
+### Columns
+
+- Full CSV columns (in order):
+  - Metadata (9): `ID`, `English_Translation`, `error`, `success`, `model_used`, `markdown_file`, `input_tokens`, `output_tokens`, `total_tokens`
+  - Answers (68):
+    - `country_code`, `dpa_name`, `issue_date`, `is_appeal`, `appeal_outcome`, `multiple_defendants`, `primary_defendant_name`, `defendant_status`, `defendant_role`, `org_classifications`, `public_sector_level`, `isic_sector`, `turnover_mentioned`, `turnover_range`, `initiation_method`, `breach_discussed`, `art33_required`, `breach_notified`, `notified_within_72h`, `delay_length`, `breach_type`, `breach_cause`, `harm_materialized`, `affected_subjects`, `special_or_criminal_data`, `subjects_notified`, `art34_required`, `mitigating_actions`, `notification_failures_effect`, `art5_principles_discussed`, `art5_principles_violated`, `art6_bases_discussed`, `legal_bases_relied`, `consent_issues`, `legitimate_interest_outcome`, `art56_summary`, `fine_amount_eur`, `annual_turnover_eur`, `hit_caps`, `violation_duration`, `aggravating_factors`, `mitigating_factors`, `harm_documented`, `economic_benefit`, `cooperation_level`, `vulnerable_subjects`, `remedial_actions`, `first_time_violation`, `cross_border`, `other_measures`, `financial_consideration`, `fine_calc_summary`, `corrective_powers`, `processing_limitation_scope`, `compliance_deadline`, `ds_rights_discussed`, `ds_rights_violated`, `access_issues`, `adm_issues`, `dpo_appointment`, `dpo_issues`, `jurisdiction_complexity`, `data_transfers_discussed`, `transfer_violations_issues`, `precedent_significance`, `references_other_cases`, `edpb_references`, `case_summary`
+
+The minimal CSV excludes the 9 metadata columns and keeps `ID` + the 68 answer columns.
+
+### Normalization details
+
+- Prefix stripping on answer values: `TYPE:`, `ENUM:`, `MULTI_SELECT:`, `FORMAT:` are removed where present.
+- `country_code` is post-processed to keep only the ISO code, e.g., `FR`, `SE`.
+- Numeric coercion removes spaces/currency symbols where possible; if a numeric cannot be inferred, the original token is left as-is (or left blank if explicitly `null`).
+
+### Verifying outputs
+
+You can quickly check that prefixes were fully removed:
+
+```
+grep -nE "\b(TYPE:|ENUM:|MULTI_SELECT:|FORMAT:|ISO_3166-1_ALPHA-2)" raw_data/responses/parsed_responses_min.csv | head -n 10 | cat
+```
+
+Expect no matches.
+
+### Troubleshooting
+
+- If the script reports 0 rows written, confirm the JSON files are valid arrays and contain `response` fields.
+- If IDs do not sort as expected, ensure they follow the pattern `Prefix_Number` (e.g., `France_12`).
+- If you need to exclude rows (e.g., `success != true`), add filtering where indicated in `main()`.
+
 This project gathers information about DPA decisions on the GDPR for comparative analysis and statistical analysis.
 Currently supports Norwegian and Swedish DPA decisions with comprehensive multi-country analytical capabilities.
 The analysis is done in Python, as well as using any other tools which are well-known and widely used for the purposes of analysis.

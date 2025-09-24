@@ -1,0 +1,134 @@
+{
+  "timestamp": "2025-09-21T10:12:14.889738",
+  "statistics": {
+    "original_rows": 78,
+    "cleaned_rows": 78,
+    "rows_removed": 0,
+    "original_columns": 51,
+    "cleaned_columns": 219,
+    "columns_added": 168,
+    "total_cleaning_actions": 18,
+    "original_missing_values": "41",
+    "cleaned_missing_values": "2855",
+    "missing_values_handled": "-2814"
+  },
+  "cleaning_log": [
+    {
+      "timestamp": "2025-09-21T10:12:14.760346",
+      "action": "remove_brackets",
+      "details": "Removed brackets from 408 values",
+      "count": "408"
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.795574",
+      "action": "standardize_missing",
+      "details": "Standardized 783 missing values",
+      "count": "783"
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.801928",
+      "action": "clean_dates",
+      "details": "A3_DecisionDate: 66 valid, 0 invalid",
+      "count": 66
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.806209",
+      "action": "normalize_currency",
+      "details": "Converted 52 amounts to EUR",
+      "count": 52
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.806724",
+      "action": "clean_articles",
+      "details": "A34_GDPREvaluated: 0 cleaned",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.806944",
+      "action": "clean_articles",
+      "details": "A35_GDPRViolated: 0 cleaned",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.816369",
+      "action": "expand_a35_articles",
+      "details": "Created 16 top-level article indicators",
+      "count": 16
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.817890",
+      "action": "convert_yes_no_binary",
+      "details": "Created 9 binary columns",
+      "count": 9
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.819722",
+      "action": "tri_state_pos_bin",
+      "details": "Created 14 pos bins",
+      "count": 14
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.829542",
+      "action": "one_hot_enums",
+      "details": "Created 82 enum dummies",
+      "count": 82
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.832619",
+      "action": "split_multi_select",
+      "details": "A17_SensitiveDataTypes: 11 indicators (fixed)",
+      "count": 11
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.835940",
+      "action": "split_multi_select",
+      "details": "A19_VulnerableSubjects: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.839380",
+      "action": "split_multi_select",
+      "details": "A20_LegalBasis: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.840390",
+      "action": "split_multi_select",
+      "details": "A22_TransferMechanism: 6 indicators (fixed)",
+      "count": 6
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.842653",
+      "action": "split_multi_select",
+      "details": "A32_RightsInvolved: 7 indicators (fixed)",
+      "count": 7
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.850631",
+      "action": "split_multi_select",
+      "details": "A45_SanctionType: 9 indicators (fixed)",
+      "count": 9
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.852279",
+      "action": "validate_consistency",
+      "details": "Fixed 0 logical inconsistencies",
+      "count": 0
+    },
+    {
+      "timestamp": "2025-09-21T10:12:14.882120",
+      "action": "remove_low_quality",
+      "details": "Removed 0 low-quality rows",
+      "count": "0"
+    }
+  ],
+  "currency_rates_used": {
+    "NOK": 0.092,
+    "SEK": 0.086,
+    "DKK": 0.134,
+    "PLN": 0.23,
+    "CZK": 0.041,
+    "HUF": 0.0025,
+    "EUR": 1.0
+  }
+}

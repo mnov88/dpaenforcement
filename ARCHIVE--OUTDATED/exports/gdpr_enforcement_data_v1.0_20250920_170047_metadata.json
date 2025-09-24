@@ -1,0 +1,1279 @@
+{
+  "export_timestamp": "2025-09-20T17:00:47.969973",
+  "dataset_info": {
+    "rows": 78,
+    "columns": 88,
+    "column_names": [
+      "ID",
+      "A1_Country",
+      "A2_Authority",
+      "A3_DecisionDate",
+      "A4_CaseTrigger",
+      "A5_CrossBorder",
+      "A6_DPARole",
+      "A7_IsAppeal",
+      "A8_AppealSuccess",
+      "A9_PriorInfringements",
+      "A10_DefendantCount",
+      "A11_DefendantName",
+      "A12_DefendantRole",
+      "A13_InstitutionalIdentity",
+      "A14_EconomicSector",
+      "A15_DefendantCategory",
+      "A16_SensitiveData",
+      "A17_SensitiveDataTypes",
+      "A18_Cookies",
+      "A19_VulnerableSubjects",
+      "A20_LegalBasis",
+      "A21_DataTransfers",
+      "A22_TransferMechanism",
+      "A23_HighRiskProcessing",
+      "A24_PowerImbalance",
+      "A25_SubjectsAffected",
+      "A26_InfringementDuration",
+      "A27_DamageEstablished",
+      "A28_DPIARequired",
+      "A29_SecurityMeasures",
+      "A30_DataMinimization",
+      "A31_SubjectRightsRequests",
+      "A32_RightsInvolved",
+      "A33_TransparencyObligations",
+      "A34_GDPREvaluated",
+      "A35_GDPRViolated",
+      "A36_NoInfringement",
+      "A37_LegalBasisInvalid",
+      "A38_NegligenceEstablished",
+      "A39_ManagementAuthorization",
+      "A40_DefendantCooperation",
+      "A41_MitigatingMeasures",
+      "A42_PriorNonCompliance",
+      "A43_FinancialBenefit",
+      "A44_PriorMeasuresConsidered",
+      "A45_SanctionType",
+      "A46_FineAmount",
+      "A47_FineCurrency",
+      "A48_EDPBGuidelines",
+      "A49_FineCalculationFactors",
+      "A50_CaseSummary",
+      "A46_FineAmount_EUR",
+      "SensitiveType_Criminal",
+      "SensitiveType_Health",
+      "SensitiveType_Other",
+      "SensitiveType_Political",
+      "SensitiveType_Racial_Ethnic",
+      "SensitiveType_Religious",
+      "SensitiveType_Sexual",
+      "SensitiveType_Trade_Union",
+      "VulnerableSubject_Children",
+      "VulnerableSubject_Children|Patients",
+      "VulnerableSubject_Elderly",
+      "VulnerableSubject_Employees",
+      "VulnerableSubject_Other_Vulnerable",
+      "VulnerableSubject_Patients",
+      "VulnerableSubject_Students",
+      "LegalBasis_Consent",
+      "LegalBasis_Contract",
+      "LegalBasis_Legal_Obligation",
+      "LegalBasis_Legitimate_Interest",
+      "LegalBasis_Not_Specified",
+      "LegalBasis_Public_Task",
+      "TransferMech_None_Specified",
+      "TransferMech_Standard_Contractual_Clauses",
+      "Right_Access",
+      "Right_Automated_Decision_Making",
+      "Right_Erasure",
+      "Right_Objection",
+      "Right_Portability",
+      "Right_Rectification",
+      "Right_Restrict_Processing",
+      "Sanction_Compliance_Order",
+      "Sanction_Fine",
+      "Sanction_Fine|Compliance_Order",
+      "Sanction_Processing_Ban_Permanent",
+      "Sanction_Processing_Ban_Temporary",
+      "Sanction_Reprimand"
+    ],
+    "data_types": {
+      "ID": "object",
+      "A1_Country": "object",
+      "A2_Authority": "object",
+      "A3_DecisionDate": "object",
+      "A4_CaseTrigger": "object",
+      "A5_CrossBorder": "object",
+      "A6_DPARole": "object",
+      "A7_IsAppeal": "object",
+      "A8_AppealSuccess": "object",
+      "A9_PriorInfringements": "object",
+      "A10_DefendantCount": "float64",
+      "A11_DefendantName": "object",
+      "A12_DefendantRole": "object",
+      "A13_InstitutionalIdentity": "object",
+      "A14_EconomicSector": "object",
+      "A15_DefendantCategory": "object",
+      "A16_SensitiveData": "object",
+      "A17_SensitiveDataTypes": "object",
+      "A18_Cookies": "object",
+      "A19_VulnerableSubjects": "object",
+      "A20_LegalBasis": "object",
+      "A21_DataTransfers": "object",
+      "A22_TransferMechanism": "object",
+      "A23_HighRiskProcessing": "object",
+      "A24_PowerImbalance": "object",
+      "A25_SubjectsAffected": "object",
+      "A26_InfringementDuration": "object",
+      "A27_DamageEstablished": "object",
+      "A28_DPIARequired": "object",
+      "A29_SecurityMeasures": "object",
+      "A30_DataMinimization": "object",
+      "A31_SubjectRightsRequests": "object",
+      "A32_RightsInvolved": "object",
+      "A33_TransparencyObligations": "object",
+      "A34_GDPREvaluated": "object",
+      "A35_GDPRViolated": "object",
+      "A36_NoInfringement": "object",
+      "A37_LegalBasisInvalid": "object",
+      "A38_NegligenceEstablished": "object",
+      "A39_ManagementAuthorization": "object",
+      "A40_DefendantCooperation": "object",
+      "A41_MitigatingMeasures": "object",
+      "A42_PriorNonCompliance": "object",
+      "A43_FinancialBenefit": "object",
+      "A44_PriorMeasuresConsidered": "object",
+      "A45_SanctionType": "object",
+      "A46_FineAmount": "float64",
+      "A47_FineCurrency": "object",
+      "A48_EDPBGuidelines": "object",
+      "A49_FineCalculationFactors": "object",
+      "A50_CaseSummary": "object",
+      "A46_FineAmount_EUR": "float64",
+      "SensitiveType_Criminal": "int64",
+      "SensitiveType_Health": "int64",
+      "SensitiveType_Other": "int64",
+      "SensitiveType_Political": "int64",
+      "SensitiveType_Racial_Ethnic": "int64",
+      "SensitiveType_Religious": "int64",
+      "SensitiveType_Sexual": "int64",
+      "SensitiveType_Trade_Union": "int64",
+      "VulnerableSubject_Children": "int64",
+      "VulnerableSubject_Children|Patients": "int64",
+      "VulnerableSubject_Elderly": "int64",
+      "VulnerableSubject_Employees": "int64",
+      "VulnerableSubject_Other_Vulnerable": "int64",
+      "VulnerableSubject_Patients": "int64",
+      "VulnerableSubject_Students": "int64",
+      "LegalBasis_Consent": "int64",
+      "LegalBasis_Contract": "int64",
+      "LegalBasis_Legal_Obligation": "int64",
+      "LegalBasis_Legitimate_Interest": "int64",
+      "LegalBasis_Not_Specified": "int64",
+      "LegalBasis_Public_Task": "int64",
+      "TransferMech_None_Specified": "int64",
+      "TransferMech_Standard_Contractual_Clauses": "int64",
+      "Right_Access": "int64",
+      "Right_Automated_Decision_Making": "int64",
+      "Right_Erasure": "int64",
+      "Right_Objection": "int64",
+      "Right_Portability": "int64",
+      "Right_Rectification": "int64",
+      "Right_Restrict_Processing": "int64",
+      "Sanction_Compliance_Order": "int64",
+      "Sanction_Fine": "int64",
+      "Sanction_Fine|Compliance_Order": "int64",
+      "Sanction_Processing_Ban_Permanent": "int64",
+      "Sanction_Processing_Ban_Temporary": "int64",
+      "Sanction_Reprimand": "int64"
+    },
+    "memory_usage_bytes": "294178"
+  },
+  "data_quality_summary": {
+    "missing_values_per_column": {
+      "ID": 0,
+      "A1_Country": 2,
+      "A2_Authority": 2,
+      "A3_DecisionDate": 12,
+      "A4_CaseTrigger": 5,
+      "A5_CrossBorder": 9,
+      "A6_DPARole": 71,
+      "A7_IsAppeal": 0,
+      "A8_AppealSuccess": 67,
+      "A9_PriorInfringements": 3,
+      "A10_DefendantCount": 2,
+      "A11_DefendantName": 6,
+      "A12_DefendantRole": 13,
+      "A13_InstitutionalIdentity": 17,
+      "A14_EconomicSector": 30,
+      "A15_DefendantCategory": 10,
+      "A16_SensitiveData": 17,
+      "A17_SensitiveDataTypes": 53,
+      "A18_Cookies": 11,
+      "A19_VulnerableSubjects": 3,
+      "A20_LegalBasis": 3,
+      "A21_DataTransfers": 56,
+      "A22_TransferMechanism": 73,
+      "A23_HighRiskProcessing": 2,
+      "A24_PowerImbalance": 2,
+      "A25_SubjectsAffected": 37,
+      "A26_InfringementDuration": 23,
+      "A27_DamageEstablished": 18,
+      "A28_DPIARequired": 2,
+      "A29_SecurityMeasures": 2,
+      "A30_DataMinimization": 2,
+      "A31_SubjectRightsRequests": 9,
+      "A32_RightsInvolved": 62,
+      "A33_TransparencyObligations": 2,
+      "A34_GDPREvaluated": 11,
+      "A35_GDPRViolated": 20,
+      "A36_NoInfringement": 0,
+      "A37_LegalBasisInvalid": 2,
+      "A38_NegligenceEstablished": 3,
+      "A39_ManagementAuthorization": 5,
+      "A40_DefendantCooperation": 2,
+      "A41_MitigatingMeasures": 7,
+      "A42_PriorNonCompliance": 4,
+      "A43_FinancialBenefit": 7,
+      "A44_PriorMeasuresConsidered": 3,
+      "A45_SanctionType": 15,
+      "A46_FineAmount": 3,
+      "A47_FineCurrency": 26,
+      "A48_EDPBGuidelines": 14,
+      "A49_FineCalculationFactors": 33,
+      "A50_CaseSummary": 2,
+      "A46_FineAmount_EUR": 26,
+      "SensitiveType_Criminal": 0,
+      "SensitiveType_Health": 0,
+      "SensitiveType_Other": 0,
+      "SensitiveType_Political": 0,
+      "SensitiveType_Racial_Ethnic": 0,
+      "SensitiveType_Religious": 0,
+      "SensitiveType_Sexual": 0,
+      "SensitiveType_Trade_Union": 0,
+      "VulnerableSubject_Children": 0,
+      "VulnerableSubject_Children|Patients": 0,
+      "VulnerableSubject_Elderly": 0,
+      "VulnerableSubject_Employees": 0,
+      "VulnerableSubject_Other_Vulnerable": 0,
+      "VulnerableSubject_Patients": 0,
+      "VulnerableSubject_Students": 0,
+      "LegalBasis_Consent": 0,
+      "LegalBasis_Contract": 0,
+      "LegalBasis_Legal_Obligation": 0,
+      "LegalBasis_Legitimate_Interest": 0,
+      "LegalBasis_Not_Specified": 0,
+      "LegalBasis_Public_Task": 0,
+      "TransferMech_None_Specified": 0,
+      "TransferMech_Standard_Contractual_Clauses": 0,
+      "Right_Access": 0,
+      "Right_Automated_Decision_Making": 0,
+      "Right_Erasure": 0,
+      "Right_Objection": 0,
+      "Right_Portability": 0,
+      "Right_Rectification": 0,
+      "Right_Restrict_Processing": 0,
+      "Sanction_Compliance_Order": 0,
+      "Sanction_Fine": 0,
+      "Sanction_Fine|Compliance_Order": 0,
+      "Sanction_Processing_Ban_Permanent": 0,
+      "Sanction_Processing_Ban_Temporary": 0,
+      "Sanction_Reprimand": 0
+    },
+    "total_missing_values": "809",
+    "completeness_percentage": 88.21
+  },
+  "column_statistics": {
+    "A10_DefendantCount": {
+      "type": "numeric",
+      "min": 1.0,
+      "max": 3.0,
+      "mean": 1.0526315789473684,
+      "median": 1.0,
+      "std": 0.27783625115549687,
+      "unique_values": 3
+    },
+    "A46_FineAmount": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 100000000.0,
+      "mean": 2337380.0,
+      "median": 150000.0,
+      "std": 11755226.191059573,
+      "unique_values": 23
+    },
+    "A46_FineAmount_EUR": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 9200000.0,
+      "mean": 310213.46153846156,
+      "median": 32200.0,
+      "std": 1291104.6662556056,
+      "unique_values": 23
+    },
+    "SensitiveType_Criminal": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469094,
+      "unique_values": 2
+    },
+    "SensitiveType_Health": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21794871794871795,
+      "median": 0.0,
+      "std": 0.41552457527885484,
+      "unique_values": 2
+    },
+    "SensitiveType_Other": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469092,
+      "unique_values": 2
+    },
+    "SensitiveType_Political": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445958,
+      "unique_values": 2
+    },
+    "SensitiveType_Racial_Ethnic": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469097,
+      "unique_values": 2
+    },
+    "SensitiveType_Religious": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469094,
+      "unique_values": 2
+    },
+    "SensitiveType_Sexual": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469097,
+      "unique_values": 2
+    },
+    "SensitiveType_Trade_Union": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445958,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Children": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.19230769230769232,
+      "median": 0.0,
+      "std": 0.3966644140109588,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Children|Patients": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445956,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Elderly": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445958,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Employees": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21794871794871795,
+      "median": 0.0,
+      "std": 0.41552457527885484,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Other_Vulnerable": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0641025641025641,
+      "median": 0.0,
+      "std": 0.2465209134587992,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Patients": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.02564102564102564,
+      "median": 0.0,
+      "std": 0.15908496254525537,
+      "unique_values": 2
+    },
+    "VulnerableSubject_Students": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07692307692307693,
+      "median": 0.0,
+      "std": 0.2681940937606046,
+      "unique_values": 2
+    },
+    "LegalBasis_Consent": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.05128205128205128,
+      "median": 0.0,
+      "std": 0.2220001110000833,
+      "unique_values": 2
+    },
+    "LegalBasis_Contract": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0641025641025641,
+      "median": 0.0,
+      "std": 0.2465209134587992,
+      "unique_values": 2
+    },
+    "LegalBasis_Legal_Obligation": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07692307692307693,
+      "median": 0.0,
+      "std": 0.26819409376060455,
+      "unique_values": 2
+    },
+    "LegalBasis_Legitimate_Interest": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.21794871794871795,
+      "median": 0.0,
+      "std": 0.41552457527885484,
+      "unique_values": 2
+    },
+    "LegalBasis_Not_Specified": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5769230769230769,
+      "median": 1.0,
+      "std": 0.4972451580988469,
+      "unique_values": 2
+    },
+    "LegalBasis_Public_Task": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.10256410256410256,
+      "median": 0.0,
+      "std": 0.3053524082762296,
+      "unique_values": 2
+    },
+    "TransferMech_None_Specified": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.02564102564102564,
+      "median": 0.0,
+      "std": 0.15908496254525537,
+      "unique_values": 2
+    },
+    "TransferMech_Standard_Contractual_Clauses": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469094,
+      "unique_values": 2
+    },
+    "Right_Access": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.07692307692307693,
+      "median": 0.0,
+      "std": 0.2681940937606046,
+      "unique_values": 2
+    },
+    "Right_Automated_Decision_Making": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445956,
+      "unique_values": 2
+    },
+    "Right_Erasure": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.0641025641025641,
+      "median": 0.0,
+      "std": 0.2465209134587992,
+      "unique_values": 2
+    },
+    "Right_Objection": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.08974358974358974,
+      "median": 0.0,
+      "std": 0.2876640101760781,
+      "unique_values": 2
+    },
+    "Right_Portability": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445956,
+      "unique_values": 2
+    },
+    "Right_Rectification": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.02564102564102564,
+      "median": 0.0,
+      "std": 0.1590849625452554,
+      "unique_values": 2
+    },
+    "Right_Restrict_Processing": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445956,
+      "unique_values": 2
+    },
+    "Sanction_Compliance_Order": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.32051282051282054,
+      "median": 0.0,
+      "std": 0.4696942842027362,
+      "unique_values": 2
+    },
+    "Sanction_Fine": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.5641025641025641,
+      "median": 1.0,
+      "std": 0.49908340894508724,
+      "unique_values": 2
+    },
+    "Sanction_Fine|Compliance_Order": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469092,
+      "unique_values": 2
+    },
+    "Sanction_Processing_Ban_Permanent": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.01282051282051282,
+      "median": 0.0,
+      "std": 0.11322770341445958,
+      "unique_values": 2
+    },
+    "Sanction_Processing_Ban_Temporary": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.038461538461538464,
+      "median": 0.0,
+      "std": 0.19355241528469097,
+      "unique_values": 2
+    },
+    "Sanction_Reprimand": {
+      "type": "numeric",
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.11538461538461539,
+      "median": 0.0,
+      "std": 0.32155342230584855,
+      "unique_values": 2
+    },
+    "ID": {
+      "type": "categorical",
+      "unique_values": 78,
+      "most_frequent": "Norway_1",
+      "most_frequent_count": 1,
+      "value_distribution": {
+        "Norway_1": 1,
+        "Norway_54": 1,
+        "Norway_61": 1,
+        "Norway_60": 1,
+        "Norway_59": 1,
+        "Norway_58": 1,
+        "Norway_57": 1,
+        "Norway_56": 1,
+        "Norway_55": 1,
+        "Norway_53": 1
+      }
+    },
+    "A1_Country": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "NO",
+      "most_frequent_count": 75,
+      "value_distribution": {
+        "NO": 75,
+        "EE": 1
+      }
+    },
+    "A2_Authority": {
+      "type": "categorical",
+      "unique_values": 16,
+      "most_frequent": "Datatilsynet",
+      "most_frequent_count": 26,
+      "value_distribution": {
+        "Datatilsynet": 26,
+        "Norwegian Data Protection Authority": 19,
+        "The Norwegian Data Protection Authority": 12,
+        "Privacy Board": 4,
+        "The Data Inspectorate": 2,
+        "The Privacy Board": 2,
+        "Norwegian Privacy Board": 2,
+        "The Norwegian Data Protection Authority (Datatilsynet)": 1,
+        "Norwegian Data Inspectorate": 1,
+        "Data Inspectorate": 1
+      }
+    },
+    "A3_DecisionDate": {
+      "type": "categorical",
+      "unique_values": 60,
+      "most_frequent": "20-09-2021",
+      "most_frequent_count": 2,
+      "value_distribution": {
+        "20-09-2021": 2,
+        "15-03-2021": 2,
+        "14-07-2023": 2,
+        "09-01-2023": 2,
+        "22-06-2021": 2,
+        "21-08-2020": 2,
+        "01-03-2023": 1,
+        "13-12-2021": 1,
+        "26-07-2023": 1,
+        "08-03-2023": 1
+      }
+    },
+    "A4_CaseTrigger": {
+      "type": "categorical",
+      "unique_values": 4,
+      "most_frequent": "COMPLAINT",
+      "most_frequent_count": 39,
+      "value_distribution": {
+        "COMPLAINT": 39,
+        "BREACH_NOTIFICATION": 20,
+        "EX_OFFICIO_INVESTIGATION": 9,
+        "OTHER": 5
+      }
+    },
+    "A5_CrossBorder": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 62,
+      "value_distribution": {
+        "N": 62,
+        "Y": 7
+      }
+    },
+    "A6_DPARole": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "Lead_Authority",
+      "most_frequent_count": 5,
+      "value_distribution": {
+        "Lead_Authority": 5,
+        "Concerned_Authority": 2
+      }
+    },
+    "A7_IsAppeal": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 67,
+      "value_distribution": {
+        "N": 67,
+        "Y": 11
+      }
+    },
+    "A8_AppealSuccess": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "Unsuccessful",
+      "most_frequent_count": 6,
+      "value_distribution": {
+        "Unsuccessful": 6,
+        "Successful": 5
+      }
+    },
+    "A9_PriorInfringements": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "NOT_DISCUSSED",
+      "most_frequent_count": 48,
+      "value_distribution": {
+        "NOT_DISCUSSED": 48,
+        "DISCUSSED_NO_PRIOR_FOUND": 23,
+        "PRIOR_INFRINGER_PRESENT": 4
+      }
+    },
+    "A11_DefendantName": {
+      "type": "categorical",
+      "unique_values": 70,
+      "most_frequent": "Meta Platforms Ireland Limited",
+      "most_frequent_count": 2,
+      "value_distribution": {
+        "Meta Platforms Ireland Limited": 2,
+        "Telenor ASA": 2,
+        "SATS ASA": 1,
+        "The child protection service in X": 1,
+        "\u00d8stre Toten municipality": 1,
+        "Microsoft Corporation": 1,
+        "EAS / Elektro & Automasjon Systemer AS": 1,
+        "telenor.com": 1,
+        "The Storting": 1,
+        "The Norwegian Prison and Probation Service": 1
+      }
+    },
+    "A12_DefendantRole": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Controller",
+      "most_frequent_count": 63,
+      "value_distribution": {
+        "Controller": 63,
+        "Joint_Controller": 1,
+        "Processor": 1
+      }
+    },
+    "A13_InstitutionalIdentity": {
+      "type": "categorical",
+      "unique_values": 7,
+      "most_frequent": "S.11 - Non-financial corporations",
+      "most_frequent_count": 32,
+      "value_distribution": {
+        "S.11 - Non-financial corporations": 32,
+        "S.13 - General government": 13,
+        "S.1313 - Local government": 8,
+        "S.12 - Financial corporations": 4,
+        "S.1311 - Central government": 2,
+        "S.15 - Non-profit institutions serving households": 1,
+        "S.15 - Non-profit institutions serving households (NPISH)": 1
+      }
+    },
+    "A14_EconomicSector": {
+      "type": "categorical",
+      "unique_values": 26,
+      "most_frequent": "Code: 8411, Description: General public administration activities, Level: 4",
+      "most_frequent_count": 16,
+      "value_distribution": {
+        "Code: 8411, Description: General public administration activities, Level: 4": 16,
+        "Code: 8430, Description: Compulsory social security activities, Level: 4": 3,
+        "Code: 8610, Description: Hospital activities, Level: 4": 2,
+        "Code: 6530, Description: Pension funding, Level: 4": 2,
+        "Code: 6419, Description: Other monetary intermediation, Level: 4": 2,
+        "Code: 7310, Description: Advertising, Level: 4": 2,
+        "Code: 9491, Description: Activities of religious organizations, Level: 4": 2,
+        "Code: 9311, Description: Operation of sports facilities, Level: 4": 1,
+        "Code: O, Description: Public administration and defense; compulsory social security, Level: 1": 1,
+        "Code: 8530, Description: Higher education, Level: 4": 1
+      }
+    },
+    "A15_DefendantCategory": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "BUSINESS",
+      "most_frequent_count": 39,
+      "value_distribution": {
+        "BUSINESS": 39,
+        "PUBLIC_AUTHORITY": 25,
+        "NON_PROFIT": 4
+      }
+    },
+    "A16_SensitiveData": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 36,
+      "value_distribution": {
+        "N": 36,
+        "Y": 25
+      }
+    },
+    "A17_SensitiveDataTypes": {
+      "type": "categorical",
+      "unique_values": 9,
+      "most_frequent": "Health",
+      "most_frequent_count": 14,
+      "value_distribution": {
+        "Health": 14,
+        "Other": 3,
+        "Sexual": 2,
+        "Religious": 1,
+        "Criminal": 1,
+        "Health, Racial_Ethnic, Political, Religious, Trade_Union, Sexual": 1,
+        "Health, Criminal": 1,
+        "Health, Religious, Racial_Ethnic, Criminal": 1,
+        "Racial_Ethnic": 1
+      }
+    },
+    "A18_Cookies": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 63,
+      "value_distribution": {
+        "N": 63,
+        "Y": 4
+      }
+    },
+    "A19_VulnerableSubjects": {
+      "type": "categorical",
+      "unique_values": 13,
+      "most_frequent": "None_Mentioned",
+      "most_frequent_count": 35,
+      "value_distribution": {
+        "None_Mentioned": 35,
+        "Employees": 13,
+        "Children": 10,
+        "Other_Vulnerable": 4,
+        "Students": 3,
+        "Patients": 2,
+        "Children, Employees": 2,
+        "Children,Employees": 1,
+        "Children|Patients": 1,
+        "Children, Students": 1
+      }
+    },
+    "A20_LegalBasis": {
+      "type": "categorical",
+      "unique_values": 11,
+      "most_frequent": "Not_Specified",
+      "most_frequent_count": 44,
+      "value_distribution": {
+        "Not_Specified": 44,
+        "Legitimate_Interest": 13,
+        "Legal_Obligation, Public_Task": 4,
+        "Public_Task": 4,
+        "Consent": 3,
+        "Contract, Legitimate_Interest": 2,
+        "Consent, Contract, Legitimate_Interest": 1,
+        "Contract, Legal_Obligation": 1,
+        "Legitimate_Interest, Not_Specified": 1,
+        "Contract": 1
+      }
+    },
+    "A21_DataTransfers": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 17,
+      "value_distribution": {
+        "N": 17,
+        "Y": 5
+      }
+    },
+    "A22_TransferMechanism": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "Standard_Contractual_Clauses",
+      "most_frequent_count": 3,
+      "value_distribution": {
+        "Standard_Contractual_Clauses": 3,
+        "None_Specified": 2
+      }
+    },
+    "A23_HighRiskProcessing": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 71,
+      "value_distribution": {
+        "Not_Assessed": 71,
+        "Y": 3,
+        "N": 2
+      }
+    },
+    "A24_PowerImbalance": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "Not_Discussed",
+      "most_frequent_count": 73,
+      "value_distribution": {
+        "Not_Discussed": 73,
+        "Y": 3
+      }
+    },
+    "A25_SubjectsAffected": {
+      "type": "categorical",
+      "unique_values": 21,
+      "most_frequent": "1",
+      "most_frequent_count": 19,
+      "value_distribution": {
+        "1": 19,
+        "3200000": 2,
+        "1053": 2,
+        "700000": 1,
+        "15": 1,
+        "27": 1,
+        "20": 1,
+        "10": 1,
+        "535900-1800000": 1,
+        "13": 1
+      }
+    },
+    "A26_InfringementDuration": {
+      "type": "categorical",
+      "unique_values": 52,
+      "most_frequent": "ongoing since 2018",
+      "most_frequent_count": 2,
+      "value_distribution": {
+        "ongoing since 2018": 2,
+        "2000-2015": 2,
+        "Single incident": 2,
+        "approximately six weeks": 1,
+        "Single incident on 27 August 2019": 1,
+        "10 minutes": 1,
+        "Single incident on 01-04-2020": 1,
+        "18 June 2018 to end of 2020": 1,
+        "Occurred on 2 September 2020; duration not specified": 1,
+        "16 July 2020 to 15 January 2021": 1
+      }
+    },
+    "A27_DamageEstablished": {
+      "type": "categorical",
+      "unique_values": 1,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 60,
+      "value_distribution": {
+        "Not_Assessed": 60
+      }
+    },
+    "A28_DPIARequired": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 72,
+      "value_distribution": {
+        "Not_Assessed": 72,
+        "Required_Not_Conducted": 3,
+        "Required_And_Conducted": 1
+      }
+    },
+    "A29_SecurityMeasures": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Inadequate",
+      "most_frequent_count": 39,
+      "value_distribution": {
+        "Inadequate": 39,
+        "Not_Evaluated": 35,
+        "Adequate": 2
+      }
+    },
+    "A30_DataMinimization": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Evaluated",
+      "most_frequent_count": 70,
+      "value_distribution": {
+        "Not_Evaluated": 70,
+        "Violated": 4,
+        "Compliant": 2
+      }
+    },
+    "A31_SubjectRightsRequests": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 53,
+      "value_distribution": {
+        "N": 53,
+        "Y": 16
+      }
+    },
+    "A32_RightsInvolved": {
+      "type": "categorical",
+      "unique_values": 6,
+      "most_frequent": "Objection",
+      "most_frequent_count": 6,
+      "value_distribution": {
+        "Objection": 6,
+        "Access": 4,
+        "Erasure": 3,
+        "Access, Erasure": 1,
+        "Access, Rectification, Erasure, Portability, Objection, Restrict_Processing, Automated_Decision_Making": 1,
+        "Rectification": 1
+      }
+    },
+    "A33_TransparencyObligations": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Evaluated",
+      "most_frequent_count": 59,
+      "value_distribution": {
+        "Not_Evaluated": 59,
+        "Violated": 16,
+        "Compliant": 1
+      }
+    },
+    "A34_GDPREvaluated": {
+      "type": "categorical",
+      "unique_values": 65,
+      "most_frequent": "Art. 6(1), Art. 5(1)(a)",
+      "most_frequent_count": 2,
+      "value_distribution": {
+        "Art. 6(1), Art. 5(1)(a)": 2,
+        "Art. 5(1)(c), Art. 6, Art. 9": 2,
+        "Art. 15(1), Art. 4(1), Art. 55": 1,
+        "Art. 6, Art. 14": 1,
+        "Art. 5(1)(a), Art. 5(2), Art. 6(1)(f), Art. 24": 1,
+        "Art. 57(1)(a), Art. 57(1)(f), Art. 6(1)(e), Art. 9(1), Art. 9(2)(b)": 1,
+        "Art. 5(1)(a), Art. 5(1)(f), Art. 6(1), Art. 6(3)": 1,
+        "Art. 5(1)(f), Art. 24, Art. 32": 1,
+        "Art. 5(1)(a), Art. 5(1)(e), Art. 6(1), Art. 12(1), Art. 12(3), Art. 13(1)(c), Art. 13(2)(a), Art. 15, Art. 17": 1,
+        "Art. 33(1)": 1
+      }
+    },
+    "A35_GDPRViolated": {
+      "type": "categorical",
+      "unique_values": 51,
+      "most_frequent": "Art. 6(1), Art. 5(1)(a)",
+      "most_frequent_count": 3,
+      "value_distribution": {
+        "Art. 6(1), Art. 5(1)(a)": 3,
+        "Art. 44": 2,
+        "Art. 32, Art. 24": 2,
+        "Art. 6, Art. 9": 2,
+        "Art. 6(1)": 2,
+        "Art. 6(1)(f)": 2,
+        "Art. 5(1)(a), Art. 5(1)(e), Art. 6(1), Art. 12(1), Art. 12(3), Art. 13(1)(c), Art. 13(2)(a), Art. 15, Art. 17": 1,
+        "Art. 6, Art. 14": 1,
+        "Art. 6(1)(e), Art. 6(3), Art. 15": 1,
+        "Art. 32, Art. 33(1), Art. 33(5)": 1
+      }
+    },
+    "A36_NoInfringement": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 65,
+      "value_distribution": {
+        "N": 65,
+        "Y": 13
+      }
+    },
+    "A37_LegalBasisInvalid": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Y",
+      "most_frequent_count": 39,
+      "value_distribution": {
+        "Y": 39,
+        "Not_Evaluated": 27,
+        "N": 10
+      }
+    },
+    "A38_NegligenceEstablished": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 40,
+      "value_distribution": {
+        "Not_Assessed": 40,
+        "Y": 27,
+        "N": 8
+      }
+    },
+    "A39_ManagementAuthorization": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 64,
+      "value_distribution": {
+        "Not_Assessed": 64,
+        "N": 5,
+        "Y": 4
+      }
+    },
+    "A40_DefendantCooperation": {
+      "type": "categorical",
+      "unique_values": 4,
+      "most_frequent": "Cooperative",
+      "most_frequent_count": 49,
+      "value_distribution": {
+        "Cooperative": 49,
+        "Not_Discussed": 21,
+        "Partially_Cooperative": 4,
+        "Uncooperative": 2
+      }
+    },
+    "A41_MitigatingMeasures": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "During_Investigation",
+      "most_frequent_count": 38,
+      "value_distribution": {
+        "During_Investigation": 38,
+        "Not_Discussed": 23,
+        "Before_Investigation": 10
+      }
+    },
+    "A42_PriorNonCompliance": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 44,
+      "value_distribution": {
+        "Not_Assessed": 44,
+        "N": 27,
+        "Y": 3
+      }
+    },
+    "A43_FinancialBenefit": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Not_Assessed",
+      "most_frequent_count": 53,
+      "value_distribution": {
+        "Not_Assessed": 53,
+        "N": 17,
+        "Y": 1
+      }
+    },
+    "A44_PriorMeasuresConsidered": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Mitigating_Factor",
+      "most_frequent_count": 37,
+      "value_distribution": {
+        "Mitigating_Factor": 37,
+        "Not_Considered": 24,
+        "Neutral": 14
+      }
+    },
+    "A45_SanctionType": {
+      "type": "categorical",
+      "unique_values": 12,
+      "most_frequent": "Fine",
+      "most_frequent_count": 26,
+      "value_distribution": {
+        "Fine": 26,
+        "Fine, Compliance_Order": 15,
+        "Reprimand": 7,
+        "Compliance_Order": 5,
+        "Fine|Compliance_Order": 3,
+        "Fine,Compliance_Order": 1,
+        "Processing_Ban_Permanent": 1,
+        "Compliance_Order, Processing_Ban_Temporary": 1,
+        "Reprimand, Compliance_Order": 1,
+        "Fine, Reprimand, Compliance_Order": 1
+      }
+    },
+    "A47_FineCurrency": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "NOK",
+      "most_frequent_count": 47,
+      "value_distribution": {
+        "NOK": 47,
+        "EUR": 5
+      }
+    },
+    "A48_EDPBGuidelines": {
+      "type": "categorical",
+      "unique_values": 2,
+      "most_frequent": "N",
+      "most_frequent_count": 54,
+      "value_distribution": {
+        "N": 54,
+        "Y": 10
+      }
+    },
+    "A49_FineCalculationFactors": {
+      "type": "categorical",
+      "unique_values": 3,
+      "most_frequent": "Y",
+      "most_frequent_count": 35,
+      "value_distribution": {
+        "Y": 35,
+        "N": 9,
+        "Partially": 1
+      }
+    },
+    "A50_CaseSummary": {
+      "type": "categorical",
+      "unique_values": 76,
+      "most_frequent": "Datatilsynet fined SATS ASA NOK 10 million after complaints revealed mishandled access/erasure requests, opaque retention/legal bases, and unlawful processing of training history data. The DPA found breaches of Articles 5, 6, 12, 13, 15 and 17, noted systemic negligence, and acted as lead authority for cross-border processing. Although SATS took some remedial steps during the investigation, the fine was set after a detailed Art. 83(2) assessment to ensure deterrence.",
+      "most_frequent_count": 1,
+      "value_distribution": {
+        "Datatilsynet fined SATS ASA NOK 10 million after complaints revealed mishandled access/erasure requests, opaque retention/legal bases, and unlawful processing of training history data. The DPA found breaches of Articles 5, 6, 12, 13, 15 and 17, noted systemic negligence, and acted as lead authority for cross-border processing. Although SATS took some remedial steps during the investigation, the fine was set after a detailed Art. 83(2) assessment to ensure deterrence.": 1,
+        "The Norwegian DPA fined the Storting NOK 2,000,000 after a September 2020 breach exposed email accounts due to lack of two-factor authentication. It found violations of GDPR Art. 32(1)(b),(d) and Art. 5(1)(f), noting health data could have been compromised and that the director acted with gross negligence. Post-incident measures (password rules, logging, training, and MFA rollout) were considered but did not prevent the sanction.": 1,
+        "A appealed the Norwegian DPA\u2019s decision to close her complaint about alleged unlawful access and entries in her son\u2019s child welfare record by the municipality of X. The Privacy Board found the matter outside the DPA\u2019s competence under Article 57(1)(a), noting the State Administrator had already reviewed access logs and found no breach. The Board upheld the DPA\u2019s rejection and took no further action.": 1,
+        "NAV unlawfully published jobseekers\u2019 CVs to employers without a valid legal basis since 2001, affecting up to 1.8 million individuals. The DPA found breaches of GDPR Articles 6(1), 6(3) and the principles of lawfulness and confidentiality in Article 5(1)(a),(f), noting negligence and a power imbalance. A fine of 5,000,000 NOK was imposed, with NAV\u2019s remedial actions considered mitigating.": 1,
+        "A ransomware attack on \u00d8stre Toten municipality led to exfiltration and publication of large volumes of personal data, including special categories and children\u2019s data, due to inadequate security measures (no 2FA, poor logging, unprotected backups). The Norwegian DPA found violations of Art. 32, Art. 24, and Art. 5(1)(f), imposed a NOK 4,000,000 fine, and ordered implementation of a management system with risk analyses. The DPA considered the municipality\u2019s cooperation and remedial efforts as mitigating factors but emphasized the severity and scope of the breach.": 1,
+        "Appeal against the DPA\u2019s rejection of a complaint seeking identities behind IP addresses used to access A\u2019s Hotmail account. The Board held that Article 15 GDPR gives access only to the data subject\u2019s own personal data and not to third parties\u2019 identities, noting such data would be for ISPs and police via criminal procedure, not Microsoft. It concluded A had no right to further access under Article 15.": 1,
+        "The Norwegian DPA fined EAS / Elektro & Automasjon Systemer AS for conducting a credit check on an individual without a valid legitimate interest and ordered improved internal routines under Article 24. It found negligence by the general manager, highlighted the sensitivity of credit data, and assessed GDPR Article 83(2) factors, noting cooperation and lack of prior violations. The fine was reduced to NOK 200,000 considering COVID-19 impacts while ensuring deterrence.": 1,
+        "noyb complained about telenor.com\u2019s use of Google Analytics, and the Norwegian DPA\u2019s preliminary conclusion found it breached GDPR transfer rules by transferring personal data outside the EEA. The case is cross-border; a draft decision will be shared with other DPAs under EDPB coordination after parties have three weeks to comment. The DPA advises exploring alternatives to Google Analytics and notes GA4 may not resolve the identified issues.": 1,
+        "The Norwegian DPA, acting as lead authority, found that Telenor\u2019s use of Google Analytics on its website involved transfers of personal data to the U.S. without adequate safeguards, violating Article 44 GDPR. Despite SCCs and claimed supplementary measures (including IP anonymization), Google could access certain data in clear text and was subject to FISA 702; the DPA rejected a risk-based approach. Considering the tool was discontinued in January 2021, the DPA issued a reprimand.": 1,
+        "The DPA, acting ex officio, ordered the Norwegian Prison and Probation Service to establish a full processing overview, clarify allocation of controller responsibilities, and submit documented internal control due to an inadequate Article 30 protocol and lack of responsibility documentation. Relying on GDPR Article 58(2) and national provisions, the DPA noted the processing includes very sensitive and special category data and set a deadline of 21 September 2021. No fine was imposed, though a coercive fine may follow for non-compliance.": 1
+      }
+    }
+  },
+  "export_info": {
+    "version": "1.0",
+    "description": "Initial cleaned and processed GDPR enforcement dataset",
+    "export_timestamp": "2025-09-20T17:00:47.969969",
+    "git_hash": null,
+    "processing_version": "1.0.0"
+  },
+  "schema_version": "1.0",
+  "source_file": "dataNorway.csv",
+  "processing_pipeline": [
+    "data_quality_assessment.py",
+    "gdpr_schema_validation.py",
+    "enhanced_data_cleaning.py",
+    "multi_format_exporter.py"
+  ]
+}

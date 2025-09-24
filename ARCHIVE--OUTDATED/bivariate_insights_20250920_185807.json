@@ -1,0 +1,2246 @@
+{
+  "executive_summary": {
+    "analysis_overview": {
+      "total_relationships_analyzed": 91,
+      "significant_relationships": 29,
+      "strong_relationships": 30,
+      "analysis_date": "2025-09-20",
+      "scope": "Bivariate Relationship Analysis",
+      "time_period": "2017-2023"
+    },
+    "key_findings": {
+      "statistical_significance": "31.9% of relationships statistically significant",
+      "practical_significance": "30 relationships with large effect sizes",
+      "predictive_value": "Multiple factors identified as enforcement outcome predictors",
+      "business_relevance": "Clear patterns for compliance strategy optimization"
+    },
+    "critical_insights": [
+      "High interconnectedness: 31.9% of relationships show statistical significance",
+      "Strong predictive patterns: 30 relationships show large effect sizes"
+    ],
+    "business_implications": [
+      "Fine amount predictors identified - enables proactive risk management",
+      "Cooperation impact quantified - incentivizes collaborative compliance"
+    ],
+    "priority_recommendations": [
+      "Implement relationship-based risk scoring system",
+      "Focus compliance on cooperation and sensitive data controls",
+      "Develop sector-specific enforcement response strategies"
+    ],
+    "confidence_assessment": "High (based on 78 cases with robust statistical analysis)",
+    "next_steps": [
+      "Implement predictive modeling using identified relationships",
+      "Develop automated risk scoring dashboard",
+      "Conduct temporal analysis of relationship stability",
+      "Expand analysis to include new jurisdictions and time periods"
+    ]
+  },
+  "statistical_insights": [
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount",
+        "A46_FineAmount_EUR"
+      ],
+      "relationship_type": "continuous_continuous",
+      "p_value": 4.980985636516635e-175,
+      "effect_size": 0.9999999418096086,
+      "sample_size": 52,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Correlation between a46 fineamount and monetary sanctions magnitudes",
+      "statistical_details": {
+        "var1": "A46_FineAmount",
+        "var2": "A46_FineAmount_EUR",
+        "test_type": "correlation",
+        "pearson_r": 0.9999999418096086,
+        "pearson_p_value": 4.980985636516635e-175,
+        "spearman_r": 1.0,
+        "spearman_p_value": 0.0,
+        "sample_size": 52,
+        "interpretation": "Very strong correlation"
+      },
+      "finding": "Significant correlation between A46_FineAmount and A46_FineAmount_EUR (r = 1.000)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A2_Authority"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 3.0277918843951917e-18,
+      "effect_size": 0.9018499505645788,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a2 authority patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A2_Authority",
+        "test_type": "chi_square",
+        "chi2_statistic": 156.0,
+        "p_value": 3.0277918843951917e-18,
+        "degrees_of_freedom": 32,
+        "cramers_v": 0.9018499505645788,
+        "sample_size": 78,
+        "contingency_table": {
+          "Data Inspectorate": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Datatilsynet": {
+            "EE": 0,
+            "NO": 26,
+            "NaN": 0
+          },
+          "Estonian Data Protection Inspectorate": {
+            "EE": 1,
+            "NO": 0,
+            "NaN": 0
+          },
+          "Norwegian Data Inspectorate": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Norwegian Data Protection Authority": {
+            "EE": 0,
+            "NO": 19,
+            "NaN": 0
+          },
+          "Norwegian Data Protection Authority (Datatilsynet)": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Norwegian Privacy Board": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Personvernnemnda": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Privacy Board": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "Privacy Board (Personvernnemnda)": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "The Data Inspectorate": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "The Norwegian Data Inspectorate": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "The Norwegian Data Protection Authority": {
+            "EE": 0,
+            "NO": 12,
+            "NaN": 0
+          },
+          "The Norwegian Data Protection Authority (Datatilsynet)": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "The Norwegian Privacy Board": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "The Privacy Board": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 48,
+          "total_cells": 51,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A2_Authority (Cram\u00e9r's V = 0.902, \u03c7\u00b2 = 156.00)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A24_PowerImbalance"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 4.524039018164199e-16,
+      "effect_size": 0.6978165555541653,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a24 powerimbalance patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A24_PowerImbalance",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.0427397260274,
+        "p_value": 4.524039018164199e-16,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.6978165555541653,
+        "sample_size": 78,
+        "contingency_table": {
+          "Not_Discussed": {
+            "EE": 1,
+            "NO": 72,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 8,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A24_PowerImbalance (Cram\u00e9r's V = 0.698, \u03c7\u00b2 = 78.04)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A37_LegalBasisInvalid"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 3.76940792234703e-15,
+      "effect_size": 0.6969610695801366,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a37 legalbasisinvalid patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A37_LegalBasisInvalid",
+        "test_type": "chi_square",
+        "chi2_statistic": 79.88740740740741,
+        "p_value": 3.76940792234703e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6969610695801366,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 10,
+            "NaN": 0
+          },
+          "Not_Evaluated": {
+            "EE": 1,
+            "NO": 26,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 39,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 9,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A37_LegalBasisInvalid (Cram\u00e9r's V = 0.697, \u03c7\u00b2 = 79.89)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A29_SecurityMeasures"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 5.181419396173151e-15,
+      "effect_size": 0.6937947182784769,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a29 securitymeasures patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A29_SecurityMeasures",
+        "test_type": "chi_square",
+        "chi2_statistic": 79.21828571428573,
+        "p_value": 5.181419396173151e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6937947182784769,
+        "sample_size": 78,
+        "contingency_table": {
+          "Adequate": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Inadequate": {
+            "EE": 0,
+            "NO": 39,
+            "NaN": 0
+          },
+          "Not_Evaluated": {
+            "EE": 1,
+            "NO": 34,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 10,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A29_SecurityMeasures (Cram\u00e9r's V = 0.694, \u03c7\u00b2 = 79.22)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A33_TransparencyObligations"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.017729646801988e-15,
+      "effect_size": 0.6894240069750959,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a33 transparencyobligations patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A33_TransparencyObligations",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.29966101694916,
+        "p_value": 8.017729646801988e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6894240069750959,
+        "sample_size": 78,
+        "contingency_table": {
+          "Compliant": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Not_Evaluated": {
+            "EE": 1,
+            "NO": 58,
+            "NaN": 0
+          },
+          "Violated": {
+            "EE": 0,
+            "NO": 16,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 10,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A33_TransparencyObligations (Cram\u00e9r's V = 0.689, \u03c7\u00b2 = 78.30)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A30_DataMinimization"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.861069246889106e-15,
+      "effect_size": 0.6884184773813091,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a30 dataminimization patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A30_DataMinimization",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.08914285714286,
+        "p_value": 8.861069246889106e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6884184773813091,
+        "sample_size": 78,
+        "contingency_table": {
+          "Compliant": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Not_Evaluated": {
+            "EE": 1,
+            "NO": 69,
+            "NaN": 0
+          },
+          "Violated": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 11,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A30_DataMinimization (Cram\u00e9r's V = 0.688, \u03c7\u00b2 = 78.09)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A23_HighRiskProcessing"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.928266144204896e-15,
+      "effect_size": 0.6883424558046843,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a23 highriskprocessing patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A23_HighRiskProcessing",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.07323943661973,
+        "p_value": 8.928266144204896e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6883424558046843,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 70,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 11,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A23_HighRiskProcessing (Cram\u00e9r's V = 0.688, \u03c7\u00b2 = 78.07)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A28_DPIARequired"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.994084291827693e-15,
+      "effect_size": 0.6882685378883112,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a28 dpiarequired patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A28_DPIARequired",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.05777777777779,
+        "p_value": 8.994084291827693e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6882685378883112,
+        "sample_size": 78,
+        "contingency_table": {
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 71,
+            "NaN": 0
+          },
+          "Required_And_Conducted": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Required_Not_Conducted": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 11,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A28_DPIARequired (Cram\u00e9r's V = 0.688, \u03c7\u00b2 = 78.06)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A10_DefendantCount"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 9.05856397022821e-15,
+      "effect_size": 0.6881966375042428,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a10 defendantcount patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A10_DefendantCount",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.0427397260274,
+        "p_value": 9.05856397022821e-15,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.6881966375042428,
+        "sample_size": 78,
+        "contingency_table": {
+          "1.0": {
+            "EE": 1,
+            "NO": 72,
+            "NaN": 0
+          },
+          "2.0": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "3.0": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 11,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A10_DefendantCount (Cram\u00e9r's V = 0.688, \u03c7\u00b2 = 78.04)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A40_DefendantCooperation"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 9.4671700011572e-14,
+      "effect_size": 0.6810076567641722,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and compliance cooperation patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A40_DefendantCooperation",
+        "test_type": "chi_square",
+        "chi2_statistic": 78.5730612244898,
+        "p_value": 9.4671700011572e-14,
+        "degrees_of_freedom": 8,
+        "cramers_v": 0.6810076567641722,
+        "sample_size": 78,
+        "contingency_table": {
+          "Cooperative": {
+            "EE": 1,
+            "NO": 48,
+            "NaN": 0
+          },
+          "Not_Discussed": {
+            "EE": 0,
+            "NO": 21,
+            "NaN": 0
+          },
+          "Partially_Cooperative": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "Uncooperative": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 0,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.02564102564102564,
+          "cells_below_5": 13,
+          "total_cells": 15,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A40_DefendantCooperation (Cram\u00e9r's V = 0.681, \u03c7\u00b2 = 78.57)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A44_PriorMeasuresConsidered"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 9.048792993046175e-10,
+      "effect_size": 0.5590070562067073,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a44 priormeasuresconsidered patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A44_PriorMeasuresConsidered",
+        "test_type": "chi_square",
+        "chi2_statistic": 53.559999999999995,
+        "p_value": 9.048792993046175e-10,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.5590070562067073,
+        "sample_size": 78,
+        "contingency_table": {
+          "Mitigating_Factor": {
+            "EE": 0,
+            "NO": 37,
+            "NaN": 0
+          },
+          "Neutral": {
+            "EE": 0,
+            "NO": 14,
+            "NaN": 0
+          },
+          "Not_Considered": {
+            "EE": 1,
+            "NO": 23,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.038461538461538464,
+          "cells_below_5": 9,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A44_PriorMeasuresConsidered (Cram\u00e9r's V = 0.559, \u03c7\u00b2 = 53.56)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A38_NegligenceEstablished"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 1.666599208251413e-09,
+      "effect_size": 0.5511980218208873,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and negligence determination patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A38_NegligenceEstablished",
+        "test_type": "chi_square",
+        "chi2_statistic": 52.242666666666665,
+        "p_value": 1.666599208251413e-09,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.5511980218208873,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 8,
+            "NaN": 0
+          },
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 39,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 27,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.038461538461538464,
+          "cells_below_5": 9,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A38_NegligenceEstablished (Cram\u00e9r's V = 0.551, \u03c7\u00b2 = 52.24)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A9_PriorInfringements"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 1.9411653263499666e-09,
+      "effect_size": 0.5492284150076832,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "very_large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a9 priorinfringements patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A9_PriorInfringements",
+        "test_type": "chi_square",
+        "chi2_statistic": 51.91333333333333,
+        "p_value": 1.9411653263499666e-09,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.5492284150076832,
+        "sample_size": 78,
+        "contingency_table": {
+          "DISCUSSED_NO_PRIOR_FOUND": {
+            "EE": 0,
+            "NO": 23,
+            "NaN": 0
+          },
+          "NOT_DISCUSSED": {
+            "EE": 1,
+            "NO": 47,
+            "NaN": 0
+          },
+          "PRIOR_INFRINGER_PRESENT": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.038461538461538464,
+          "cells_below_5": 10,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Very strong association"
+      },
+      "finding": "Strong association between A1_Country and A9_PriorInfringements (Cram\u00e9r's V = 0.549, \u03c7\u00b2 = 51.91)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A42_PriorNonCompliance"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.134728143867983e-07,
+      "effect_size": 0.46346520905025873,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a42 priornoncompliance patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A42_PriorNonCompliance",
+        "test_type": "chi_square",
+        "chi2_statistic": 38.71636363636364,
+        "p_value": 8.134728143867983e-07,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.46346520905025873,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 27,
+            "NaN": 0
+          },
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 43,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.038461538461538464,
+          "cells_below_5": 10,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A42_PriorNonCompliance (Cram\u00e9r's V = 0.463, \u03c7\u00b2 = 38.72)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount",
+        "A9_PriorInfringements"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 1.4702943451693302e-06,
+      "effect_size": 0.3602912447075036,
+      "sample_size": 72,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Relationship between a46 fineamount and a9 priorinfringements categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount",
+        "categorical_var": "A9_PriorInfringements",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 26.86009588481775,
+        "kw_p_value": 1.4702943451693302e-06,
+        "anova_f_statistic": 2.1881306038880353,
+        "anova_p_value": 0.11984671995312952,
+        "eta_squared": 0.3602912447075036,
+        "sample_size": 72,
+        "group_count": 3,
+        "group_statistics": {
+          "DISCUSSED_NO_PRIOR_FOUND": {
+            "count": 23,
+            "mean": 6121739.130434782,
+            "median": 500000.0,
+            "std": 20160799.652484003,
+            "min": 50000.0,
+            "max": 100000000.0
+          },
+          "NOT_DISCUSSED": {
+            "count": 46,
+            "mean": 256597.8260869565,
+            "median": 0.0,
+            "std": 632391.2487669426,
+            "min": 0.0,
+            "max": 4000000.0
+          },
+          "PRIOR_INFRINGER_PRESENT": {
+            "count": 3,
+            "mean": 7533333.333333333,
+            "median": 1600000.0,
+            "std": 8818667.06985182,
+            "min": 1000000.0,
+            "max": 20000000.0
+          }
+        },
+        "interpretation": "Very large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount across A9_PriorInfringements categories (\u03b7\u00b2 = 0.360, H = 26.86)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount",
+        "A4_CaseTrigger"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 2.1617056479036925e-05,
+      "effect_size": 0.3227380926198708,
+      "sample_size": 70,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Relationship between a46 fineamount and a4 casetrigger categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount",
+        "categorical_var": "A4_CaseTrigger",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 24.30071411291147,
+        "kw_p_value": 2.1617056479036925e-05,
+        "anova_f_statistic": 0.2523641746044832,
+        "anova_p_value": 0.8593784208400524,
+        "eta_squared": 0.3227380926198708,
+        "sample_size": 70,
+        "group_count": 4,
+        "group_statistics": {
+          "BREACH_NOTIFICATION": {
+            "count": 20,
+            "mean": 1250000.0,
+            "median": 750000.0,
+            "std": 1312821.3892224638,
+            "min": 0.0,
+            "max": 5000000.0
+          },
+          "COMPLAINT": {
+            "count": 38,
+            "mean": 3017105.263157895,
+            "median": 25000.0,
+            "std": 16023570.329180168,
+            "min": 0.0,
+            "max": 100000000.0
+          },
+          "EX_OFFICIO_INVESTIGATION": {
+            "count": 7,
+            "mean": 5000000.0,
+            "median": 4000000.0,
+            "std": 6458659.745975608,
+            "min": 0.0,
+            "max": 20000000.0
+          },
+          "OTHER": {
+            "count": 5,
+            "mean": 30000.0,
+            "median": 0.0,
+            "std": 60000.0,
+            "min": 0.0,
+            "max": 150000.0
+          }
+        },
+        "interpretation": "Very large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount across A4_CaseTrigger categories (\u03b7\u00b2 = 0.323, H = 24.30)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A39_ManagementAuthorization"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 3.685791625616716e-05,
+      "effect_size": 0.3979991624781808,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a39 managementauthorization patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A39_ManagementAuthorization",
+        "test_type": "chi_square",
+        "chi2_statistic": 30.147000000000002,
+        "p_value": 3.685791625616716e-05,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.3979991624781808,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 5,
+            "NaN": 0
+          },
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 63,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.05128205128205128,
+          "cells_below_5": 11,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A39_ManagementAuthorization (Cram\u00e9r's V = 0.398, \u03c7\u00b2 = 30.15)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A5_CrossBorder"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 8.287871291485885e-05,
+      "effect_size": 0.36160137659521646,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a5 crossborder patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A5_CrossBorder",
+        "test_type": "chi_square",
+        "chi2_statistic": 23.919999999999998,
+        "p_value": 8.287871291485885e-05,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.36160137659521646,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 62,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 7,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 6,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.08974358974358974,
+          "cells_below_5": 6,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A5_CrossBorder (Cram\u00e9r's V = 0.362, \u03c7\u00b2 = 23.92)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A4_CaseTrigger"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.00014407879140861118,
+      "effect_size": 0.3876597915184317,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a4 casetrigger patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A4_CaseTrigger",
+        "test_type": "chi_square",
+        "chi2_statistic": 30.93866666666667,
+        "p_value": 0.00014407879140861118,
+        "degrees_of_freedom": 8,
+        "cramers_v": 0.3876597915184317,
+        "sample_size": 78,
+        "contingency_table": {
+          "BREACH_NOTIFICATION": {
+            "EE": 0,
+            "NO": 20,
+            "NaN": 0
+          },
+          "COMPLAINT": {
+            "EE": 1,
+            "NO": 38,
+            "NaN": 0
+          },
+          "EX_OFFICIO_INVESTIGATION": {
+            "EE": 0,
+            "NO": 9,
+            "NaN": 0
+          },
+          "OTHER": {
+            "EE": 0,
+            "NO": 5,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.0641025641025641,
+          "cells_below_5": 12,
+          "total_cells": 15,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A4_CaseTrigger (Cram\u00e9r's V = 0.388, \u03c7\u00b2 = 30.94)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount_EUR",
+        "A4_CaseTrigger"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 0.00024069421012923862,
+      "effect_size": 0.36971632757790585,
+      "sample_size": 48,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Relationship between monetary sanctions and a4 casetrigger categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount_EUR",
+        "categorical_var": "A4_CaseTrigger",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 19.267518413427858,
+        "kw_p_value": 0.00024069421012923862,
+        "anova_f_statistic": 0.3588927036782721,
+        "anova_p_value": 0.7829513750988435,
+        "eta_squared": 0.36971632757790585,
+        "sample_size": 48,
+        "group_count": 4,
+        "group_statistics": {
+          "BREACH_NOTIFICATION": {
+            "count": 19,
+            "mean": 121052.63157894737,
+            "median": 69000.0,
+            "std": 120924.7324335573,
+            "min": 4600.0,
+            "max": 460000.0
+          },
+          "COMPLAINT": {
+            "count": 22,
+            "mean": 479445.45454545453,
+            "median": 16100.0,
+            "std": 1912295.8445347294,
+            "min": 0.0,
+            "max": 9200000.0
+          },
+          "EX_OFFICIO_INVESTIGATION": {
+            "count": 5,
+            "mean": 644000.0,
+            "median": 460000.0,
+            "std": 613026.5899616427,
+            "min": 92000.0,
+            "max": 1840000.0
+          },
+          "OTHER": {
+            "count": 2,
+            "mean": 6900.0,
+            "median": 6900.0,
+            "std": 6900.0,
+            "min": 0.0,
+            "max": 13800.0
+          }
+        },
+        "interpretation": "Very large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount_EUR across A4_CaseTrigger categories (\u03b7\u00b2 = 0.370, H = 19.27)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A20_LegalBasis"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.0003064083795786713,
+      "effect_size": 0.44268540790314104,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a20 legalbasis patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A20_LegalBasis",
+        "test_type": "chi_square",
+        "chi2_statistic": 52.0630303030303,
+        "p_value": 0.0003064083795786713,
+        "degrees_of_freedom": 22,
+        "cramers_v": 0.44268540790314104,
+        "sample_size": 78,
+        "contingency_table": {
+          "Consent": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "Consent, Contract, Legitimate_Interest": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Contract": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Contract, Legal_Obligation": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Contract, Legitimate_Interest": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Legal_Obligation": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Legal_Obligation, Public_Task": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "Legitimate_Interest": {
+            "EE": 0,
+            "NO": 13,
+            "NaN": 0
+          },
+          "Legitimate_Interest, Not_Specified": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Not_Specified": {
+            "EE": 1,
+            "NO": 43,
+            "NaN": 0
+          },
+          "Public_Task": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 34,
+          "total_cells": 36,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A20_LegalBasis (Cram\u00e9r's V = 0.443, \u03c7\u00b2 = 52.06)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount",
+        "A7_IsAppeal"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 0.00046352877628303405,
+      "effect_size": 0.15420477995463105,
+      "sample_size": 75,
+      "significance_level": "highly_significant",
+      "practical_significance": "medium",
+      "confidence_level": "very_high",
+      "business_context": "Relationship between a46 fineamount and a7 isappeal categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount",
+        "categorical_var": "A7_IsAppeal",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 12.256948936688067,
+        "kw_p_value": 0.00046352877628303405,
+        "anova_f_statistic": 0.49638418033094595,
+        "anova_p_value": 0.4833349098796309,
+        "eta_squared": 0.15420477995463105,
+        "sample_size": 75,
+        "group_count": 2,
+        "group_statistics": {
+          "N": {
+            "count": 64,
+            "mean": 2735210.9375,
+            "median": 200000.0,
+            "std": 12597492.008830037,
+            "min": 0.0,
+            "max": 100000000.0
+          },
+          "Y": {
+            "count": 11,
+            "mean": 22727.272727272728,
+            "median": 0.0,
+            "std": 71869.94682200863,
+            "min": 0.0,
+            "max": 250000.0
+          }
+        },
+        "interpretation": "Very large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount across A7_IsAppeal categories (\u03b7\u00b2 = 0.154, H = 12.26)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A41_MitigatingMeasures"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.0007332603725267976,
+      "effect_size": 0.33564992114585307,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a41 mitigatingmeasures patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A41_MitigatingMeasures",
+        "test_type": "chi_square",
+        "chi2_statistic": 23.196521739130432,
+        "p_value": 0.0007332603725267976,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.33564992114585307,
+        "sample_size": 78,
+        "contingency_table": {
+          "Before_Investigation": {
+            "EE": 0,
+            "NO": 10,
+            "NaN": 0
+          },
+          "During_Investigation": {
+            "EE": 0,
+            "NO": 38,
+            "NaN": 0
+          },
+          "Not_Discussed": {
+            "EE": 1,
+            "NO": 22,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 5,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.08974358974358974,
+          "cells_below_5": 8,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A41_MitigatingMeasures (Cram\u00e9r's V = 0.336, \u03c7\u00b2 = 23.20)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A18_Cookies"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.0007846523696524693,
+      "effect_size": 0.31368774282716244,
+      "sample_size": 78,
+      "significance_level": "highly_significant",
+      "practical_significance": "large",
+      "confidence_level": "very_high",
+      "business_context": "Association between regulatory jurisdiction and a18 cookies patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A18_Cookies",
+        "test_type": "chi_square",
+        "chi2_statistic": 19.003636363636364,
+        "p_value": 0.0007846523696524693,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.31368774282716244,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 63,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 8,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.05128205128205128,
+          "cells_below_5": 7,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A18_Cookies (Cram\u00e9r's V = 0.314, \u03c7\u00b2 = 19.00)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A19_VulnerableSubjects"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.001551154833825005,
+      "effect_size": 0.41514299187593623,
+      "sample_size": 78,
+      "significance_level": "very_significant",
+      "practical_significance": "large",
+      "confidence_level": "high",
+      "business_context": "Association between regulatory jurisdiction and a19 vulnerablesubjects patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A19_VulnerableSubjects",
+        "test_type": "chi_square",
+        "chi2_statistic": 52.52495238095238,
+        "p_value": 0.001551154833825005,
+        "degrees_of_freedom": 26,
+        "cramers_v": 0.41514299187593623,
+        "sample_size": 78,
+        "contingency_table": {
+          "Children": {
+            "EE": 0,
+            "NO": 10,
+            "NaN": 0
+          },
+          "Children, Employees": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Children, Students": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Children,Employees": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Children,Students": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Children|Patients": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Elderly, Other_Vulnerable": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Employees": {
+            "EE": 0,
+            "NO": 13,
+            "NaN": 0
+          },
+          "Employees, Students": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "None_Mentioned": {
+            "EE": 1,
+            "NO": 34,
+            "NaN": 0
+          },
+          "Other_Vulnerable": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "Patients": {
+            "EE": 0,
+            "NO": 2,
+            "NaN": 0
+          },
+          "Students": {
+            "EE": 0,
+            "NO": 3,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 39,
+          "total_cells": 42,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A19_VulnerableSubjects (Cram\u00e9r's V = 0.415, \u03c7\u00b2 = 52.52)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A43_FinancialBenefit"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.0016532596020815407,
+      "effect_size": 0.316004935874197,
+      "sample_size": 78,
+      "significance_level": "very_significant",
+      "practical_significance": "large",
+      "confidence_level": "high",
+      "business_context": "Association between regulatory jurisdiction and a43 financialbenefit patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A43_FinancialBenefit",
+        "test_type": "chi_square",
+        "chi2_statistic": 21.25132075471698,
+        "p_value": 0.0016532596020815407,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.316004935874197,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 17,
+            "NaN": 0
+          },
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 52,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 5,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 9,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A43_FinancialBenefit (Cram\u00e9r's V = 0.316, \u03c7\u00b2 = 21.25)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A15_DefendantCategory"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.0016776451532995499,
+      "effect_size": 0.3156369222170731,
+      "sample_size": 78,
+      "significance_level": "very_significant",
+      "practical_significance": "large",
+      "confidence_level": "high",
+      "business_context": "Association between regulatory jurisdiction and organization type patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A15_DefendantCategory",
+        "test_type": "chi_square",
+        "chi2_statistic": 21.216,
+        "p_value": 0.0016776451532995499,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.3156369222170731,
+        "sample_size": 78,
+        "contingency_table": {
+          "BUSINESS": {
+            "EE": 0,
+            "NO": 39,
+            "NaN": 0
+          },
+          "NON_PROFIT": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 0
+          },
+          "PUBLIC_AUTHORITY": {
+            "EE": 0,
+            "NO": 25,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 7,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.05128205128205128,
+          "cells_below_5": 9,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Strong association"
+      },
+      "finding": "Strong association between A1_Country and A15_DefendantCategory (Cram\u00e9r's V = 0.316, \u03c7\u00b2 = 21.22)",
+      "implication": "Strong relationship suggests this factor is a key enforcement predictor"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A31_SubjectRightsRequests"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.002803223195105668,
+      "effect_size": 0.28236629479299924,
+      "sample_size": 78,
+      "significance_level": "very_significant",
+      "practical_significance": "medium",
+      "confidence_level": "high",
+      "business_context": "Association between regulatory jurisdiction and a31 subjectrightsrequests patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A31_SubjectRightsRequests",
+        "test_type": "chi_square",
+        "chi2_statistic": 16.166876310272535,
+        "p_value": 0.002803223195105668,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.28236629479299924,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 1,
+            "NO": 52,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 16,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 7,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.11538461538461539,
+          "cells_below_5": 6,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A31_SubjectRightsRequests (Cram\u00e9r's V = 0.282, \u03c7\u00b2 = 16.17)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount_EUR",
+        "A9_PriorInfringements"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 0.011580481389326176,
+      "effect_size": 0.14716741433820307,
+      "sample_size": 50,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Relationship between monetary sanctions and a9 priorinfringements categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount_EUR",
+        "categorical_var": "A9_PriorInfringements",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 8.916868473895544,
+        "kw_p_value": 0.011580481389326176,
+        "anova_f_statistic": 1.0378668606449428,
+        "anova_p_value": 0.3621844741097658,
+        "eta_squared": 0.14716741433820307,
+        "sample_size": 50,
+        "group_count": 3,
+        "group_statistics": {
+          "DISCUSSED_NO_PRIOR_FOUND": {
+            "count": 23,
+            "mean": 563200.0,
+            "median": 46000.0,
+            "std": 1854793.5680285287,
+            "min": 4600.0,
+            "max": 9200000.0
+          },
+          "NOT_DISCUSSED": {
+            "count": 24,
+            "mean": 45379.166666666664,
+            "median": 23000.0,
+            "std": 74142.59897413151,
+            "min": 0.0,
+            "max": 368000.0
+          },
+          "PRIOR_INFRINGER_PRESENT": {
+            "count": 3,
+            "mean": 693066.6666666666,
+            "median": 147200.0,
+            "std": 811317.3704263675,
+            "min": 92000.0,
+            "max": 1840000.0
+          }
+        },
+        "interpretation": "Very large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount_EUR across A9_PriorInfringements categories (\u03b7\u00b2 = 0.147, H = 8.92)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A12_DefendantRole"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.016069805875587213,
+      "effect_size": 0.25033311140691455,
+      "sample_size": 78,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Association between regulatory jurisdiction and a12 defendantrole patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A12_DefendantRole",
+        "test_type": "chi_square",
+        "chi2_statistic": 15.600000000000003,
+        "p_value": 0.016069805875587213,
+        "degrees_of_freedom": 6,
+        "cramers_v": 0.25033311140691455,
+        "sample_size": 78,
+        "contingency_table": {
+          "Controller": {
+            "EE": 0,
+            "NO": 63,
+            "NaN": 0
+          },
+          "Joint_Controller": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "Processor": {
+            "EE": 0,
+            "NO": 1,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 10,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.01282051282051282,
+          "cells_below_5": 10,
+          "total_cells": 12,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A12_DefendantRole (Cram\u00e9r's V = 0.250, \u03c7\u00b2 = 15.60)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A16_SensitiveData"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.024454672437186013,
+      "effect_size": 0.21682196545987298,
+      "sample_size": 78,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Association between regulatory jurisdiction and sensitive data processing patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A16_SensitiveData",
+        "test_type": "chi_square",
+        "chi2_statistic": 11.195294117647059,
+        "p_value": 0.024454672437186013,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.21682196545987298,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 0,
+            "NO": 36,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 25,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 14,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.21794871794871795,
+          "cells_below_5": 6,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A16_SensitiveData (Cram\u00e9r's V = 0.217, \u03c7\u00b2 = 11.20)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A27_DamageEstablished"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.02879494132932428,
+      "effect_size": 0.25660096371778623,
+      "sample_size": 78,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Association between regulatory jurisdiction and a27 damageestablished patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A27_DamageEstablished",
+        "test_type": "chi_square",
+        "chi2_statistic": 7.09511111111111,
+        "p_value": 0.02879494132932428,
+        "degrees_of_freedom": 2,
+        "cramers_v": 0.25660096371778623,
+        "sample_size": 78,
+        "contingency_table": {
+          "Not_Assessed": {
+            "EE": 1,
+            "NO": 59,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 16,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.23076923076923078,
+          "cells_below_5": 4,
+          "total_cells": 6,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A27_DamageEstablished (Cram\u00e9r's V = 0.257, \u03c7\u00b2 = 7.10)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A48_EDPBGuidelines"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.044233117864241084,
+      "effect_size": 0.19422103567736546,
+      "sample_size": 78,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Association between regulatory jurisdiction and a48 edpbguidelines patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A48_EDPBGuidelines",
+        "test_type": "chi_square",
+        "chi2_statistic": 9.783703703703702,
+        "p_value": 0.044233117864241084,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.19422103567736546,
+        "sample_size": 78,
+        "contingency_table": {
+          "N": {
+            "EE": 1,
+            "NO": 53,
+            "NaN": 0
+          },
+          "Y": {
+            "EE": 0,
+            "NO": 10,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 0,
+            "NO": 12,
+            "NaN": 2
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.1282051282051282,
+          "cells_below_5": 6,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A48_EDPBGuidelines (Cram\u00e9r's V = 0.194, \u03c7\u00b2 = 9.78)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A1_Country",
+        "A47_FineCurrency"
+      ],
+      "relationship_type": "categorical_categorical",
+      "p_value": 0.04877024338733714,
+      "effect_size": 0.19018569423223788,
+      "sample_size": 78,
+      "significance_level": "significant",
+      "practical_significance": "medium",
+      "confidence_level": "moderate",
+      "business_context": "Association between regulatory jurisdiction and a47 finecurrency patterns",
+      "statistical_details": {
+        "var1": "A1_Country",
+        "var2": "A47_FineCurrency",
+        "test_type": "chi_square",
+        "chi2_statistic": 9.548,
+        "p_value": 0.04877024338733714,
+        "degrees_of_freedom": 4,
+        "cramers_v": 0.19018569423223788,
+        "sample_size": 78,
+        "contingency_table": {
+          "EUR": {
+            "EE": 0,
+            "NO": 4,
+            "NaN": 1
+          },
+          "NOK": {
+            "EE": 0,
+            "NO": 47,
+            "NaN": 0
+          },
+          "NaN": {
+            "EE": 1,
+            "NO": 24,
+            "NaN": 1
+          }
+        },
+        "test_validity": {
+          "min_expected_frequency": 0.0641025641025641,
+          "cells_below_5": 7,
+          "total_cells": 9,
+          "valid": false
+        },
+        "interpretation": "Moderate association"
+      },
+      "finding": "Strong association between A1_Country and A47_FineCurrency (Cram\u00e9r's V = 0.190, \u03c7\u00b2 = 9.55)",
+      "implication": "Moderate relationship indicates important compliance consideration"
+    },
+    {
+      "type": "statistical_relationship",
+      "variables": [
+        "A46_FineAmount_EUR",
+        "A5_CrossBorder"
+      ],
+      "relationship_type": "continuous_categorical",
+      "p_value": 0.04986484609478706,
+      "effect_size": 0.06468176616197566,
+      "sample_size": 46,
+      "significance_level": "significant",
+      "practical_significance": "small",
+      "confidence_level": "moderate",
+      "business_context": "Relationship between monetary sanctions and a5 crossborder categories",
+      "statistical_details": {
+        "continuous_var": "A46_FineAmount_EUR",
+        "categorical_var": "A5_CrossBorder",
+        "test_type": "kruskal_wallis",
+        "kw_statistic": 3.845997711126929,
+        "kw_p_value": 0.04986484609478706,
+        "anova_f_statistic": 0.020766447508588675,
+        "anova_p_value": 0.8860750359553736,
+        "eta_squared": 0.06468176616197566,
+        "sample_size": 46,
+        "group_count": 2,
+        "group_statistics": {
+          "N": {
+            "count": 43,
+            "mean": 340827.9069767442,
+            "median": 36800.0,
+            "std": 1397928.0487399052,
+            "min": 0.0,
+            "max": 9200000.0
+          },
+          "Y": {
+            "count": 3,
+            "mean": 460000.0,
+            "median": 368000.0,
+            "std": 344232.4795832026,
+            "min": 92000.0,
+            "max": 920000.0
+          }
+        },
+        "interpretation": "Large effect"
+      },
+      "finding": "Significant group differences in A46_FineAmount_EUR across A5_CrossBorder categories (\u03b7\u00b2 = 0.065, H = 3.85)",
+      "implication": "Relationship detected but practical impact may be limited"
+    }
+  ],
+  "business_insights": [
+    {
+      "type": "fine_determinants",
+      "title": "Key Fine Amount Predictors Identified",
+      "finding": "Analysis reveals 6 significant factors influencing fine amounts",
+      "details": [
+        "A4_CaseTrigger: EX_OFFICIO_INVESTIGATION category shows highest fines (\u20ac5,000,000 avg)",
+        "A7_IsAppeal: N category shows highest fines (\u20ac2,735,211 avg)",
+        "A9_PriorInfringements: PRIOR_INFRINGER_PRESENT category shows highest fines (\u20ac7,533,333 avg)",
+        "A4_CaseTrigger: EX_OFFICIO_INVESTIGATION category shows highest fines (\u20ac644,000 avg)",
+        "A5_CrossBorder: Y category shows highest fines (\u20ac460,000 avg)"
+      ],
+      "business_impact": "High",
+      "recommendation": "Focus compliance efforts on identified high-risk factors"
+    },
+    {
+      "type": "cooperation_impact",
+      "title": "Cooperation Significantly Affects Outcomes",
+      "finding": "Defendant cooperation level strongly correlates with enforcement outcomes",
+      "details": "Cooperative defendants receive more favorable treatment",
+      "business_impact": "Medium",
+      "recommendation": "Implement proactive cooperation protocols in compliance program"
+    },
+    {
+      "type": "jurisdictional_variance",
+      "title": "Significant Jurisdictional Enforcement Differences",
+      "finding": "Enforcement patterns vary substantially across countries",
+      "details": "Different jurisdictions show distinct enforcement philosophies and penalty structures",
+      "business_impact": "High",
+      "recommendation": "Develop country-specific compliance strategies for multinational operations"
+    }
+  ],
+  "risk_insights": [
+    {
+      "type": "high_risk_factors",
+      "title": "Critical Risk Factors Identified",
+      "finding": "Analysis identifies 8 high-risk relationships",
+      "top_risks": [
+        "A46_FineAmount_vs_A46_FineAmount_EUR",
+        "A1_Country_vs_A38_NegligenceEstablished",
+        "A46_FineAmount_EUR_vs_A4_CaseTrigger",
+        "A46_FineAmount_vs_A9_PriorInfringements",
+        "A46_FineAmount_vs_A4_CaseTrigger"
+      ],
+      "risk_level": "High",
+      "mitigation": "Prioritize monitoring and controls for identified risk factors"
+    },
+    {
+      "type": "sensitive_data_risk",
+      "title": "Sensitive Data Processing Risk Profile",
+      "finding": "Sensitive data processing significantly correlates with enforcement actions",
+      "affected_relationships": 1,
+      "risk_level": "Very High",
+      "mitigation": "Implement enhanced controls for all sensitive data processing activities"
+    }
+  ],
+  "compliance_insights": [],
+  "recommendations": [
+    {
+      "type": "strategic",
+      "priority": "high",
+      "recommendation": "Implement relationship-based risk assessment model",
+      "details": "Analysis reveals 29 significant relationships that can predict enforcement outcomes",
+      "implementation": "Develop scoring system using identified predictive relationships",
+      "expected_impact": "Proactive identification of high-risk scenarios and improved compliance allocation"
+    },
+    {
+      "type": "operational",
+      "priority": "high",
+      "recommendation": "Optimize fine mitigation strategies",
+      "details": "Identified 6 factors significantly influencing fine amounts",
+      "implementation": "Focus compliance efforts on cooperation, sector-specific risks, and data sensitivity levels",
+      "expected_impact": "Reduced financial exposure and improved regulatory relationships"
+    },
+    {
+      "type": "governance",
+      "priority": "high",
+      "recommendation": "Enhance sensitive data governance framework",
+      "details": "Sensitive data processing shows significant correlation with enforcement actions",
+      "implementation": "Implement enhanced controls, monitoring, and approval processes for sensitive data",
+      "expected_impact": "Reduced enforcement risk and improved data subject protection"
+    },
+    {
+      "type": "procedural",
+      "priority": "medium",
+      "recommendation": "Establish proactive regulatory cooperation protocols",
+      "details": "Cooperation level significantly affects enforcement outcomes",
+      "implementation": "Develop incident response procedures emphasizing transparency and collaboration",
+      "expected_impact": "Improved regulatory relationships and more favorable enforcement outcomes"
+    }
+  ],
+  "relationship_findings": {},
+  "generation_metadata": {
+    "timestamp": "2025-09-20T18:58:07.767287",
+    "total_cases": 78,
+    "analysis_scope": "Bivariate Analysis",
+    "data_source": "dataNorway_cleaned_20250920_165937.csv"
+  }
+}

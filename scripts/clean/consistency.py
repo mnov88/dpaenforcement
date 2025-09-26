@@ -5,19 +5,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Any
 
-
-def _answers_from_response(resp: str) -> Dict[str, str]:
-    answers: Dict[str, str] = {}
-    for ln in (resp or "").splitlines():
-        if ln.startswith("Answer "):
-            try:
-                idx = ln.index(":")
-                left = ln[len("Answer "):idx].strip()
-                val = ln[idx + 1 :].strip()
-                answers[f"Q{left}"] = val
-            except Exception:
-                continue
-    return answers
+from scripts.parser.ingest import parse_record
+from scripts.clean.typing_status import parse_number
 
 
 def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
@@ -26,7 +15,8 @@ def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
         r = csv.DictReader(f_in)
         for row in r:
             decision_id = row.get("ID")
-            a = _answers_from_response(row.get("response", ""))
+            parsed = parse_record((row.get("response", "") or ""))
+            a = parsed["answers"]
             flags: List[str] = []
 
             # Breach notification chain
@@ -48,13 +38,13 @@ def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
                 flags.append("q60_required_not_appointed_but_q61_missing_no_dpo")
 
             # Enforcement vs fine amount
-            if "ADMINISTRATIVE_FINE" in (a.get("Q53", "")):
-                try:
-                    fine = float(a.get("Q37", "") or 0)
-                except Exception:
-                    fine = 0.0
-                if fine <= 0:
+            fine_result = parse_number(a.get("Q37", ""))
+            fine_value = fine_result.value or 0.0
+            if "ADMINISTRATIVE_FINE" in (a.get("Q53", "") or ""):
+                if fine_value <= 0:
                     flags.append("admin_fine_present_but_fine_zero_or_invalid")
+            if fine_result.status == "PARSE_ERROR":
+                flags.append("fine_amount_parse_error")
 
             # Appeal logic
             if a.get("Q4") == "NO" and a.get("Q5") != "NOT_APPLICABLE":
@@ -62,14 +52,13 @@ def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
 
             # Caps vs fine logic
             cap = a.get("Q39")
-            try:
-                fine = float(a.get("Q37", "") or 0)
-            except Exception:
-                fine = 0.0
-            if fine == 0 and cap and cap.startswith("HIT_"):
+            if fine_value == 0 and cap and cap.startswith("HIT_"):
                 flags.append("cap_hit_with_zero_fine")
             # Turnover cap verification not possible if turnover missing
-            if cap == "HIT_4PCT_TURNOVER_CAP" and not (a.get("Q38") or "").strip():
+            turnover_result = parse_number(a.get("Q38", ""))
+            if turnover_result.status == "PARSE_ERROR":
+                flags.append("turnover_parse_error")
+            if cap == "HIT_4PCT_TURNOVER_CAP" and not (turnover_result.raw or "").strip():
                 flags.append("turnover_cap_claim_unverifiable_turnover_missing")
 
             # Cross-border checks

@@ -6,11 +6,20 @@ from math import log1p
 from pathlib import Path
 from typing import Dict, Any, List, Tuple
 
-from scripts.clean.typing_status import parse_date_field, normalize_country, parse_number, split_multiselect
+from scripts.clean.typing_status import (
+    parse_date_field,
+    normalize_country,
+    parse_number,
+    split_multiselect,
+    derive_multiselect_status,
+    detect_exclusivity_conflict,
+    NumericParseResult,
+)
 from scripts.clean.isic_map import IsicIndex
 from scripts.clean.geo_enrich import enrich_country, normalize_dpa_name
 from scripts.clean.text_norm import normalize_text, detect_language_heuristic
 from scripts.clean.enum_validate import EnumWhitelist
+from scripts.parser.ingest import parse_record
 
 
 SEVERITY_MEASURES = {
@@ -51,30 +60,6 @@ MULTI_FIELDS: List[Tuple[str, str]] = [
     ("Q64", "q64_transfer_violations"),
 ]
 
-# Tokens that indicate exclusivity if they co-occur with substantive tokens
-EXCLUSIVE_MARKERS = {
-    "NOT_APPLICABLE",
-    "NONE_MENTIONED",
-    "NONE_DISCUSSED",
-    "NONE",
-    "NOT_DETERMINED",
-}
-
-
-def _answers_from_response(resp: str) -> Dict[str, str]:
-    answers: Dict[str, str] = {}
-    for ln in resp.splitlines():
-        if ln.startswith("Answer "):
-            try:
-                idx = ln.index(":")
-                left = ln[len("Answer "):idx].strip()
-                val = ln[idx + 1 :].strip()
-                answers[f"Q{left}"] = val
-            except Exception:
-                pass
-    return answers
-
-
 def _is_schema_echo(value: str) -> bool:
     v = (value or "").strip()
     return any(v.startswith(p) for p in SCHEMA_ECHO_PREFIXES)
@@ -88,37 +73,6 @@ def _clean_country_code(code: str) -> Tuple[str, bool, bool]:
         mapped = True
     whitelist_ok = c in COUNTRY_WHITELIST
     return c, mapped, whitelist_ok
-
-
-def _status_from_tokens(qkey: str, tokens: List[str]) -> str:
-    if not tokens:
-        return "NOT_MENTIONED"
-    tset = set(tokens)
-    if qkey == "Q31" or qkey == "Q57":
-        if "NONE_VIOLATED" in tset:
-            return "NONE_VIOLATED"
-        if "NOT_DETERMINED" in tset:
-            return "NOT_DETERMINED"
-    if "NOT_APPLICABLE" in tset and len([t for t in tokens if t not in {"NOT_APPLICABLE"}]) == 0:
-        return "NOT_APPLICABLE"
-    if "NONE_MENTIONED" in tset and len([t for t in tokens if t not in {"NONE_MENTIONED"}]) == 0:
-        return "NONE_MENTIONED"
-    if qkey == "Q30" and "NONE_DISCUSSED" in tset and len([t for t in tokens if t not in {"NONE_DISCUSSED"}]) == 0:
-        return "NONE_DISCUSSED"
-    return "DISCUSSED"
-
-
-def _exclusivity_conflict(tokens: List[str]) -> int:
-    if not tokens:
-        return 0
-    tset = set(tokens)
-    markers = tset.intersection(EXCLUSIVE_MARKERS)
-    if not markers:
-        return 0
-    substantive = [t for t in tokens if t not in EXCLUSIVE_MARKERS]
-    return 1 if substantive else 0
-
-
 def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -> None:
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     validation_report.parent.mkdir(parents=True, exist_ok=True)
@@ -135,12 +89,13 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
         # Base fieldnames
         fieldnames: List[str] = [
             "decision_id",
+            "ingest_parser_version", "ingest_line_count", "ingest_question_count", "ingest_missing_questions", "ingest_warning_count", "ingest_warnings",
             "country_code", "country_status", "country_group", "country_mapped_from_uk", "country_whitelist_ok",
             "dpa_name_raw", "dpa_name_canonical",
-            "decision_date", "decision_date_status", "decision_year", "decision_quarter",
+            "decision_date_raw", "decision_date", "decision_date_status", "decision_date_error", "decision_year", "decision_quarter",
             # Numerics with typed status/raw
-            "fine_eur", "fine_numeric_valid", "fine_positive", "fine_log1p", "fine_outlier_flag", "fine_raw", "fine_status",
-            "turnover_eur", "turnover_numeric_valid", "turnover_log1p", "turnover_outlier_flag", "turnover_raw", "turnover_status",
+            "fine_eur", "fine_numeric_valid", "fine_positive", "fine_log1p", "fine_outlier_flag", "fine_raw", "fine_status", "fine_error",
+            "turnover_eur", "turnover_numeric_valid", "turnover_positive", "turnover_log1p", "turnover_outlier_flag", "turnover_raw", "turnover_status", "turnover_error",
             "fine_to_turnover_ratio",
             # ISIC
             "isic_code", "isic_desc", "isic_section",
@@ -166,8 +121,10 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
         for row in reader:
             decision_id = row.get("ID")
-            resp = row.get("response", "")
-            answers = _answers_from_response(resp)
+            resp = (row.get("response", "") or "")
+            parsed = parse_record(resp)
+            answers = parsed["answers"]
+            metadata = parsed["metadata"]
 
             schema_echo_flag = 0
             schema_echo_fields: List[str] = []
@@ -189,10 +146,10 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             decision_quarter = (f"Q{((dpr.value.month-1)//3)+1}" if dpr.value else "")
 
             # Numerics: keep raw strings and status
-            fine_raw = (answers.get("Q37", "") or "").strip()
-            turnover_raw = (answers.get("Q38", "") or "").strip()
-            fine_eur, fine_valid, fine_status = parse_number(fine_raw)
-            turnover_eur, turnover_valid, turnover_status = parse_number(turnover_raw)
+            fine_parsed: NumericParseResult = parse_number(answers.get("Q37", ""))
+            turnover_parsed: NumericParseResult = parse_number(answers.get("Q38", ""))
+            fine_eur = fine_parsed.value
+            turnover_eur = turnover_parsed.value
             fine_log = f"{log1p(fine_eur):.6f}" if fine_eur is not None else ""
             turnover_log = f"{log1p(turnover_eur):.6f}" if turnover_eur is not None else ""
             fine_outlier = 1 if (fine_eur or 0) > FINE_OUTLIER_HIGH else 0
@@ -234,6 +191,12 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
             base_row = {
                 "decision_id": decision_id,
+                "ingest_parser_version": metadata.get("parser_version", ""),
+                "ingest_line_count": metadata.get("line_count", 0),
+                "ingest_question_count": metadata.get("question_count", 0),
+                "ingest_missing_questions": ";".join(metadata.get("missing_questions", [])),
+                "ingest_warning_count": len(metadata.get("warnings", [])),
+                "ingest_warnings": ";".join(metadata.get("warnings", [])),
                 "country_code": country_code_final or "",
                 "country_status": country_status,
                 "country_group": country_group,
@@ -241,23 +204,28 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 "country_whitelist_ok": 1 if whitelist_ok else 0,
                 "dpa_name_raw": dpa_name_raw,
                 "dpa_name_canonical": dpa_name_canonical,
+                "decision_date_raw": dpr.raw,
                 "decision_date": decision_date,
                 "decision_date_status": dpr.status,
+                "decision_date_error": dpr.error or "",
                 "decision_year": decision_year,
                 "decision_quarter": decision_quarter,
                 "fine_eur": f"{fine_eur:.6f}" if fine_eur is not None else "",
-                "fine_numeric_valid": 1 if fine_valid else 0,
+                "fine_numeric_valid": 1 if fine_parsed.valid else 0,
                 "fine_positive": 1 if (fine_eur or 0) > 0 else 0,
                 "fine_log1p": fine_log,
                 "fine_outlier_flag": fine_outlier,
-                "fine_raw": fine_raw,
-                "fine_status": fine_status,
+                "fine_raw": fine_parsed.raw,
+                "fine_status": fine_parsed.status,
+                "fine_error": fine_parsed.error or "",
                 "turnover_eur": f"{turnover_eur:.6f}" if turnover_eur is not None else "",
-                "turnover_numeric_valid": 1 if turnover_valid else 0,
+                "turnover_numeric_valid": 1 if turnover_parsed.valid else 0,
+                "turnover_positive": 1 if (turnover_eur or 0) > 0 else 0,
                 "turnover_log1p": turnover_log,
                 "turnover_outlier_flag": turnover_outlier,
-                "turnover_raw": turnover_raw,
-                "turnover_status": turnover_status,
+                "turnover_raw": turnover_parsed.raw,
+                "turnover_status": turnover_parsed.status,
+                "turnover_error": turnover_parsed.error or "",
                 "fine_to_turnover_ratio": fine_to_turnover_ratio,
                 "isic_code": isic_code,
                 "isic_desc": isic_desc,
@@ -278,11 +246,11 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
             # Populate systematic multi-selects
             for qkey, prefix in MULTI_FIELDS:
-                tokens, _status_unused = split_multiselect(answers.get(qkey, ""))
-                tokens = [t for t in tokens if not _is_schema_echo(t)]
+                ms_parsed = split_multiselect(answers.get(qkey, ""))
+                tokens = [t for t in ms_parsed.tokens if not _is_schema_echo(t)]
                 unknown, known = whitelist.validate_tokens(qkey, tokens)
-                status = _status_from_tokens(qkey, tokens)
-                exclusivity = _exclusivity_conflict(tokens)
+                status = derive_multiselect_status(qkey, tokens)
+                exclusivity = detect_exclusivity_conflict(tokens)
                 base_row[f"{prefix}_known"] = ",".join(known)
                 base_row[f"{prefix}_unknown"] = ",".join(unknown)
                 base_row[f"{prefix}_status"] = status
@@ -301,8 +269,13 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             writer.writerow(base_row)
 
             flags = []
-            if answers.get("Q53", "").find("ADMINISTRATIVE_FINE") >= 0 and not (fine_eur or 0) > 0:
+            q53_raw = answers.get("Q53", "") or ""
+            if "ADMINISTRATIVE_FINE" in q53_raw and not (fine_eur or 0) > 0:
                 flags.append("admin_fine_but_zero_amount")
+            if fine_parsed.status == "PARSE_ERROR":
+                flags.append("fine_parse_error")
+            if turnover_parsed.status == "PARSE_ERROR":
+                flags.append("turnover_parse_error")
             validations.append({"decision_id": decision_id, "flags": flags})
 
     validation_report.write_text(json.dumps(validations, ensure_ascii=False, indent=2), encoding="utf-8")

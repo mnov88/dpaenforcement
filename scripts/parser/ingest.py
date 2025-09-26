@@ -1,6 +1,9 @@
 import re
 from typing import Dict, List
 
+PARSER_VERSION = "1.1.0"
+EXPECTED_QUESTION_COUNT = 68
+
 ANSWER_LINE_RE = re.compile(r'^"?Answer\s+(\d+):\s*(.+?)\s*$', re.MULTILINE)
 BLOCK_SPLIT_RE = re.compile(r'(?=^"?Answer\s+1:\s*)', re.MULTILINE)
 
@@ -31,9 +34,11 @@ def parse_record(record_text: str) -> Dict[str, object]:
         val = m.group(2).strip().strip('\u200b')
         answers[f"Q{num}"] = val
 
-    completeness = len(answers) == 68
+    question_count = len(answers)
+    completeness = question_count == EXPECTED_QUESTION_COUNT
+    missing: List[str] = []
     if not completeness:
-        missing = [f"Q{i}" for i in range(1, 69) if f"Q{i}" not in answers]
+        missing = [f"Q{i}" for i in range(1, EXPECTED_QUESTION_COUNT + 1) if f"Q{i}" not in answers]
         warnings.append(
             f"incomplete_record: missing={','.join(missing[:10])}{'...' if len(missing)>10 else ''}"
         )
@@ -41,7 +46,10 @@ def parse_record(record_text: str) -> Dict[str, object]:
     metadata = {
         "line_count": len(record_text.splitlines()),
         "completeness": completeness,
+        "question_count": question_count,
+        "missing_questions": missing if not completeness else [],
         "warnings": warnings,
+        "parser_version": PARSER_VERSION,
     }
 
     return {"answers": answers, "metadata": metadata}

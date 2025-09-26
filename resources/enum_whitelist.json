@@ -1,0 +1,705 @@
+{
+  "questions": {
+    "1": {
+      "kind": "RAW",
+      "raw": "ISO_3166-1_ALPHA-2: AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE,IS,LI,NO,EU,UNCLEAR"
+    },
+    "2": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "3": {
+      "kind": "FORMAT",
+      "format": "YYYY-MM-DD,NOT_DISCUSSED"
+    },
+    "4": {
+      "kind": "ENUM",
+      "options": [
+        "YES",
+        "NO",
+        "UNCLEAR",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "5": {
+      "kind": "ENUM",
+      "options": [
+        "UPHELD",
+        "OVERTURNED",
+        "MODIFIED",
+        "REFERRED_BACK",
+        "NOT_APPLICABLE",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "6": {
+      "kind": "ENUM",
+      "options": [
+        "YES",
+        "NO"
+      ]
+    },
+    "7": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "8": {
+      "kind": "ENUM",
+      "options": [
+        "ORGANIZATION",
+        "NATURAL_PERSON",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "9": {
+      "kind": "ENUM",
+      "options": [
+        "CONTROLLER",
+        "PROCESSOR",
+        "JOINT_CONTROLLER",
+        "BOTH_CONTROLLER_AND_PROCESSOR",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "10": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "SME",
+        "LARGE_ENTERPRISE",
+        "MULTINATIONAL",
+        "NON_PROFIT",
+        "PUBLIC_SECTOR_BODY",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "11": {
+      "kind": "ENUM",
+      "options": [
+        "LOCAL_MUNICIPAL",
+        "REGIONAL_PROVINCIAL",
+        "NATIONAL_FEDERAL",
+        "SUPRANATIONAL",
+        "NOT_APPLICABLE",
+        "UNCLEAR"
+      ]
+    },
+    "12": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "13": {
+      "kind": "ENUM",
+      "options": [
+        "YES",
+        "NO",
+        "UNCLEAR"
+      ]
+    },
+    "14": {
+      "kind": "ENUM",
+      "options": [
+        "UNDER_2M",
+        "2M_TO_10M",
+        "10M_TO_50M",
+        "50M_TO_250M",
+        "250M_TO_1B",
+        "OVER_1B",
+        "NOT_APPLICABLE",
+        "FIGURE_UNCLEAR"
+      ]
+    },
+    "15": {
+      "kind": "ENUM",
+      "options": [
+        "COMPLAINT",
+        "BREACH_NOTIFICATION",
+        "EX_OFFICIO_DPA_INITIATIVE",
+        "REFERRAL_FROM_OTHER_AUTHORITY",
+        "MEDIA_PUBLIC_ATTENTION",
+        "JOINT_INVESTIGATION",
+        "FOLLOW_UP_PRIOR_CASE",
+        "OTHER",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "16": {
+      "kind": "ENUM",
+      "options": [
+        "YES",
+        "NO",
+        "UNCLEAR"
+      ]
+    },
+    "17": {
+      "kind": "ENUM",
+      "options": [
+        "YES_REQUIRED",
+        "NO_NOT_REQUIRED",
+        "DEFENDANT_DISPUTED_REQUIREMENT",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "18": {
+      "kind": "ENUM",
+      "options": [
+        "YES_SUBMITTED",
+        "NO_NOT_SUBMITTED",
+        "PARTIALLY_SUBMITTED",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "19": {
+      "kind": "ENUM",
+      "options": [
+        "YES_WITHIN_72H",
+        "NO_LATE",
+        "TIMING_DISPUTED",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "20": {
+      "kind": "ENUM",
+      "options": [
+        "1_TO_7_DAYS",
+        "1_TO_4_WEEKS",
+        "1_TO_6_MONTHS",
+        "OVER_6_MONTHS",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "21": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "TECHNICAL_FAILURE",
+        "ORGANIZATIONAL_FAILURE",
+        "CYBER_ATTACK",
+        "HUMAN_ERROR",
+        "SYSTEM_MALFUNCTION",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "22": {
+      "kind": "ENUM",
+      "options": [
+        "INTERNAL_CAUSE",
+        "EXTERNAL_CAUSE",
+        "MIXED_CAUSES",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "23": {
+      "kind": "ENUM",
+      "options": [
+        "YES_MATERIALIZED",
+        "NO_RISK_ONLY",
+        "MIXED_SOME_HARM",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "24": {
+      "kind": "ENUM",
+      "options": [
+        "UNDER_100",
+        "100_TO_1000",
+        "1000_TO_10000",
+        "10000_TO_100000",
+        "OVER_100000",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "25": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "ARTICLE_9_SPECIAL_CATEGORY",
+        "ARTICLE_10_CRIMINAL",
+        "NEITHER",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "26": {
+      "kind": "ENUM",
+      "options": [
+        "YES_NOTIFIED",
+        "NO_NOT_NOTIFIED",
+        "PARTIALLY_NOTIFIED",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "27": {
+      "kind": "ENUM",
+      "options": [
+        "YES_REQUIRED",
+        "NO_NOT_REQUIRED",
+        "DISPUTED_REQUIREMENT",
+        "NOT_APPLICABLE",
+        "NOT_MENTIONED",
+        "UNCLEAR"
+      ]
+    },
+    "28": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "IMMEDIATE_CONTAINMENT",
+        "SYSTEM_FIXES",
+        "SECURITY_IMPROVEMENTS",
+        "STAFF_TRAINING",
+        "EXTERNAL_AUDIT",
+        "LEGAL_ADVICE",
+        "COOPERATION_WITH_DPA",
+        "NONE_MENTIONED",
+        "NOT_APPLICABLE",
+        "UNCLEAR"
+      ]
+    },
+    "29": {
+      "kind": "ENUM",
+      "options": [
+        "YES_AGGRAVATING_FACTOR",
+        "YES_MITIGATING_FACTOR",
+        "MENTIONED_NO_CLEAR_IMPACT",
+        "NOT_MENTIONED",
+        "NO_FINE_IMPOSED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "30": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY",
+        "PURPOSE_LIMITATION",
+        "DATA_MINIMISATION",
+        "ACCURACY",
+        "STORAGE_LIMITATION",
+        "SECURITY",
+        "ACCOUNTABILITY",
+        "NONE_DISCUSSED"
+      ]
+    },
+    "31": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY",
+        "PURPOSE_LIMITATION",
+        "DATA_MINIMISATION",
+        "ACCURACY",
+        "STORAGE_LIMITATION",
+        "SECURITY",
+        "ACCOUNTABILITY",
+        "NONE_VIOLATED",
+        "NOT_DETERMINED"
+      ]
+    },
+    "32": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "CONSENT",
+        "CONTRACT",
+        "LEGAL_OBLIGATION",
+        "VITAL_INTERESTS",
+        "PUBLIC_TASK",
+        "LEGITIMATE_INTERESTS",
+        "NONE_DISCUSSED"
+      ]
+    },
+    "33": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "CONSENT",
+        "CONTRACT",
+        "LEGAL_OBLIGATION",
+        "VITAL_INTERESTS",
+        "PUBLIC_TASK",
+        "LEGITIMATE_INTERESTS",
+        "NO_BASIS_CLAIMED",
+        "UNCLEAR"
+      ]
+    },
+    "34": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "NOT_FREELY_GIVEN",
+        "NOT_SPECIFIC",
+        "NOT_INFORMED",
+        "NOT_UNAMBIGUOUS",
+        "CONDITIONAL",
+        "WITHDRAWAL_PROBLEMS",
+        "NO_ISSUES_FOUND",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "35": {
+      "kind": "ENUM",
+      "options": [
+        "LEGITIMATE_INTERESTS_PREVAIL",
+        "DATA_SUBJECT_INTERESTS_PREVAIL",
+        "BALANCING_INADEQUATE",
+        "TEST_NOT_CONDUCTED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "36": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "37": {
+      "kind": "TYPE",
+      "type": "NUMBER (in EUR, 0 if no fine)"
+    },
+    "38": {
+      "kind": "TYPE",
+      "type": "NUMBER (in EUR, null if not mentioned)"
+    },
+    "39": {
+      "kind": "ENUM",
+      "options": [
+        "HIT_4PCT_TURNOVER_CAP",
+        "HIT_20M_ADMIN_CAP",
+        "HIT_10M_ADMIN_CAP",
+        "BELOW_ALL_CAPS",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "40": {
+      "kind": "ENUM",
+      "options": [
+        "DAYS",
+        "WEEKS",
+        "MONTHS",
+        "YEARS",
+        "ONGOING",
+        "NOT_SPECIFIED"
+      ]
+    },
+    "41": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "NATURE_GRAVITY_DURATION",
+        "INTENT_NEGLIGENCE",
+        "MITIGATION_ACTIONS",
+        "TECHNICAL_ORGANIZATIONAL_MEASURES",
+        "PREVIOUS_INFRINGEMENTS",
+        "COOPERATION_WITH_AUTHORITY",
+        "DATA_CATEGORIES_AFFECTED",
+        "MANNER_BECAME_KNOWN",
+        "COMPLIANCE_PRIOR_ORDERS",
+        "CODES_CERTIFICATION",
+        "OTHER_CIRCUMSTANCES",
+        "NONE"
+      ]
+    },
+    "42": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "NATURE_GRAVITY_DURATION",
+        "INTENT_NEGLIGENCE",
+        "MITIGATION_ACTIONS",
+        "TECHNICAL_ORGANIZATIONAL_MEASURES",
+        "PREVIOUS_INFRINGEMENTS",
+        "COOPERATION_WITH_AUTHORITY",
+        "DATA_CATEGORIES_AFFECTED",
+        "MANNER_BECAME_KNOWN",
+        "COMPLIANCE_PRIOR_ORDERS",
+        "CODES_CERTIFICATION",
+        "OTHER_CIRCUMSTANCES",
+        "NONE"
+      ]
+    },
+    "43": {
+      "kind": "ENUM",
+      "options": [
+        "YES_MATERIAL_HARM",
+        "YES_NON_MATERIAL_HARM",
+        "YES_BOTH_TYPES",
+        "NO_HARM_DOCUMENTED",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "44": {
+      "kind": "ENUM",
+      "options": [
+        "YES_QUANTIFIED",
+        "YES_MENTIONED_UNQUANTIFIED",
+        "NO_BENEFIT",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "45": {
+      "kind": "ENUM",
+      "options": [
+        "FULL_COOPERATION",
+        "PARTIAL_COOPERATION",
+        "NON_COOPERATIVE",
+        "OBSTRUCTIVE",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "46": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "CHILDREN",
+        "ELDERLY",
+        "PATIENTS",
+        "EMPLOYEES",
+        "FINANCIALLY_VULNERABLE",
+        "NONE_MENTIONED",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "47": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "IMMEDIATE_CESSATION",
+        "SYSTEM_UPGRADES",
+        "POLICY_CHANGES",
+        "STAFF_TRAINING",
+        "EXTERNAL_AUDIT",
+        "DPO_APPOINTMENT",
+        "COMPENSATION_TO_SUBJECTS",
+        "NONE_MENTIONED"
+      ]
+    },
+    "48": {
+      "kind": "ENUM",
+      "options": [
+        "YES_FIRST_TIME",
+        "NO_REPEAT_OFFENDER",
+        "UNCLEAR",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "49": {
+      "kind": "ENUM",
+      "options": [
+        "YES_LEAD_AUTHORITY_CASE",
+        "YES_MULTIPLE_DPAS_INVOLVED",
+        "NO_SINGLE_JURISDICTION",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "50": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "PROCESSING_BAN",
+        "DATA_DELETION_ORDER",
+        "COMPLIANCE_ORDER",
+        "CERTIFICATION_WITHDRAWAL",
+        "PERIODIC_REPORTING",
+        "AUDIT_REQUIREMENT",
+        "NONE"
+      ]
+    },
+    "51": {
+      "kind": "ENUM",
+      "options": [
+        "ABILITY_TO_PAY_CONSIDERED_REDUCING",
+        "ABILITY_TO_PAY_NOT_AFFECTING",
+        "SME_CONSIDERATION_APPLIED",
+        "FINANCIAL_DISTRESS_NOTED",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "52": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "53": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "WARNING",
+        "REPRIMAND",
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS",
+        "BRING_PROCESSING_INTO_COMPLIANCE",
+        "COMMUNICATE_BREACH_TO_SUBJECTS",
+        "LIMITATION_PROHIBITION_OF_PROCESSING",
+        "RECTIFICATION_ERASURE_RESTRICTION",
+        "CERTIFICATION_WITHDRAWAL",
+        "ADMINISTRATIVE_FINE",
+        "SUSPENSION_DATA_FLOWS",
+        "NONE"
+      ]
+    },
+    "54": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "COMPLETE_PROCESSING_BAN",
+        "SPECIFIC_PURPOSE_LIMITATION",
+        "DATA_CATEGORY_LIMITATION",
+        "GEOGRAPHICAL_LIMITATION",
+        "TEMPORAL_LIMITATION",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "55": {
+      "kind": "ENUM",
+      "options": [
+        "IMMEDIATE",
+        "WITHIN_MONTH",
+        "1_TO_6_MONTHS",
+        "OVER_6_MONTHS",
+        "NO_DEADLINE_SPECIFIED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "56": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "ACCESS",
+        "RECTIFICATION",
+        "ERASURE",
+        "RESTRICTION_OF_PROCESSING",
+        "DATA_PORTABILITY",
+        "OBJECTION",
+        "AUTOMATED_DECISION_MAKING",
+        "INFORMATION_OBLIGATIONS",
+        "NONE_DISCUSSED"
+      ]
+    },
+    "57": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "ACCESS",
+        "RECTIFICATION",
+        "ERASURE",
+        "RESTRICTION_OF_PROCESSING",
+        "DATA_PORTABILITY",
+        "OBJECTION",
+        "AUTOMATED_DECISION_MAKING",
+        "INFORMATION_OBLIGATIONS",
+        "NONE_VIOLATED",
+        "NOT_DETERMINED"
+      ]
+    },
+    "58": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "EXCESSIVE_DELAY",
+        "EXCESSIVE_FEES",
+        "INADEQUATE_RESPONSE",
+        "IDENTITY_VERIFICATION_ISSUES",
+        "SCOPE_LIMITATIONS",
+        "NO_ISSUES_FOUND",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "59": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "LACK_OF_HUMAN_INTERVENTION",
+        "INADEQUATE_SAFEGUARDS",
+        "PROFILING_WITHOUT_CONSENT",
+        "NO_EXPLANATION_PROVIDED",
+        "NO_ISSUES_FOUND",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "60": {
+      "kind": "ENUM",
+      "options": [
+        "YES_REQUIRED_AND_APPOINTED",
+        "YES_REQUIRED_NOT_APPOINTED",
+        "YES_VOLUNTARY_APPOINTMENT",
+        "NO_REQUIREMENT",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "61": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "NO_DPO_APPOINTED",
+        "INADEQUATE_QUALIFICATIONS",
+        "INSUFFICIENT_INDEPENDENCE",
+        "LACK_OF_RESOURCES",
+        "INADEQUATE_INVOLVEMENT",
+        "CONFLICT_OF_INTEREST",
+        "NO_ISSUES_FOUND",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "62": {
+      "kind": "ENUM",
+      "options": [
+        "SINGLE_JURISDICTION_DOMESTIC",
+        "LEAD_SUPERVISORY_AUTHORITY_CASE",
+        "CONCERNED_AUTHORITY_CASE",
+        "JOINT_INVESTIGATION",
+        "NON_EU_ENTITY_INVOLVED",
+        "UNCLEAR"
+      ]
+    },
+    "63": {
+      "kind": "ENUM",
+      "options": [
+        "YES_VIOLATIONS_FOUND",
+        "YES_COMPLIANT_TRANSFERS",
+        "YES_MENTIONED_NO_ASSESSMENT",
+        "NOT_DISCUSSED"
+      ]
+    },
+    "64": {
+      "kind": "MULTI_SELECT",
+      "options": [
+        "NO_ADEQUATE_SAFEGUARDS",
+        "INVALID_TRANSFER_MECHANISM",
+        "SCHREMS_II_ISSUES",
+        "NO_IMPACT_ASSESSMENT",
+        "INADEQUATE_CONTRACTUAL_CLAUSES",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "65": {
+      "kind": "ENUM",
+      "options": [
+        "YES_SIGNIFICANT_PRECEDENT",
+        "YES_CLARIFIES_EXISTING_LAW",
+        "ROUTINE_APPLICATION",
+        "UNCLEAR"
+      ]
+    },
+    "66": {
+      "kind": "ENUM",
+      "options": [
+        "YES_EXTENSIVE_REFERENCES",
+        "YES_SOME_REFERENCES",
+        "NO_REFERENCES",
+        "UNCLEAR"
+      ]
+    },
+    "67": {
+      "kind": "TYPE",
+      "type": "STRING"
+    },
+    "68": {
+      "kind": "TYPE",
+      "type": "STRING"
+    }
+  },
+  "source": {
+    "extracted_from": "data-extraction-prompt-sent-to-ai.md",
+    "parser_version": "0.1.0"
+  }
+}

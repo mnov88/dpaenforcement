@@ -1,0 +1,8 @@
+[
+  {
+    "decision_id": "X1",
+    "flags": [
+      "admin_fine_present_but_fine_zero_or_invalid"
+    ]
+  }
+]

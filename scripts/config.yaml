@@ -1,0 +1,17 @@
+# Runtime configuration for the data cleaning pipeline
+parser_version: "0.1.0"
+
+paths:
+  prompt: analyzed-decisions/data-extraction-prompt-sent-to-ai.md
+  enum_whitelist: resources/enum_whitelist.json
+  isic_structure: resources/ISIC_Rev_4_english_structure.txt
+  input_csv: analyzed-decisions/master-analyzed-data-unclean.csv
+  outputs:
+    base_dir: outputs
+    wide_clean_csv: outputs/cleaned_wide.csv
+    validation_report: outputs/validation_report.json
+    longs_dir: outputs/long_tables
+
+options:
+  strict_enums: true
+  log_warnings: true

@@ -8,4 +8,4 @@ Therefore, master-analyzed-data-unclean.csv is the most vital file in the projec
 We must assume additional rows may be added over time, so all our processing must be documented and reproducible.
 /resources contains various resources and utilities - for instance, a list of ISIC abbreviations, codebooks, et.
 
-/scripts is where we will save processing scripts, each with its own readme.
+/scripts is where we will save processing scripts, each with its own readme. NB: data-cleaning.md outlines our current idea of a plan and the scripts under /scripts have produced outputs in /outputs. THESE ARE JUST TESTS AND SUGGESTED APPROACHES, and must be scrutinized for efficiency and effectiveness, as well as best daaa science practices and academic rigor.

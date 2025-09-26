@@ -54,6 +54,17 @@ def normalize_country(raw: str) -> Tuple[Optional[str], str]:
 
 
 _NUM_ALLOWED = re.compile(r"[^0-9eE+\-\., ]+")
+_SCHEMA_TOKEN_RE = re.compile(r"(?:^|\s)(?:TYPE|ENUM|MULTI_SELECT):[A-Z0-9_]+", re.IGNORECASE)
+
+
+def _strip_schema_tokens(raw: str) -> str:
+    """Remove schema-echo artefacts like ``TYPE:NUMBER`` before sanitizing.
+
+    These tokens are emitted by the questionnaire schema and should not be
+    interpreted as part of the numeric value.
+    """
+
+    return _SCHEMA_TOKEN_RE.sub(" ", raw)
 
 
 def _sanitize_numeric_string(raw: str) -> str:
@@ -65,6 +76,8 @@ def _sanitize_numeric_string(raw: str) -> str:
     if s.count(".") > 1:
         parts = s.split(".")
         s = "".join(parts[:-1]) + "." + parts[-1]
+    # Drop stray leading exponent markers introduced by schema tokens/currency strings
+    s = s.lstrip("eE")
     return s
 
 
@@ -91,8 +104,21 @@ def parse_number(raw: str) -> NumericParseResult:
         return NumericParseResult(raw="", value=None, status="NOT_MENTIONED", valid=True)
     if raw_norm in _NUMERIC_STATUS_TOKENS:
         return NumericParseResult(raw=raw_norm, value=None, status=raw_norm, valid=True)
-    s = _sanitize_numeric_string(raw_norm)
+    if raw_norm.upper() == "NO":
+        return NumericParseResult(raw=raw_norm, value=None, status="NOT_MENTIONED", valid=True)
+    if raw_norm.lower() == "null":
+        return NumericParseResult(raw=raw_norm, value=None, status="NOT_MENTIONED", valid=True)
+
+    stripped = _strip_schema_tokens(raw_norm)
+    stripped_norm = stripped.strip()
+    if stripped_norm.lower() == "null":
+        return NumericParseResult(raw=raw_norm, value=None, status="NOT_MENTIONED", valid=True)
+
+    s = _sanitize_numeric_string(stripped_norm)
     if not s:
+        # If the input only contained schema tokens, treat as not mentioned
+        if _SCHEMA_TOKEN_RE.search(raw_norm):
+            return NumericParseResult(raw=raw_norm, value=None, status="NOT_MENTIONED", valid=True)
         return NumericParseResult(
             raw=raw_norm,
             value=None,
@@ -100,6 +126,7 @@ def parse_number(raw: str) -> NumericParseResult:
             valid=False,
             error="sanitized_numeric_string_empty",
         )
+
     try:
         val = float(s)
     except Exception as exc:
@@ -110,6 +137,7 @@ def parse_number(raw: str) -> NumericParseResult:
             valid=False,
             error=str(exc),
         )
+
     if val < 0:
         return NumericParseResult(
             raw=raw_norm,
@@ -118,6 +146,7 @@ def parse_number(raw: str) -> NumericParseResult:
             valid=False,
             error="value_lt_zero",
         )
+
     return NumericParseResult(raw=raw_norm, value=val, status="DISCUSSED", valid=True)
 
 

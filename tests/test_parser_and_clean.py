@@ -42,11 +42,23 @@ class TestTypingAndCountry(unittest.TestCase):
         num = parse_number("1,234.50")
         self.assertTrue(num.valid)
         self.assertAlmostEqual(num.value, 1234.50)
+        euro = parse_number("EUR 200,000")
+        self.assertTrue(euro.valid)
+        self.assertEqual(euro.value, 200000)
         neg = parse_number("-5")
         self.assertFalse(neg.valid)
         self.assertEqual(neg.status, "NEGATIVE_VALUE")
         missing = parse_number("")
         self.assertEqual(missing.status, "NOT_MENTIONED")
+        null = parse_number("null")
+        self.assertEqual(null.status, "NOT_MENTIONED")
+        no_token = parse_number("NO")
+        self.assertEqual(no_token.status, "NOT_MENTIONED")
+        schema = parse_number("TYPE:NUMBER 150000")
+        self.assertTrue(schema.valid)
+        self.assertEqual(schema.value, 150000)
+        schema_only = parse_number("TYPE:NUMBER")
+        self.assertEqual(schema_only.status, "NOT_MENTIONED")
 
 
 class TestISICAndConsistency(unittest.TestCase):

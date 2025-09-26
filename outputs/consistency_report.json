@@ -1,24 +1,30 @@
 [
   {
+    "decision_id": "United Kingdom_18",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_16",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_17",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
     "decision_id": "United Kingdom_27",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
   },
   {
-    "decision_id": "United Kingdom_22",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "United Kingdom_53",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "United Kingdom_52",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -36,15 +42,15 @@
     ]
   },
   {
-    "decision_id": "United Kingdom_56",
+    "decision_id": "United Kingdom_61",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
   },
   {
-    "decision_id": "United Kingdom_61",
+    "decision_id": "Sweden_1",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -60,9 +66,69 @@
     ]
   },
   {
-    "decision_id": "Sweden_11",
+    "decision_id": "Sweden_12",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_15",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_16",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_20",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_22",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_26",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_24",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_27",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_30",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_31",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_33",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -72,15 +138,51 @@
     ]
   },
   {
-    "decision_id": "Sweden_42",
+    "decision_id": "Sweden_36",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_34",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_35",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_37",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_38",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Sweden_41",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
     "decision_id": "Sweden_43",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
+    ]
+  },
+  {
+    "decision_id": "Sweden_47",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -96,93 +198,87 @@
     ]
   },
   {
+    "decision_id": "Spain_7",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_12",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_14",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_21",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_24",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_28",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_33",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
     "decision_id": "Spain_38",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
   },
   {
-    "decision_id": "Spain_61",
+    "decision_id": "Spain_57",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_60",
+    "decision_id": "Spain_78",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_65",
+    "decision_id": "Spain_89",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_106",
+    "decision_id": "Spain_139",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_104",
+    "decision_id": "Spain_162",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_113",
+    "decision_id": "Spain_183",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_123",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_136",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_143",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_156",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_158",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_169",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_171",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_176",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -192,99 +288,21 @@
     ]
   },
   {
-    "decision_id": "Spain_198",
+    "decision_id": "Spain_238",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_207",
+    "decision_id": "Spain_246",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_211",
+    "decision_id": "Spain_252",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_221",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_224",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_233",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_241",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_242",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_249",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_251",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_261",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_263",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_268",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_271",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_281",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_285",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -294,103 +312,19 @@
     ]
   },
   {
-    "decision_id": "Spain_301",
+    "decision_id": "Spain_299",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
+    ]
+  },
+  {
+    "decision_id": "Spain_305",
+    "flags": [
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
     "decision_id": "Spain_309",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_308",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_311",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_316",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_322",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_334",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_341",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_346",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_347",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_348",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_355",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_357",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_358",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_363",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_368",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_369",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -402,103 +336,19 @@
     ]
   },
   {
-    "decision_id": "Spain_385",
+    "decision_id": "Spain_406",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "appeal_outcome_present_but_q4_no"
     ]
   },
   {
-    "decision_id": "Spain_386",
+    "decision_id": "Spain_405",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_395",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_400",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_399",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_403",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_416",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_419",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_421",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_427",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_435",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_442",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_451",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
     "decision_id": "Spain_450",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_458",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_460",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_465",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -510,103 +360,19 @@
     ]
   },
   {
-    "decision_id": "Spain_484",
+    "decision_id": "Spain_493",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Spain_487",
+    "decision_id": "Spain_521",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_483",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_502",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_505",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_510",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_511",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_513",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_517",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_519",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_523",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_543",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_545",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_546",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
     "decision_id": "Spain_549",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_551",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_550",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -618,57 +384,9 @@
     ]
   },
   {
-    "decision_id": "Spain_554",
+    "decision_id": "Spain_556",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_555",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_562",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_561",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_565",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_567",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_569",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_574",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Spain_576",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -690,25 +408,13 @@
     ]
   },
   {
-    "decision_id": "Slovenia_58",
+    "decision_id": "Slovakia_1",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Slovenia_61",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
     "decision_id": "Romania_2",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_4",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -750,27 +456,15 @@
     ]
   },
   {
-    "decision_id": "Romania_14",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_15",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_16",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
   },
   {
-    "decision_id": "Romania_20",
+    "decision_id": "Romania_17",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
@@ -781,12 +475,6 @@
   },
   {
     "decision_id": "Romania_21",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_24",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -804,18 +492,6 @@
     ]
   },
   {
-    "decision_id": "Romania_33",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_32",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_31",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
@@ -823,12 +499,6 @@
   },
   {
     "decision_id": "Romania_37",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_43",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -852,48 +522,6 @@
     ]
   },
   {
-    "decision_id": "Romania_51",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_54",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_60",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_61",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_62",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_63",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_65",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_68",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
@@ -907,12 +535,6 @@
   },
   {
     "decision_id": "Romania_70",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_73",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -937,12 +559,6 @@
   },
   {
     "decision_id": "Romania_82",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_84",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -984,12 +600,6 @@
     ]
   },
   {
-    "decision_id": "Romania_99",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_101",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
@@ -997,12 +607,6 @@
   },
   {
     "decision_id": "Romania_98",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_107",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -1020,12 +624,6 @@
     ]
   },
   {
-    "decision_id": "Romania_117",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_119",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
@@ -1033,12 +631,6 @@
   },
   {
     "decision_id": "Romania_122",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_125",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -1074,12 +666,6 @@
     ]
   },
   {
-    "decision_id": "Romania_137",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_139",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
@@ -1087,24 +673,6 @@
   },
   {
     "decision_id": "Romania_142",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_143",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_141",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_145",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -1152,37 +720,13 @@
     ]
   },
   {
-    "decision_id": "Romania_161",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_162",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
   },
   {
-    "decision_id": "Romania_163",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_165",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
     "decision_id": "Romania_167",
-    "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
-    ]
-  },
-  {
-    "decision_id": "Romania_170",
     "flags": [
       "admin_fine_present_but_fine_zero_or_invalid"
     ]
@@ -1200,15 +744,15 @@
     ]
   },
   {
-    "decision_id": "Portugal_3",
+    "decision_id": "Portugal_12",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {
-    "decision_id": "Portugal_4",
+    "decision_id": "Portugal_13",
     "flags": [
-      "admin_fine_present_but_fine_zero_or_invalid"
+      "cross_border_claim_requires_geo_verification"
     ]
   },
   {

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from scripts.parser.ingest import segment_records, parse_record
-from scripts.clean.typing_status import parse_date_field, normalize_country
+from scripts.clean.typing_status import parse_date_field, normalize_country, parse_number
 from scripts.clean.isic_map import IsicIndex
 from scripts.clean.consistency import run_consistency_checks
 
@@ -23,6 +23,8 @@ class TestParserAndSegmentation(unittest.TestCase):
         parsed = parse_record(segs[0])
         self.assertTrue(parsed["metadata"]["completeness"])
         self.assertTrue(parsed["answers"]["Q1"].startswith("ISO_3166-1_ALPHA-2"))
+        self.assertIn("parser_version", parsed["metadata"])
+        self.assertEqual(parsed["metadata"]["question_count"], 68)
 
 
 class TestTypingAndCountry(unittest.TestCase):
@@ -30,9 +32,33 @@ class TestTypingAndCountry(unittest.TestCase):
         dpr = parse_date_field("2023-10-26")
         self.assertIsNotNone(dpr.value)
         self.assertEqual(dpr.status, "DISCUSSED")
+        self.assertEqual(dpr.raw, "2023-10-26")
+        err = parse_date_field("2023-13-40")
+        self.assertEqual(err.status, "PARSE_ERROR")
+        self.assertIsNone(err.value)
         code, status = normalize_country("ISO_3166-1_ALPHA-2: FR")
         self.assertEqual(code, "FR")
         self.assertEqual(status, "DISCUSSED")
+        num = parse_number("1,234.50")
+        self.assertTrue(num.valid)
+        self.assertAlmostEqual(num.value, 1234.50)
+        euro = parse_number("EUR 200,000")
+        self.assertTrue(euro.valid)
+        self.assertEqual(euro.value, 200000)
+        neg = parse_number("-5")
+        self.assertFalse(neg.valid)
+        self.assertEqual(neg.status, "NEGATIVE_VALUE")
+        missing = parse_number("")
+        self.assertEqual(missing.status, "NOT_MENTIONED")
+        null = parse_number("null")
+        self.assertEqual(null.status, "NOT_MENTIONED")
+        no_token = parse_number("NO")
+        self.assertEqual(no_token.status, "NOT_MENTIONED")
+        schema = parse_number("TYPE:NUMBER 150000")
+        self.assertTrue(schema.valid)
+        self.assertEqual(schema.value, 150000)
+        schema_only = parse_number("TYPE:NUMBER")
+        self.assertEqual(schema_only.status, "NOT_MENTIONED")
 
 
 class TestISICAndConsistency(unittest.TestCase):

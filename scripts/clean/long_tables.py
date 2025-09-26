@@ -2,27 +2,14 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
-from typing import Dict, List
+from typing import List
 
-from scripts.clean.typing_status import split_multiselect
+from scripts.clean.typing_status import split_multiselect, derive_multiselect_status
 from scripts.clean.enum_validate import EnumWhitelist
 from scripts.parser.validators import dedupe_preserve_order
+from scripts.parser.ingest import parse_record
 
 SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:")
-
-
-def _answers_from_response(resp: str) -> Dict[str, str]:
-    answers: Dict[str, str] = {}
-    for ln in (resp or "").splitlines():
-        if ln.startswith("Answer "):
-            try:
-                idx = ln.index(":")
-                left = ln[len("Answer "):idx].strip()
-                val = ln[idx + 1 :].strip()
-                answers[f"Q{left}"] = val
-            except Exception:
-                continue
-    return answers
 
 
 def _is_schema_echo(value: str) -> bool:
@@ -80,14 +67,24 @@ class LongEmitter:
 
             for row in r:
                 decision_id = row.get("ID")
-                answers = _answers_from_response(row.get("response", ""))
+                parsed = parse_record((row.get("response", "") or ""))
+                answers = parsed["answers"]
 
                 def add_multiselect(qkey: str, table_name: str) -> None:
-                    tokens, status = split_multiselect(answers.get(qkey, ""))
-                    tokens = [t for t in tokens if t and not _is_schema_echo(t)]
+                    ms_parsed = split_multiselect(answers.get(qkey, ""))
+                    tokens = [t for t in ms_parsed.tokens if t and not _is_schema_echo(t)]
                     tokens = dedupe_preserve_order(tokens)
                     if not tokens:
+                        status = derive_multiselect_status(qkey, ms_parsed.tokens)
+                        if status != "NOT_MENTIONED":
+                            tables[table_name].append({
+                                "decision_id": decision_id,
+                                "option": status,
+                                "status": status,
+                                "token_status": "STATUS_ONLY",
+                            })
                         return
+                    status = derive_multiselect_status(qkey, tokens)
                     self._add_tokens(tables[table_name], decision_id, qkey, table_name, tokens, status)
 
                 def add_single(qkey: str, table_name: str) -> None:

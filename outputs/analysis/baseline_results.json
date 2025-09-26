@@ -1,0 +1,12 @@
+{
+  "logistic_admin_fine_auc": 0.9260075772421451,
+  "logistic_admin_fine_effects": {
+    "turnover_log1p": 1.0121089564567332,
+    "n_principles_discussed": -0.22685944051132487,
+    "n_principles_violated": 0.4106273681939186,
+    "n_corrective_measures": -0.07006816428369537,
+    "severity_measures_present": 3.38132044620436,
+    "breach_case": -0.17331349795871315
+  },
+  "gb_train_acc": 0.8868868868868869
+}

@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Dict, List
 
 from scripts.clean.typing_status import split_multiselect
+from scripts.clean.enum_validate import EnumWhitelist
+from scripts.parser.validators import dedupe_preserve_order
 
 SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:")
 
@@ -32,6 +34,8 @@ class LongEmitter:
     def __init__(self, base_dir: Path) -> None:
         self.base_dir = base_dir
         self.base_dir.mkdir(parents=True, exist_ok=True)
+        wl_path = Path("resources/enum_whitelist.json")
+        self.whitelist = EnumWhitelist.load(wl_path) if wl_path.exists() else EnumWhitelist({})
 
     def _emit(self, filename: str, rows: List[Dict[str, str]], fieldnames: List[str]) -> None:
         path = self.base_dir / filename
@@ -41,6 +45,13 @@ class LongEmitter:
             w.writeheader()
             for r in rows:
                 w.writerow(r)
+
+    def _add_tokens(self, out: List[Dict[str, str]], decision_id: str, qkey: str, table_name: str, tokens: List[str], status: str) -> None:
+        unknown, known = self.whitelist.validate_tokens(qkey, tokens)
+        for t in known:
+            out.append({"decision_id": decision_id, "option": t, "status": status, "token_status": "KNOWN"})
+        for t in unknown:
+            out.append({"decision_id": decision_id, "option": t, "status": status, "token_status": "UNKNOWN"})
 
     def emit_from_csv(self, input_csv: Path) -> None:
         with input_csv.open(newline="", encoding="utf-8") as f_in:
@@ -56,8 +67,15 @@ class LongEmitter:
                 "breach_types.csv": [],
                 "vulnerable_groups.csv": [],
                 "corrective_powers.csv": [],
+                "corrective_scopes.csv": [],
                 "rights_discussed.csv": [],
                 "rights_violated.csv": [],
+                "access_issues.csv": [],
+                "adm_issues.csv": [],
+                "dpo_issues.csv": [],
+                "transfer_violations.csv": [],
+                "aggravating_factors.csv": [],
+                "mitigating_factors.csv": [],
             }
 
             for row in r:
@@ -66,25 +84,21 @@ class LongEmitter:
 
                 def add_multiselect(qkey: str, table_name: str) -> None:
                     tokens, status = split_multiselect(answers.get(qkey, ""))
-                    tokens = [t for t in tokens if not _is_schema_echo(t)]
+                    tokens = [t for t in tokens if t and not _is_schema_echo(t)]
+                    tokens = dedupe_preserve_order(tokens)
                     if not tokens:
                         return
-                    for t in tokens:
-                        tables[table_name].append({
-                            "decision_id": decision_id,
-                            "option": t,
-                            "status": status,
-                        })
+                    self._add_tokens(tables[table_name], decision_id, qkey, table_name, tokens, status)
 
                 def add_single(qkey: str, table_name: str) -> None:
                     val = (answers.get(qkey, "") or "").strip()
                     if not val or _is_schema_echo(val):
                         return
-                    tables[table_name].append({
-                        "decision_id": decision_id,
-                        "option": val,
-                        "status": "DISCUSSED",
-                    })
+                    unknown, known = self.whitelist.validate_tokens(qkey, [val])
+                    if known:
+                        tables[table_name].append({"decision_id": decision_id, "option": known[0], "status": "DISCUSSED", "token_status": "KNOWN"})
+                    if unknown:
+                        tables[table_name].append({"decision_id": decision_id, "option": unknown[0], "status": "DISCUSSED", "token_status": "UNKNOWN"})
 
                 add_multiselect("Q30", "article_5_discussed.csv")
                 add_multiselect("Q31", "article_5_violated.csv")
@@ -92,11 +106,24 @@ class LongEmitter:
                 add_multiselect("Q33", "legal_basis_relied_on.csv")
                 add_multiselect("Q34", "consent_issues.csv")
                 add_single("Q35", "li_test_outcome.csv")
+
                 add_multiselect("Q21", "breach_types.csv")
                 add_multiselect("Q46", "vulnerable_groups.csv")
+
                 add_multiselect("Q53", "corrective_powers.csv")
+                add_multiselect("Q54", "corrective_scopes.csv")
+
                 add_multiselect("Q56", "rights_discussed.csv")
                 add_multiselect("Q57", "rights_violated.csv")
+                add_multiselect("Q58", "access_issues.csv")
+                add_multiselect("Q59", "adm_issues.csv")
+
+                add_multiselect("Q61", "dpo_issues.csv")
+
+                add_multiselect("Q64", "transfer_violations.csv")
+
+                add_multiselect("Q41", "aggravating_factors.csv")
+                add_multiselect("Q42", "mitigating_factors.csv")
 
             for filename, rows in tables.items():
-                self._emit(filename, rows, ["decision_id", "option", "status"])
+                self._emit(filename, rows, ["decision_id", "option", "status", "token_status"]) 

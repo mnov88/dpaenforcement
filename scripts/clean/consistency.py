@@ -56,14 +56,32 @@ def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
                 if fine <= 0:
                     flags.append("admin_fine_present_but_fine_zero_or_invalid")
 
-            # Cross-border
-            if a.get("Q49") in ("YES_LEAD_AUTHORITY_CASE",) or a.get("Q62") in (
+            # Appeal logic
+            if a.get("Q4") == "NO" and a.get("Q5") != "NOT_APPLICABLE":
+                flags.append("appeal_outcome_present_but_q4_no")
+
+            # Caps vs fine logic
+            cap = a.get("Q39")
+            try:
+                fine = float(a.get("Q37", "") or 0)
+            except Exception:
+                fine = 0.0
+            if fine == 0 and cap and cap.startswith("HIT_"):
+                flags.append("cap_hit_with_zero_fine")
+            # Turnover cap verification not possible if turnover missing
+            if cap == "HIT_4PCT_TURNOVER_CAP" and not (a.get("Q38") or "").strip():
+                flags.append("turnover_cap_claim_unverifiable_turnover_missing")
+
+            # Cross-border checks
+            if a.get("Q49") in ("YES_LEAD_AUTHORITY_CASE", "YES_MULTIPLE_DPAS_INVOLVED") or a.get("Q62") in (
                 "LEAD_SUPERVISORY_AUTHORITY_CASE",
                 "CONCERNED_AUTHORITY_CASE",
                 "JOINT_INVESTIGATION",
             ):
-                # No hard fail here; just note unverifiable if country code is outside EEA/EU (not checked now)
-                pass
+                # If country not EU/EEA and no NON_EU_ENTITY_INVOLVED
+                if a.get("Q62") != "NON_EU_ENTITY_INVOLVED" and a.get("Q1", "").endswith(": EU") is False:
+                    # We cannot fully verify country group here; flag for review
+                    flags.append("cross_border_claim_requires_geo_verification")
 
             if flags:
                 report.append({"decision_id": decision_id, "flags": flags})

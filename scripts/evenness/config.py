@@ -12,31 +12,53 @@ class EvennessPaths:
 
     wide_csv: Path = Path("outputs/cleaned_wide_latest.csv")
     feature_cache: Path = Path("outputs/evenness/fact_matrix.parquet")
+    x_full: Path = Path("outputs/evenness/X_full.parquet")
+    x_timeobs: Path = Path("outputs/evenness/X_timeobs.parquet")
     match_within_csv: Path = Path("outputs/evenness/matches_within.csv")
     match_cross_csv: Path = Path("outputs/evenness/matches_cross.csv")
+    twins_cem: Path = Path("outputs/evenness/twins_cem.parquet")
+    twins_gower_within: Path = Path("outputs/evenness/twins_gower_within.parquet")
+    twins_gower_cross: Path = Path("outputs/evenness/twins_gower_cross.parquet")
+    twins_riskbands: Path = Path("outputs/evenness/twins_riskbands.parquet")
     model_dir: Path = Path("outputs/evenness/models")
     leniency_csv: Path = Path("outputs/evenness/leniency_index.csv")
     leniency_plot: Path = Path("outputs/evenness/leniency_map.png")
     variance_csv: Path = Path("outputs/evenness/variance_components.csv")
     decomposition_dir: Path = Path("outputs/evenness/decomposition")
     robustness_dir: Path = Path("outputs/evenness/robustness")
+    balance_csv: Path = Path("outputs/evenness/twin_balance_diagnostics.csv")
+    coverage_dir: Path = Path("outputs/evenness/coverage")
+    support_dir: Path = Path("outputs/evenness/support")
+    harmonization_log: Path = Path("outputs/evenness/country_harmonization_log.csv")
 
     def ensure(self) -> None:
         """Create parent directories for all registered artefacts."""
 
         for path in (
             self.feature_cache,
+            self.x_full,
+            self.x_timeobs,
             self.match_within_csv,
             self.match_cross_csv,
+            self.twins_cem,
+            self.twins_gower_within,
+            self.twins_gower_cross,
+            self.twins_riskbands,
             self.model_dir,
             self.leniency_csv,
             self.leniency_plot,
             self.variance_csv,
             self.decomposition_dir,
             self.robustness_dir,
+            self.balance_csv,
+            self.coverage_dir,
+            self.support_dir,
+            self.harmonization_log,
         ):
             parent = Path(path).expanduser().resolve().parent
             parent.mkdir(parents=True, exist_ok=True)
+        for directory in (self.coverage_dir, self.support_dir):
+            Path(directory).expanduser().resolve().mkdir(parents=True, exist_ok=True)
 
 
 @dataclass(frozen=True)

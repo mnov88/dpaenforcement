@@ -26,7 +26,14 @@ def load_wide_dataset(path: Path | str | None = None, columns: Sequence[str] | N
     dtype_overrides = {"decision_id": str}
     usecols = None
     if columns is not None:
-        usecols = list(dict.fromkeys(columns))
+        desired = set(columns)
+
+        def _filter(col: str) -> bool:
+            if col in desired:
+                return True
+            return any(col.startswith(f"{prefix}_") for prefix in FACTS_CONFIG.multi_value_prefixes)
+
+        usecols = _filter
     df = pd.read_csv(csv_path, usecols=usecols, dtype=dtype_overrides)
     if "decision_date" in df.columns:
         df["decision_date"] = _ensure_datetime(df["decision_date"])
@@ -132,6 +139,8 @@ def build_fact_matrix(path: Path | str | None = None, discussed_only: bool = Fal
 
     # Derive decision year/quarter if missing
     if "decision_date" in df.columns and df["decision_date"].notna().any():
+        if pd.api.types.is_datetime64tz_dtype(df["decision_date"]):
+            df["decision_date"] = df["decision_date"].dt.tz_convert("UTC").dt.tz_localize(None)
         df["decision_year"] = df["decision_year"].fillna(df["decision_date"].dt.year)
         df["decision_quarter"] = df["decision_quarter"].fillna(df["decision_date"].dt.quarter)
         df["days_since_gdpr"] = (df["decision_date"] - _GDPR_START).dt.days

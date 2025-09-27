@@ -37,3 +37,6 @@
 ## Weight notes
 - `country_weight` rescales each country to equal total weight across the sample
 - `country_year_weight` equalises country-year cells where decision_year is observed
+
+## Storage format
+- Saved design matrices to CSV and Parquet to preserve downstream compatibility

@@ -3,7 +3,13 @@ import unittest
 from pathlib import Path
 
 from scripts.parser.ingest import segment_records, parse_record
-from scripts.clean.typing_status import parse_date_field, normalize_country, parse_number
+from scripts.clean.typing_status import (
+    parse_date_field,
+    normalize_country,
+    parse_number,
+    derive_multiselect_status,
+    detect_exclusivity_conflict,
+)
 from scripts.clean.isic_map import IsicIndex
 from scripts.clean.consistency import run_consistency_checks
 
@@ -59,6 +65,39 @@ class TestTypingAndCountry(unittest.TestCase):
         self.assertEqual(schema.value, 150000)
         schema_only = parse_number("TYPE:NUMBER")
         self.assertEqual(schema_only.status, "NOT_MENTIONED")
+
+    def test_multiselect_exclusivity_conflicts(self):
+        no_conflict = ["NOT_APPLICABLE"]
+        self.assertEqual(detect_exclusivity_conflict(no_conflict), 0)
+        self.assertEqual(derive_multiselect_status("Q30", no_conflict), "NOT_APPLICABLE")
+
+        with_substantive = ["NOT_APPLICABLE", "SECURITY"]
+        self.assertEqual(detect_exclusivity_conflict(with_substantive), 1)
+        self.assertEqual(
+            derive_multiselect_status("Q30", with_substantive),
+            "MIXED_CONTRADICTORY",
+        )
+
+        mixed_markers = ["NOT_APPLICABLE", "NONE_MENTIONED"]
+        self.assertEqual(detect_exclusivity_conflict(mixed_markers), 1)
+        self.assertEqual(
+            derive_multiselect_status("Q30", mixed_markers),
+            "MIXED_CONTRADICTORY",
+        )
+
+        none_violated_only = ["NONE_VIOLATED"]
+        self.assertEqual(detect_exclusivity_conflict(none_violated_only), 0)
+        self.assertEqual(
+            derive_multiselect_status("Q57", none_violated_only),
+            "NONE_VIOLATED",
+        )
+
+        none_violated_conflict = ["NONE_VIOLATED", "ACCESS_RIGHT"]
+        self.assertEqual(detect_exclusivity_conflict(none_violated_conflict), 1)
+        self.assertEqual(
+            derive_multiselect_status("Q57", none_violated_conflict),
+            "MIXED_CONTRADICTORY",
+        )
 
 
 class TestISICAndConsistency(unittest.TestCase):

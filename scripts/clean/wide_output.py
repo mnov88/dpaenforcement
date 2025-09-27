@@ -19,6 +19,7 @@ from scripts.clean.isic_map import IsicIndex
 from scripts.clean.geo_enrich import enrich_country, normalize_dpa_name
 from scripts.clean.text_norm import normalize_text, detect_language_heuristic
 from scripts.clean.enum_validate import EnumWhitelist
+from scripts.clean.schema_echo import strip_schema_echo
 from scripts.parser.ingest import parse_record
 
 
@@ -34,8 +35,6 @@ SEVERITY_MEASURES = {
 COUNTRY_WHITELIST = {
     "AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","EU","UNCLEAR"
 }
-
-SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:", "FORMAT:")
 
 FINE_OUTLIER_HIGH = 1e10
 TURNOVER_OUTLIER_HIGH = 1e12
@@ -61,11 +60,6 @@ MULTI_FIELDS: List[Tuple[str, str]] = [
 ]
 
 RAW_QUESTION_EXPORT: Tuple[str, ...] = tuple(f"Q{i}" for i in range(1, 69))
-
-def _is_schema_echo(value: str) -> bool:
-    v = (value or "").strip()
-    return any(v.startswith(p) for p in SCHEMA_ECHO_PREFIXES)
-
 
 def _clean_country_code(code: str) -> Tuple[str, bool, bool]:
     c = (code or "").upper()
@@ -155,10 +149,11 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             country_code_final, country_group = enrich_country(country_code_mapped)
 
             dpa_name_raw = (answers.get("Q2", "") or "").strip()
-            dpa_name_clean = dpa_name_raw if not _is_schema_echo(dpa_name_raw) else ""
-            if dpa_name_clean == "" and dpa_name_raw:
+            dpa_name_clean, dpa_had_schema = strip_schema_echo(dpa_name_raw)
+            if dpa_had_schema:
                 schema_echo_flag = 1
                 schema_echo_fields.append("Q2")
+            dpa_name_raw = dpa_name_clean
             dpa_name_canonical = normalize_dpa_name(dpa_name_clean)
 
             dpr = parse_date_field(answers.get("Q3", ""))
@@ -186,15 +181,14 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
             # ISIC
             isic_raw = (answers.get("Q12", "") or "").strip()
-            if _is_schema_echo(isic_raw):
+            isic_code, isic_had_schema = strip_schema_echo(isic_raw)
+            if isic_had_schema:
                 schema_echo_flag = 1
                 schema_echo_fields.append("Q12")
-                isic_raw = ""
-            isic_code = isic_raw
             isic_desc = ""
             isic_section = ""
-            if isic_idx is not None and isic_raw:
-                entry, ok = isic_idx.lookup(isic_raw)
+            if isic_idx is not None and isic_code:
+                entry, ok = isic_idx.lookup(isic_code)
                 if ok and entry is not None:
                     isic_code = entry.code
                     isic_desc = entry.description
@@ -261,17 +255,26 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 "q52_text": q52_norm, "q52_lang": q52_lang, "q52_tokens": q52_tok,
                 "q67_text": q67_norm, "q67_lang": q67_lang, "q67_tokens": q67_tok,
                 "q68_text": q68_norm, "q68_lang": q68_lang, "q68_tokens": q68_tok,
-                "schema_echo_flag": schema_echo_flag,
-                "schema_echo_fields": ";".join(sorted(set(schema_echo_fields))),
             }
             for qkey in RAW_QUESTION_EXPORT:
                 raw_value = (answers.get(qkey, "") or "").strip()
-                base_row[f"raw_{qkey.lower()}"] = raw_value if not _is_schema_echo(raw_value) else ""
+                cleaned, had_schema = strip_schema_echo(raw_value)
+                if had_schema:
+                    schema_echo_flag = 1
+                    schema_echo_fields.append(qkey)
+                base_row[f"raw_{qkey.lower()}"] = cleaned
 
             # Populate systematic multi-selects
             for qkey, prefix in MULTI_FIELDS:
                 ms_parsed = split_multiselect(answers.get(qkey, ""))
-                tokens = [t for t in ms_parsed.tokens if not _is_schema_echo(t)]
+                tokens: List[str] = []
+                for token in ms_parsed.tokens:
+                    cleaned_token, had_schema = strip_schema_echo(token)
+                    if had_schema:
+                        schema_echo_flag = 1
+                        schema_echo_fields.append(qkey)
+                    if cleaned_token:
+                        tokens.append(cleaned_token)
                 unknown, known = whitelist.validate_tokens(qkey, tokens)
                 status = derive_multiselect_status(qkey, tokens)
                 exclusivity = detect_exclusivity_conflict(tokens)
@@ -301,6 +304,9 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                     base_row["n_corrective_measures"] = len([t for t in known if t and t != "NONE"]) if known else 0
                     base_row["severity_measures_present"] = 1 if any(t in SEVERITY_MEASURES for t in known) else 0
                     base_row["remedy_only_case"] = 1 if (fine_eur or 0) == 0 and any(t for t in known if t and t != "NONE" and t != "ADMINISTRATIVE_FINE") else 0
+
+            base_row["schema_echo_flag"] = schema_echo_flag
+            base_row["schema_echo_fields"] = ";".join(sorted(set(schema_echo_fields)))
 
             writer.writerow(base_row)
 

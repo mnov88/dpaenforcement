@@ -8,6 +8,7 @@ This document summarizes every script that powers the DPA decision ingestion and
 2. ✅ **Enum whitelist metadata** – `build_enum_whitelist` records the actual prompt path in the emitted metadata, keeping provenance accurate when alternative questionnaires are parsed.【F:scripts/parser/enums.py†L23-L49】【F:scripts/cli.py†L25-L31】
 3. **Resource path resolution** – Multiple cleaning modules resolve optional assets (enum whitelist, ISIC structure) using bare relative paths such as `Path("resources/…")`, which breaks when the CLI runs outside the repository root.【F:scripts/clean/long_tables.py†L20-L28】【F:scripts/clean/wide_output.py†L92-L101】
    - *Plan*: centralize resource discovery (e.g., via `Path(__file__).resolve().parents[2]`) or allow explicit CLI arguments so callers can supply absolute paths; add regression tests that invoke the CLI from a temporary working directory.
+4. ✅ **Schema echo normalization drift** – Added `scripts.clean.schema_echo` so wide/long exports strip `TYPE:`, `ENUM:`, `MULTI_SELECT:` and `FORMAT:` prefixes uniformly, while still flagging affected questions for QA.【F:scripts/clean/schema_echo.py†L1-L34】【F:scripts/clean/wide_output.py†L145-L225】【F:scripts/clean/long_tables.py†L5-L126】
 
 ## Pipeline quick start
 

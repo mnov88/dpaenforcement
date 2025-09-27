@@ -1,4 +1,6 @@
+import csv
 import json
+import shutil
 import unittest
 from pathlib import Path
 
@@ -12,6 +14,8 @@ from scripts.clean.typing_status import (
 )
 from scripts.clean.isic_map import IsicIndex
 from scripts.clean.consistency import run_consistency_checks
+from scripts.clean.wide_output import clean_csv_to_wide
+from scripts.clean.long_tables import LongEmitter
 
 
 class TestParserAndSegmentation(unittest.TestCase):
@@ -126,6 +130,103 @@ class TestISICAndConsistency(unittest.TestCase):
         data = json.loads(out_p.read_text(encoding="utf-8"))
         self.assertTrue(data)
         self.assertTrue(data[0]["flags"][0].startswith("admin_fine"))
+
+
+class TestSchemaEchoNormalisation(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir = Path(".tmp_schema_echo_tests")
+        if self.tmpdir.exists():
+            shutil.rmtree(self.tmpdir)
+        self.tmpdir.mkdir(parents=True, exist_ok=True)
+
+    def tearDown(self):
+        shutil.rmtree(self.tmpdir)
+
+    @staticmethod
+    def _response(overrides: dict[str, str]) -> str:
+        items = []
+        base_overrides = {"Q1": "ISO_3166-1_ALPHA-2: FR"}
+        base_overrides.update(overrides)
+        for key, value in base_overrides.items():
+            if not key.startswith("Q"):
+                continue
+            try:
+                qnum = int(key[1:])
+            except ValueError:
+                continue
+            items.append((qnum, value))
+        items.sort()
+        return "\n".join(f"Answer {qnum}: {value}" for qnum, value in items)
+
+    def test_wide_output_strips_schema_prefixes(self):
+        raw_csv = self.tmpdir / "raw.csv"
+        response = self._response(
+            {
+                "Q1": "ISO_3166-1_ALPHA-2: FR",
+                "Q2": "ENUM:CNIL",
+                "Q3": "2024-01-01",
+                "Q12": "FORMAT:6209",
+                "Q15": "ENUM:COMPLAINT",
+                "Q21": "ENUM:SECURITY_INCIDENT, ENUM:OTHER",
+                "Q30": "ENUM:ACCOUNTABILITY, ENUM:SECURITY",
+            }
+        )
+        raw_csv.write_text(
+            "ID,response\n"
+            + f"CASE-1,\"{response.replace('"', '""')}\"\n",
+            encoding="utf-8",
+        )
+        out_csv = self.tmpdir / "wide.csv"
+        report = self.tmpdir / "report.json"
+        clean_csv_to_wide(raw_csv, out_csv, report)
+
+        rows = list(csv.DictReader(out_csv.open(encoding="utf-8")))
+        self.assertEqual(len(rows), 1)
+        row = rows[0]
+        self.assertEqual(row["raw_q15"], "COMPLAINT")
+        self.assertEqual(row["raw_q21"], "SECURITY_INCIDENT, OTHER")
+        self.assertEqual(row["raw_q30"], "ACCOUNTABILITY, SECURITY")
+        flagged = set((row.get("schema_echo_fields") or "").split(";"))
+        self.assertIn("Q2", flagged)
+        self.assertIn("Q12", flagged)
+        self.assertIn("Q15", flagged)
+        self.assertIn("Q21", flagged)
+        self.assertIn("Q30", flagged)
+
+    def test_long_tables_emit_clean_tokens(self):
+        raw_csv = self.tmpdir / "raw.csv"
+        response = self._response(
+            {
+                "Q1": "ISO_3166-1_ALPHA-2: FR",
+                "Q21": "ENUM:SECURITY_INCIDENT, ENUM:OTHER",
+                "Q30": "ENUM:ACCOUNTABILITY, ENUM:SECURITY",
+                "Q33": "ENUM:CONSENT",
+                "Q35": "FORMAT:APPROVED",
+            }
+        )
+        raw_csv.write_text(
+            "ID,response\n"
+            + f"CASE-1,\"{response.replace('"', '""')}\"\n",
+            encoding="utf-8",
+        )
+
+        out_dir_raw = self.tmpdir / "long_raw"
+        emitter_raw = LongEmitter(out_dir_raw)
+        emitter_raw.emit_from_csv(raw_csv, input_format="raw")
+        breach_rows = list(csv.DictReader((out_dir_raw / "breach_types.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "SECURITY_INCIDENT" for r in breach_rows))
+        self.assertTrue(any(r["option"] == "OTHER" for r in breach_rows))
+
+        wide_csv = self.tmpdir / "wide.csv"
+        report = self.tmpdir / "report.json"
+        clean_csv_to_wide(raw_csv, wide_csv, report)
+        out_dir_wide = self.tmpdir / "long_wide"
+        emitter_wide = LongEmitter(out_dir_wide)
+        emitter_wide.emit_from_csv(wide_csv, input_format="wide")
+        rights_rows = list(csv.DictReader((out_dir_wide / "article_5_discussed.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "ACCOUNTABILITY" for r in rights_rows))
+        li_rows = list(csv.DictReader((out_dir_wide / "li_test_outcome.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "APPROVED" for r in li_rows))
 
 
 if __name__ == "__main__":

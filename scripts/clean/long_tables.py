@@ -6,16 +6,9 @@ from typing import Dict, List
 
 from scripts.clean.typing_status import split_multiselect, derive_multiselect_status
 from scripts.clean.enum_validate import EnumWhitelist
+from scripts.clean.schema_echo import strip_schema_echo
 from scripts.parser.validators import dedupe_preserve_order
 from scripts.parser.ingest import parse_record
-
-SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:", "FORMAT:")
-
-
-def _is_schema_echo(value: str) -> bool:
-    v = (value or "").strip()
-    return any(v.startswith(p) for p in SCHEMA_ECHO_PREFIXES)
-
 
 LONG_TABLE_QUESTIONS = {
     "Q21",
@@ -109,7 +102,11 @@ class LongEmitter:
 
                 def add_multiselect(qkey: str, table_name: str) -> None:
                     ms_parsed = split_multiselect(answers.get(qkey, ""))
-                    tokens = [t for t in ms_parsed.tokens if t and not _is_schema_echo(t)]
+                    tokens: List[str] = []
+                    for token in ms_parsed.tokens:
+                        cleaned_token, _ = strip_schema_echo(token)
+                        if cleaned_token:
+                            tokens.append(cleaned_token)
                     tokens = dedupe_preserve_order(tokens)
                     if not tokens:
                         status = derive_multiselect_status(qkey, ms_parsed.tokens)
@@ -126,7 +123,8 @@ class LongEmitter:
 
                 def add_single(qkey: str, table_name: str) -> None:
                     val = (answers.get(qkey, "") or "").strip()
-                    if not val or _is_schema_echo(val):
+                    val, _ = strip_schema_echo(val)
+                    if not val:
                         return
                     unknown, known = self.whitelist.validate_tokens(qkey, [val])
                     if known:

@@ -166,23 +166,28 @@ EXCLUSIVE_MARKERS = {
     "NONE_DISCUSSED",
     "NONE",
     "NOT_DETERMINED",
+    "NONE_VIOLATED",
 }
 
 
 def derive_multiselect_status(qkey: str, tokens: List[str]) -> str:
     if not tokens:
         return "NOT_MENTIONED"
+
+    if detect_exclusivity_conflict(tokens):
+        return "MIXED_CONTRADICTORY"
+
     tset = set(tokens)
     if qkey in {"Q31", "Q57"}:
-        if "NONE_VIOLATED" in tset:
+        if tset == {"NONE_VIOLATED"}:
             return "NONE_VIOLATED"
-        if "NOT_DETERMINED" in tset:
+        if tset == {"NOT_DETERMINED"}:
             return "NOT_DETERMINED"
-    if "NOT_APPLICABLE" in tset and all(t == "NOT_APPLICABLE" for t in tokens):
+    if tset == {"NOT_APPLICABLE"}:
         return "NOT_APPLICABLE"
-    if "NONE_MENTIONED" in tset and all(t == "NONE_MENTIONED" for t in tokens):
+    if tset == {"NONE_MENTIONED"}:
         return "NONE_MENTIONED"
-    if qkey == "Q30" and "NONE_DISCUSSED" in tset and all(t == "NONE_DISCUSSED" for t in tokens):
+    if qkey == "Q30" and tset == {"NONE_DISCUSSED"}:
         return "NONE_DISCUSSED"
     return "DISCUSSED"
 
@@ -190,9 +195,11 @@ def derive_multiselect_status(qkey: str, tokens: List[str]) -> str:
 def detect_exclusivity_conflict(tokens: List[str]) -> int:
     if not tokens:
         return 0
-    tset = set(tokens)
-    markers = tset.intersection(EXCLUSIVE_MARKERS)
+    markers = [t for t in tokens if t in EXCLUSIVE_MARKERS]
     if not markers:
         return 0
-    substantive = [t for t in tokens if t not in EXCLUSIVE_MARKERS]
-    return 1 if substantive else 0
+    substantive_present = any(t not in EXCLUSIVE_MARKERS for t in tokens)
+    if substantive_present:
+        return 1
+    unique_markers = set(markers)
+    return 1 if len(unique_markers) > 1 else 0

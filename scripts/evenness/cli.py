@@ -19,6 +19,7 @@ from .config import (
 )
 from .data import build_fact_matrix
 from .decomposition import run_oaxaca_blinder
+from .foundation import run_phase_one
 from .interaction import interaction_scan
 from .leniency import compute_leniency_index
 from .matching import perform_matching
@@ -248,9 +249,30 @@ def cmd_predictive(args: argparse.Namespace) -> None:
     print(f"Saved predictive diagnostics under {out_dir}")
 
 
+def cmd_phase_one(args: argparse.Namespace) -> None:
+    df = build_fact_matrix(args.wide_csv, discussed_only=args.discussed_only)
+    outputs = run_phase_one(df)
+    summary = {
+        "X_full": len(outputs.X_full),
+        "X_timeobs": len(outputs.X_timeobs),
+        "CEM strata": outputs.twins_cem["stratum_id"].nunique() if not outputs.twins_cem.empty else 0,
+        "Gower within matches": len(outputs.twins_gower_within),
+        "Gower cross matches": len(outputs.twins_gower_cross),
+        "Risk bands": outputs.twins_riskbands["risk_ventile"].nunique() if not outputs.twins_riskbands.empty else 0,
+    }
+    print("Phase 1 artefacts generated:")
+    for key, value in summary.items():
+        print(f"  - {key}: {value}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="GDPR evenness analysis toolkit")
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_phase1 = sub.add_parser("phase-one", help="Run Phase 1 foundation workflow")
+    p_phase1.add_argument("--wide-csv", default=EvennessPaths().wide_csv)
+    p_phase1.add_argument("--discussed-only", action="store_true")
+    p_phase1.set_defaults(func=cmd_phase_one)
 
     p_prepare = sub.add_parser("prepare-data", help="Build fact matrix")
     p_prepare.add_argument("--wide-csv", default=EvennessPaths().wide_csv)

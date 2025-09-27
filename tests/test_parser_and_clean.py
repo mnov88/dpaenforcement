@@ -103,6 +103,20 @@ class TestTypingAndCountry(unittest.TestCase):
             "MIXED_CONTRADICTORY",
         )
 
+        not_discussed_only = ["NOT_DISCUSSED"]
+        self.assertEqual(detect_exclusivity_conflict(not_discussed_only), 0)
+        self.assertEqual(
+            derive_multiselect_status("Q43", not_discussed_only),
+            "NOT_DISCUSSED",
+        )
+
+        not_discussed_conflict = ["NOT_DISCUSSED", "YES_MATERIAL_HARM"]
+        self.assertEqual(detect_exclusivity_conflict(not_discussed_conflict), 1)
+        self.assertEqual(
+            derive_multiselect_status("Q43", not_discussed_conflict),
+            "MIXED_CONTRADICTORY",
+        )
+
 
 class TestISICAndConsistency(unittest.TestCase):
     def test_isic_index_load(self):

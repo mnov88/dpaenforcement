@@ -164,6 +164,7 @@ EXCLUSIVE_MARKERS = {
     "NOT_APPLICABLE",
     "NONE_MENTIONED",
     "NONE_DISCUSSED",
+    "NOT_DISCUSSED",
     "NONE",
     "NOT_DETERMINED",
     "NONE_VIOLATED",
@@ -187,6 +188,8 @@ def derive_multiselect_status(qkey: str, tokens: List[str]) -> str:
         return "NOT_APPLICABLE"
     if tset == {"NONE_MENTIONED"}:
         return "NONE_MENTIONED"
+    if tset == {"NOT_DISCUSSED"}:
+        return "NOT_DISCUSSED"
     if qkey == "Q30" and tset == {"NONE_DISCUSSED"}:
         return "NONE_DISCUSSED"
     return "DISCUSSED"

@@ -9,6 +9,7 @@ from scripts.clean.typing_status import (
     parse_date_field,
     normalize_country,
     parse_number,
+    parse_enum_field,
     derive_multiselect_status,
     detect_exclusivity_conflict,
 )
@@ -69,6 +70,49 @@ class TestTypingAndCountry(unittest.TestCase):
         self.assertEqual(schema.value, 150000)
         schema_only = parse_number("TYPE:NUMBER")
         self.assertEqual(schema_only.status, "NOT_MENTIONED")
+
+    def test_enum_field_parsing(self):
+        allowed = [
+            "YES_REQUIRED",
+            "NO_NOT_REQUIRED",
+            "DEFENDANT_DISPUTED_REQUIREMENT",
+            "NOT_APPLICABLE",
+            "NOT_MENTIONED",
+            "UNCLEAR",
+        ]
+        res = parse_enum_field("YES_REQUIRED", allowed)
+        self.assertEqual(res.value, "YES_REQUIRED")
+        self.assertEqual(res.status, "DISCUSSED")
+        menu = (
+            "YES_REQUIRED, NO_NOT_REQUIRED, DEFENDANT_DISPUTED_REQUIREMENT, "
+            "NOT_APPLICABLE, NOT_MENTIONED, UNCLEAR NOT_APPLICABLE"
+        )
+        res_menu = parse_enum_field(menu, allowed)
+        self.assertEqual(res_menu.value, "NOT_APPLICABLE")
+        self.assertEqual(res_menu.status, "NOT_APPLICABLE")
+        self.assertEqual(res_menu.note, "menu_echo")
+        trailing = parse_enum_field(
+            "Was the defendant required to notify the DPA under Article 33?: No",
+            allowed,
+            {"NO": "NO_NOT_REQUIRED"},
+        )
+        self.assertEqual(trailing.value, "NO_NOT_REQUIRED")
+        self.assertEqual(trailing.status, "DISCUSSED")
+        conflict = parse_enum_field("NOT_MENTIONED, UNCLEAR", allowed)
+        self.assertEqual(conflict.status, "MIXED_CONTRADICTORY")
+        empty = parse_enum_field("", allowed)
+        self.assertEqual(empty.status, "NOT_MENTIONED")
+        notify_allowed = [
+            "YES_NOTIFIED",
+            "NO_NOT_NOTIFIED",
+            "PARTIALLY_NOTIFIED",
+            "NOT_APPLICABLE",
+            "NOT_MENTIONED",
+            "UNCLEAR",
+        ]
+        notify = parse_enum_field("NOTIFIED", notify_allowed, {"NOTIFIED": "YES_NOTIFIED"})
+        self.assertEqual(notify.value, "YES_NOTIFIED")
+        self.assertEqual(notify.status, "DISCUSSED")
 
     def test_multiselect_exclusivity_conflicts(self):
         no_conflict = ["NOT_APPLICABLE"]

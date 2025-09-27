@@ -102,6 +102,14 @@ C. Legal logic and interpretive safeguards
 
 - If Q38 (turnover) is null, Q39 = HIT_4PCT_TURNOVER_CAP is unverifiable; keep as reported but set verification_possible = 0.
 
+- Article 33/34 notification chain derived features:
+
+- Parse Q17 (Art. 33 required), Q18 (submission), Q19 (timeliness), Q20 (delay band), Q26 (data subjects notified), and Q27 (Art. 34 required) into structured fields prefixed ``art33_``/``art34_``/``data_subjects_notified``.
+
+- Emit paired ``*_status`` columns (e.g., ``art33_notification_required_status``) reflecting DISCUSSED/NOT_MENTIONED/NOT_APPLICABLE/UNCLEAR semantics and ``*_note`` columns documenting the parser path (``direct``, ``alias_*``, ``menu_echo`` etc.).
+
+- Treat ``MIXED_CONTRADICTORY`` and ``UNPARSEABLE`` statuses from these parsers as QA flags surfaced in ``validation_report`` for follow-up review.
+
 D. Cross-field consistency and validation checks
 
 10) Logical checks to flag (not fix):

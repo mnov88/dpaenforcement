@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from datetime import UTC, datetime
-from typing import List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 
 
 DATE_FMT = "%Y-%m-%d"
@@ -158,6 +158,151 @@ def split_multiselect(raw: str) -> MultiSelectParseResult:
     tokens = [t.strip() for t in raw_norm.split(",") if t.strip()]
     status = "DISCUSSED" if tokens else "NOT_MENTIONED"
     return MultiSelectParseResult(raw=raw_norm, tokens=tokens, status=status)
+
+
+@dataclass
+class EnumParseResult:
+    raw: str
+    value: str
+    status: str
+    note: str = ""
+
+
+_ENUM_STATUS_DIRECT = {
+    "NOT_MENTIONED",
+    "NOT_DISCUSSED",
+    "NOT_APPLICABLE",
+}
+
+_ENUM_TOKEN_RE = re.compile(r"[A-Z0-9_]+")
+
+
+def _normalize_enum_token(token: str) -> str:
+    t = (token or "").strip().upper()
+    if not t:
+        return ""
+    t = t.replace("-", "_").replace("/", "_")
+    t = re.sub(r"\s+", "_", t)
+    t = re.sub(r"__+", "_", t)
+    return t.strip("_")
+
+
+def _enum_status_from_value(value: str) -> str:
+    if not value:
+        return "NOT_MENTIONED"
+    if value in _ENUM_STATUS_DIRECT:
+        return value
+    if value == "UNCLEAR":
+        return "UNCLEAR"
+    return "DISCUSSED"
+
+
+def parse_enum_field(
+    raw: str,
+    allowed_tokens: List[str],
+    aliases: Optional[Dict[str, str]] = None,
+) -> EnumParseResult:
+    raw_norm = (raw or "").strip()
+    if not raw_norm:
+        return EnumParseResult(raw="", value="", status="NOT_MENTIONED", note="empty")
+
+    allowed_lookup = {token: token for token in allowed_tokens}
+    allowed_norm = {_normalize_enum_token(token): token for token in allowed_tokens}
+
+    alias_norm: Dict[str, str] = {}
+    if aliases:
+        for key, target in aliases.items():
+            normalized_key = _normalize_enum_token(key)
+            if normalized_key:
+                alias_norm[normalized_key] = target
+
+    direct_norm = _normalize_enum_token(raw_norm)
+    if direct_norm in allowed_norm:
+        value = allowed_norm[direct_norm]
+        return EnumParseResult(
+            raw=raw_norm,
+            value=value,
+            status=_enum_status_from_value(value),
+            note="direct",
+        )
+    if direct_norm in alias_norm:
+        value = alias_norm[direct_norm]
+        return EnumParseResult(
+            raw=raw_norm,
+            value=value,
+            status=_enum_status_from_value(value),
+            note="alias_direct",
+        )
+
+    if ":" in raw_norm:
+        trailing = raw_norm.split(":")[-1].strip()
+        trailing_norm = _normalize_enum_token(trailing)
+        if trailing_norm in allowed_norm:
+            value = allowed_norm[trailing_norm]
+            return EnumParseResult(
+                raw=raw_norm,
+                value=value,
+                status=_enum_status_from_value(value),
+                note="trailing_segment",
+            )
+        if trailing_norm in alias_norm:
+            value = alias_norm[trailing_norm]
+            return EnumParseResult(
+                raw=raw_norm,
+                value=value,
+                status=_enum_status_from_value(value),
+                note="trailing_alias",
+            )
+
+    # Token sweep across uppercase words/underscores
+    tokens = [tok for tok in _ENUM_TOKEN_RE.findall(raw_norm.upper()) if tok in allowed_lookup]
+    if tokens:
+        value = allowed_lookup[tokens[-1]]
+        token_set = set(tokens)
+        allowed_set = set(allowed_lookup)
+        if allowed_set and token_set.issuperset(allowed_set):
+            return EnumParseResult(
+                raw=raw_norm,
+                value=value,
+                status=_enum_status_from_value(value),
+                note="menu_echo",
+            )
+        unique_tokens = list(dict.fromkeys(tokens))
+        if len(unique_tokens) > 1:
+            return EnumParseResult(
+                raw=raw_norm,
+                value=value,
+                status="MIXED_CONTRADICTORY",
+                note="multiple_tokens",
+            )
+        return EnumParseResult(
+            raw=raw_norm,
+            value=value,
+            status=_enum_status_from_value(value),
+            note="token_match",
+        )
+
+    alias_tokens = [tok for tok in _ENUM_TOKEN_RE.findall(raw_norm.upper()) if tok in alias_norm]
+    if alias_tokens:
+        value = alias_norm[alias_tokens[-1]]
+        unique_alias = list(dict.fromkeys(alias_tokens))
+        if len(unique_alias) > 1:
+            return EnumParseResult(
+                raw=raw_norm,
+                value=value,
+                status="MIXED_CONTRADICTORY",
+                note="multiple_alias_tokens",
+            )
+        return EnumParseResult(
+            raw=raw_norm,
+            value=value,
+            status=_enum_status_from_value(value),
+            note="alias_token",
+        )
+
+    if allowed_tokens:
+        return EnumParseResult(raw=raw_norm, value="", status="UNPARSEABLE", note="unmatched")
+    return EnumParseResult(raw=raw_norm, value="", status="UNKNOWN", note="no_allowed_tokens")
 
 
 EXCLUSIVE_MARKERS = {

@@ -13,6 +13,11 @@ WIDE_CSV = DATA_DIR / "cleaned_wide.csv"
 ANALYSIS_DIR = DATA_DIR / "analysis"
 ANALYSIS_DIR.mkdir(parents=True, exist_ok=True)
 
+X_MASTER_PARQUET = ANALYSIS_DIR / "X_master.parquet"
+X_MASTER_CSV = ANALYSIS_DIR / "X_master.csv"
+X_TIMEOBS_PARQUET = ANALYSIS_DIR / "X_timeobs.parquet"
+X_TIMEOBS_CSV = ANALYSIS_DIR / "X_timeobs.csv"
+
 GDPR_START = pd.Timestamp("2018-05-25", tz="UTC")
 BOOTSTRAP_REPS = 20
 
@@ -255,9 +260,11 @@ def build_design_matrices() -> Tuple[pd.DataFrame, pd.DataFrame, Dict[str, Dict[
 
     design = df[keep_columns].copy()
 
-    design.to_parquet(ANALYSIS_DIR / "X_master.parquet", index=False)
+    design.to_parquet(X_MASTER_PARQUET, index=False)
+    design.to_csv(X_MASTER_CSV, index=False)
     time_obs = design[df.loc[design.index, "time_observed"]].copy()
-    time_obs.to_parquet(ANALYSIS_DIR / "X_timeobs.parquet", index=False)
+    time_obs.to_parquet(X_TIMEOBS_PARQUET, index=False)
+    time_obs.to_csv(X_TIMEOBS_CSV, index=False)
 
     status_summary: Dict[str, Dict[str, int]] = {
         "breach_types_status": design["breach_types_status"].value_counts(dropna=False).to_dict(),
@@ -287,8 +294,11 @@ def build_design_matrices() -> Tuple[pd.DataFrame, pd.DataFrame, Dict[str, Dict[
     brief_lines.append(
         "- `country_year_weight` equalises country-year cells where decision_year is observed"
     )
+    brief_lines.append("")
+    brief_lines.append("## Storage format")
+    brief_lines.append("- Saved design matrices to CSV and Parquet to preserve downstream compatibility")
 
-    (ANALYSIS_DIR / "stage1_data_brief.md").write_text("\n".join(brief_lines), encoding="utf-8")
+    (ANALYSIS_DIR / "stage1_data_brief.md").write_text("\n".join(brief_lines) + "\n", encoding="utf-8")
     return design, time_obs, status_summary
 
 
@@ -489,7 +499,7 @@ def run_stage2(design: pd.DataFrame) -> None:
         summary_lines.append(
             f"- {row['analysis']}: estimate={row['estimate']:.4f} (95% CI {row['ci_lower']:.4f}, {row['ci_upper']:.4f})"
         )
-    (ANALYSIS_DIR / "stage2_results.md").write_text("\n".join(summary_lines), encoding="utf-8")
+    (ANALYSIS_DIR / "stage2_results.md").write_text("\n".join(summary_lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:

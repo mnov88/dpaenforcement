@@ -1,0 +1,1777 @@
+source,target,edge_type,decision_date,fine_amount
+Information Commissioner's Office,United Kingdom_18,decided_by,2025-06-05 00:00:00+00:00,2310000.0
+Information Commissioner's Office,United Kingdom_20,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_16,decided_by,2020-10-30 00:00:00+00:00,18400000.0
+Information Commissioner's Office,United Kingdom_17,decided_by,2020-11-13 00:00:00+00:00,1250000.0
+Information Commissioner's Office,United Kingdom_21,decided_by,2025-06-24 00:00:00+00:00,18000.0
+Information Commissioner's Office,United Kingdom_19,decided_by,2021-05-17 00:00:00+00:00,90000.0
+Information Commissioner's Office,United Kingdom_26,decided_by,2021-05-24 00:00:00+00:00,0.0
+Information Commissioner's Office,United Kingdom_25,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_23,decided_by,2021-11-15 00:00:00+00:00,500000.0
+Information Commissioner's Office,United Kingdom_24,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_29,decided_by,2024-05-02 00:00:00+00:00,130000.0
+Information Commissioner's Office,United Kingdom_27,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_28,decided_by,2025-04-14 00:00:00+00:00,60000.0
+Information Commissioner's Office,United Kingdom_22,decided_by,,200000.0
+Information Commissioner's Office,United Kingdom_30,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_32,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_31,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_34,decided_by,2021-10-18 00:00:00+00:00,10000.0
+Information Commissioner's Office,United Kingdom_35,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_39,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_45,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_40,decided_by,,145000.0
+Information Commissioner's Office,United Kingdom_44,decided_by,2022-10-04 00:00:00+00:00,1350000.0
+Information Commissioner's Office,United Kingdom_41,decided_by,2021-07-05 00:00:00+00:00,25000.0
+Information Commissioner's Office,United Kingdom_46,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_53,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_52,decided_by,,75000.0
+Information Commissioner's Office,United Kingdom_51,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_47,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_50,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_55,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_59,decided_by,2022-02-14 00:00:00+00:00,50000.0
+Information Commissioner's Office,United Kingdom_56,decided_by,,85000.0
+Information Commissioner's Office,United Kingdom_60,decided_by,2022-02-28 00:00:00+00:00,98000.0
+Information Commissioner's Office,United Kingdom_57,decided_by,2024-03-06 00:00:00+00:00,7500.0
+Information Commissioner's Office,United Kingdom_62,decided_by,2021-09-13 00:00:00+00:00,200000.0
+NOT_DISCUSSED,United Kingdom_36,decided_by,,0.0
+NOT_DISCUSSED,United Kingdom_63,decided_by,,0.0
+NOT_DISCUSSED,Spain_572,decided_by,,0.0
+NOT_DISCUSSED,Slovenia_76,decided_by,,0.0
+NOT_DISCUSSED,Norway_8,decided_by,,0.0
+NOT_DISCUSSED,Norway_73,decided_by,,0.0
+NOT_DISCUSSED,Netherlands_6,decided_by,,0.0
+NOT_DISCUSSED,Italy_139,decided_by,,0.0
+NOT_DISCUSSED,Italy_263,decided_by,,0.0
+NOT_DISCUSSED,Ireland_5,decided_by,,0.0
+NOT_DISCUSSED,Ireland_18,decided_by,,0.0
+NOT_DISCUSSED,Ireland_26,decided_by,,0.0
+NOT_DISCUSSED,Ireland_33,decided_by,,0.0
+NOT_DISCUSSED,Ireland_36,decided_by,,0.0
+NOT_DISCUSSED,Ireland_43,decided_by,,0.0
+NOT_DISCUSSED,Hungary_3,decided_by,,0.0
+NOT_DISCUSSED,Hungary_50,decided_by,,0.0
+NOT_DISCUSSED,Greece_24,decided_by,,0.0
+NOT_DISCUSSED,Greece_44,decided_by,,0.0
+NOT_DISCUSSED,Greece_55,decided_by,,0.0
+NOT_DISCUSSED,Greece_58,decided_by,,0.0
+NOT_DISCUSSED,Greece_61,decided_by,,0.0
+NOT_DISCUSSED,Greece_67,decided_by,,0.0
+NOT_DISCUSSED,Greece_70,decided_by,,0.0
+NOT_DISCUSSED,Greece_74,decided_by,,0.0
+NOT_DISCUSSED,Greece_75,decided_by,,0.0
+NOT_DISCUSSED,Greece_79,decided_by,,0.0
+NOT_DISCUSSED,France_64,decided_by,,0.0
+NOT_DISCUSSED,France_67,decided_by,,0.0
+NOT_DISCUSSED,France_70,decided_by,,0.0
+NOT_DISCUSSED,Finland_3,decided_by,,0.0
+NOT_DISCUSSED,Finland_28,decided_by,,0.0
+The Information Commissioner's Office,United Kingdom_37,decided_by,,0.0
+The Information Commissioner,United Kingdom_43,decided_by,,0.0
+The Information Commissioner,United Kingdom_48,decided_by,,0.0
+The Information Commissioner,United Kingdom_49,decided_by,,0.0
+UNCLEAR,United Kingdom_54,decided_by,,0.0
+Swedish Data Protection Authority,Sweden_2,decided_by,2020-12-02 00:00:00+00:00,4000000.0
+Swedish Data Protection Authority,Sweden_57,decided_by,2023-06-12 00:00:00+00:00,0.0
+Datainspektionen,Sweden_3,decided_by,2020-12-02 00:00:00+00:00,3500000.0
+Datainspektionen,Sweden_4,decided_by,2020-12-02 00:00:00+00:00,2500000.0
+Datainspektionen,Sweden_1,decided_by,2020-03-10 00:00:00+00:00,75000000.0
+Datainspektionen,Sweden_5,decided_by,,0.0
+Datainspektionen,Sweden_7,decided_by,2020-11-23 00:00:00+00:00,4000000.0
+Datainspektionen,Sweden_6,decided_by,,0.0
+Datainspektionen,Sweden_11,decided_by,,300000.0
+The Data Inspectorate,Sweden_9,decided_by,2020-12-10 00:00:00+00:00,550000.0
+The Data Inspectorate,Sweden_10,decided_by,,120000.0
+The Data Inspectorate,Norway_39,decided_by,,200000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_12,decided_by,2023-01-19 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_14,decided_by,2024-12-11 00:00:00+00:00,200000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_15,decided_by,2025-04-28 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_13,decided_by,,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_20,decided_by,2022-03-28 00:00:00+00:00,7500000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_21,decided_by,,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_22,decided_by,2023-06-12 00:00:00+00:00,58000000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_24,decided_by,2023-06-26 00:00:00+00:00,13000000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_36,decided_by,2023-06-30 00:00:00+00:00,300000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_34,decided_by,2023-06-30 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_35,decided_by,2023-06-30 00:00:00+00:00,12000000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_39,decided_by,,500000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_42,decided_by,,15000000.0
+Integritetsskyddsmyndigheten (IMY),Sweden_48,decided_by,2022-07-26 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_49,decided_by,,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_51,decided_by,,0.0
+Integritetsskyddsmyndigheten,Sweden_18,decided_by,2021-06-09 00:00:00+00:00,350000.0
+Integritetsskyddsmyndigheten,Sweden_26,decided_by,2021-03-31 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten,Sweden_30,decided_by,2023-03-31 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten,Sweden_31,decided_by,2021-03-23 00:00:00+00:00,0.0
+Integritetsskyddsmyndigheten,Sweden_37,decided_by,2023-08-28 00:00:00+00:00,35000000.0
+Integritetsskyddsmyndigheten,Sweden_54,decided_by,,0.0
+Integritetsskyddsmyndigheten,Sweden_52,decided_by,2022-09-13 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection,Sweden_16,decided_by,2024-12-19 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection,Sweden_29,decided_by,,0.0
+Swedish Authority for Privacy Protection,Sweden_32,decided_by,,0.0
+Swedish Authority for Privacy Protection,Sweden_50,decided_by,,0.0
+Integrity Protection Authority,Sweden_23,decided_by,2022-01-26 00:00:00+00:00,300000.0
+Integrity Protection Authority,Sweden_27,decided_by,2021-01-22 00:00:00+00:00,0.0
+Integrity Protection Authority,Sweden_43,decided_by,,0.0
+The Swedish Privacy Protection Agency (IMY),Sweden_33,decided_by,2023-06-30 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_38,decided_by,2022-10-10 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_40,decided_by,,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_41,decided_by,2022-03-29 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_44,decided_by,,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_45,decided_by,,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_47,decided_by,2022-03-18 00:00:00+00:00,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_53,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_1,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_3,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_5,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_8,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_9,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_10,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_12,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_11,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_15,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_13,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_16,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_14,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_17,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_18,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_19,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_20,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_25,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_28,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_29,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_31,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_33,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_36,decided_by,,24000.0
+Spanish Agency for Data Protection,Spain_42,decided_by,,12000.0
+Spanish Agency for Data Protection,Spain_45,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_47,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_50,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_55,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_57,decided_by,,200000.0
+Spanish Agency for Data Protection,Spain_58,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_61,decided_by,,10000.0
+Spanish Agency for Data Protection,Spain_62,decided_by,,70000.0
+Spanish Agency for Data Protection,Spain_66,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_71,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_70,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_73,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_81,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_76,decided_by,,16000.0
+Spanish Agency for Data Protection,Spain_85,decided_by,,1000.0
+Spanish Agency for Data Protection,Spain_103,decided_by,,24000.0
+Spanish Agency for Data Protection,Spain_105,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_106,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_104,decided_by,,56000.0
+Spanish Agency for Data Protection,Spain_116,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_119,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_113,decided_by,,70000.0
+Spanish Agency for Data Protection,Spain_118,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_123,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_133,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_132,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_144,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_146,decided_by,,10000.0
+Spanish Agency for Data Protection,Spain_147,decided_by,,10000.0
+Spanish Agency for Data Protection,Spain_179,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_241,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_243,decided_by,,900.0
+Spanish Agency for Data Protection,Spain_242,decided_by,,240000.0
+Spanish Agency for Data Protection,Spain_247,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_246,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_252,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_251,decided_by,,75000.0
+Spanish Agency for Data Protection,Spain_255,decided_by,,75000.0
+Spanish Agency for Data Protection,Spain_259,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_258,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_260,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_256,decided_by,,24000.0
+Spanish Agency for Data Protection,Spain_263,decided_by,,1000.0
+Spanish Agency for Data Protection,Spain_264,decided_by,,100000.0
+Spanish Agency for Data Protection,Spain_269,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_270,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_268,decided_by,,1500000.0
+Spanish Agency for Data Protection,Spain_272,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_271,decided_by,,500.0
+Spanish Agency for Data Protection,Spain_273,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_274,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_275,decided_by,2021-10-04 00:00:00+00:00,16000.0
+Spanish Agency for Data Protection,Spain_276,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_278,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_280,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_279,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_282,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_283,decided_by,,8150000.0
+Spanish Agency for Data Protection,Spain_285,decided_by,,1000.0
+Spanish Agency for Data Protection,Spain_290,decided_by,,18000.0
+Spanish Agency for Data Protection,Spain_291,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_294,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_293,decided_by,2021-03-30 00:00:00+00:00,5000000.0
+Spanish Agency for Data Protection,Spain_298,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_299,decided_by,,30000.0
+Spanish Agency for Data Protection,Spain_303,decided_by,,90000.0
+Spanish Agency for Data Protection,Spain_305,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_311,decided_by,,35000.0
+Spanish Agency for Data Protection,Spain_313,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_314,decided_by,,24000.0
+Spanish Agency for Data Protection,Spain_315,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_320,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_318,decided_by,2021-09-27 00:00:00+00:00,40000.0
+Spanish Agency for Data Protection,Spain_317,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_319,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_321,decided_by,,55000.0
+Spanish Agency for Data Protection,Spain_325,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_322,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_327,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_324,decided_by,,9000.0
+Spanish Agency for Data Protection,Spain_326,decided_by,,2520000.0
+Spanish Agency for Data Protection,Spain_328,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_329,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_330,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_331,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_333,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_336,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_341,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_338,decided_by,,45000.0
+Spanish Agency for Data Protection,Spain_342,decided_by,,25000.0
+Spanish Agency for Data Protection,Spain_343,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_344,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_345,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_346,decided_by,,600.0
+Spanish Agency for Data Protection,Spain_347,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_350,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_348,decided_by,,4200.0
+Spanish Agency for Data Protection,Spain_351,decided_by,,15000.0
+Spanish Agency for Data Protection,Spain_352,decided_by,,45000.0
+Spanish Agency for Data Protection,Spain_353,decided_by,2020-11-13 00:00:00+00:00,0.0
+Spanish Agency for Data Protection,Spain_354,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_357,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_356,decided_by,,1200.0
+Spanish Agency for Data Protection,Spain_358,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_359,decided_by,,600000.0
+Spanish Agency for Data Protection,Spain_362,decided_by,,75000.0
+Spanish Agency for Data Protection,Spain_361,decided_by,,45000.0
+Spanish Agency for Data Protection,Spain_364,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_363,decided_by,,25000.0
+Spanish Agency for Data Protection,Spain_366,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_370,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_369,decided_by,,96000.0
+Spanish Agency for Data Protection,Spain_371,decided_by,,56000.0
+Spanish Agency for Data Protection,Spain_372,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_373,decided_by,,1600.0
+Spanish Agency for Data Protection,Spain_374,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_376,decided_by,,40000.0
+Spanish Agency for Data Protection,Spain_378,decided_by,,200000.0
+Spanish Agency for Data Protection,Spain_377,decided_by,,1600.0
+Spanish Agency for Data Protection,Spain_381,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_383,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_388,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_385,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_386,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_391,decided_by,,1200.0
+Spanish Agency for Data Protection,Spain_392,decided_by,,36000.0
+Spanish Agency for Data Protection,Spain_393,decided_by,,100000.0
+Spanish Agency for Data Protection,Spain_394,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_396,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_395,decided_by,,80000.0
+Spanish Agency for Data Protection,Spain_400,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_399,decided_by,,12000.0
+Spanish Agency for Data Protection,Spain_405,decided_by,,15000.0
+Spanish Agency for Data Protection,Spain_403,decided_by,,75000.0
+Spanish Agency for Data Protection,Spain_408,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_411,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_415,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_414,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_416,decided_by,,5000.0
+Spanish Agency for Data Protection,Spain_419,decided_by,,12000.0
+Spanish Agency for Data Protection,Spain_421,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_420,decided_by,2021-11-13 00:00:00+00:00,50000.0
+Spanish Agency for Data Protection,Spain_422,decided_by,,15000.0
+Spanish Agency for Data Protection,Spain_423,decided_by,,40000.0
+Spanish Agency for Data Protection,Spain_425,decided_by,,2000000.0
+Spanish Agency for Data Protection,Spain_428,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_429,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_431,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_435,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_433,decided_by,,1000.0
+Spanish Agency for Data Protection,Spain_434,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_440,decided_by,,9000.0
+Spanish Agency for Data Protection,Spain_437,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_441,decided_by,,70000.0
+Spanish Agency for Data Protection,Spain_439,decided_by,,1200.0
+Spanish Agency for Data Protection,Spain_443,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_442,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_446,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_449,decided_by,,30000.0
+Spanish Agency for Data Protection,Spain_451,decided_by,,36000.0
+Spanish Agency for Data Protection,Spain_452,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_450,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_453,decided_by,,36000.0
+Spanish Agency for Data Protection,Spain_454,decided_by,,30000.0
+Spanish Agency for Data Protection,Spain_456,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_459,decided_by,,2400.0
+Spanish Agency for Data Protection,Spain_458,decided_by,,100000.0
+Spanish Agency for Data Protection,Spain_461,decided_by,2020-12-03 00:00:00+00:00,6000.0
+Spanish Agency for Data Protection,Spain_466,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_467,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_462,decided_by,,300000.0
+Spanish Agency for Data Protection,Spain_460,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_464,decided_by,,10000.0
+Spanish Agency for Data Protection,Spain_465,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_470,decided_by,,4800.0
+Spanish Agency for Data Protection,Spain_479,decided_by,,30000.0
+Spanish Agency for Data Protection,Spain_472,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_473,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_474,decided_by,2021-01-18 00:00:00+00:00,3000.0
+Spanish Agency for Data Protection,Spain_480,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_481,decided_by,,42000.0
+Spanish Agency for Data Protection,Spain_484,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_485,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_487,decided_by,,20000.0
+Spanish Agency for Data Protection,Spain_483,decided_by,,42000.0
+Spanish Agency for Data Protection,Spain_486,decided_by,2021-07-27 00:00:00+00:00,120000.0
+Spanish Agency for Data Protection,Spain_490,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_488,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_496,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_499,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_501,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_502,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_505,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_507,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_511,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_514,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_513,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_515,decided_by,2020-11-13 00:00:00+00:00,0.0
+Spanish Agency for Data Protection,Spain_516,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_522,decided_by,,25000.0
+Spanish Agency for Data Protection,Spain_517,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_518,decided_by,,100000.0
+Spanish Agency for Data Protection,Spain_521,decided_by,,40000.0
+Spanish Agency for Data Protection,Spain_520,decided_by,,54000.0
+Spanish Agency for Data Protection,Spain_532,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_529,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_533,decided_by,,120000.0
+Spanish Agency for Data Protection,Spain_534,decided_by,,24000.0
+Spanish Agency for Data Protection,Spain_535,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_537,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_539,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_541,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_542,decided_by,,90000.0
+Spanish Agency for Data Protection,Spain_543,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_540,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_549,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_551,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_550,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_552,decided_by,,60000.0
+Spanish Agency for Data Protection,Spain_558,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_553,decided_by,,1500.0
+Spanish Agency for Data Protection,Spain_554,decided_by,,50000.0
+Spanish Agency for Data Protection,Spain_555,decided_by,,4000.0
+Spanish Agency for Data Protection,Spain_556,decided_by,,16000.0
+Spanish Agency for Data Protection,Spain_559,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_557,decided_by,,150000.0
+Spanish Agency for Data Protection,Spain_562,decided_by,,8000.0
+Spanish Agency for Data Protection,Spain_561,decided_by,,3000.0
+Spanish Agency for Data Protection,Spain_563,decided_by,2021-03-09 00:00:00+00:00,60000.0
+Spanish Agency for Data Protection,Spain_560,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_564,decided_by,,8000.0
+Spanish Agency for Data Protection,Spain_565,decided_by,,6000.0
+Spanish Agency for Data Protection,Spain_568,decided_by,2021-12-23 00:00:00+00:00,56000.0
+Spanish Agency for Data Protection,Spain_567,decided_by,,3000000.0
+Spanish Agency for Data Protection,Spain_570,decided_by,,2000.0
+Spanish Agency for Data Protection,Spain_569,decided_by,,12000.0
+Spanish Agency for Data Protection,Spain_573,decided_by,2022-08-23 00:00:00+00:00,0.0
+Spanish Agency for Data Protection,Spain_574,decided_by,,1800.0
+Spanish Agency for Data Protection,Spain_589,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_591,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_597,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_598,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_599,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_605,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_601,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_613,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_2,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_63,decided_by,,10000.0
+Agencia Española de Protección de Datos,Spain_92,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_151,decided_by,2024-01-16 00:00:00+00:00,200000.0
+Agencia Española de Protección de Datos,Spain_182,decided_by,2024-01-16 00:00:00+00:00,3000000.0
+Agencia Española de Protección de Datos,Spain_231,decided_by,,18000.0
+Agencia Española de Protección de Datos,Spain_261,decided_by,,24000.0
+Agencia Española de Protección de Datos,Spain_281,decided_by,,6000.0
+Agencia Española de Protección de Datos,Spain_289,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_296,decided_by,,3000.0
+Agencia Española de Protección de Datos,Spain_297,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_302,decided_by,2020-03-30 00:00:00+00:00,0.0
+Agencia Española de Protección de Datos,Spain_316,decided_by,,33000.0
+Agencia Española de Protección de Datos,Spain_335,decided_by,,1800.0
+Agencia Española de Protección de Datos,Spain_340,decided_by,,9000.0
+Agencia Española de Protección de Datos,Spain_404,decided_by,2021-11-13 00:00:00+00:00,1500000.0
+Agencia Española de Protección de Datos,Spain_444,decided_by,,3000.0
+Agencia Española de Protección de Datos,Spain_482,decided_by,,30000.0
+Agencia Española de Protección de Datos,Spain_527,decided_by,,5000.0
+Agencia Española de Protección de Datos,Spain_584,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_592,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_593,decided_by,,0.0
+Agencia Española de Protección de Datos,Spain_612,decided_by,,0.0
+Spanish Data Protection Agency,Spain_4,decided_by,,21000.0
+Spanish Data Protection Agency,Spain_7,decided_by,,0.0
+Spanish Data Protection Agency,Spain_21,decided_by,,0.0
+Spanish Data Protection Agency,Spain_22,decided_by,,0.0
+Spanish Data Protection Agency,Spain_24,decided_by,,0.0
+Spanish Data Protection Agency,Spain_26,decided_by,,0.0
+Spanish Data Protection Agency,Spain_27,decided_by,,0.0
+Spanish Data Protection Agency,Spain_30,decided_by,,0.0
+Spanish Data Protection Agency,Spain_32,decided_by,,0.0
+Spanish Data Protection Agency,Spain_35,decided_by,,0.0
+Spanish Data Protection Agency,Spain_34,decided_by,,0.0
+Spanish Data Protection Agency,Spain_38,decided_by,,0.0
+Spanish Data Protection Agency,Spain_40,decided_by,,1500.0
+Spanish Data Protection Agency,Spain_41,decided_by,,1500.0
+Spanish Data Protection Agency,Spain_37,decided_by,,0.0
+Spanish Data Protection Agency,Spain_43,decided_by,,0.0
+Spanish Data Protection Agency,Spain_48,decided_by,,0.0
+Spanish Data Protection Agency,Spain_51,decided_by,,0.0
+Spanish Data Protection Agency,Spain_49,decided_by,2022-08-04 00:00:00+00:00,24000.0
+Spanish Data Protection Agency,Spain_46,decided_by,,0.0
+Spanish Data Protection Agency,Spain_52,decided_by,,0.0
+Spanish Data Protection Agency,Spain_53,decided_by,,300.0
+Spanish Data Protection Agency,Spain_56,decided_by,,0.0
+Spanish Data Protection Agency,Spain_54,decided_by,,56000.0
+Spanish Data Protection Agency,Spain_59,decided_by,,80000.0
+Spanish Data Protection Agency,Spain_60,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_64,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_65,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_67,decided_by,,17000.0
+Spanish Data Protection Agency,Spain_69,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_68,decided_by,,24000.0
+Spanish Data Protection Agency,Spain_74,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_72,decided_by,,0.0
+Spanish Data Protection Agency,Spain_77,decided_by,,0.0
+Spanish Data Protection Agency,Spain_75,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_78,decided_by,2024-01-16 00:00:00+00:00,600000.0
+Spanish Data Protection Agency,Spain_82,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_80,decided_by,,14000.0
+Spanish Data Protection Agency,Spain_83,decided_by,,0.0
+Spanish Data Protection Agency,Spain_84,decided_by,,0.0
+Spanish Data Protection Agency,Spain_87,decided_by,,0.0
+Spanish Data Protection Agency,Spain_86,decided_by,,1200.0
+Spanish Data Protection Agency,Spain_88,decided_by,2024-01-16 00:00:00+00:00,30000.0
+Spanish Data Protection Agency,Spain_91,decided_by,,5000.0
+Spanish Data Protection Agency,Spain_93,decided_by,,24000.0
+Spanish Data Protection Agency,Spain_89,decided_by,2024-01-16 00:00:00+00:00,15000.0
+Spanish Data Protection Agency,Spain_90,decided_by,2024-01-20 00:00:00+00:00,300000.0
+Spanish Data Protection Agency,Spain_94,decided_by,,0.0
+Spanish Data Protection Agency,Spain_95,decided_by,,0.0
+Spanish Data Protection Agency,Spain_96,decided_by,,0.0
+Spanish Data Protection Agency,Spain_98,decided_by,,0.0
+Spanish Data Protection Agency,Spain_99,decided_by,,0.0
+Spanish Data Protection Agency,Spain_100,decided_by,,6000.0
+Spanish Data Protection Agency,Spain_97,decided_by,,365000.0
+Spanish Data Protection Agency,Spain_102,decided_by,,0.0
+Spanish Data Protection Agency,Spain_101,decided_by,,56000.0
+Spanish Data Protection Agency,Spain_107,decided_by,,30000.0
+Spanish Data Protection Agency,Spain_108,decided_by,,0.0
+Spanish Data Protection Agency,Spain_110,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_111,decided_by,,0.0
+Spanish Data Protection Agency,Spain_109,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_112,decided_by,,8000.0
+Spanish Data Protection Agency,Spain_117,decided_by,,0.0
+Spanish Data Protection Agency,Spain_115,decided_by,2024-01-16 00:00:00+00:00,3500000.0
+Spanish Data Protection Agency,Spain_114,decided_by,,50000.0
+Spanish Data Protection Agency,Spain_121,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_120,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_122,decided_by,,7000.0
+Spanish Data Protection Agency,Spain_124,decided_by,,300.0
+Spanish Data Protection Agency,Spain_126,decided_by,,80000.0
+Spanish Data Protection Agency,Spain_125,decided_by,,50000.0
+Spanish Data Protection Agency,Spain_127,decided_by,,5000.0
+Spanish Data Protection Agency,Spain_130,decided_by,,0.0
+Spanish Data Protection Agency,Spain_129,decided_by,,4000.0
+Spanish Data Protection Agency,Spain_128,decided_by,,0.0
+Spanish Data Protection Agency,Spain_131,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_134,decided_by,,72000.0
+Spanish Data Protection Agency,Spain_137,decided_by,,300.0
+Spanish Data Protection Agency,Spain_135,decided_by,,600.0
+Spanish Data Protection Agency,Spain_136,decided_by,,8000.0
+Spanish Data Protection Agency,Spain_138,decided_by,,1500.0
+Spanish Data Protection Agency,Spain_139,decided_by,,1200.0
+Spanish Data Protection Agency,Spain_141,decided_by,,0.0
+Spanish Data Protection Agency,Spain_140,decided_by,2024-01-16 00:00:00+00:00,250000.0
+Spanish Data Protection Agency,Spain_142,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_143,decided_by,,300.0
+Spanish Data Protection Agency,Spain_149,decided_by,,12000.0
+Spanish Data Protection Agency,Spain_150,decided_by,2024-01-16 00:00:00+00:00,220000.0
+Spanish Data Protection Agency,Spain_152,decided_by,2024-01-16 00:00:00+00:00,1200000.0
+Spanish Data Protection Agency,Spain_154,decided_by,2024-01-16 00:00:00+00:00,3500000.0
+Spanish Data Protection Agency,Spain_153,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_155,decided_by,,1600000.0
+Spanish Data Protection Agency,Spain_156,decided_by,,4000000.0
+Spanish Data Protection Agency,Spain_158,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_157,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_160,decided_by,,1200000.0
+Spanish Data Protection Agency,Spain_159,decided_by,,42000.0
+Spanish Data Protection Agency,Spain_162,decided_by,,0.0
+Spanish Data Protection Agency,Spain_161,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_164,decided_by,,0.0
+Spanish Data Protection Agency,Spain_165,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_163,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_168,decided_by,,0.0
+Spanish Data Protection Agency,Spain_169,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_166,decided_by,,180000.0
+Spanish Data Protection Agency,Spain_174,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_173,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_171,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_172,decided_by,,180000.0
+Spanish Data Protection Agency,Spain_178,decided_by,,100000.0
+Spanish Data Protection Agency,Spain_177,decided_by,2024-07-05 00:00:00+00:00,270000.0
+Spanish Data Protection Agency,Spain_175,decided_by,,72000.0
+Spanish Data Protection Agency,Spain_176,decided_by,,360000.0
+Spanish Data Protection Agency,Spain_181,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_187,decided_by,,0.0
+Spanish Data Protection Agency,Spain_180,decided_by,2024-12-05 00:00:00+00:00,42000.0
+Spanish Data Protection Agency,Spain_186,decided_by,2023-10-11 00:00:00+00:00,0.0
+Spanish Data Protection Agency,Spain_185,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_188,decided_by,,500000.0
+Spanish Data Protection Agency,Spain_189,decided_by,,7500.0
+Spanish Data Protection Agency,Spain_183,decided_by,,0.0
+Spanish Data Protection Agency,Spain_190,decided_by,,500.0
+Spanish Data Protection Agency,Spain_191,decided_by,,12000.0
+Spanish Data Protection Agency,Spain_194,decided_by,,2000.0
+Spanish Data Protection Agency,Spain_192,decided_by,2024-01-19 00:00:00+00:00,200000.0
+Spanish Data Protection Agency,Spain_193,decided_by,,100000.0
+Spanish Data Protection Agency,Spain_196,decided_by,,0.0
+Spanish Data Protection Agency,Spain_195,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_200,decided_by,,2000.0
+Spanish Data Protection Agency,Spain_199,decided_by,2024-01-16 00:00:00+00:00,600.0
+Spanish Data Protection Agency,Spain_197,decided_by,,0.0
+Spanish Data Protection Agency,Spain_198,decided_by,,15000.0
+Spanish Data Protection Agency,Spain_202,decided_by,,0.0
+Spanish Data Protection Agency,Spain_201,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_203,decided_by,,4000.0
+Spanish Data Protection Agency,Spain_206,decided_by,2024-01-31 00:00:00+00:00,5000.0
+Spanish Data Protection Agency,Spain_205,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_204,decided_by,,12000.0
+Spanish Data Protection Agency,Spain_208,decided_by,,56000.0
+Spanish Data Protection Agency,Spain_207,decided_by,,96000.0
+Spanish Data Protection Agency,Spain_209,decided_by,,1200.0
+Spanish Data Protection Agency,Spain_210,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_212,decided_by,,30000.0
+Spanish Data Protection Agency,Spain_211,decided_by,,24000.0
+Spanish Data Protection Agency,Spain_214,decided_by,,0.0
+Spanish Data Protection Agency,Spain_215,decided_by,2024-10-01 00:00:00+00:00,180000.0
+Spanish Data Protection Agency,Spain_219,decided_by,,0.0
+Spanish Data Protection Agency,Spain_216,decided_by,,1200.0
+Spanish Data Protection Agency,Spain_217,decided_by,,150000.0
+Spanish Data Protection Agency,Spain_220,decided_by,,500.0
+Spanish Data Protection Agency,Spain_218,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_221,decided_by,,4000.0
+Spanish Data Protection Agency,Spain_222,decided_by,2024-06-06 00:00:00+00:00,120000.0
+Spanish Data Protection Agency,Spain_224,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_225,decided_by,,100000.0
+Spanish Data Protection Agency,Spain_228,decided_by,,1000.0
+Spanish Data Protection Agency,Spain_227,decided_by,,30000.0
+Spanish Data Protection Agency,Spain_226,decided_by,,96000.0
+Spanish Data Protection Agency,Spain_230,decided_by,,600.0
+Spanish Data Protection Agency,Spain_232,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_233,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_235,decided_by,,600.0
+Spanish Data Protection Agency,Spain_237,decided_by,,42000.0
+Spanish Data Protection Agency,Spain_240,decided_by,,0.0
+Spanish Data Protection Agency,Spain_239,decided_by,,12000.0
+Spanish Data Protection Agency,Spain_236,decided_by,,180000.0
+Spanish Data Protection Agency,Spain_244,decided_by,,0.0
+Spanish Data Protection Agency,Spain_245,decided_by,,0.0
+Spanish Data Protection Agency,Spain_250,decided_by,,0.0
+Spanish Data Protection Agency,Spain_248,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_249,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_253,decided_by,,0.0
+Spanish Data Protection Agency,Spain_254,decided_by,,0.0
+Spanish Data Protection Agency,Spain_262,decided_by,,0.0
+Spanish Data Protection Agency,Spain_265,decided_by,2020-07-16 00:00:00+00:00,1200.0
+Spanish Data Protection Agency,Spain_266,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_267,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_288,decided_by,,0.0
+Spanish Data Protection Agency,Spain_287,decided_by,,0.0
+Spanish Data Protection Agency,Spain_292,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_295,decided_by,,0.0
+Spanish Data Protection Agency,Spain_300,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_301,decided_by,,132000.0
+Spanish Data Protection Agency,Spain_304,decided_by,,0.0
+Spanish Data Protection Agency,Spain_309,decided_by,,0.0
+Spanish Data Protection Agency,Spain_306,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_312,decided_by,,1800.0
+Spanish Data Protection Agency,Spain_307,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_308,decided_by,,44000.0
+Spanish Data Protection Agency,Spain_323,decided_by,,2000.0
+Spanish Data Protection Agency,Spain_332,decided_by,,0.0
+Spanish Data Protection Agency,Spain_334,decided_by,,50000.0
+Spanish Data Protection Agency,Spain_337,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_349,decided_by,,0.0
+Spanish Data Protection Agency,Spain_355,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_360,decided_by,,1600.0
+Spanish Data Protection Agency,Spain_367,decided_by,,12000.0
+Spanish Data Protection Agency,Spain_368,decided_by,,1800.0
+Spanish Data Protection Agency,Spain_375,decided_by,,30000.0
+Spanish Data Protection Agency,Spain_379,decided_by,,0.0
+Spanish Data Protection Agency,Spain_380,decided_by,,45000.0
+Spanish Data Protection Agency,Spain_382,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_384,decided_by,,0.0
+Spanish Data Protection Agency,Spain_387,decided_by,,20000.0
+Spanish Data Protection Agency,Spain_389,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_390,decided_by,,40000.0
+Spanish Data Protection Agency,Spain_397,decided_by,,2100000.0
+Spanish Data Protection Agency,Spain_398,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_401,decided_by,,7800.0
+Spanish Data Protection Agency,Spain_402,decided_by,,120000.0
+Spanish Data Protection Agency,Spain_410,decided_by,,3000.0
+Spanish Data Protection Agency,Spain_409,decided_by,,0.0
+Spanish Data Protection Agency,Spain_417,decided_by,,0.0
+Spanish Data Protection Agency,Spain_412,decided_by,,1800.0
+Spanish Data Protection Agency,Spain_418,decided_by,2020-11-13 00:00:00+00:00,0.0
+Spanish Data Protection Agency,Spain_424,decided_by,,900.0
+Spanish Data Protection Agency,Spain_426,decided_by,,170000.0
+Spanish Data Protection Agency,Spain_427,decided_by,,900.0
+Spanish Data Protection Agency,Spain_430,decided_by,,0.0
+Spanish Data Protection Agency,Spain_432,decided_by,,2000.0
+Spanish Data Protection Agency,Spain_436,decided_by,,50000.0
+Spanish Data Protection Agency,Spain_438,decided_by,,75000.0
+Spanish Data Protection Agency,Spain_445,decided_by,2019-10-29 00:00:00+00:00,6000.0
+Spanish Data Protection Agency,Spain_455,decided_by,,30000.0
+Spanish Data Protection Agency,Spain_457,decided_by,,0.0
+Spanish Data Protection Agency,Spain_463,decided_by,,0.0
+Spanish Data Protection Agency,Spain_469,decided_by,,0.0
+Spanish Data Protection Agency,Spain_471,decided_by,,0.0
+Spanish Data Protection Agency,Spain_468,decided_by,,0.0
+Spanish Data Protection Agency,Spain_476,decided_by,,0.0
+Spanish Data Protection Agency,Spain_478,decided_by,,0.0
+Spanish Data Protection Agency,Spain_492,decided_by,,6000.0
+Spanish Data Protection Agency,Spain_491,decided_by,,200000.0
+Spanish Data Protection Agency,Spain_493,decided_by,2022-05-22 00:00:00+00:00,0.0
+Spanish Data Protection Agency,Spain_494,decided_by,,20000.0
+Spanish Data Protection Agency,Spain_495,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_497,decided_by,,3600.0
+Spanish Data Protection Agency,Spain_498,decided_by,,0.0
+Spanish Data Protection Agency,Spain_500,decided_by,,8000.0
+Spanish Data Protection Agency,Spain_503,decided_by,,25000.0
+Spanish Data Protection Agency,Spain_506,decided_by,,2000.0
+Spanish Data Protection Agency,Spain_504,decided_by,,0.0
+Spanish Data Protection Agency,Spain_509,decided_by,,20000.0
+Spanish Data Protection Agency,Spain_510,decided_by,,60000.0
+Spanish Data Protection Agency,Spain_519,decided_by,,75000.0
+Spanish Data Protection Agency,Spain_524,decided_by,,0.0
+Spanish Data Protection Agency,Spain_525,decided_by,,0.0
+Spanish Data Protection Agency,Spain_523,decided_by,,48000.0
+Spanish Data Protection Agency,Spain_526,decided_by,,1500.0
+Spanish Data Protection Agency,Spain_536,decided_by,,5000.0
+Spanish Data Protection Agency,Spain_530,decided_by,2021-10-04 00:00:00+00:00,60000.0
+Spanish Data Protection Agency,Spain_544,decided_by,,5000.0
+Spanish Data Protection Agency,Spain_545,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_546,decided_by,,75000.0
+Spanish Data Protection Agency,Spain_547,decided_by,,80000.0
+Spanish Data Protection Agency,Spain_566,decided_by,,75000.0
+Spanish Data Protection Agency,Spain_575,decided_by,,55000.0
+Spanish Data Protection Agency,Spain_571,decided_by,,0.0
+Spanish Data Protection Agency,Spain_578,decided_by,,0.0
+Spanish Data Protection Agency,Spain_576,decided_by,,480.0
+Spanish Data Protection Agency,Spain_581,decided_by,,10000.0
+Spanish Data Protection Agency,Spain_577,decided_by,,80000.0
+Spanish Data Protection Agency,Spain_582,decided_by,2024-01-16 00:00:00+00:00,1200.0
+Spanish Data Protection Agency,Spain_579,decided_by,,0.0
+Spanish Data Protection Agency,Spain_583,decided_by,,70000.0
+Spanish Data Protection Agency,Spain_590,decided_by,,0.0
+Spanish Data Protection Agency,Spain_585,decided_by,,0.0
+Spanish Data Protection Agency,Spain_587,decided_by,,0.0
+Spanish Data Protection Agency,Spain_588,decided_by,,0.0
+Spanish Data Protection Agency,Spain_595,decided_by,,0.0
+Spanish Data Protection Agency,Spain_596,decided_by,,0.0
+Spanish Data Protection Agency,Spain_594,decided_by,,0.0
+Spanish Data Protection Agency,Spain_600,decided_by,,0.0
+Spanish Data Protection Agency,Spain_603,decided_by,,0.0
+Spanish Data Protection Agency,Spain_602,decided_by,,0.0
+Spanish Data Protection Agency,Spain_604,decided_by,,0.0
+Spanish Data Protection Agency,Spain_606,decided_by,,0.0
+Spanish Data Protection Agency,Spain_607,decided_by,,0.0
+Spanish Data Protection Agency,Spain_611,decided_by,,0.0
+Spanish Data Protection Agency,Spain_610,decided_by,,0.0
+Spanish Data Protection Agency,Spain_614,decided_by,,0.0
+Spanish Data Protection Agency,Spain_616,decided_by,,600.0
+Spanish Data Protection Agency (AEPD),Spain_6,decided_by,,0.0
+Spanish Data Protection Agency (AEPD),Spain_238,decided_by,,0.0
+Spanish Data Protection Agency (AEPD),Spain_580,decided_by,,0.0
+Spanish Agency for Data Protection (AEPD),Spain_277,decided_by,,0.0
+Agencia Española de Protección de Datos (AEPD),Spain_406,decided_by,2021-11-26 00:00:00+00:00,0.0
+Spanish Agency of Data Protection,Spain_508,decided_by,,6000.0
+Catalan Data Protection Authority,Spain_615,decided_by,,0.0
+Catalan Data Protection Authority,Spain_621,decided_by,,0.0
+Catalan Data Protection Authority,Spain_620,decided_by,,0.0
+Catalan Data Protection Authority,Spain_624,decided_by,,0.0
+Catalan Data Protection Authority,Spain_625,decided_by,,0.0
+Catalan Data Protection Authority,Spain_627,decided_by,,0.0
+Catalan Data Protection Authority,Spain_626,decided_by,,3000.0
+Catalan Data Protection Authority (APDCAT),Spain_617,decided_by,2022-11-24 00:00:00+00:00,0.0
+Catalan Data Protection Agency (APDCAT),Spain_619,decided_by,2021-11-04 00:00:00+00:00,0.0
+Basque Agency for the Protection of Data,Spain_630,decided_by,2022-03-07 00:00:00+00:00,0.0
+Agència de Protecció de Dades de Catalunya,Spain_618,decided_by,,0.0
+Basque Agency for Data Protection,Spain_631,decided_by,,0.0
+Information Commissioner,Slovenia_1,decided_by,,0.0
+Information Commissioner,Slovenia_3,decided_by,2021-03-25 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_4,decided_by,,0.0
+Information Commissioner,Slovenia_5,decided_by,,0.0
+Information Commissioner,Slovenia_12,decided_by,,0.0
+Information Commissioner,Slovenia_11,decided_by,,0.0
+Information Commissioner,Slovenia_18,decided_by,2020-02-14 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_13,decided_by,,0.0
+Information Commissioner,Slovenia_16,decided_by,,0.0
+Information Commissioner,Slovenia_21,decided_by,2020-02-14 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_20,decided_by,,0.0
+Information Commissioner,Slovenia_24,decided_by,,0.0
+Information Commissioner,Slovenia_23,decided_by,,0.0
+Information Commissioner,Slovenia_25,decided_by,,0.0
+Information Commissioner,Slovenia_26,decided_by,,0.0
+Information Commissioner,Slovenia_27,decided_by,,0.0
+Information Commissioner,Slovenia_30,decided_by,2020-04-23 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_31,decided_by,2020-06-10 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_35,decided_by,,0.0
+Information Commissioner,Slovenia_36,decided_by,,0.0
+Information Commissioner,Slovenia_37,decided_by,,0.0
+Information Commissioner,Slovenia_38,decided_by,,0.0
+Information Commissioner,Slovenia_39,decided_by,,0.0
+Information Commissioner,Slovenia_42,decided_by,,0.0
+Information Commissioner,Slovenia_45,decided_by,,0.0
+Information Commissioner,Slovenia_51,decided_by,,0.0
+Information Commissioner,Slovenia_55,decided_by,,0.0
+Information Commissioner,Slovenia_56,decided_by,,0.0
+Information Commissioner,Slovenia_53,decided_by,,0.0
+Information Commissioner,Slovenia_57,decided_by,,0.0
+Information Commissioner,Slovenia_61,decided_by,,6255.0
+Information Commissioner,Slovenia_62,decided_by,,0.0
+Information Commissioner,Slovenia_65,decided_by,2022-01-18 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_64,decided_by,2021-05-21 00:00:00+00:00,0.0
+Information Commissioner,Slovenia_66,decided_by,,0.0
+Information Commissioner,Slovenia_67,decided_by,,0.0
+Information Commissioner,Slovenia_68,decided_by,,0.0
+Information Commissioner,Slovenia_72,decided_by,,0.0
+Information Commissioner,Slovenia_75,decided_by,,0.0
+Information Commissioner,Slovenia_77,decided_by,,0.0
+Council for Transparency and Protection of Data of Andalusia,Spain_628,decided_by,,0.0
+Transparency and Data Protection Council of Andalusia,Spain_629,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_8,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_9,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_7,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_10,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_14,decided_by,2021-04-12 00:00:00+00:00,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_19,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_34,decided_by,2020-07-28 00:00:00+00:00,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_28,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_32,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_33,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_48,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_63,decided_by,,0.0
+Information Commissioner of the Republic of Slovenia,Slovenia_78,decided_by,,0.0
+Informacijski pooblaščenec,Slovenia_6,decided_by,,0.0
+Information Commissioner (IP),Slovenia_15,decided_by,2021-04-12 00:00:00+00:00,0.0
+Information Commissioner (IP),Slovenia_17,decided_by,,0.0
+Information Commissioner (IP),Slovenia_44,decided_by,,0.0
+Information Commissioner (Slovenia),Slovenia_22,decided_by,,0.0
+Information Commissioner (Slovenia),Slovenia_29,decided_by,2020-04-23 00:00:00+00:00,0.0
+Information Commissioner (Slovenia),Slovenia_43,decided_by,,0.0
+Information Commissioner (Slovenia),Slovenia_46,decided_by,2021-04-06 00:00:00+00:00,0.0
+Information Commissioner (Slovenia),Slovenia_47,decided_by,2021-04-08 00:00:00+00:00,0.0
+Information Commissioner (Slovenia),Slovenia_54,decided_by,,0.0
+Information Commissioner (Slovenia),Slovenia_69,decided_by,,0.0
+Information Commissioner (Slovenia),Slovenia_74,decided_by,,0.0
+Informacijski pooblaščenec (Information Commissioner),Slovenia_41,decided_by,,0.0
+Informacijski pooblaščenec (Information Commissioner),Slovenia_73,decided_by,,0.0
+Informacijski pooblaščenec (IP),Slovenia_50,decided_by,2021-03-15 00:00:00+00:00,0.0
+Information Commissioner of Slovenia,Slovenia_58,decided_by,,500.0
+Office for the Protection of Personal Data of the Slovak Republic,Slovakia_1,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_1,decided_by,2023-01-03 00:00:00+00:00,500.0
+National Supervisory Authority for Personal Data Processing,Romania_17,decided_by,,70000.0
+National Supervisory Authority for Personal Data Processing,Romania_20,decided_by,,1000.0
+National Supervisory Authority for Personal Data Processing,Romania_34,decided_by,,25000.0
+National Supervisory Authority for Personal Data Processing,Romania_48,decided_by,2023-04-30 00:00:00+00:00,1500.0
+National Supervisory Authority for Personal Data Processing,Romania_46,decided_by,,12000.0
+National Supervisory Authority for Personal Data Processing,Romania_120,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_139,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_153,decided_by,,2000.0
+National Supervisory Authority for Personal Data Processing,Romania_155,decided_by,,12000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_2,decided_by,,0.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_60,decided_by,,1000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_67,decided_by,,2000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_76,decided_by,,2000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_78,decided_by,,2000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_93,decided_by,,20000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_102,decided_by,2023-10-25 00:00:00+00:00,1000.0
+National Supervisory Authority,Romania_4,decided_by,,3000.0
+National Supervisory Authority,Romania_14,decided_by,,10000.0
+National Supervisory Authority,Romania_15,decided_by,,1000.0
+National Supervisory Authority,Romania_18,decided_by,,0.0
+National Supervisory Authority,Romania_24,decided_by,,3000.0
+National Supervisory Authority,Romania_29,decided_by,,1000.0
+National Supervisory Authority,Romania_33,decided_by,,2000.0
+National Supervisory Authority,Romania_36,decided_by,2020-04-14 00:00:00+00:00,5000.0
+National Supervisory Authority,Romania_31,decided_by,,0.0
+National Supervisory Authority,Romania_43,decided_by,,2000.0
+National Supervisory Authority,Romania_42,decided_by,,0.0
+National Supervisory Authority,Romania_50,decided_by,,200.0
+National Supervisory Authority,Romania_51,decided_by,,500.0
+National Supervisory Authority,Romania_58,decided_by,,2000.0
+National Supervisory Authority,Romania_59,decided_by,,100000.0
+National Supervisory Authority,Romania_63,decided_by,,7000.0
+National Supervisory Authority,Romania_70,decided_by,,0.0
+National Supervisory Authority,Romania_72,decided_by,,10000.0
+National Supervisory Authority,Romania_73,decided_by,,4000.0
+National Supervisory Authority,Romania_79,decided_by,,0.0
+National Supervisory Authority,Romania_84,decided_by,,2000.0
+National Supervisory Authority,Romania_92,decided_by,,0.0
+National Supervisory Authority,Romania_103,decided_by,,1000.0
+National Supervisory Authority,Romania_110,decided_by,,10000.0
+National Supervisory Authority,Romania_116,decided_by,2021-04-30 00:00:00+00:00,2000.0
+National Supervisory Authority,Romania_121,decided_by,,5000.0
+National Supervisory Authority,Romania_122,decided_by,,0.0
+National Supervisory Authority,Romania_123,decided_by,,3000.0
+National Supervisory Authority,Romania_127,decided_by,,3000.0
+National Supervisory Authority,Romania_156,decided_by,,5000.0
+National Supervisory Authority,Romania_174,decided_by,2020-12-11 00:00:00+00:00,0.0
+National Supervisory Authority,Romania_175,decided_by,2020-12-11 00:00:00+00:00,0.0
+National Supervisory Authority,Romania_172,decided_by,,0.0
+National Supervisory Authority for the Processing of Personal Data,Romania_3,decided_by,,3000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_10,decided_by,,17000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_19,decided_by,,10000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_26,decided_by,,2000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_49,decided_by,,3000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_91,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_6,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_25,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_28,decided_by,2021-08-24 00:00:00+00:00,3000.0
+A.N.S.P.D.C.P.,Romania_45,decided_by,2022-11-09 00:00:00+00:00,1000.0
+A.N.S.P.D.C.P.,Romania_47,decided_by,,2000.0
+A.N.S.P.D.C.P.,Romania_53,decided_by,2025-04-30 00:00:00+00:00,5000.0
+A.N.S.P.D.C.P.,Romania_61,decided_by,,2000.0
+A.N.S.P.D.C.P.,Romania_71,decided_by,,4000.0
+A.N.S.P.D.C.P.,Romania_77,decided_by,,5000.0
+A.N.S.P.D.C.P.,Romania_81,decided_by,,1000.0
+A.N.S.P.D.C.P.,Romania_100,decided_by,2021-12-13 00:00:00+00:00,2000.0
+A.N.S.P.D.C.P.,Romania_108,decided_by,,6000.0
+A.N.S.P.D.C.P.,Romania_114,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_124,decided_by,,2500.0
+A.N.S.P.D.C.P.,Romania_129,decided_by,,5000.0
+A.N.S.P.D.C.P.,Romania_134,decided_by,2022-10-03 00:00:00+00:00,150.0
+A.N.S.P.D.C.P.,Romania_148,decided_by,,5000.0
+A.N.S.P.D.C.P.,Romania_164,decided_by,,15000.0
+The National Supervisory Authority,Romania_9,decided_by,,0.0
+The National Supervisory Authority,Romania_30,decided_by,,10000.0
+The National Supervisory Authority,Romania_74,decided_by,2020-04-10 00:00:00+00:00,3000.0
+The National Supervisory Authority,Romania_117,decided_by,,3000.0
+The National Supervisory Authority,Romania_151,decided_by,,2000.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_11,decided_by,,2000.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_32,decided_by,,500.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_56,decided_by,,7000.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_99,decided_by,,1000.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_13,decided_by,,0.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_57,decided_by,,18000.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_65,decided_by,,2000.0
+The National Supervisory Authority for Personal Data Processing,Romania_38,decided_by,,5000.0
+The National Supervisory Authority for Personal Data Processing,Romania_52,decided_by,2025-07-16 00:00:00+00:00,4000.0
+The National Supervisory Authority for Personal Data Processing,Romania_54,decided_by,,5000.0
+The National Supervisory Authority for Personal Data Processing,Romania_101,decided_by,,0.0
+The National Supervisory Authority for Personal Data Processing,Romania_131,decided_by,,2000.0
+The National Supervisory Authority for Personal Data Processing,Romania_135,decided_by,,0.0
+The National Supervisory Authority for Personal Data Processing,Romania_140,decided_by,,40000.0
+The National Supervisory Authority for Personal Data Processing,Romania_163,decided_by,,2000.0
+The National Supervisory Authority for Personal Data Processing,Romania_166,decided_by,,15000.0
+The National Supervisory Authority for Personal Data Processing,Romania_176,decided_by,,20000.0
+A.N.S.P.D.C.P,Romania_41,decided_by,,0.0
+A.N.S.P.D.C.P,Romania_62,decided_by,,1000.0
+A.N.S.P.D.C.P,Romania_94,decided_by,2024-06-25 00:00:00+00:00,4000.0
+A.N.S.P.D.C.P,Romania_113,decided_by,,1500.0
+A.N.S.P.D.C.P,Romania_132,decided_by,,2000.0
+A.N.S.P.D.C.P,Romania_136,decided_by,2025-03-25 00:00:00+00:00,25000.0
+A.N.S.P.D.C.P,Romania_161,decided_by,,5000.0
+A.N.S.P.D.C.P,Romania_171,decided_by,,15000.0
+A.N.S.P.D.C.P,Romania_177,decided_by,,10000.0
+National DPA,Romania_87,decided_by,,1500.0
+National Authority,Romania_107,decided_by,,2000.0
+Romanian Supervisory Authority,Romania_150,decided_by,,5000.0
+National Commission for Data Protection (CNPD),Portugal_11,decided_by,,0.0
+National Commission for Data Protection (CNPD),Luxembourg_24,decided_by,,0.0
+Comissão Nacional de Proteção de Dados,Portugal_1,decided_by,2018-10-09 00:00:00+00:00,400000.0
+Comissão Nacional de Proteção de Dados,Portugal_3,decided_by,,2000.0
+Comissão Nacional de Proteção de Dados,Portugal_5,decided_by,,107000.0
+Comissão Nacional de Proteção de Dados,Portugal_10,decided_by,2022-09-14 00:00:00+00:00,170000.0
+Comissão Nacional de Proteção de Dados,Portugal_12,decided_by,2024-03-25 00:00:00+00:00,0.0
+Comissão Nacional de Proteção de Dados,Portugal_13,decided_by,2024-07-09 00:00:00+00:00,0.0
+President of the Office for Personal Data Protection,Poland_1,decided_by,,460000.0
+President of the Office for Personal Data Protection,Poland_5,decided_by,2020-07-02 00:00:00+00:00,23256.0
+President of the Office for Personal Data Protection,Poland_8,decided_by,,5000.0
+President of the Office for Personal Data Protection,Poland_3,decided_by,2020-07-10 00:00:00+00:00,3505.16
+President of the Office for Personal Data Protection,Poland_7,decided_by,,3000.0
+President of the Office for Personal Data Protection,Poland_10,decided_by,,0.0
+President of the Office for Personal Data Protection,Poland_6,decided_by,,85588.0
+President of the Office for Personal Data Protection,Poland_12,decided_by,2021-04-27 00:00:00+00:00,5000.0
+President of the Office for Personal Data Protection,Poland_16,decided_by,2022-06-06 00:00:00+00:00,15994.0
+President of the Office for Personal Data Protection,Poland_19,decided_by,2020-06-30 00:00:00+00:00,0.0
+President of the Office for Personal Data Protection,Poland_17,decided_by,,0.0
+President of the Office for Personal Data Protection,Poland_29,decided_by,,1136975.0
+President of the Office for Personal Data Protection,Poland_31,decided_by,2024-10-09 00:00:00+00:00,353589.0
+President of the Office for Personal Data Protection,Poland_28,decided_by,,0.0
+President of the Office for Personal Data Protection,Poland_38,decided_by,,29684.04
+President of the Office for Personal Data Protection,Poland_37,decided_by,,25000.0
+President of the Office for Personal Data Protection,Poland_44,decided_by,,10000.0
+President of the Office for Personal Data Protection,Poland_48,decided_by,,1556.0
+President of the Office for Personal Data Protection,Poland_50,decided_by,2022-01-19 00:00:00+00:00,545748.0
+President of the Office for Personal Data Protection,Poland_55,decided_by,,51876.0
+President of the Office for Personal Data Protection,Poland_59,decided_by,2024-08-05 00:00:00+00:00,0.0
+President of the Office for Personal Data Protection,Poland_58,decided_by,,0.0
+President of the Office for Personal Data Protection,Poland_62,decided_by,,47000.0
+President of the Office for Personal Data Protection,Poland_61,decided_by,,660000.0
+President of the Office for Personal Data Protection,Poland_64,decided_by,,40000.0
+President of the Office for Personal Data Protection,Poland_65,decided_by,,20000.0
+Comissão Nacional de Proteção de Dados (CNPD),Portugal_4,decided_by,,2000.0
+President of the Office for the Protection of Personal Data,Poland_4,decided_by,2020-07-16 00:00:00+00:00,1168.0
+President of the Personal Data Protection Office,Poland_2,decided_by,,0.0
+President of the Personal Data Protection Office,Poland_9,decided_by,2021-12-01 00:00:00+00:00,18192.0
+President of the Personal Data Protection Office,Poland_14,decided_by,2022-07-06 00:00:00+00:00,60000.0
+President of the Personal Data Protection Office,Poland_15,decided_by,2020-11-12 00:00:00+00:00,0.0
+President of the Personal Data Protection Office,Poland_20,decided_by,2020-08-24 00:00:00+00:00,100000.0
+President of the Personal Data Protection Office,Poland_21,decided_by,,576220.0
+President of the Personal Data Protection Office,Poland_24,decided_by,,100000.0
+President of the Personal Data Protection Office,Poland_32,decided_by,,4053173.0
+President of the Personal Data Protection Office,Poland_26,decided_by,,1527855.0
+President of the Personal Data Protection Office,Poland_34,decided_by,2021-06-21 00:00:00+00:00,159176.0
+President of the Personal Data Protection Office,Poland_39,decided_by,2021-01-11 00:00:00+00:00,136437.0
+President of the Personal Data Protection Office,Poland_43,decided_by,2021-10-14 00:00:00+00:00,80000.0
+President of the Personal Data Protection Office,Poland_47,decided_by,,238345.0
+President of the Personal Data Protection Office,Poland_45,decided_by,,0.0
+President of the Personal Data Protection Office,Poland_49,decided_by,,23580.0
+President of the Personal Data Protection Office,Poland_53,decided_by,,10000.0
+President of the Personal Data Protection Office,Poland_52,decided_by,2022-07-06 00:00:00+00:00,10000.0
+President of the Personal Data Protection Office,Poland_54,decided_by,,11790.0
+President of the Personal Data Protection Office,Poland_57,decided_by,,33012.0
+President of the Personal Data Protection Office,Poland_60,decided_by,2020-08-21 00:00:00+00:00,50000.0
+President of the Personal Data Protection Office (UODO),Poland_13,decided_by,2021-03-19 00:00:00+00:00,5000.0
+President of the Personal Data Protection Office (UODO),Poland_18,decided_by,2022-11-30 00:00:00+00:00,45697.0
+President of the Personal Data Protection Office (UODO),Poland_22,decided_by,,1440549.0
+President of the Personal Data Protection Office (UODO),Poland_27,decided_by,,45000.0
+President of the Personal Data Protection Office (UODO),Poland_30,decided_by,,16932657.0
+President of the Personal Data Protection Office (UODO),Poland_25,decided_by,,4911732.0
+President of the Personal Data Protection Office (UODO),Poland_36,decided_by,2020-12-09 00:00:00+00:00,20000.0
+President of the Personal Data Protection Office (UODO),Poland_33,decided_by,,100000.0
+President of the Personal Data Protection Office (UODO),Poland_40,decided_by,2022-11-02 00:00:00+00:00,8000.0
+President of the Personal Data Protection Office (UODO),Poland_41,decided_by,2021-06-30 00:00:00+00:00,13644.0
+President of the Personal Data Protection Office (UODO),Poland_51,decided_by,,85000.0
+President of the Personal Data Protection Office (UODO),Poland_56,decided_by,,1440549.0
+President of the Office for Personal Data Protection (UODO),Poland_42,decided_by,,30000.0
+President of the Office for Personal Data Protection (UODO),Poland_46,decided_by,2022-09-07 00:00:00+00:00,2500.0
+President of the Office for Personal Data Protection (UODO),Poland_63,decided_by,,0.0
+Datatilsynet,Norway_4,decided_by,2019-03-18 00:00:00+00:00,1600000.0
+Datatilsynet,Norway_5,decided_by,2019-11-10 00:00:00+00:00,1200000.0
+Datatilsynet,Norway_6,decided_by,2021-06-07 00:00:00+00:00,1000000.0
+Datatilsynet,Norway_7,decided_by,,0.0
+Datatilsynet,Norway_9,decided_by,2021-03-15 00:00:00+00:00,100000.0
+Datatilsynet,Norway_11,decided_by,,150000.0
+Datatilsynet,Norway_13,decided_by,2021-09-27 00:00:00+00:00,5000000.0
+Datatilsynet,Norway_15,decided_by,2023-01-09 00:00:00+00:00,0.0
+Datatilsynet,Norway_17,decided_by,2020-12-22 00:00:00+00:00,400000.0
+Datatilsynet,Norway_21,decided_by,2020-08-21 00:00:00+00:00,0.0
+Datatilsynet,Norway_20,decided_by,2021-09-20 00:00:00+00:00,750000.0
+Datatilsynet,Norway_22,decided_by,,0.0
+Datatilsynet,Norway_25,decided_by,2021-11-24 00:00:00+00:00,1000000.0
+Datatilsynet,Norway_24,decided_by,2021-09-20 00:00:00+00:00,400000.0
+Datatilsynet,Norway_26,decided_by,,75000.0
+Datatilsynet,Norway_34,decided_by,,100000000.0
+Datatilsynet,Norway_28,decided_by,,0.0
+Datatilsynet,Norway_37,decided_by,2023-01-09 00:00:00+00:00,0.0
+Datatilsynet,Norway_38,decided_by,2021-03-15 00:00:00+00:00,50000.0
+Datatilsynet,Norway_42,decided_by,,500000.0
+Datatilsynet,Norway_44,decided_by,,100000.0
+Datatilsynet,Norway_40,decided_by,,500000.0
+Datatilsynet,Norway_46,decided_by,2020-10-22 00:00:00+00:00,750000.0
+Datatilsynet,Norway_45,decided_by,,150000.0
+Datatilsynet,Norway_48,decided_by,2021-09-21 00:00:00+00:00,125000.0
+Datatilsynet,Norway_50,decided_by,,0.0
+Datatilsynet,Norway_51,decided_by,2022-05-16 00:00:00+00:00,150000.0
+Datatilsynet,Norway_53,decided_by,2021-08-26 00:00:00+00:00,0.0
+Datatilsynet,Norway_49,decided_by,,40000.0
+Datatilsynet,Norway_52,decided_by,,5000000.0
+Datatilsynet,Norway_54,decided_by,2022-03-04 00:00:00+00:00,200000.0
+Datatilsynet,Norway_56,decided_by,,0.0
+Datatilsynet,Norway_60,decided_by,,5000000.0
+Datatilsynet,Norway_55,decided_by,,0.0
+Datatilsynet,Norway_59,decided_by,,400000.0
+Datatilsynet,Norway_57,decided_by,,200000.0
+Datatilsynet,Norway_63,decided_by,,200000.0
+Datatilsynet,Norway_65,decided_by,2022-02-01 00:00:00+00:00,50000.0
+Datatilsynet,Norway_67,decided_by,2023-03-08 00:00:00+00:00,2500000.0
+Datatilsynet,Norway_70,decided_by,,0.0
+Datatilsynet,Norway_71,decided_by,2025-03-10 00:00:00+00:00,4000000.0
+Datatilsynet,Norway_72,decided_by,2023-04-26 00:00:00+00:00,0.0
+Datatilsynet,Norway_78,decided_by,,150000.0
+Datatilsynet,Iceland_64,decided_by,,0.0
+Privacy Board,Norway_3,decided_by,2020-09-16 00:00:00+00:00,0.0
+Privacy Board,Norway_58,decided_by,2021-06-22 00:00:00+00:00,0.0
+Privacy Board,Norway_81,decided_by,2020-09-07 00:00:00+00:00,0.0
+Norwegian Data Protection Authority,Norway_1,decided_by,2023-02-06 00:00:00+00:00,10000000.0
+Norwegian Data Protection Authority,Norway_10,decided_by,,250000.0
+Norwegian Data Protection Authority,Norway_14,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_18,decided_by,2024-10-28 00:00:00+00:00,0.0
+Norwegian Data Protection Authority,Norway_27,decided_by,,250000.0
+Norwegian Data Protection Authority,Norway_41,decided_by,,400000.0
+Norwegian Data Protection Authority,Norway_47,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_64,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_69,decided_by,2023-07-14 00:00:00+00:00,0.0
+Norwegian Data Protection Authority,Norway_74,decided_by,2023-11-27 00:00:00+00:00,20000000.0
+Norwegian Data Protection Authority,Norway_76,decided_by,2024-08-30 00:00:00+00:00,0.0
+Norwegian Data Protection Authority,Norway_75,decided_by,,0.0
+Norwegian Data Protection Authority,Iceland_52,decided_by,2022-12-05 00:00:00+00:00,0.0
+The Norwegian Data Protection Authority,Norway_16,decided_by,2021-10-05 00:00:00+00:00,3500.0
+The Norwegian Data Protection Authority,Norway_29,decided_by,,200000.0
+The Norwegian Data Protection Authority,Norway_33,decided_by,,300000.0
+Personvernnemnda (Privacy Board),Norway_23,decided_by,,0.0
+Norwegian Data Inspectorate,Norway_36,decided_by,,0.0
+Estonian Data Protection Inspectorate,Norway_66,decided_by,,0.0
+Oslo District Court,Norway_77,decided_by,2023-09-06 00:00:00+00:00,0.0
+Norwegian Privacy Board,Norway_79,decided_by,,0.0
+Norwegian Privacy Board,Norway_80,decided_by,2023-04-25 00:00:00+00:00,0.0
+The Privacy Board,Norway_82,decided_by,2021-06-22 00:00:00+00:00,250000.0
+The Norwegian Privacy Board,Norway_83,decided_by,,0.0
+Dutch Data Protection Authority,Netherlands_3,decided_by,2021-07-22 00:00:00+00:00,750000.0
+Dutch Data Protection Authority,Netherlands_17,decided_by,,0.0
+Dutch Data Protection Authority,Netherlands_21,decided_by,2020-06-16 00:00:00+00:00,7500.0
+Dutch Data Protection Authority,Netherlands_20,decided_by,,15000.0
+Dutch Data Protection Authority,Netherlands_25,decided_by,,0.0
+Dutch Data Protection Authority,Netherlands_24,decided_by,2019-12-04 00:00:00+00:00,725000.0
+Dutch Data Protection Authority,Netherlands_26,decided_by,2019-12-20 00:00:00+00:00,525000.0
+Dutch Data Protection Authority,Netherlands_27,decided_by,2021-03-11 00:00:00+00:00,600000.0
+Dutch Data Protection Authority,Netherlands_30,decided_by,2023-12-18 00:00:00+00:00,150000.0
+Dutch Data Protection Authority,Netherlands_32,decided_by,2024-08-20 00:00:00+00:00,0.0
+Autoriteit Persoonsgegevens,Netherlands_1,decided_by,2021-02-04 00:00:00+00:00,12000.0
+Autoriteit Persoonsgegevens,Netherlands_4,decided_by,,475000.0
+Autoriteit Persoonsgegevens,Netherlands_5,decided_by,,525000.0
+Autoriteit Persoonsgegevens,Netherlands_2,decided_by,,3700000.0
+Autoriteit Persoonsgegevens,Netherlands_7,decided_by,2022-01-14 00:00:00+00:00,525000.0
+Autoriteit Persoonsgegevens,Netherlands_8,decided_by,2020-06-16 00:00:00+00:00,7500.0
+Autoriteit Persoonsgegevens,Netherlands_11,decided_by,,565000.0
+Autoriteit Persoonsgegevens,Netherlands_10,decided_by,,400000.0
+Autoriteit Persoonsgegevens,Netherlands_12,decided_by,2020-03-24 00:00:00+00:00,15000.0
+Autoriteit Persoonsgegevens,Netherlands_13,decided_by,2021-11-25 00:00:00+00:00,2750000.0
+Autoriteit Persoonsgegevens,Netherlands_14,decided_by,,440000.0
+Autoriteit Persoonsgegevens,Netherlands_16,decided_by,2021-05-31 00:00:00+00:00,450000.0
+Autoriteit Persoonsgegevens,Netherlands_22,decided_by,2019-06-18 00:00:00+00:00,460000.0
+Autoriteit Persoonsgegevens,Netherlands_23,decided_by,2023-12-18 00:00:00+00:00,150000.0
+Autoriteit Persoonsgegevens,Netherlands_28,decided_by,,0.0
+Autoriteit Persoonsgegevens,Netherlands_29,decided_by,2023-12-11 00:00:00+00:00,10000000.0
+Autoriteit Persoonsgegevens,Netherlands_34,decided_by,2024-05-02 00:00:00+00:00,600000.0
+Autoriteit Persoonsgegevens,Netherlands_33,decided_by,,0.0
+Autoriteit Persoonsgegevens,Netherlands_37,decided_by,,0.0
+Autoriteit Persoonsgegevens,Netherlands_35,decided_by,2018-07-31 00:00:00+00:00,0.0
+Autoriteit Persoonsgegevens,Netherlands_36,decided_by,,0.0
+Autoriteit Persoonsgegevens,Netherlands_38,decided_by,2023-05-22 00:00:00+00:00,0.0
+Autoriteit Persoonsgegevens,Netherlands_39,decided_by,2023-11-02 00:00:00+00:00,30000.0
+Autoriteit Persoonsgegevens (AP),Netherlands_9,decided_by,,150000.0
+Autoriteit Persoonsgege,Netherlands_15,decided_by,,725000.0
+Rechtbank Zeeland-West-Brabant,Netherlands_19,decided_by,2022-11-30 00:00:00+00:00,0.0
+Personal Data Authority,Netherlands_31,decided_by,,4750000.0
+Information and Data Protection Commissioner,Malta_1,decided_by,2024-01-15 00:00:00+00:00,0.0
+Information and Data Protection Commissioner,Malta_11,decided_by,,0.0
+Information and Data Protection Commissioner,Malta_9,decided_by,,0.0
+Information and Data Protection Commissioner,Malta_13,decided_by,,8000.0
+Commissioner for Information and Data Protection,Malta_5,decided_by,,0.0
+Office of the Information and Data Protection Commissioner,Malta_7,decided_by,,65000.0
+The Commissioner,Malta_12,decided_by,,20000.0
+National Commission for Data Protection,Luxembourg_1,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_3,decided_by,,2500.0
+National Commission for Data Protection,Luxembourg_4,decided_by,,2800.0
+National Commission for Data Protection,Luxembourg_7,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_5,decided_by,2023-09-21 00:00:00+00:00,2500.0
+National Commission for Data Protection,Luxembourg_8,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_9,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_10,decided_by,,7600.0
+National Commission for Data Protection,Luxembourg_12,decided_by,,5300.0
+National Commission for Data Protection,Luxembourg_11,decided_by,2022-12-13 00:00:00+00:00,2100.0
+National Commission for Data Protection,Luxembourg_14,decided_by,2021-10-15 00:00:00+00:00,18000.0
+National Commission for Data Protection,Luxembourg_15,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_16,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_21,decided_by,,1000.0
+National Commission for Data Protection,Luxembourg_20,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_18,decided_by,2021-12-01 00:00:00+00:00,6800.0
+National Commission for Data Protection,Luxembourg_25,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_23,decided_by,2021-06-29 00:00:00+00:00,12500.0
+National Commission for Data Protection,Luxembourg_22,decided_by,2021-05-31 00:00:00+00:00,18000.0
+State Data Protection Inspectorate,Lithuania_2,decided_by,,15000.0
+State Data Protection Inspectorate,Lithuania_9,decided_by,,0.0
+State Data Protection Inspectorate,Lithuania_3,decided_by,,12000.0
+State Data Protection Inspectorate,Lithuania_10,decided_by,,20000.0
+State Data Protection Inspectorate,Lithuania_8,decided_by,,0.0
+State Data Protection Inspectorate,Lithuania_11,decided_by,,0.0
+State Data Protection Inspectorate,Lithuania_12,decided_by,,2385276.0
+State Data Protection Inspectorate (SDPI),Lithuania_4,decided_by,,15000.0
+Valstybinė duomenų apsaugos inspekcija (VDAI),Lithuania_7,decided_by,,2000.0
+Data State Inspectorate,Latvia_3,decided_by,,6250.0
+Data State Inspectorate,Latvia_1,decided_by,2024-02-02 00:00:00+00:00,1000.0
+Data State Inspectorate,Latvia_12,decided_by,,15000.0
+Data State Inspectorate,Latvia_10,decided_by,,17495.0
+Data State Inspectorate,Latvia_11,decided_by,2024-01-29 00:00:00+00:00,0.0
+Data State Inspections,Latvia_6,decided_by,,1000.0
+Data State Inspections,Latvia_13,decided_by,,1000.0
+Data State Inspection,Latvia_4,decided_by,2023-01-01 00:00:00+00:00,0.0
+State Data Inspectorate,Latvia_9,decided_by,,1200000.0
+State Data Inspectorate,Latvia_14,decided_by,2020-11-23 00:00:00+00:00,65000.0
+Garante per la protezione dei dati personali,Italy_1,decided_by,2024-02-22 00:00:00+00:00,90000.0
+Garante per la protezione dei dati personali,Italy_3,decided_by,2020-01-23 00:00:00+00:00,30000.0
+Garante per la protezione dei dati personali,Italy_4,decided_by,,30000.0
+Garante per la protezione dei dati personali,Italy_9,decided_by,2020-03-19 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_2,decided_by,2020-01-15 00:00:00+00:00,27802946.0
+Garante per la protezione dei dati personali,Italy_12,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_14,decided_by,2020-06-10 00:00:00+00:00,600000.0
+Garante per la protezione dei dati personali,Italy_17,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_13,decided_by,2020-03-05 00:00:00+00:00,3000.0
+Garante per la protezione dei dati personali,Italy_16,decided_by,2020-07-09 00:00:00+00:00,800000.0
+Garante per la protezione dei dati personali,Italy_18,decided_by,,4000.0
+Garante per la protezione dei dati personali,Italy_15,decided_by,,16729600.0
+Garante per la protezione dei dati personali,Italy_21,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_22,decided_by,2020-07-02 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_24,decided_by,2020-07-29 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_25,decided_by,2020-07-09 00:00:00+00:00,2000.0
+Garante per la protezione dei dati personali,Italy_31,decided_by,2020-11-26 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_26,decided_by,2020-03-26 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_27,decided_by,,2000.0
+Garante per la protezione dei dati personali,Italy_28,decided_by,,80000.0
+Garante per la protezione dei dati personali,Italy_32,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_34,decided_by,2021-01-22 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_37,decided_by,2021-01-14 00:00:00+00:00,8000.0
+Garante per la protezione dei dati personali,Italy_36,decided_by,2020-12-17 00:00:00+00:00,100000.0
+Garante per la protezione dei dati personali,Italy_38,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_40,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_43,decided_by,,75000.0
+Garante per la protezione dei dati personali,Italy_42,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_46,decided_by,2021-03-25 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_48,decided_by,2021-04-23 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_45,decided_by,,4501868.0
+Garante per la protezione dei dati personali,Italy_49,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_50,decided_by,2021-06-03 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_47,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_51,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_53,decided_by,,50000.0
+Garante per la protezione dei dati personali,Italy_54,decided_by,,2600000.0
+Garante per la protezione dei dati personali,Italy_56,decided_by,,120000.0
+Garante per la protezione dei dati personali,Italy_57,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_59,decided_by,2021-06-10 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_55,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_61,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_58,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_60,decided_by,2021-07-22 00:00:00+00:00,2500000.0
+Garante per la protezione dei dati personali,Italy_62,decided_by,2021-07-22 00:00:00+00:00,800000.0
+Garante per la protezione dei dati personali,Italy_63,decided_by,2021-09-16 00:00:00+00:00,200000.0
+Garante per la protezione dei dati personali,Italy_64,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_65,decided_by,2021-09-16 00:00:00+00:00,3296326.0
+Garante per la protezione dei dati personali,Italy_67,decided_by,,400000.0
+Garante per la protezione dei dati personali,Italy_68,decided_by,2022-01-13 00:00:00+00:00,4000.0
+Garante per la protezione dei dati personali,Italy_69,decided_by,2022-01-27 00:00:00+00:00,2000.0
+Garante per la protezione dei dati personali,Italy_70,decided_by,2022-01-27 00:00:00+00:00,40000.0
+Garante per la protezione dei dati personali,Italy_66,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_71,decided_by,2022-01-27 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_72,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_73,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_74,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_76,decided_by,2022-02-10 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_75,decided_by,2022-02-10 00:00:00+00:00,3500.0
+Garante per la protezione dei dati personali,Italy_77,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_79,decided_by,2022-03-10 00:00:00+00:00,8000.0
+Garante per la protezione dei dati personali,Italy_78,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_81,decided_by,2022-04-07 00:00:00+00:00,40000.0
+Garante per la protezione dei dati personali,Italy_80,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_82,decided_by,,50000.0
+Garante per la protezione dei dati personali,Italy_84,decided_by,2022-04-28 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_86,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_87,decided_by,2022-04-28 00:00:00+00:00,70000.0
+Garante per la protezione dei dati personali,Italy_90,decided_by,2022-06-09 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_92,decided_by,2022-06-09 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_89,decided_by,2022-05-26 00:00:00+00:00,50000.0
+Garante per la protezione dei dati personali,Italy_91,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_88,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_93,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_94,decided_by,2022-06-30 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_96,decided_by,2022-06-16 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_97,decided_by,2022-06-30 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_99,decided_by,,4000.0
+Garante per la protezione dei dati personali,Italy_98,decided_by,2022-08-05 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_95,decided_by,2022-06-09 00:00:00+00:00,26000.0
+Garante per la protezione dei dati personali,Italy_100,decided_by,2022-09-15 00:00:00+00:00,3000.0
+Garante per la protezione dei dati personali,Italy_101,decided_by,,2000.0
+Garante per la protezione dei dati personali,Italy_102,decided_by,2022-09-15 00:00:00+00:00,2000.0
+Garante per la protezione dei dati personali,Italy_106,decided_by,2022-09-15 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_105,decided_by,2022-08-05 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_103,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_104,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_108,decided_by,2022-10-20 00:00:00+00:00,1400000.0
+Garante per la protezione dei dati personali,Italy_107,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_109,decided_by,2022-11-10 00:00:00+00:00,500000.0
+Garante per la protezione dei dati personali,Italy_110,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_111,decided_by,2022-10-06 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_113,decided_by,2022-10-20 00:00:00+00:00,900.0
+Garante per la protezione dei dati personali,Italy_112,decided_by,2022-10-20 00:00:00+00:00,30000.0
+Garante per la protezione dei dati personali,Italy_114,decided_by,2022-10-06 00:00:00+00:00,2000000.0
+Garante per la protezione dei dati personali,Italy_116,decided_by,2022-10-06 00:00:00+00:00,100000.0
+Garante per la protezione dei dati personali,Italy_115,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_119,decided_by,2022-11-10 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_117,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_118,decided_by,2022-11-24 00:00:00+00:00,1000000.0
+Garante per la protezione dei dati personali,Italy_120,decided_by,2022-12-01 00:00:00+00:00,6000.0
+Garante per la protezione dei dati personali,Italy_122,decided_by,2022-12-01 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_121,decided_by,,6000.0
+Garante per la protezione dei dati personali,Italy_124,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_125,decided_by,2022-09-23 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_123,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_126,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_127,decided_by,2022-12-15 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_131,decided_by,2023-01-18 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_130,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_128,decided_by,2022-12-15 00:00:00+00:00,4900000.0
+Garante per la protezione dei dati personali,Italy_132,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_129,decided_by,2022-12-15 00:00:00+00:00,30000.0
+Garante per la protezione dei dati personali,Italy_133,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_135,decided_by,2022-12-15 00:00:00+00:00,50000.0
+Garante per la protezione dei dati personali,Italy_138,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_134,decided_by,2022-12-15 00:00:00+00:00,120000.0
+Garante per la protezione dei dati personali,Italy_136,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_140,decided_by,,80000.0
+Garante per la protezione dei dati personali,Italy_141,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_137,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_143,decided_by,2023-01-11 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_144,decided_by,2023-02-23 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_142,decided_by,2023-01-26 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_146,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_148,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_147,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_145,decided_by,2023-02-23 00:00:00+00:00,300000.0
+Garante per la protezione dei dati personali,Italy_150,decided_by,2023-03-02 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_149,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_151,decided_by,2023-04-11 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_152,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_153,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_157,decided_by,2023-03-23 00:00:00+00:00,2000.0
+Garante per la protezione dei dati personali,Italy_154,decided_by,,3000.0
+Garante per la protezione dei dati personali,Italy_156,decided_by,2023-03-23 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_155,decided_by,,50000.0
+Garante per la protezione dei dati personali,Italy_158,decided_by,2023-03-23 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_159,decided_by,,20000.0
+Garante per la protezione dei dati personali,Italy_161,decided_by,2023-04-13 00:00:00+00:00,500000.0
+Garante per la protezione dei dati personali,Italy_164,decided_by,,15000.0
+Garante per la protezione dei dati personali,Italy_160,decided_by,,15000.0
+Garante per la protezione dei dati personali,Italy_162,decided_by,,7631175.0
+Garante per la protezione dei dati personali,Italy_165,decided_by,,40000.0
+Garante per la protezione dei dati personali,Italy_167,decided_by,2023-04-27 00:00:00+00:00,240000.0
+Garante per la protezione dei dati personali,Italy_163,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_166,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_168,decided_by,2023-06-08 00:00:00+00:00,40660.0
+Garante per la protezione dei dati personali,Italy_170,decided_by,2023-06-22 00:00:00+00:00,1000000.0
+Garante per la protezione dei dati personali,Italy_171,decided_by,,300000.0
+Garante per la protezione dei dati personali,Italy_176,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_172,decided_by,,20000.0
+Garante per la protezione dei dati personali,Italy_178,decided_by,2023-07-18 00:00:00+00:00,100000.0
+Garante per la protezione dei dati personali,Italy_177,decided_by,2023-07-18 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_179,decided_by,2023-07-18 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_180,decided_by,,40000.0
+Garante per la protezione dei dati personali,Italy_184,decided_by,2023-08-31 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_182,decided_by,,5000.0
+Garante per la protezione dei dati personali,Italy_183,decided_by,2023-07-18 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_189,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_186,decided_by,2023-09-14 00:00:00+00:00,90000.0
+Garante per la protezione dei dati personali,Italy_193,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_190,decided_by,,70000.0
+Garante per la protezione dei dati personali,Italy_194,decided_by,,20000.0
+Garante per la protezione dei dati personali,Italy_195,decided_by,2023-10-26 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_197,decided_by,2023-10-26 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_198,decided_by,2023-10-26 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_196,decided_by,,40000.0
+Garante per la protezione dei dati personali,Italy_201,decided_by,2023-11-16 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_200,decided_by,2023-11-16 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_199,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_203,decided_by,2023-12-07 00:00:00+00:00,1000.0
+Garante per la protezione dei dati personali,Italy_204,decided_by,,500.0
+Garante per la protezione dei dati personali,Italy_202,decided_by,,60000.0
+Garante per la protezione dei dati personali,Italy_205,decided_by,2023-11-30 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_207,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_210,decided_by,2024-01-11 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_209,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_206,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_208,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_211,decided_by,,2000.0
+Garante per la protezione dei dati personali,Italy_212,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_213,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_215,decided_by,2024-02-08 00:00:00+00:00,2800000.0
+Garante per la protezione dei dati personali,Italy_214,decided_by,2024-01-24 00:00:00+00:00,8000.0
+Garante per la protezione dei dati personali,Italy_216,decided_by,2024-02-08 00:00:00+00:00,800000.0
+Garante per la protezione dei dati personali,Italy_217,decided_by,,300000.0
+Garante per la protezione dei dati personali,Italy_218,decided_by,2024-01-24 00:00:00+00:00,15000.0
+Garante per la protezione dei dati personali,Italy_219,decided_by,2024-01-24 00:00:00+00:00,2000.0
+Garante per la protezione dei dati personali,Italy_220,decided_by,2024-01-11 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_224,decided_by,2024-02-22 00:00:00+00:00,50000.0
+Garante per la protezione dei dati personali,Italy_223,decided_by,,70000.0
+Garante per la protezione dei dati personali,Italy_225,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_226,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_221,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_222,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_227,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_228,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_231,decided_by,,150000.0
+Garante per la protezione dei dati personali,Italy_234,decided_by,2024-04-11 00:00:00+00:00,25000.0
+Garante per la protezione dei dati personali,Italy_230,decided_by,2024-03-07 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_235,decided_by,2024-04-11 00:00:00+00:00,3000.0
+Garante per la protezione dei dati personali,Italy_233,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_229,decided_by,,271000.0
+Garante per la protezione dei dati personali,Italy_232,decided_by,,100000.0
+Garante per la protezione dei dati personali,Italy_236,decided_by,2024-04-11 00:00:00+00:00,6000.0
+Garante per la protezione dei dati personali,Italy_240,decided_by,2024-05-09 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_239,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_238,decided_by,2024-04-11 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_242,decided_by,2024-05-09 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_237,decided_by,,30000.0
+Garante per la protezione dei dati personali,Italy_241,decided_by,,30000.0
+Garante per la protezione dei dati personali,Italy_243,decided_by,2024-05-09 00:00:00+00:00,75000.0
+Garante per la protezione dei dati personali,Italy_244,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_247,decided_by,2024-05-23 00:00:00+00:00,4500.0
+Garante per la protezione dei dati personali,Italy_245,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_246,decided_by,,120000.0
+Garante per la protezione dei dati personali,Italy_250,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_251,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_249,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_248,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_252,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_258,decided_by,2024-07-04 00:00:00+00:00,4000.0
+Garante per la protezione dei dati personali,Italy_257,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_255,decided_by,2024-06-20 00:00:00+00:00,1000000.0
+Garante per la protezione dei dati personali,Italy_254,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_253,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_256,decided_by,,250000.0
+Garante per la protezione dei dati personali,Italy_259,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_262,decided_by,2024-07-17 00:00:00+00:00,80000.0
+Garante per la protezione dei dati personali,Italy_261,decided_by,2024-07-17 00:00:00+00:00,5000000.0
+Garante per la protezione dei dati personali,Italy_266,decided_by,2024-07-17 00:00:00+00:00,22000.0
+Garante per la protezione dei dati personali,Italy_265,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_264,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_271,decided_by,2024-09-26 00:00:00+00:00,4000.0
+Garante per la protezione dei dati personali,Italy_269,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_267,decided_by,,900000.0
+Garante per la protezione dei dati personali,Italy_270,decided_by,2024-09-26 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_274,decided_by,,4000.0
+Garante per la protezione dei dati personali,Italy_273,decided_by,2024-07-17 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_272,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_276,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_277,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_281,decided_by,2024-11-13 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_283,decided_by,2024-09-26 00:00:00+00:00,17000.0
+Garante per la protezione dei dati personali,Italy_278,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_282,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_279,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_285,decided_by,2024-10-17 00:00:00+00:00,60000.0
+Garante per la protezione dei dati personali,Italy_280,decided_by,2024-11-13 00:00:00+00:00,5000000.0
+Garante per la protezione dei dati personali,Italy_286,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_284,decided_by,2024-10-17 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_288,decided_by,2024-10-17 00:00:00+00:00,25000.0
+Garante per la protezione dei dati personali,Italy_289,decided_by,2024-11-13 00:00:00+00:00,678897.0
+Garante per la protezione dei dati personali,Italy_291,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_287,decided_by,,15000000.0
+Garante per la protezione dei dati personali,Italy_290,decided_by,2024-11-13 00:00:00+00:00,0.0
+Garante per la protezione dei dati personali,Italy_293,decided_by,2024-11-27 00:00:00+00:00,10000.0
+Garante per la protezione dei dati personali,Italy_294,decided_by,2024-12-12 00:00:00+00:00,20000.0
+Garante per la protezione dei dati personali,Italy_292,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_297,decided_by,2024-12-12 00:00:00+00:00,6000.0
+Garante per la protezione dei dati personali,Italy_298,decided_by,2024-12-12 00:00:00+00:00,6000.0
+Garante per la protezione dei dati personali,Italy_299,decided_by,2024-12-12 00:00:00+00:00,5000.0
+Garante per la protezione dei dati personali,Italy_295,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_300,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_296,decided_by,,892738.0
+Garante per la protezione dei dati personali,Italy_301,decided_by,,20000.0
+Garante per la protezione dei dati personali,Italy_302,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_304,decided_by,,70000.0
+Garante per la protezione dei dati personali,Italy_303,decided_by,,10000.0
+Garante per la protezione dei dati personali,Italy_307,decided_by,2025-01-16 00:00:00+00:00,50000.0
+Garante per la protezione dei dati personali,Italy_310,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_306,decided_by,2025-01-16 00:00:00+00:00,8000.0
+Garante per la protezione dei dati personali,Italy_309,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_305,decided_by,,100000.0
+Garante per la protezione dei dati personali,Italy_312,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_314,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_316,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_315,decided_by,,80000.0
+Garante per la Protezione dei Dati Personali,Italy_20,decided_by,,2000.0
+Guarantor for the Protection of Personal Data,Italy_29,decided_by,2020-09-03 00:00:00+00:00,2000.0
+Guarantor for the Protection of Personal Data,Italy_268,decided_by,2024-09-12 00:00:00+00:00,8000.0
+Data Protection Commission of Ireland,Ireland_1,decided_by,,0.0
+Data Protection Commission of Ireland,Ireland_19,decided_by,2024-03-08 00:00:00+00:00,0.0
+Data Protection Commission,Ireland_6,decided_by,,0.0
+Data Protection Commission,Ireland_7,decided_by,,75000.0
+Data Protection Commission,Ireland_13,decided_by,,125000.0
+Data Protection Commission,Ireland_10,decided_by,,0.0
+Data Protection Commission,Ireland_16,decided_by,,0.0
+Data Protection Commission,Ireland_14,decided_by,,0.0
+Data Protection Commission,Ireland_17,decided_by,,0.0
+Data Protection Commission,Ireland_24,decided_by,,0.0
+Data Protection Commission,Ireland_21,decided_by,,0.0
+Data Protection Commission,Ireland_29,decided_by,,0.0
+Data Protection Commission,Ireland_34,decided_by,,0.0
+Data Protection Commission,Ireland_32,decided_by,,0.0
+Data Protection Commission,Ireland_35,decided_by,2024-01-31 00:00:00+00:00,0.0
+Data Protection Commission,Ireland_38,decided_by,2024-12-17 00:00:00+00:00,251000000.0
+Data Protection Commission,Ireland_42,decided_by,2022-03-15 00:00:00+00:00,17000000.0
+NOT_MENTIONED,Ireland_20,decided_by,,0.0
+NOT_MENTIONED,Ireland_22,decided_by,,0.0
+NOT_MENTIONED,Ireland_28,decided_by,,0.0
+NOT_MENTIONED,Ireland_41,decided_by,,0.0
+NOT_MENTIONED,Ireland_40,decided_by,,0.0
+NOT_MENTIONED,Iceland_85,decided_by,,0.0
+NOT_MENTIONED,Greece_101,decided_by,,0.0
+NOT_MENTIONED,France_23,decided_by,,0.0
+NOT_MENTIONED,Finland_26,decided_by,,0.0
+Irish Data Protection Commission,Ireland_44,decided_by,2025-05-02 00:00:00+00:00,530000000.0
+Official name of the deciding Data Protection Authority (DPA): Data Protection Commission,Ireland_46,decided_by,,225000000.0
+Persónuvernd,Iceland_1,decided_by,2020-09-04 00:00:00+00:00,0.0
+Persónuvernd,Iceland_2,decided_by,2020-06-04 00:00:00+00:00,0.0
+Persónuvernd,Iceland_4,decided_by,,0.0
+Persónuvernd,Iceland_7,decided_by,2021-01-19 00:00:00+00:00,0.0
+Persónuvernd,Iceland_8,decided_by,,0.0
+Persónuvernd,Iceland_10,decided_by,2020-08-27 00:00:00+00:00,0.0
+Persónuvernd,Iceland_11,decided_by,,0.0
+Persónuvernd,Iceland_15,decided_by,,0.0
+Persónuvernd,Iceland_21,decided_by,2021-01-28 00:00:00+00:00,0.0
+Persónuvernd,Iceland_20,decided_by,2021-01-28 00:00:00+00:00,0.0
+Persónuvernd,Iceland_24,decided_by,,0.0
+Persónuvernd,Iceland_29,decided_by,2020-03-19 00:00:00+00:00,0.0
+Persónuvernd,Iceland_28,decided_by,,0.0
+Persónuvernd,Iceland_25,decided_by,,0.0
+Persónuvernd,Iceland_30,decided_by,,0.0
+Persónuvernd,Iceland_34,decided_by,2021-03-12 00:00:00+00:00,0.0
+Persónuvernd,Iceland_36,decided_by,2021-03-10 00:00:00+00:00,0.0
+Persónuvernd,Iceland_35,decided_by,,0.0
+Persónuvernd,Iceland_37,decided_by,2020-10-06 00:00:00+00:00,0.0
+Persónuvernd,Iceland_38,decided_by,,0.0
+Persónuvernd,Iceland_44,decided_by,2021-09-22 00:00:00+00:00,0.0
+Persónuvernd,Iceland_39,decided_by,,0.0
+Persónuvernd,Iceland_41,decided_by,2021-11-29 00:00:00+00:00,0.0
+Persónuvernd,Iceland_42,decided_by,,3500000.0
+Persónuvernd,Iceland_45,decided_by,,1000000.0
+Persónuvernd,Iceland_50,decided_by,2021-11-29 00:00:00+00:00,0.0
+Persónuvernd,Iceland_47,decided_by,,0.0
+Persónuvernd,Iceland_49,decided_by,2022-03-14 00:00:00+00:00,0.0
+Persónuvernd,Iceland_53,decided_by,2022-06-29 00:00:00+00:00,0.0
+Persónuvernd,Iceland_57,decided_by,,0.0
+Persónuvernd,Iceland_54,decided_by,2021-11-23 00:00:00+00:00,7500000.0
+Persónuvernd,Iceland_55,decided_by,,0.0
+Persónuvernd,Iceland_56,decided_by,,0.0
+Persónuvernd,Iceland_62,decided_by,2022-10-07 00:00:00+00:00,0.0
+Persónuvernd,Iceland_63,decided_by,2022-12-14 00:00:00+00:00,0.0
+Persónuvernd,Iceland_61,decided_by,,0.0
+Persónuvernd,Iceland_67,decided_by,2022-12-05 00:00:00+00:00,0.0
+Persónuvernd,Iceland_68,decided_by,2022-11-23 00:00:00+00:00,0.0
+Persónuvernd,Iceland_65,decided_by,,0.0
+Persónuvernd,Iceland_66,decided_by,,0.0
+Persónuvernd,Iceland_69,decided_by,2022-11-23 00:00:00+00:00,0.0
+Persónuvernd,Iceland_71,decided_by,2022-10-31 00:00:00+00:00,0.0
+Persónuvernd,Iceland_70,decided_by,,0.0
+Persónuvernd,Iceland_76,decided_by,2021-11-17 00:00:00+00:00,0.0
+Persónuvernd,Iceland_75,decided_by,,0.0
+Persónuvernd,Iceland_72,decided_by,,0.0
+Persónuvernd,Iceland_79,decided_by,,0.0
+Persónuvernd,Iceland_83,decided_by,2022-11-09 00:00:00+00:00,0.0
+Persónuvernd,Iceland_81,decided_by,,12000000.0
+Persónuvernd,Iceland_86,decided_by,,0.0
+Persónuvernd,Iceland_82,decided_by,,37856900.0
+Persónuvernd,Iceland_87,decided_by,,0.0
+Persónuvernd,Iceland_88,decided_by,,0.0
+Persónuvernd,Iceland_93,decided_by,,0.0
+Persónuvernd,Iceland_91,decided_by,2023-12-06 00:00:00+00:00,2000000.0
+Persónuvernd,Iceland_89,decided_by,,0.0
+Persónuvernd,Iceland_92,decided_by,,0.0
+Persónuvernd,Iceland_94,decided_by,,0.0
+Persónuvernd,Iceland_96,decided_by,2023-12-21 00:00:00+00:00,0.0
+Persónuvernd,Iceland_97,decided_by,2024-10-08 00:00:00+00:00,0.0
+Persónuvernd,Iceland_95,decided_by,2023-06-27 00:00:00+00:00,7500000.0
+Persónuvernd,Iceland_101,decided_by,2023-12-08 00:00:00+00:00,0.0
+Persónuvernd,Iceland_100,decided_by,,0.0
+Persónuvernd,Iceland_104,decided_by,2019-10-31 00:00:00+00:00,0.0
+Persónuvernd,Iceland_102,decided_by,,0.0
+Persónuvernd,Iceland_103,decided_by,,0.0
+Privacy Policy Board,Iceland_3,decided_by,2020-03-05 00:00:00+00:00,8500.0
+Privacy Policy Board,Iceland_5,decided_by,2020-03-05 00:00:00+00:00,3000000.0
+The Data Protection Authority,Iceland_6,decided_by,,0.0
+The Data Protection Authority,Iceland_12,decided_by,2020-09-11 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_14,decided_by,2020-09-29 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_16,decided_by,2021-03-10 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_19,decided_by,,0.0
+The Data Protection Authority,Iceland_26,decided_by,2020-06-22 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_46,decided_by,2021-09-03 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_48,decided_by,2021-09-01 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_51,decided_by,2021-11-23 00:00:00+00:00,0.0
+The Data Protection Authority,Iceland_77,decided_by,,0.0
+The Data Protection Authority,Iceland_78,decided_by,2021-09-30 00:00:00+00:00,0.0
+Data Protection Authority,Iceland_9,decided_by,,0.0
+Data Protection Authority,Iceland_23,decided_by,2020-11-25 00:00:00+00:00,0.0
+Data Protection Authority,Iceland_31,decided_by,2021-01-25 00:00:00+00:00,0.0
+Data Protection Authority,Iceland_43,decided_by,2021-04-16 00:00:00+00:00,0.0
+Data Protection Authority,Iceland_98,decided_by,2025-02-17 00:00:00+00:00,5000000.0
+Data Protection Authority,Greece_69,decided_by,2024-09-16 00:00:00+00:00,1400.0
+Persónuvernd (Icelandic Data Protection Authority),Iceland_13,decided_by,2020-05-13 00:00:00+00:00,0.0
+Persónuvernd (Icelandic Data Protection Authority),Iceland_32,decided_by,,0.0
+Persónuvernd (Icelandic Data Protection Authority),Iceland_33,decided_by,,0.0
+Persónuvernd (Icelandic Data Protection Authority),Iceland_80,decided_by,,0.0
+The Icelandic Data Protection Authority,Iceland_58,decided_by,,0.0
+Personal Protection Agency,Iceland_74,decided_by,2022-12-22 00:00:00+00:00,0.0
+Personal Protection Agency,Iceland_84,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_1,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_7,decided_by,2020-07-23 00:00:00+00:00,600000.0
+National Data Protection and Freedom of Information Authority,Hungary_6,decided_by,2020-12-09 00:00:00+00:00,20000000.0
+National Data Protection and Freedom of Information Authority,Hungary_8,decided_by,2020-07-09 00:00:00+00:00,1000000.0
+National Data Protection and Freedom of Information Authority,Hungary_10,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_9,decided_by,2020-07-23 00:00:00+00:00,2000000.0
+National Data Protection and Freedom of Information Authority,Hungary_14,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_17,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_16,decided_by,2020-12-16 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_20,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_23,decided_by,2022-03-02 00:00:00+00:00,5000000.0
+National Data Protection and Freedom of Information Authority,Hungary_24,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_26,decided_by,2021-06-18 00:00:00+00:00,10000000.0
+National Data Protection and Freedom of Information Authority,Hungary_25,decided_by,,3000000.0
+National Data Protection and Freedom of Information Authority,Hungary_28,decided_by,,500000.0
+National Data Protection and Freedom of Information Authority,Hungary_31,decided_by,2023-04-06 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_27,decided_by,2022-03-29 00:00:00+00:00,500000.0
+National Data Protection and Freedom of Information Authority,Hungary_29,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_32,decided_by,2022-04-22 00:00:00+00:00,3000000.0
+National Data Protection and Freedom of Information Authority,Hungary_35,decided_by,2022-09-12 00:00:00+00:00,30000000.0
+National Data Protection and Freedom of Information Authority,Hungary_36,decided_by,2022-02-11 00:00:00+00:00,10000000.0
+National Data Protection and Freedom of Information Authority,Hungary_39,decided_by,2021-10-27 00:00:00+00:00,5000000.0
+National Data Protection and Freedom of Information Authority,Hungary_43,decided_by,2023-11-30 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_41,decided_by,2024-12-13 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_45,decided_by,,80000000.0
+National Data Protection and Freedom of Information Authority,Hungary_47,decided_by,,600000.0
+National Data Protection and Freedom of Information Authority,Hungary_49,decided_by,2021-08-12 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_55,decided_by,2024-06-07 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_54,decided_by,2023-09-06 00:00:00+00:00,0.0
+National Data Protection and Freedom of Information Authority,Hungary_52,decided_by,,0.0
+National Data Protection and Freedom of Information Authority,Hungary_56,decided_by,2022-08-11 00:00:00+00:00,80000000.0
+National Data Protection and Freedom of Information Authority,Hungary_57,decided_by,,500000.0
+National Data Protection and Freedom of Information Authority,Hungary_59,decided_by,,2000000.0
+Nemzeti Adatvédelmi és Információszabadság Hatóság,Hungary_4,decided_by,,0.0
+Nemzeti Adatvédelmi és Információszabadság Hatóság,Hungary_15,decided_by,,0.0
+Nemzeti Adatvédelmi és Információszabadság Hatóság,Hungary_19,decided_by,,0.0
+Nemzeti Adatvédelmi és Információszabadság Hatóság,Hungary_40,decided_by,2021-03-24 00:00:00+00:00,0.0
+Nemzeti Adatvédelmi és Információszabadság Hatóság,Hungary_42,decided_by,,10000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_5,decided_by,,200000.0
+National Authority for Data Protection and Freedom of Information,Hungary_11,decided_by,2020-03-09 00:00:00+00:00,300000.0
+National Authority for Data Protection and Freedom of Information,Hungary_12,decided_by,,0.0
+National Authority for Data Protection and Freedom of Information,Hungary_13,decided_by,2020-11-18 00:00:00+00:00,0.0
+National Authority for Data Protection and Freedom of Information,Hungary_21,decided_by,2022-02-08 00:00:00+00:00,1000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_22,decided_by,2022-03-02 00:00:00+00:00,6000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_30,decided_by,2021-09-23 00:00:00+00:00,0.0
+National Authority for Data Protection and Freedom of Information,Hungary_33,decided_by,,20000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_34,decided_by,2020-12-16 00:00:00+00:00,35000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_46,decided_by,,10000000.0
+National Authority for Data Protection and Freedom of Information,Hungary_48,decided_by,,0.0
+National Authority for Data Protection and Freedom of Information,Hungary_53,decided_by,,0.0
+National Authority for Data Protection and Freedom of Information,Hungary_60,decided_by,,0.0
+Hungarian National Authority for Data Protection and Freedom of Information,Hungary_18,decided_by,2023-06-22 00:00:00+00:00,80000000.0
+Hellenic Data Protection Authority,Greece_3,decided_by,,5000.0
+Hellenic Data Protection Authority,Greece_8,decided_by,,25000.0
+Hellenic Data Protection Authority,Greece_9,decided_by,,0.0
+Hellenic Data Protection Authority,Greece_16,decided_by,,10000.0
+Hellenic Data Protection Authority,Greece_13,decided_by,2020-03-12 00:00:00+00:00,8000.0
+Hellenic Data Protection Authority,Greece_22,decided_by,,0.0
+Hellenic Data Protection Authority,Greece_38,decided_by,,0.0
+Hellenic Data Protection Authority,Greece_96,decided_by,,3000.0
+Hellenic Data Protection Authority,Greece_108,decided_by,,15000.0
+Personal Data Protection Authority,Greece_4,decided_by,,0.0
+Personal Data Protection Authority,Greece_6,decided_by,2022-01-13 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_7,decided_by,,0.0
+Personal Data Protection Authority,Greece_17,decided_by,2020-03-27 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_25,decided_by,,45000.0
+Personal Data Protection Authority,Greece_27,decided_by,,1000.0
+Personal Data Protection Authority,Greece_28,decided_by,2024-02-28 00:00:00+00:00,2995140.0
+Personal Data Protection Authority,Greece_26,decided_by,,127709.0
+Personal Data Protection Authority,Greece_29,decided_by,,0.0
+Personal Data Protection Authority,Greece_30,decided_by,,0.0
+Personal Data Protection Authority,Greece_32,decided_by,,2000.0
+Personal Data Protection Authority,Greece_34,decided_by,,0.0
+Personal Data Protection Authority,Greece_33,decided_by,2022-03-09 00:00:00+00:00,2000.0
+Personal Data Protection Authority,Greece_35,decided_by,,20000.0
+Personal Data Protection Authority,Greece_39,decided_by,2025-04-30 00:00:00+00:00,5000.0
+Personal Data Protection Authority,Greece_42,decided_by,2024-07-05 00:00:00+00:00,15000.0
+Personal Data Protection Authority,Greece_40,decided_by,,40000.0
+Personal Data Protection Authority,Greece_41,decided_by,,5000.0
+Personal Data Protection Authority,Greece_46,decided_by,2021-05-12 00:00:00+00:00,5000.0
+Personal Data Protection Authority,Greece_47,decided_by,,0.0
+Personal Data Protection Authority,Greece_53,decided_by,2022-04-29 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_54,decided_by,,0.0
+Personal Data Protection Authority,Greece_59,decided_by,2023-06-26 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_56,decided_by,2022-07-19 00:00:00+00:00,20000.0
+Personal Data Protection Authority,Greece_60,decided_by,,25000.0
+Personal Data Protection Authority,Greece_63,decided_by,,0.0
+Personal Data Protection Authority,Greece_72,decided_by,,0.0
+Personal Data Protection Authority,Greece_73,decided_by,,0.0
+Personal Data Protection Authority,Greece_80,decided_by,,0.0
+Personal Data Protection Authority,Greece_78,decided_by,2023-11-08 00:00:00+00:00,60000.0
+Personal Data Protection Authority,Greece_82,decided_by,2024-10-11 00:00:00+00:00,15000.0
+Personal Data Protection Authority,Greece_84,decided_by,,0.0
+Personal Data Protection Authority,Greece_85,decided_by,2022-07-21 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_86,decided_by,,0.0
+Personal Data Protection Authority,Greece_89,decided_by,,0.0
+Personal Data Protection Authority,Greece_91,decided_by,2024-10-31 00:00:00+00:00,5000.0
+Personal Data Protection Authority,Greece_95,decided_by,,0.0
+Personal Data Protection Authority,Greece_99,decided_by,,50000.0
+Personal Data Protection Authority,Greece_103,decided_by,2024-01-29 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_106,decided_by,2023-06-13 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_102,decided_by,,0.0
+Personal Data Protection Authority,Greece_109,decided_by,,0.0
+Personal Data Protection Authority,Greece_111,decided_by,2022-09-14 00:00:00+00:00,3000.0
+Personal Data Protection Authority,Greece_113,decided_by,2024-12-18 00:00:00+00:00,10000.0
+Personal Data Protection Authority,Greece_114,decided_by,,20000.0
+Personal Data Protection Authority,Greece_115,decided_by,2024-12-27 00:00:00+00:00,0.0
+Personal Data Protection Authority,Greece_117,decided_by,,0.0
+Personal Data Protection Authority,Greece_116,decided_by,2021-12-29 00:00:00+00:00,75000.0
+Personal Data Protection Authority,Greece_122,decided_by,2024-07-05 00:00:00+00:00,15000.0
+Personal Data Protection Authority,Greece_123,decided_by,,150000.0
+Personal Data Protection Authority,Greece_124,decided_by,2020-04-08 00:00:00+00:00,0.0
+Greek Data Protection Authority,Greece_10,decided_by,,0.0
+Greek Data Protection Authority,Greece_36,decided_by,,0.0
+Greek Data Protection Authority,Greece_100,decided_by,2019-12-19 00:00:00+00:00,150000.0
+The Personal Data Protection Authority,Greece_19,decided_by,2024-01-10 00:00:00+00:00,2000.0
+The Personal Data Protection Authority,Greece_71,decided_by,,1000.0
+The Personal Data Protection Authority,Greece_81,decided_by,,1000.0
+The President of the Authority,Greece_23,decided_by,,3000.0
+Hellenic Republic Authority for the Protection of Personal Data,Greece_45,decided_by,,0.0
+The Authority,Greece_51,decided_by,,15000.0
+Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα,Greece_88,decided_by,2020-10-12 00:00:00+00:00,0.0
+Authority for the Protection of Personal Data,Greece_118,decided_by,,0.0
+Bayerisches Landesamt für Datenschutzaufsicht,Germany_1,decided_by,2023-12-21 00:00:00+00:00,0.0
+Bavarian State Office for Data Protection Supervision,Germany_3,decided_by,,0.0
+Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI),Germany_8,decided_by,,45000000.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_9,decided_by,,215000.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_10,decided_by,,525000.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_11,decided_by,,300000.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_14,decided_by,2022-04-26 00:00:00+00:00,0.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_13,decided_by,,0.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_12,decided_by,,0.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_15,decided_by,2023-09-19 00:00:00+00:00,0.0
+Berlin Commissioner for Data Protection and Freedom of Information,Germany_16,decided_by,,0.0
+Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI),Germany_7,decided_by,,0.0
+Conference of the Independent Data Protection Authorities of Bund and the Länder,Germany_18,decided_by,2021-03-15 00:00:00+00:00,0.0
+The Hessian Commissioner for Data Protection and Freedom of Information,Germany_20,decided_by,2021-11-19 00:00:00+00:00,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_21,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_23,decided_by,,75000.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_25,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_29,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_24,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_28,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_31,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),Germany_30,decided_by,2020-10-01 00:00:00+00:00,35258707.95
+Hessian Commissioner for Data Protection and Freedom of Information,Germany_19,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information,Germany_22,decided_by,,0.0
+Hamburg Commissioner for Data Protection and Freedom of Information,Germany_32,decided_by,,900000.0
+Hamburg Commissioner for Data Protection and Freedom of Information,Germany_33,decided_by,,901388.84
+HmbBfDI,Germany_26,decided_by,,1000.0
+Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI),Germany_27,decided_by,,0.0
+The Hamburg representative for Data protection and freedom of information,Germany_34,decided_by,,0.0
+The State Commissioner for Data Protection Lower Saxony,Germany_36,decided_by,,900000.0
+The State Commissioner for Data Protection Lower Saxony,Germany_44,decided_by,,1100000.0
+Der Landesbeauftragte für den Datenschutz Niedersachsen,Germany_35,decided_by,,0.0
+State Labor Court of Baden-Württemberg,Germany_38,decided_by,,0.0
+Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg,Germany_40,decided_by,,300000.0
+Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg,Germany_39,decided_by,,55000.0
+Der Landesbeauftragte für den Datenschutz Niedersachsen (LfD Lower Saxony),Germany_37,decided_by,,10400000.0
+The State Commissioner for Data Protection and Freedom of Information Baden-Württemberg,Germany_41,decided_by,2018-11-21 00:00:00+00:00,20000.0
+Bremen State Commissioner for Data Protection and Freedom of Information (LfDI),Germany_43,decided_by,,0.0
+The State Commissioner for Data Protection and Freedom of Information Bremen,Germany_42,decided_by,,0.0
+National Commission for Information Technology and Liberties,France_2,decided_by,,0.0
+National Commission for Information Technology and Liberties,France_5,decided_by,2023-07-20 00:00:00+00:00,0.0
+National Commission for Information Technology and Liberties,France_30,decided_by,,400000.0
+National Commission for Information Technology and Liberties,France_51,decided_by,2023-11-09 00:00:00+00:00,0.0
+National Commission for Information Technology and Liberties,France_56,decided_by,2023-12-29 00:00:00+00:00,75000.0
+National Commission for Information Technology and Liberties,France_59,decided_by,2023-07-20 00:00:00+00:00,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_3,decided_by,2023-09-07 00:00:00+00:00,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_1,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_19,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_24,decided_by,2020-12-08 00:00:00+00:00,20000.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_27,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_40,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_49,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_57,decided_by,2023-06-15 00:00:00+00:00,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_69,decided_by,,225000.0
+National Commission for Information Technology and Freedoms,France_6,decided_by,2022-11-24 00:00:00+00:00,600000.0
+National Commission for Information Technology and Freedoms,France_37,decided_by,2022-04-15 00:00:00+00:00,1500000.0
+National Commission for Information Technology and Freedoms,France_52,decided_by,2023-12-12 00:00:00+00:00,5000.0
+National Commission for Information Technology and Freedoms,France_54,decided_by,2023-12-29 00:00:00+00:00,105000.0
+National Commission for Information Technology and Freedoms,France_61,decided_by,2024-01-31 00:00:00+00:00,310000.0
+National Commission for Information Technology and Freedoms,France_60,decided_by,2024-01-31 00:00:00+00:00,100000.0
+National Commission for Information Technology and Freedoms,France_62,decided_by,,525000.0
+National Commission for Computing and Liberties,France_8,decided_by,,0.0
+National Commission for Computing and Liberties,France_7,decided_by,2022-12-19 00:00:00+00:00,60000000.0
+National Commission for Computing and Liberties,France_38,decided_by,,1000000.0
+National Commission for Computing and Liberties,France_48,decided_by,,40000000.0
+National Commission for Information Technology and Civil Liberties,France_9,decided_by,2019-11-12 00:00:00+00:00,0.0
+National Commission for Information Technology and Civil Liberties,France_68,decided_by,2025-05-15 00:00:00+00:00,80000.0
+Commission nationale de l'informatique et des libertés (CNIL),France_10,decided_by,2020-07-15 00:00:00+00:00,0.0
+National Commission for Informatics and Freedoms (CNIL),France_11,decided_by,2021-11-26 00:00:00+00:00,0.0
+National Commission for Informatics and Freedoms,France_12,decided_by,2021-10-11 00:00:00+00:00,0.0
+National Commission for Informatics and Freedoms,France_21,decided_by,2020-12-07 00:00:00+00:00,3000.0
+National Commission for Informatics and Freedoms,France_26,decided_by,,0.0
+National Commission for Informatics and Freedoms,France_31,decided_by,,3000.0
+Commission nationale de l'informatique et des libertés,France_14,decided_by,,400000.0
+Commission nationale de l'informatique et des libertés,France_13,decided_by,,50000000.0
+Commission nationale de l'informatique et des libertés,France_22,decided_by,,6000.0
+Commission nationale de l'informatique et des libertés,France_29,decided_by,2021-07-20 00:00:00+00:00,1750000.0
+Commission nationale de l'informatique et des libertés,France_44,decided_by,2022-12-20 00:00:00+00:00,0.0
+Commission nationale de l'informatique et des libertés,France_45,decided_by,2022-12-29 00:00:00+00:00,8000000.0
+Commission nationale de l'informatique et des libertés,France_43,decided_by,2022-11-30 00:00:00+00:00,300000.0
+Commission nationale de l'informatique et des libertés,France_42,decided_by,,0.0
+Commission nationale de l'informatique et des libertés,France_66,decided_by,,240000.0
+Commission Nationale de l'Informatique et des Libertés,France_18,decided_by,2020-11-18 00:00:00+00:00,800000.0
+Commission Nationale de l'Informatique et des Libertés,France_20,decided_by,2020-12-07 00:00:00+00:00,35000000.0
+Commission Nationale de l'Informatique et des Libertés,France_25,decided_by,2020-05-25 00:00:00+00:00,0.0
+Commission Nationale de l'Informatique et des Libertés,France_32,decided_by,2021-10-29 00:00:00+00:00,400000.0
+Commission Nationale de l'Informatique et des Libertés,France_33,decided_by,2021-12-28 00:00:00+00:00,180000.0
+Commission Nationale de l'Informatique et des Libertés,France_34,decided_by,,300000.0
+Commission Nationale de l'Informatique et des Libertés,France_36,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés,France_39,decided_by,2022-08-03 00:00:00+00:00,600000.0
+Commission Nationale de l'Informatique et des Libertés,France_50,decided_by,2023-10-12 00:00:00+00:00,600000.0
+Commission Nationale de l'Informatique et des Libertés,France_53,decided_by,2023-12-27 00:00:00+00:00,32000000.0
+Commission Nationale de l'Informatique et des Libertés,France_55,decided_by,2023-12-29 00:00:00+00:00,10000000.0
+Commission Nationale de l'Informatique et des Libertés,France_58,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés,France_63,decided_by,2024-09-05 00:00:00+00:00,800000.0
+Commission Nationale de l’Informatique et des Libertés (CNIL),France_35,decided_by,2021-12-30 00:00:00+00:00,120000.0
+Deputy Data Protection Commissioner,Finland_2,decided_by,,0.0
+Deputy Data Protection Commissioner,Finland_7,decided_by,,0.0
+Deputy Data Protection Commissioner,Finland_8,decided_by,,0.0
+Deputy Data Protection Commissioner,Finland_33,decided_by,,0.0
+Deputy Data Protection Commissioner,Finland_42,decided_by,,0.0
+Deputy Data Protection Commissioner,Finland_43,decided_by,,0.0
+Office of the Data Protection Supervisor,Finland_6,decided_by,,0.0
+Data Protection Commissioner and Sanctions Board,Finland_4,decided_by,,440000.0
+Data Protection Supervisor,Finland_12,decided_by,,0.0
+Office of the Data Protection Ombudsman,Finland_9,decided_by,,608000.0
+Office of the Data Protection Ombudsman,Finland_22,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_13,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_11,decided_by,,122000.0
+Office of the Data Protection Commissioner,Finland_15,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_19,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_18,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_20,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_23,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_25,decided_by,,0.0
+Office of the Data Protection Commissioner,Finland_30,decided_by,,25000.0
+Office of the Data Protection Commissioner,Finland_44,decided_by,2022-05-09 00:00:00+00:00,85000.0
+Finnish Data Protection Ombudsman,Finland_10,decided_by,,608000.0
+Office of the Data Protection Officer,Finland_16,decided_by,,0.0
+Office of the Data Protection Officer,Finland_17,decided_by,,0.0
+Office of the Data Protection Ombudsman (Finland),Finland_21,decided_by,,0.0
+Data Protection Commissioner,Finland_24,decided_by,,0.0
+Data Protection Commissioner,Finland_34,decided_by,,6500.0
+Data Protection Commissioner,Finland_40,decided_by,,0.0
+Office of the Data Protection Supervisor (EDPS),Finland_27,decided_by,,0.0
+Finnish Data Protection Commissioner,Finland_29,decided_by,,0.0
+Finnish Data Protection Commissioner,Finland_38,decided_by,,52000.0
+Deputy Data Protection Commissioner's Office,Finland_32,decided_by,,0.0
+Finnish Data Protection Authority,Finland_35,decided_by,,0.0
+Suomen tietosuojavaltuutettu,Finland_36,decided_by,,0.0
+Data Protection Commissioner (Finland),Finland_41,decided_by,,0.0
+Office of the Data Protection Commissioner (Finland),Finland_39,decided_by,,0.0

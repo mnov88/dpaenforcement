@@ -1,0 +1,91 @@
+{
+  "export_info": {
+    "format": "parquet",
+    "compression": "snappy",
+    "partitioning": [
+      "country_group",
+      "decision_year"
+    ],
+    "source_file": "outputs/cleaned_wide.csv",
+    "row_count": 1998,
+    "column_count": 305
+  },
+  "legal_semantics": {
+    "typed_missingness": {
+      "NOT_DISCUSSED": "Question not addressed in decision",
+      "NOT_MENTIONED": "Aspect not mentioned in response",
+      "NOT_APPLICABLE": "Question not relevant to case type",
+      "NOT_DETERMINED": "Violation status unclear from decision",
+      "UNCLEAR": "Response ambiguous or incomplete"
+    },
+    "multi_select_exclusivity": {
+      "NONE_DISCUSSED": "Excludes substantive options",
+      "NONE_VIOLATED": "Explicit finding of no violation",
+      "NONE_MENTIONED": "No relevant options present"
+    },
+    "question_mapping": {
+      "Q30": "Article 5 principles discussed",
+      "Q31": "Article 5 principles violated",
+      "Q32": "Article 6 legal bases discussed",
+      "Q33": "Legal bases relied upon by defendant",
+      "Q41": "Article 83(2) aggravating factors",
+      "Q42": "Article 83(2) mitigating factors",
+      "Q53": "Article 58(2) corrective powers exercised",
+      "Q56": "Data subject rights discussed",
+      "Q57": "Data subject rights violated"
+    }
+  },
+  "column_descriptions": {
+    "decision_id": "Unique identifier for each DPA decision",
+    "country_code": "ISO 3166-1 alpha-2 country code",
+    "country_group": "Geographic grouping (EU/EEA/NON_EEA)",
+    "dpa_name_canonical": "Standardized name of data protection authority",
+    "decision_date": "Date of decision issuance (ISO format)",
+    "decision_year": "Year of decision for temporal analysis",
+    "decision_quarter": "Quarter of decision (Q1-Q4)",
+    "fine_eur": "Administrative fine amount in EUR",
+    "turnover_eur": "Annual turnover mentioned in EUR",
+    "fine_positive": "Boolean: fine amount > 0",
+    "fine_log1p": "Log-transformed fine (log1p for zero-handling)",
+    "turnover_log1p": "Log-transformed turnover",
+    "fine_to_turnover_ratio": "Fine as proportion of turnover",
+    "breach_case": "Boolean: data breach discussed in decision",
+    "severity_measures_present": "Boolean: severe corrective measures imposed",
+    "remedy_only_case": "Boolean: no fine but corrective measures",
+    "n_principles_discussed": "Count of Article 5 principles discussed",
+    "n_principles_violated": "Count of Article 5 principles violated",
+    "n_corrective_measures": "Count of Article 58(2) measures imposed",
+    "schema_echo_flag": "Boolean: AI response contains schema artifacts",
+    "isic_code": "ISIC Rev.4 economic activity code",
+    "isic_section": "ISIC high-level sector classification",
+    "q30_discussed_coverage_status": "Article 5 principles discussed (binary indicators) - overall status",
+    "q30_discussed_status": "Article 5 principles discussed (binary indicators) - derived legal status",
+    "q30_discussed_exclusivity_conflict": "Article 5 principles discussed (binary indicators) - conflicting options flag",
+    "q31_violated_coverage_status": "Article 5 principles violated (binary indicators) - overall status",
+    "q31_violated_status": "Article 5 principles violated (binary indicators) - derived legal status",
+    "q31_violated_exclusivity_conflict": "Article 5 principles violated (binary indicators) - conflicting options flag",
+    "q32_bases_coverage_status": "Article 6 legal bases discussed (binary indicators) - overall status",
+    "q32_bases_status": "Article 6 legal bases discussed (binary indicators) - derived legal status",
+    "q32_bases_exclusivity_conflict": "Article 6 legal bases discussed (binary indicators) - conflicting options flag",
+    "q53_powers_coverage_status": "Article 58(2) corrective powers exercised (binary indicators) - overall status",
+    "q53_powers_status": "Article 58(2) corrective powers exercised (binary indicators) - derived legal status",
+    "q53_powers_exclusivity_conflict": "Article 58(2) corrective powers exercised (binary indicators) - conflicting options flag",
+    "q56_rights_discussed_coverage_status": "Data subject rights discussed (binary indicators) - overall status",
+    "q56_rights_discussed_status": "Data subject rights discussed (binary indicators) - derived legal status",
+    "q56_rights_discussed_exclusivity_conflict": "Data subject rights discussed (binary indicators) - conflicting options flag",
+    "q57_rights_violated_coverage_status": "Data subject rights violated (binary indicators) - overall status",
+    "q57_rights_violated_status": "Data subject rights violated (binary indicators) - derived legal status",
+    "q57_rights_violated_exclusivity_conflict": "Data subject rights violated (binary indicators) - conflicting options flag"
+  },
+  "data_quality": {
+    "schema_echo_cases": 761,
+    "missing_dates": 1504,
+    "zero_fines": 590
+  },
+  "usage_notes": [
+    "Use country_group and decision_year for efficient filtering",
+    "Boolean columns use pandas nullable boolean dtype",
+    "Empty strings converted to null for Parquet compatibility",
+    "Consult validation_report.json for data quality issues"
+  ]
+}

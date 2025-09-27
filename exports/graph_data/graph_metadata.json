@@ -1,0 +1,56 @@
+{
+  "graph_statistics": {
+    "dpa_decision_network": {
+      "nodes": 1941,
+      "edges": 1776,
+      "density": 0.00094329100208735
+    },
+    "decision_article_bipartite": {
+      "nodes": 2028,
+      "edges": 6174,
+      "density": 0.003003827033275631
+    },
+    "cross_border_network": {
+      "nodes": 51,
+      "edges": 0,
+      "density": 0,
+      "max_degree_centrality": 0.0,
+      "avg_degree_centrality": 0.0
+    }
+  },
+  "formats_available": [
+    "GraphML (Gephi, Cytoscape compatible)",
+    "GML (R igraph compatible)",
+    "CSV edge lists (general purpose)",
+    "Neo4j import CSVs (property graph database)",
+    "Adjacency matrices (mathematical analysis)"
+  ],
+  "analysis_suggestions": {
+    "dpa_decision_network": [
+      "Analyze DPA enforcement patterns by country/region",
+      "Identify central DPAs in enforcement activity",
+      "Study temporal patterns in decision making"
+    ],
+    "decision_article_bipartite": [
+      "Bipartite network analysis of violations and decisions",
+      "Identify most commonly violated principles",
+      "Project to one-mode for principle co-occurrence"
+    ],
+    "violation_cooccurrence": [
+      "Network analysis of co-occurring violations",
+      "Community detection for violation clusters",
+      "Centrality analysis for key principles"
+    ],
+    "cross_border_network": [
+      "Analysis of international cooperation patterns",
+      "Lead authority relationships",
+      "Geographic enforcement networks"
+    ]
+  },
+  "legal_interpretation_notes": [
+    "Edges represent legal relationships, not causal connections",
+    "Node centrality indicates enforcement frequency, not legal importance",
+    "Co-occurrence does not imply legal dependency",
+    "Cross-border edges represent cooperation, not jurisdiction"
+  ]
+}

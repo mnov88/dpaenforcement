@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="node" attr.name="cross_border_cases" attr.type="long"/>
+<key id="d1" for="node" attr.name="country" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="Information Commissioner's Office">
+  <data key="d0">dpa</data>
+  <data key="d1">GB</data>
+  <data key="d2">3</data>
+</node>
+<node id="Datainspektionen">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Integritetsskyddsmyndigheten (IMY)">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">8</data>
+</node>
+<node id="Swedish Authority for Privacy Protection">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">4</data>
+</node>
+<node id="Integritetsskyddsmyndigheten">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">5</data>
+</node>
+<node id="Integrity Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">1</data>
+</node>
+<node id="The Swedish Privacy Protection Agency (IMY)">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Swedish Authority for Privacy Protection (IMY)">
+  <data key="d0">dpa</data>
+  <data key="d1">SE</data>
+  <data key="d2">7</data>
+</node>
+<node id="Spanish Data Protection Agency">
+  <data key="d0">dpa</data>
+  <data key="d1">ES</data>
+  <data key="d2">10</data>
+</node>
+<node id="Spanish Agency for Data Protection">
+  <data key="d0">dpa</data>
+  <data key="d1">ES</data>
+  <data key="d2">14</data>
+</node>
+<node id="Spanish Data Protection Agency (AEPD)">
+  <data key="d0">dpa</data>
+  <data key="d1">ES</data>
+  <data key="d2">2</data>
+</node>
+<node id="Office for the Protection of Personal Data of the Slovak Republic">
+  <data key="d0">dpa</data>
+  <data key="d1">SK</data>
+  <data key="d2">1</data>
+</node>
+<node id="National Supervisory Authority for the Processing of Personal Data">
+  <data key="d0">dpa</data>
+  <data key="d1">RO</data>
+  <data key="d2">1</data>
+</node>
+<node id="National Supervisory Authority for Personal Data Processing">
+  <data key="d0">dpa</data>
+  <data key="d1">RO</data>
+  <data key="d2">3</data>
+</node>
+<node id="Comissão Nacional de Proteção de Dados">
+  <data key="d0">dpa</data>
+  <data key="d1">PT</data>
+  <data key="d2">2</data>
+</node>
+<node id="President of the Office for Personal Data Protection">
+  <data key="d0">dpa</data>
+  <data key="d1">PL</data>
+  <data key="d2">2</data>
+</node>
+<node id="Norwegian Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">NO</data>
+  <data key="d2">3</data>
+</node>
+<node id="Datatilsynet">
+  <data key="d0">dpa</data>
+  <data key="d1">NO</data>
+  <data key="d2">7</data>
+</node>
+<node id="Oslo District Court">
+  <data key="d0">dpa</data>
+  <data key="d1">NO</data>
+  <data key="d2">1</data>
+</node>
+<node id="Privacy Board">
+  <data key="d0">dpa</data>
+  <data key="d1">NO</data>
+  <data key="d2">1</data>
+</node>
+<node id="Dutch Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">NL</data>
+  <data key="d2">2</data>
+</node>
+<node id="Autoriteit Persoonsgegevens">
+  <data key="d0">dpa</data>
+  <data key="d1">NL</data>
+  <data key="d2">5</data>
+</node>
+<node id="Personal Data Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">NL</data>
+  <data key="d2">1</data>
+</node>
+<node id="Information and Data Protection Commissioner">
+  <data key="d0">dpa</data>
+  <data key="d1">MT</data>
+  <data key="d2">2</data>
+</node>
+<node id="State Data Protection Inspectorate">
+  <data key="d0">dpa</data>
+  <data key="d1">LT</data>
+  <data key="d2">3</data>
+</node>
+<node id="Data State Inspections">
+  <data key="d0">dpa</data>
+  <data key="d1">LV</data>
+  <data key="d2">1</data>
+</node>
+<node id="Data State Inspection">
+  <data key="d0">dpa</data>
+  <data key="d1">LV</data>
+  <data key="d2">1</data>
+</node>
+<node id="Garante per la protezione dei dati personali">
+  <data key="d0">dpa</data>
+  <data key="d1">IT</data>
+  <data key="d2">23</data>
+</node>
+<node id="Data Protection Commission of Ireland">
+  <data key="d0">dpa</data>
+  <data key="d1">IE</data>
+  <data key="d2">2</data>
+</node>
+<node id="Data Protection Commission">
+  <data key="d0">dpa</data>
+  <data key="d1">IE</data>
+  <data key="d2">5</data>
+</node>
+<node id="Irish Data Protection Commission">
+  <data key="d0">dpa</data>
+  <data key="d1">IE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Persónuvernd">
+  <data key="d0">dpa</data>
+  <data key="d1">IS</data>
+  <data key="d2">3</data>
+</node>
+<node id="National Data Protection and Freedom of Information Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">HU</data>
+  <data key="d2">2</data>
+</node>
+<node id="Personal Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">GR</data>
+  <data key="d2">2</data>
+</node>
+<node id="Hellenic Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">GR</data>
+  <data key="d2">1</data>
+</node>
+<node id="Greek Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">GR</data>
+  <data key="d2">1</data>
+</node>
+<node id="Bavarian State Office for Data Protection Supervision">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Berlin Commissioner for Data Protection and Freedom of Information">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="The Hessian Commissioner for Data Protection and Freedom of Information">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI)">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI)">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="The State Commissioner for Data Protection Lower Saxony">
+  <data key="d0">dpa</data>
+  <data key="d1">DE</data>
+  <data key="d2">1</data>
+</node>
+<node id="Commission Nationale de l'Informatique et des Libertés (CNIL)">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">4</data>
+</node>
+<node id="National Commission for Computing and Liberties">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">2</data>
+</node>
+<node id="National Commission for Informatics and Freedoms (CNIL)">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">1</data>
+</node>
+<node id="Commission nationale de l'informatique et des libertés">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">3</data>
+</node>
+<node id="Commission Nationale de l'Informatique et des Libertés">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">4</data>
+</node>
+<node id="Commission Nationale de l’Informatique et des Libertés (CNIL)">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">1</data>
+</node>
+<node id="National Commission for Information Technology and Freedoms">
+  <data key="d0">dpa</data>
+  <data key="d1">FR</data>
+  <data key="d2">3</data>
+</node>
+<node id="Deputy Data Protection Commissioner">
+  <data key="d0">dpa</data>
+  <data key="d1">FI</data>
+  <data key="d2">1</data>
+</node>
+<node id="Office of the Data Protection Commissioner">
+  <data key="d0">dpa</data>
+  <data key="d1">FI</data>
+  <data key="d2">2</data>
+</node>
+</graph></graphml>

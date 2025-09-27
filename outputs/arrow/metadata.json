@@ -1,0 +1,89 @@
+{
+  "format_info": {
+    "primary_format": "feather",
+    "secondary_format": "arrow_ipc",
+    "compression": "zstd",
+    "cross_language": true,
+    "zero_copy_reads": true
+  },
+  "dataset_info": {
+    "title": "GDPR DPA Decisions Analysis Dataset",
+    "description": "Structured enforcement decisions with 68-field questionnaire",
+    "legal_framework": "EU GDPR (Regulation 2016/679)",
+    "row_count": 1998,
+    "column_count": 305,
+    "source_file": "outputs/cleaned_wide.csv"
+  },
+  "legal_semantics": {
+    "typed_missingness": {
+      "NOT_DISCUSSED": "Question not addressed in decision",
+      "NOT_MENTIONED": "Aspect not mentioned in response",
+      "NOT_APPLICABLE": "Question not relevant to case type",
+      "NOT_DETERMINED": "Violation status unclear from decision",
+      "UNCLEAR": "Response ambiguous or incomplete"
+    },
+    "multi_select_exclusivity": {
+      "NONE_DISCUSSED": "Excludes substantive options",
+      "NONE_VIOLATED": "Explicit finding of no violation",
+      "NONE_MENTIONED": "No relevant options present"
+    },
+    "question_mapping": {
+      "Q30": "Article 5 principles discussed",
+      "Q31": "Article 5 principles violated",
+      "Q32": "Article 6 legal bases discussed",
+      "Q33": "Legal bases relied upon by defendant",
+      "Q41": "Article 83(2) aggravating factors",
+      "Q42": "Article 83(2) mitigating factors",
+      "Q53": "Article 58(2) corrective powers exercised",
+      "Q56": "Data subject rights discussed",
+      "Q57": "Data subject rights violated"
+    }
+  },
+  "column_descriptions": {
+    "decision_id": "Unique identifier for each DPA decision",
+    "country_code": "ISO 3166-1 alpha-2 country code of deciding authority",
+    "country_group": "Geographic classification (EU/EEA/NON_EEA)",
+    "dpa_name_canonical": "Standardized name of data protection authority",
+    "decision_date": "Date of decision issuance (ISO 8601 format)",
+    "decision_year": "Year of decision for temporal analysis",
+    "decision_quarter": "Quarter of year (Q1-Q4) for seasonal analysis",
+    "fine_eur": "Administrative fine amount in EUR (0 = no fine)",
+    "turnover_eur": "Annual turnover mentioned in decision (EUR)",
+    "fine_positive": "Boolean: administrative fine > 0 imposed",
+    "fine_log1p": "Log(1 + fine_eur) for statistical analysis",
+    "turnover_log1p": "Log(1 + turnover_eur) for statistical analysis",
+    "fine_to_turnover_ratio": "Fine as proportion of annual turnover",
+    "breach_case": "Boolean: data breach incident discussed",
+    "severity_measures_present": "Boolean: severe corrective measures imposed",
+    "remedy_only_case": "Boolean: corrective measures but no fine",
+    "isic_code": "ISIC Rev.4 economic activity classification",
+    "isic_section": "High-level economic sector from ISIC",
+    "schema_echo_flag": "Boolean: AI response contains schema artifacts",
+    "q36_text": "Summary of Article 5/6 findings (normalized text)",
+    "q52_text": "Fine calculation reasoning (normalized text)",
+    "q67_text": "EDPB guidelines references (normalized text)",
+    "q68_text": "Expert case summary (normalized text)"
+  },
+  "cross_language_usage": {
+    "python": [
+      "import pandas as pd",
+      "df = pd.read_feather('wide_data.feather')",
+      "# Rich metadata preserved in Arrow table"
+    ],
+    "r": [
+      "library(arrow)",
+      "df <- read_feather('wide_data.feather')",
+      "# Or: tbl <- arrow::read_feather('wide_data.feather')"
+    ],
+    "julia": [
+      "using Arrow, DataFrames",
+      "df = DataFrame(Arrow.Table('wide_data.feather'))"
+    ]
+  },
+  "performance_notes": [
+    "Zero-copy reads in supported languages",
+    "Categorical columns optimized for memory efficiency",
+    "Compression reduces file size by ~70% vs CSV",
+    "Boolean columns use efficient nullable representation"
+  ]
+}

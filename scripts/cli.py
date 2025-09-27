@@ -10,6 +10,11 @@ from scripts.clean.wide_output import clean_csv_to_wide
 from scripts.clean.long_tables import LongEmitter
 from scripts.clean.consistency import run_consistency_checks
 from scripts.clean.qa_summary import create_qa_summary
+from scripts.export.parquet_export import ParquetExporter
+from scripts.export.arrow_export import ArrowExporter
+from scripts.export.graph_export import GraphExporter
+from scripts.export.stats_export import StatisticalPackageExporter
+from scripts.export.ml_export import MLFeatureExporter
 
 
 DEFAULT_PROMPT = Path("analyzed-decisions/data-extraction-prompt-sent-to-ai.md")
@@ -128,6 +133,70 @@ def cmd_run_all(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_export_parquet(args: argparse.Namespace) -> int:
+    wide_csv = Path(args.wide_csv)
+    long_tables_dir = Path(args.long_tables_dir) if args.long_tables_dir else None
+    out_dir = Path(args.out_dir)
+
+    partition_cols = args.partition_cols.split(',') if args.partition_cols else None
+
+    exporter = ParquetExporter(wide_csv, long_tables_dir)
+    exporter.export(out_dir, partition_cols=partition_cols)
+    print(f"Exported Parquet datasets to {out_dir}")
+    return 0
+
+
+def cmd_export_arrow(args: argparse.Namespace) -> int:
+    wide_csv = Path(args.wide_csv)
+    long_tables_dir = Path(args.long_tables_dir) if args.long_tables_dir else None
+    out_dir = Path(args.out_dir)
+
+    exporter = ArrowExporter(wide_csv, long_tables_dir)
+    exporter.export(out_dir, compression=args.compression)
+    print(f"Exported Arrow/Feather datasets to {out_dir}")
+    return 0
+
+
+def cmd_export_graph(args: argparse.Namespace) -> int:
+    wide_csv = Path(args.wide_csv)
+    long_tables_dir = Path(args.long_tables_dir) if args.long_tables_dir else None
+    out_dir = Path(args.out_dir)
+
+    exporter = GraphExporter(wide_csv, long_tables_dir)
+    exporter.export(out_dir)
+    print(f"Exported graph/network datasets to {out_dir}")
+    return 0
+
+
+def cmd_export_stats(args: argparse.Namespace) -> int:
+    wide_csv = Path(args.wide_csv)
+    long_tables_dir = Path(args.long_tables_dir) if args.long_tables_dir else None
+    out_dir = Path(args.out_dir)
+
+    formats = args.formats.split(',') if args.formats else ['r', 'stata', 'spss']
+
+    exporter = StatisticalPackageExporter(wide_csv, long_tables_dir)
+    exporter.export(out_dir, formats=formats)
+    print(f"Exported statistical package datasets ({', '.join(formats)}) to {out_dir}")
+    return 0
+
+
+def cmd_export_ml(args: argparse.Namespace) -> int:
+    wide_csv = Path(args.wide_csv)
+    long_tables_dir = Path(args.long_tables_dir) if args.long_tables_dir else None
+    out_dir = Path(args.out_dir)
+
+    exporter = MLFeatureExporter(wide_csv, long_tables_dir)
+    exporter.export(
+        out_dir,
+        embeddings_model=args.embeddings_model,
+        test_size=args.test_size,
+        random_state=args.random_state
+    )
+    print(f"Exported ML-ready datasets to {out_dir}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="dpa-scripts", description="DPA decisions data utilities")
     sub = p.add_subparsers(dest="command", required=True)
@@ -178,6 +247,43 @@ def build_parser() -> argparse.ArgumentParser:
     s7.add_argument("--consistency-input-format", choices=["auto", "raw", "wide"])
     s7.add_argument("--qa-summary-csv")
     s7.set_defaults(func=cmd_run_all)
+
+    # Export commands
+    s8 = sub.add_parser("export-parquet", help="Export data to Parquet format with partitioning")
+    s8.add_argument("--wide-csv", required=True, help="Path to cleaned wide CSV")
+    s8.add_argument("--long-tables-dir", help="Path to long tables directory (optional)")
+    s8.add_argument("--out-dir", required=True, help="Output directory for Parquet files")
+    s8.add_argument("--partition-cols", help="Comma-separated partition columns (default: country_group,decision_year)")
+    s8.set_defaults(func=cmd_export_parquet)
+
+    s9 = sub.add_parser("export-arrow", help="Export data to Arrow/Feather format")
+    s9.add_argument("--wide-csv", required=True, help="Path to cleaned wide CSV")
+    s9.add_argument("--long-tables-dir", help="Path to long tables directory (optional)")
+    s9.add_argument("--out-dir", required=True, help="Output directory for Arrow files")
+    s9.add_argument("--compression", default="zstd", choices=["zstd", "lz4", "uncompressed"], help="Compression method")
+    s9.set_defaults(func=cmd_export_arrow)
+
+    s10 = sub.add_parser("export-graph", help="Export data as graph/network formats")
+    s10.add_argument("--wide-csv", required=True, help="Path to cleaned wide CSV")
+    s10.add_argument("--long-tables-dir", help="Path to long tables directory (optional)")
+    s10.add_argument("--out-dir", required=True, help="Output directory for graph files")
+    s10.set_defaults(func=cmd_export_graph)
+
+    s11 = sub.add_parser("export-stats", help="Export data for statistical packages (R, Stata, SPSS)")
+    s11.add_argument("--wide-csv", required=True, help="Path to cleaned wide CSV")
+    s11.add_argument("--long-tables-dir", help="Path to long tables directory (optional)")
+    s11.add_argument("--out-dir", required=True, help="Output directory for statistical files")
+    s11.add_argument("--formats", default="r,stata,spss", help="Comma-separated formats to export (r,stata,spss)")
+    s11.set_defaults(func=cmd_export_stats)
+
+    s12 = sub.add_parser("export-ml", help="Export ML-ready features with embeddings and splits")
+    s12.add_argument("--wide-csv", required=True, help="Path to cleaned wide CSV")
+    s12.add_argument("--long-tables-dir", help="Path to long tables directory (optional)")
+    s12.add_argument("--out-dir", required=True, help="Output directory for ML datasets")
+    s12.add_argument("--embeddings-model", default="all-MiniLM-L6-v2", help="Sentence transformer model for embeddings")
+    s12.add_argument("--test-size", type=float, default=0.2, help="Test set size (0.0-1.0)")
+    s12.add_argument("--random-state", type=int, default=42, help="Random seed for reproducibility")
+    s12.set_defaults(func=cmd_export_ml)
 
     return p
 

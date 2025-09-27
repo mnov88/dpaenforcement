@@ -1,0 +1,67 @@
+{
+  "selection_correction": {
+    "error": "'turnover_eur'"
+  },
+  "rosenbaum_bounds": {
+    "timing_bounds": {
+      "gamma_1.0": {
+        "base_effect": 0.09999999999999998,
+        "worst_case_lower": 0.09999999999999998,
+        "significant_at_bound": "True"
+      },
+      "gamma_1.25": {
+        "base_effect": 0.09999999999999998,
+        "worst_case_lower": 0.077685644868579,
+        "significant_at_bound": "True"
+      },
+      "gamma_1.5": {
+        "base_effect": 0.09999999999999998,
+        "worst_case_lower": 0.059453489189183535,
+        "significant_at_bound": "True"
+      },
+      "gamma_2.0": {
+        "base_effect": 0.09999999999999998,
+        "worst_case_lower": 0.030685281944005452,
+        "significant_at_bound": "False"
+      },
+      "gamma_3.0": {
+        "base_effect": 0.09999999999999998,
+        "worst_case_lower": -0.009861228866811012,
+        "significant_at_bound": "False"
+      }
+    },
+    "notification_bounds": {},
+    "gamma_thresholds": []
+  },
+  "country_sensitivity": {
+    "error": "name 'compute_country_weights' is not defined"
+  },
+  "time_fe_sensitivity": {
+    "time_fe_spec": {
+      "timing_effect": 0.024160229814706002,
+      "n_cases": 51,
+      "uses_ipw": true
+    },
+    "no_time_fe_spec": {
+      "timing_effect": 0.09999999999999998,
+      "n_cases": 80,
+      "uses_ipw": false
+    },
+    "comparison": {
+      "difference": -0.07583977018529398,
+      "relative_change": -0.75839770185294,
+      "robust_to_time_controls": "False"
+    }
+  },
+  "robustness_summary": [
+    {
+      "test_name": "Time Fixed Effects",
+      "original_estimate": 0.09999999999999998,
+      "robust_estimate": 0.024160229814706002,
+      "difference": -0.07583977018529398,
+      "relative_change": -0.75839770185294,
+      "passes_check": "False",
+      "notes": "Compares time-FE with IPW vs full sample specification"
+    }
+  ]
+}

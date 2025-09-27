@@ -1,0 +1,38 @@
+{
+  "channel_effects": [],
+  "fuzzy_rd_timing": {
+    "fuzzy_rd_enforcement_severity_index": {
+      "estimate": 0.3023263574244035,
+      "ci_lower": 0.21522208736052048,
+      "ci_upper": 0.34992586900480305
+    }
+  },
+  "heterogeneous_effects": [
+    {
+      "subgroup": "vulnerable_True",
+      "outcome": "timing_fine_positive",
+      "estimate": -0.03218926458019816,
+      "ci_lower": -0.13453891471509408,
+      "ci_upper": 0.2059329353229982,
+      "n_treated": "12",
+      "n_control": "37"
+    },
+    {
+      "subgroup": "remedial_True",
+      "outcome": "timing_severity_index",
+      "estimate": 0.07360622051082648,
+      "ci_lower": -0.14141439892594335,
+      "ci_upper": 0.290371875767179,
+      "n_treated": "18",
+      "n_control": "58"
+    }
+  ],
+  "summary_stats": {
+    "total_breach_cases": 208,
+    "cases_with_timing_data": 208,
+    "cases_with_notification_data": 208,
+    "cases_with_channel_data": 208,
+    "vulnerable_cases": 99.0,
+    "remedial_cases": 169.0
+  }
+}

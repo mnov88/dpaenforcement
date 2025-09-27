@@ -1,0 +1,96 @@
+{
+  "playbook_created": true,
+  "cli_tool_created": true,
+  "sample_assessments": [
+    {
+      "scenario_name": "High-Risk Romania Breach",
+      "characteristics": {
+        "country": "RO",
+        "initiation_channel": "BREACH_NOTIFICATION",
+        "timing_compliant": false,
+        "subjects_notified": false,
+        "notification_required": true,
+        "vulnerable_subjects": true,
+        "remedial_actions": false
+      },
+      "assessment": {
+        "recommendation": "FILE_NOW",
+        "confidence": "HIGH",
+        "expected_outcomes": {
+          "fine_probability": 1.0,
+          "severity_index": 2.3623263574244038,
+          "cluster_match_probability": 0.8
+        },
+        "risk_factors": [
+          "Late notification (>72 hours)",
+          "Vulnerable subjects affected",
+          "Subjects not notified when required"
+        ],
+        "mitigating_factors": [],
+        "cluster_match": "Cluster_5: Country Ro, Channel Breach Notification, Breach Type Organizational Failure",
+        "robustness_warnings": []
+      }
+    },
+    {
+      "scenario_name": "Low-Risk Spain Complaint",
+      "characteristics": {
+        "country": "ES",
+        "initiation_channel": "COMPLAINT",
+        "timing_compliant": true,
+        "subjects_notified": true,
+        "notification_required": true,
+        "vulnerable_subjects": false,
+        "remedial_actions": true
+      },
+      "assessment": {
+        "recommendation": "INITIAL_NOTICE",
+        "confidence": "MEDIUM",
+        "expected_outcomes": {
+          "fine_probability": 0.6031746031746031,
+          "severity_index": 1.492063492063492,
+          "cluster_match_probability": 0.8
+        },
+        "risk_factors": [],
+        "mitigating_factors": [
+          "Proactive remedial actions taken",
+          "Timely notification (<72 hours)",
+          "Data subjects notified"
+        ],
+        "cluster_match": "Cluster_2: Channel Complaint, Breach Type Human Error, Country Es",
+        "robustness_warnings": []
+      }
+    },
+    {
+      "scenario_name": "Medium-Risk Italy Cyber",
+      "characteristics": {
+        "country": "IT",
+        "initiation_channel": "BREACH_NOTIFICATION",
+        "timing_compliant": true,
+        "subjects_notified": false,
+        "notification_required": true,
+        "vulnerable_subjects": true,
+        "remedial_actions": false
+      },
+      "assessment": {
+        "recommendation": "INITIAL_NOTICE",
+        "confidence": "MEDIUM",
+        "expected_outcomes": {
+          "fine_probability": 0.7722222222222223,
+          "severity_index": 1.7405555555555556,
+          "cluster_match_probability": 0.8
+        },
+        "risk_factors": [
+          "Vulnerable subjects affected",
+          "Subjects not notified when required"
+        ],
+        "mitigating_factors": [
+          "Timely notification (<72 hours)"
+        ],
+        "cluster_match": "Cluster_1: Channel Breach Notification, Vulnerable Subjects, Subjects Notified",
+        "robustness_warnings": []
+      }
+    }
+  ],
+  "decision_matrix": {},
+  "flowchart": "\n# GDPR Breach Notification Decision Flowchart\n\n## Step 1: Initial Assessment\n- [ ] Is this a personal data breach? (YES \u2192 Continue; NO \u2192 Document only)\n- [ ] Status in decisions: DISCUSSED vs NOT_DISCUSSED vs NOT_APPLICABLE\n\n## Step 2: Risk Factors Analysis\n### High-Risk Indicators (FILE_NOW):\n- [ ] Special category data (Article 9) involved\n- [ ] Vulnerable subjects affected (children, patients, etc.)\n- [ ] Late notification (>72 hours) to DPA\n- [ ] High-risk countries (Romania=100% fine rate, Poland=88%)\n- [ ] Ex-officio DPA investigation likely\n\n### Medium-Risk Indicators (INITIAL_NOTICE):\n- [ ] Technical/organizational failures\n- [ ] Complaint-driven cases\n- [ ] Mixed compliance record\n- [ ] Spain/Italy jurisdiction (lower fine rates)\n\n### Low-Risk Indicators (DOCUMENT_ONLY):\n- [ ] Timely notification (<72 hours)\n- [ ] Subjects properly notified\n- [ ] Proactive remedial actions taken\n- [ ] No vulnerable subjects\n\n## Step 3: Country-Specific Patterns\nBased on cluster analysis:\n- **Romania**: 100% fine probability \u2192 FILE_NOW\n- **Poland + Ex-officio**: 88% fine probability \u2192 FILE_NOW\n- **Norway + Vulnerable**: 87% fine probability \u2192 FILE_NOW\n- **Italy + Cyber**: 72% fine probability \u2192 INITIAL_NOTICE\n- **Spain + Complaints**: 60% fine probability \u2192 INITIAL_NOTICE\n\n## Step 4: Robustness Check\n- [ ] Are estimates robust to time controls? (\u26a0\ufe0f Current: NO)\n- [ ] Country reweighting sensitivity acceptable?\n- [ ] Selection bias concerns for turnover data?\n\n## Final Decision Matrix\n| Fine Probability | Severity Index | Recommendation |\n|-----------------|----------------|----------------|\n| \u226590%            | \u22652.0          | FILE_NOW (High confidence) |\n| 80-90%          | \u22651.8          | FILE_NOW (Medium confidence) |\n| 60-80%          | Any           | INITIAL_NOTICE |\n| <60%            | <1.5          | DOCUMENT_ONLY |\n\n## Status Flag Requirements\n\u26a0\ufe0f **CRITICAL**: Only use variables where status = \"DISCUSSED\"\n- NOT_DISCUSSED \u2192 Insufficient basis for recommendation\n- NOT_APPLICABLE \u2192 Factor not relevant\n- NOT_MENTIONED \u2192 Potential data gap\n"
+}

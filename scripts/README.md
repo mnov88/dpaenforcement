@@ -5,6 +5,7 @@ CLI utilities for ingestion, validation, and cleaning of 68‑answer decision re
 ## Layout
 
 - `scripts/cli.py`: CLI entrypoint with subcommands
+- `scripts/evenness/`: Evenness analysis toolkit (matching, modelling, robustness)
 - `scripts/parser/ingest.py`: Segment blocks and extract Answer N: value pairs
 - `scripts/parser/enums.py`: Build ENUM/MULTI_SELECT/TYPE whitelist from the prompt
 - `scripts/clean/wide_output.py`: Generate cleaned wide CSV with enrichment and derived fields
@@ -62,6 +63,35 @@ python3 -m scripts.cli consistency \
 ```bash
 python3 -m scripts.cli run-all
 ```
+
+### Evenness research CLI
+
+High-level orchestration for the disparity study lives under `scripts.evenness.cli`.
+
+```bash
+# Build facts-only matrix honouring status flags
+python -m scripts.evenness.cli prepare-data --out outputs/evenness/fact_matrix.parquet
+
+# Construct within- and cross-country matches and plot balance diagnostics
+python -m scripts.evenness.cli build-matches --balance-plot outputs/evenness/balance.png
+
+# Fit logistic / OLS / mixed models with clustered SEs
+python -m scripts.evenness.cli fit-models
+
+# Generate leniency map and variance components
+python -m scripts.evenness.cli leniency-index --icc-plot outputs/evenness/icc.png
+
+# Run Oaxaca–Blinder between two countries
+python -m scripts.evenness.cli decompose --group-a FR --group-b DE
+
+# Fire the robustness battery (reweighting, Heckman, quantiles)
+python -m scripts.evenness.cli robustness
+
+# Optional gradient boosting + SHAP validation
+python -m scripts.evenness.cli predictive --outcome fine_positive
+```
+
+Artefacts land under `outputs/evenness/` by default (configurable via command flags).
 
 ## Outputs
 

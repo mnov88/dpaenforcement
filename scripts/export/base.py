@@ -31,10 +31,11 @@ class BaseExporter(ABC):
         # Convert boolean indicators
         bool_cols = [col for col in df.columns if any(
             col.startswith(prefix) for prefix in [
-                'q30_discussed_', 'q31_violated_', 'q32_bases_', 'q41_aggrav_',
-                'q42_mitig_', 'q46_vuln_', 'q47_remedial_', 'q50_other_measures_',
-                'q53_powers_', 'q54_scopes_', 'q56_rights_discussed_', 'q57_rights_violated_',
-                'q58_access_issues_', 'q59_adm_issues_', 'q61_dpo_issues_', 'q64_transfer_violations_'
+                'q30_discussed_', 'q31_violated_', 'q32_bases_', 'q33_relied_on_',
+                'q34_consent_issues_', 'q41_aggrav_', 'q42_mitig_', 'q46_vuln_',
+                'q47_remedial_', 'q50_other_measures_', 'q53_powers_', 'q54_scopes_',
+                'q56_rights_discussed_', 'q57_rights_violated_', 'q58_access_issues_',
+                'q59_adm_issues_', 'q61_dpo_issues_', 'q64_transfer_violations_'
             ]
         ) and not any(col.endswith(suffix) for suffix in [
             '_coverage_status', '_known', '_unknown', '_status', '_exclusivity_conflict'
@@ -105,6 +106,8 @@ class BaseExporter(ABC):
                 'Q31': 'Article 5 principles violated',
                 'Q32': 'Article 6 legal bases discussed',
                 'Q33': 'Legal bases relied upon by defendant',
+                'Q34': 'Consent validity issues identified',
+                'Q35': 'Legitimate interest assessment outcome',
                 'Q41': 'Article 83(2) aggravating factors',
                 'Q42': 'Article 83(2) mitigating factors',
                 'Q53': 'Article 58(2) corrective powers exercised',

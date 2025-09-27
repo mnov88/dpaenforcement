@@ -165,10 +165,16 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
                 "Q1": "ISO_3166-1_ALPHA-2: FR",
                 "Q2": "ENUM:CNIL",
                 "Q3": "2024-01-01",
+                "Q10": "ENUM:SME, ENUM:PUBLIC_SECTOR_BODY",
                 "Q12": "FORMAT:6209",
                 "Q15": "ENUM:COMPLAINT",
                 "Q21": "ENUM:SECURITY_INCIDENT, ENUM:OTHER",
+                "Q25": "ENUM:ARTICLE_9_SPECIAL_CATEGORY, ENUM:NEITHER",
+                "Q28": "ENUM:STAFF_TRAINING, ENUM:LEGAL_ADVICE",
                 "Q30": "ENUM:ACCOUNTABILITY, ENUM:SECURITY",
+                "Q32": "ENUM:CONSENT, ENUM:CONTRACT",
+                "Q33": "ENUM:CONSENT, ENUM:LEGAL_OBLIGATION",
+                "Q34": "ENUM:NOT_FREELY_GIVEN, ENUM:NOT_INFORMED",
             }
         )
         raw_csv.write_text(
@@ -185,12 +191,24 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         row = rows[0]
         self.assertEqual(row["raw_q15"], "COMPLAINT")
         self.assertEqual(row["raw_q21"], "SECURITY_INCIDENT, OTHER")
+        self.assertEqual(row["raw_q10"], "SME, PUBLIC_SECTOR_BODY")
+        self.assertEqual(row["raw_q25"], "ARTICLE_9_SPECIAL_CATEGORY, NEITHER")
+        self.assertEqual(row["raw_q28"], "STAFF_TRAINING, LEGAL_ADVICE")
         self.assertEqual(row["raw_q30"], "ACCOUNTABILITY, SECURITY")
+        self.assertEqual(row["raw_q32"], "CONSENT, CONTRACT")
+        self.assertEqual(row["raw_q33"], "CONSENT, LEGAL_OBLIGATION")
+        self.assertEqual(row["raw_q34"], "NOT_FREELY_GIVEN, NOT_INFORMED")
         flagged = set((row.get("schema_echo_fields") or "").split(";"))
         self.assertIn("Q2", flagged)
         self.assertIn("Q12", flagged)
         self.assertIn("Q15", flagged)
+        self.assertIn("Q10", flagged)
         self.assertIn("Q21", flagged)
+        self.assertIn("Q32", flagged)
+        self.assertIn("Q33", flagged)
+        self.assertIn("Q34", flagged)
+        self.assertIn("Q25", flagged)
+        self.assertIn("Q28", flagged)
         self.assertIn("Q30", flagged)
 
     def test_long_tables_emit_clean_tokens(self):
@@ -198,10 +216,17 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         response = self._response(
             {
                 "Q1": "ISO_3166-1_ALPHA-2: FR",
+                "Q10": "ENUM:SME, ENUM:PUBLIC_SECTOR_BODY",
                 "Q21": "ENUM:SECURITY_INCIDENT, ENUM:OTHER",
+                "Q25": "ENUM:ARTICLE_9_SPECIAL_CATEGORY",
+                "Q28": "ENUM:STAFF_TRAINING, ENUM:LEGAL_ADVICE",
                 "Q30": "ENUM:ACCOUNTABILITY, ENUM:SECURITY",
+                "Q32": "ENUM:CONSENT, ENUM:CONTRACT",
                 "Q33": "ENUM:CONSENT",
+                "Q34": "ENUM:NOT_FREELY_GIVEN",
                 "Q35": "FORMAT:APPROVED",
+                "Q41": "ENUM:NATURE_GRAVITY_DURATION, ENUM:INTENT_NEGLIGENCE",
+                "Q42": "ENUM:MITIGATION_ACTIONS",
             }
         )
         raw_csv.write_text(
@@ -213,9 +238,17 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         out_dir_raw = self.tmpdir / "long_raw"
         emitter_raw = LongEmitter(out_dir_raw)
         emitter_raw.emit_from_csv(raw_csv, input_format="raw")
+        class_rows = list(csv.DictReader((out_dir_raw / "defendant_classifications.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "SME" for r in class_rows))
+        self.assertTrue(any(r["option"] == "PUBLIC_SECTOR_BODY" for r in class_rows))
         breach_rows = list(csv.DictReader((out_dir_raw / "breach_types.csv").open(encoding="utf-8")))
         self.assertTrue(any(r["option"] == "SECURITY_INCIDENT" for r in breach_rows))
         self.assertTrue(any(r["option"] == "OTHER" for r in breach_rows))
+        special_rows = list(csv.DictReader((out_dir_raw / "special_data_categories.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "ARTICLE_9_SPECIAL_CATEGORY" for r in special_rows))
+        mitig_rows = list(csv.DictReader((out_dir_raw / "mitigating_actions.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "STAFF_TRAINING" for r in mitig_rows))
+        self.assertTrue(any(r["option"] == "LEGAL_ADVICE" for r in mitig_rows))
 
         wide_csv = self.tmpdir / "wide.csv"
         report = self.tmpdir / "report.json"
@@ -223,10 +256,26 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         out_dir_wide = self.tmpdir / "long_wide"
         emitter_wide = LongEmitter(out_dir_wide)
         emitter_wide.emit_from_csv(wide_csv, input_format="wide")
+        class_rows_wide = list(csv.DictReader((out_dir_wide / "defendant_classifications.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "SME" for r in class_rows_wide))
+        special_rows_wide = list(csv.DictReader((out_dir_wide / "special_data_categories.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "ARTICLE_9_SPECIAL_CATEGORY" for r in special_rows_wide))
+        mitig_rows_wide = list(csv.DictReader((out_dir_wide / "mitigating_actions.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "STAFF_TRAINING" for r in mitig_rows_wide))
         rights_rows = list(csv.DictReader((out_dir_wide / "article_5_discussed.csv").open(encoding="utf-8")))
         self.assertTrue(any(r["option"] == "ACCOUNTABILITY" for r in rights_rows))
+        article6_rows = list(csv.DictReader((out_dir_wide / "article_6_discussed.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "CONSENT" for r in article6_rows))
+        legal_basis_rows = list(csv.DictReader((out_dir_wide / "legal_basis_relied_on.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "CONSENT" for r in legal_basis_rows))
+        consent_issue_rows = list(csv.DictReader((out_dir_wide / "consent_issues.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "NOT_FREELY_GIVEN" for r in consent_issue_rows))
         li_rows = list(csv.DictReader((out_dir_wide / "li_test_outcome.csv").open(encoding="utf-8")))
         self.assertTrue(any(r["option"] == "APPROVED" for r in li_rows))
+        aggravating_rows = list(csv.DictReader((out_dir_wide / "aggravating_factors.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "NATURE_GRAVITY_DURATION" for r in aggravating_rows))
+        mitigating_rows = list(csv.DictReader((out_dir_wide / "mitigating_factors.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["option"] == "MITIGATION_ACTIONS" for r in mitigating_rows))
 
 
 if __name__ == "__main__":

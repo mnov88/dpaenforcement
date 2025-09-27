@@ -41,9 +41,15 @@ TURNOVER_OUTLIER_HIGH = 1e12
 
 # Multi-select fields to emit systematically: (Qkey, prefix)
 MULTI_FIELDS: List[Tuple[str, str]] = [
+    ("Q10", "q10_org_class"),
+    ("Q21", "q21_breach_types"),
+    ("Q25", "q25_sensitive_data"),
+    ("Q28", "q28_mitigations"),
     ("Q30", "q30_discussed"),
     ("Q31", "q31_violated"),
     ("Q32", "q32_bases"),
+    ("Q33", "q33_relied_on"),
+    ("Q34", "q34_consent_issues"),
     ("Q41", "q41_aggrav"),
     ("Q42", "q42_mitig"),
     ("Q46", "q46_vuln"),

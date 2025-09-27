@@ -11,7 +11,10 @@ from scripts.parser.validators import dedupe_preserve_order
 from scripts.parser.ingest import parse_record
 
 LONG_TABLE_QUESTIONS = {
+    "Q10",
     "Q21",
+    "Q25",
+    "Q28",
     "Q30",
     "Q31",
     "Q32",
@@ -72,6 +75,7 @@ class LongEmitter:
             fmt = _resolve_input_format(r.fieldnames, input_format)
 
             tables: Dict[str, List[Dict[str, str]]] = {
+                "defendant_classifications.csv": [],
                 "article_5_discussed.csv": [],
                 "article_5_violated.csv": [],
                 "article_6_discussed.csv": [],
@@ -79,6 +83,8 @@ class LongEmitter:
                 "consent_issues.csv": [],
                 "li_test_outcome.csv": [],
                 "breach_types.csv": [],
+                "special_data_categories.csv": [],
+                "mitigating_actions.csv": [],
                 "vulnerable_groups.csv": [],
                 "corrective_powers.csv": [],
                 "corrective_scopes.csv": [],
@@ -132,6 +138,10 @@ class LongEmitter:
                     if unknown:
                         tables[table_name].append({"decision_id": decision_id, "option": unknown[0], "status": "DISCUSSED", "token_status": "UNKNOWN"})
 
+                add_multiselect("Q10", "defendant_classifications.csv")
+                add_multiselect("Q21", "breach_types.csv")
+                add_multiselect("Q25", "special_data_categories.csv")
+                add_multiselect("Q28", "mitigating_actions.csv")
                 add_multiselect("Q30", "article_5_discussed.csv")
                 add_multiselect("Q31", "article_5_violated.csv")
                 add_multiselect("Q32", "article_6_discussed.csv")
@@ -139,7 +149,6 @@ class LongEmitter:
                 add_multiselect("Q34", "consent_issues.csv")
                 add_single("Q35", "li_test_outcome.csv")
 
-                add_multiselect("Q21", "breach_types.csv")
                 add_multiselect("Q46", "vulnerable_groups.csv")
 
                 add_multiselect("Q53", "corrective_powers.csv")

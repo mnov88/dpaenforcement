@@ -11,6 +11,8 @@ MULTI_PREFIXES: List[Tuple[str, str]] = [
     ("Q30", "q30_discussed"),
     ("Q31", "q31_violated"),
     ("Q32", "q32_bases"),
+    ("Q33", "q33_relied_on"),
+    ("Q34", "q34_consent_issues"),
     ("Q41", "q41_aggrav"),
     ("Q42", "q42_mitig"),
     ("Q46", "q46_vuln"),

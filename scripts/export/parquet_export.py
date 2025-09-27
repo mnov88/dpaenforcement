@@ -210,6 +210,8 @@ class ParquetExporter(BaseExporter):
 
         # Key long tables for analysis
         tables = [
+            'defendant_classifications.csv', 'breach_types.csv',
+            'special_data_categories.csv', 'mitigating_actions.csv',
             'article_5_discussed.csv', 'article_5_violated.csv',
             'article_6_discussed.csv', 'corrective_powers.csv',
             'rights_discussed.csv', 'rights_violated.csv',

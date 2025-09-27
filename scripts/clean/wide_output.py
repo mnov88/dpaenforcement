@@ -60,6 +60,41 @@ MULTI_FIELDS: List[Tuple[str, str]] = [
     ("Q64", "q64_transfer_violations"),
 ]
 
+RAW_QUESTION_EXPORT: Tuple[str, ...] = (
+    "Q1",
+    "Q4",
+    "Q5",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q21",
+    "Q26",
+    "Q27",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q41",
+    "Q42",
+    "Q46",
+    "Q49",
+    "Q53",
+    "Q54",
+    "Q56",
+    "Q57",
+    "Q58",
+    "Q59",
+    "Q60",
+    "Q61",
+    "Q62",
+    "Q64",
+)
+
 def _is_schema_echo(value: str) -> bool:
     v = (value or "").strip()
     return any(v.startswith(p) for p in SCHEMA_ECHO_PREFIXES)
@@ -110,6 +145,8 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             # Cleaning flags
             "schema_echo_flag", "schema_echo_fields",
         ]
+        for qkey in RAW_QUESTION_EXPORT:
+            fieldnames.append(f"raw_{qkey.lower()}")
         # Track allowed tokens per multi-select question for downstream expansion
         multi_allowed_map: Dict[str, List[str]] = {}
         for qkey, prefix in MULTI_FIELDS:
@@ -260,6 +297,8 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 "schema_echo_flag": schema_echo_flag,
                 "schema_echo_fields": ";".join(sorted(set(schema_echo_fields))),
             }
+            for qkey in RAW_QUESTION_EXPORT:
+                base_row[f"raw_{qkey.lower()}"] = (answers.get(qkey, "") or "").strip()
 
             # Populate systematic multi-selects
             for qkey, prefix in MULTI_FIELDS:

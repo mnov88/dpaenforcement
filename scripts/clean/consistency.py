@@ -9,14 +9,49 @@ from scripts.parser.ingest import parse_record
 from scripts.clean.typing_status import parse_number
 
 
-def run_consistency_checks(input_csv: Path, report_json: Path) -> None:
+CONSISTENCY_QUESTIONS = {
+    "Q1",
+    "Q4",
+    "Q5",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q26",
+    "Q27",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q49",
+    "Q53",
+    "Q60",
+    "Q61",
+    "Q62",
+}
+
+
+def _resolve_input_format(fieldnames: List[str] | None, requested: str) -> str:
+    if requested != "auto":
+        return requested
+    fieldnames = fieldnames or []
+    if "response" in fieldnames:
+        return "raw"
+    if any(fn.startswith("raw_q") for fn in fieldnames if fn):
+        return "wide"
+    raise ValueError("Unable to detect input format for consistency checks")
+
+
+def run_consistency_checks(input_csv: Path, report_json: Path, input_format: str = "auto") -> None:
     report: List[Dict[str, Any]] = []
     with input_csv.open(newline="", encoding="utf-8") as f_in:
         r = csv.DictReader(f_in)
+        fmt = _resolve_input_format(r.fieldnames, input_format)
         for row in r:
-            decision_id = row.get("ID")
-            parsed = parse_record((row.get("response", "") or ""))
-            a = parsed["answers"]
+            decision_id = row.get("decision_id") or row.get("ID")
+            if fmt == "raw":
+                parsed = parse_record((row.get("response", "") or ""))
+                a = parsed["answers"]
+            else:
+                a = {q: row.get(f"raw_{q.lower()}", "") for q in CONSISTENCY_QUESTIONS}
             flags: List[str] = []
 
             # Breach notification chain

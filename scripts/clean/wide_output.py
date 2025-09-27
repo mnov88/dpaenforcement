@@ -10,6 +10,7 @@ from scripts.clean.typing_status import (
     parse_date_field,
     normalize_country,
     parse_number,
+    parse_enum_field,
     split_multiselect,
     derive_multiselect_status,
     detect_exclusivity_conflict,
@@ -65,6 +66,71 @@ MULTI_FIELDS: List[Tuple[str, str]] = [
 
 RAW_QUESTION_EXPORT: Tuple[str, ...] = tuple(f"Q{i}" for i in range(1, 69))
 
+
+ENUM_FIELDS: Dict[str, Dict[str, object]] = {
+    "Q17": {
+        "prefix": "art33_notification_required",
+        "aliases": {
+            "YES": "YES_REQUIRED",
+            "NO": "NO_NOT_REQUIRED",
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+    "Q18": {
+        "prefix": "art33_notification_submitted",
+        "aliases": {
+            "YES": "YES_SUBMITTED",
+            "NO": "NO_NOT_SUBMITTED",
+            "PARTIALLY": "PARTIALLY_SUBMITTED",
+            "PARTIAL": "PARTIALLY_SUBMITTED",
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+    "Q19": {
+        "prefix": "art33_notification_timeliness",
+        "aliases": {
+            "WITHIN_72H": "YES_WITHIN_72H",
+            "WITHIN72H": "YES_WITHIN_72H",
+            "WITHIN_72_HOURS": "YES_WITHIN_72H",
+            "72H": "YES_WITHIN_72H",
+            "NO": "NO_LATE",
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+    "Q20": {
+        "prefix": "art33_notification_delay_band",
+        "aliases": {
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+    "Q26": {
+        "prefix": "data_subjects_notified",
+        "aliases": {
+            "YES": "YES_NOTIFIED",
+            "NO": "NO_NOT_NOTIFIED",
+            "NOTIFIED": "YES_NOTIFIED",
+            "PARTIALLY": "PARTIALLY_NOTIFIED",
+            "PARTIAL": "PARTIALLY_NOTIFIED",
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+    "Q27": {
+        "prefix": "art34_notification_required",
+        "aliases": {
+            "YES": "YES_REQUIRED",
+            "NO": "NO_NOT_REQUIRED",
+            "DISPUTED": "DISPUTED_REQUIREMENT",
+            "N/A": "NOT_APPLICABLE",
+            "NA": "NOT_APPLICABLE",
+        },
+    },
+}
+
 def _clean_country_code(code: str) -> Tuple[str, bool, bool]:
     c = (code or "").upper()
     mapped = False
@@ -110,6 +176,20 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             # Cleaning flags
             "schema_echo_flag", "schema_echo_fields",
         ]
+
+        enum_allowed_map: Dict[str, List[str]] = {}
+        for qkey, info in ENUM_FIELDS.items():
+            allowed_tokens = whitelist.allowed_tokens(qkey[1:] if qkey.startswith("Q") else qkey)
+            enum_allowed_map[qkey] = allowed_tokens
+            prefix = info["prefix"]
+            fieldnames.extend(
+                [
+                    prefix,
+                    f"{prefix}_status",
+                    f"{prefix}_note",
+                ]
+            )
+
         for qkey in RAW_QUESTION_EXPORT:
             fieldnames.append(f"raw_{qkey.lower()}")
         # Track allowed tokens per multi-select question for downstream expansion
@@ -147,6 +227,7 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
             schema_echo_flag = 0
             schema_echo_fields: List[str] = []
+            flags: List[str] = []
 
             country_code_raw, country_status = normalize_country(answers.get("Q1", ""))
             country_code_mapped, mapped_from_uk, whitelist_ok = _clean_country_code(country_code_raw)
@@ -268,6 +349,20 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                     schema_echo_fields.append(qkey)
                 base_row[f"raw_{qkey.lower()}"] = cleaned
 
+            for qkey, info in ENUM_FIELDS.items():
+                prefix = info["prefix"]
+                allowed_tokens = enum_allowed_map.get(qkey, [])
+                aliases = info.get("aliases") or {}
+                raw_clean = base_row.get(f"raw_{qkey.lower()}", "")
+                result = parse_enum_field(raw_clean, allowed_tokens, aliases)
+                base_row[prefix] = result.value
+                base_row[f"{prefix}_status"] = result.status
+                base_row[f"{prefix}_note"] = result.note
+                if result.status == "UNPARSEABLE":
+                    flags.append(f"{prefix}_unparseable")
+                if result.status == "MIXED_CONTRADICTORY":
+                    flags.append(f"{prefix}_contradictory")
+
             # Populate systematic multi-selects
             for qkey, prefix in MULTI_FIELDS:
                 ms_parsed = split_multiselect(answers.get(qkey, ""))
@@ -314,7 +409,6 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
 
             writer.writerow(base_row)
 
-            flags = []
             q53_raw = answers.get("Q53", "") or ""
             if "ADMINISTRATIVE_FINE" in q53_raw and not (fine_eur or 0) > 0:
                 flags.append("admin_fine_but_zero_amount")

@@ -1,5 +1,6 @@
 nodeId,name,type,country,country_group
 dpa_Information_Commissioner's_Office,Information Commissioner's Office,DPA,GB,NON_EEA
+dpa_STRING,STRING,DPA,UNCLEAR,NON_EEA
 dpa_NOT_DISCUSSED,NOT_DISCUSSED,DPA,UNCLEAR,NON_EEA
 dpa_The_Information_Commissioner's_Office,The Information Commissioner's Office,DPA,GB,NON_EEA
 dpa_The_Information_Commissioner,The Information Commissioner,DPA,GB,NON_EEA
@@ -48,7 +49,11 @@ dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_P
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,The National Supervisory Authority for Personal Data Processing,DPA,RO,EU
 dpa_A.N.S.P.D.C.P,A.N.S.P.D.C.P,DPA,RO,EU
 dpa_National_DPA,National DPA,DPA,RO,EU
+dpa_ANSPDCP,ANSPDCP,DPA,RO,EU
 dpa_National_Authority,National Authority,DPA,RO,EU
+dpa_National_Authority_for_the_Supervision_of_Personal_Data_Processing,National Authority for the Supervision of Personal Data Processing,DPA,RO,EU
+dpa_STRING_The_National_Supervisory_Authority_for_Personal_Data_Processing,STRING The National Supervisory Authority for Personal Data Processing,DPA,RO,EU
+dpa_STRING_National_Supervisory_Authority,STRING National Supervisory Authority,DPA,RO,EU
 dpa_Romanian_Supervisory_Authority,Romanian Supervisory Authority,DPA,RO,EU
 dpa_National_Commission_for_Data_Protection_(CNPD),National Commission for Data Protection (CNPD),DPA,PT,EU
 dpa_Comissão_Nacional_de_Proteção_de_Dados,Comissão Nacional de Proteção de Dados,DPA,PT,EU
@@ -57,3 +62,112 @@ dpa_Comissão_Nacional_de_Proteção_de_Dados_(CNPD),Comissão Nacional de Prote
 dpa_President_of_the_Office_for_the_Protection_of_Personal_Data,President of the Office for the Protection of Personal Data,DPA,PL,EU
 dpa_President_of_the_Personal_Data_Protection_Office,President of the Personal Data Protection Office,DPA,PL,EU
 dpa_President_of_the_Personal_Data_Protection_Office_(UODO),President of the Personal Data Protection Office (UODO),DPA,PL,EU
+dpa_STRING_President_of_the_Personal_Data_Protection_Office,STRING President of the Personal Data Protection Office,DPA,PL,EU
+dpa_President_of_the_Office_for_Personal_Data_Protection_(UODO),President of the Office for Personal Data Protection (UODO),DPA,PL,EU
+dpa_Datatilsynet,Datatilsynet,DPA,NO,
+dpa_Privacy_Board,Privacy Board,DPA,NO,
+dpa_Norwegian_Data_Protection_Authority,Norwegian Data Protection Authority,DPA,NO,
+dpa_The_Norwegian_Data_Protection_Authority,The Norwegian Data Protection Authority,DPA,NO,
+dpa_Personvernnemnda_(Privacy_Board),Personvernnemnda (Privacy Board),DPA,NO,
+dpa_Norwegian_Data_Inspectorate,Norwegian Data Inspectorate,DPA,NO,
+dpa_Estonian_Data_Protection_Inspectorate,Estonian Data Protection Inspectorate,DPA,EE,EU
+dpa_Oslo_District_Court,Oslo District Court,DPA,NO,
+dpa_Norwegian_Privacy_Board,Norwegian Privacy Board,DPA,NO,
+dpa_The_Privacy_Board,The Privacy Board,DPA,NO,
+dpa_The_Norwegian_Privacy_Board,The Norwegian Privacy Board,DPA,NO,
+dpa_Dutch_Data_Protection_Authority,Dutch Data Protection Authority,DPA,NL,EU
+dpa_Autoriteit_Persoonsgegevens,Autoriteit Persoonsgegevens,DPA,NL,EU
+dpa_Autoriteit_Persoonsgegevens_(AP),Autoriteit Persoonsgegevens (AP),DPA,NL,EU
+dpa_Autoriteit_Persoonsgege,Autoriteit Persoonsgege,DPA,NL,EU
+dpa_Rechtbank_Zeeland-West-Brabant,Rechtbank Zeeland-West-Brabant,DPA,NL,EU
+dpa_Personal_Data_Authority,Personal Data Authority,DPA,NL,EU
+dpa_Information_and_Data_Protection_Commissioner,Information and Data Protection Commissioner,DPA,MT,EU
+dpa_Commissioner_for_Information_and_Data_Protection,Commissioner for Information and Data Protection,DPA,MT,EU
+dpa_Office_of_the_Information_and_Data_Protection_Commissioner,Office of the Information and Data Protection Commissioner,DPA,MT,EU
+dpa_The_Commissioner,The Commissioner,DPA,UNCLEAR,NON_EEA
+dpa_National_Commission_for_Data_Protection,National Commission for Data Protection,DPA,LU,EU
+dpa_State_Data_Protection_Inspectorate,State Data Protection Inspectorate,DPA,LT,EU
+dpa_State_Data_Protection_Inspectorate_(SDPI),State Data Protection Inspectorate (SDPI),DPA,LT,EU
+dpa_Valstybinė_duomenų_apsaugos_inspekcija_(VDAI),Valstybinė duomenų apsaugos inspekcija (VDAI),DPA,LT,EU
+dpa_Data_State_Inspectorate,Data State Inspectorate,DPA,UNCLEAR,NON_EEA
+dpa_Data_State_Inspections,Data State Inspections,DPA,LV,EU
+dpa_Data_State_Inspection,Data State Inspection,DPA,LV,EU
+dpa_State_Data_Inspectorate,State Data Inspectorate,DPA,LV,EU
+dpa_Garante_per_la_protezione_dei_dati_personali,Garante per la protezione dei dati personali,DPA,IT,EU
+dpa_Garante_per_la_Protezione_dei_Dati_Personali,Garante per la Protezione dei Dati Personali,DPA,IT,EU
+dpa_Guarantor_for_the_Protection_of_Personal_Data,Guarantor for the Protection of Personal Data,DPA,IT,EU
+dpa_STRING_Garante_per_la_protezione_dei_dati_personali,STRING Garante per la protezione dei dati personali,DPA,IT,EU
+dpa_Data_Protection_Commission_of_Ireland,Data Protection Commission of Ireland,DPA,IE,EU
+dpa_Data_Protection_Commission,Data Protection Commission,DPA,IE,EU
+dpa_NOT_MENTIONED,NOT_MENTIONED,DPA,UNCLEAR,NON_EEA
+dpa_Irish_Data_Protection_Commission,Irish Data Protection Commission,DPA,IE,EU
+dpa_Official_name_of_the_deciding_Data_Protection_Authority_(DPA):_Data_Protection_Commission,Official name of the deciding Data Protection Authority (DPA): Data Protection Commission,DPA,COUNTRY OF THE DECIDING AUTHORITY: IRELAND (IE),NON_EEA
+dpa_Persónuvernd,Persónuvernd,DPA,IS,
+dpa_Privacy_Policy_Board,Privacy Policy Board,DPA,IS,
+dpa_The_Data_Protection_Authority,The Data Protection Authority,DPA,IS,
+dpa_Data_Protection_Authority,Data Protection Authority,DPA,IS,
+dpa_Persónuvernd_(Icelandic_Data_Protection_Authority),Persónuvernd (Icelandic Data Protection Authority),DPA,IS,
+dpa_The_Icelandic_Data_Protection_Authority,The Icelandic Data Protection Authority,DPA,IS,
+dpa_Personal_Protection_Agency,Personal Protection Agency,DPA,IS,
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,National Data Protection and Freedom of Information Authority,DPA,HU,EU
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,Nemzeti Adatvédelmi és Információszabadság Hatóság,DPA,HU,EU
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,National Authority for Data Protection and Freedom of Information,DPA,HU,EU
+dpa_Hungarian_National_Authority_for_Data_Protection_and_Freedom_of_Information,Hungarian National Authority for Data Protection and Freedom of Information,DPA,HU,EU
+dpa_Hellenic_Data_Protection_Authority,Hellenic Data Protection Authority,DPA,GR,EU
+dpa_Personal_Data_Protection_Authority,Personal Data Protection Authority,DPA,GR,EU
+dpa_Greek_Data_Protection_Authority,Greek Data Protection Authority,DPA,GR,EU
+dpa_The_Personal_Data_Protection_Authority,The Personal Data Protection Authority,DPA,GR,EU
+dpa_The_President_of_the_Authority,The President of the Authority,DPA,GR,EU
+dpa_Hellenic_Republic_Authority_for_the_Protection_of_Personal_Data,Hellenic Republic Authority for the Protection of Personal Data,DPA,GR,EU
+dpa_The_Authority,The Authority,DPA,UNCLEAR,NON_EEA
+dpa_Αρχή_Προστασίας_Δεδομένων_Προσωπικού_Χαρακτήρα,Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα,DPA,GR,EU
+dpa_Authority_for_the_Protection_of_Personal_Data,Authority for the Protection of Personal Data,DPA,GR,EU
+dpa_Bayerisches_Landesamt_für_Datenschutzaufsicht,Bayerisches Landesamt für Datenschutzaufsicht,DPA,DE,EU
+dpa_Bavarian_State_Office_for_Data_Protection_Supervision,Bavarian State Office for Data Protection Supervision,DPA,DE,EU
+dpa_Der_Bundesbeauftragte_für_den_Datenschutz_und_die_Informationsfreiheit_(BfDI),Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI),DPA,DE,EU
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,Berlin Commissioner for Data Protection and Freedom of Information,DPA,DE,EU
+dpa_Bundesbeauftragter_für_den_Datenschutz_und_die_Informationsfreiheit_(BfDI),Bundesbeauftragter für den Datenschutz und die Informationsfreiheit (BfDI),DPA,DE,EU
+dpa_Conference_of_the_Independent_Data_Protection_Authorities_of_Bund_and_the_Länder,Conference of the Independent Data Protection Authorities of Bund and the Länder,DPA,DE,EU
+dpa_The_Hessian_Commissioner_for_Data_Protection_and_Freedom_of_Information,The Hessian Commissioner for Data Protection and Freedom of Information,DPA,DE,EU
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI),DPA,DE,EU
+dpa_Hessian_Commissioner_for_Data_Protection_and_Freedom_of_Information,Hessian Commissioner for Data Protection and Freedom of Information,DPA,DE,EU
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information,Hamburg Commissioner for Data Protection and Freedom of Information,DPA,DE,EU
+dpa_HmbBfDI,HmbBfDI,DPA,DE,EU
+dpa_Der_Hamburgische_Beauftragte_für_Datenschutz_und_Informationsfreiheit_(HmbBfDI),Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit (HmbBfDI),DPA,DE,EU
+dpa_The_Hamburg_representative_for_Data_protection_and_freedom_of_information,The Hamburg representative for Data protection and freedom of information,DPA,DE,EU
+dpa_The_State_Commissioner_for_Data_Protection_Lower_Saxony,The State Commissioner for Data Protection Lower Saxony,DPA,DE,EU
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_Niedersachsen,Der Landesbeauftragte für den Datenschutz Niedersachsen,DPA,DE,EU
+dpa_State_Labor_Court_of_Baden-Württemberg,State Labor Court of Baden-Württemberg,DPA,DE,EU
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_und_die_Informationsfreiheit_Baden-Württemberg,Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg,DPA,DE,EU
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_Niedersachsen_(LfD_Lower_Saxony),Der Landesbeauftragte für den Datenschutz Niedersachsen (LfD Lower Saxony),DPA,DE,EU
+dpa_The_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_Baden-Württemberg,The State Commissioner for Data Protection and Freedom of Information Baden-Württemberg,DPA,DE,EU
+dpa_Bremen_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_(LfDI),Bremen State Commissioner for Data Protection and Freedom of Information (LfDI),DPA,DE,EU
+dpa_The_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_Bremen,The State Commissioner for Data Protection and Freedom of Information Bremen,DPA,DE,EU
+dpa_National_Commission_for_Information_Technology_and_Liberties,National Commission for Information Technology and Liberties,DPA,FR,EU
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),Commission Nationale de l'Informatique et des Libertés (CNIL),DPA,FR,EU
+dpa_National_Commission_for_Information_Technology_and_Freedoms,National Commission for Information Technology and Freedoms,DPA,FR,EU
+dpa_National_Commission_for_Computing_and_Liberties,National Commission for Computing and Liberties,DPA,FR,EU
+dpa_National_Commission_for_Information_Technology_and_Civil_Liberties,National Commission for Information Technology and Civil Liberties,DPA,FR,EU
+dpa_Commission_nationale_de_l'informatique_et_des_libertés_(CNIL),Commission nationale de l'informatique et des libertés (CNIL),DPA,FR,EU
+dpa_National_Commission_for_Informatics_and_Freedoms_(CNIL),National Commission for Informatics and Freedoms (CNIL),DPA,FR,EU
+dpa_National_Commission_for_Informatics_and_Freedoms,National Commission for Informatics and Freedoms,DPA,FR,EU
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,Commission nationale de l'informatique et des libertés,DPA,FR,EU
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,Commission Nationale de l'Informatique et des Libertés,DPA,FR,EU
+dpa_Commission_Nationale_de_l’Informatique_et_des_Libertés_(CNIL),Commission Nationale de l’Informatique et des Libertés (CNIL),DPA,FR,EU
+dpa_Deputy_Data_Protection_Commissioner,Deputy Data Protection Commissioner,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Supervisor,Office of the Data Protection Supervisor,DPA,FI,EU
+dpa_Data_Protection_Commissioner_and_Sanctions_Board,Data Protection Commissioner and Sanctions Board,DPA,FI,EU
+dpa_Data_Protection_Supervisor,Data Protection Supervisor,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Ombudsman,Office of the Data Protection Ombudsman,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Commissioner,Office of the Data Protection Commissioner,DPA,FI,EU
+dpa_Finnish_Data_Protection_Ombudsman,Finnish Data Protection Ombudsman,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Officer,Office of the Data Protection Officer,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Ombudsman_(Finland),Office of the Data Protection Ombudsman (Finland),DPA,FI,EU
+dpa_Data_Protection_Commissioner,Data Protection Commissioner,DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Supervisor_(EDPS),Office of the Data Protection Supervisor (EDPS),DPA,FI,EU
+dpa_Finnish_Data_Protection_Commissioner,Finnish Data Protection Commissioner,DPA,FI,EU
+dpa_Deputy_Data_Protection_Commissioner's_Office,Deputy Data Protection Commissioner's Office,DPA,FI,EU
+dpa_Finnish_Data_Protection_Authority,Finnish Data Protection Authority,DPA,FI,EU
+dpa_Suomen_tietosuojavaltuutettu,Suomen tietosuojavaltuutettu,DPA,FI,EU
+dpa_Data_Protection_Commissioner_(Finland),Data Protection Commissioner (Finland),DPA,FI,EU
+dpa_Office_of_the_Data_Protection_Commissioner_(Finland),Office of the Data Protection Commissioner (Finland),DPA,FI,EU

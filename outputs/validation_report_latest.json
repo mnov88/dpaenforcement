@@ -1,0 +1,8338 @@
+[
+  {
+    "decision_id": "United Kingdom_18",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_20",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_10",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_7",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_16",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_17",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_21",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_19",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_26",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_25",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_23",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_24",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_29",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_27",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_28",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_22",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_30",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_32",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_33",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_31",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_36",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_34",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_37",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_35",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_39",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_45",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_40",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_43",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_44",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_41",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_46",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_48",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_53",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_52",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_51",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_47",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_49",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_50",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_38",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_54",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_55",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_59",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_56",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_61",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "United Kingdom_60",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_57",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_63",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_1",
+    "flags": []
+  },
+  {
+    "decision_id": "United Kingdom_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_5",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Sweden_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_29",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Sweden_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_43",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Sweden_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_49",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Sweden_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Sweden_53",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_38",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_70",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_73",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_79",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_82",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_80",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_85",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_84",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_87",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_86",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_88",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_91",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_93",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_89",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_90",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_94",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_95",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_92",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_96",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_98",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_99",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_100",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_97",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_103",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_102",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_101",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_107",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_105",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_106",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_104",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_108",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_110",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_111",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_109",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_112",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_116",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_117",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_115",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_114",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_119",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_113",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_118",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_121",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_120",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_122",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_124",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_126",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_125",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_127",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_123",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_130",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_129",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_128",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_133",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_131",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_132",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_134",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_137",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_135",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_136",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_138",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_139",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_141",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_140",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_142",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_143",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_144",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_146",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_147",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_149",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_151",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_150",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_152",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_154",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_153",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_155",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_156",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_158",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_157",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_160",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_159",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_162",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_161",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_164",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_165",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_167",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_163",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_168",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_169",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_166",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_174",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_173",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_171",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_172",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_170",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_179",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_178",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_177",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_175",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_176",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_181",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_187",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_180",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_182",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_186",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_185",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_188",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_189",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_183",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_190",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_191",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_194",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_192",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_193",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_196",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_195",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_200",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_199",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_197",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_198",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_202",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_201",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_203",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_206",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_205",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_204",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_208",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_207",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_209",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_210",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_212",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_211",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_214",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_215",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_219",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_216",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_217",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_220",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_218",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_221",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_222",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_224",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_225",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_228",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_227",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_226",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_230",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_231",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_232",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_233",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_235",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_237",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_240",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_238",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_239",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_236",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_241",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_243",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_242",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_244",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_245",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_247",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_246",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_250",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_248",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_249",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_252",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_251",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_253",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_254",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_255",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_259",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_258",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_260",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_256",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_261",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_262",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_257",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_263",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_264",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_265",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_266",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_267",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_269",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_270",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_268",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_272",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_271",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_273",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_274",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_275",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_276",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_278",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_280",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_281",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_279",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_282",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_277",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_288",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_284",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_286",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_289",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_283",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_287",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_285",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_296",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_290",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_297",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_291",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_292",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_294",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_293",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_295",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_298",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_300",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_299",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_303",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_301",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_302",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_304",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_305",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_309",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_306",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_312",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_307",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_308",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_311",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_310",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_313",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_314",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_315",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_320",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_318",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_317",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_316",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_319",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_321",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_323",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_325",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_322",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_327",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_324",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_326",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_328",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_329",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_332",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_330",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_331",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_334",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_335",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_333",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_336",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_340",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_337",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_341",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_338",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_342",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_343",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_344",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_345",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_346",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_347",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_349",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_350",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_348",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_351",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_352",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_353",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_354",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_355",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_357",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_356",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_358",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_360",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_359",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_362",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_361",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_365",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_364",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_363",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_367",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_366",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_368",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_370",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_369",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_371",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_372",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_373",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_375",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_374",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_376",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_378",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_377",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_379",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_381",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_380",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_382",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_383",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_384",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_387",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_389",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_388",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_385",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_386",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_391",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_390",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_392",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_393",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_394",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_396",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_397",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_395",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_398",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_406",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_401",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_400",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_402",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_399",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_405",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_403",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_404",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_408",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_410",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_409",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_411",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_417",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_412",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_415",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_414",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_418",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_416",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_419",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_421",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_420",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_422",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_423",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_424",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_426",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_425",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_427",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_428",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_429",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_430",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_431",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_432",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_435",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_433",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_436",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_434",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_438",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_440",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_437",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_441",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_439",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_443",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_442",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_446",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_444",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_447",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_445",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_448",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_449",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_451",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_452",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_450",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_453",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_455",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_454",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_457",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_456",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_459",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_458",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_461",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_466",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_467",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_463",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_462",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_460",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_464",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_465",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_469",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_471",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_470",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_468",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_479",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_472",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_473",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_476",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_474",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_475",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_477",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_478",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_480",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_482",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_481",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_484",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_485",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_487",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_483",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_486",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_490",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_488",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_489",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_492",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_491",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_493",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_494",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_496",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_495",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_497",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_498",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_499",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_501",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_500",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_503",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_506",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_502",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_504",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_505",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_509",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_507",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_508",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_510",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_511",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_514",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_512",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_513",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_515",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_516",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_522",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_517",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_518",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_519",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_524",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_525",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_521",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_520",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_523",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_531",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_526",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_528",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_527",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_536",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_532",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_529",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_533",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_530",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_534",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_535",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_537",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_539",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_541",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_542",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_544",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_543",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_540",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_545",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_546",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_547",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_549",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_551",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_550",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_552",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_558",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_553",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_554",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_555",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_556",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_559",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_557",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_562",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_561",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_563",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_560",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_564",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_565",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_568",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_566",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_567",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_575",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_572",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_570",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_569",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_571",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_573",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_574",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_578",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_576",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_581",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_577",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_582",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_580",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_579",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_583",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_584",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_586",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_590",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_585",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_587",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_588",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_589",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_591",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_592",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_593",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_595",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_596",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_597",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_594",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_598",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_599",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_600",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_605",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_603",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_601",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_602",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_608",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_609",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_604",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_606",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_607",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_611",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_612",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_610",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_615",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_614",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_613",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_616",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_617",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_619",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_621",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_620",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_624",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_630",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_625",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_618",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Spain_631",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_623",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_627",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_626",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_628",
+    "flags": []
+  },
+  {
+    "decision_id": "Spain_629",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_54",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Slovenia_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_73",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovakia_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Slovenia_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_2",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_5",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_6",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_7",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_9",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_13",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_12",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_16",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_18",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_21",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_25",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_27",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_31",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_37",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_40",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_42",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_41",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_68",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_69",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_70",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_73",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_79",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_80",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_75",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_82",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_84",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_87",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_86",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_85",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_92",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_88",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_91",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_89",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_93",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_94",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_90",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_96",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_95",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_100",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_99",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_102",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_97",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_101",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_98",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_103",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_107",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_108",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_110",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_109",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_104",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_105",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_106",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_113",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_112",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_111",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_116",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_114",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_117",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_115",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_121",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_120",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_119",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_118",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_122",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_123",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_125",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_124",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_127",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_128",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_126",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_130",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_131",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_129",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_132",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_134",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_133",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_135",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_138",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_136",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_137",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_139",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_142",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_143",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_141",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_140",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_145",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_144",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_146",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_148",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_153",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_150",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_156",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_151",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_152",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_147",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_154",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_149",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_158",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_159",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_157",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_155",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_161",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_162",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_163",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_165",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_160",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_167",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_164",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_166",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_170",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_171",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_168",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_173",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_174",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_169",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_175",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_172",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Romania_176",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_11",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Portugal_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Romania_177",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Portugal_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_17",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Poland_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_45",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Poland_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Poland_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_30",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Norway_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_43",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Norway_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_47",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Norway_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_68",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Norway_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_70",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_73",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_79",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_80",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_82",
+    "flags": []
+  },
+  {
+    "decision_id": "Norway_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_17",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Netherlands_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_25",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Netherlands_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_33",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Netherlands_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_36",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Netherlands_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Netherlands_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Malta_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_7",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Luxembourg_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_8",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Luxembourg_9",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Luxembourg_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_15",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Luxembourg_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_17",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Luxembourg_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Luxembourg_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Lithuania_11",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Lithuania_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Latvia_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_17",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_40",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_57",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_55",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_61",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_58",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_70",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_66",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_73",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_74",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_79",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_80",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_82",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_84",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_86",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_87",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_90",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_92",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_89",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_91",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_88",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_93",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_94",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_96",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_97",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_99",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_98",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_95",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_100",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_101",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_102",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_106",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_105",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_103",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_104",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_108",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_107",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_109",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_110",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_111",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_113",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_112",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_114",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_116",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_115",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_119",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_117",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_118",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_120",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_122",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_121",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_124",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_125",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_123",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_126",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_127",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_131",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_130",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_128",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_132",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_129",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_133",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_135",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_139",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_138",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_134",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_136",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_140",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_141",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_137",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_143",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_144",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_142",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_146",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_148",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_147",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_145",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_150",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_149",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_151",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_152",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_153",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_157",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_154",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_156",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_155",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_158",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_159",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_161",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_164",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_160",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_162",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_165",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_167",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_163",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_166",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_169",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_173",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_168",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_170",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_171",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_176",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_181",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_172",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_178",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_177",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_179",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_180",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_184",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_182",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_183",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_189",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_186",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_191",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_193",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_190",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_194",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_195",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_197",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_198",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_196",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_201",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_200",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_199",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_203",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_204",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_202",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_205",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_207",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_210",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_209",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_206",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_208",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_211",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_212",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_213",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_215",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_214",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_216",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_217",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_218",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_219",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_220",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_224",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_223",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_225",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_226",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_221",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_222",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_227",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_228",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_231",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_234",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_230",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_235",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_233",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_229",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_232",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_236",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_240",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_239",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_238",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_242",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_237",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_241",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_243",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_244",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_247",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_245",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_246",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_250",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_251",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_249",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_248",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_252",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_258",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_257",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_255",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_254",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_253",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_256",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_259",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_263",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_262",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_261",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_266",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_265",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_264",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_260",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_268",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_271",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_269",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_267",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_270",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_274",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_273",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_272",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_275",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_276",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_277",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_281",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_283",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_278",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_282",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_279",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_285",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_280",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_286",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_284",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_288",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_289",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_291",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_287",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_290",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_293",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_294",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_292",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_297",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_298",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_299",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_295",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_300",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_296",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_301",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_302",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_304",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_303",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_307",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_310",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_306",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_309",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Italy_308",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_305",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_312",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_313",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_311",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_314",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_316",
+    "flags": []
+  },
+  {
+    "decision_id": "Italy_315",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_6",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Ireland_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_14",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Ireland_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_17",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Ireland_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Ireland_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_64",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_70",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_73",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_79",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_80",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_85",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_84",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_86",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_82",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_87",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_88",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_93",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_91",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_89",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_92",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_90",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_94",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_96",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_97",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_95",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_98",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_101",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_100",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_104",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_102",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Iceland_103",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_4",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Iceland_99",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_12",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Hungary_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_19",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Hungary_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_24",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Hungary_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_34",
+    "flags": [
+      "turnover_parse_error"
+    ]
+  },
+  {
+    "decision_id": "Hungary_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_36",
+    "flags": [
+      "turnover_parse_error"
+    ]
+  },
+  {
+    "decision_id": "Hungary_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_43",
+    "flags": [
+      "turnover_parse_error"
+    ]
+  },
+  {
+    "decision_id": "Hungary_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_47",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_48",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_52",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Hungary_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Hungary_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_4",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_9",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_18",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_36",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_46",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_48",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_49",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_45",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_47",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_50",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_51",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_52",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_55",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_53",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_54",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_57",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_58",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_59",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_56",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_61",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_60",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_63",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_66",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_64",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_67",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_69",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_70",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_62",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_72",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_71",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_74",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_75",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_65",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_73",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_79",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_80",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_76",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_78",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_77",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_81",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_83",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_82",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_84",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_85",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_86",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_89",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_87",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_88",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_91",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_92",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_90",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_93",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_94",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_95",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_96",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_98",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_100",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_97",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_99",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_101",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_103",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_106",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_102",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_105",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_107",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_108",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_109",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_104",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_111",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_110",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_112",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_113",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_114",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_115",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_120",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_117",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_118",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Greece_119",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_116",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_121",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_122",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_123",
+    "flags": []
+  },
+  {
+    "decision_id": "Greece_124",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_25",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Germany_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_29",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Germany_24",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Germany_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_31",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "Germany_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_44",
+    "flags": []
+  },
+  {
+    "decision_id": "Germany_42",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "France_2",
+    "flags": []
+  },
+  {
+    "decision_id": "France_3",
+    "flags": []
+  },
+  {
+    "decision_id": "France_1",
+    "flags": []
+  },
+  {
+    "decision_id": "France_6",
+    "flags": []
+  },
+  {
+    "decision_id": "France_5",
+    "flags": []
+  },
+  {
+    "decision_id": "France_4",
+    "flags": []
+  },
+  {
+    "decision_id": "France_8",
+    "flags": []
+  },
+  {
+    "decision_id": "France_7",
+    "flags": []
+  },
+  {
+    "decision_id": "France_9",
+    "flags": []
+  },
+  {
+    "decision_id": "France_10",
+    "flags": []
+  },
+  {
+    "decision_id": "France_11",
+    "flags": []
+  },
+  {
+    "decision_id": "France_12",
+    "flags": []
+  },
+  {
+    "decision_id": "France_14",
+    "flags": []
+  },
+  {
+    "decision_id": "France_17",
+    "flags": []
+  },
+  {
+    "decision_id": "France_16",
+    "flags": []
+  },
+  {
+    "decision_id": "France_15",
+    "flags": []
+  },
+  {
+    "decision_id": "France_13",
+    "flags": []
+  },
+  {
+    "decision_id": "France_19",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "France_18",
+    "flags": []
+  },
+  {
+    "decision_id": "France_23",
+    "flags": []
+  },
+  {
+    "decision_id": "France_21",
+    "flags": []
+  },
+  {
+    "decision_id": "France_22",
+    "flags": []
+  },
+  {
+    "decision_id": "France_20",
+    "flags": []
+  },
+  {
+    "decision_id": "France_24",
+    "flags": []
+  },
+  {
+    "decision_id": "France_26",
+    "flags": []
+  },
+  {
+    "decision_id": "France_27",
+    "flags": []
+  },
+  {
+    "decision_id": "France_28",
+    "flags": []
+  },
+  {
+    "decision_id": "France_25",
+    "flags": []
+  },
+  {
+    "decision_id": "France_29",
+    "flags": []
+  },
+  {
+    "decision_id": "France_30",
+    "flags": []
+  },
+  {
+    "decision_id": "France_31",
+    "flags": []
+  },
+  {
+    "decision_id": "France_32",
+    "flags": []
+  },
+  {
+    "decision_id": "France_33",
+    "flags": []
+  },
+  {
+    "decision_id": "France_35",
+    "flags": []
+  },
+  {
+    "decision_id": "France_37",
+    "flags": []
+  },
+  {
+    "decision_id": "France_34",
+    "flags": []
+  },
+  {
+    "decision_id": "France_36",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "France_39",
+    "flags": []
+  },
+  {
+    "decision_id": "France_41",
+    "flags": []
+  },
+  {
+    "decision_id": "France_38",
+    "flags": []
+  },
+  {
+    "decision_id": "France_44",
+    "flags": []
+  },
+  {
+    "decision_id": "France_40",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "France_45",
+    "flags": []
+  },
+  {
+    "decision_id": "France_43",
+    "flags": []
+  },
+  {
+    "decision_id": "France_42",
+    "flags": [
+      "admin_fine_but_zero_amount"
+    ]
+  },
+  {
+    "decision_id": "France_46",
+    "flags": []
+  },
+  {
+    "decision_id": "France_47",
+    "flags": []
+  },
+  {
+    "decision_id": "France_49",
+    "flags": []
+  },
+  {
+    "decision_id": "France_51",
+    "flags": []
+  },
+  {
+    "decision_id": "France_52",
+    "flags": []
+  },
+  {
+    "decision_id": "France_48",
+    "flags": []
+  },
+  {
+    "decision_id": "France_50",
+    "flags": []
+  },
+  {
+    "decision_id": "France_53",
+    "flags": []
+  },
+  {
+    "decision_id": "France_54",
+    "flags": []
+  },
+  {
+    "decision_id": "France_55",
+    "flags": []
+  },
+  {
+    "decision_id": "France_57",
+    "flags": []
+  },
+  {
+    "decision_id": "France_56",
+    "flags": []
+  },
+  {
+    "decision_id": "France_58",
+    "flags": []
+  },
+  {
+    "decision_id": "France_59",
+    "flags": []
+  },
+  {
+    "decision_id": "France_61",
+    "flags": []
+  },
+  {
+    "decision_id": "France_64",
+    "flags": []
+  },
+  {
+    "decision_id": "France_60",
+    "flags": []
+  },
+  {
+    "decision_id": "France_63",
+    "flags": []
+  },
+  {
+    "decision_id": "France_67",
+    "flags": []
+  },
+  {
+    "decision_id": "France_62",
+    "flags": []
+  },
+  {
+    "decision_id": "France_65",
+    "flags": []
+  },
+  {
+    "decision_id": "France_70",
+    "flags": []
+  },
+  {
+    "decision_id": "France_66",
+    "flags": []
+  },
+  {
+    "decision_id": "France_69",
+    "flags": []
+  },
+  {
+    "decision_id": "France_68",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_3",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_2",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_6",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_4",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_7",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_5",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_8",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_12",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_9",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_13",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_1",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_10",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_11",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_14",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_15",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_16",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_17",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_19",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_18",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_20",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_21",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_23",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_22",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_26",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_25",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_24",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_28",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_27",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_29",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_31",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_32",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_30",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_34",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_33",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_35",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_37",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_36",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_38",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_42",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_41",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_40",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_43",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_39",
+    "flags": []
+  },
+  {
+    "decision_id": "Finland_44",
+    "flags": []
+  }
+]

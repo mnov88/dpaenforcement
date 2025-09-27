@@ -47,16 +47,24 @@ class ParquetExporter(BaseExporter):
             # Ensure partition columns exist and have valid values
             valid_partitions = [col for col in partition_cols if col in df.columns]
             if valid_partitions:
-                # Fill NaN in partition columns to avoid errors
+                # Create partition values for paths only - don't mutate stored data
+                partition_df = df.copy()
                 for col in valid_partitions:
-                    if df[col].dtype == 'object':
-                        df[col] = df[col].fillna('UNKNOWN')
-                    elif pd.api.types.is_numeric_dtype(df[col]):
-                        df[col] = df[col].fillna(-999)
+                    if partition_df[col].dtype == 'object':
+                        partition_df[col] = partition_df[col].fillna('__PARTITION_MISSING__')
+                    elif pd.api.types.is_numeric_dtype(partition_df[col]):
+                        partition_df[col] = partition_df[col].fillna(-999)
 
-                table = pa.Table.from_pandas(df, preserve_index=False)
+                # Create partitioned table using the partition DataFrame for paths
+                # but preserve original rich metadata from the main table
+                partition_table = pa.Table.from_pandas(partition_df, preserve_index=False)
+
+                # Copy metadata from original table to partitioned table
+                schema_with_metadata = table.schema
+                partition_table = partition_table.cast(schema_with_metadata)
+
                 pq.write_to_dataset(
-                    table,
+                    partition_table,
                     root_path=output_dir / "wide_partitioned",
                     partition_cols=valid_partitions,
                     compression='snappy',

@@ -10,9 +10,9 @@
     "title": "GDPR DPA Decisions Analysis Dataset",
     "description": "Structured enforcement decisions with 68-field questionnaire",
     "legal_framework": "EU GDPR (Regulation 2016/679)",
-    "row_count": 999,
-    "column_count": 341,
-    "source_file": "outputs/cleaned_wide.csv"
+    "row_count": 1998,
+    "column_count": 393,
+    "source_file": "outputs/cleaned_wide_latest.csv"
   },
   "legal_semantics": {
     "typed_missingness": {

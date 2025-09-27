@@ -242,13 +242,20 @@ class MLFeatureExporter(BaseExporter):
         # Add embeddings
         combined = combined.join(embeddings_df, how='left')
 
-        # Fill NaN values appropriately
-        # Numeric features: fill with 0 or median
+        # Fill NaN values appropriately - preserve targets to avoid leakage
         numeric_cols = combined.select_dtypes(include=[np.number]).columns
+
+        # Identify target columns (fine/turnover amounts, ratios, logs)
+        target_cols = [col for col in numeric_cols if any(x in col for x in
+                      ['fine_eur', 'turnover_eur', '_ratio', '_log1p', 'fine_amount', 'turnover_amount'])]
+
         for col in numeric_cols:
             if '_emb_' in col:  # Embedding columns
                 combined[col] = combined[col].fillna(0)
-            else:
+            elif col in target_cols:  # Target variables - preserve nulls, add missing indicators
+                combined[f'{col}_missing'] = combined[col].isnull().astype(int)
+                # Don't impute targets - preserve legal semantics of "not assessed"
+            else:  # Feature columns - safe to impute
                 combined[col] = combined[col].fillna(combined[col].median())
 
         return combined

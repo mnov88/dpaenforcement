@@ -1,6 +1,8 @@
 startNodeId,endNodeId,type,decision_date,fine_amount
 dpa_Information_Commissioner's_Office,decision_United Kingdom_18,DECIDED,2025-06-05 00:00:00+00:00,2310000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_20,DECIDED,,0.0
+dpa_STRING,decision_United Kingdom_10,DECIDED,,
+dpa_STRING,decision_United Kingdom_7,DECIDED,,
 dpa_Information_Commissioner's_Office,decision_United Kingdom_16,DECIDED,2020-10-30 00:00:00+00:00,18400000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_17,DECIDED,2020-11-13 00:00:00+00:00,1250000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_21,DECIDED,2025-06-24 00:00:00+00:00,18000.0
@@ -15,6 +17,7 @@ dpa_Information_Commissioner's_Office,decision_United Kingdom_28,DECIDED,2025-04
 dpa_Information_Commissioner's_Office,decision_United Kingdom_22,DECIDED,,200000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_30,DECIDED,,0.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_32,DECIDED,,0.0
+dpa_STRING,decision_United Kingdom_33,DECIDED,,
 dpa_Information_Commissioner's_Office,decision_United Kingdom_31,DECIDED,,0.0
 dpa_NOT_DISCUSSED,decision_United Kingdom_36,DECIDED,,
 dpa_Information_Commissioner's_Office,decision_United Kingdom_34,DECIDED,2021-10-18 00:00:00+00:00,10000.0
@@ -38,6 +41,7 @@ dpa_UNCLEAR,decision_United Kingdom_54,DECIDED,,0.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_55,DECIDED,,0.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_59,DECIDED,2022-02-14 00:00:00+00:00,50000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_56,DECIDED,,85000.0
+dpa_STRING,decision_United Kingdom_61,DECIDED,,
 dpa_Information_Commissioner's_Office,decision_United Kingdom_60,DECIDED,2022-02-28 00:00:00+00:00,98000.0
 dpa_Information_Commissioner's_Office,decision_United Kingdom_57,DECIDED,2024-03-06 00:00:00+00:00,7500.0
 dpa_NOT_DISCUSSED,decision_United Kingdom_63,DECIDED,,
@@ -81,6 +85,7 @@ dpa_Integritetsskyddsmyndigheten_(IMY),decision_Sweden_39,DECIDED,,500000.0
 dpa_Swedish_Authority_for_Privacy_Protection_(IMY),decision_Sweden_44,DECIDED,,0.0
 dpa_Integritetsskyddsmyndigheten_(IMY),decision_Sweden_42,DECIDED,,15000000.0
 dpa_Integrity_Protection_Authority,decision_Sweden_43,DECIDED,,
+dpa_STRING,decision_Sweden_46,DECIDED,,
 dpa_Swedish_Authority_for_Privacy_Protection_(IMY),decision_Sweden_45,DECIDED,,
 dpa_Swedish_Authority_for_Privacy_Protection_(IMY),decision_Sweden_47,DECIDED,2022-03-18 00:00:00+00:00,0.0
 dpa_Integritetsskyddsmyndigheten_(IMY),decision_Sweden_48,DECIDED,2022-07-26 00:00:00+00:00,0.0
@@ -113,6 +118,7 @@ dpa_Spanish_Agency_for_Data_Protection,decision_Spain_19,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_20,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_21,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_22,DECIDED,,0.0
+dpa_STRING,decision_Spain_23,DECIDED,,
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_25,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_24,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_26,DECIDED,,0.0
@@ -386,6 +392,7 @@ dpa_Spanish_Data_Protection_Agency,decision_Spain_312,DECIDED,,1800.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_307,DECIDED,,3000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_308,DECIDED,,44000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_311,DECIDED,,35000.0
+dpa_STRING,decision_Spain_310,DECIDED,,
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_313,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_314,DECIDED,,24000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_315,DECIDED,,4000.0
@@ -435,6 +442,7 @@ dpa_Spanish_Data_Protection_Agency,decision_Spain_360,DECIDED,,1600.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_359,DECIDED,,600000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_362,DECIDED,,75000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_361,DECIDED,,45000.0
+dpa_STRING,decision_Spain_365,DECIDED,,
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_364,DECIDED,,3000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_363,DECIDED,,25000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_367,DECIDED,,12000.0
@@ -515,7 +523,9 @@ dpa_Spanish_Agency_for_Data_Protection,decision_Spain_443,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_442,DECIDED,,50000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_446,DECIDED,,0.0
 dpa_Agencia_Española_de_Protección_de_Datos,decision_Spain_444,DECIDED,,3000.0
+dpa_STRING,decision_Spain_447,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_445,DECIDED,2019-10-29 00:00:00+00:00,6000.0
+dpa_STRING,decision_Spain_448,DECIDED,,
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_449,DECIDED,,30000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_451,DECIDED,,36000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_452,DECIDED,,2000.0
@@ -544,6 +554,7 @@ dpa_Spanish_Agency_for_Data_Protection,decision_Spain_472,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_473,DECIDED,,4000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_476,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_474,DECIDED,2021-01-18 00:00:00+00:00,3000.0
+dpa_STRING,decision_Spain_475,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_478,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_480,DECIDED,,0.0
 dpa_Agencia_Española_de_Protección_de_Datos,decision_Spain_482,DECIDED,,30000.0
@@ -555,6 +566,7 @@ dpa_Spanish_Agency_for_Data_Protection,decision_Spain_483,DECIDED,,42000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_486,DECIDED,2021-07-27 00:00:00+00:00,120000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_490,DECIDED,,6000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_488,DECIDED,,0.0
+dpa_STRING,decision_Spain_489,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_492,DECIDED,,6000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_491,DECIDED,,200000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_493,DECIDED,2022-05-22 00:00:00+00:00,0.0
@@ -577,6 +589,7 @@ dpa_Spanish_Agency_of_Data_Protection,decision_Spain_508,DECIDED,,6000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_510,DECIDED,,60000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_511,DECIDED,,3000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_514,DECIDED,,0.0
+dpa_STRING,decision_Spain_512,DECIDED,,
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_513,DECIDED,,50000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_515,DECIDED,2020-11-13 00:00:00+00:00,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_516,DECIDED,,3000.0
@@ -589,7 +602,9 @@ dpa_Spanish_Data_Protection_Agency,decision_Spain_525,DECIDED,,0.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_521,DECIDED,,40000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_520,DECIDED,,54000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_523,DECIDED,,48000.0
+dpa_NOT_DISCUSSED,decision_Spain_531,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_526,DECIDED,,1500.0
+dpa_STRING,decision_Spain_528,DECIDED,,
 dpa_Agencia_Española_de_Protección_de_Datos,decision_Spain_527,DECIDED,,5000.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_536,DECIDED,,5000.0
 dpa_Spanish_Agency_for_Data_Protection,decision_Spain_532,DECIDED,,
@@ -644,6 +659,7 @@ dpa_Spanish_Data_Protection_Agency_(AEPD),decision_Spain_580,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_579,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_583,DECIDED,,70000.0
 dpa_Agencia_Española_de_Protección_de_Datos,decision_Spain_584,DECIDED,,0.0
+dpa_STRING,decision_Spain_586,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_590,DECIDED,,0.0
 dpa_Spanish_Data_Protection_Agency,decision_Spain_585,DECIDED,,
 dpa_Spanish_Data_Protection_Agency,decision_Spain_587,DECIDED,,0.0
@@ -682,6 +698,7 @@ dpa_Basque_Agency_for_the_Protection_of_Data,decision_Spain_630,DECIDED,2022-03-
 dpa_Catalan_Data_Protection_Authority,decision_Spain_625,DECIDED,,0.0
 dpa_Agència_de_Protecció_de_Dades_de_Catalunya,decision_Spain_618,DECIDED,,
 dpa_Basque_Agency_for_Data_Protection,decision_Spain_631,DECIDED,,
+dpa_STRING,decision_Spain_623,DECIDED,,
 dpa_Information_Commissioner,decision_Slovenia_1,DECIDED,,
 dpa_Information_Commissioner,decision_Slovenia_3,DECIDED,2021-03-25 00:00:00+00:00,0.0
 dpa_Catalan_Data_Protection_Authority,decision_Spain_627,DECIDED,,0.0
@@ -740,6 +757,7 @@ dpa_Information_Commissioner,decision_Slovenia_53,DECIDED,,0.0
 dpa_Information_Commissioner_(Slovenia),decision_Slovenia_54,DECIDED,,0.0
 dpa_Information_Commissioner,decision_Slovenia_57,DECIDED,,
 dpa_Information_Commissioner_of_Slovenia,decision_Slovenia_58,DECIDED,,500.0
+dpa_STRING,decision_Slovenia_59,DECIDED,,
 dpa_Information_Commissioner,decision_Slovenia_61,DECIDED,,6255.0
 dpa_Information_Commissioner,decision_Slovenia_62,DECIDED,,0.0
 dpa_Information_Commissioner_of_the_Republic_of_Slovenia,decision_Slovenia_63,DECIDED,,
@@ -761,30 +779,38 @@ dpa_Information_Commissioner_of_the_Republic_of_Slovenia,decision_Slovenia_78,DE
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_2,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_4,DECIDED,,3000.0
 dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_3,DECIDED,,3000.0
+dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_5,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_6,DECIDED,,
+dpa_STRING,decision_Romania_7,DECIDED,,
 dpa_The_National_Supervisory_Authority,decision_Romania_9,DECIDED,,
 dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_Personal_(ANSPDCP),decision_Romania_11,DECIDED,,2000.0
 dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_10,DECIDED,,17000.0
 dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_Personal,decision_Romania_13,DECIDED,,
+dpa_National_Supervisory_Authority,decision_Romania_12,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_14,DECIDED,,10000.0
 dpa_National_Supervisory_Authority,decision_Romania_15,DECIDED,,1000.0
+dpa_STRING,decision_Romania_16,DECIDED,,
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_17,DECIDED,,70000.0
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_20,DECIDED,,1000.0
 dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_19,DECIDED,,10000.0
 dpa_National_Supervisory_Authority,decision_Romania_18,DECIDED,,
+dpa_STRING,decision_Romania_21,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_24,DECIDED,,3000.0
 dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_26,DECIDED,,2000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_25,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_28,DECIDED,2021-08-24 00:00:00+00:00,3000.0
 dpa_National_Supervisory_Authority,decision_Romania_29,DECIDED,,1000.0
+dpa_STRING,decision_Romania_27,DECIDED,,
 dpa_The_National_Supervisory_Authority,decision_Romania_30,DECIDED,,10000.0
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_34,DECIDED,,25000.0
 dpa_National_Supervisory_Authority,decision_Romania_33,DECIDED,,2000.0
 dpa_National_Supervisory_Authority,decision_Romania_36,DECIDED,2020-04-14 00:00:00+00:00,5000.0
 dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_Personal_(ANSPDCP),decision_Romania_32,DECIDED,,500.0
 dpa_National_Supervisory_Authority,decision_Romania_31,DECIDED,,
+dpa_National_Supervisory_Authority,decision_Romania_37,DECIDED,,
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_38,DECIDED,,5000.0
 dpa_National_Supervisory_Authority,decision_Romania_43,DECIDED,,2000.0
+dpa_STRING,decision_Romania_40,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_42,DECIDED,,
 dpa_A.N.S.P.D.C.P,decision_Romania_41,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_45,DECIDED,2022-11-09 00:00:00+00:00,1000.0
@@ -807,6 +833,8 @@ dpa_A.N.S.P.D.C.P,decision_Romania_62,DECIDED,,1000.0
 dpa_National_Supervisory_Authority,decision_Romania_63,DECIDED,,7000.0
 dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_Personal,decision_Romania_65,DECIDED,,2000.0
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_67,DECIDED,,2000.0
+dpa_National_Supervisory_Authority,decision_Romania_68,DECIDED,,
+dpa_National_Supervisory_Authority,decision_Romania_69,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_70,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_72,DECIDED,,10000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_71,DECIDED,,4000.0
@@ -816,49 +844,82 @@ dpa_National_Supervisory_Authority,decision_Romania_79,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_77,DECIDED,,5000.0
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_76,DECIDED,,2000.0
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_78,DECIDED,,2000.0
+dpa_A.N.S.P.D.C.P.,decision_Romania_80,DECIDED,,
+dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_75,DECIDED,,
+dpa_STRING,decision_Romania_82,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_81,DECIDED,,1000.0
 dpa_National_Supervisory_Authority,decision_Romania_84,DECIDED,,2000.0
 dpa_National_DPA,decision_Romania_87,DECIDED,,1500.0
+dpa_A.N.S.P.D.C.P,decision_Romania_86,DECIDED,,
+dpa_STRING,decision_Romania_85,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_92,DECIDED,,
 dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_91,DECIDED,,
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_93,DECIDED,,20000.0
 dpa_A.N.S.P.D.C.P,decision_Romania_94,DECIDED,2024-06-25 00:00:00+00:00,4000.0
+dpa_STRING,decision_Romania_96,DECIDED,,
+dpa_STRING,decision_Romania_95,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_100,DECIDED,2021-12-13 00:00:00+00:00,2000.0
 dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_Personal_(ANSPDCP),decision_Romania_99,DECIDED,,1000.0
 dpa_The_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_102,DECIDED,2023-10-25 00:00:00+00:00,1000.0
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_101,DECIDED,,
+dpa_ANSPDCP,decision_Romania_98,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_103,DECIDED,,1000.0
 dpa_National_Authority,decision_Romania_107,DECIDED,,2000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_108,DECIDED,,6000.0
 dpa_National_Supervisory_Authority,decision_Romania_110,DECIDED,,10000.0
+dpa_STRING,decision_Romania_109,DECIDED,,
 dpa_A.N.S.P.D.C.P,decision_Romania_113,DECIDED,,1500.0
+dpa_National_Supervisory_Authority,decision_Romania_112,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_116,DECIDED,2021-04-30 00:00:00+00:00,2000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_114,DECIDED,,
 dpa_The_National_Supervisory_Authority,decision_Romania_117,DECIDED,,3000.0
 dpa_National_Supervisory_Authority,decision_Romania_121,DECIDED,,5000.0
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_120,DECIDED,,0.0
+dpa_National_Supervisory_Authority_for_the_Processing_of_Personal_Data,decision_Romania_119,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_122,DECIDED,,
 dpa_National_Supervisory_Authority,decision_Romania_123,DECIDED,,3000.0
+dpa_STRING,decision_Romania_125,DECIDED,,1000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_124,DECIDED,,2500.0
 dpa_National_Supervisory_Authority,decision_Romania_127,DECIDED,,3000.0
+dpa_STRING,decision_Romania_128,DECIDED,,
+dpa_ANSPDCP,decision_Romania_126,DECIDED,,
+dpa_STRING,decision_Romania_130,DECIDED,,
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_131,DECIDED,,2000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_129,DECIDED,,5000.0
 dpa_A.N.S.P.D.C.P,decision_Romania_132,DECIDED,,2000.0
 dpa_A.N.S.P.D.C.P.,decision_Romania_134,DECIDED,2022-10-03 00:00:00+00:00,150.0
+dpa_National_Authority_for_the_Supervision_of_Personal_Data_Processing,decision_Romania_133,DECIDED,,
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_135,DECIDED,,
+dpa_STRING,decision_Romania_138,DECIDED,,
 dpa_A.N.S.P.D.C.P,decision_Romania_136,DECIDED,2025-03-25 00:00:00+00:00,25000.0
+dpa_STRING,decision_Romania_137,DECIDED,,1000.0
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_139,DECIDED,,
+dpa_STRING,decision_Romania_142,DECIDED,,
+dpa_STRING,decision_Romania_143,DECIDED,,300.0
+dpa_STRING_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_141,DECIDED,,3000.0
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_140,DECIDED,,40000.0
+dpa_STRING_National_Supervisory_Authority,decision_Romania_145,DECIDED,,1000.0
+dpa_National_Supervisory_Authority,decision_Romania_144,DECIDED,,
+dpa_National_Supervisory_Authority,decision_Romania_146,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_148,DECIDED,,5000.0
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_153,DECIDED,,2000.0
 dpa_Romanian_Supervisory_Authority,decision_Romania_150,DECIDED,,5000.0
 dpa_National_Supervisory_Authority,decision_Romania_156,DECIDED,,5000.0
 dpa_The_National_Supervisory_Authority,decision_Romania_151,DECIDED,,2000.0
+dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_152,DECIDED,,
+dpa_STRING,decision_Romania_154,DECIDED,,
+dpa_A.N.S.P.D.C.P.,decision_Romania_158,DECIDED,,
+dpa_STRING,decision_Romania_159,DECIDED,,
+dpa_STRING,decision_Romania_157,DECIDED,,
 dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_155,DECIDED,,12000.0
 dpa_A.N.S.P.D.C.P,decision_Romania_161,DECIDED,,5000.0
+dpa_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_162,DECIDED,,
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_163,DECIDED,,2000.0
+dpa_STRING,decision_Romania_165,DECIDED,,5000.0
+dpa_STRING,decision_Romania_167,DECIDED,,
 dpa_A.N.S.P.D.C.P.,decision_Romania_164,DECIDED,,15000.0
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,decision_Romania_166,DECIDED,,15000.0
+dpa_STRING,decision_Romania_170,DECIDED,,4000.0
 dpa_A.N.S.P.D.C.P,decision_Romania_171,DECIDED,,15000.0
 dpa_National_Supervisory_Authority,decision_Romania_174,DECIDED,2020-12-11 00:00:00+00:00,0.0
 dpa_National_Supervisory_Authority,decision_Romania_175,DECIDED,2020-12-11 00:00:00+00:00,0.0
@@ -895,3 +956,963 @@ dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_20,DECIDED,
 dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_21,DECIDED,,576220.0
 dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_24,DECIDED,,100000.0
 dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_22,DECIDED,,1440549.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_32,DECIDED,,4053173.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_27,DECIDED,,45000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_29,DECIDED,,1136975.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_31,DECIDED,2024-10-09 00:00:00+00:00,353589.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_26,DECIDED,,1527855.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_28,DECIDED,,0.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_30,DECIDED,,16932657.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_25,DECIDED,,4911732.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_34,DECIDED,2021-06-21 00:00:00+00:00,159176.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_38,DECIDED,,29684.04
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_36,DECIDED,2020-12-09 00:00:00+00:00,20000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_37,DECIDED,,25000.0
+dpa_STRING_President_of_the_Personal_Data_Protection_Office,decision_Poland_35,DECIDED,,1145891.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_39,DECIDED,2021-01-11 00:00:00+00:00,136437.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_33,DECIDED,,100000.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_40,DECIDED,2022-11-02 00:00:00+00:00,8000.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_43,DECIDED,2021-10-14 00:00:00+00:00,80000.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_41,DECIDED,2021-06-30 00:00:00+00:00,13644.0
+dpa_President_of_the_Office_for_Personal_Data_Protection_(UODO),decision_Poland_42,DECIDED,,30000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection_(UODO),decision_Poland_46,DECIDED,2022-09-07 00:00:00+00:00,2500.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_44,DECIDED,,10000.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_47,DECIDED,,238345.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_48,DECIDED,,1556.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_45,DECIDED,,
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_51,DECIDED,,85000.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_49,DECIDED,,23580.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_53,DECIDED,,10000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_50,DECIDED,2022-01-19 00:00:00+00:00,545748.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_52,DECIDED,2022-07-06 00:00:00+00:00,10000.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_54,DECIDED,,11790.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_55,DECIDED,,51876.0
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_57,DECIDED,,33012.0
+dpa_President_of_the_Personal_Data_Protection_Office_(UODO),decision_Poland_56,DECIDED,,1440549.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_59,DECIDED,2024-08-05 00:00:00+00:00,0.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_58,DECIDED,,
+dpa_President_of_the_Personal_Data_Protection_Office,decision_Poland_60,DECIDED,2020-08-21 00:00:00+00:00,50000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_62,DECIDED,,47000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection_(UODO),decision_Poland_63,DECIDED,,0.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_61,DECIDED,,660000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_64,DECIDED,,40000.0
+dpa_President_of_the_Office_for_Personal_Data_Protection,decision_Poland_65,DECIDED,,20000.0
+dpa_Datatilsynet,decision_Norway_4,DECIDED,2019-03-18 00:00:00+00:00,1600000.0
+dpa_Privacy_Board,decision_Norway_3,DECIDED,2020-09-16 00:00:00+00:00,0.0
+dpa_Datatilsynet,decision_Norway_5,DECIDED,2019-11-10 00:00:00+00:00,1200000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_1,DECIDED,2023-02-06 00:00:00+00:00,10000000.0
+dpa_Datatilsynet,decision_Norway_6,DECIDED,2021-06-07 00:00:00+00:00,1000000.0
+dpa_Datatilsynet,decision_Norway_7,DECIDED,,0.0
+dpa_NOT_DISCUSSED,decision_Norway_8,DECIDED,,
+dpa_Datatilsynet,decision_Norway_9,DECIDED,2021-03-15 00:00:00+00:00,100000.0
+dpa_Datatilsynet,decision_Norway_11,DECIDED,,150000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_10,DECIDED,,250000.0
+dpa_Datatilsynet,decision_Norway_13,DECIDED,2021-09-27 00:00:00+00:00,5000000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_14,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_15,DECIDED,2023-01-09 00:00:00+00:00,0.0
+dpa_The_Norwegian_Data_Protection_Authority,decision_Norway_16,DECIDED,2021-10-05 00:00:00+00:00,3500.0
+dpa_Datatilsynet,decision_Norway_17,DECIDED,2020-12-22 00:00:00+00:00,400000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_18,DECIDED,2024-10-28 00:00:00+00:00,0.0
+dpa_Datatilsynet,decision_Norway_21,DECIDED,2020-08-21 00:00:00+00:00,0.0
+dpa_Datatilsynet,decision_Norway_20,DECIDED,2021-09-20 00:00:00+00:00,750000.0
+dpa_Personvernnemnda_(Privacy_Board),decision_Norway_23,DECIDED,,
+dpa_Datatilsynet,decision_Norway_22,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_25,DECIDED,2021-11-24 00:00:00+00:00,1000000.0
+dpa_Datatilsynet,decision_Norway_24,DECIDED,2021-09-20 00:00:00+00:00,400000.0
+dpa_The_Norwegian_Data_Protection_Authority,decision_Norway_29,DECIDED,,200000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_27,DECIDED,,250000.0
+dpa_Datatilsynet,decision_Norway_26,DECIDED,,75000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_30,DECIDED,,
+dpa_The_Norwegian_Data_Protection_Authority,decision_Norway_33,DECIDED,,300000.0
+dpa_Datatilsynet,decision_Norway_34,DECIDED,,100000000.0
+dpa_Datatilsynet,decision_Norway_28,DECIDED,,0.0
+dpa_Norwegian_Data_Inspectorate,decision_Norway_36,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_37,DECIDED,2023-01-09 00:00:00+00:00,0.0
+dpa_Datatilsynet,decision_Norway_38,DECIDED,2021-03-15 00:00:00+00:00,50000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_41,DECIDED,,400000.0
+dpa_The_Data_Inspectorate,decision_Norway_39,DECIDED,,200000.0
+dpa_Norwegian_Data_Inspectorate,decision_Norway_43,DECIDED,,
+dpa_Datatilsynet,decision_Norway_42,DECIDED,,500000.0
+dpa_Datatilsynet,decision_Norway_44,DECIDED,,100000.0
+dpa_Datatilsynet,decision_Norway_40,DECIDED,,500000.0
+dpa_Datatilsynet,decision_Norway_46,DECIDED,2020-10-22 00:00:00+00:00,750000.0
+dpa_Datatilsynet,decision_Norway_45,DECIDED,,150000.0
+dpa_Datatilsynet,decision_Norway_48,DECIDED,2021-09-21 00:00:00+00:00,125000.0
+dpa_Datatilsynet,decision_Norway_50,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_51,DECIDED,2022-05-16 00:00:00+00:00,150000.0
+dpa_Datatilsynet,decision_Norway_53,DECIDED,2021-08-26 00:00:00+00:00,0.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_47,DECIDED,,
+dpa_Datatilsynet,decision_Norway_49,DECIDED,,40000.0
+dpa_Datatilsynet,decision_Norway_52,DECIDED,,5000000.0
+dpa_Datatilsynet,decision_Norway_54,DECIDED,2022-03-04 00:00:00+00:00,200000.0
+dpa_Datatilsynet,decision_Norway_56,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_60,DECIDED,,5000000.0
+dpa_STRING,decision_Norway_62,DECIDED,,
+dpa_Datatilsynet,decision_Norway_55,DECIDED,,
+dpa_Privacy_Board,decision_Norway_58,DECIDED,2021-06-22 00:00:00+00:00,0.0
+dpa_STRING,decision_Norway_61,DECIDED,,
+dpa_Datatilsynet,decision_Norway_59,DECIDED,,400000.0
+dpa_Datatilsynet,decision_Norway_57,DECIDED,,200000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_64,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_63,DECIDED,,200000.0
+dpa_Estonian_Data_Protection_Inspectorate,decision_Norway_66,DECIDED,,0.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_68,DECIDED,,
+dpa_Datatilsynet,decision_Norway_65,DECIDED,2022-02-01 00:00:00+00:00,50000.0
+dpa_Datatilsynet,decision_Norway_67,DECIDED,2023-03-08 00:00:00+00:00,2500000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_69,DECIDED,2023-07-14 00:00:00+00:00,0.0
+dpa_Datatilsynet,decision_Norway_70,DECIDED,,
+dpa_Datatilsynet,decision_Norway_71,DECIDED,2025-03-10 00:00:00+00:00,4000000.0
+dpa_Datatilsynet,decision_Norway_72,DECIDED,2023-04-26 00:00:00+00:00,0.0
+dpa_NOT_DISCUSSED,decision_Norway_73,DECIDED,,
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_74,DECIDED,2023-11-27 00:00:00+00:00,20000000.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_76,DECIDED,2024-08-30 00:00:00+00:00,0.0
+dpa_Oslo_District_Court,decision_Norway_77,DECIDED,2023-09-06 00:00:00+00:00,0.0
+dpa_Norwegian_Data_Protection_Authority,decision_Norway_75,DECIDED,,0.0
+dpa_Norwegian_Privacy_Board,decision_Norway_79,DECIDED,,0.0
+dpa_Datatilsynet,decision_Norway_78,DECIDED,,150000.0
+dpa_Privacy_Board,decision_Norway_81,DECIDED,2020-09-07 00:00:00+00:00,0.0
+dpa_Norwegian_Privacy_Board,decision_Norway_80,DECIDED,2023-04-25 00:00:00+00:00,0.0
+dpa_The_Privacy_Board,decision_Norway_82,DECIDED,2021-06-22 00:00:00+00:00,250000.0
+dpa_The_Norwegian_Privacy_Board,decision_Norway_83,DECIDED,,0.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_3,DECIDED,2021-07-22 00:00:00+00:00,750000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_1,DECIDED,2021-02-04 00:00:00+00:00,12000.0
+dpa_NOT_DISCUSSED,decision_Netherlands_6,DECIDED,,
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_4,DECIDED,,475000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_5,DECIDED,,525000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_2,DECIDED,,3700000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_7,DECIDED,2022-01-14 00:00:00+00:00,525000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_8,DECIDED,2020-06-16 00:00:00+00:00,7500.0
+dpa_Autoriteit_Persoonsgegevens_(AP),decision_Netherlands_9,DECIDED,,150000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_11,DECIDED,,565000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_10,DECIDED,,400000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_12,DECIDED,2020-03-24 00:00:00+00:00,15000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_13,DECIDED,2021-11-25 00:00:00+00:00,2750000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_14,DECIDED,,440000.0
+dpa_Autoriteit_Persoonsgege,decision_Netherlands_15,DECIDED,,725000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_16,DECIDED,2021-05-31 00:00:00+00:00,450000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_22,DECIDED,2019-06-18 00:00:00+00:00,460000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_17,DECIDED,,
+dpa_Rechtbank_Zeeland-West-Brabant,decision_Netherlands_19,DECIDED,2022-11-30 00:00:00+00:00,0.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_21,DECIDED,2020-06-16 00:00:00+00:00,7500.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_23,DECIDED,2023-12-18 00:00:00+00:00,150000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_20,DECIDED,,15000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_25,DECIDED,,
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_24,DECIDED,2019-12-04 00:00:00+00:00,725000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_26,DECIDED,2019-12-20 00:00:00+00:00,525000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_28,DECIDED,,0.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_27,DECIDED,2021-03-11 00:00:00+00:00,600000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_30,DECIDED,2023-12-18 00:00:00+00:00,150000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_29,DECIDED,2023-12-11 00:00:00+00:00,10000000.0
+dpa_Personal_Data_Authority,decision_Netherlands_31,DECIDED,,4750000.0
+dpa_Dutch_Data_Protection_Authority,decision_Netherlands_32,DECIDED,2024-08-20 00:00:00+00:00,0.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_34,DECIDED,2024-05-02 00:00:00+00:00,600000.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_33,DECIDED,,
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_37,DECIDED,,
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_35,DECIDED,2018-07-31 00:00:00+00:00,0.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_36,DECIDED,,0.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_38,DECIDED,2023-05-22 00:00:00+00:00,0.0
+dpa_Information_and_Data_Protection_Commissioner,decision_Malta_1,DECIDED,2024-01-15 00:00:00+00:00,0.0
+dpa_Commissioner_for_Information_and_Data_Protection,decision_Malta_5,DECIDED,,0.0
+dpa_Autoriteit_Persoonsgegevens,decision_Netherlands_39,DECIDED,2023-11-02 00:00:00+00:00,30000.0
+dpa_Information_and_Data_Protection_Commissioner,decision_Malta_11,DECIDED,,0.0
+dpa_Office_of_the_Information_and_Data_Protection_Commissioner,decision_Malta_7,DECIDED,,65000.0
+dpa_STRING,decision_Malta_10,DECIDED,,
+dpa_Information_and_Data_Protection_Commissioner,decision_Malta_9,DECIDED,,0.0
+dpa_The_Commissioner,decision_Malta_12,DECIDED,,20000.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_1,DECIDED,,0.0
+dpa_Information_and_Data_Protection_Commissioner,decision_Malta_13,DECIDED,,8000.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_3,DECIDED,,2500.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_4,DECIDED,,2800.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_7,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_5,DECIDED,2023-09-21 00:00:00+00:00,2500.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_8,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_9,DECIDED,,
+dpa_STRING,decision_Luxembourg_13,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_10,DECIDED,,7600.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_12,DECIDED,,5300.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_11,DECIDED,2022-12-13 00:00:00+00:00,2100.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_14,DECIDED,2021-10-15 00:00:00+00:00,18000.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_15,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_16,DECIDED,,
+dpa_STRING,decision_Luxembourg_17,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_21,DECIDED,,1000.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_20,DECIDED,,0.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_18,DECIDED,2021-12-01 00:00:00+00:00,6800.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_25,DECIDED,,0.0
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_23,DECIDED,2021-06-29 00:00:00+00:00,12500.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_2,DECIDED,,15000.0
+dpa_National_Commission_for_Data_Protection_(CNPD),decision_Luxembourg_24,DECIDED,,
+dpa_National_Commission_for_Data_Protection,decision_Luxembourg_22,DECIDED,2021-05-31 00:00:00+00:00,18000.0
+dpa_State_Data_Protection_Inspectorate_(SDPI),decision_Lithuania_4,DECIDED,,15000.0
+dpa_Valstybinė_duomenų_apsaugos_inspekcija_(VDAI),decision_Lithuania_7,DECIDED,,2000.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_9,DECIDED,,0.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_3,DECIDED,,12000.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_10,DECIDED,,20000.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_8,DECIDED,,0.0
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_11,DECIDED,,
+dpa_State_Data_Protection_Inspectorate,decision_Lithuania_12,DECIDED,,2385276.0
+dpa_Data_State_Inspectorate,decision_Latvia_3,DECIDED,,6250.0
+dpa_Data_State_Inspectorate,decision_Latvia_1,DECIDED,2024-02-02 00:00:00+00:00,1000.0
+dpa_Data_State_Inspections,decision_Latvia_6,DECIDED,,1000.0
+dpa_Data_State_Inspection,decision_Latvia_4,DECIDED,2023-01-01 00:00:00+00:00,0.0
+dpa_State_Data_Inspectorate,decision_Latvia_9,DECIDED,,1200000.0
+dpa_Data_State_Inspectorate,decision_Latvia_12,DECIDED,,15000.0
+dpa_Data_State_Inspectorate,decision_Latvia_10,DECIDED,,17495.0
+dpa_Data_State_Inspectorate,decision_Latvia_11,DECIDED,2024-01-29 00:00:00+00:00,0.0
+dpa_Data_State_Inspections,decision_Latvia_13,DECIDED,,1000.0
+dpa_State_Data_Inspectorate,decision_Latvia_14,DECIDED,2020-11-23 00:00:00+00:00,65000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_1,DECIDED,2024-02-22 00:00:00+00:00,90000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_3,DECIDED,2020-01-23 00:00:00+00:00,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_4,DECIDED,,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_9,DECIDED,2020-03-19 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_2,DECIDED,2020-01-15 00:00:00+00:00,27802946.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_12,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_14,DECIDED,2020-06-10 00:00:00+00:00,600000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_17,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_13,DECIDED,2020-03-05 00:00:00+00:00,3000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_16,DECIDED,2020-07-09 00:00:00+00:00,800000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_18,DECIDED,,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_15,DECIDED,,16729600.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_21,DECIDED,,5000.0
+dpa_Garante_per_la_Protezione_dei_Dati_Personali,decision_Italy_20,DECIDED,,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_22,DECIDED,2020-07-02 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_24,DECIDED,2020-07-29 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_25,DECIDED,2020-07-09 00:00:00+00:00,2000.0
+dpa_Guarantor_for_the_Protection_of_Personal_Data,decision_Italy_29,DECIDED,2020-09-03 00:00:00+00:00,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_31,DECIDED,2020-11-26 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_26,DECIDED,2020-03-26 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_27,DECIDED,,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_28,DECIDED,,80000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_32,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_34,DECIDED,2021-01-22 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_37,DECIDED,2021-01-14 00:00:00+00:00,8000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_36,DECIDED,2020-12-17 00:00:00+00:00,100000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_38,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_40,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_43,DECIDED,,75000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_42,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_46,DECIDED,2021-03-25 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_48,DECIDED,2021-04-23 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_45,DECIDED,,4501868.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_49,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_50,DECIDED,2021-06-03 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_47,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_51,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_53,DECIDED,,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_54,DECIDED,,2600000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_56,DECIDED,,120000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_57,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_59,DECIDED,2021-06-10 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_55,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_61,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_58,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_60,DECIDED,2021-07-22 00:00:00+00:00,2500000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_62,DECIDED,2021-07-22 00:00:00+00:00,800000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_63,DECIDED,2021-09-16 00:00:00+00:00,200000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_64,DECIDED,,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_65,DECIDED,2021-09-16 00:00:00+00:00,3296326.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_67,DECIDED,,400000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_68,DECIDED,2022-01-13 00:00:00+00:00,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_69,DECIDED,2022-01-27 00:00:00+00:00,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_70,DECIDED,2022-01-27 00:00:00+00:00,40000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_66,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_71,DECIDED,2022-01-27 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_72,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_73,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_74,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_76,DECIDED,2022-02-10 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_75,DECIDED,2022-02-10 00:00:00+00:00,3500.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_77,DECIDED,,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_79,DECIDED,2022-03-10 00:00:00+00:00,8000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_78,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_81,DECIDED,2022-04-07 00:00:00+00:00,40000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_80,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_82,DECIDED,,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_84,DECIDED,2022-04-28 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_86,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_87,DECIDED,2022-04-28 00:00:00+00:00,70000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_90,DECIDED,2022-06-09 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_92,DECIDED,2022-06-09 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_89,DECIDED,2022-05-26 00:00:00+00:00,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_91,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_88,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_93,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_94,DECIDED,2022-06-30 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_96,DECIDED,2022-06-16 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_97,DECIDED,2022-06-30 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_99,DECIDED,,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_98,DECIDED,2022-08-05 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_95,DECIDED,2022-06-09 00:00:00+00:00,26000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_100,DECIDED,2022-09-15 00:00:00+00:00,3000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_101,DECIDED,,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_102,DECIDED,2022-09-15 00:00:00+00:00,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_106,DECIDED,2022-09-15 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_105,DECIDED,2022-08-05 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_103,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_104,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_108,DECIDED,2022-10-20 00:00:00+00:00,1400000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_107,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_109,DECIDED,2022-11-10 00:00:00+00:00,500000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_110,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_111,DECIDED,2022-10-06 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_113,DECIDED,2022-10-20 00:00:00+00:00,900.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_112,DECIDED,2022-10-20 00:00:00+00:00,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_114,DECIDED,2022-10-06 00:00:00+00:00,2000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_116,DECIDED,2022-10-06 00:00:00+00:00,100000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_115,DECIDED,,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_119,DECIDED,2022-11-10 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_117,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_118,DECIDED,2022-11-24 00:00:00+00:00,1000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_120,DECIDED,2022-12-01 00:00:00+00:00,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_122,DECIDED,2022-12-01 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_121,DECIDED,,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_124,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_125,DECIDED,2022-09-23 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_123,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_126,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_127,DECIDED,2022-12-15 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_131,DECIDED,2023-01-18 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_130,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_128,DECIDED,2022-12-15 00:00:00+00:00,4900000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_132,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_129,DECIDED,2022-12-15 00:00:00+00:00,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_133,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_135,DECIDED,2022-12-15 00:00:00+00:00,50000.0
+dpa_NOT_DISCUSSED,decision_Italy_139,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_138,DECIDED,,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_134,DECIDED,2022-12-15 00:00:00+00:00,120000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_136,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_140,DECIDED,,80000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_141,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_137,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_143,DECIDED,2023-01-11 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_144,DECIDED,2023-02-23 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_142,DECIDED,2023-01-26 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_146,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_148,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_147,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_145,DECIDED,2023-02-23 00:00:00+00:00,300000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_150,DECIDED,2023-03-02 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_149,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_151,DECIDED,2023-04-11 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_152,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_153,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_157,DECIDED,2023-03-23 00:00:00+00:00,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_154,DECIDED,,3000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_156,DECIDED,2023-03-23 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_155,DECIDED,,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_158,DECIDED,2023-03-23 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_159,DECIDED,,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_161,DECIDED,2023-04-13 00:00:00+00:00,500000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_164,DECIDED,,15000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_160,DECIDED,,15000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_162,DECIDED,,7631175.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_165,DECIDED,,40000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_167,DECIDED,2023-04-27 00:00:00+00:00,240000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_163,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_166,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_168,DECIDED,2023-06-08 00:00:00+00:00,40660.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_170,DECIDED,2023-06-22 00:00:00+00:00,1000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_171,DECIDED,,300000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_176,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_172,DECIDED,,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_178,DECIDED,2023-07-18 00:00:00+00:00,100000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_177,DECIDED,2023-07-18 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_179,DECIDED,2023-07-18 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_180,DECIDED,,40000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_184,DECIDED,2023-08-31 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_182,DECIDED,,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_183,DECIDED,2023-07-18 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_189,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_186,DECIDED,2023-09-14 00:00:00+00:00,90000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_191,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_193,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_190,DECIDED,,70000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_194,DECIDED,,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_195,DECIDED,2023-10-26 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_197,DECIDED,2023-10-26 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_198,DECIDED,2023-10-26 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_196,DECIDED,,40000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_201,DECIDED,2023-11-16 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_200,DECIDED,2023-11-16 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_199,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_203,DECIDED,2023-12-07 00:00:00+00:00,1000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_204,DECIDED,,500.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_202,DECIDED,,60000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_205,DECIDED,2023-11-30 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_207,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_210,DECIDED,2024-01-11 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_209,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_206,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_208,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_211,DECIDED,,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_212,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_213,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_215,DECIDED,2024-02-08 00:00:00+00:00,2800000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_214,DECIDED,2024-01-24 00:00:00+00:00,8000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_216,DECIDED,2024-02-08 00:00:00+00:00,800000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_217,DECIDED,,300000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_218,DECIDED,2024-01-24 00:00:00+00:00,15000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_219,DECIDED,2024-01-24 00:00:00+00:00,2000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_220,DECIDED,2024-01-11 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_224,DECIDED,2024-02-22 00:00:00+00:00,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_223,DECIDED,,70000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_225,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_226,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_221,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_222,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_227,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_228,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_231,DECIDED,,150000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_234,DECIDED,2024-04-11 00:00:00+00:00,25000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_230,DECIDED,2024-03-07 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_235,DECIDED,2024-04-11 00:00:00+00:00,3000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_233,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_229,DECIDED,,271000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_232,DECIDED,,100000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_236,DECIDED,2024-04-11 00:00:00+00:00,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_240,DECIDED,2024-05-09 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_239,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_238,DECIDED,2024-04-11 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_242,DECIDED,2024-05-09 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_237,DECIDED,,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_241,DECIDED,,30000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_243,DECIDED,2024-05-09 00:00:00+00:00,75000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_244,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_247,DECIDED,2024-05-23 00:00:00+00:00,4500.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_245,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_246,DECIDED,,120000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_250,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_251,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_249,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_248,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_252,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_258,DECIDED,2024-07-04 00:00:00+00:00,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_257,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_255,DECIDED,2024-06-20 00:00:00+00:00,1000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_254,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_253,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_256,DECIDED,,250000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_259,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Italy_263,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_262,DECIDED,2024-07-17 00:00:00+00:00,80000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_261,DECIDED,2024-07-17 00:00:00+00:00,5000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_266,DECIDED,2024-07-17 00:00:00+00:00,22000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_265,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_264,DECIDED,,
+dpa_Guarantor_for_the_Protection_of_Personal_Data,decision_Italy_268,DECIDED,2024-09-12 00:00:00+00:00,8000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_271,DECIDED,2024-09-26 00:00:00+00:00,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_269,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_267,DECIDED,,900000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_270,DECIDED,2024-09-26 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_274,DECIDED,,4000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_273,DECIDED,2024-07-17 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_272,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_276,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_277,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_281,DECIDED,2024-11-13 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_283,DECIDED,2024-09-26 00:00:00+00:00,17000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_278,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_282,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_279,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_285,DECIDED,2024-10-17 00:00:00+00:00,60000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_280,DECIDED,2024-11-13 00:00:00+00:00,5000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_286,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_284,DECIDED,2024-10-17 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_288,DECIDED,2024-10-17 00:00:00+00:00,25000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_289,DECIDED,2024-11-13 00:00:00+00:00,678897.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_291,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_287,DECIDED,,15000000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_290,DECIDED,2024-11-13 00:00:00+00:00,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_293,DECIDED,2024-11-27 00:00:00+00:00,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_294,DECIDED,2024-12-12 00:00:00+00:00,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_292,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_297,DECIDED,2024-12-12 00:00:00+00:00,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_298,DECIDED,2024-12-12 00:00:00+00:00,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_299,DECIDED,2024-12-12 00:00:00+00:00,5000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_295,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_300,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_296,DECIDED,,892738.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_301,DECIDED,,20000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_302,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_304,DECIDED,,70000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_303,DECIDED,,10000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_307,DECIDED,2025-01-16 00:00:00+00:00,50000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_310,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_306,DECIDED,2025-01-16 00:00:00+00:00,8000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_309,DECIDED,,
+dpa_STRING_Garante_per_la_protezione_dei_dati_personali,decision_Italy_308,DECIDED,,6000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_305,DECIDED,,100000.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_312,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_314,DECIDED,,
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_316,DECIDED,,0.0
+dpa_Garante_per_la_protezione_dei_dati_personali,decision_Italy_315,DECIDED,,80000.0
+dpa_STRING,decision_Ireland_2,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Ireland_5,DECIDED,,0.0
+dpa_Data_Protection_Commission_of_Ireland,decision_Ireland_1,DECIDED,,
+dpa_STRING,decision_Ireland_4,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_6,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_7,DECIDED,,75000.0
+dpa_Data_Protection_Commission,decision_Ireland_13,DECIDED,,125000.0
+dpa_STRING,decision_Ireland_11,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_10,DECIDED,,0.0
+dpa_STRING,decision_Ireland_12,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_16,DECIDED,,0.0
+dpa_NOT_DISCUSSED,decision_Ireland_18,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_14,DECIDED,,
+dpa_STRING,decision_Ireland_15,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_17,DECIDED,,
+dpa_Data_Protection_Commission_of_Ireland,decision_Ireland_19,DECIDED,2024-03-08 00:00:00+00:00,0.0
+dpa_NOT_MENTIONED,decision_Ireland_20,DECIDED,,0.0
+dpa_NOT_MENTIONED,decision_Ireland_22,DECIDED,,0.0
+dpa_Data_Protection_Commission,decision_Ireland_24,DECIDED,,0.0
+dpa_STRING,decision_Ireland_23,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Ireland_26,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_21,DECIDED,,0.0
+dpa_STRING,decision_Ireland_25,DECIDED,,
+dpa_NOT_MENTIONED,decision_Ireland_28,DECIDED,,0.0
+dpa_STRING,decision_Ireland_27,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_29,DECIDED,,
+dpa_STRING,decision_Ireland_31,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Ireland_33,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Ireland_36,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_34,DECIDED,,0.0
+dpa_Data_Protection_Commission,decision_Ireland_32,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_35,DECIDED,2024-01-31 00:00:00+00:00,0.0
+dpa_STRING,decision_Ireland_37,DECIDED,,
+dpa_Data_Protection_Commission,decision_Ireland_38,DECIDED,2024-12-17 00:00:00+00:00,251000000.0
+dpa_NOT_MENTIONED,decision_Ireland_41,DECIDED,,0.0
+dpa_STRING,decision_Ireland_39,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Ireland_43,DECIDED,,
+dpa_NOT_MENTIONED,decision_Ireland_40,DECIDED,,0.0
+dpa_Irish_Data_Protection_Commission,decision_Ireland_44,DECIDED,2025-05-02 00:00:00+00:00,530000000.0
+dpa_Data_Protection_Commission,decision_Ireland_42,DECIDED,2022-03-15 00:00:00+00:00,17000000.0
+dpa_Official_name_of_the_deciding_Data_Protection_Authority_(DPA):_Data_Protection_Commission,decision_Ireland_46,DECIDED,,225000000.0
+dpa_Persónuvernd,decision_Iceland_1,DECIDED,2020-09-04 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_2,DECIDED,2020-06-04 00:00:00+00:00,0.0
+dpa_Privacy_Policy_Board,decision_Iceland_3,DECIDED,2020-03-05 00:00:00+00:00,8500.0
+dpa_Privacy_Policy_Board,decision_Iceland_5,DECIDED,2020-03-05 00:00:00+00:00,3000000.0
+dpa_Persónuvernd,decision_Iceland_4,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_7,DECIDED,2021-01-19 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_6,DECIDED,,
+dpa_Data_Protection_Authority,decision_Iceland_9,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_8,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_10,DECIDED,2020-08-27 00:00:00+00:00,0.0
+dpa_Persónuvernd_(Icelandic_Data_Protection_Authority),decision_Iceland_13,DECIDED,2020-05-13 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_12,DECIDED,2020-09-11 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_14,DECIDED,2020-09-29 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_16,DECIDED,2021-03-10 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_11,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_15,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_21,DECIDED,2021-01-28 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_20,DECIDED,2021-01-28 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_19,DECIDED,,
+dpa_Data_Protection_Authority,decision_Iceland_23,DECIDED,2020-11-25 00:00:00+00:00,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_26,DECIDED,2020-06-22 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_24,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_29,DECIDED,2020-03-19 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_28,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_25,DECIDED,,0.0
+dpa_Data_Protection_Authority,decision_Iceland_31,DECIDED,2021-01-25 00:00:00+00:00,0.0
+dpa_Persónuvernd_(Icelandic_Data_Protection_Authority),decision_Iceland_32,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_30,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_34,DECIDED,2021-03-12 00:00:00+00:00,0.0
+dpa_Persónuvernd_(Icelandic_Data_Protection_Authority),decision_Iceland_33,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_36,DECIDED,2021-03-10 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_35,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_37,DECIDED,2020-10-06 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_38,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_44,DECIDED,2021-09-22 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_39,DECIDED,,0.0
+dpa_Data_Protection_Authority,decision_Iceland_43,DECIDED,2021-04-16 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_40,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_41,DECIDED,2021-11-29 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_42,DECIDED,,3500000.0
+dpa_The_Data_Protection_Authority,decision_Iceland_46,DECIDED,2021-09-03 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_45,DECIDED,,1000000.0
+dpa_The_Data_Protection_Authority,decision_Iceland_48,DECIDED,2021-09-01 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_50,DECIDED,2021-11-29 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_47,DECIDED,,0.0
+dpa_The_Data_Protection_Authority,decision_Iceland_51,DECIDED,2021-11-23 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_49,DECIDED,2022-03-14 00:00:00+00:00,0.0
+dpa_Norwegian_Data_Protection_Authority,decision_Iceland_52,DECIDED,2022-12-05 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_53,DECIDED,2022-06-29 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_57,DECIDED,,0.0
+dpa_The_Icelandic_Data_Protection_Authority,decision_Iceland_58,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_54,DECIDED,2021-11-23 00:00:00+00:00,7500000.0
+dpa_STRING,decision_Iceland_59,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_55,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_56,DECIDED,,0.0
+dpa_STRING,decision_Iceland_60,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_62,DECIDED,2022-10-07 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_63,DECIDED,2022-12-14 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_61,DECIDED,,
+dpa_Datatilsynet,decision_Iceland_64,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_67,DECIDED,2022-12-05 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_68,DECIDED,2022-11-23 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_65,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_66,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_69,DECIDED,2022-11-23 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_71,DECIDED,2022-10-31 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_70,DECIDED,,
+dpa_Personal_Protection_Agency,decision_Iceland_74,DECIDED,2022-12-22 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_76,DECIDED,2021-11-17 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_75,DECIDED,,0.0
+dpa_Personal_Protection_Agency,decision_Iceland_73,DECIDED,,
+dpa_The_Data_Protection_Authority,decision_Iceland_77,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_72,DECIDED,,
+dpa_The_Data_Protection_Authority,decision_Iceland_78,DECIDED,2021-09-30 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_79,DECIDED,,0.0
+dpa_Persónuvernd_(Icelandic_Data_Protection_Authority),decision_Iceland_80,DECIDED,,0.0
+dpa_NOT_MENTIONED,decision_Iceland_85,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_83,DECIDED,2022-11-09 00:00:00+00:00,0.0
+dpa_Personal_Protection_Agency,decision_Iceland_84,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_81,DECIDED,,12000000.0
+dpa_Persónuvernd,decision_Iceland_86,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_82,DECIDED,,37856900.0
+dpa_Persónuvernd,decision_Iceland_87,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_88,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_93,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_91,DECIDED,2023-12-06 00:00:00+00:00,2000000.0
+dpa_Persónuvernd,decision_Iceland_89,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_92,DECIDED,,0.0
+dpa_Personal_Protection_Agency,decision_Iceland_90,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_94,DECIDED,,
+dpa_Persónuvernd,decision_Iceland_96,DECIDED,2023-12-21 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_97,DECIDED,2024-10-08 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_95,DECIDED,2023-06-27 00:00:00+00:00,7500000.0
+dpa_Data_Protection_Authority,decision_Iceland_98,DECIDED,2025-02-17 00:00:00+00:00,5000000.0
+dpa_Persónuvernd,decision_Iceland_101,DECIDED,2023-12-08 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_100,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_1,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_104,DECIDED,2019-10-31 00:00:00+00:00,0.0
+dpa_Persónuvernd,decision_Iceland_102,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Hungary_3,DECIDED,,0.0
+dpa_Persónuvernd,decision_Iceland_103,DECIDED,,0.0
+dpa_STRING,decision_Hungary_2,DECIDED,,
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,decision_Hungary_4,DECIDED,,
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_7,DECIDED,2020-07-23 00:00:00+00:00,600000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_6,DECIDED,2020-12-09 00:00:00+00:00,20000000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_5,DECIDED,,200000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_8,DECIDED,2020-07-09 00:00:00+00:00,1000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_10,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_9,DECIDED,2020-07-23 00:00:00+00:00,2000000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_11,DECIDED,2020-03-09 00:00:00+00:00,300000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_12,DECIDED,,
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_13,DECIDED,2020-11-18 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_14,DECIDED,,0.0
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,decision_Hungary_15,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_17,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_16,DECIDED,2020-12-16 00:00:00+00:00,0.0
+dpa_Hungarian_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_18,DECIDED,2023-06-22 00:00:00+00:00,80000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_20,DECIDED,,0.0
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,decision_Hungary_19,DECIDED,,
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_21,DECIDED,2022-02-08 00:00:00+00:00,1000000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_22,DECIDED,2022-03-02 00:00:00+00:00,6000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_23,DECIDED,2022-03-02 00:00:00+00:00,5000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_24,DECIDED,,
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_26,DECIDED,2021-06-18 00:00:00+00:00,10000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_25,DECIDED,,3000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_28,DECIDED,,500000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_31,DECIDED,2023-04-06 00:00:00+00:00,0.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_30,DECIDED,2021-09-23 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_27,DECIDED,2022-03-29 00:00:00+00:00,500000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_29,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_32,DECIDED,2022-04-22 00:00:00+00:00,3000000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_33,DECIDED,,20000000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_34,DECIDED,2020-12-16 00:00:00+00:00,35000000.0
+dpa_STRING,decision_Hungary_37,DECIDED,,
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_35,DECIDED,2022-09-12 00:00:00+00:00,30000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_36,DECIDED,2022-02-11 00:00:00+00:00,10000000.0
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,decision_Hungary_40,DECIDED,2021-03-24 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_39,DECIDED,2021-10-27 00:00:00+00:00,5000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_43,DECIDED,2023-11-30 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_41,DECIDED,2024-12-13 00:00:00+00:00,0.0
+dpa_STRING,decision_Hungary_44,DECIDED,,
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_46,DECIDED,,10000000.0
+dpa_Nemzeti_Adatvédelmi_és_Információszabadság_Hatóság,decision_Hungary_42,DECIDED,,10000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_45,DECIDED,,80000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_47,DECIDED,,600000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_48,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Hungary_50,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_49,DECIDED,2021-08-12 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_55,DECIDED,2024-06-07 00:00:00+00:00,0.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_53,DECIDED,,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_54,DECIDED,2023-09-06 00:00:00+00:00,0.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_52,DECIDED,,
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_56,DECIDED,2022-08-11 00:00:00+00:00,80000000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_57,DECIDED,,500000.0
+dpa_National_Data_Protection_and_Freedom_of_Information_Authority,decision_Hungary_59,DECIDED,,2000000.0
+dpa_STRING,decision_Hungary_58,DECIDED,,
+dpa_STRING,decision_Greece_1,DECIDED,,1000.0
+dpa_National_Authority_for_Data_Protection_and_Freedom_of_Information,decision_Hungary_60,DECIDED,,0.0
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_3,DECIDED,,5000.0
+dpa_STRING,decision_Greece_2,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_4,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_6,DECIDED,2022-01-13 00:00:00+00:00,0.0
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_8,DECIDED,,25000.0
+dpa_Greek_Data_Protection_Authority,decision_Greece_10,DECIDED,,0.0
+dpa_STRING,decision_Greece_11,DECIDED,,
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_9,DECIDED,,
+dpa_STRING,decision_Greece_12,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_7,DECIDED,,0.0
+dpa_STRING,decision_Greece_15,DECIDED,,
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_16,DECIDED,,10000.0
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_13,DECIDED,2020-03-12 00:00:00+00:00,8000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_17,DECIDED,2020-03-27 00:00:00+00:00,0.0
+dpa_STRING,decision_Greece_14,DECIDED,,6000000.0
+dpa_STRING,decision_Greece_20,DECIDED,,0.0
+dpa_The_Personal_Data_Protection_Authority,decision_Greece_19,DECIDED,2024-01-10 00:00:00+00:00,2000.0
+dpa_STRING,decision_Greece_18,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Greece_24,DECIDED,,
+dpa_STRING,decision_Greece_21,DECIDED,,
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_22,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_25,DECIDED,,45000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_27,DECIDED,,1000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_28,DECIDED,2024-02-28 00:00:00+00:00,2995140.0
+dpa_The_President_of_the_Authority,decision_Greece_23,DECIDED,,3000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_26,DECIDED,,127709.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_29,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_30,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_32,DECIDED,,2000.0
+dpa_Greek_Data_Protection_Authority,decision_Greece_36,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_34,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_33,DECIDED,2022-03-09 00:00:00+00:00,2000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_35,DECIDED,,20000.0
+dpa_STRING,decision_Greece_37,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_39,DECIDED,2025-04-30 00:00:00+00:00,5000.0
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_38,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_42,DECIDED,2024-07-05 00:00:00+00:00,15000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_40,DECIDED,,40000.0
+dpa_NOT_DISCUSSED,decision_Greece_44,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_41,DECIDED,,5000.0
+dpa_STRING,decision_Greece_43,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_46,DECIDED,2021-05-12 00:00:00+00:00,5000.0
+dpa_STRING,decision_Greece_48,DECIDED,,
+dpa_STRING,decision_Greece_49,DECIDED,,
+dpa_Hellenic_Republic_Authority_for_the_Protection_of_Personal_Data,decision_Greece_45,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_47,DECIDED,,
+dpa_STRING,decision_Greece_50,DECIDED,,
+dpa_The_Authority,decision_Greece_51,DECIDED,,15000.0
+dpa_STRING,decision_Greece_52,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Greece_55,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_53,DECIDED,2022-04-29 00:00:00+00:00,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_54,DECIDED,,0.0
+dpa_STRING,decision_Greece_57,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Greece_58,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_59,DECIDED,2023-06-26 00:00:00+00:00,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_56,DECIDED,2022-07-19 00:00:00+00:00,20000.0
+dpa_NOT_DISCUSSED,decision_Greece_61,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_60,DECIDED,,25000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_63,DECIDED,,0.0
+dpa_STRING,decision_Greece_64,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Greece_67,DECIDED,,0.0
+dpa_Data_Protection_Authority,decision_Greece_69,DECIDED,2024-09-16 00:00:00+00:00,1400.0
+dpa_NOT_DISCUSSED,decision_Greece_70,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_72,DECIDED,,0.0
+dpa_The_Personal_Data_Protection_Authority,decision_Greece_71,DECIDED,,1000.0
+dpa_NOT_DISCUSSED,decision_Greece_74,DECIDED,,0.0
+dpa_NOT_DISCUSSED,decision_Greece_75,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_73,DECIDED,,
+dpa_NOT_DISCUSSED,decision_Greece_79,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_80,DECIDED,,
+dpa_STRING,decision_Greece_76,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_78,DECIDED,2023-11-08 00:00:00+00:00,60000.0
+dpa_STRING,decision_Greece_77,DECIDED,,20000.0
+dpa_The_Personal_Data_Protection_Authority,decision_Greece_81,DECIDED,,1000.0
+dpa_STRING,decision_Greece_83,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_82,DECIDED,2024-10-11 00:00:00+00:00,15000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_84,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_85,DECIDED,2022-07-21 00:00:00+00:00,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_86,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_89,DECIDED,,
+dpa_STRING,decision_Greece_87,DECIDED,,
+dpa_Αρχή_Προστασίας_Δεδομένων_Προσωπικού_Χαρακτήρα,decision_Greece_88,DECIDED,2020-10-12 00:00:00+00:00,
+dpa_Personal_Data_Protection_Authority,decision_Greece_91,DECIDED,2024-10-31 00:00:00+00:00,5000.0
+dpa_STRING,decision_Greece_92,DECIDED,,10000.0
+dpa_STRING,decision_Greece_90,DECIDED,,150000.0
+dpa_STRING,decision_Greece_93,DECIDED,,
+dpa_STRING,decision_Greece_94,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_95,DECIDED,,
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_96,DECIDED,,3000.0
+dpa_STRING,decision_Greece_98,DECIDED,,
+dpa_Greek_Data_Protection_Authority,decision_Greece_100,DECIDED,2019-12-19 00:00:00+00:00,150000.0
+dpa_STRING,decision_Greece_97,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_99,DECIDED,,50000.0
+dpa_NOT_MENTIONED,decision_Greece_101,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_103,DECIDED,2024-01-29 00:00:00+00:00,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_106,DECIDED,2023-06-13 00:00:00+00:00,
+dpa_Personal_Data_Protection_Authority,decision_Greece_102,DECIDED,,
+dpa_STRING,decision_Greece_105,DECIDED,,1000.0
+dpa_STRING,decision_Greece_107,DECIDED,,
+dpa_Hellenic_Data_Protection_Authority,decision_Greece_108,DECIDED,,15000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_109,DECIDED,,
+dpa_STRING,decision_Greece_104,DECIDED,,20000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_111,DECIDED,2022-09-14 00:00:00+00:00,3000.0
+dpa_STRING,decision_Greece_110,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_113,DECIDED,2024-12-18 00:00:00+00:00,10000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_114,DECIDED,,20000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_115,DECIDED,2024-12-27 00:00:00+00:00,0.0
+dpa_STRING,decision_Greece_120,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_117,DECIDED,,
+dpa_Authority_for_the_Protection_of_Personal_Data,decision_Greece_118,DECIDED,,
+dpa_STRING,decision_Greece_119,DECIDED,,
+dpa_Personal_Data_Protection_Authority,decision_Greece_116,DECIDED,2021-12-29 00:00:00+00:00,75000.0
+dpa_STRING,decision_Greece_121,DECIDED,,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_122,DECIDED,2024-07-05 00:00:00+00:00,15000.0
+dpa_Bayerisches_Landesamt_für_Datenschutzaufsicht,decision_Germany_1,DECIDED,2023-12-21 00:00:00+00:00,0.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_123,DECIDED,,150000.0
+dpa_Personal_Data_Protection_Authority,decision_Greece_124,DECIDED,2020-04-08 00:00:00+00:00,0.0
+dpa_STRING,decision_Germany_4,DECIDED,,
+dpa_STRING,decision_Germany_5,DECIDED,,
+dpa_STRING,decision_Germany_2,DECIDED,,0.0
+dpa_STRING,decision_Germany_6,DECIDED,,
+dpa_Bavarian_State_Office_for_Data_Protection_Supervision,decision_Germany_3,DECIDED,,0.0
+dpa_Der_Bundesbeauftragte_für_den_Datenschutz_und_die_Informationsfreiheit_(BfDI),decision_Germany_8,DECIDED,,45000000.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_9,DECIDED,,215000.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_10,DECIDED,,525000.0
+dpa_Bundesbeauftragter_für_den_Datenschutz_und_die_Informationsfreiheit_(BfDI),decision_Germany_7,DECIDED,,0.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_11,DECIDED,,300000.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_14,DECIDED,2022-04-26 00:00:00+00:00,0.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_13,DECIDED,,0.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_12,DECIDED,,
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_15,DECIDED,2023-09-19 00:00:00+00:00,0.0
+dpa_Berlin_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_16,DECIDED,,0.0
+dpa_Conference_of_the_Independent_Data_Protection_Authorities_of_Bund_and_the_Länder,decision_Germany_18,DECIDED,2021-03-15 00:00:00+00:00,0.0
+dpa_The_Hessian_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_20,DECIDED,2021-11-19 00:00:00+00:00,0.0
+dpa_STRING,decision_Germany_17,DECIDED,,
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_21,DECIDED,,0.0
+dpa_Hessian_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_19,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_23,DECIDED,,75000.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_22,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_25,DECIDED,,
+dpa_HmbBfDI,decision_Germany_26,DECIDED,,1000.0
+dpa_Der_Hamburgische_Beauftragte_für_Datenschutz_und_Informationsfreiheit_(HmbBfDI),decision_Germany_27,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_29,DECIDED,,
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_24,DECIDED,,
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_28,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_31,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information_(HmbBfDI),decision_Germany_30,DECIDED,2020-10-01 00:00:00+00:00,35258707.95
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_32,DECIDED,,900000.0
+dpa_The_Hamburg_representative_for_Data_protection_and_freedom_of_information,decision_Germany_34,DECIDED,,0.0
+dpa_Hamburg_Commissioner_for_Data_Protection_and_Freedom_of_Information,decision_Germany_33,DECIDED,,901388.84
+dpa_The_State_Commissioner_for_Data_Protection_Lower_Saxony,decision_Germany_36,DECIDED,,900000.0
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_Niedersachsen,decision_Germany_35,DECIDED,,0.0
+dpa_State_Labor_Court_of_Baden-Württemberg,decision_Germany_38,DECIDED,,
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_und_die_Informationsfreiheit_Baden-Württemberg,decision_Germany_40,DECIDED,,300000.0
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_Niedersachsen_(LfD_Lower_Saxony),decision_Germany_37,DECIDED,,10400000.0
+dpa_The_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_Baden-Württemberg,decision_Germany_41,DECIDED,2018-11-21 00:00:00+00:00,20000.0
+dpa_Der_Landesbeauftragte_für_den_Datenschutz_und_die_Informationsfreiheit_Baden-Württemberg,decision_Germany_39,DECIDED,,55000.0
+dpa_Bremen_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_(LfDI),decision_Germany_43,DECIDED,,0.0
+dpa_The_State_Commissioner_for_Data_Protection_Lower_Saxony,decision_Germany_44,DECIDED,,1100000.0
+dpa_The_State_Commissioner_for_Data_Protection_and_Freedom_of_Information_Bremen,decision_Germany_42,DECIDED,,
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_2,DECIDED,,0.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_3,DECIDED,2023-09-07 00:00:00+00:00,0.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_1,DECIDED,,0.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_6,DECIDED,2022-11-24 00:00:00+00:00,600000.0
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_5,DECIDED,2023-07-20 00:00:00+00:00,0.0
+dpa_STRING,decision_France_4,DECIDED,,
+dpa_National_Commission_for_Computing_and_Liberties,decision_France_8,DECIDED,,0.0
+dpa_National_Commission_for_Computing_and_Liberties,decision_France_7,DECIDED,2022-12-19 00:00:00+00:00,60000000.0
+dpa_National_Commission_for_Information_Technology_and_Civil_Liberties,decision_France_9,DECIDED,2019-11-12 00:00:00+00:00,0.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés_(CNIL),decision_France_10,DECIDED,2020-07-15 00:00:00+00:00,0.0
+dpa_National_Commission_for_Informatics_and_Freedoms_(CNIL),decision_France_11,DECIDED,2021-11-26 00:00:00+00:00,0.0
+dpa_National_Commission_for_Informatics_and_Freedoms,decision_France_12,DECIDED,2021-10-11 00:00:00+00:00,0.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_14,DECIDED,,400000.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_13,DECIDED,,50000000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_19,DECIDED,,
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_18,DECIDED,2020-11-18 00:00:00+00:00,800000.0
+dpa_NOT_MENTIONED,decision_France_23,DECIDED,,0.0
+dpa_National_Commission_for_Informatics_and_Freedoms,decision_France_21,DECIDED,2020-12-07 00:00:00+00:00,3000.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_22,DECIDED,,6000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_20,DECIDED,2020-12-07 00:00:00+00:00,35000000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_24,DECIDED,2020-12-08 00:00:00+00:00,20000.0
+dpa_National_Commission_for_Informatics_and_Freedoms,decision_France_26,DECIDED,,
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_27,DECIDED,,
+dpa_STRING,decision_France_28,DECIDED,,
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_25,DECIDED,2020-05-25 00:00:00+00:00,0.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_29,DECIDED,2021-07-20 00:00:00+00:00,1750000.0
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_30,DECIDED,,400000.0
+dpa_National_Commission_for_Informatics_and_Freedoms,decision_France_31,DECIDED,,3000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_32,DECIDED,2021-10-29 00:00:00+00:00,400000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_33,DECIDED,2021-12-28 00:00:00+00:00,180000.0
+dpa_Commission_Nationale_de_l’Informatique_et_des_Libertés_(CNIL),decision_France_35,DECIDED,2021-12-30 00:00:00+00:00,120000.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_37,DECIDED,2022-04-15 00:00:00+00:00,1500000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_34,DECIDED,,300000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_36,DECIDED,,
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_39,DECIDED,2022-08-03 00:00:00+00:00,600000.0
+dpa_STRING,decision_France_41,DECIDED,,
+dpa_National_Commission_for_Computing_and_Liberties,decision_France_38,DECIDED,,1000000.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_44,DECIDED,2022-12-20 00:00:00+00:00,0.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_40,DECIDED,,
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_45,DECIDED,2022-12-29 00:00:00+00:00,8000000.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_43,DECIDED,2022-11-30 00:00:00+00:00,300000.0
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_42,DECIDED,,
+dpa_STRING,decision_France_46,DECIDED,,
+dpa_STRING,decision_France_47,DECIDED,,
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_49,DECIDED,,0.0
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_51,DECIDED,2023-11-09 00:00:00+00:00,0.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_52,DECIDED,2023-12-12 00:00:00+00:00,5000.0
+dpa_National_Commission_for_Computing_and_Liberties,decision_France_48,DECIDED,,40000000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_50,DECIDED,2023-10-12 00:00:00+00:00,600000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_53,DECIDED,2023-12-27 00:00:00+00:00,32000000.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_54,DECIDED,2023-12-29 00:00:00+00:00,105000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_55,DECIDED,2023-12-29 00:00:00+00:00,10000000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_57,DECIDED,2023-06-15 00:00:00+00:00,0.0
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_56,DECIDED,2023-12-29 00:00:00+00:00,75000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_58,DECIDED,,0.0
+dpa_National_Commission_for_Information_Technology_and_Liberties,decision_France_59,DECIDED,2023-07-20 00:00:00+00:00,0.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_61,DECIDED,2024-01-31 00:00:00+00:00,310000.0
+dpa_NOT_DISCUSSED,decision_France_64,DECIDED,,0.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_60,DECIDED,2024-01-31 00:00:00+00:00,100000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés,decision_France_63,DECIDED,2024-09-05 00:00:00+00:00,800000.0
+dpa_NOT_DISCUSSED,decision_France_67,DECIDED,,0.0
+dpa_National_Commission_for_Information_Technology_and_Freedoms,decision_France_62,DECIDED,,525000.0
+dpa_STRING,decision_France_65,DECIDED,,
+dpa_NOT_DISCUSSED,decision_France_70,DECIDED,,
+dpa_Commission_nationale_de_l'informatique_et_des_libertés,decision_France_66,DECIDED,,240000.0
+dpa_Commission_Nationale_de_l'Informatique_et_des_Libertés_(CNIL),decision_France_69,DECIDED,,225000.0
+dpa_National_Commission_for_Information_Technology_and_Civil_Liberties,decision_France_68,DECIDED,2025-05-15 00:00:00+00:00,80000.0
+dpa_NOT_DISCUSSED,decision_Finland_3,DECIDED,,
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_2,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Supervisor,decision_Finland_6,DECIDED,,0.0
+dpa_Data_Protection_Commissioner_and_Sanctions_Board,decision_Finland_4,DECIDED,,440000.0
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_7,DECIDED,,0.0
+dpa_STRING,decision_Finland_5,DECIDED,,
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_8,DECIDED,,0.0
+dpa_Data_Protection_Supervisor,decision_Finland_12,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Ombudsman,decision_Finland_9,DECIDED,,608000.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_13,DECIDED,,0.0
+dpa_Finnish_Data_Protection_Ombudsman,decision_Finland_10,DECIDED,,608000.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_11,DECIDED,,122000.0
+dpa_STRING,decision_Finland_14,DECIDED,,
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_15,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Officer,decision_Finland_16,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Officer,decision_Finland_17,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_19,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_18,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_20,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Ombudsman_(Finland),decision_Finland_21,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_23,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Ombudsman,decision_Finland_22,DECIDED,,0.0
+dpa_NOT_MENTIONED,decision_Finland_26,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_25,DECIDED,,0.0
+dpa_Data_Protection_Commissioner,decision_Finland_24,DECIDED,,0.0
+dpa_NOT_DISCUSSED,decision_Finland_28,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Supervisor_(EDPS),decision_Finland_27,DECIDED,,0.0
+dpa_Finnish_Data_Protection_Commissioner,decision_Finland_29,DECIDED,,0.0
+dpa_STRING,decision_Finland_31,DECIDED,,
+dpa_Deputy_Data_Protection_Commissioner's_Office,decision_Finland_32,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_30,DECIDED,,25000.0
+dpa_Data_Protection_Commissioner,decision_Finland_34,DECIDED,,6500.0
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_33,DECIDED,,0.0
+dpa_Finnish_Data_Protection_Authority,decision_Finland_35,DECIDED,,0.0
+dpa_STRING,decision_Finland_37,DECIDED,,
+dpa_Suomen_tietosuojavaltuutettu,decision_Finland_36,DECIDED,,0.0
+dpa_Finnish_Data_Protection_Commissioner,decision_Finland_38,DECIDED,,52000.0
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_42,DECIDED,,0.0
+dpa_Data_Protection_Commissioner_(Finland),decision_Finland_41,DECIDED,,0.0
+dpa_Data_Protection_Commissioner,decision_Finland_40,DECIDED,,
+dpa_Deputy_Data_Protection_Commissioner,decision_Finland_43,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner_(Finland),decision_Finland_39,DECIDED,,0.0
+dpa_Office_of_the_Data_Protection_Commissioner,decision_Finland_44,DECIDED,2022-05-09 00:00:00+00:00,85000.0

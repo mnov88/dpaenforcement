@@ -6,9 +6,9 @@
       "country_group",
       "decision_year"
     ],
-    "source_file": "outputs/cleaned_wide.csv",
-    "row_count": 999,
-    "column_count": 341
+    "source_file": "outputs/cleaned_wide_latest.csv",
+    "row_count": 1998,
+    "column_count": 393
   },
   "legal_semantics": {
     "typed_missingness": {
@@ -78,9 +78,9 @@
     "q57_rights_violated_exclusivity_conflict": "Data subject rights violated (binary indicators) - conflicting options flag"
   },
   "data_quality": {
-    "schema_echo_cases": 388,
-    "missing_dates": 863,
-    "zero_fines": 299
+    "schema_echo_cases": 861,
+    "missing_dates": 1504,
+    "zero_fines": 590
   },
   "usage_notes": [
     "Use country_group and decision_year for efficient filtering",

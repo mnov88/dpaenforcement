@@ -85,16 +85,26 @@ class GraphExporter(BaseExporter):
                 n_principles = row.get('n_principles_violated', 0)
                 n_principles_int = int(n_principles) if pd.notna(n_principles) else 0
 
+                # Handle nullable booleans safely
+                breach_case_val = row.get('breach_case', False)
+                breach_case = None if pd.isna(breach_case_val) else bool(breach_case_val)
+
+                severity_val = row.get('severity_measures_present', False)
+                severity_measures = None if pd.isna(severity_val) else bool(severity_val)
+
+                cross_border_val = self._is_cross_border(row)
+                cross_border = None if pd.isna(cross_border_val) else bool(cross_border_val)
+
                 self.dpa_decision_graph.add_node(
                     decision_id,
                     node_type='decision',
                     year=decision_year_int,
                     quarter=str(row.get('decision_quarter')) if pd.notna(row.get('decision_quarter')) else None,
                     fine_eur=fine_eur_float,
-                    breach_case=bool(row.get('breach_case', False)),
-                    severity_measures=bool(row.get('severity_measures_present', False)),
+                    breach_case=breach_case,
+                    severity_measures=severity_measures,
                     n_principles_violated=n_principles_int,
-                    cross_border=bool(self._is_cross_border(row))
+                    cross_border=cross_border
                 )
 
                 # Add edge between DPA and Decision

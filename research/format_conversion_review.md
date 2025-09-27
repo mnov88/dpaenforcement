@@ -14,6 +14,7 @@
 ### 2. Graph export treats nullable booleans as plain truthy values
 - Node attributes such as `breach_case`, `severity_measures`, and the derived `cross_border` flag coerce nullable booleans via `bool(...)`, which raises on `pd.NA` or silently treats "unknown" as `False`.【F:scripts/export/graph_export.py†L88-L109】
 - Cross-border detection relies on `row.get('q49')`/`row.get('q62')` even though the cleaned dataset exposes `raw_q49`/`raw_q62`, so the per-node `cross_border` attribute never reflects the detected cooperation markers.【F:scripts/export/graph_export.py†L223-L256】
+
 - Impact: exporters either crash on legitimate `pd.NA` values or emit misleading graph attributes, erasing information about uncertain or cross-border cases that analysts rely on.
 
 ### 3. ML export collapses typed missingness and targets during imputation

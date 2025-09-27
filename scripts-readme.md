@@ -163,3 +163,19 @@ Configuration defaults for the above paths are also tracked in `scripts/config.y
 - **Configuration file usage**: `scripts/config.yaml` is not programmatically consumed, so downstream automation must keep CLI flags and config in sync manually.【F:scripts/config.yaml†L1-L16】
 
 Use this guide as the authoritative reference when extending the ingestion/cleaning scripts or wiring them into scheduled jobs.
+
+### Export commands (`scripts/cli.py`)
+
+These commands produce advanced exports described in `exports.md`. Each requires the cleaned wide CSV and optionally the long tables directory.
+
+| Subcommand | Purpose | Key inputs | Outputs / side effects | Example |
+|------------|---------|------------|-------------------------|---------|
+| `export-parquet` | Columnar Parquet datasets with optional partitioning.【F:scripts/cli.py†L251-L258】【F:scripts/cli.py†L136-L146】 | `--wide-csv`, optional `--long-tables-dir`, `--out-dir`, optional `--partition-cols` | Writes partitioned wide dataset and long tables to `out-dir` | `python -m scripts.cli export-parquet --wide-csv outputs/cleaned_wide.csv --long-tables-dir outputs/long_tables --out-dir outputs/parquet --partition-cols country_group,decision_year` |
+| `export-arrow` | Arrow/Feather datasets with embedded metadata.【F:scripts/cli.py†L259-L265】【F:scripts/cli.py†L149-L157】 | `--wide-csv`, optional `--long-tables-dir`, `--out-dir`, optional `--compression` | Writes Arrow/Feather files to `out-dir` | `python -m scripts.cli export-arrow --wide-csv outputs/cleaned_wide.csv --long-tables-dir outputs/long_tables --out-dir outputs/arrow --compression zstd` |
+| `export-graph` | Graph/network formats (GraphML/GML, CSV edge lists, Neo4j import).【F:scripts/cli.py†L266-L271】【F:scripts/cli.py†L160-L168】 | `--wide-csv`, optional `--long-tables-dir`, `--out-dir` | Writes GraphML/GML, adjacency matrices, Neo4j CSVs | `python -m scripts.cli export-graph --wide-csv outputs/cleaned_wide.csv --long-tables-dir outputs/long_tables --out-dir outputs/graph` |
+| `export-stats` | R/Stata/SPSS exports with codebook and templates.【F:scripts/cli.py†L272-L278】【F:scripts/cli.py†L171-L181】 | `--wide-csv`, optional `--long-tables-dir`, `--out-dir`, optional `--formats` | Writes statistical package files and loaders | `python -m scripts.cli export-stats --wide-csv outputs/cleaned_wide.csv --long-tables-dir outputs/long_tables --out-dir outputs/stats --formats r,stata,spss` |
+| `export-ml` | ML-ready features, splits, and optional text embeddings.【F:scripts/cli.py†L279-L286】【F:scripts/cli.py†L184-L197】 | `--wide-csv`, optional `--long-tables-dir`, `--out-dir`, optional `--embeddings-model --test-size --random-state` | Writes train/test/validation CSV/Parquet and metadata | `python -m scripts.cli export-ml --wide-csv outputs/cleaned_wide.csv --long-tables-dir outputs/long_tables --out-dir outputs/ml --embeddings-model all-MiniLM-L6-v2 --test-size 0.2 --random-state 42` |
+
+Notes:
+- Output directory names shown (`outputs/parquet`, `outputs/arrow`, `outputs/graph`, `outputs/stats`, `outputs/ml`) match the repository’s current structure. You can provide any path via `--out-dir`.
+- If optional dependencies are missing (e.g., `pyarrow`, `networkx`, `sentence-transformers`), exporters gracefully degrade as documented in `exports.md`.

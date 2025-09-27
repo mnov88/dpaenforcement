@@ -1,0 +1,2 @@
+base: /Users/milos/Desktop/dpaenforcement/analyzed-decisions/master-analyzed-data-unclean.csv rows=999
+add:  /Users/milos/Desktop/dpaenforcement/raw-data/gdpr_fines_additional_data_PLEASE_ADD_TO_MASTER.csv rows=999

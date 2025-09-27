@@ -9,7 +9,7 @@ from scripts.clean.enum_validate import EnumWhitelist
 from scripts.parser.validators import dedupe_preserve_order
 from scripts.parser.ingest import parse_record
 
-SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:")
+SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:", "FORMAT:")
 
 
 def _is_schema_echo(value: str) -> bool:

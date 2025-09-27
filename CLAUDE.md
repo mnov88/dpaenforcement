@@ -184,6 +184,16 @@ python3 -m pytest tests/test_parser_and_clean.py
 - **Splits**: Stratified train/test/validation preserving legal distributions
 - **Templates**: Ready-to-use analysis scripts for common ML tasks
 
+### Critical Data Recovery (2025-09-27)
+
+**IMPORTANT**: A major data recovery was completed where 36 out of 68 questionnaire variables were previously missing from exports due to a limitation in `scripts/clean/wide_output.py`. The `RAW_QUESTION_EXPORT` tuple was updated to include all 68 questions, recovering critical timing variables:
+
+- **Q15**: Investigation initiation (COMPLAINT, BREACH_NOTIFICATION, EX_OFFICIO_DPA_INITIATIVE)
+- **Q19**: 72-hour timing compliance (YES_WITHIN_72H, NO_LATE, TIMING_DISPUTED)
+- **Q20**: Delay amounts (1_TO_7_DAYS, 1_TO_4_WEEKS, 1_TO_6_MONTHS, OVER_6_MONTHS)
+
+Plus 33 other variables including defendant profiles, breach characteristics, text fields, and legal significance markers. All exports now contain the complete 68-variable dataset enabling full academic analysis of GDPR breach notification compliance and enforcement patterns.
+
 ### Testing Strategy
 - Tests focus on parser correctness and data integrity
 - Use `test_parser_and_clean.py` for core functionality

@@ -2,8 +2,8 @@
   "dataset_info": {
     "title": "GDPR DPA Decisions Analysis Dataset",
     "description": "Structured dataset of GDPR enforcement decisions with 68-field questionnaire responses",
-    "observations": 1998,
-    "variables": 321,
+    "observations": 999,
+    "variables": 357,
     "legal_framework": "EU GDPR (Regulation 2016/679)",
     "data_collection_period": "2018.0 - 2025.0"
   },
@@ -35,8 +35,8 @@
     "ingest_missing_questions": {
       "label": "Ingest Missing Questions",
       "type": "unknown",
-      "missing_count": 1653,
-      "missing_rate": 0.8273273273273273
+      "missing_count": 791,
+      "missing_rate": 0.7917917917917918
     },
     "ingest_warning_count": {
       "label": "Ingest Warning Count",
@@ -47,41 +47,23 @@
     "ingest_warnings": {
       "label": "Ingest Warnings",
       "type": "unknown",
-      "missing_count": 1653,
-      "missing_rate": 0.8273273273273273
+      "missing_count": 791,
+      "missing_rate": 0.7917917917917918
     },
     "country_code": {
       "label": "ISO country code of deciding authority",
       "type": "categorical",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
         "ES": 594,
-        "IT": 284,
         "RO": 151,
-        "UNCLEAR": 117,
-        "IS": 96,
-        "GR": 80,
-        "NO": 75,
         "SI": 68,
-        "PL": 63,
-        "FR": 59,
-        "HU": 52,
         "SE": 49,
         "GB": 40,
-        "DE": 40,
-        "FI": 37,
-        "NL": 37,
-        "LU": 20,
-        "IE": 18,
-        "LT": 9,
-        "LV": 9,
+        "UNCLEAR": 24,
+        "PL": 22,
         "PT": 8,
-        "MT": 6,
-        "NOT_DISCUSSED": 1,
-        "EU": 1,
-        "COUNTRY OF THE DECIDING AUTHORITY: IRELAND (IE)": 1,
-        "EE": 1,
         "SK": 1
       }
     },
@@ -91,18 +73,18 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "country_group": {
       "label": "Geographic grouping (EU/EEA/NON_EEA)",
       "type": "categorical",
-      "missing_count": 253,
-      "missing_rate": 0.12662662662662663,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "EU": 1586,
-        "NON_EEA": 159,
+        "EU": 893,
+        "NON_EEA": 64,
         "EEA": 0
       },
       "levels": [
@@ -126,63 +108,63 @@
     "dpa_name_raw": {
       "label": "Dpa Name Raw",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "dpa_name_canonical": {
       "label": "Standardized DPA name",
       "type": "string",
-      "missing_count": 222,
-      "missing_rate": 0.1111111111111111
+      "missing_count": 103,
+      "missing_rate": 0.1031031031031031
     },
     "decision_date_raw": {
       "label": "Decision Date Raw",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "decision_date": {
       "label": "Date of decision issuance",
       "type": "date",
-      "missing_count": 1504,
-      "missing_rate": 0.7527527527527528
+      "missing_count": 863,
+      "missing_rate": 0.8638638638638638
     },
     "decision_date_status": {
       "label": "Status of decision_date information",
       "type": "categorical",
-      "missing_count": 867,
-      "missing_rate": 0.4339339339339339,
+      "missing_count": 403,
+      "missing_rate": 0.4034034034034034,
       "value_counts": {
-        "NOT_DISCUSSED": 637,
-        "DISCUSSED": 494
+        "NOT_DISCUSSED": 460,
+        "DISCUSSED": 136
       }
     },
     "decision_date_error": {
       "label": "Decision Date Error",
       "type": "unknown",
-      "missing_count": 1212,
-      "missing_rate": 0.6066066066066066
+      "missing_count": 638,
+      "missing_rate": 0.6386386386386387
     },
     "decision_year": {
       "label": "Year of decision",
       "type": "numeric",
-      "missing_count": 1504,
-      "missing_rate": 0.7527527527527528,
+      "missing_count": 863,
+      "missing_rate": 0.8638638638638638,
       "min": 2018.0,
       "max": 2025.0,
-      "mean": 2022.0,
-      "std": 1.5299577742784443
+      "mean": 2021.889705882353,
+      "std": 1.6315082507034064
     },
     "decision_quarter": {
       "label": "Quarter of decision year",
       "type": "categorical",
-      "missing_count": 1504,
-      "missing_rate": 0.7527527527527528,
+      "missing_count": 863,
+      "missing_rate": 0.8638638638638638,
       "value_counts": {
-        "Q4": 162,
-        "Q1": 130,
-        "Q2": 102,
-        "Q3": 100
+        "Q1": 42,
+        "Q4": 39,
+        "Q2": 34,
+        "Q3": 21
       },
       "levels": [
         "Q1",
@@ -194,12 +176,12 @@
     "fine_eur": {
       "label": "Administrative fine amount (EUR)",
       "type": "numeric",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922,
+      "missing_count": 174,
+      "missing_rate": 0.17417417417417416,
       "min": 0.0,
-      "max": 530000000.0,
-      "mean": 1629599.8076858972,
-      "std": 17037947.841786917
+      "max": 75000000.0,
+      "mean": 389547.2171636364,
+      "std": 3697050.2053227993
     },
     "fine_numeric_valid": {
       "label": "Fine Numeric Valid",
@@ -213,15 +195,15 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1028,
-        "1": 970
+        "1": 526,
+        "0": 473
       }
     },
     "fine_log1p": {
       "label": "Fine Log1P",
       "type": "unknown",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922
+      "missing_count": 174,
+      "missing_rate": 0.17417417417417416
     },
     "fine_outlier_flag": {
       "label": "Fine Outlier Flag",
@@ -232,35 +214,35 @@
     "fine_raw": {
       "label": "Fine Raw",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "fine_status": {
       "label": "Status of fine information",
       "type": "categorical",
-      "missing_count": 22,
-      "missing_rate": 0.011011011011011011,
+      "missing_count": 5,
+      "missing_rate": 0.005005005005005005,
       "value_counts": {
-        "DISCUSSED": 1560,
-        "NOT_MENTIONED": 416,
+        "DISCUSSED": 825,
+        "NOT_MENTIONED": 169,
         "PARSE_ERROR": 0
       }
     },
     "fine_error": {
       "label": "Fine Error",
       "type": "unknown",
-      "missing_count": 1998,
+      "missing_count": 999,
       "missing_rate": 1.0
     },
     "turnover_eur": {
       "label": "Annual turnover mentioned (EUR)",
       "type": "numeric",
-      "missing_count": 1802,
-      "missing_rate": 0.9019019019019019,
+      "missing_count": 913,
+      "missing_rate": 0.913913913913914,
       "min": 0.0,
       "max": 964711000000.0,
-      "mean": 18222044243.52209,
-      "std": 85240360205.29376
+      "mean": 17578699085.469303,
+      "std": 105462080364.9005
     },
     "turnover_numeric_valid": {
       "label": "Turnover Numeric Valid",
@@ -277,8 +259,8 @@
     "turnover_log1p": {
       "label": "Turnover Log1P",
       "type": "unknown",
-      "missing_count": 1802,
-      "missing_rate": 0.9019019019019019
+      "missing_count": 913,
+      "missing_rate": 0.913913913913914
     },
     "turnover_outlier_flag": {
       "label": "Turnover Outlier Flag",
@@ -289,49 +271,49 @@
     "turnover_raw": {
       "label": "Turnover Raw",
       "type": "unknown",
-      "missing_count": 1048,
-      "missing_rate": 0.5245245245245245
+      "missing_count": 576,
+      "missing_rate": 0.5765765765765766
     },
     "turnover_status": {
       "label": "Status of turnover information",
       "type": "categorical",
-      "missing_count": 56,
-      "missing_rate": 0.028028028028028028,
+      "missing_count": 18,
+      "missing_rate": 0.018018018018018018,
       "value_counts": {
-        "NOT_MENTIONED": 1743,
-        "DISCUSSED": 196,
-        "PARSE_ERROR": 3
+        "NOT_MENTIONED": 895,
+        "DISCUSSED": 86,
+        "PARSE_ERROR": 0
       }
     },
     "turnover_error": {
       "label": "Turnover Error",
       "type": "unknown",
-      "missing_count": 1995,
-      "missing_rate": 0.9984984984984985
+      "missing_count": 999,
+      "missing_rate": 1.0
     },
     "fine_to_turnover_ratio": {
       "label": "Fine To Turnover Ratio",
       "type": "unknown",
-      "missing_count": 1810,
-      "missing_rate": 0.9059059059059059
+      "missing_count": 919,
+      "missing_rate": 0.91991991991992
     },
     "isic_code": {
       "label": "Isic Code",
       "type": "unknown",
-      "missing_count": 842,
-      "missing_rate": 0.4214214214214214
+      "missing_count": 430,
+      "missing_rate": 0.43043043043043044
     },
     "isic_desc": {
       "label": "Isic Desc",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 792,
+      "missing_rate": 0.7927927927927928
     },
     "isic_section": {
       "label": "Isic Section",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 792,
+      "missing_rate": 0.7927927927927928
     },
     "n_principles_discussed": {
       "label": "Number of Article 5 principles discussed",
@@ -357,8 +339,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "1": 1113,
-        "0": 885
+        "1": 551,
+        "0": 448
       }
     },
     "remedy_only_case": {
@@ -373,15 +355,15 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1790,
-        "1": 208
+        "0": 902,
+        "1": 97
       }
     },
     "q36_text": {
       "label": "Q36 Text",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q36_lang": {
       "label": "Q36 Lang",
@@ -398,8 +380,8 @@
     "q52_text": {
       "label": "Q52 Text",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q52_lang": {
       "label": "Q52 Lang",
@@ -416,8 +398,8 @@
     "q67_text": {
       "label": "Q67 Text",
       "type": "unknown",
-      "missing_count": 84,
-      "missing_rate": 0.042042042042042045
+      "missing_count": 45,
+      "missing_rate": 0.04504504504504504
     },
     "q67_lang": {
       "label": "Q67 Lang",
@@ -434,8 +416,8 @@
     "q68_text": {
       "label": "Q68 Text",
       "type": "unknown",
-      "missing_count": 342,
-      "missing_rate": 0.17117117117117117
+      "missing_count": 208,
+      "missing_rate": 0.2082082082082082
     },
     "q68_lang": {
       "label": "Q68 Lang",
@@ -458,200 +440,416 @@
     "schema_echo_fields": {
       "label": "Schema Echo Fields",
       "type": "unknown",
-      "missing_count": 1237,
-      "missing_rate": 0.6191191191191191
+      "missing_count": 611,
+      "missing_rate": 0.6116116116116116
     },
     "raw_q1": {
       "label": "Raw Q1",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q2": {
+      "label": "Raw Q2",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q3": {
+      "label": "Raw Q3",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q4": {
       "label": "Raw Q4",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q5": {
       "label": "Raw Q5",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q6": {
+      "label": "Raw Q6",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q7": {
+      "label": "Raw Q7",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q8": {
+      "label": "Raw Q8",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q9": {
+      "label": "Raw Q9",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q10": {
+      "label": "Raw Q10",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q11": {
+      "label": "Raw Q11",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q12": {
+      "label": "Raw Q12",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q13": {
+      "label": "Raw Q13",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q14": {
+      "label": "Raw Q14",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q15": {
+      "label": "Raw Q15",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q16": {
       "label": "Raw Q16",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q17": {
       "label": "Raw Q17",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q18": {
       "label": "Raw Q18",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q19": {
+      "label": "Raw Q19",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q20": {
+      "label": "Raw Q20",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q21": {
       "label": "Raw Q21",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q22": {
+      "label": "Raw Q22",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q23": {
+      "label": "Raw Q23",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q24": {
+      "label": "Raw Q24",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q25": {
+      "label": "Raw Q25",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q26": {
       "label": "Raw Q26",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q27": {
       "label": "Raw Q27",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q28": {
+      "label": "Raw Q28",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q29": {
+      "label": "Raw Q29",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q30": {
       "label": "Raw Q30",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q31": {
       "label": "Raw Q31",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q32": {
       "label": "Raw Q32",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q33": {
       "label": "Raw Q33",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q34": {
       "label": "Raw Q34",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q35": {
       "label": "Raw Q35",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q36": {
+      "label": "Raw Q36",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q37": {
       "label": "Raw Q37",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q38": {
       "label": "Raw Q38",
       "type": "unknown",
-      "missing_count": 1048,
-      "missing_rate": 0.5245245245245245
+      "missing_count": 576,
+      "missing_rate": 0.5765765765765766
     },
     "raw_q39": {
       "label": "Raw Q39",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q40": {
+      "label": "Raw Q40",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q41": {
       "label": "Raw Q41",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q42": {
       "label": "Raw Q42",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q43": {
+      "label": "Raw Q43",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q44": {
+      "label": "Raw Q44",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q45": {
+      "label": "Raw Q45",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q46": {
       "label": "Raw Q46",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q47": {
+      "label": "Raw Q47",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q48": {
+      "label": "Raw Q48",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q49": {
       "label": "Raw Q49",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q50": {
+      "label": "Raw Q50",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q51": {
+      "label": "Raw Q51",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q52": {
+      "label": "Raw Q52",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q53": {
       "label": "Raw Q53",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q54": {
       "label": "Raw Q54",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q55": {
+      "label": "Raw Q55",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q56": {
       "label": "Raw Q56",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q57": {
       "label": "Raw Q57",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q58": {
       "label": "Raw Q58",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q59": {
       "label": "Raw Q59",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q60": {
       "label": "Raw Q60",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q61": {
       "label": "Raw Q61",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q62": {
       "label": "Raw Q62",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q63": {
+      "label": "Raw Q63",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "raw_q64": {
       "label": "Raw Q64",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q65": {
+      "label": "Raw Q65",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q66": {
+      "label": "Raw Q66",
+      "type": "unknown",
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
+    },
+    "raw_q67": {
+      "label": "Raw Q67",
+      "type": "unknown",
+      "missing_count": 45,
+      "missing_rate": 0.04504504504504504
+    },
+    "raw_q68": {
+      "label": "Raw Q68",
+      "type": "unknown",
+      "missing_count": 208,
+      "missing_rate": 0.2082082082082082
     },
     "q30_discussed_coverage_status": {
       "label": "Article 5 principle discussed: coverage_status",
@@ -659,104 +857,82 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q30_discussed_known": {
       "label": "Article 5 principle discussed: known",
       "type": "binary",
-      "missing_count": 566,
-      "missing_rate": 0.2832832832832833,
+      "missing_count": 325,
+      "missing_rate": 0.3253253253253253,
       "value_counts": {
-        "SECURITY": 226,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 177,
-        "SECURITY,ACCOUNTABILITY": 148,
-        "NONE_DISCUSSED": 110,
-        "ACCOUNTABILITY": 80,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 65,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 57,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 48,
-        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 48,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 47,
-        "DATA_MINIMISATION": 46,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 42,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 31,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 30,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 29,
-        "PURPOSE_LIMITATION": 25,
-        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 14,
-        "PURPOSE_LIMITATION,SECURITY": 14,
-        "STORAGE_LIMITATION": 13,
-        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 13,
-        "ACCURACY": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 11,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION": 11,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 11,
-        "ACCURACY,SECURITY": 8,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 7,
-        "DATA_MINIMISATION,SECURITY": 7,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
-        "ACCURACY,SECURITY,ACCOUNTABILITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 3,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
-        "STORAGE_LIMITATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 136,
+        "SECURITY": 134,
+        "NONE_DISCUSSED": 83,
+        "SECURITY,ACCOUNTABILITY": 50,
+        "DATA_MINIMISATION": 34,
+        "ACCOUNTABILITY": 30,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 23,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 20,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 17,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 14,
+        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 13,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 12,
+        "PURPOSE_LIMITATION": 11,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 7,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 7,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 6,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 6,
+        "DATA_MINIMISATION,SECURITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION": 5,
+        "ACCURACY": 5,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 4,
+        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 4,
+        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
+        "STORAGE_LIMITATION": 3,
+        "PURPOSE_LIMITATION,SECURITY": 3,
+        "ACCURACY,SECURITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
         "PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 2,
+        "ACCURACY,SECURITY,ACCOUNTABILITY": 2,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 2,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
-        "SECURITY,STORAGE_LIMITATION,LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 1,
-        "DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,ACCOUNTABILITY": 1,
-        "STORAGE_LIMITATION,ACCURACY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
         "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,PURPOSE_LIMITATION": 1,
-        "ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_DISCUSSED": 1,
         "ACCOUNTABILITY,SECURITY": 1,
         "SECURITY,STORAGE_LIMITATION,PURPOSE_LIMITATION": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
         "DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_DISCUSSED": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY": 1,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
+        "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 1
       }
     },
     "q30_discussed_unknown": {
       "label": "Article 5 principle discussed: unknown",
       "type": "binary",
-      "missing_count": 1945,
-      "missing_rate": 0.9734734734734735,
+      "missing_count": 983,
+      "missing_rate": 0.983983983983984,
       "value_counts": {
-        "NOT_DISCUSSED": 38,
-        "ACCESS": 7,
-        "INFORMATION_OBLIGATIONS": 3,
+        "NOT_DISCUSSED": 9,
+        "ACCESS": 2,
+        "INFORMATION_OBLIGATIONS": 2,
         "NO": 1,
         "NONE_DISCUSSED LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "NONE_DISCUSSED SECURITY": 1,
-        "INTEGRITY_CONFIDENTIALITY": 1,
-        "Which Article 5 processing principles are discussed in the decision?: LAWFULNESS_FAIRNESS_TRANSPARENCY": 1
+        "NONE_DISCUSSED SECURITY": 1
       }
     },
     "q30_discussed_status": {
@@ -765,9 +941,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1370,
-        "NOT_MENTIONED": 517,
-        "NONE_DISCUSSED": 110,
+        "DISCUSSED": 604,
+        "NOT_MENTIONED": 311,
+        "NONE_DISCUSSED": 83,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -777,88 +953,88 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1997,
+        "0": 998,
         "1": 1
       }
     },
     "q30_discussed_LAWFULNESS_FAIRNESS_TRANSPARENCY": {
       "label": "Article 5 principle discussed: LAWFULNESS_FAIRNESS_TRANSPARENCY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1394,
-        "True": 523
+        "False": 708,
+        "True": 249
       }
     },
     "q30_discussed_PURPOSE_LIMITATION": {
       "label": "Article 5 principle discussed: PURPOSE_LIMITATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1447,
-        "True": 470
+        "False": 808,
+        "True": 149
       }
     },
     "q30_discussed_DATA_MINIMISATION": {
       "label": "Article 5 principle discussed: DATA_MINIMISATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1584,
-        "True": 333
+        "False": 838,
+        "True": 119
       }
     },
     "q30_discussed_ACCURACY": {
       "label": "Article 5 principle discussed: ACCURACY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1781,
-        "True": 136
+        "False": 926,
+        "True": 31
       }
     },
     "q30_discussed_STORAGE_LIMITATION": {
       "label": "Article 5 principle discussed: STORAGE_LIMITATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1769,
-        "True": 148
+        "False": 926,
+        "True": 31
       }
     },
     "q30_discussed_SECURITY": {
       "label": "Article 5 principle discussed: SECURITY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1033,
-        "True": 884
+        "False": 620,
+        "True": 337
       }
     },
     "q30_discussed_ACCOUNTABILITY": {
       "label": "Article 5 principle discussed: ACCOUNTABILITY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1262,
-        "True": 655
+        "False": 764,
+        "True": 193
       }
     },
     "q30_discussed_NONE_DISCUSSED": {
       "label": "Article 5 principle discussed: NONE_DISCUSSED",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1806,
-        "True": 111
+        "False": 873,
+        "True": 84
       }
     },
     "q31_violated_coverage_status": {
@@ -867,110 +1043,74 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q31_violated_known": {
       "label": "Article 5 principle violated: known",
       "type": "binary",
-      "missing_count": 634,
-      "missing_rate": 0.3173173173173173,
+      "missing_count": 339,
+      "missing_rate": 0.33933933933933935,
       "value_counts": {
-        "SECURITY": 229,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 227,
-        "NONE_VIOLATED": 175,
-        "SECURITY,ACCOUNTABILITY": 130,
-        "ACCOUNTABILITY": 81,
-        "DATA_MINIMISATION": 61,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 42,
-        "NOT_DETERMINED": 39,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 27,
-        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 27,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 27,
-        "PURPOSE_LIMITATION": 25,
-        "ACCURACY": 18,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 17,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 16,
-        "STORAGE_LIMITATION": 16,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 15,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 14,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 12,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 9,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 9,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 6,
-        "STORAGE_LIMITATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 5,
-        "DATA_MINIMISATION,SECURITY": 5,
-        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
-        "ACCURACY,SECURITY": 4,
-        "ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 4,
-        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 4,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
-        "STORAGE_LIMITATION,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 3,
-        "DATA_MINIMISATION,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 155,
+        "SECURITY": 131,
+        "NONE_VIOLATED": 123,
+        "SECURITY,ACCOUNTABILITY": 43,
+        "DATA_MINIMISATION": 36,
+        "NOT_DETERMINED": 28,
+        "ACCOUNTABILITY": 28,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 13,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 11,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 10,
+        "PURPOSE_LIMITATION": 9,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 8,
+        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
+        "ACCURACY": 6,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 4,
+        "DATA_MINIMISATION,SECURITY": 3,
         "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 3,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
+        "STORAGE_LIMITATION": 3,
+        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 2,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "ACCURACY,ACCOUNTABILITY": 1,
-        "SECURITY,STORAGE_LIMITATION,LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCURACY": 1,
-        "STORAGE_LIMITATION,ACCURACY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,PURPOSE_LIMITATION": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "ACCURACY,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,NOT_DETERMINED": 1,
+        "ACCURACY,SECURITY,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 2,
+        "ACCURACY,SECURITY": 2,
+        "DATA_MINIMISATION,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY": 1,
-        "ACCOUNTABILITY,SECURITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "DATA_MINIMISATION,STORAGE_LIMITATION": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
         "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,PURPOSE_LIMITATION": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
+        "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
+        "ACCOUNTABILITY,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 1,
+        "PURPOSE_LIMITATION,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,NOT_DETERMINED": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 1,
+        "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 1
       }
     },
     "q31_violated_unknown": {
       "label": "Article 5 principle violated: unknown",
       "type": "binary",
-      "missing_count": 1951,
-      "missing_rate": 0.9764764764764765,
+      "missing_count": 987,
+      "missing_rate": 0.987987987987988,
       "value_counts": {
-        "NOT_DISCUSSED": 35,
-        "ACCESS": 4,
-        "INFORMATION_OBLIGATIONS": 3,
+        "NOT_DISCUSSED": 6,
+        "INFORMATION_OBLIGATIONS": 2,
         "NO": 1,
+        "ACCESS": 1,
         "NOT_DETERMINED LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "NOT_DETERMINED SECURITY": 1,
-        "INTEGRITY_CONFIDENTIALITY": 1,
-        "Which Article 5 principles were found to be violated?: LAWFULNESS_FAIRNESS_TRANSPARENCY": 1
+        "NOT_DETERMINED SECURITY": 1
       }
     },
     "q31_violated_status": {
@@ -979,10 +1119,10 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1191,
-        "NOT_MENTIONED": 590,
-        "NONE_VIOLATED": 175,
-        "NOT_DETERMINED": 39,
+        "DISCUSSED": 516,
+        "NOT_MENTIONED": 329,
+        "NONE_VIOLATED": 123,
+        "NOT_DETERMINED": 28,
         "MIXED_CONTRADICTORY": 3
       }
     },
@@ -992,98 +1132,98 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1995,
+        "0": 996,
         "1": 3
       }
     },
     "q31_violated_LAWFULNESS_FAIRNESS_TRANSPARENCY": {
       "label": "Article 5 principle violated: LAWFULNESS_FAIRNESS_TRANSPARENCY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1469,
-        "True": 448
+        "False": 748,
+        "True": 209
       }
     },
     "q31_violated_PURPOSE_LIMITATION": {
       "label": "Article 5 principle violated: PURPOSE_LIMITATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1690,
-        "True": 227
+        "False": 898,
+        "True": 59
       }
     },
     "q31_violated_DATA_MINIMISATION": {
       "label": "Article 5 principle violated: DATA_MINIMISATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1710,
-        "True": 207
+        "False": 885,
+        "True": 72
       }
     },
     "q31_violated_ACCURACY": {
       "label": "Article 5 principle violated: ACCURACY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1852,
-        "True": 65
+        "False": 938,
+        "True": 19
       }
     },
     "q31_violated_STORAGE_LIMITATION": {
       "label": "Article 5 principle violated: STORAGE_LIMITATION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1826,
-        "True": 91
+        "False": 940,
+        "True": 17
       }
     },
     "q31_violated_SECURITY": {
       "label": "Article 5 principle violated: SECURITY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1322,
-        "True": 595
+        "False": 720,
+        "True": 237
       }
     },
     "q31_violated_ACCOUNTABILITY": {
       "label": "Article 5 principle violated: ACCOUNTABILITY",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1495,
-        "True": 422
+        "False": 833,
+        "True": 124
       }
     },
     "q31_violated_NONE_VIOLATED": {
       "label": "Article 5 principle violated: NONE_VIOLATED",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1739,
-        "True": 178
+        "False": 831,
+        "True": 126
       }
     },
     "q31_violated_NOT_DETERMINED": {
       "label": "Article 5 principle violated: NOT_DETERMINED",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1877,
-        "True": 40
+        "False": 928,
+        "True": 29
       }
     },
     "q32_bases_coverage_status": {
@@ -1092,21 +1232,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q32_bases_known": {
       "label": "Q32 Bases Known",
       "type": "unknown",
-      "missing_count": 992,
-      "missing_rate": 0.4964964964964965
+      "missing_count": 492,
+      "missing_rate": 0.4924924924924925
     },
     "q32_bases_unknown": {
       "label": "Q32 Bases Unknown",
       "type": "unknown",
-      "missing_count": 1637,
-      "missing_rate": 0.8193193193193193
+      "missing_count": 818,
+      "missing_rate": 0.8188188188188188
     },
     "q32_bases_status": {
       "label": "Status of q32_bases information",
@@ -1114,9 +1254,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1246,
-        "NOT_MENTIONED": 634,
-        "NOT_APPLICABLE": 116,
+        "DISCUSSED": 632,
+        "NOT_MENTIONED": 313,
+        "NOT_APPLICABLE": 52,
         "MIXED_CONTRADICTORY": 2
       }
     },
@@ -1129,44 +1269,44 @@
     "q32_bases_CONSENT": {
       "label": "Q32 Bases Consent",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_CONTRACT": {
       "label": "Q32 Bases Contract",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_LEGAL_OBLIGATION": {
       "label": "Q32 Bases Legal Obligation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_VITAL_INTERESTS": {
       "label": "Q32 Bases Vital Interests",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_PUBLIC_TASK": {
       "label": "Q32 Bases Public Task",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_LEGITIMATE_INTERESTS": {
       "label": "Q32 Bases Legitimate Interests",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q32_bases_NONE_DISCUSSED": {
       "label": "Q32 Bases None Discussed",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_coverage_status": {
       "label": "Status of q41_aggrav_coverage information",
@@ -1174,21 +1314,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q41_aggrav_known": {
       "label": "Q41 Aggrav Known",
       "type": "unknown",
-      "missing_count": 586,
-      "missing_rate": 0.2932932932932933
+      "missing_count": 277,
+      "missing_rate": 0.2772772772772773
     },
     "q41_aggrav_unknown": {
       "label": "Q41 Aggrav Unknown",
       "type": "unknown",
-      "missing_count": 1949,
-      "missing_rate": 0.9754754754754755
+      "missing_count": 982,
+      "missing_rate": 0.982982982982983
     },
     "q41_aggrav_status": {
       "label": "Status of q41_aggrav information",
@@ -1196,8 +1336,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1450,
-        "NOT_MENTIONED": 545,
+        "DISCUSSED": 730,
+        "NOT_MENTIONED": 266,
         "MIXED_CONTRADICTORY": 2,
         "NOT_APPLICABLE": 1
       }
@@ -1211,74 +1351,74 @@
     "q41_aggrav_NATURE_GRAVITY_DURATION": {
       "label": "Q41 Aggrav Nature Gravity Duration",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_INTENT_NEGLIGENCE": {
       "label": "Q41 Aggrav Intent Negligence",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_MITIGATION_ACTIONS": {
       "label": "Q41 Aggrav Mitigation Actions",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_TECHNICAL_ORGANIZATIONAL_MEASURES": {
       "label": "Q41 Aggrav Technical Organizational Measures",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_PREVIOUS_INFRINGEMENTS": {
       "label": "Q41 Aggrav Previous Infringements",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_COOPERATION_WITH_AUTHORITY": {
       "label": "Q41 Aggrav Cooperation With Authority",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_DATA_CATEGORIES_AFFECTED": {
       "label": "Q41 Aggrav Data Categories Affected",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_MANNER_BECAME_KNOWN": {
       "label": "Q41 Aggrav Manner Became Known",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_COMPLIANCE_PRIOR_ORDERS": {
       "label": "Q41 Aggrav Compliance Prior Orders",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_CODES_CERTIFICATION": {
       "label": "Q41 Aggrav Codes Certification",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_OTHER_CIRCUMSTANCES": {
       "label": "Q41 Aggrav Other Circumstances",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q41_aggrav_NONE": {
       "label": "Q41 Aggrav None",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_coverage_status": {
       "label": "Status of q42_mitig_coverage information",
@@ -1286,21 +1426,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q42_mitig_known": {
       "label": "Q42 Mitig Known",
       "type": "unknown",
-      "missing_count": 716,
-      "missing_rate": 0.35835835835835833
+      "missing_count": 365,
+      "missing_rate": 0.36536536536536535
     },
     "q42_mitig_unknown": {
       "label": "Q42 Mitig Unknown",
       "type": "unknown",
-      "missing_count": 1946,
-      "missing_rate": 0.973973973973974
+      "missing_count": 983,
+      "missing_rate": 0.983983983983984
     },
     "q42_mitig_status": {
       "label": "Status of q42_mitig information",
@@ -1308,8 +1448,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1327,
-        "NOT_MENTIONED": 668,
+        "DISCUSSED": 645,
+        "NOT_MENTIONED": 351,
         "MIXED_CONTRADICTORY": 2,
         "NOT_APPLICABLE": 1
       }
@@ -1323,74 +1463,74 @@
     "q42_mitig_NATURE_GRAVITY_DURATION": {
       "label": "Q42 Mitig Nature Gravity Duration",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_INTENT_NEGLIGENCE": {
       "label": "Q42 Mitig Intent Negligence",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_MITIGATION_ACTIONS": {
       "label": "Q42 Mitig Mitigation Actions",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_TECHNICAL_ORGANIZATIONAL_MEASURES": {
       "label": "Q42 Mitig Technical Organizational Measures",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_PREVIOUS_INFRINGEMENTS": {
       "label": "Q42 Mitig Previous Infringements",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_COOPERATION_WITH_AUTHORITY": {
       "label": "Q42 Mitig Cooperation With Authority",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_DATA_CATEGORIES_AFFECTED": {
       "label": "Q42 Mitig Data Categories Affected",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_MANNER_BECAME_KNOWN": {
       "label": "Q42 Mitig Manner Became Known",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_COMPLIANCE_PRIOR_ORDERS": {
       "label": "Q42 Mitig Compliance Prior Orders",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_CODES_CERTIFICATION": {
       "label": "Q42 Mitig Codes Certification",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_OTHER_CIRCUMSTANCES": {
       "label": "Q42 Mitig Other Circumstances",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q42_mitig_NONE": {
       "label": "Q42 Mitig None",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_coverage_status": {
       "label": "Status of q46_vuln_coverage information",
@@ -1398,21 +1538,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q46_vuln_known": {
       "label": "Q46 Vuln Known",
       "type": "unknown",
-      "missing_count": 840,
-      "missing_rate": 0.42042042042042044
+      "missing_count": 394,
+      "missing_rate": 0.3943943943943944
     },
     "q46_vuln_unknown": {
       "label": "Q46 Vuln Unknown",
       "type": "unknown",
-      "missing_count": 1989,
-      "missing_rate": 0.9954954954954955
+      "missing_count": 992,
+      "missing_rate": 0.992992992992993
     },
     "q46_vuln_status": {
       "label": "Status of q46_vuln information",
@@ -1420,10 +1560,10 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_MENTIONED": 834,
-        "DISCUSSED": 749,
-        "NONE_MENTIONED": 411,
-        "MIXED_CONTRADICTORY": 4
+        "NOT_MENTIONED": 389,
+        "DISCUSSED": 378,
+        "NONE_MENTIONED": 229,
+        "MIXED_CONTRADICTORY": 3
       }
     },
     "q46_vuln_exclusivity_conflict": {
@@ -1435,44 +1575,44 @@
     "q46_vuln_CHILDREN": {
       "label": "Q46 Vuln Children",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_ELDERLY": {
       "label": "Q46 Vuln Elderly",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_PATIENTS": {
       "label": "Q46 Vuln Patients",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_EMPLOYEES": {
       "label": "Q46 Vuln Employees",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_FINANCIALLY_VULNERABLE": {
       "label": "Q46 Vuln Financially Vulnerable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_NONE_MENTIONED": {
       "label": "Q46 Vuln None Mentioned",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q46_vuln_NOT_DISCUSSED": {
       "label": "Q46 Vuln Not Discussed",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_coverage_status": {
       "label": "Status of q47_remedial_coverage information",
@@ -1480,21 +1620,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q47_remedial_known": {
       "label": "Q47 Remedial Known",
       "type": "unknown",
-      "missing_count": 755,
-      "missing_rate": 0.37787787787787785
+      "missing_count": 378,
+      "missing_rate": 0.3783783783783784
     },
     "q47_remedial_unknown": {
       "label": "Q47 Remedial Unknown",
       "type": "unknown",
-      "missing_count": 1883,
-      "missing_rate": 0.9424424424424425
+      "missing_count": 947,
+      "missing_rate": 0.9479479479479479
     },
     "q47_remedial_status": {
       "label": "Status of q47_remedial information",
@@ -1502,11 +1642,11 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 862,
-        "NOT_MENTIONED": 662,
-        "NONE_MENTIONED": 468,
-        "NOT_APPLICABLE": 4,
-        "MIXED_CONTRADICTORY": 2
+        "DISCUSSED": 376,
+        "NOT_MENTIONED": 340,
+        "NONE_MENTIONED": 280,
+        "NOT_APPLICABLE": 2,
+        "MIXED_CONTRADICTORY": 1
       }
     },
     "q47_remedial_exclusivity_conflict": {
@@ -1518,50 +1658,50 @@
     "q47_remedial_IMMEDIATE_CESSATION": {
       "label": "Q47 Remedial Immediate Cessation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_SYSTEM_UPGRADES": {
       "label": "Q47 Remedial System Upgrades",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_POLICY_CHANGES": {
       "label": "Q47 Remedial Policy Changes",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_STAFF_TRAINING": {
       "label": "Q47 Remedial Staff Training",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_EXTERNAL_AUDIT": {
       "label": "Q47 Remedial External Audit",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_DPO_APPOINTMENT": {
       "label": "Q47 Remedial Dpo Appointment",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_COMPENSATION_TO_SUBJECTS": {
       "label": "Q47 Remedial Compensation To Subjects",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q47_remedial_NONE_MENTIONED": {
       "label": "Q47 Remedial None Mentioned",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_coverage_status": {
       "label": "Status of q50_other_measures_coverage information",
@@ -1569,21 +1709,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q50_other_measures_known": {
       "label": "Q50 Other Measures Known",
       "type": "unknown",
-      "missing_count": 878,
-      "missing_rate": 0.4394394394394394
+      "missing_count": 410,
+      "missing_rate": 0.41041041041041043
     },
     "q50_other_measures_unknown": {
       "label": "Q50 Other Measures Unknown",
       "type": "unknown",
-      "missing_count": 1909,
-      "missing_rate": 0.9554554554554554
+      "missing_count": 970,
+      "missing_rate": 0.970970970970971
     },
     "q50_other_measures_status": {
       "label": "Status of q50_other_measures information",
@@ -1591,9 +1731,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1197,
-        "NOT_MENTIONED": 799,
-        "MIXED_CONTRADICTORY": 2
+        "DISCUSSED": 613,
+        "NOT_MENTIONED": 385,
+        "MIXED_CONTRADICTORY": 1
       }
     },
     "q50_other_measures_exclusivity_conflict": {
@@ -1605,44 +1745,44 @@
     "q50_other_measures_PROCESSING_BAN": {
       "label": "Q50 Other Measures Processing Ban",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_DATA_DELETION_ORDER": {
       "label": "Q50 Other Measures Data Deletion Order",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_COMPLIANCE_ORDER": {
       "label": "Q50 Other Measures Compliance Order",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_CERTIFICATION_WITHDRAWAL": {
       "label": "Q50 Other Measures Certification Withdrawal",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_PERIODIC_REPORTING": {
       "label": "Q50 Other Measures Periodic Reporting",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_AUDIT_REQUIREMENT": {
       "label": "Q50 Other Measures Audit Requirement",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q50_other_measures_NONE": {
       "label": "Q50 Other Measures None",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q53_powers_coverage_status": {
       "label": "Corrective power exercised: coverage_status",
@@ -1650,135 +1790,86 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q53_powers_known": {
       "label": "Corrective power exercised: known",
       "type": "binary",
-      "missing_count": 568,
-      "missing_rate": 0.28428428428428426,
+      "missing_count": 259,
+      "missing_rate": 0.25925925925925924,
       "value_counts": {
-        "ADMINISTRATIVE_FINE": 444,
-        "NONE": 146,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 105,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 94,
-        "REPRIMAND": 74,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 45,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 42,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS": 39,
-        "WARNING": 38,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 37,
-        "BRING_PROCESSING_INTO_COMPLIANCE": 29,
-        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 24,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 24,
-        "REPRIMAND,ADMINISTRATIVE_FINE": 20,
-        "LIMITATION_PROHIBITION_OF_PROCESSING": 18,
-        "WARNING,REPRIMAND": 14,
-        "BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 13,
-        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 13,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 11,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING": 10,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 10,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 8,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 8,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 8,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 7,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 7,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 7,
-        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 6,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 5,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 5,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 4,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 4,
-        "REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 4,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 4,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 4,
-        "WARNING,ADMINISTRATIVE_FINE": 4,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 3,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 3,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 3,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 3,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 3,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,NONE": 3,
+        "ADMINISTRATIVE_FINE": 228,
+        "NONE": 92,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 77,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 53,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 32,
+        "REPRIMAND": 31,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS": 30,
+        "WARNING": 27,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 19,
+        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 18,
+        "BRING_PROCESSING_INTO_COMPLIANCE": 13,
+        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 11,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 10,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 9,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 8,
+        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING": 7,
+        "WARNING,REPRIMAND": 7,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 6,
+        "LIMITATION_PROHIBITION_OF_PROCESSING": 5,
+        "REPRIMAND,ADMINISTRATIVE_FINE": 3,
         "WARNING,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 3,
+        "BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 3,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
+        "WARNING,ADMINISTRATIVE_FINE": 2,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 2,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,NONE": 2,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 2,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
         "WARNING,BRING_PROCESSING_INTO_COMPLIANCE": 2,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 2,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 2,
-        "BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 2,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
-        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE": 2,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 2,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
         "REPRIMAND,ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 2,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE,SUSPENSION_DATA_FLOWS": 1,
-        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "WARNING,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "ADMINISTRATIVE_FINE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "ADMINISTRATIVE_FINE,WARNING": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 2,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 2,
+        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE": 2,
+        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
         "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
         "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
         "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
         "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,REPRIMAND,ADMINISTRATIVE_FINE": 1,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS": 1
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
+        "ADMINISTRATIVE_FINE,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "ADMINISTRATIVE_FINE,WARNING": 1,
+        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1
       }
     },
     "q53_powers_unknown": {
       "label": "Corrective power exercised: unknown",
       "type": "binary",
-      "missing_count": 1944,
-      "missing_rate": 0.972972972972973,
+      "missing_count": 985,
+      "missing_rate": 0.985985985985986,
       "value_counts": {
-        "NOT_DISCUSSED": 37,
-        "COMPLIANCE_ORDER": 6,
-        "DATA_DELETION_ORDER": 4,
+        "NOT_DISCUSSED": 8,
+        "DATA_DELETION_ORDER": 3,
         "NONE ADMINISTRATIVE_FINE": 2,
-        "DATA_DELETION_ORDER,COMPLIANCE_ORDER": 1,
-        "PROCESSING_BAN": 1,
-        "PUBLICATION": 1,
-        "PUBLICATION_ORDER": 1,
-        "Which Article 58(2) corrective powers were exercised in this decision?: WARNING": 1
+        "COMPLIANCE_ORDER": 1
       }
     },
     "q53_powers_status": {
@@ -1787,9 +1878,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1465,
-        "NOT_MENTIONED": 530,
-        "MIXED_CONTRADICTORY": 3
+        "DISCUSSED": 747,
+        "NOT_MENTIONED": 250,
+        "MIXED_CONTRADICTORY": 2
       }
     },
     "q53_powers_exclusivity_conflict": {
@@ -1798,118 +1889,118 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1995,
-        "1": 3
+        "0": 997,
+        "1": 2
       }
     },
     "q53_powers_WARNING": {
       "label": "Corrective power exercised: WARNING",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1797,
-        "True": 120
+        "False": 881,
+        "True": 76
       }
     },
     "q53_powers_REPRIMAND": {
       "label": "Corrective power exercised: REPRIMAND",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1643,
-        "True": 274
+        "False": 858,
+        "True": 99
       }
     },
     "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS": {
       "label": "Corrective power exercised: COMPLY_WITH_DATA_SUBJECT_REQUESTS",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1429,
-        "True": 488
+        "False": 679,
+        "True": 278
       }
     },
     "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE": {
       "label": "Corrective power exercised: BRING_PROCESSING_INTO_COMPLIANCE",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1380,
-        "True": 537
+        "False": 691,
+        "True": 266
       }
     },
     "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS": {
       "label": "Corrective power exercised: COMMUNICATE_BREACH_TO_SUBJECTS",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1901,
-        "True": 16
+        "False": 949,
+        "True": 8
       }
     },
     "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING": {
       "label": "Corrective power exercised: LIMITATION_PROHIBITION_OF_PROCESSING",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1789,
-        "True": 128
+        "False": 925,
+        "True": 32
       }
     },
     "q53_powers_RECTIFICATION_ERASURE_RESTRICTION": {
       "label": "Corrective power exercised: RECTIFICATION_ERASURE_RESTRICTION",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1852,
-        "True": 65
+        "False": 946,
+        "True": 11
       }
     },
     "q53_powers_CERTIFICATION_WITHDRAWAL": {
       "label": "Corrective power exercised: CERTIFICATION_WITHDRAWAL",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1911,
-        "True": 6
+        "False": 953,
+        "True": 4
       }
     },
     "q53_powers_ADMINISTRATIVE_FINE": {
       "label": "Corrective power exercised: ADMINISTRATIVE_FINE",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1053,
-        "True": 864
+        "False": 525,
+        "True": 432
       }
     },
     "q53_powers_SUSPENSION_DATA_FLOWS": {
       "label": "Corrective power exercised: SUSPENSION_DATA_FLOWS",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1910,
-        "True": 7
+        "False": 953,
+        "True": 4
       }
     },
     "q53_powers_NONE": {
       "label": "Corrective power exercised: NONE",
       "type": "binary",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054,
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045,
       "value_counts": {
-        "False": 1768,
-        "True": 149
+        "False": 863,
+        "True": 94
       }
     },
     "q54_scopes_coverage_status": {
@@ -1918,21 +2009,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q54_scopes_known": {
       "label": "Q54 Scopes Known",
       "type": "unknown",
-      "missing_count": 886,
-      "missing_rate": 0.44344344344344344
+      "missing_count": 402,
+      "missing_rate": 0.4024024024024024
     },
     "q54_scopes_unknown": {
       "label": "Q54 Scopes Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 991,
+      "missing_rate": 0.991991991991992
     },
     "q54_scopes_status": {
       "label": "Status of q54_scopes information",
@@ -1940,9 +2031,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1024,
-        "NOT_MENTIONED": 851,
-        "DISCUSSED": 122,
+        "NOT_APPLICABLE": 570,
+        "NOT_MENTIONED": 396,
+        "DISCUSSED": 32,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -1955,38 +2046,38 @@
     "q54_scopes_COMPLETE_PROCESSING_BAN": {
       "label": "Q54 Scopes Complete Processing Ban",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q54_scopes_SPECIFIC_PURPOSE_LIMITATION": {
       "label": "Q54 Scopes Specific Purpose Limitation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q54_scopes_DATA_CATEGORY_LIMITATION": {
       "label": "Q54 Scopes Data Category Limitation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q54_scopes_GEOGRAPHICAL_LIMITATION": {
       "label": "Q54 Scopes Geographical Limitation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q54_scopes_TEMPORAL_LIMITATION": {
       "label": "Q54 Scopes Temporal Limitation",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q54_scopes_NOT_APPLICABLE": {
       "label": "Q54 Scopes Not Applicable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_coverage_status": {
       "label": "Status of q56_rights_discussed_coverage information",
@@ -1994,21 +2085,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q56_rights_discussed_known": {
       "label": "Q56 Rights Discussed Known",
       "type": "unknown",
-      "missing_count": 914,
-      "missing_rate": 0.4574574574574575
+      "missing_count": 447,
+      "missing_rate": 0.44744744744744747
     },
     "q56_rights_discussed_unknown": {
       "label": "Q56 Rights Discussed Unknown",
       "type": "unknown",
-      "missing_count": 1823,
-      "missing_rate": 0.9124124124124124
+      "missing_count": 907,
+      "missing_rate": 0.9079079079079079
     },
     "q56_rights_discussed_status": {
       "label": "Status of q56_rights_discussed information",
@@ -2016,9 +2107,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1212,
-        "NOT_MENTIONED": 741,
-        "NOT_APPLICABLE": 44,
+        "DISCUSSED": 619,
+        "NOT_MENTIONED": 357,
+        "NOT_APPLICABLE": 22,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -2031,56 +2122,56 @@
     "q56_rights_discussed_ACCESS": {
       "label": "Q56 Rights Discussed Access",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_RECTIFICATION": {
       "label": "Q56 Rights Discussed Rectification",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_ERASURE": {
       "label": "Q56 Rights Discussed Erasure",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_RESTRICTION_OF_PROCESSING": {
       "label": "Q56 Rights Discussed Restriction Of Processing",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_DATA_PORTABILITY": {
       "label": "Q56 Rights Discussed Data Portability",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_OBJECTION": {
       "label": "Q56 Rights Discussed Objection",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_AUTOMATED_DECISION_MAKING": {
       "label": "Q56 Rights Discussed Automated Decision Making",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_INFORMATION_OBLIGATIONS": {
       "label": "Q56 Rights Discussed Information Obligations",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q56_rights_discussed_NONE_DISCUSSED": {
       "label": "Q56 Rights Discussed None Discussed",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_coverage_status": {
       "label": "Status of q57_rights_violated_coverage information",
@@ -2088,21 +2179,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q57_rights_violated_known": {
       "label": "Q57 Rights Violated Known",
       "type": "unknown",
-      "missing_count": 952,
-      "missing_rate": 0.47647647647647645
+      "missing_count": 456,
+      "missing_rate": 0.45645645645645644
     },
     "q57_rights_violated_unknown": {
       "label": "Q57 Rights Violated Unknown",
       "type": "unknown",
-      "missing_count": 1815,
-      "missing_rate": 0.9084084084084084
+      "missing_count": 906,
+      "missing_rate": 0.9069069069069069
     },
     "q57_rights_violated_status": {
       "label": "Status of q57_rights_violated information",
@@ -2110,11 +2201,11 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 845,
-        "NOT_MENTIONED": 771,
-        "NONE_VIOLATED": 257,
-        "NOT_DETERMINED": 79,
-        "NOT_APPLICABLE": 44,
+        "DISCUSSED": 395,
+        "NOT_MENTIONED": 365,
+        "NONE_VIOLATED": 160,
+        "NOT_DETERMINED": 55,
+        "NOT_APPLICABLE": 22,
         "MIXED_CONTRADICTORY": 2
       }
     },
@@ -2127,62 +2218,62 @@
     "q57_rights_violated_ACCESS": {
       "label": "Q57 Rights Violated Access",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_RECTIFICATION": {
       "label": "Q57 Rights Violated Rectification",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_ERASURE": {
       "label": "Q57 Rights Violated Erasure",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_RESTRICTION_OF_PROCESSING": {
       "label": "Q57 Rights Violated Restriction Of Processing",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_DATA_PORTABILITY": {
       "label": "Q57 Rights Violated Data Portability",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_OBJECTION": {
       "label": "Q57 Rights Violated Objection",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_AUTOMATED_DECISION_MAKING": {
       "label": "Q57 Rights Violated Automated Decision Making",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_INFORMATION_OBLIGATIONS": {
       "label": "Q57 Rights Violated Information Obligations",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_NONE_VIOLATED": {
       "label": "Q57 Rights Violated None Violated",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q57_rights_violated_NOT_DETERMINED": {
       "label": "Q57 Rights Violated Not Determined",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_coverage_status": {
       "label": "Status of q58_access_issues_coverage information",
@@ -2190,21 +2281,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q58_access_issues_known": {
       "label": "Q58 Access Issues Known",
       "type": "unknown",
-      "missing_count": 826,
-      "missing_rate": 0.4134134134134134
+      "missing_count": 379,
+      "missing_rate": 0.3793793793793794
     },
     "q58_access_issues_unknown": {
       "label": "Q58 Access Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 991,
+      "missing_rate": 0.991991991991992
     },
     "q58_access_issues_status": {
       "label": "Status of q58_access_issues information",
@@ -2212,10 +2303,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 935,
-        "NOT_MENTIONED": 791,
-        "DISCUSSED": 271,
-        "MIXED_CONTRADICTORY": 1
+        "NOT_APPLICABLE": 525,
+        "NOT_MENTIONED": 373,
+        "DISCUSSED": 101
       }
     },
     "q58_access_issues_exclusivity_conflict": {
@@ -2227,44 +2317,44 @@
     "q58_access_issues_EXCESSIVE_DELAY": {
       "label": "Q58 Access Issues Excessive Delay",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_EXCESSIVE_FEES": {
       "label": "Q58 Access Issues Excessive Fees",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_INADEQUATE_RESPONSE": {
       "label": "Q58 Access Issues Inadequate Response",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": {
       "label": "Q58 Access Issues Identity Verification Issues",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_SCOPE_LIMITATIONS": {
       "label": "Q58 Access Issues Scope Limitations",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_NO_ISSUES_FOUND": {
       "label": "Q58 Access Issues No Issues Found",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q58_access_issues_NOT_APPLICABLE": {
       "label": "Q58 Access Issues Not Applicable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_coverage_status": {
       "label": "Status of q59_adm_issues_coverage information",
@@ -2272,21 +2362,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q59_adm_issues_known": {
       "label": "Q59 Adm Issues Known",
       "type": "unknown",
-      "missing_count": 894,
-      "missing_rate": 0.44744744744744747
+      "missing_count": 404,
+      "missing_rate": 0.4044044044044044
     },
     "q59_adm_issues_unknown": {
       "label": "Q59 Adm Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 991,
+      "missing_rate": 0.991991991991992
     },
     "q59_adm_issues_status": {
       "label": "Status of q59_adm_issues information",
@@ -2294,9 +2384,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1097,
-        "NOT_MENTIONED": 859,
-        "DISCUSSED": 42
+        "NOT_APPLICABLE": 591,
+        "NOT_MENTIONED": 398,
+        "DISCUSSED": 10
       }
     },
     "q59_adm_issues_exclusivity_conflict": {
@@ -2308,38 +2398,38 @@
     "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": {
       "label": "Q59 Adm Issues Lack Of Human Intervention",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_INADEQUATE_SAFEGUARDS": {
       "label": "Q59 Adm Issues Inadequate Safeguards",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_PROFILING_WITHOUT_CONSENT": {
       "label": "Q59 Adm Issues Profiling Without Consent",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_NO_EXPLANATION_PROVIDED": {
       "label": "Q59 Adm Issues No Explanation Provided",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_NO_ISSUES_FOUND": {
       "label": "Q59 Adm Issues No Issues Found",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q59_adm_issues_NOT_APPLICABLE": {
       "label": "Q59 Adm Issues Not Applicable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_coverage_status": {
       "label": "Status of q61_dpo_issues_coverage information",
@@ -2347,21 +2437,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q61_dpo_issues_known": {
       "label": "Q61 Dpo Issues Known",
       "type": "unknown",
-      "missing_count": 891,
-      "missing_rate": 0.44594594594594594
+      "missing_count": 405,
+      "missing_rate": 0.40540540540540543
     },
     "q61_dpo_issues_unknown": {
       "label": "Q61 Dpo Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 991,
+      "missing_rate": 0.991991991991992
     },
     "q61_dpo_issues_status": {
       "label": "Status of q61_dpo_issues information",
@@ -2369,9 +2459,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 958,
-        "NOT_MENTIONED": 856,
-        "DISCUSSED": 183,
+        "NOT_APPLICABLE": 533,
+        "NOT_MENTIONED": 399,
+        "DISCUSSED": 66,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -2384,50 +2474,50 @@
     "q61_dpo_issues_NO_DPO_APPOINTED": {
       "label": "Q61 Dpo Issues No Dpo Appointed",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_INADEQUATE_QUALIFICATIONS": {
       "label": "Q61 Dpo Issues Inadequate Qualifications",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_INSUFFICIENT_INDEPENDENCE": {
       "label": "Q61 Dpo Issues Insufficient Independence",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_LACK_OF_RESOURCES": {
       "label": "Q61 Dpo Issues Lack Of Resources",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_INADEQUATE_INVOLVEMENT": {
       "label": "Q61 Dpo Issues Inadequate Involvement",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_CONFLICT_OF_INTEREST": {
       "label": "Q61 Dpo Issues Conflict Of Interest",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_NO_ISSUES_FOUND": {
       "label": "Q61 Dpo Issues No Issues Found",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q61_dpo_issues_NOT_APPLICABLE": {
       "label": "Q61 Dpo Issues Not Applicable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_coverage_status": {
       "label": "Status of q64_transfer_violations_coverage information",
@@ -2435,21 +2525,21 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1917,
-        "NOT_MENTIONED": 81
+        "DISCUSSED": 957,
+        "NOT_MENTIONED": 42
       }
     },
     "q64_transfer_violations_known": {
       "label": "Q64 Transfer Violations Known",
       "type": "unknown",
-      "missing_count": 895,
-      "missing_rate": 0.44794794794794796
+      "missing_count": 404,
+      "missing_rate": 0.4044044044044044
     },
     "q64_transfer_violations_unknown": {
       "label": "Q64 Transfer Violations Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 991,
+      "missing_rate": 0.991991991991992
     },
     "q64_transfer_violations_status": {
       "label": "Status of q64_transfer_violations information",
@@ -2457,9 +2547,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1075,
-        "NOT_MENTIONED": 860,
-        "DISCUSSED": 63
+        "NOT_APPLICABLE": 584,
+        "NOT_MENTIONED": 398,
+        "DISCUSSED": 17
       }
     },
     "q64_transfer_violations_exclusivity_conflict": {
@@ -2471,56 +2561,56 @@
     "q64_transfer_violations_NO_ADEQUATE_SAFEGUARDS": {
       "label": "Q64 Transfer Violations No Adequate Safeguards",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_INVALID_TRANSFER_MECHANISM": {
       "label": "Q64 Transfer Violations Invalid Transfer Mechanism",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_SCHREMS_II_ISSUES": {
       "label": "Q64 Transfer Violations Schrems Ii Issues",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_NO_IMPACT_ASSESSMENT": {
       "label": "Q64 Transfer Violations No Impact Assessment",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_INADEQUATE_CONTRACTUAL_CLAUSES": {
       "label": "Q64 Transfer Violations Inadequate Contractual Clauses",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "q64_transfer_violations_NOT_APPLICABLE": {
       "label": "Q64 Transfer Violations Not Applicable",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "country_code_numeric": {
       "label": "Country Code Numeric",
       "type": "unknown",
-      "missing_count": 81,
-      "missing_rate": 0.04054054054054054
+      "missing_count": 42,
+      "missing_rate": 0.042042042042042045
     },
     "dpa_numeric": {
       "label": "Dpa Numeric",
       "type": "unknown",
-      "missing_count": 222,
-      "missing_rate": 0.1111111111111111
+      "missing_count": 103,
+      "missing_rate": 0.1031031031031031
     },
     "isic_section_numeric": {
       "label": "Isic Section Numeric",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 792,
+      "missing_rate": 0.7927927927927928
     },
     "fine_eur_missing": {
       "label": "Fine Eur Missing",
@@ -2543,14 +2633,14 @@
     "decision_date_parsed": {
       "label": "Decision Date Parsed",
       "type": "unknown",
-      "missing_count": 1504,
-      "missing_rate": 0.7527527527527528
+      "missing_count": 863,
+      "missing_rate": 0.8638638638638638
     },
     "days_since_gdpr": {
       "label": "Days Since Gdpr",
       "type": "unknown",
-      "missing_count": 1504,
-      "missing_rate": 0.7527527527527528
+      "missing_count": 863,
+      "missing_rate": 0.8638638638638638
     },
     "fine_positive_flag": {
       "label": "Fine Positive Flag",
@@ -2561,14 +2651,14 @@
     "fine_log": {
       "label": "Fine Log",
       "type": "unknown",
-      "missing_count": 1028,
-      "missing_rate": 0.5145145145145145
+      "missing_count": 473,
+      "missing_rate": 0.47347347347347346
     },
     "fine_sqrt": {
       "label": "Fine Sqrt",
       "type": "unknown",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922
+      "missing_count": 174,
+      "missing_rate": 0.17417417417417416
     },
     "fine_category": {
       "label": "Fine Category",

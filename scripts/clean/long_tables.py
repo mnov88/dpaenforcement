@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
-from typing import List
+from typing import Dict, List
 
 from scripts.clean.typing_status import split_multiselect, derive_multiselect_status
 from scripts.clean.enum_validate import EnumWhitelist
@@ -15,6 +15,39 @@ SCHEMA_ECHO_PREFIXES = ("TYPE:", "ENUM:", "MULTI_SELECT:")
 def _is_schema_echo(value: str) -> bool:
     v = (value or "").strip()
     return any(v.startswith(p) for p in SCHEMA_ECHO_PREFIXES)
+
+
+LONG_TABLE_QUESTIONS = {
+    "Q21",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q41",
+    "Q42",
+    "Q46",
+    "Q53",
+    "Q54",
+    "Q56",
+    "Q57",
+    "Q58",
+    "Q59",
+    "Q61",
+    "Q64",
+}
+
+
+def _resolve_input_format(fieldnames: List[str] | None, requested: str) -> str:
+    if requested != "auto":
+        return requested
+    fieldnames = fieldnames or []
+    if "response" in fieldnames:
+        return "raw"
+    if any(fn.startswith("raw_q") for fn in fieldnames if fn):
+        return "wide"
+    raise ValueError("Unable to detect input format for long table emission")
 
 
 class LongEmitter:
@@ -40,9 +73,10 @@ class LongEmitter:
         for t in unknown:
             out.append({"decision_id": decision_id, "option": t, "status": status, "token_status": "UNKNOWN"})
 
-    def emit_from_csv(self, input_csv: Path) -> None:
+    def emit_from_csv(self, input_csv: Path, input_format: str = "auto") -> None:
         with input_csv.open(newline="", encoding="utf-8") as f_in:
             r = csv.DictReader(f_in)
+            fmt = _resolve_input_format(r.fieldnames, input_format)
 
             tables: Dict[str, List[Dict[str, str]]] = {
                 "article_5_discussed.csv": [],
@@ -66,9 +100,12 @@ class LongEmitter:
             }
 
             for row in r:
-                decision_id = row.get("ID")
-                parsed = parse_record((row.get("response", "") or ""))
-                answers = parsed["answers"]
+                decision_id = row.get("decision_id") or row.get("ID")
+                if fmt == "raw":
+                    parsed = parse_record((row.get("response", "") or ""))
+                    answers = parsed["answers"]
+                else:
+                    answers = {q: row.get(f"raw_{q.lower()}", "") for q in LONG_TABLE_QUESTIONS}
 
                 def add_multiselect(qkey: str, table_name: str) -> None:
                     ms_parsed = split_multiselect(answers.get(qkey, ""))

@@ -2,6 +2,13 @@
 
 This document summarizes every script that powers the DPA decision ingestion and cleaning workflow. It explains what each module does, its primary inputs and outputs (with short usage examples), outlines known limitations, and provides a recommended end-to-end run order.
 
+## High-priority fixes identified
+
+1. ✅ **`run-all` raw-source coupling** – `run-all` now feeds the cleaned wide CSV into the long-table and consistency stages by default, while the `emit-long`/`consistency` commands accept an `--input-format` flag (or auto-detect) so callers can still target the raw file when needed.【F:scripts/cli.py†L62-L108】【F:scripts/clean/long_tables.py†L34-L130】【F:scripts/clean/consistency.py†L12-L93】
+2. ✅ **Enum whitelist metadata** – `build_enum_whitelist` records the actual prompt path in the emitted metadata, keeping provenance accurate when alternative questionnaires are parsed.【F:scripts/parser/enums.py†L23-L49】【F:scripts/cli.py†L25-L31】
+3. **Resource path resolution** – Multiple cleaning modules resolve optional assets (enum whitelist, ISIC structure) using bare relative paths such as `Path("resources/…")`, which breaks when the CLI runs outside the repository root.【F:scripts/clean/long_tables.py†L20-L28】【F:scripts/clean/wide_output.py†L92-L101】
+   - *Plan*: centralize resource discovery (e.g., via `Path(__file__).resolve().parents[2]`) or allow explicit CLI arguments so callers can supply absolute paths; add regression tests that invoke the CLI from a temporary working directory.
+
 ## Pipeline quick start
 
 1. **Generate or refresh the enum whitelist** – required before validating multi-select tokens.
@@ -17,18 +24,18 @@ This document summarizes every script that powers the DPA decision ingestion and
      --out-csv outputs/cleaned_wide.csv \
      --validation-report outputs/validation_report.json
    ```
-3. **Emit long-form tables** – expand multi-select answers into tidy per-option CSVs for downstream analysis.
-   ```bash
-   python -m scripts.cli emit-long \
-     --input-csv analyzed-decisions/master-analyzed-data-unclean.csv \
-     --out-dir outputs/long_tables
-   ```
-4. **Run consistency checks** – flag logical conflicts across questionnaire answers.
-   ```bash
-   python -m scripts.cli consistency \
-     --input-csv analyzed-decisions/master-analyzed-data-unclean.csv \
-     --report-json outputs/consistency_report.json
-   ```
+3. **Emit long-form tables** – expand multi-select answers into tidy per-option CSVs for downstream analysis (auto-detects whether the source is raw or cleaned wide).
+  ```bash
+  python -m scripts.cli emit-long \
+    --input-csv outputs/cleaned_wide.csv \
+    --out-dir outputs/long_tables
+  ```
+4. **Run consistency checks** – flag logical conflicts across questionnaire answers, reusing the cleaned wide dataset by default.
+  ```bash
+  python -m scripts.cli consistency \
+    --input-csv outputs/cleaned_wide.csv \
+    --report-json outputs/consistency_report.json
+  ```
 5. **Produce QA coverage summary** – aggregate unknown tokens and status coverage per multi-select.
    ```bash
    python -m scripts.cli qa-summary \
@@ -48,13 +55,13 @@ Configuration defaults for the above paths are also tracked in `scripts/config.y
 | `build-enum-whitelist` | Parse the questionnaire prompt to create enum/multi-select specifications.【F:scripts/cli.py†L25-L33】 | Markdown prompt file | JSON whitelist written to disk | `python -m scripts.cli build-enum-whitelist --prompt-path … --out …` |
 | `parse-stdin` | Quickly parse concatenated `Answer N:` blocks from STDIN and stream JSON lines for smoke testing.【F:scripts/cli.py†L36-L50】 | Raw text piped via STDIN | JSON per record to STDOUT | `cat raw.txt | python -m scripts.cli parse-stdin` |
 | `clean-wide` | Produce the normalized wide CSV and validation report.【F:scripts/cli.py†L53-L59】 | Raw analysis CSV (`response` column) | Wide CSV + validation JSON written to paths | `python -m scripts.cli clean-wide --input-csv …` |
-| `emit-long` | Expand multi-select answers into per-option long tables under a directory.【F:scripts/cli.py†L62-L68】 | Same raw CSV | `outputs/long_tables/*.csv` | `python -m scripts.cli emit-long --input-csv … --out-dir …` |
-| `consistency` | Run logical QA checks and emit a JSON report.【F:scripts/cli.py†L71-L76】 | Same raw CSV | JSON report | `python -m scripts.cli consistency --input-csv …` |
+| `emit-long` | Expand multi-select answers into per-option long tables under a directory (auto-detects raw vs wide schema or accept `--input-format`).【F:scripts/cli.py†L62-L68】【F:scripts/clean/long_tables.py†L34-L130】 | Raw or cleaned wide CSV | `outputs/long_tables/*.csv` | `python -m scripts.cli emit-long --input-csv outputs/cleaned_wide.csv --out-dir …` |
+| `consistency` | Run logical QA checks and emit a JSON report over raw or cleaned inputs.【F:scripts/cli.py†L71-L76】【F:scripts/clean/consistency.py†L12-L93】 | Raw or cleaned wide CSV | JSON report | `python -m scripts.cli consistency --input-csv outputs/cleaned_wide.csv` |
 | `qa-summary` | Aggregate status/unknown token statistics across wide CSV columns.【F:scripts/cli.py†L79-L84】 | Cleaned wide CSV | Summary CSV | `python -m scripts.cli qa-summary --wide-csv …` |
-| `run-all` | Orchestrate the full pipeline with overrideable defaults.【F:scripts/cli.py†L87-L114】 | Optional overrides for prompt, CSVs, and outputs | Regenerates all downstream artefacts | `python -m scripts.cli run-all --out-csv custom.csv` |
+| `run-all` | Orchestrate the full pipeline with overrideable defaults (passes the cleaned wide CSV to downstream steps by default; override with `--long-input-format raw` or `--consistency-input-format raw` if needed).【F:scripts/cli.py†L87-L114】 | Optional overrides for prompt, CSVs, and outputs | Regenerates all downstream artefacts | `python -m scripts.cli run-all --out-csv custom.csv` |
 
 **Notable gaps / risks**
-- `run-all` regenerates long tables and consistency checks from the *raw* input CSV rather than the cleaned wide data, so ensure the source CSV matches the cleaned output version expected downstream.【F:scripts/cli.py†L101-L110】
+- Long-table and consistency exports depend on the `raw_qXX` columns emitted by the wide cleaner; update both modules together when adding/removing questions from the export set.【F:scripts/clean/wide_output.py†L40-L135】【F:scripts/clean/long_tables.py†L34-L130】【F:scripts/clean/consistency.py†L12-L93】
 - Enum whitelist generation assumes the prompt follows the `**Answer N:**` pattern; deviations will silently fall back to tagging the spec as `RAW`.【F:scripts/parser/enums.py†L23-L41】
 
 ### Parser package (`scripts/parser`)
@@ -70,8 +77,8 @@ Configuration defaults for the above paths are also tracked in `scripts/config.y
 - **Gaps**: Does not validate duplicate answers or enforce ordering; schema-echo cleanup happens later in the cleaning stage.
 
 #### `enums.py`
-- **Functionality**: Extract enum/multi-select/type specifications from the questionnaire prompt using regex, producing a whitelist map used during validation.【F:scripts/parser/enums.py†L4-L49】
-- **Inputs/Outputs**: Markdown prompt text → JSON-ready dict (`questions`, `source`). Example call: `build_enum_whitelist(prompt_text)`.
+- **Functionality**: Extract enum/multi-select/type specifications from the questionnaire prompt using regex, producing a whitelist map used during validation (including provenance metadata for the prompt path).【F:scripts/parser/enums.py†L4-L49】【F:scripts/cli.py†L25-L33】
+- **Inputs/Outputs**: Markdown prompt text (+ optional `source_path`) → JSON-ready dict (`questions`, `source`). Example call: `build_enum_whitelist(prompt_text, source_path=str(prompt_path))`.
 - **Gaps**: Lines that do not immediately follow the regex pattern are labeled `RAW`, so nested formatting (e.g., bullet lists) may require manual cleanup before ingestion.【F:scripts/parser/enums.py†L31-L41】
 
 #### `validators.py`
@@ -111,10 +118,10 @@ Configuration defaults for the above paths are also tracked in `scripts/config.y
 - **Gaps**: Language heuristic only distinguishes ASCII-dominant vs other; consider integrating a proper language detector for multilingual content.
 
 #### `wide_output.py`
-- **Functionality**: Core cleaner that reads the annotated CSV, re-parses raw responses, normalizes geography, dates, numerics, text, and multi-selects, then writes a wide table plus a validation report.【F:scripts/clean/wide_output.py†L76-L310】
+- **Functionality**: Core cleaner that reads the annotated CSV, re-parses raw responses, normalizes geography, dates, numerics, text, and multi-selects, then writes a wide table plus a validation report (including `raw_qXX` columns for downstream reuse).【F:scripts/clean/wide_output.py†L76-L310】
 - **Inputs**: Raw CSV with `ID` and `response` columns; optional whitelist and ISIC resources if present under `resources/` (detected dynamically).【F:scripts/clean/wide_output.py†L80-L144】 Example invocation via CLI shown earlier.
 - **Outputs**:
-  - Wide CSV containing ingest metadata, normalized fields, derived indicators, per-option boolean flags, and schema-echo tracking.【F:scripts/clean/wide_output.py†L89-L299】
+  - Wide CSV containing ingest metadata, normalized fields, derived indicators, per-option boolean flags, schema-echo tracking, and raw answer exports for consistency/long-table reuse.【F:scripts/clean/wide_output.py†L89-L299】
   - Validation JSON storing per-decision QA flags (fine amount issues, parse errors).【F:scripts/clean/wide_output.py†L300-L310】
 - **Gaps**:
   - Multi-select coverage relies on whitelist tokens; if the whitelist is empty the script still writes coverage columns but cannot flag unknowns.【F:scripts/clean/wide_output.py†L114-L279】
@@ -122,19 +129,18 @@ Configuration defaults for the above paths are also tracked in `scripts/config.y
   - Schema-echo detection only checks for three prefixes; additional artefacts (e.g., `LIST:`) will pass through until manually added.【F:scripts/clean/wide_output.py†L63-L158】
 
 #### `long_tables.py`
-- **Functionality**: Builds tidy per-question tables by expanding multi-select answers and tagging unknown tokens for review.【F:scripts/clean/long_tables.py†L20-L126】
-- **Inputs/Outputs**: Same raw CSV as `wide_output`; writes multiple CSVs such as `article_5_discussed.csv`, `breach_types.csv`, etc.【F:scripts/clean/long_tables.py†L47-L126】 Example call:
+- **Functionality**: Builds tidy per-question tables by expanding multi-select answers and tagging unknown tokens for review, whether sourced from the raw CSV or the cleaned wide export.【F:scripts/clean/long_tables.py†L20-L130】
+- **Inputs/Outputs**: Raw or cleaned wide CSV (`emit_from_csv` auto-detects unless overridden) → multiple CSVs such as `article_5_discussed.csv`, `breach_types.csv`, etc.【F:scripts/clean/long_tables.py†L47-L130】 Example call:
   ```python
   from scripts.clean.long_tables import LongEmitter
-  LongEmitter(Path('outputs/long_tables')).emit_from_csv(Path('analyzed-decisions/master-analyzed-data-unclean.csv'))
+  LongEmitter(Path('outputs/long_tables')).emit_from_csv(Path('outputs/cleaned_wide.csv'), input_format='wide')
   ```
 - **Gaps**:
-  - Type hints reference `Dict` without importing it; thanks to postponed evaluation this is harmless at runtime but will surface if runtime type checking is introduced.【F:scripts/clean/long_tables.py†L20-L48】
   - Empty multi-selects emit status-only rows but do not capture explicit `NOT_MENTIONED` counts, so downstream completeness metrics must use the wide CSV coverage columns instead.【F:scripts/clean/long_tables.py†L73-L88】
 
 #### `consistency.py`
-- **Functionality**: Applies rule-based QA checks across related questions (breach chain, fine vs. enforcement, appeal logic, turnover caps) and records flags per decision.【F:scripts/clean/consistency.py†L12-L78】
-- **Inputs/Outputs**: Raw CSV → JSON array of `{decision_id, flags}` objects for flagged records.【F:scripts/clean/consistency.py†L12-L78】
+- **Functionality**: Applies rule-based QA checks across related questions (breach chain, fine vs. enforcement, appeal logic, turnover caps) and records flags per decision, regardless of whether the input is raw or cleaned wide (leveraging the exported `raw_qXX` columns).【F:scripts/clean/consistency.py†L12-L93】
+- **Inputs/Outputs**: Raw or cleaned wide CSV → JSON array of `{decision_id, flags}` objects for flagged records.【F:scripts/clean/consistency.py†L12-L93】
 - **Gaps**:
   - Geo verification for cross-border claims is best-effort; it only inspects question text endings like `": EU"` and does not consult the enriched country grouping from the wide output.【F:scripts/clean/consistency.py†L64-L73】
   - Additional legal cross-checks (Article 33/34 interplay, turnover cap math) are noted as TODOs in the top-level scripts README.

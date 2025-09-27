@@ -20,7 +20,7 @@ def _parse_enum_or_multi(value: str) -> Optional[Dict[str, object]]:
     return None
 
 
-def build_enum_whitelist(prompt_text: str) -> Dict[str, object]:
+def build_enum_whitelist(prompt_text: str, *, source_path: Optional[str] = None) -> Dict[str, object]:
     """Extract per-question specifications from the questionnaire prompt.
 
     Returns a dict with a `questions` map and a `source` metadata.
@@ -43,7 +43,7 @@ def build_enum_whitelist(prompt_text: str) -> Dict[str, object]:
     return {
         "questions": questions,
         "source": {
-            "extracted_from": "data-extraction-prompt-sent-to-ai.md",
+            "extracted_from": source_path or "data-extraction-prompt-sent-to-ai.md",
             "parser_version": "0.1.0",
         },
     }

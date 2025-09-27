@@ -1,7 +1,7 @@
 """Data loading and feature preparation for the evenness analysis."""
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Sequence
 
@@ -10,7 +10,8 @@ import pandas as pd
 
 from .config import FACTS_CONFIG, EvennessPaths, required_fact_columns
 
-_GDPR_START = datetime(2018, 5, 25)
+# Use timezone-aware UTC datetime to avoid tz-naive vs tz-aware arithmetic issues
+_GDPR_START = datetime(2018, 5, 25, tzinfo=timezone.utc)
 
 
 def _ensure_datetime(series: pd.Series) -> pd.Series:
@@ -20,20 +21,35 @@ def _ensure_datetime(series: pd.Series) -> pd.Series:
 
 
 def load_wide_dataset(path: Path | str | None = None, columns: Sequence[str] | None = None) -> pd.DataFrame:
-    """Load the cleaned wide CSV with minimal type coercion."""
+    """Load the cleaned wide CSV with minimal type coercion.
+
+    This function is resilient to requesting columns that are not present in the
+    underlying CSV (e.g., derived fields created downstream like
+    "organization_size_tier", "organization_type", or "case_origin"). It will
+    intersect the requested columns with the available header to avoid
+    pandas' usecols validation errors.
+    """
 
     csv_path = Path(path or EvennessPaths().wide_csv)
     dtype_overrides = {"decision_id": str}
-    usecols = None
+
+    # Determine a safe set of columns to request (if any were specified)
     if columns is not None:
-        desired = set(columns)
-
-        def _filter(col: str) -> bool:
-            if col in desired:
-                return True
-            return any(col.startswith(f"{prefix}_") for prefix in FACTS_CONFIG.multi_value_prefixes)
-
-        usecols = _filter
+        requested = list(dict.fromkeys(columns))
+        try:
+            header = pd.read_csv(csv_path, nrows=0).columns.tolist()
+        except Exception:
+            header = None
+        if header is not None:
+            usecols = [c for c in requested if c in header]
+            # If none of the requested columns exist, fall back to reading all
+            # columns to allow downstream derivations.
+            if not usecols:
+                usecols = None
+        else:
+            usecols = None
+    else:
+        usecols = None
     df = pd.read_csv(csv_path, usecols=usecols, dtype=dtype_overrides)
     if "decision_date" in df.columns:
         df["decision_date"] = _ensure_datetime(df["decision_date"])

@@ -110,9 +110,26 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             # Cleaning flags
             "schema_echo_flag", "schema_echo_fields",
         ]
-        # Add systematic multi-select columns (known/unknown/status + exclusivity)
+        # Track allowed tokens per multi-select question for downstream expansion
+        multi_allowed_map: Dict[str, List[str]] = {}
         for qkey, prefix in MULTI_FIELDS:
-            fieldnames.extend([f"{prefix}_known", f"{prefix}_unknown", f"{prefix}_status", f"{prefix}_exclusivity_conflict"])
+            allowed_tokens = whitelist.allowed_tokens(qkey[1:] if qkey.startswith("Q") else qkey)
+            multi_allowed_map[qkey] = allowed_tokens
+
+            # Add systematic multi-select columns (coverage/status metadata + exclusivity)
+            fieldnames.extend(
+                [
+                    f"{prefix}_coverage_status",
+                    f"{prefix}_known",
+                    f"{prefix}_unknown",
+                    f"{prefix}_status",
+                    f"{prefix}_exclusivity_conflict",
+                ]
+            )
+
+            # Add per-option boolean indicators (1/0/blank for not mentioned)
+            for token in allowed_tokens:
+                fieldnames.append(f"{prefix}_{token}")
 
         writer = csv.DictWriter(f_out, fieldnames=fieldnames)
         writer.writeheader()
@@ -251,10 +268,22 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 unknown, known = whitelist.validate_tokens(qkey, tokens)
                 status = derive_multiselect_status(qkey, tokens)
                 exclusivity = detect_exclusivity_conflict(tokens)
+                coverage_status = ms_parsed.status
+                allowed_tokens = multi_allowed_map.get(qkey, [])
+                known_set = set(known)
+
+                base_row[f"{prefix}_coverage_status"] = coverage_status
                 base_row[f"{prefix}_known"] = ",".join(known)
                 base_row[f"{prefix}_unknown"] = ",".join(unknown)
                 base_row[f"{prefix}_status"] = status
                 base_row[f"{prefix}_exclusivity_conflict"] = exclusivity
+
+                for token in allowed_tokens:
+                    col_name = f"{prefix}_{token}"
+                    if coverage_status == "NOT_MENTIONED":
+                        base_row[col_name] = ""
+                    else:
+                        base_row[col_name] = 1 if token in known_set else 0
 
                 # Aggregate counts/flags
                 if qkey == "Q30":

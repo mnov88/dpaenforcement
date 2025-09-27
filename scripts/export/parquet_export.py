@@ -187,6 +187,9 @@ class ParquetExporter(BaseExporter):
             'q30_discussed': 'Article 5 principles discussed (binary indicators)',
             'q31_violated': 'Article 5 principles violated (binary indicators)',
             'q32_bases': 'Article 6 legal bases discussed (binary indicators)',
+            'q43_harm': 'Documented harm to data subjects (binary indicators)',
+            'q44_benefit': 'Economic benefit to defendant (binary indicators)',
+            'q45_coop': 'Defendant cooperation level (binary indicators)',
             'q53_powers': 'Article 58(2) corrective powers exercised (binary indicators)',
             'q56_rights_discussed': 'Data subject rights discussed (binary indicators)',
             'q57_rights_violated': 'Data subject rights violated (binary indicators)'
@@ -210,10 +213,13 @@ class ParquetExporter(BaseExporter):
 
         # Key long tables for analysis
         tables = [
+            'defendant_classifications.csv', 'breach_types.csv',
+            'special_data_categories.csv', 'mitigating_actions.csv',
             'article_5_discussed.csv', 'article_5_violated.csv',
             'article_6_discussed.csv', 'corrective_powers.csv',
             'rights_discussed.csv', 'rights_violated.csv',
-            'aggravating_factors.csv', 'mitigating_factors.csv'
+            'aggravating_factors.csv', 'mitigating_factors.csv',
+            'harm_outcomes.csv', 'benefit_outcomes.csv', 'cooperation_levels.csv'
         ]
 
         for table_name in tables:

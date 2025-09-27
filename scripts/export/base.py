@@ -32,7 +32,8 @@ class BaseExporter(ABC):
         bool_cols = [col for col in df.columns if any(
             col.startswith(prefix) for prefix in [
                 'q30_discussed_', 'q31_violated_', 'q32_bases_', 'q41_aggrav_',
-                'q42_mitig_', 'q46_vuln_', 'q47_remedial_', 'q50_other_measures_',
+                'q42_mitig_', 'q43_harm_', 'q44_benefit_', 'q45_coop_',
+                'q46_vuln_', 'q47_remedial_', 'q50_other_measures_',
                 'q53_powers_', 'q54_scopes_', 'q56_rights_discussed_', 'q57_rights_violated_',
                 'q58_access_issues_', 'q59_adm_issues_', 'q61_dpo_issues_', 'q64_transfer_violations_'
             ]
@@ -107,6 +108,9 @@ class BaseExporter(ABC):
                 'Q33': 'Legal bases relied upon by defendant',
                 'Q41': 'Article 83(2) aggravating factors',
                 'Q42': 'Article 83(2) mitigating factors',
+                'Q43': 'Documented harm to data subjects',
+                'Q44': 'Economic benefit to defendant',
+                'Q45': 'Defendant cooperation level',
                 'Q53': 'Article 58(2) corrective powers exercised',
                 'Q56': 'Data subject rights discussed',
                 'Q57': 'Data subject rights violated'
@@ -159,6 +163,9 @@ class SchemaRegistry:
             'Q32': 'Article 6 legal bases discussed',
             'Q37': 'Administrative fine amount (EUR)',
             'Q38': 'Annual turnover mentioned (EUR)',
+            'Q43': 'Documented harm to data subjects',
+            'Q44': 'Economic benefit to defendant',
+            'Q45': 'Defendant cooperation level',
             'Q53': 'Article 58(2) corrective powers exercised',
             'Q56': 'Data subject rights discussed',
             'Q57': 'Data subject rights violated'

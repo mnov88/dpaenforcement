@@ -162,7 +162,12 @@ class ArrowExporter(BaseExporter):
             # Add legal interpretation notes for key fields
             if field_name.endswith('_status'):
                 field_meta['legal_note'] = 'Preserves typed missingness from questionnaire'
-            elif field_name.startswith(('q30_', 'q31_', 'q53_', 'q56_', 'q57_')):
+            elif field_name.startswith(
+                (
+                    'q30_', 'q31_', 'q32_', 'q41_', 'q42_', 'q43_', 'q44_', 'q45_',
+                    'q53_', 'q56_', 'q57_'
+                )
+            ):
                 field_meta['legal_note'] = 'Binary indicator from multi-select question'
             elif field_name in ['fine_eur', 'turnover_eur']:
                 field_meta['unit'] = 'EUR'
@@ -217,10 +222,13 @@ class ArrowExporter(BaseExporter):
         long_output.mkdir(exist_ok=True)
 
         tables = [
+            'defendant_classifications.csv', 'breach_types.csv',
+            'special_data_categories.csv', 'mitigating_actions.csv',
             'article_5_discussed.csv', 'article_5_violated.csv',
             'article_6_discussed.csv', 'corrective_powers.csv',
             'rights_discussed.csv', 'rights_violated.csv',
-            'aggravating_factors.csv', 'mitigating_factors.csv'
+            'aggravating_factors.csv', 'mitigating_factors.csv',
+            'harm_outcomes.csv', 'benefit_outcomes.csv', 'cooperation_levels.csv'
         ]
 
         for table_name in tables:

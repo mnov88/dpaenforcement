@@ -436,7 +436,9 @@
         "YES_NON_MATERIAL_HARM",
         "YES_BOTH_TYPES",
         "NO_HARM_DOCUMENTED",
-        "NOT_DISCUSSED"
+        "NO",
+        "NOT_DISCUSSED",
+        "UNCLEAR"
       ]
     },
     "44": {
@@ -445,7 +447,9 @@
         "YES_QUANTIFIED",
         "YES_MENTIONED_UNQUANTIFIED",
         "NO_BENEFIT",
-        "NOT_DISCUSSED"
+        "NO",
+        "NOT_DISCUSSED",
+        "UNCLEAR"
       ]
     },
     "45": {
@@ -455,7 +459,9 @@
         "PARTIAL_COOPERATION",
         "NON_COOPERATIVE",
         "OBSTRUCTIVE",
-        "NOT_DISCUSSED"
+        "NO",
+        "NOT_DISCUSSED",
+        "UNCLEAR"
       ]
     },
     "46": {

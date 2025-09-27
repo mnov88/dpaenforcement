@@ -8,7 +8,7 @@
     ],
     "source_file": "outputs/cleaned_wide.csv",
     "row_count": 999,
-    "column_count": 341
+    "column_count": 376
   },
   "legal_semantics": {
     "typed_missingness": {
@@ -28,6 +28,9 @@
       "Q31": "Article 5 principles violated",
       "Q32": "Article 6 legal bases discussed",
       "Q33": "Legal bases relied upon by defendant",
+      "Q43": "Documented harm to data subjects",
+      "Q44": "Economic benefit to defendant",
+      "Q45": "Defendant cooperation level",
       "Q41": "Article 83(2) aggravating factors",
       "Q42": "Article 83(2) mitigating factors",
       "Q53": "Article 58(2) corrective powers exercised",

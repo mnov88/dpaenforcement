@@ -4,14 +4,21 @@ import csv
 from pathlib import Path
 from typing import Dict, List
 
-from scripts.clean.typing_status import split_multiselect, derive_multiselect_status
+from scripts.clean.typing_status import (
+    split_multiselect,
+    derive_multiselect_status,
+    normalize_multiselect_tokens,
+)
 from scripts.clean.enum_validate import EnumWhitelist
 from scripts.clean.schema_echo import strip_schema_echo
 from scripts.parser.validators import dedupe_preserve_order
 from scripts.parser.ingest import parse_record
 
 LONG_TABLE_QUESTIONS = {
+    "Q10",
     "Q21",
+    "Q25",
+    "Q28",
     "Q30",
     "Q31",
     "Q32",
@@ -20,6 +27,9 @@ LONG_TABLE_QUESTIONS = {
     "Q35",
     "Q41",
     "Q42",
+    "Q43",
+    "Q44",
+    "Q45",
     "Q46",
     "Q53",
     "Q54",
@@ -72,6 +82,7 @@ class LongEmitter:
             fmt = _resolve_input_format(r.fieldnames, input_format)
 
             tables: Dict[str, List[Dict[str, str]]] = {
+                "defendant_classifications.csv": [],
                 "article_5_discussed.csv": [],
                 "article_5_violated.csv": [],
                 "article_6_discussed.csv": [],
@@ -79,6 +90,8 @@ class LongEmitter:
                 "consent_issues.csv": [],
                 "li_test_outcome.csv": [],
                 "breach_types.csv": [],
+                "special_data_categories.csv": [],
+                "mitigating_actions.csv": [],
                 "vulnerable_groups.csv": [],
                 "corrective_powers.csv": [],
                 "corrective_scopes.csv": [],
@@ -90,6 +103,9 @@ class LongEmitter:
                 "transfer_violations.csv": [],
                 "aggravating_factors.csv": [],
                 "mitigating_factors.csv": [],
+                "harm_outcomes.csv": [],
+                "benefit_outcomes.csv": [],
+                "cooperation_levels.csv": [],
             }
 
             for row in r:
@@ -104,9 +120,8 @@ class LongEmitter:
                     ms_parsed = split_multiselect(answers.get(qkey, ""))
                     tokens: List[str] = []
                     for token in ms_parsed.tokens:
-                        cleaned_token, _ = strip_schema_echo(token)
-                        if cleaned_token:
-                            tokens.append(cleaned_token)
+                        cleaned_tokens, _ = normalize_multiselect_tokens(qkey, token)
+                        tokens.extend(t for t in cleaned_tokens if t)
                     tokens = dedupe_preserve_order(tokens)
                     if not tokens:
                         status = derive_multiselect_status(qkey, ms_parsed.tokens)
@@ -132,6 +147,10 @@ class LongEmitter:
                     if unknown:
                         tables[table_name].append({"decision_id": decision_id, "option": unknown[0], "status": "DISCUSSED", "token_status": "UNKNOWN"})
 
+                add_multiselect("Q10", "defendant_classifications.csv")
+                add_multiselect("Q21", "breach_types.csv")
+                add_multiselect("Q25", "special_data_categories.csv")
+                add_multiselect("Q28", "mitigating_actions.csv")
                 add_multiselect("Q30", "article_5_discussed.csv")
                 add_multiselect("Q31", "article_5_violated.csv")
                 add_multiselect("Q32", "article_6_discussed.csv")
@@ -139,7 +158,6 @@ class LongEmitter:
                 add_multiselect("Q34", "consent_issues.csv")
                 add_single("Q35", "li_test_outcome.csv")
 
-                add_multiselect("Q21", "breach_types.csv")
                 add_multiselect("Q46", "vulnerable_groups.csv")
 
                 add_multiselect("Q53", "corrective_powers.csv")
@@ -156,6 +174,9 @@ class LongEmitter:
 
                 add_multiselect("Q41", "aggravating_factors.csv")
                 add_multiselect("Q42", "mitigating_factors.csv")
+                add_multiselect("Q43", "harm_outcomes.csv")
+                add_multiselect("Q44", "benefit_outcomes.csv")
+                add_multiselect("Q45", "cooperation_levels.csv")
 
             for filename, rows in tables.items():
                 self._emit(filename, rows, ["decision_id", "option", "status", "token_status"]) 

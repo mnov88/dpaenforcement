@@ -14,6 +14,7 @@ from scripts.clean.typing_status import (
     derive_multiselect_status,
     detect_exclusivity_conflict,
     NumericParseResult,
+    normalize_multiselect_tokens,
 )
 from scripts.clean.isic_map import IsicIndex
 from scripts.clean.geo_enrich import enrich_country, normalize_dpa_name
@@ -21,6 +22,7 @@ from scripts.clean.text_norm import normalize_text, detect_language_heuristic
 from scripts.clean.enum_validate import EnumWhitelist
 from scripts.clean.schema_echo import strip_schema_echo
 from scripts.parser.ingest import parse_record
+from scripts.parser.validators import dedupe_preserve_order
 
 
 SEVERITY_MEASURES = {
@@ -41,11 +43,18 @@ TURNOVER_OUTLIER_HIGH = 1e12
 
 # Multi-select fields to emit systematically: (Qkey, prefix)
 MULTI_FIELDS: List[Tuple[str, str]] = [
+    ("Q10", "q10_org_class"),
+    ("Q21", "q21_breach_types"),
+    ("Q25", "q25_sensitive_data"),
+    ("Q28", "q28_mitigations"),
     ("Q30", "q30_discussed"),
     ("Q31", "q31_violated"),
     ("Q32", "q32_bases"),
     ("Q41", "q41_aggrav"),
     ("Q42", "q42_mitig"),
+    ("Q43", "q43_harm"),
+    ("Q44", "q44_benefit"),
+    ("Q45", "q45_coop"),
     ("Q46", "q46_vuln"),
     ("Q47", "q47_remedial"),
     ("Q50", "q50_other_measures"),
@@ -269,12 +278,12 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 ms_parsed = split_multiselect(answers.get(qkey, ""))
                 tokens: List[str] = []
                 for token in ms_parsed.tokens:
-                    cleaned_token, had_schema = strip_schema_echo(token)
+                    cleaned_tokens, had_schema = normalize_multiselect_tokens(qkey, token)
                     if had_schema:
                         schema_echo_flag = 1
                         schema_echo_fields.append(qkey)
-                    if cleaned_token:
-                        tokens.append(cleaned_token)
+                    tokens.extend(cleaned_tokens)
+                tokens = dedupe_preserve_order([t for t in tokens if t])
                 unknown, known = whitelist.validate_tokens(qkey, tokens)
                 status = derive_multiselect_status(qkey, tokens)
                 exclusivity = detect_exclusivity_conflict(tokens)

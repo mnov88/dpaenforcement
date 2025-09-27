@@ -11,8 +11,8 @@
     "description": "Structured enforcement decisions with 68-field questionnaire",
     "legal_framework": "EU GDPR (Regulation 2016/679)",
     "row_count": 1998,
-    "column_count": 305,
-    "source_file": "outputs/cleaned_wide.csv"
+    "column_count": 341,
+    "source_file": "/Users/milos/Desktop/dpaenforcement/outputs/cleaned_wide.csv"
   },
   "legal_semantics": {
     "typed_missingness": {

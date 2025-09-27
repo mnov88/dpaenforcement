@@ -4,43 +4,43 @@
 <key id="d1" for="node" attr.name="violation_type" attr.type="string"/>
 <key id="d0" for="node" attr.name="total_occurrences" attr.type="long"/>
 <graph edgedefault="undirected"><node id="SECURITY">
-  <data key="d0">595</data>
+  <data key="d0">746</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="ACCOUNTABILITY">
-  <data key="d0">422</data>
+  <data key="d0">425</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="LAWFULNESS_FAIRNESS_TRANSPARENCY">
-  <data key="d0">448</data>
+  <data key="d0">785</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="PURPOSE_LIMITATION">
-  <data key="d0">227</data>
+  <data key="d0">235</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="INFORMATION_OBLIGATIONS">
-  <data key="d0">592</data>
+  <data key="d0">757</data>
   <data key="d1">Rights</data>
 </node>
 <node id="NONE_VIOLATED">
-  <data key="d0">437</data>
+  <data key="d0">979</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="ACCESS">
-  <data key="d0">106</data>
+  <data key="d0">213</data>
   <data key="d1">Rights</data>
 </node>
 <node id="DATA_MINIMISATION">
-  <data key="d0">207</data>
+  <data key="d0">239</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="STORAGE_LIMITATION">
-  <data key="d0">91</data>
+  <data key="d0">95</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="NOT_DETERMINED">
-  <data key="d0">119</data>
+  <data key="d0">181</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="AUTOMATED_DECISION_MAKING">
@@ -48,15 +48,15 @@
   <data key="d1">Rights</data>
 </node>
 <node id="ERASURE">
-  <data key="d0">113</data>
+  <data key="d0">153</data>
   <data key="d1">Rights</data>
 </node>
 <node id="RECTIFICATION">
-  <data key="d0">25</data>
+  <data key="d0">30</data>
   <data key="d1">Rights</data>
 </node>
 <node id="ACCURACY">
-  <data key="d0">65</data>
+  <data key="d0">76</data>
   <data key="d1">Article 5</data>
 </node>
 <node id="RESTRICTION_OF_PROCESSING">
@@ -68,112 +68,112 @@
   <data key="d1">Rights</data>
 </node>
 <node id="OBJECTION">
-  <data key="d0">54</data>
+  <data key="d0">68</data>
   <data key="d1">Rights</data>
 </node>
 <edge source="SECURITY" target="ACCOUNTABILITY">
-  <data key="d2">300</data>
-  <data key="d3">300</data>
+  <data key="d2">332</data>
+  <data key="d3">332</data>
 </edge>
 <edge source="SECURITY" target="DATA_MINIMISATION">
-  <data key="d2">84</data>
-  <data key="d3">84</data>
+  <data key="d2">89</data>
+  <data key="d3">89</data>
 </edge>
 <edge source="SECURITY" target="STORAGE_LIMITATION">
-  <data key="d2">50</data>
-  <data key="d3">50</data>
+  <data key="d2">55</data>
+  <data key="d3">55</data>
 </edge>
 <edge source="SECURITY" target="NONE_VIOLATED">
-  <data key="d2">58</data>
-  <data key="d3">58</data>
+  <data key="d2">201</data>
+  <data key="d3">201</data>
 </edge>
 <edge source="SECURITY" target="INFORMATION_OBLIGATIONS">
-  <data key="d2">244</data>
-  <data key="d3">244</data>
+  <data key="d2">331</data>
+  <data key="d3">331</data>
 </edge>
 <edge source="SECURITY" target="LAWFULNESS_FAIRNESS_TRANSPARENCY">
-  <data key="d2">130</data>
-  <data key="d3">130</data>
+  <data key="d2">282</data>
+  <data key="d3">282</data>
 </edge>
 <edge source="SECURITY" target="ACCESS">
-  <data key="d2">54</data>
-  <data key="d3">54</data>
+  <data key="d2">99</data>
+  <data key="d3">99</data>
 </edge>
 <edge source="SECURITY" target="ERASURE">
-  <data key="d2">58</data>
-  <data key="d3">58</data>
+  <data key="d2">72</data>
+  <data key="d3">72</data>
 </edge>
 <edge source="SECURITY" target="RECTIFICATION">
-  <data key="d2">17</data>
-  <data key="d3">17</data>
+  <data key="d2">19</data>
+  <data key="d3">19</data>
 </edge>
 <edge source="SECURITY" target="PURPOSE_LIMITATION">
-  <data key="d2">126</data>
-  <data key="d3">126</data>
+  <data key="d2">128</data>
+  <data key="d3">128</data>
 </edge>
 <edge source="SECURITY" target="ACCURACY">
-  <data key="d2">34</data>
-  <data key="d3">34</data>
+  <data key="d2">39</data>
+  <data key="d3">39</data>
 </edge>
 <edge source="SECURITY" target="RESTRICTION_OF_PROCESSING">
-  <data key="d2">8</data>
-  <data key="d3">8</data>
+  <data key="d2">9</data>
+  <data key="d3">9</data>
 </edge>
 <edge source="SECURITY" target="DATA_PORTABILITY">
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
 <edge source="SECURITY" target="OBJECTION">
-  <data key="d2">33</data>
-  <data key="d3">33</data>
+  <data key="d2">39</data>
+  <data key="d3">39</data>
 </edge>
 <edge source="SECURITY" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">3</data>
   <data key="d3">3</data>
 </edge>
 <edge source="SECURITY" target="NOT_DETERMINED">
-  <data key="d2">24</data>
-  <data key="d3">24</data>
+  <data key="d2">25</data>
+  <data key="d3">25</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="NONE_VIOLATED">
-  <data key="d2">26</data>
-  <data key="d3">26</data>
+  <data key="d2">57</data>
+  <data key="d3">57</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="DATA_MINIMISATION">
-  <data key="d2">79</data>
-  <data key="d3">79</data>
+  <data key="d2">81</data>
+  <data key="d3">81</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="STORAGE_LIMITATION">
-  <data key="d2">55</data>
-  <data key="d3">55</data>
+  <data key="d2">57</data>
+  <data key="d3">57</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="INFORMATION_OBLIGATIONS">
-  <data key="d2">224</data>
-  <data key="d3">224</data>
+  <data key="d2">290</data>
+  <data key="d3">290</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="LAWFULNESS_FAIRNESS_TRANSPARENCY">
-  <data key="d2">118</data>
-  <data key="d3">118</data>
+  <data key="d2">235</data>
+  <data key="d3">235</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="ACCESS">
-  <data key="d2">55</data>
-  <data key="d3">55</data>
+  <data key="d2">94</data>
+  <data key="d3">94</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="RECTIFICATION">
-  <data key="d2">16</data>
-  <data key="d3">16</data>
+  <data key="d2">18</data>
+  <data key="d3">18</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="ERASURE">
-  <data key="d2">49</data>
-  <data key="d3">49</data>
+  <data key="d2">59</data>
+  <data key="d3">59</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="PURPOSE_LIMITATION">
-  <data key="d2">121</data>
-  <data key="d3">121</data>
+  <data key="d2">123</data>
+  <data key="d3">123</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="ACCURACY">
-  <data key="d2">32</data>
-  <data key="d3">32</data>
+  <data key="d2">35</data>
+  <data key="d3">35</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">8</data>
@@ -184,8 +184,8 @@
   <data key="d3">4</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="OBJECTION">
-  <data key="d2">35</data>
-  <data key="d3">35</data>
+  <data key="d2">38</data>
+  <data key="d3">38</data>
 </edge>
 <edge source="ACCOUNTABILITY" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">3</data>
@@ -196,96 +196,96 @@
   <data key="d3">6</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="PURPOSE_LIMITATION">
-  <data key="d2">107</data>
-  <data key="d3">107</data>
+  <data key="d2">209</data>
+  <data key="d3">209</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="INFORMATION_OBLIGATIONS">
-  <data key="d2">354</data>
-  <data key="d3">354</data>
+  <data key="d2">543</data>
+  <data key="d3">543</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="ACCESS">
-  <data key="d2">48</data>
-  <data key="d3">48</data>
+  <data key="d2">100</data>
+  <data key="d3">100</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="DATA_MINIMISATION">
-  <data key="d2">72</data>
-  <data key="d3">72</data>
-</edge>
-<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="AUTOMATED_DECISION_MAKING">
-  <data key="d2">3</data>
-  <data key="d3">3</data>
-</edge>
-<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="RECTIFICATION">
-  <data key="d2">9</data>
-  <data key="d3">9</data>
-</edge>
-<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="ERASURE">
-  <data key="d2">38</data>
-  <data key="d3">38</data>
+  <data key="d2">132</data>
+  <data key="d3">132</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="NONE_VIOLATED">
-  <data key="d2">43</data>
-  <data key="d3">43</data>
+  <data key="d2">143</data>
+  <data key="d3">143</data>
+</edge>
+<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="AUTOMATED_DECISION_MAKING">
+  <data key="d2">5</data>
+  <data key="d3">5</data>
+</edge>
+<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="RECTIFICATION">
+  <data key="d2">19</data>
+  <data key="d3">19</data>
+</edge>
+<edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="ERASURE">
+  <data key="d2">74</data>
+  <data key="d3">74</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="ACCURACY">
-  <data key="d2">20</data>
-  <data key="d3">20</data>
+  <data key="d2">42</data>
+  <data key="d3">42</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="STORAGE_LIMITATION">
-  <data key="d2">32</data>
-  <data key="d3">32</data>
+  <data key="d2">58</data>
+  <data key="d3">58</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="RESTRICTION_OF_PROCESSING">
-  <data key="d2">3</data>
-  <data key="d3">3</data>
+  <data key="d2">7</data>
+  <data key="d3">7</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="DATA_PORTABILITY">
-  <data key="d2">3</data>
-  <data key="d3">3</data>
+  <data key="d2">5</data>
+  <data key="d3">5</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="OBJECTION">
-  <data key="d2">23</data>
-  <data key="d3">23</data>
+  <data key="d2">49</data>
+  <data key="d3">49</data>
 </edge>
 <edge source="LAWFULNESS_FAIRNESS_TRANSPARENCY" target="NOT_DETERMINED">
-  <data key="d2">13</data>
-  <data key="d3">13</data>
+  <data key="d2">14</data>
+  <data key="d3">14</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="INFORMATION_OBLIGATIONS">
-  <data key="d2">127</data>
-  <data key="d3">127</data>
+  <data key="d2">171</data>
+  <data key="d3">171</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="DATA_MINIMISATION">
-  <data key="d2">106</data>
-  <data key="d3">106</data>
+  <data key="d2">108</data>
+  <data key="d3">108</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="NONE_VIOLATED">
-  <data key="d2">20</data>
-  <data key="d3">20</data>
+  <data key="d2">49</data>
+  <data key="d3">49</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="ACCURACY">
   <data key="d2">27</data>
   <data key="d3">27</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="STORAGE_LIMITATION">
-  <data key="d2">46</data>
-  <data key="d3">46</data>
+  <data key="d2">48</data>
+  <data key="d3">48</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="ACCESS">
-  <data key="d2">18</data>
-  <data key="d3">18</data>
+  <data key="d2">40</data>
+  <data key="d3">40</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="RECTIFICATION">
   <data key="d2">11</data>
   <data key="d3">11</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="ERASURE">
-  <data key="d2">23</data>
-  <data key="d3">23</data>
+  <data key="d2">30</data>
+  <data key="d3">30</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">7</data>
@@ -296,36 +296,36 @@
   <data key="d3">4</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="OBJECTION">
-  <data key="d2">23</data>
-  <data key="d3">23</data>
+  <data key="d2">25</data>
+  <data key="d3">25</data>
 </edge>
 <edge source="PURPOSE_LIMITATION" target="NOT_DETERMINED">
   <data key="d2">2</data>
   <data key="d3">2</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="DATA_MINIMISATION">
-  <data key="d2">112</data>
-  <data key="d3">112</data>
+  <data key="d2">158</data>
+  <data key="d3">158</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="ACCESS">
-  <data key="d2">54</data>
-  <data key="d3">54</data>
+  <data key="d2">114</data>
+  <data key="d3">114</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="STORAGE_LIMITATION">
-  <data key="d2">47</data>
-  <data key="d3">47</data>
+  <data key="d2">63</data>
+  <data key="d3">63</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="ACCURACY">
-  <data key="d2">29</data>
-  <data key="d3">29</data>
+  <data key="d2">36</data>
+  <data key="d3">36</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="RECTIFICATION">
-  <data key="d2">17</data>
-  <data key="d3">17</data>
+  <data key="d2">19</data>
+  <data key="d3">19</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="ERASURE">
-  <data key="d2">59</data>
-  <data key="d3">59</data>
+  <data key="d2">72</data>
+  <data key="d3">72</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">8</data>
@@ -336,48 +336,52 @@
   <data key="d3">5</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="OBJECTION">
-  <data key="d2">37</data>
-  <data key="d3">37</data>
+  <data key="d2">44</data>
+  <data key="d3">44</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="NONE_VIOLATED">
-  <data key="d2">12</data>
-  <data key="d3">12</data>
+  <data key="d2">37</data>
+  <data key="d3">37</data>
 </edge>
 <edge source="INFORMATION_OBLIGATIONS" target="NOT_DETERMINED">
-  <data key="d2">2</data>
-  <data key="d3">2</data>
+  <data key="d2">4</data>
+  <data key="d3">4</data>
 </edge>
 <edge source="NONE_VIOLATED" target="ACCESS">
-  <data key="d2">17</data>
-  <data key="d3">17</data>
-</edge>
-<edge source="NONE_VIOLATED" target="DATA_MINIMISATION">
-  <data key="d2">28</data>
-  <data key="d3">28</data>
-</edge>
-<edge source="NONE_VIOLATED" target="STORAGE_LIMITATION">
-  <data key="d2">11</data>
-  <data key="d3">11</data>
+  <data key="d2">64</data>
+  <data key="d3">64</data>
 </edge>
 <edge source="NONE_VIOLATED" target="NONE_VIOLATED">
-  <data key="d2">137</data>
-  <data key="d3">137</data>
+  <data key="d2">255</data>
+  <data key="d3">255</data>
 </edge>
-<edge source="NONE_VIOLATED" target="ACCURACY">
-  <data key="d2">9</data>
-  <data key="d3">9</data>
+<edge source="NONE_VIOLATED" target="DATA_MINIMISATION">
+  <data key="d2">61</data>
+  <data key="d3">61</data>
 </edge>
-<edge source="NONE_VIOLATED" target="NOT_DETERMINED">
-  <data key="d2">6</data>
-  <data key="d3">6</data>
+<edge source="NONE_VIOLATED" target="STORAGE_LIMITATION">
+  <data key="d2">19</data>
+  <data key="d3">19</data>
 </edge>
 <edge source="NONE_VIOLATED" target="ERASURE">
-  <data key="d2">15</data>
-  <data key="d3">15</data>
+  <data key="d2">34</data>
+  <data key="d3">34</data>
+</edge>
+<edge source="NONE_VIOLATED" target="OBJECTION">
+  <data key="d2">16</data>
+  <data key="d3">16</data>
+</edge>
+<edge source="NONE_VIOLATED" target="ACCURACY">
+  <data key="d2">18</data>
+  <data key="d3">18</data>
+</edge>
+<edge source="NONE_VIOLATED" target="NOT_DETERMINED">
+  <data key="d2">12</data>
+  <data key="d3">12</data>
 </edge>
 <edge source="NONE_VIOLATED" target="RECTIFICATION">
   <data key="d2">4</data>
@@ -391,53 +395,49 @@
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
-<edge source="NONE_VIOLATED" target="OBJECTION">
-  <data key="d2">7</data>
-  <data key="d3">7</data>
-</edge>
 <edge source="NONE_VIOLATED" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
-<edge source="ACCESS" target="RECTIFICATION">
-  <data key="d2">8</data>
-  <data key="d3">8</data>
+<edge source="ACCESS" target="STORAGE_LIMITATION">
+  <data key="d2">17</data>
+  <data key="d3">17</data>
 </edge>
 <edge source="ACCESS" target="ERASURE">
+  <data key="d2">46</data>
+  <data key="d3">46</data>
+</edge>
+<edge source="ACCESS" target="RECTIFICATION">
+  <data key="d2">16</data>
+  <data key="d3">16</data>
+</edge>
+<edge source="ACCESS" target="DATA_MINIMISATION">
   <data key="d2">22</data>
   <data key="d3">22</data>
 </edge>
-<edge source="ACCESS" target="DATA_MINIMISATION">
-  <data key="d2">13</data>
-  <data key="d3">13</data>
-</edge>
 <edge source="ACCESS" target="ACCURACY">
-  <data key="d2">12</data>
-  <data key="d3">12</data>
-</edge>
-<edge source="ACCESS" target="STORAGE_LIMITATION">
-  <data key="d2">11</data>
-  <data key="d3">11</data>
+  <data key="d2">20</data>
+  <data key="d3">20</data>
 </edge>
 <edge source="ACCESS" target="RESTRICTION_OF_PROCESSING">
-  <data key="d2">3</data>
-  <data key="d3">3</data>
+  <data key="d2">9</data>
+  <data key="d3">9</data>
 </edge>
 <edge source="ACCESS" target="DATA_PORTABILITY">
+  <data key="d2">5</data>
+  <data key="d3">5</data>
+</edge>
+<edge source="ACCESS" target="OBJECTION">
+  <data key="d2">31</data>
+  <data key="d3">31</data>
+</edge>
+<edge source="ACCESS" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">3</data>
   <data key="d3">3</data>
 </edge>
-<edge source="ACCESS" target="OBJECTION">
-  <data key="d2">15</data>
-  <data key="d3">15</data>
-</edge>
-<edge source="ACCESS" target="AUTOMATED_DECISION_MAKING">
-  <data key="d2">1</data>
-  <data key="d3">1</data>
-</edge>
 <edge source="DATA_MINIMISATION" target="STORAGE_LIMITATION">
-  <data key="d2">43</data>
-  <data key="d3">43</data>
+  <data key="d2">45</data>
+  <data key="d3">45</data>
 </edge>
 <edge source="DATA_MINIMISATION" target="ACCURACY">
   <data key="d2">25</data>
@@ -448,8 +448,8 @@
   <data key="d3">6</data>
 </edge>
 <edge source="DATA_MINIMISATION" target="ERASURE">
-  <data key="d2">18</data>
-  <data key="d3">18</data>
+  <data key="d2">21</data>
+  <data key="d3">21</data>
 </edge>
 <edge source="DATA_MINIMISATION" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">6</data>
@@ -460,8 +460,8 @@
   <data key="d3">4</data>
 </edge>
 <edge source="DATA_MINIMISATION" target="OBJECTION">
-  <data key="d2">10</data>
-  <data key="d3">10</data>
+  <data key="d2">11</data>
+  <data key="d3">11</data>
 </edge>
 <edge source="DATA_MINIMISATION" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">3</data>
@@ -471,6 +471,10 @@
   <data key="d2">6</data>
   <data key="d3">6</data>
 </edge>
+<edge source="STORAGE_LIMITATION" target="ERASURE">
+  <data key="d2">26</data>
+  <data key="d3">26</data>
+</edge>
 <edge source="STORAGE_LIMITATION" target="ACCURACY">
   <data key="d2">21</data>
   <data key="d3">21</data>
@@ -478,10 +482,6 @@
 <edge source="STORAGE_LIMITATION" target="RECTIFICATION">
   <data key="d2">6</data>
   <data key="d3">6</data>
-</edge>
-<edge source="STORAGE_LIMITATION" target="ERASURE">
-  <data key="d2">20</data>
-  <data key="d3">20</data>
 </edge>
 <edge source="STORAGE_LIMITATION" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">6</data>
@@ -492,8 +492,8 @@
   <data key="d3">4</data>
 </edge>
 <edge source="STORAGE_LIMITATION" target="OBJECTION">
-  <data key="d2">9</data>
-  <data key="d3">9</data>
+  <data key="d2">10</data>
+  <data key="d3">10</data>
 </edge>
 <edge source="STORAGE_LIMITATION" target="AUTOMATED_DECISION_MAKING">
   <data key="d2">3</data>
@@ -504,12 +504,20 @@
   <data key="d3">4</data>
 </edge>
 <edge source="NOT_DETERMINED" target="NOT_DETERMINED">
-  <data key="d2">33</data>
-  <data key="d3">33</data>
+  <data key="d2">62</data>
+  <data key="d3">62</data>
+</edge>
+<edge source="NOT_DETERMINED" target="ERASURE">
+  <data key="d2">2</data>
+  <data key="d3">2</data>
 </edge>
 <edge source="NOT_DETERMINED" target="ACCURACY">
   <data key="d2">2</data>
   <data key="d3">2</data>
+</edge>
+<edge source="NOT_DETERMINED" target="OBJECTION">
+  <data key="d2">1</data>
+  <data key="d3">1</data>
 </edge>
 <edge source="AUTOMATED_DECISION_MAKING" target="ACCURACY">
   <data key="d2">3</data>
@@ -536,12 +544,12 @@
   <data key="d3">3</data>
 </edge>
 <edge source="ERASURE" target="RECTIFICATION">
-  <data key="d2">17</data>
-  <data key="d3">17</data>
+  <data key="d2">20</data>
+  <data key="d3">20</data>
 </edge>
 <edge source="ERASURE" target="ACCURACY">
-  <data key="d2">18</data>
-  <data key="d3">18</data>
+  <data key="d2">21</data>
+  <data key="d3">21</data>
 </edge>
 <edge source="ERASURE" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">8</data>
@@ -552,12 +560,12 @@
   <data key="d3">3</data>
 </edge>
 <edge source="ERASURE" target="OBJECTION">
-  <data key="d2">19</data>
-  <data key="d3">19</data>
+  <data key="d2">26</data>
+  <data key="d3">26</data>
 </edge>
 <edge source="RECTIFICATION" target="ACCURACY">
-  <data key="d2">13</data>
-  <data key="d3">13</data>
+  <data key="d2">17</data>
+  <data key="d3">17</data>
 </edge>
 <edge source="RECTIFICATION" target="RESTRICTION_OF_PROCESSING">
   <data key="d2">8</data>
@@ -572,16 +580,16 @@
   <data key="d3">10</data>
 </edge>
 <edge source="ACCURACY" target="RESTRICTION_OF_PROCESSING">
-  <data key="d2">5</data>
-  <data key="d3">5</data>
+  <data key="d2">6</data>
+  <data key="d3">6</data>
 </edge>
 <edge source="ACCURACY" target="DATA_PORTABILITY">
   <data key="d2">4</data>
   <data key="d3">4</data>
 </edge>
 <edge source="ACCURACY" target="OBJECTION">
-  <data key="d2">9</data>
-  <data key="d3">9</data>
+  <data key="d2">10</data>
+  <data key="d3">10</data>
 </edge>
 <edge source="RESTRICTION_OF_PROCESSING" target="DATA_PORTABILITY">
   <data key="d2">3</data>

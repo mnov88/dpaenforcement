@@ -1,5 +1,6 @@
 nodeId,name,type,country,country_group
 dpa_Information_Commissioner's_Office,Information Commissioner's Office,DPA,GB,NON_EEA
+dpa_STRING,STRING,DPA,UNCLEAR,NON_EEA
 dpa_NOT_DISCUSSED,NOT_DISCUSSED,DPA,UNCLEAR,NON_EEA
 dpa_The_Information_Commissioner's_Office,The Information Commissioner's Office,DPA,GB,NON_EEA
 dpa_The_Information_Commissioner,The Information Commissioner,DPA,GB,NON_EEA
@@ -48,7 +49,11 @@ dpa_Autoritatea_Națională_de_Supraveghere_a_Prelucrării_Datelor_cu_Caracter_P
 dpa_The_National_Supervisory_Authority_for_Personal_Data_Processing,The National Supervisory Authority for Personal Data Processing,DPA,RO,EU
 dpa_A.N.S.P.D.C.P,A.N.S.P.D.C.P,DPA,RO,EU
 dpa_National_DPA,National DPA,DPA,RO,EU
+dpa_ANSPDCP,ANSPDCP,DPA,RO,EU
 dpa_National_Authority,National Authority,DPA,RO,EU
+dpa_National_Authority_for_the_Supervision_of_Personal_Data_Processing,National Authority for the Supervision of Personal Data Processing,DPA,RO,EU
+dpa_STRING_The_National_Supervisory_Authority_for_Personal_Data_Processing,STRING The National Supervisory Authority for Personal Data Processing,DPA,RO,EU
+dpa_STRING_National_Supervisory_Authority,STRING National Supervisory Authority,DPA,RO,EU
 dpa_Romanian_Supervisory_Authority,Romanian Supervisory Authority,DPA,RO,EU
 dpa_National_Commission_for_Data_Protection_(CNPD),National Commission for Data Protection (CNPD),DPA,PT,EU
 dpa_Comissão_Nacional_de_Proteção_de_Dados,Comissão Nacional de Proteção de Dados,DPA,PT,EU
@@ -57,6 +62,7 @@ dpa_Comissão_Nacional_de_Proteção_de_Dados_(CNPD),Comissão Nacional de Prote
 dpa_President_of_the_Office_for_the_Protection_of_Personal_Data,President of the Office for the Protection of Personal Data,DPA,PL,EU
 dpa_President_of_the_Personal_Data_Protection_Office,President of the Personal Data Protection Office,DPA,PL,EU
 dpa_President_of_the_Personal_Data_Protection_Office_(UODO),President of the Personal Data Protection Office (UODO),DPA,PL,EU
+dpa_STRING_President_of_the_Personal_Data_Protection_Office,STRING President of the Personal Data Protection Office,DPA,PL,EU
 dpa_President_of_the_Office_for_Personal_Data_Protection_(UODO),President of the Office for Personal Data Protection (UODO),DPA,PL,EU
 dpa_Datatilsynet,Datatilsynet,DPA,NO,
 dpa_Privacy_Board,Privacy Board,DPA,NO,
@@ -90,6 +96,7 @@ dpa_State_Data_Inspectorate,State Data Inspectorate,DPA,LV,EU
 dpa_Garante_per_la_protezione_dei_dati_personali,Garante per la protezione dei dati personali,DPA,IT,EU
 dpa_Garante_per_la_Protezione_dei_Dati_Personali,Garante per la Protezione dei Dati Personali,DPA,IT,EU
 dpa_Guarantor_for_the_Protection_of_Personal_Data,Guarantor for the Protection of Personal Data,DPA,IT,EU
+dpa_STRING_Garante_per_la_protezione_dei_dati_personali,STRING Garante per la protezione dei dati personali,DPA,IT,EU
 dpa_Data_Protection_Commission_of_Ireland,Data Protection Commission of Ireland,DPA,IE,EU
 dpa_Data_Protection_Commission,Data Protection Commission,DPA,IE,EU
 dpa_NOT_MENTIONED,NOT_MENTIONED,DPA,UNCLEAR,NON_EEA

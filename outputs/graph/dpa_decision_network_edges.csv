@@ -35,8 +35,120 @@ Information Commissioner's Office,United Kingdom_56,decided_by,,85000.0
 Information Commissioner's Office,United Kingdom_60,decided_by,2022-02-28 00:00:00+00:00,98000.0
 Information Commissioner's Office,United Kingdom_57,decided_by,2024-03-06 00:00:00+00:00,7500.0
 Information Commissioner's Office,United Kingdom_62,decided_by,2021-09-13 00:00:00+00:00,200000.0
+STRING,United Kingdom_10,decided_by,,0.0
+STRING,United Kingdom_7,decided_by,,0.0
+STRING,United Kingdom_33,decided_by,,0.0
+STRING,United Kingdom_61,decided_by,,0.0
+STRING,Sweden_46,decided_by,,0.0
+STRING,Spain_23,decided_by,,0.0
+STRING,Spain_310,decided_by,,0.0
+STRING,Spain_365,decided_by,,0.0
+STRING,Spain_447,decided_by,,0.0
+STRING,Spain_448,decided_by,,0.0
+STRING,Spain_475,decided_by,,0.0
+STRING,Spain_489,decided_by,,0.0
+STRING,Spain_512,decided_by,,0.0
+STRING,Spain_528,decided_by,,0.0
+STRING,Spain_586,decided_by,,0.0
+STRING,Spain_623,decided_by,,0.0
+STRING,Slovenia_59,decided_by,,0.0
+STRING,Romania_7,decided_by,,0.0
+STRING,Romania_16,decided_by,,0.0
+STRING,Romania_21,decided_by,,0.0
+STRING,Romania_27,decided_by,,0.0
+STRING,Romania_40,decided_by,,0.0
+STRING,Romania_82,decided_by,,0.0
+STRING,Romania_85,decided_by,,0.0
+STRING,Romania_96,decided_by,,0.0
+STRING,Romania_95,decided_by,,0.0
+STRING,Romania_109,decided_by,,0.0
+STRING,Romania_125,decided_by,,1000.0
+STRING,Romania_128,decided_by,,0.0
+STRING,Romania_130,decided_by,,0.0
+STRING,Romania_138,decided_by,,0.0
+STRING,Romania_137,decided_by,,1000.0
+STRING,Romania_142,decided_by,,0.0
+STRING,Romania_143,decided_by,,300.0
+STRING,Romania_154,decided_by,,0.0
+STRING,Romania_159,decided_by,,0.0
+STRING,Romania_157,decided_by,,0.0
+STRING,Romania_165,decided_by,,5000.0
+STRING,Romania_167,decided_by,,0.0
+STRING,Romania_170,decided_by,,4000.0
+STRING,Norway_62,decided_by,,0.0
+STRING,Norway_61,decided_by,,0.0
+STRING,Malta_10,decided_by,,0.0
+STRING,Luxembourg_13,decided_by,,0.0
+STRING,Luxembourg_17,decided_by,,0.0
+STRING,Ireland_2,decided_by,,0.0
+STRING,Ireland_4,decided_by,,0.0
+STRING,Ireland_11,decided_by,,0.0
+STRING,Ireland_12,decided_by,,0.0
+STRING,Ireland_15,decided_by,,0.0
+STRING,Ireland_23,decided_by,,0.0
+STRING,Ireland_25,decided_by,,0.0
+STRING,Ireland_27,decided_by,,0.0
+STRING,Ireland_31,decided_by,,0.0
+STRING,Ireland_37,decided_by,,0.0
+STRING,Ireland_39,decided_by,,0.0
+STRING,Iceland_59,decided_by,,0.0
+STRING,Iceland_60,decided_by,,0.0
+STRING,Hungary_2,decided_by,,0.0
+STRING,Hungary_37,decided_by,,0.0
+STRING,Hungary_44,decided_by,,0.0
+STRING,Hungary_58,decided_by,,0.0
+STRING,Greece_1,decided_by,,1000.0
+STRING,Greece_2,decided_by,,0.0
+STRING,Greece_11,decided_by,,0.0
+STRING,Greece_12,decided_by,,0.0
+STRING,Greece_15,decided_by,,0.0
+STRING,Greece_14,decided_by,,6000000.0
+STRING,Greece_20,decided_by,,0.0
+STRING,Greece_18,decided_by,,0.0
+STRING,Greece_21,decided_by,,0.0
+STRING,Greece_37,decided_by,,0.0
+STRING,Greece_43,decided_by,,0.0
+STRING,Greece_48,decided_by,,0.0
+STRING,Greece_49,decided_by,,0.0
+STRING,Greece_50,decided_by,,0.0
+STRING,Greece_52,decided_by,,0.0
+STRING,Greece_57,decided_by,,0.0
+STRING,Greece_64,decided_by,,0.0
+STRING,Greece_76,decided_by,,0.0
+STRING,Greece_77,decided_by,,20000.0
+STRING,Greece_83,decided_by,,0.0
+STRING,Greece_87,decided_by,,0.0
+STRING,Greece_92,decided_by,,10000.0
+STRING,Greece_90,decided_by,,150000.0
+STRING,Greece_93,decided_by,,0.0
+STRING,Greece_94,decided_by,,0.0
+STRING,Greece_98,decided_by,,0.0
+STRING,Greece_97,decided_by,,0.0
+STRING,Greece_105,decided_by,,1000.0
+STRING,Greece_107,decided_by,,0.0
+STRING,Greece_104,decided_by,,20000.0
+STRING,Greece_110,decided_by,,0.0
+STRING,Greece_120,decided_by,,0.0
+STRING,Greece_119,decided_by,,0.0
+STRING,Greece_121,decided_by,,0.0
+STRING,Germany_4,decided_by,,0.0
+STRING,Germany_5,decided_by,,0.0
+STRING,Germany_2,decided_by,,0.0
+STRING,Germany_6,decided_by,,0.0
+STRING,Germany_17,decided_by,,0.0
+STRING,France_4,decided_by,,0.0
+STRING,France_28,decided_by,,0.0
+STRING,France_41,decided_by,,0.0
+STRING,France_46,decided_by,,0.0
+STRING,France_47,decided_by,,0.0
+STRING,France_65,decided_by,,0.0
+STRING,Finland_5,decided_by,,0.0
+STRING,Finland_14,decided_by,,0.0
+STRING,Finland_31,decided_by,,0.0
+STRING,Finland_37,decided_by,,0.0
 NOT_DISCUSSED,United Kingdom_36,decided_by,,0.0
 NOT_DISCUSSED,United Kingdom_63,decided_by,,0.0
+NOT_DISCUSSED,Spain_531,decided_by,,0.0
 NOT_DISCUSSED,Spain_572,decided_by,,0.0
 NOT_DISCUSSED,Slovenia_76,decided_by,,0.0
 NOT_DISCUSSED,Norway_8,decided_by,,0.0
@@ -787,6 +899,7 @@ Informacijski pooblaščenec (IP),Slovenia_50,decided_by,2021-03-15 00:00:00+00:
 Information Commissioner of Slovenia,Slovenia_58,decided_by,,500.0
 Office for the Protection of Personal Data of the Slovak Republic,Slovakia_1,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_1,decided_by,2023-01-03 00:00:00+00:00,500.0
+National Supervisory Authority for Personal Data Processing,Romania_5,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_17,decided_by,,70000.0
 National Supervisory Authority for Personal Data Processing,Romania_20,decided_by,,1000.0
 National Supervisory Authority for Personal Data Processing,Romania_34,decided_by,,25000.0
@@ -795,7 +908,9 @@ National Supervisory Authority for Personal Data Processing,Romania_46,decided_b
 National Supervisory Authority for Personal Data Processing,Romania_120,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_139,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_153,decided_by,,2000.0
+National Supervisory Authority for Personal Data Processing,Romania_152,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_155,decided_by,,12000.0
+National Supervisory Authority for Personal Data Processing,Romania_162,decided_by,,0.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_2,decided_by,,0.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_60,decided_by,,1000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_67,decided_by,,2000.0
@@ -804,6 +919,7 @@ The National Supervisory Authority for the Processing of Personal Data,Romania_7
 The National Supervisory Authority for the Processing of Personal Data,Romania_93,decided_by,,20000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_102,decided_by,2023-10-25 00:00:00+00:00,1000.0
 National Supervisory Authority,Romania_4,decided_by,,3000.0
+National Supervisory Authority,Romania_12,decided_by,,0.0
 National Supervisory Authority,Romania_14,decided_by,,10000.0
 National Supervisory Authority,Romania_15,decided_by,,1000.0
 National Supervisory Authority,Romania_18,decided_by,,0.0
@@ -812,6 +928,7 @@ National Supervisory Authority,Romania_29,decided_by,,1000.0
 National Supervisory Authority,Romania_33,decided_by,,2000.0
 National Supervisory Authority,Romania_36,decided_by,2020-04-14 00:00:00+00:00,5000.0
 National Supervisory Authority,Romania_31,decided_by,,0.0
+National Supervisory Authority,Romania_37,decided_by,,0.0
 National Supervisory Authority,Romania_43,decided_by,,2000.0
 National Supervisory Authority,Romania_42,decided_by,,0.0
 National Supervisory Authority,Romania_50,decided_by,,200.0
@@ -819,6 +936,8 @@ National Supervisory Authority,Romania_51,decided_by,,500.0
 National Supervisory Authority,Romania_58,decided_by,,2000.0
 National Supervisory Authority,Romania_59,decided_by,,100000.0
 National Supervisory Authority,Romania_63,decided_by,,7000.0
+National Supervisory Authority,Romania_68,decided_by,,0.0
+National Supervisory Authority,Romania_69,decided_by,,0.0
 National Supervisory Authority,Romania_70,decided_by,,0.0
 National Supervisory Authority,Romania_72,decided_by,,10000.0
 National Supervisory Authority,Romania_73,decided_by,,4000.0
@@ -827,11 +946,14 @@ National Supervisory Authority,Romania_84,decided_by,,2000.0
 National Supervisory Authority,Romania_92,decided_by,,0.0
 National Supervisory Authority,Romania_103,decided_by,,1000.0
 National Supervisory Authority,Romania_110,decided_by,,10000.0
+National Supervisory Authority,Romania_112,decided_by,,0.0
 National Supervisory Authority,Romania_116,decided_by,2021-04-30 00:00:00+00:00,2000.0
 National Supervisory Authority,Romania_121,decided_by,,5000.0
 National Supervisory Authority,Romania_122,decided_by,,0.0
 National Supervisory Authority,Romania_123,decided_by,,3000.0
 National Supervisory Authority,Romania_127,decided_by,,3000.0
+National Supervisory Authority,Romania_144,decided_by,,0.0
+National Supervisory Authority,Romania_146,decided_by,,0.0
 National Supervisory Authority,Romania_156,decided_by,,5000.0
 National Supervisory Authority,Romania_174,decided_by,2020-12-11 00:00:00+00:00,0.0
 National Supervisory Authority,Romania_175,decided_by,2020-12-11 00:00:00+00:00,0.0
@@ -841,7 +963,9 @@ National Supervisory Authority for the Processing of Personal Data,Romania_10,de
 National Supervisory Authority for the Processing of Personal Data,Romania_19,decided_by,,10000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_26,decided_by,,2000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_49,decided_by,,3000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_75,decided_by,,0.0
 National Supervisory Authority for the Processing of Personal Data,Romania_91,decided_by,,0.0
+National Supervisory Authority for the Processing of Personal Data,Romania_119,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_6,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_25,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_28,decided_by,2021-08-24 00:00:00+00:00,3000.0
@@ -851,6 +975,7 @@ A.N.S.P.D.C.P.,Romania_53,decided_by,2025-04-30 00:00:00+00:00,5000.0
 A.N.S.P.D.C.P.,Romania_61,decided_by,,2000.0
 A.N.S.P.D.C.P.,Romania_71,decided_by,,4000.0
 A.N.S.P.D.C.P.,Romania_77,decided_by,,5000.0
+A.N.S.P.D.C.P.,Romania_80,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_81,decided_by,,1000.0
 A.N.S.P.D.C.P.,Romania_100,decided_by,2021-12-13 00:00:00+00:00,2000.0
 A.N.S.P.D.C.P.,Romania_108,decided_by,,6000.0
@@ -859,6 +984,7 @@ A.N.S.P.D.C.P.,Romania_124,decided_by,,2500.0
 A.N.S.P.D.C.P.,Romania_129,decided_by,,5000.0
 A.N.S.P.D.C.P.,Romania_134,decided_by,2022-10-03 00:00:00+00:00,150.0
 A.N.S.P.D.C.P.,Romania_148,decided_by,,5000.0
+A.N.S.P.D.C.P.,Romania_158,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_164,decided_by,,15000.0
 The National Supervisory Authority,Romania_9,decided_by,,0.0
 The National Supervisory Authority,Romania_30,decided_by,,10000.0
@@ -884,6 +1010,7 @@ The National Supervisory Authority for Personal Data Processing,Romania_166,deci
 The National Supervisory Authority for Personal Data Processing,Romania_176,decided_by,,20000.0
 A.N.S.P.D.C.P,Romania_41,decided_by,,0.0
 A.N.S.P.D.C.P,Romania_62,decided_by,,1000.0
+A.N.S.P.D.C.P,Romania_86,decided_by,,0.0
 A.N.S.P.D.C.P,Romania_94,decided_by,2024-06-25 00:00:00+00:00,4000.0
 A.N.S.P.D.C.P,Romania_113,decided_by,,1500.0
 A.N.S.P.D.C.P,Romania_132,decided_by,,2000.0
@@ -892,7 +1019,12 @@ A.N.S.P.D.C.P,Romania_161,decided_by,,5000.0
 A.N.S.P.D.C.P,Romania_171,decided_by,,15000.0
 A.N.S.P.D.C.P,Romania_177,decided_by,,10000.0
 National DPA,Romania_87,decided_by,,1500.0
+ANSPDCP,Romania_98,decided_by,,0.0
+ANSPDCP,Romania_126,decided_by,,0.0
 National Authority,Romania_107,decided_by,,2000.0
+National Authority for the Supervision of Personal Data Processing,Romania_133,decided_by,,0.0
+STRING The National Supervisory Authority for Personal Data Processing,Romania_141,decided_by,,3000.0
+STRING National Supervisory Authority,Romania_145,decided_by,,1000.0
 Romanian Supervisory Authority,Romania_150,decided_by,,5000.0
 National Commission for Data Protection (CNPD),Portugal_11,decided_by,,0.0
 National Commission for Data Protection (CNPD),Luxembourg_24,decided_by,,0.0
@@ -962,6 +1094,7 @@ President of the Personal Data Protection Office (UODO),Poland_40,decided_by,202
 President of the Personal Data Protection Office (UODO),Poland_41,decided_by,2021-06-30 00:00:00+00:00,13644.0
 President of the Personal Data Protection Office (UODO),Poland_51,decided_by,,85000.0
 President of the Personal Data Protection Office (UODO),Poland_56,decided_by,,1440549.0
+STRING President of the Personal Data Protection Office,Poland_35,decided_by,,1145891.0
 President of the Office for Personal Data Protection (UODO),Poland_42,decided_by,,30000.0
 President of the Office for Personal Data Protection (UODO),Poland_46,decided_by,2022-09-07 00:00:00+00:00,2500.0
 President of the Office for Personal Data Protection (UODO),Poland_63,decided_by,,0.0
@@ -1017,9 +1150,11 @@ Norwegian Data Protection Authority,Norway_10,decided_by,,250000.0
 Norwegian Data Protection Authority,Norway_14,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_18,decided_by,2024-10-28 00:00:00+00:00,0.0
 Norwegian Data Protection Authority,Norway_27,decided_by,,250000.0
+Norwegian Data Protection Authority,Norway_30,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_41,decided_by,,400000.0
 Norwegian Data Protection Authority,Norway_47,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_64,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_68,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_69,decided_by,2023-07-14 00:00:00+00:00,0.0
 Norwegian Data Protection Authority,Norway_74,decided_by,2023-11-27 00:00:00+00:00,20000000.0
 Norwegian Data Protection Authority,Norway_76,decided_by,2024-08-30 00:00:00+00:00,0.0
@@ -1030,6 +1165,7 @@ The Norwegian Data Protection Authority,Norway_29,decided_by,,200000.0
 The Norwegian Data Protection Authority,Norway_33,decided_by,,300000.0
 Personvernnemnda (Privacy Board),Norway_23,decided_by,,0.0
 Norwegian Data Inspectorate,Norway_36,decided_by,,0.0
+Norwegian Data Inspectorate,Norway_43,decided_by,,0.0
 Estonian Data Protection Inspectorate,Norway_66,decided_by,,0.0
 Oslo District Court,Norway_77,decided_by,2023-09-06 00:00:00+00:00,0.0
 Norwegian Privacy Board,Norway_79,decided_by,,0.0
@@ -1279,6 +1415,7 @@ Garante per la protezione dei dati personali,Italy_182,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_183,decided_by,2023-07-18 00:00:00+00:00,1000.0
 Garante per la protezione dei dati personali,Italy_189,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_186,decided_by,2023-09-14 00:00:00+00:00,90000.0
+Garante per la protezione dei dati personali,Italy_191,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_193,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_190,decided_by,,70000.0
 Garante per la protezione dei dati personali,Italy_194,decided_by,,20000.0
@@ -1400,6 +1537,7 @@ Garante per la protezione dei dati personali,Italy_315,decided_by,,80000.0
 Garante per la Protezione dei Dati Personali,Italy_20,decided_by,,2000.0
 Guarantor for the Protection of Personal Data,Italy_29,decided_by,2020-09-03 00:00:00+00:00,2000.0
 Guarantor for the Protection of Personal Data,Italy_268,decided_by,2024-09-12 00:00:00+00:00,8000.0
+STRING Garante per la protezione dei dati personali,Italy_308,decided_by,,6000.0
 Data Protection Commission of Ireland,Ireland_1,decided_by,,0.0
 Data Protection Commission of Ireland,Ireland_19,decided_by,2024-03-08 00:00:00+00:00,0.0
 Data Protection Commission,Ireland_6,decided_by,,0.0
@@ -1450,6 +1588,7 @@ Persónuvernd,Iceland_37,decided_by,2020-10-06 00:00:00+00:00,0.0
 Persónuvernd,Iceland_38,decided_by,,0.0
 Persónuvernd,Iceland_44,decided_by,2021-09-22 00:00:00+00:00,0.0
 Persónuvernd,Iceland_39,decided_by,,0.0
+Persónuvernd,Iceland_40,decided_by,,0.0
 Persónuvernd,Iceland_41,decided_by,2021-11-29 00:00:00+00:00,0.0
 Persónuvernd,Iceland_42,decided_by,,3500000.0
 Persónuvernd,Iceland_45,decided_by,,1000000.0
@@ -1519,7 +1658,9 @@ Persónuvernd (Icelandic Data Protection Authority),Iceland_33,decided_by,,0.0
 Persónuvernd (Icelandic Data Protection Authority),Iceland_80,decided_by,,0.0
 The Icelandic Data Protection Authority,Iceland_58,decided_by,,0.0
 Personal Protection Agency,Iceland_74,decided_by,2022-12-22 00:00:00+00:00,0.0
+Personal Protection Agency,Iceland_73,decided_by,,0.0
 Personal Protection Agency,Iceland_84,decided_by,,0.0
+Personal Protection Agency,Iceland_90,decided_by,,0.0
 National Data Protection and Freedom of Information Authority,Hungary_1,decided_by,,0.0
 National Data Protection and Freedom of Information Authority,Hungary_7,decided_by,2020-07-23 00:00:00+00:00,600000.0
 National Data Protection and Freedom of Information Authority,Hungary_6,decided_by,2020-12-09 00:00:00+00:00,20000000.0

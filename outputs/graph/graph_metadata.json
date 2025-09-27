@@ -1,24 +1,24 @@
 {
   "graph_statistics": {
     "dpa_decision_network": {
-      "nodes": 1941,
-      "edges": 1776,
-      "density": 0.00094329100208735
+      "nodes": 2089,
+      "edges": 1917,
+      "density": 0.0008789884617289249
     },
     "decision_article_bipartite": {
       "nodes": 2028,
-      "edges": 6174,
-      "density": 0.003003827033275631
+      "edges": 8426,
+      "density": 0.0040994892423680705
     },
     "violation_cooccurrence": {
       "nodes": 17,
-      "edges": 131,
-      "density": 0.9632352941176471,
+      "edges": 133,
+      "density": 0.9779411764705882,
       "max_degree_centrality": 1.125,
-      "avg_degree_centrality": 0.9632352941176471
+      "avg_degree_centrality": 0.9779411764705882
     },
     "cross_border_network": {
-      "nodes": 51,
+      "nodes": 55,
       "edges": 0,
       "density": 0,
       "max_degree_centrality": 0.0,

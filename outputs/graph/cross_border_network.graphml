@@ -72,6 +72,21 @@
   <data key="d1">RO</data>
   <data key="d2">3</data>
 </node>
+<node id="National Supervisory Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">RO</data>
+  <data key="d2">1</data>
+</node>
+<node id="STRING The National Supervisory Authority for Personal Data Processing">
+  <data key="d0">dpa</data>
+  <data key="d1">RO</data>
+  <data key="d2">1</data>
+</node>
+<node id="STRING National Supervisory Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">RO</data>
+  <data key="d2">1</data>
+</node>
 <node id="Comissão Nacional de Proteção de Dados">
   <data key="d0">dpa</data>
   <data key="d1">PT</data>
@@ -173,6 +188,11 @@
   <data key="d2">2</data>
 </node>
 <node id="Hellenic Data Protection Authority">
+  <data key="d0">dpa</data>
+  <data key="d1">GR</data>
+  <data key="d2">1</data>
+</node>
+<node id="STRING">
   <data key="d0">dpa</data>
   <data key="d1">GR</data>
   <data key="d2">1</data>

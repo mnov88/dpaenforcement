@@ -699,7 +699,7 @@
     }
   },
   "source": {
-    "extracted_from": "analyzed-decisions/data-extraction-prompt-sent-to-ai.md",
+    "extracted_from": "/Users/milos/Desktop/dpaenforcement/analyzed-decisions/data-extraction-prompt-sent-to-ai.md",
     "parser_version": "0.1.0"
   }
 }

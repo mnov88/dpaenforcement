@@ -6,9 +6,9 @@
       "country_group",
       "decision_year"
     ],
-    "source_file": "outputs/cleaned_wide.csv",
+    "source_file": "/Users/milos/Desktop/dpaenforcement/outputs/cleaned_wide.csv",
     "row_count": 1998,
-    "column_count": 305
+    "column_count": 341
   },
   "legal_semantics": {
     "typed_missingness": {
@@ -78,7 +78,7 @@
     "q57_rights_violated_exclusivity_conflict": "Data subject rights violated (binary indicators) - conflicting options flag"
   },
   "data_quality": {
-    "schema_echo_cases": 761,
+    "schema_echo_cases": 861,
     "missing_dates": 1504,
     "zero_fines": 590
   },

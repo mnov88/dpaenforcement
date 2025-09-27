@@ -3,7 +3,7 @@
     "title": "GDPR DPA Decisions Analysis Dataset",
     "description": "Structured dataset of GDPR enforcement decisions with 68-field questionnaire responses",
     "observations": 1998,
-    "variables": 321,
+    "variables": 357,
     "legal_framework": "EU GDPR (Regulation 2016/679)",
     "data_collection_period": "2018.0 - 2025.0"
   },
@@ -132,8 +132,8 @@
     "dpa_name_canonical": {
       "label": "Standardized DPA name",
       "type": "string",
-      "missing_count": 222,
-      "missing_rate": 0.1111111111111111
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
     },
     "decision_date_raw": {
       "label": "Decision Date Raw",
@@ -318,20 +318,20 @@
     "isic_code": {
       "label": "Isic Code",
       "type": "unknown",
-      "missing_count": 842,
-      "missing_rate": 0.4214214214214214
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
     },
     "isic_desc": {
       "label": "Isic Desc",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 1475,
+      "missing_rate": 0.7382382382382382
     },
     "isic_section": {
       "label": "Isic Section",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 1475,
+      "missing_rate": 0.7382382382382382
     },
     "n_principles_discussed": {
       "label": "Number of Article 5 principles discussed",
@@ -357,8 +357,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "1": 1113,
-        "0": 885
+        "1": 1517,
+        "0": 481
       }
     },
     "remedy_only_case": {
@@ -458,11 +458,23 @@
     "schema_echo_fields": {
       "label": "Schema Echo Fields",
       "type": "unknown",
-      "missing_count": 1237,
-      "missing_rate": 0.6191191191191191
+      "missing_count": 1137,
+      "missing_rate": 0.5690690690690691
     },
     "raw_q1": {
       "label": "Raw Q1",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q2": {
+      "label": "Raw Q2",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q3": {
+      "label": "Raw Q3",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -475,6 +487,66 @@
     },
     "raw_q5": {
       "label": "Raw Q5",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q6": {
+      "label": "Raw Q6",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q7": {
+      "label": "Raw Q7",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q8": {
+      "label": "Raw Q8",
+      "type": "unknown",
+      "missing_count": 85,
+      "missing_rate": 0.04254254254254254
+    },
+    "raw_q9": {
+      "label": "Raw Q9",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q10": {
+      "label": "Raw Q10",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q11": {
+      "label": "Raw Q11",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q12": {
+      "label": "Raw Q12",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q13": {
+      "label": "Raw Q13",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q14": {
+      "label": "Raw Q14",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q15": {
+      "label": "Raw Q15",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -497,8 +569,44 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
     },
+    "raw_q19": {
+      "label": "Raw Q19",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q20": {
+      "label": "Raw Q20",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
     "raw_q21": {
       "label": "Raw Q21",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q22": {
+      "label": "Raw Q22",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q23": {
+      "label": "Raw Q23",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q24": {
+      "label": "Raw Q24",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q25": {
+      "label": "Raw Q25",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -511,6 +619,18 @@
     },
     "raw_q27": {
       "label": "Raw Q27",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q28": {
+      "label": "Raw Q28",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q29": {
+      "label": "Raw Q29",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -551,6 +671,12 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
     },
+    "raw_q36": {
+      "label": "Raw Q36",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
     "raw_q37": {
       "label": "Raw Q37",
       "type": "unknown",
@@ -560,11 +686,17 @@
     "raw_q38": {
       "label": "Raw Q38",
       "type": "unknown",
-      "missing_count": 1048,
-      "missing_rate": 0.5245245245245245
+      "missing_count": 1196,
+      "missing_rate": 0.5985985985985987
     },
     "raw_q39": {
       "label": "Raw Q39",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q40": {
+      "label": "Raw Q40",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -581,14 +713,62 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
     },
+    "raw_q43": {
+      "label": "Raw Q43",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q44": {
+      "label": "Raw Q44",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q45": {
+      "label": "Raw Q45",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
     "raw_q46": {
       "label": "Raw Q46",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
     },
+    "raw_q47": {
+      "label": "Raw Q47",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q48": {
+      "label": "Raw Q48",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
     "raw_q49": {
       "label": "Raw Q49",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q50": {
+      "label": "Raw Q50",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q51": {
+      "label": "Raw Q51",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q52": {
+      "label": "Raw Q52",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -601,6 +781,12 @@
     },
     "raw_q54": {
       "label": "Raw Q54",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q55": {
+      "label": "Raw Q55",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -647,11 +833,41 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
     },
+    "raw_q63": {
+      "label": "Raw Q63",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
     "raw_q64": {
       "label": "Raw Q64",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
+    },
+    "raw_q65": {
+      "label": "Raw Q65",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q66": {
+      "label": "Raw Q66",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "raw_q67": {
+      "label": "Raw Q67",
+      "type": "unknown",
+      "missing_count": 117,
+      "missing_rate": 0.05855855855855856
+    },
+    "raw_q68": {
+      "label": "Raw Q68",
+      "type": "unknown",
+      "missing_count": 342,
+      "missing_rate": 0.17117117117117117
     },
     "q30_discussed_coverage_status": {
       "label": "Article 5 principle discussed: coverage_status",
@@ -666,90 +882,95 @@
     "q30_discussed_known": {
       "label": "Article 5 principle discussed: known",
       "type": "binary",
-      "missing_count": 566,
-      "missing_rate": 0.2832832832832833,
+      "missing_count": 135,
+      "missing_rate": 0.06756756756756757,
       "value_counts": {
-        "SECURITY": 226,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 177,
-        "SECURITY,ACCOUNTABILITY": 148,
-        "NONE_DISCUSSED": 110,
-        "ACCOUNTABILITY": 80,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 65,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 57,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 48,
-        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 48,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 47,
-        "DATA_MINIMISATION": 46,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 42,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 31,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 30,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 29,
-        "PURPOSE_LIMITATION": 25,
-        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 14,
-        "PURPOSE_LIMITATION,SECURITY": 14,
-        "STORAGE_LIMITATION": 13,
-        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 13,
-        "ACCURACY": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 11,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION": 11,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 11,
-        "ACCURACY,SECURITY": 8,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 7,
-        "DATA_MINIMISATION,SECURITY": 7,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
-        "ACCURACY,SECURITY,ACCOUNTABILITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 3,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
+        "SECURITY": 298,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 292,
+        "NONE_DISCUSSED": 279,
+        "SECURITY,ACCOUNTABILITY": 132,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 112,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 96,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 86,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 74,
+        "DATA_MINIMISATION": 63,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 63,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 52,
+        "ACCOUNTABILITY": 39,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 23,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 22,
+        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 16,
+        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 14,
+        "ACCURACY": 14,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 12,
+        "STORAGE_LIMITATION": 9,
+        "ACCURACY,SECURITY,ACCOUNTABILITY": 9,
+        "DATA_MINIMISATION,SECURITY": 9,
+        "ACCURACY,SECURITY": 9,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 8,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 8,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION": 8,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 7,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 6,
+        "PURPOSE_LIMITATION": 6,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 5,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 4,
+        "PURPOSE_LIMITATION,SECURITY": 4,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 4,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 4,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 3,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 3,
+        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
+        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
         "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
-        "STORAGE_LIMITATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 2,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
-        "SECURITY,STORAGE_LIMITATION,LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 1,
-        "DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
+        "DATA_MINIMISATION,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "SECURITY,STORAGE_LIMITATION": 2,
         "STORAGE_LIMITATION,ACCURACY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,PURPOSE_LIMITATION": 1,
+        "STORAGE_LIMITATION,SECURITY": 1,
+        "PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1,
+        "SECURITY,STORAGE_LIMITATION,LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
         "ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "ACCOUNTABILITY,SECURITY": 1,
-        "SECURITY,STORAGE_LIMITATION,PURPOSE_LIMITATION": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION": 1,
+        "DATA_MINIMISATION,STORAGE_LIMITATION": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,PURPOSE_LIMITATION": 1,
+        "DATA_MINIMISATION,ACCOUNTABILITY,SECURITY": 1,
+        "SECURITY,STORAGE_LIMITATION,PURPOSE_LIMITATION": 1,
+        "ACCURACY,DATA_MINIMISATION": 1,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 1,
-        "DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_DISCUSSED": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_DISCUSSED": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
         "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1
       }
     },
     "q30_discussed_unknown": {
       "label": "Article 5 principle discussed: unknown",
       "type": "binary",
-      "missing_count": 1945,
-      "missing_rate": 0.9734734734734735,
+      "missing_count": 1940,
+      "missing_rate": 0.970970970970971,
       "value_counts": {
-        "NOT_DISCUSSED": 38,
+        "NOT_DISCUSSED": 43,
         "ACCESS": 7,
         "INFORMATION_OBLIGATIONS": 3,
         "NO": 1,
@@ -765,9 +986,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1370,
-        "NOT_MENTIONED": 517,
-        "NONE_DISCUSSED": 110,
+        "DISCUSSED": 1637,
+        "NONE_DISCUSSED": 279,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -787,8 +1008,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1394,
-        "True": 523
+        "False": 1006,
+        "True": 911
       }
     },
     "q30_discussed_PURPOSE_LIMITATION": {
@@ -797,8 +1018,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1447,
-        "True": 470
+        "False": 1432,
+        "True": 485
       }
     },
     "q30_discussed_DATA_MINIMISATION": {
@@ -807,8 +1028,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1584,
-        "True": 333
+        "False": 1550,
+        "True": 367
       }
     },
     "q30_discussed_ACCURACY": {
@@ -817,8 +1038,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1781,
-        "True": 136
+        "False": 1767,
+        "True": 150
       }
     },
     "q30_discussed_STORAGE_LIMITATION": {
@@ -827,8 +1048,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1769,
-        "True": 148
+        "False": 1764,
+        "True": 153
       }
     },
     "q30_discussed_SECURITY": {
@@ -837,8 +1058,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1033,
-        "True": 884
+        "True": 1035,
+        "False": 882
       }
     },
     "q30_discussed_ACCOUNTABILITY": {
@@ -847,8 +1068,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1262,
-        "True": 655
+        "False": 1261,
+        "True": 656
       }
     },
     "q30_discussed_NONE_DISCUSSED": {
@@ -857,8 +1078,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1806,
-        "True": 111
+        "False": 1637,
+        "True": 280
       }
     },
     "q31_violated_coverage_status": {
@@ -874,96 +1095,95 @@
     "q31_violated_known": {
       "label": "Article 5 principle violated: known",
       "type": "binary",
-      "missing_count": 634,
-      "missing_rate": 0.3173173173173173,
+      "missing_count": 140,
+      "missing_rate": 0.07007007007007007,
       "value_counts": {
-        "SECURITY": 229,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 227,
-        "NONE_VIOLATED": 175,
-        "SECURITY,ACCOUNTABILITY": 130,
-        "ACCOUNTABILITY": 81,
-        "DATA_MINIMISATION": 61,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 42,
-        "NOT_DETERMINED": 39,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 27,
-        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 27,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 27,
-        "PURPOSE_LIMITATION": 25,
-        "ACCURACY": 18,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 17,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 16,
-        "STORAGE_LIMITATION": 16,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 15,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 14,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION": 13,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 12,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 9,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 9,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
+        "NONE_VIOLATED": 360,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY": 350,
+        "SECURITY": 302,
+        "SECURITY,ACCOUNTABILITY": 113,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY": 86,
+        "DATA_MINIMISATION": 75,
+        "NOT_DETERMINED": 69,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY": 63,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION": 47,
+        "ACCOUNTABILITY": 47,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 39,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 29,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION": 25,
+        "ACCURACY": 20,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION": 16,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY": 15,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 14,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 10,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 9,
+        "DATA_MINIMISATION,SECURITY": 8,
+        "STORAGE_LIMITATION": 8,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION": 8,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 8,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 8,
+        "PURPOSE_LIMITATION": 7,
+        "STORAGE_LIMITATION,SECURITY": 7,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 7,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION": 6,
-        "STORAGE_LIMITATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,SECURITY": 6,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY": 5,
-        "DATA_MINIMISATION,SECURITY": 5,
-        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 5,
-        "ACCURACY,SECURITY": 4,
-        "ACCURACY,SECURITY,ACCOUNTABILITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY": 4,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY": 4,
-        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 4,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
-        "STORAGE_LIMITATION,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 3,
-        "DATA_MINIMISATION,ACCOUNTABILITY": 3,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 3,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "PURPOSE_LIMITATION,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY": 2,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
+        "ACCURACY,SECURITY,ACCOUNTABILITY": 6,
+        "STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 6,
+        "ACCURACY,SECURITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION,ACCOUNTABILITY": 5,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION": 4,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 4,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY": 3,
+        "DATA_MINIMISATION,STORAGE_LIMITATION": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION": 3,
+        "NONE_VIOLATED,NOT_DETERMINED": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY": 3,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 3,
         "SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY": 2,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 2,
+        "DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 2,
+        "SECURITY,STORAGE_LIMITATION": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 2,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY": 2,
+        "PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY": 2,
+        "DATA_MINIMISATION,ACCOUNTABILITY": 2,
+        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY": 2,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION": 2,
+        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "ACCURACY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,ACCOUNTABILITY": 1,
         "SECURITY,STORAGE_LIMITATION,LAWFULNESS_FAIRNESS_TRANSPARENCY": 1,
-        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCURACY": 1,
         "STORAGE_LIMITATION,ACCURACY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,PURPOSE_LIMITATION": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,ACCURACY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
+        "DATA_MINIMISATION,ACCOUNTABILITY,SECURITY": 1,
         "ACCURACY,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED": 1,
-        "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,NOT_DETERMINED": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY": 1,
         "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY": 1,
-        "ACCOUNTABILITY,SECURITY": 1,
-        "LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY": 1,
-        "PURPOSE_LIMITATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
-        "DATA_MINIMISATION,STORAGE_LIMITATION": 1,
         "LAWFULNESS_FAIRNESS_TRANSPARENCY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
         "PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY": 1,
-        "DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY": 1
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,PURPOSE_LIMITATION": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY": 1,
+        "PURPOSE_LIMITATION,SECURITY": 1,
+        "LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY,NONE_VIOLATED,NOT_DETERMINED": 1,
+        "DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY": 1
       }
     },
     "q31_violated_unknown": {
       "label": "Article 5 principle violated: unknown",
       "type": "binary",
-      "missing_count": 1951,
-      "missing_rate": 0.9764764764764765,
+      "missing_count": 1936,
+      "missing_rate": 0.968968968968969,
       "value_counts": {
-        "NOT_DISCUSSED": 35,
+        "NOT_DISCUSSED": 40,
+        "NONE_DISCUSSED": 10,
         "ACCESS": 4,
         "INFORMATION_OBLIGATIONS": 3,
         "NO": 1,
@@ -979,11 +1199,11 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1191,
-        "NOT_MENTIONED": 590,
-        "NONE_VIOLATED": 175,
-        "NOT_DETERMINED": 39,
-        "MIXED_CONTRADICTORY": 3
+        "DISCUSSED": 1482,
+        "NONE_VIOLATED": 360,
+        "NOT_MENTIONED": 81,
+        "NOT_DETERMINED": 69,
+        "MIXED_CONTRADICTORY": 6
       }
     },
     "q31_violated_exclusivity_conflict": {
@@ -992,8 +1212,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1995,
-        "1": 3
+        "0": 1992,
+        "1": 6
       }
     },
     "q31_violated_LAWFULNESS_FAIRNESS_TRANSPARENCY": {
@@ -1002,8 +1222,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1469,
-        "True": 448
+        "False": 1132,
+        "True": 785
       }
     },
     "q31_violated_PURPOSE_LIMITATION": {
@@ -1012,8 +1232,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1690,
-        "True": 227
+        "False": 1682,
+        "True": 235
       }
     },
     "q31_violated_DATA_MINIMISATION": {
@@ -1022,8 +1242,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1710,
-        "True": 207
+        "False": 1678,
+        "True": 239
       }
     },
     "q31_violated_ACCURACY": {
@@ -1032,8 +1252,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1852,
-        "True": 65
+        "False": 1841,
+        "True": 76
       }
     },
     "q31_violated_STORAGE_LIMITATION": {
@@ -1042,8 +1262,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1826,
-        "True": 91
+        "False": 1822,
+        "True": 95
       }
     },
     "q31_violated_SECURITY": {
@@ -1052,8 +1272,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1322,
-        "True": 595
+        "False": 1171,
+        "True": 746
       }
     },
     "q31_violated_ACCOUNTABILITY": {
@@ -1062,8 +1282,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1495,
-        "True": 422
+        "False": 1492,
+        "True": 425
       }
     },
     "q31_violated_NONE_VIOLATED": {
@@ -1072,8 +1292,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1739,
-        "True": 178
+        "False": 1551,
+        "True": 366
       }
     },
     "q31_violated_NOT_DETERMINED": {
@@ -1082,8 +1302,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1877,
-        "True": 40
+        "False": 1844,
+        "True": 73
       }
     },
     "q32_bases_coverage_status": {
@@ -1099,14 +1319,14 @@
     "q32_bases_known": {
       "label": "Q32 Bases Known",
       "type": "unknown",
-      "missing_count": 992,
-      "missing_rate": 0.4964964964964965
+      "missing_count": 479,
+      "missing_rate": 0.23973973973973975
     },
     "q32_bases_unknown": {
       "label": "Q32 Bases Unknown",
       "type": "unknown",
-      "missing_count": 1637,
-      "missing_rate": 0.8193193193193193
+      "missing_count": 1597,
+      "missing_rate": 0.7992992992992993
     },
     "q32_bases_status": {
       "label": "Status of q32_bases information",
@@ -1114,9 +1334,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1246,
-        "NOT_MENTIONED": 634,
-        "NOT_APPLICABLE": 116,
+        "DISCUSSED": 1787,
+        "NOT_APPLICABLE": 128,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 2
       }
     },
@@ -1181,14 +1401,14 @@
     "q41_aggrav_known": {
       "label": "Q41 Aggrav Known",
       "type": "unknown",
-      "missing_count": 586,
-      "missing_rate": 0.2932932932932933
+      "missing_count": 135,
+      "missing_rate": 0.06756756756756757
     },
     "q41_aggrav_unknown": {
       "label": "Q41 Aggrav Unknown",
       "type": "unknown",
-      "missing_count": 1949,
-      "missing_rate": 0.9754754754754755
+      "missing_count": 1936,
+      "missing_rate": 0.968968968968969
     },
     "q41_aggrav_status": {
       "label": "Status of q41_aggrav information",
@@ -1196,8 +1416,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1450,
-        "NOT_MENTIONED": 545,
+        "DISCUSSED": 1914,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 2,
         "NOT_APPLICABLE": 1
       }
@@ -1293,14 +1513,14 @@
     "q42_mitig_known": {
       "label": "Q42 Mitig Known",
       "type": "unknown",
-      "missing_count": 716,
-      "missing_rate": 0.35835835835835833
+      "missing_count": 141,
+      "missing_rate": 0.07057057057057058
     },
     "q42_mitig_unknown": {
       "label": "Q42 Mitig Unknown",
       "type": "unknown",
-      "missing_count": 1946,
-      "missing_rate": 0.973973973973974
+      "missing_count": 1934,
+      "missing_rate": 0.9679679679679679
     },
     "q42_mitig_status": {
       "label": "Status of q42_mitig information",
@@ -1308,8 +1528,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1327,
-        "NOT_MENTIONED": 668,
+        "DISCUSSED": 1914,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 2,
         "NOT_APPLICABLE": 1
       }
@@ -1405,14 +1625,14 @@
     "q46_vuln_known": {
       "label": "Q46 Vuln Known",
       "type": "unknown",
-      "missing_count": 840,
-      "missing_rate": 0.42042042042042044
+      "missing_count": 92,
+      "missing_rate": 0.04604604604604605
     },
     "q46_vuln_unknown": {
       "label": "Q46 Vuln Unknown",
       "type": "unknown",
-      "missing_count": 1989,
-      "missing_rate": 0.9954954954954955
+      "missing_count": 1983,
+      "missing_rate": 0.9924924924924925
     },
     "q46_vuln_status": {
       "label": "Status of q46_vuln information",
@@ -1420,10 +1640,10 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_MENTIONED": 834,
-        "DISCUSSED": 749,
-        "NONE_MENTIONED": 411,
-        "MIXED_CONTRADICTORY": 4
+        "DISCUSSED": 1047,
+        "NONE_MENTIONED": 859,
+        "NOT_MENTIONED": 81,
+        "MIXED_CONTRADICTORY": 11
       }
     },
     "q46_vuln_exclusivity_conflict": {
@@ -1487,14 +1707,14 @@
     "q47_remedial_known": {
       "label": "Q47 Remedial Known",
       "type": "unknown",
-      "missing_count": 755,
-      "missing_rate": 0.37787787787787785
+      "missing_count": 191,
+      "missing_rate": 0.09559559559559559
     },
     "q47_remedial_unknown": {
       "label": "Q47 Remedial Unknown",
       "type": "unknown",
-      "missing_count": 1883,
-      "missing_rate": 0.9424424424424425
+      "missing_count": 1850,
+      "missing_rate": 0.9259259259259259
     },
     "q47_remedial_status": {
       "label": "Status of q47_remedial information",
@@ -1502,10 +1722,10 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 862,
-        "NOT_MENTIONED": 662,
-        "NONE_MENTIONED": 468,
-        "NOT_APPLICABLE": 4,
+        "DISCUSSED": 976,
+        "NONE_MENTIONED": 930,
+        "NOT_MENTIONED": 81,
+        "NOT_APPLICABLE": 9,
         "MIXED_CONTRADICTORY": 2
       }
     },
@@ -1576,14 +1796,14 @@
     "q50_other_measures_known": {
       "label": "Q50 Other Measures Known",
       "type": "unknown",
-      "missing_count": 878,
-      "missing_rate": 0.4394394394394394
+      "missing_count": 196,
+      "missing_rate": 0.0980980980980981
     },
     "q50_other_measures_unknown": {
       "label": "Q50 Other Measures Unknown",
       "type": "unknown",
-      "missing_count": 1909,
-      "missing_rate": 0.9554554554554554
+      "missing_count": 1871,
+      "missing_rate": 0.9364364364364365
     },
     "q50_other_measures_status": {
       "label": "Status of q50_other_measures information",
@@ -1591,8 +1811,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1197,
-        "NOT_MENTIONED": 799,
+        "DISCUSSED": 1915,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 2
       }
     },
@@ -1657,121 +1877,125 @@
     "q53_powers_known": {
       "label": "Corrective power exercised: known",
       "type": "binary",
-      "missing_count": 568,
-      "missing_rate": 0.28428428428428426,
+      "missing_count": 129,
+      "missing_rate": 0.06456456456456457,
       "value_counts": {
-        "ADMINISTRATIVE_FINE": 444,
-        "NONE": 146,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 105,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 94,
-        "REPRIMAND": 74,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 45,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 42,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS": 39,
-        "WARNING": 38,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 37,
-        "BRING_PROCESSING_INTO_COMPLIANCE": 29,
-        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 24,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 24,
-        "REPRIMAND,ADMINISTRATIVE_FINE": 20,
-        "LIMITATION_PROHIBITION_OF_PROCESSING": 18,
-        "WARNING,REPRIMAND": 14,
-        "BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 13,
-        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 13,
+        "ADMINISTRATIVE_FINE": 604,
+        "NONE": 274,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 121,
+        "REPRIMAND": 119,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 72,
+        "REPRIMAND,ADMINISTRATIVE_FINE": 65,
+        "WARNING": 62,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 55,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 44,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 43,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS": 29,
+        "LIMITATION_PROHIBITION_OF_PROCESSING": 22,
+        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 21,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 19,
+        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 19,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 18,
+        "WARNING,REPRIMAND": 18,
+        "REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 16,
+        "REPRIMAND,ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 16,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 11,
         "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 11,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING": 10,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE": 10,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 8,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 8,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 8,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 7,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 7,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 7,
-        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 6,
+        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING": 11,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 11,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 9,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 8,
+        "WARNING,ADMINISTRATIVE_FINE": 8,
+        "LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 8,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 7,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 6,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 6,
+        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 6,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 6,
         "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 5,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 5,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 4,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 4,
-        "REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 4,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 4,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 4,
-        "WARNING,ADMINISTRATIVE_FINE": 4,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 4,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 4,
+        "WARNING,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 4,
+        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE": 4,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 4,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 3,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 3,
+        "WARNING,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
+        "REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 3,
+        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
         "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 3,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 3,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 3,
-        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 3,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 3,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 3,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,NONE": 3,
-        "WARNING,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 3,
-        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE": 2,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 2,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 3,
+        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE": 3,
+        "WARNING,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 3,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 2,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 2,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 2,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 2,
         "LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 2,
-        "BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 2,
         "LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
-        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE": 2,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 2,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
-        "REPRIMAND,ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE": 2,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 2,
+        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
+        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 2,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 2,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 2,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,NONE": 2,
+        "BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 2,
+        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 2,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
+        "WARNING,REPRIMAND,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
+        "COMMUNICATE_BREACH_TO_SUBJECTS,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
         "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE,SUSPENSION_DATA_FLOWS": 1,
+        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,NONE": 1,
+        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
+        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
         "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
         "REPRIMAND,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE,SUSPENSION_DATA_FLOWS": 1,
-        "BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE": 1,
-        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "WARNING,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
         "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "ADMINISTRATIVE_FINE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "ADMINISTRATIVE_FINE,WARNING": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
-        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
-        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
-        "REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
-        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,REPRIMAND,ADMINISTRATIVE_FINE": 1,
-        "LIMITATION_PROHIBITION_OF_PROCESSING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
-        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
         "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
+        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE": 1,
+        "WARNING,REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "ADMINISTRATIVE_FINE,WARNING": 1,
+        "ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
+        "ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,COMMUNICATE_BREACH_TO_SUBJECTS": 1,
+        "WARNING,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE": 1,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,REPRIMAND,ADMINISTRATIVE_FINE": 1,
+        "REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "WARNING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE": 1,
+        "ADMINISTRATIVE_FINE,RECTIFICATION_ERASURE_RESTRICTION": 1,
+        "LIMITATION_PROHIBITION_OF_PROCESSING,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS": 1,
+        "ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "BRING_PROCESSING_INTO_COMPLIANCE": 1,
+        "WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING": 1,
         "WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,CERTIFICATION_WITHDRAWAL,ADMINISTRATIVE_FINE,SUSPENSION_DATA_FLOWS": 1
       }
     },
     "q53_powers_unknown": {
       "label": "Corrective power exercised: unknown",
       "type": "binary",
-      "missing_count": 1944,
-      "missing_rate": 0.972972972972973,
+      "missing_count": 1933,
+      "missing_rate": 0.9674674674674675,
       "value_counts": {
-        "NOT_DISCUSSED": 37,
+        "NOT_DISCUSSED": 43,
         "COMPLIANCE_ORDER": 6,
+        "NONE_DISCUSSED": 5,
         "DATA_DELETION_ORDER": 4,
         "NONE ADMINISTRATIVE_FINE": 2,
         "DATA_DELETION_ORDER,COMPLIANCE_ORDER": 1,
@@ -1787,8 +2011,8 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1465,
-        "NOT_MENTIONED": 530,
+        "DISCUSSED": 1914,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 3
       }
     },
@@ -1808,8 +2032,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1797,
-        "True": 120
+        "False": 1729,
+        "True": 188
       }
     },
     "q53_powers_REPRIMAND": {
@@ -1818,8 +2042,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1643,
-        "True": 274
+        "False": 1384,
+        "True": 533
       }
     },
     "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS": {
@@ -1828,8 +2052,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1429,
-        "True": 488
+        "False": 1404,
+        "True": 513
       }
     },
     "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE": {
@@ -1838,8 +2062,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1380,
-        "True": 537
+        "False": 1379,
+        "True": 538
       }
     },
     "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS": {
@@ -1848,8 +2072,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1901,
-        "True": 16
+        "False": 1900,
+        "True": 17
       }
     },
     "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING": {
@@ -1858,8 +2082,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1789,
-        "True": 128
+        "False": 1774,
+        "True": 143
       }
     },
     "q53_powers_RECTIFICATION_ERASURE_RESTRICTION": {
@@ -1888,8 +2112,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1053,
-        "True": 864
+        "True": 1138,
+        "False": 779
       }
     },
     "q53_powers_SUSPENSION_DATA_FLOWS": {
@@ -1908,8 +2132,8 @@
       "missing_count": 81,
       "missing_rate": 0.04054054054054054,
       "value_counts": {
-        "False": 1768,
-        "True": 149
+        "False": 1640,
+        "True": 277
       }
     },
     "q54_scopes_coverage_status": {
@@ -1925,14 +2149,14 @@
     "q54_scopes_known": {
       "label": "Q54 Scopes Known",
       "type": "unknown",
-      "missing_count": 886,
-      "missing_rate": 0.44344344344344344
+      "missing_count": 125,
+      "missing_rate": 0.06256256256256257
     },
     "q54_scopes_unknown": {
       "label": "Q54 Scopes Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 1952,
+      "missing_rate": 0.9769769769769769
     },
     "q54_scopes_status": {
       "label": "Status of q54_scopes information",
@@ -1940,9 +2164,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1024,
-        "NOT_MENTIONED": 851,
-        "DISCUSSED": 122,
+        "NOT_APPLICABLE": 1725,
+        "DISCUSSED": 191,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -2001,14 +2225,14 @@
     "q56_rights_discussed_known": {
       "label": "Q56 Rights Discussed Known",
       "type": "unknown",
-      "missing_count": 914,
-      "missing_rate": 0.4574574574574575
+      "missing_count": 264,
+      "missing_rate": 0.13213213213213212
     },
     "q56_rights_discussed_unknown": {
       "label": "Q56 Rights Discussed Unknown",
       "type": "unknown",
-      "missing_count": 1823,
-      "missing_rate": 0.9124124124124124
+      "missing_count": 1813,
+      "missing_rate": 0.9074074074074074
     },
     "q56_rights_discussed_status": {
       "label": "Status of q56_rights_discussed information",
@@ -2016,9 +2240,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 1212,
-        "NOT_MENTIONED": 741,
-        "NOT_APPLICABLE": 44,
+        "DISCUSSED": 1870,
+        "NOT_MENTIONED": 81,
+        "NOT_APPLICABLE": 46,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -2095,14 +2319,14 @@
     "q57_rights_violated_known": {
       "label": "Q57 Rights Violated Known",
       "type": "unknown",
-      "missing_count": 952,
-      "missing_rate": 0.47647647647647645
+      "missing_count": 330,
+      "missing_rate": 0.16516516516516516
     },
     "q57_rights_violated_unknown": {
       "label": "Q57 Rights Violated Unknown",
       "type": "unknown",
-      "missing_count": 1815,
-      "missing_rate": 0.9084084084084084
+      "missing_count": 1747,
+      "missing_rate": 0.8743743743743744
     },
     "q57_rights_violated_status": {
       "label": "Status of q57_rights_violated information",
@@ -2110,12 +2334,12 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "DISCUSSED": 845,
-        "NOT_MENTIONED": 771,
-        "NONE_VIOLATED": 257,
-        "NOT_DETERMINED": 79,
-        "NOT_APPLICABLE": 44,
-        "MIXED_CONTRADICTORY": 2
+        "DISCUSSED": 1151,
+        "NONE_VIOLATED": 610,
+        "NOT_DETERMINED": 107,
+        "NOT_MENTIONED": 81,
+        "NOT_APPLICABLE": 46,
+        "MIXED_CONTRADICTORY": 3
       }
     },
     "q57_rights_violated_exclusivity_conflict": {
@@ -2197,14 +2421,14 @@
     "q58_access_issues_known": {
       "label": "Q58 Access Issues Known",
       "type": "unknown",
-      "missing_count": 826,
-      "missing_rate": 0.4134134134134134
+      "missing_count": 124,
+      "missing_rate": 0.062062062062062065
     },
     "q58_access_issues_unknown": {
       "label": "Q58 Access Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 1953,
+      "missing_rate": 0.9774774774774775
     },
     "q58_access_issues_status": {
       "label": "Status of q58_access_issues information",
@@ -2212,10 +2436,10 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 935,
-        "NOT_MENTIONED": 791,
-        "DISCUSSED": 271,
-        "MIXED_CONTRADICTORY": 1
+        "NOT_APPLICABLE": 1568,
+        "DISCUSSED": 344,
+        "NOT_MENTIONED": 81,
+        "MIXED_CONTRADICTORY": 5
       }
     },
     "q58_access_issues_exclusivity_conflict": {
@@ -2279,14 +2503,14 @@
     "q59_adm_issues_known": {
       "label": "Q59 Adm Issues Known",
       "type": "unknown",
-      "missing_count": 894,
-      "missing_rate": 0.44744744744744747
+      "missing_count": 124,
+      "missing_rate": 0.062062062062062065
     },
     "q59_adm_issues_unknown": {
       "label": "Q59 Adm Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 1953,
+      "missing_rate": 0.9774774774774775
     },
     "q59_adm_issues_status": {
       "label": "Status of q59_adm_issues information",
@@ -2294,9 +2518,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1097,
-        "NOT_MENTIONED": 859,
-        "DISCUSSED": 42
+        "NOT_APPLICABLE": 1867,
+        "NOT_MENTIONED": 81,
+        "DISCUSSED": 50
       }
     },
     "q59_adm_issues_exclusivity_conflict": {
@@ -2354,14 +2578,14 @@
     "q61_dpo_issues_known": {
       "label": "Q61 Dpo Issues Known",
       "type": "unknown",
-      "missing_count": 891,
-      "missing_rate": 0.44594594594594594
+      "missing_count": 124,
+      "missing_rate": 0.062062062062062065
     },
     "q61_dpo_issues_unknown": {
       "label": "Q61 Dpo Issues Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 1953,
+      "missing_rate": 0.9774774774774775
     },
     "q61_dpo_issues_status": {
       "label": "Status of q61_dpo_issues information",
@@ -2369,9 +2593,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 958,
-        "NOT_MENTIONED": 856,
-        "DISCUSSED": 183,
+        "NOT_APPLICABLE": 1651,
+        "DISCUSSED": 265,
+        "NOT_MENTIONED": 81,
         "MIXED_CONTRADICTORY": 1
       }
     },
@@ -2442,14 +2666,14 @@
     "q64_transfer_violations_known": {
       "label": "Q64 Transfer Violations Known",
       "type": "unknown",
-      "missing_count": 895,
-      "missing_rate": 0.44794794794794796
+      "missing_count": 124,
+      "missing_rate": 0.062062062062062065
     },
     "q64_transfer_violations_unknown": {
       "label": "Q64 Transfer Violations Unknown",
       "type": "unknown",
-      "missing_count": 1961,
-      "missing_rate": 0.9814814814814815
+      "missing_count": 1953,
+      "missing_rate": 0.9774774774774775
     },
     "q64_transfer_violations_status": {
       "label": "Status of q64_transfer_violations information",
@@ -2457,9 +2681,9 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "NOT_APPLICABLE": 1075,
-        "NOT_MENTIONED": 860,
-        "DISCUSSED": 63
+        "NOT_APPLICABLE": 1837,
+        "NOT_MENTIONED": 81,
+        "DISCUSSED": 80
       }
     },
     "q64_transfer_violations_exclusivity_conflict": {
@@ -2513,14 +2737,14 @@
     "dpa_numeric": {
       "label": "Dpa Numeric",
       "type": "unknown",
-      "missing_count": 222,
-      "missing_rate": 0.1111111111111111
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
     },
     "isic_section_numeric": {
       "label": "Isic Section Numeric",
       "type": "unknown",
-      "missing_count": 1513,
-      "missing_rate": 0.7572572572572572
+      "missing_count": 1475,
+      "missing_rate": 0.7382382382382382
     },
     "fine_eur_missing": {
       "label": "Fine Eur Missing",

@@ -8,7 +8,7 @@
 ## 2. Descriptive findings
 - **Severity distribution**: 195 cases predicted `NONE`, 203 `REMEDIAL_ONLY`, 338 `FINE_ONLY`, 263 `FINE_PLUS`.
 - **Expected ranks**: Mean severity ranges from 0.02 (`NONE`) to 3.97 (`FINE_PLUS`), confirming the classifier’s ordinal behaviour under penalisation.
-- **Initiation mix** (Q15): 745 complaints, 92 breach notifications, 58 ex officio cases, 20 referrals, and ≤6 instances for media/public attention, joint investigations, follow-ups, and “other”. Breach notifications and media-driven matters post the highest mean log fines (7.46 and 8.34) and the highest severity expectations (>3.0); complaint-driven cases sit near 2.68.
+- **Initiation mix** (Q15): 745 complaints, 92 breach notifications, 58 ex officio cases, 20 referrals, and a pooled `LOW_FREQUENCY` bucket (media, joint investigations, follow-ups, other) covering 12 decisions. Breach notifications deliver the highest mean log fines (7.46) and severity expectations (≈3.04); ex officio cases follow (6.83 / 2.69), while the pooled low-frequency bucket drops to 5.96 / 1.67. Complaint-driven cases sit near 6.22 log fines and 2.68 in expected severity.
 - **Jurisdictional intensity**: Romanian and Catalan authorities continue to average >3.8 in expected severity, reflecting consistent enforcement posture.
 - **Propensity overlap**: Trimming retains 50 of 101 Art. 33-required cases (21 timely, 29 late) within the 0.10–0.90 band (mean 0.40, σ 0.23).
 
@@ -23,11 +23,11 @@
 - **Bootstrap diagnostics**: 300 bootstrap replicates yield a mean AIPW of +1.42 with a very wide 95% CI (−10.9, +23.4) under the 0.10–0.90 trim, reflecting extreme leverage from a handful of severe cases. A tighter 0.20–0.80 trim produces a mean of +0.12 (CI −3.35, +3.04) across 36 cases, indicating the effect is not statistically distinguishable from zero once overlap improves. Further work should stabilise the estimator before drawing policy conclusions.
 - **Hypothesis 2**: Propensity coefficients remain dominated by `rights_violated_pc2` (+0.91) and `rights_discussed_pc1` (+0.67), while `dpa_severity_shrinkage` (−0.82) and `q53_powers_REPRIMAND` (−0.56) reduce the odds of timeliness. The presence of `q53_powers_NONE` (+0.59) indicates lighter corrective portfolios accompany quicker filings.
 - **Hypothesis 3**: Class-4 severity drivers are led by `q53_powers_ADMINISTRATIVE_FINE` (+1.68), `n_corrective_measures` (+1.50), and additional powers (`COMPLY_WITH_DATA_SUBJECT_REQUESTS`, `BRING_PROCESSING_INTO_COMPLIANCE`, `WARNING`). This reinforces the link between broad remedy suites and high severity scores.
-- **Hypothesis 4**: Average log fines rank `MEDIA_PUBLIC_ATTENTION` (8.34), `BREACH_NOTIFICATION` (7.46), and `EX_OFFICIO_DPA_INITIATIVE` (6.83) above complaints (6.22) and referrals (3.92). Severity expectations follow the same ordering, although categories with ≤6 cases (media/joint/follow-up) should be treated as directional signals only.
+- **Hypothesis 4**: After pooling scarce categories, breach notifications (7.46 log fines, 3.04 severity) and ex officio investigations (6.83 / 2.69) still dominate complaints (6.22 / 2.68); the pooled `LOW_FREQUENCY` bucket falls to 5.96 / 1.67 and referrals remain at 3.92 / 2.10. Proactive or high-visibility triggers therefore retain their association with harsher sanctions.
 
 ## 5. Limitations & next steps
 - No `WARNING_REPRIMAND` class observed yet; the severity model effectively spans three ordinal tiers pending data review.
-- AIPW results now include bootstrap intervals, which remain wide under the default trim; future work should incorporate overlap diagnostics into the trimming strategy (or adopt targeted shrinkage) before reporting definitive effects.
+- AIPW results now include bootstrap intervals, which remain wide under the default trim (mean ≈0.13, 95 % CI −15.8 to 13.8); future work should incorporate overlap diagnostics into the trimming strategy (or adopt targeted shrinkage) before reporting definitive effects. Under a tighter 0.20–0.80 trim the bootstrap mean drops to ≈−0.04 with CI (−3.12, 2.79), underscoring the need for more overlap before causal claims.
 - Initiation categories with very small counts need pooling or Bayesian shrinkage before strong claims.
 - Qualitative inspection of latent PCA directions (rights/access issues) would bolster interpretability and ensure the components align with doctrinal narratives.
 

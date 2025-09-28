@@ -1,0 +1,182 @@
+<html><head><meta charset='utf-8'><title>Breach Notification & Enforcement Report</title>
+<style>body{font-family:Helvetica,Arial,sans-serif;max-width:900px;margin:2em auto;line-height:1.5;} h1,h2,h3{color:#333;} table{border-collapse:collapse;margin:1em 0;width:100%;} th,td{border:1px solid #ccc;padding:6px;text-align:left;} figure{margin:1.5em 0;} figcaption{font-style:italic;text-align:center;margin-top:4px;} .note{background:#f5f5f5;padding:1em;border-left:4px solid #0072B2;} .legal{font-weight:bold;}</style></head><body>
+<h1>Breach Notification & Enforcement Outcomes: Preliminary Report</h1>
+<p>This report summarises the current quantitative evidence on GDPR breach notifications, drawing on our enriched feature matrix (999 decisions). It is intended for legal scholars and data-protection practitioners seeking to interpret enforcement patterns through both statistical and doctrinal lenses.</p>
+<h2>1. Data snapshot</h2>
+<p>We analyse cleaned AI-labeled decisions using two regularised models: (i) a multinomial classifier of enforcement severity (NONE → FINE_PLUS), and (ii) a propensity/OLS pipeline estimating the effect of timely Article 33 notification on log-transformed fines.</p>
+<h2>2. Enforcement severity landscape</h2>
+<figure><img src='severity_distribution.png' alt='Severity distribution'><figcaption>Figure 1. Distribution of predicted severity classes across 999 decisions.</figcaption></figure>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>severity_label</th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FINE_ONLY</td>
+      <td>338</td>
+      <td>3.006</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>FINE_PLUS</td>
+      <td>263</td>
+      <td>3.969</td>
+      <td>0.047</td>
+    </tr>
+    <tr>
+      <td>NONE</td>
+      <td>195</td>
+      <td>0.019</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>REMEDIAL_ONLY</td>
+      <td>203</td>
+      <td>2.012</td>
+      <td>0.028</td>
+    </tr>
+  </tbody>
+</table>
+<p><span class='legal'>Observation.</span> The severity classifier separates four tiers cleanly: most matters end in fines (with or without additional powers), while sanction-free cases remain rare. Expected severity is lowest for cases featuring no corrective powers and highest for those with extensive Article 58(2) measures.</p>
+<figure><img src='severity_coefficients.png' alt='Severity coefficients'><figcaption>Figure 2. Leading predictors of FINE_PLUS outcomes (log-odds).</figcaption></figure>
+<p><span class='legal'>Key insight.</span> Article 58(2) levers such as administrative fines, compliance orders, and remedial mandates dominate the transition into the FINE_PLUS tier, supporting doctrinal expectations that DPAs combine monetary and structural remedies in the most serious cases.</p>
+<h2>3. Case-initiation channels</h2>
+<figure><img src='case_initiation_logfine.png' alt='Case initiation log fines'><figcaption>Figure 3. Average log fines by initiation channel.</figcaption></figure>
+<figure><img src='case_initiation_severity.png' alt='Case initiation severity'><figcaption>Figure 4. Average expected severity by initiation channel.</figcaption></figure>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>case_initiation</th>
+      <th>count</th>
+      <th>mean_log_fine</th>
+      <th>mean_severity_expected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BREACH_NOTIFICATION</td>
+      <td>92</td>
+      <td>7.461</td>
+      <td>3.043</td>
+    </tr>
+    <tr>
+      <td>EX_OFFICIO_DPA_INITIATIVE</td>
+      <td>58</td>
+      <td>6.834</td>
+      <td>2.686</td>
+    </tr>
+    <tr>
+      <td>COMPLAINT</td>
+      <td>745</td>
+      <td>6.216</td>
+      <td>2.680</td>
+    </tr>
+    <tr>
+      <td>LOW_FREQUENCY</td>
+      <td>12</td>
+      <td>5.957</td>
+      <td>1.666</td>
+    </tr>
+    <tr>
+      <td>REFERRAL_FROM_OTHER_AUTHORITY</td>
+      <td>20</td>
+      <td>3.922</td>
+      <td>2.098</td>
+    </tr>
+    <tr>
+      <td>NOT_MENTIONED</td>
+      <td>26</td>
+      <td>2.010</td>
+      <td>0.854</td>
+    </tr>
+  </tbody>
+</table>
+<p><span class='legal'>Interpretation.</span> Self-reported breaches (Art. 33 notifications) and ex officio investigations correlate with the highest fines and severity scores. The pooled low-frequency bucket (media, joint investigations, follow-ups) drops markedly, reinforcing the inference that proactive or high-visibility triggers correspond to harsher enforcement toolkits.</p>
+<h2>4. Notification timeliness and fines</h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>initial_sample_size</th>
+      <th>trimmed_sample_size</th>
+      <th>treated_cases</th>
+      <th>control_cases</th>
+      <th>naive_average_treatment_effect</th>
+      <th>aipw_average_treatment_effect</th>
+      <th>propensity_mean</th>
+      <th>propensity_std</th>
+      <th>trim_lower</th>
+      <th>trim_upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>101</td>
+      <td>50</td>
+      <td>21</td>
+      <td>29</td>
+      <td>0.557</td>
+      <td>1.400</td>
+      <td>0.401</td>
+      <td>0.231</td>
+      <td>0.100</td>
+      <td>0.900</td>
+    </tr>
+  </tbody>
+</table>
+<figure><img src='propensity_coefficients.png' alt='Propensity coefficients'><figcaption>Figure 5. Leading predictors of timely notification (positive coefficients increase the odds of timely filing).</figcaption></figure>
+<p><span class='legal'>Reading the coefficients.</span> Richer discussions of data-subject rights (<code>rights_discussed/violated</code> components) push organisations toward timely filing, whereas DPAs with historically severe outcomes (<code>dpa_severity_shrinkage</code>) and the presence of reprimands correlate with slower disclosure. Light-touch portfolios (<code>q53_powers_NONE</code>) move in the opposite direction.</p>
+<figure><img src='bootstrap_aipw.png' alt='Bootstrap intervals'><figcaption>Figure 6. Bootstrap confidence intervals for AIPW estimates across two trim bands.</figcaption></figure>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>trim_range</th>
+      <th>trimmed_sample_size</th>
+      <th>treated_cases</th>
+      <th>control_cases</th>
+      <th>naive_effect</th>
+      <th>aipw_effect</th>
+      <th>bootstrap_mean</th>
+      <th>bootstrap_std</th>
+      <th>ci_lower</th>
+      <th>ci_upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1-0.9</td>
+      <td>50</td>
+      <td>21</td>
+      <td>29</td>
+      <td>0.557</td>
+      <td>1.400</td>
+      <td>5.648</td>
+      <td>111.822</td>
+      <td>-20.623</td>
+      <td>10.294</td>
+    </tr>
+    <tr>
+      <td>0.2-0.8</td>
+      <td>36</td>
+      <td>17</td>
+      <td>19</td>
+      <td>1.714</td>
+      <td>0.299</td>
+      <td>-0.007</td>
+      <td>1.368</td>
+      <td>-3.112</td>
+      <td>2.631</td>
+    </tr>
+  </tbody>
+</table>
+<p class='note'><span class='legal'>Caution.</span> Under the baseline 0.10–0.90 trim the bootstrap interval spans −20.6 to +10.3 log points, signalling severe instability driven by overlap issues. Tightening to 0.20–0.80 centres the effect near zero but retains wide uncertainty. In legal terms, we cannot yet claim that timely notification either mitigates or exacerbates fines—the data are compatible with both interpretations once extreme propensities are excluded.</p>
+<h2>5. Implications for legal analysis</h2>
+<ul><li><span class='legal'>Sanction architecture.</span> High-severity cases nearly always involve layered Article&nbsp;58(2) powers alongside fines. Practitioners should expect DPAs to combine financial penalties with structural orders when multiple corrective measures are recorded.</li><li><span class='legal'>Initiation channel.</span> Complaint-driven matters dominate the docket numerically, but breach notifications and ex officio actions occupy the severe tail. This supports theories that disclosure duties surface in cases already deemed serious by organisations or regulators.</li><li><span class='legal'>Timeliness.</span> Current evidence is inconclusive: the direction of the causal estimate swings with trimming, and bootstrap intervals are wide. Before advising clients, we should stabilise the estimator (e.g., overlap weighting, targeted learning) or complement it with qualitative case analysis.</li></ul>
+<h2>6. Next steps</h2>
+<ol><li>Introduce overlap-conscious estimation (e.g., trimmed IPTW or targeted ML) to see whether a reliable causal effect emerges.</li><li>Pool or shrink residual low-count initiation categories, or move to Bayesian hierarchies so each trigger inherits information from complaint-heavy cases.</li><li>Augment this statistical perspective with doctrinal review of a small case sample to contextualise rights-discussion latent components for legal audiences.</li></ol>
+<p>Generated automatically by <code>scripts/analysis/generate_notification_report.py</code>. All figures and tables draw on reproducible artefacts stored under <code>outputs/analysis/</code>.</p>
+</body></html>

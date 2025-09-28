@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
+import re
 from typing import Mapping, Sequence
 
 import numpy as np
@@ -241,6 +242,36 @@ def _build_feature_matrix(df: pd.DataFrame) -> tuple[pd.DataFrame, list[FeatureM
         feature_matrix = pd.concat(parts, axis=1)
     feature_matrix.index = df.index
     feature_matrix = feature_matrix.loc[:, ~feature_matrix.columns.duplicated()]
+
+    def sanitize(name: str) -> str:
+        cleaned = re.sub(r"[^0-9A-Za-z_]+", "_", name)
+        cleaned = cleaned.strip("_") or "feature"
+        if cleaned[0].isdigit():
+            cleaned = f"f_{cleaned}"
+        return cleaned
+
+    rename_map: dict[str, str] = {}
+    seen: dict[str, int] = {}
+    sanitized_metadata: list[FeatureMetadata] = []
+    for meta in metadata:
+        base = sanitize(meta.feature)
+        count = seen.get(base, 0)
+        if count:
+            new_name = f"{base}_{count}"
+        else:
+            new_name = base
+        seen[base] = count + 1
+        rename_map[meta.feature] = new_name
+        sanitized_metadata.append(
+            FeatureMetadata(
+                feature=new_name,
+                source_column=meta.source_column,
+                feature_type=meta.feature_type,
+                block=meta.block,
+            )
+        )
+    feature_matrix = feature_matrix.rename(columns=rename_map)
+    metadata = sanitized_metadata
 
     coverage_records: list[dict[str, object]] = []
     for meta in metadata:
@@ -783,12 +814,20 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
     for outcome in outcomes:
         if outcome not in wide_df.columns:
             continue
-        y = wide_df[outcome]
-        mask = y.notna()
+        y_raw = wide_df[outcome]
+        mask = y_raw.notna()
         if mask.sum() < 50:
             continue
-        y = y.loc[mask]
-        X_outcome = X.loc[mask]
+        decision_ids = wide_df.loc[mask, "decision_id"].astype(str)
+        y = y_raw.loc[mask]
+        y.index = decision_ids
+        try:
+            X_outcome = X.loc[decision_ids]
+        except KeyError:
+            available = X.index.intersection(decision_ids)
+            y = y.loc[available]
+            decision_ids = available
+            X_outcome = X.loc[decision_ids]
         classification = y.dropna().isin({0, 1, True, False}).all()
         model, importance, _ = _train_tree_model(X_outcome, y, classification)
         shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
@@ -980,4 +1019,3 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
 
 
 __all__ = ["run_omniscan", "OmniScanOutputs", "FeatureMetadata"]
-

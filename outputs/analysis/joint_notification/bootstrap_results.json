@@ -5,10 +5,10 @@
     "control_cases": 29,
     "naive_effect": 0.5565312857142866,
     "aipw_effect": 1.4002863920873247,
-    "bootstrap_mean": 0.12906197713002787,
-    "bootstrap_std": 71.50020873599478,
-    "ci_lower": -15.792412763063128,
-    "ci_upper": 13.83747028353227
+    "bootstrap_mean": 5.647520248382759,
+    "bootstrap_std": 111.82244938003424,
+    "ci_lower": -20.623005079191813,
+    "ci_upper": 10.293602675834693
   },
   "0.2-0.8": {
     "trimmed_sample_size": 36,
@@ -16,9 +16,9 @@
     "control_cases": 19,
     "naive_effect": 1.7137718978328182,
     "aipw_effect": 0.2990057345767718,
-    "bootstrap_mean": -0.038075609057523746,
-    "bootstrap_std": 1.5560834629713731,
-    "ci_lower": -3.1229400259085134,
-    "ci_upper": 2.78504554911841
+    "bootstrap_mean": -0.007150411594538492,
+    "bootstrap_std": 1.367622072175623,
+    "ci_lower": -3.1116925634187838,
+    "ci_upper": 2.6306660855065265
   }
 }

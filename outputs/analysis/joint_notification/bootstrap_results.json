@@ -1,0 +1,24 @@
+{
+  "0.1-0.9": {
+    "trimmed_sample_size": 50,
+    "treated_cases": 21,
+    "control_cases": 29,
+    "naive_effect": 0.5565312857142866,
+    "aipw_effect": 1.4002863920873247,
+    "bootstrap_mean": 0.12906197713002787,
+    "bootstrap_std": 71.50020873599478,
+    "ci_lower": -15.792412763063128,
+    "ci_upper": 13.83747028353227
+  },
+  "0.2-0.8": {
+    "trimmed_sample_size": 36,
+    "treated_cases": 17,
+    "control_cases": 19,
+    "naive_effect": 1.7137718978328182,
+    "aipw_effect": 0.2990057345767718,
+    "bootstrap_mean": -0.038075609057523746,
+    "bootstrap_std": 1.5560834629713731,
+    "ci_lower": -3.1229400259085134,
+    "ci_upper": 2.78504554911841
+  }
+}

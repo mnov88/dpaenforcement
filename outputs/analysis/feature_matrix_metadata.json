@@ -54,12 +54,7 @@
     "q15_case_initiation_BREACH_NOTIFICATION",
     "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE",
     "q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY",
-    "q15_case_initiation_MEDIA_PUBLIC_ATTENTION",
-    "q15_case_initiation_JOINT_INVESTIGATION",
-    "q15_case_initiation_FOLLOW_UP_PRIOR_CASE",
-    "q15_case_initiation_OTHER",
     "q15_case_initiation_NOT_MENTIONED",
-    "q15_case_initiation_UNCLEAR",
     "q21_breach_types_coverage_status",
     "q21_breach_types_known",
     "q21_breach_types_unknown",
@@ -325,7 +320,8 @@
     "power_reprimand_flag",
     "power_none_flag",
     "power_combined_flag",
-    "power_non_fine_flag"
+    "power_non_fine_flag",
+    "q15_case_initiation_LOW_FREQUENCY"
   ],
   "column_groups": {
     "base": [
@@ -389,12 +385,8 @@
       "q15_case_initiation_BREACH_NOTIFICATION",
       "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE",
       "q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY",
-      "q15_case_initiation_MEDIA_PUBLIC_ATTENTION",
-      "q15_case_initiation_JOINT_INVESTIGATION",
-      "q15_case_initiation_FOLLOW_UP_PRIOR_CASE",
-      "q15_case_initiation_OTHER",
       "q15_case_initiation_NOT_MENTIONED",
-      "q15_case_initiation_UNCLEAR"
+      "q15_case_initiation_LOW_FREQUENCY"
     ],
     "q21_breach_types": [
       "q21_breach_types_coverage_status",

@@ -171,6 +171,38 @@ def _derive_power_features(matrix: pd.DataFrame) -> None:
     ).astype(int)
 
 
+def _pool_case_initiation(matrix: pd.DataFrame, column_groups: dict[str, list[str]], threshold: int = 10) -> None:
+    columns = column_groups.get("q15_case_initiation")
+    if not columns:
+        return
+    indicator_cols = [
+        col
+        for col in columns
+        if not col.endswith(META_SUFFIXES)
+        and col not in {"q15_case_initiation_known", "q15_case_initiation_unknown"}
+        and col in matrix.columns
+    ]
+    low_freq = []
+    for col in indicator_cols:
+        values = matrix[col]
+        if values.notna().any():
+            count = (pd.to_numeric(values, errors="coerce") == 1).sum()
+            if count < threshold:
+                low_freq.append(col)
+    if not low_freq:
+        return
+    pooled_values = pd.Series(0, index=matrix.index, dtype="Int64")
+    for col in low_freq:
+        pooled_values = pooled_values | (pd.to_numeric(matrix[col], errors="coerce").fillna(0).astype(int) == 1)
+    pooled_column = "q15_case_initiation_LOW_FREQUENCY"
+    matrix[pooled_column] = pooled_values.astype("Int64")
+    for col in low_freq:
+        matrix.drop(columns=col, inplace=True)
+        if col in column_groups["q15_case_initiation"]:
+            column_groups["q15_case_initiation"].remove(col)
+    column_groups["q15_case_initiation"].append(pooled_column)
+
+
 def build_feature_matrix(wide_csv: Path) -> FeatureMatrixArtifacts:
     df = _read_wide(wide_csv)
     column_groups = _collect_columns(df)
@@ -185,6 +217,7 @@ def build_feature_matrix(wide_csv: Path) -> FeatureMatrixArtifacts:
     _convert_indicator_columns(matrix, column_groups)
     _derive_notification_flags(matrix)
     _derive_power_features(matrix)
+    _pool_case_initiation(matrix, column_groups)
 
     column_groups["derived_notification"] = [
         "art33_required_flag",

@@ -16,6 +16,7 @@ from .variance import intraclass_correlation, variance_summary
 from .decomposition import run_oaxaca_blinder
 from .robustness import run_robustness_suite
 from .predictive import gradient_boosting_diagnostics
+from .phase_three import run_phase_three
 
 __all__ = [
     "EvennessPaths",
@@ -37,4 +38,5 @@ __all__ = [
     "run_oaxaca_blinder",
     "run_robustness_suite",
     "gradient_boosting_diagnostics",
+    "run_phase_three",
 ]

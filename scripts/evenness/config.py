@@ -30,6 +30,29 @@ class EvennessPaths:
     coverage_dir: Path = Path("outputs/evenness/coverage")
     support_dir: Path = Path("outputs/evenness/support")
     harmonization_log: Path = Path("outputs/evenness/country_harmonization_log.csv")
+    uniformity_dir: Path = Path("outputs/evenness/uniformity")
+    uniformity_residuals: Path = Path("outputs/evenness/uniformity/residuals.parquet")
+    uniformity_effects_csv: Path = Path("outputs/evenness/uniformity/jurisdiction_effects.csv")
+    uniformity_joint_csv: Path = Path("outputs/evenness/uniformity/joint_tests.csv")
+    uniformity_pairs_csv: Path = Path("outputs/evenness/uniformity/paired_tests.csv")
+    uniformity_distribution_csv: Path = Path("outputs/evenness/uniformity/distribution_tests.csv")
+    uniformity_quantiles_csv: Path = Path("outputs/evenness/uniformity/quantile_contrasts.csv")
+    uniformity_calibration_csv: Path = Path("outputs/evenness/uniformity/calibration.csv")
+    uniformity_variance_csv: Path = Path("outputs/evenness/uniformity/variance_components.csv")
+    phase3_dir: Path = Path("outputs/evenness/phase_three")
+    driver_leaderboard_csv: Path = Path("outputs/evenness/phase_three/driver_leaderboard.csv")
+    interaction_country_csv: Path = Path("outputs/evenness/phase_three/country_interactions.csv")
+    interaction_dpa_csv: Path = Path("outputs/evenness/phase_three/dpa_interactions.csv")
+    decomposition_summary_csv: Path = Path("outputs/evenness/phase_three/decomposition_summary.csv")
+    policy_dir: Path = Path("outputs/evenness/phase_three/policy")
+    policy_estimates_csv: Path = Path("outputs/evenness/phase_three/policy/lever_estimates.csv")
+    policy_placebo_csv: Path = Path("outputs/evenness/phase_three/policy/rd_placebos.csv")
+    policy_plot: Path = Path("outputs/evenness/phase_three/policy/lever_effects.png")
+    robustness_summary_csv: Path = Path("outputs/evenness/phase_three/robustness_summary.csv")
+    randomization_csv: Path = Path("outputs/evenness/phase_three/randomization_inference.csv")
+    insights_report: Path = Path("outputs/evenness/phase_three/insights_report.md")
+    playbook_report: Path = Path("outputs/evenness/phase_three/playbook.md")
+    environment_snapshot: Path = Path("outputs/evenness/phase_three/environment.txt")
 
     def ensure(self) -> None:
         """Create parent directories for all registered artefacts."""
@@ -54,10 +77,36 @@ class EvennessPaths:
             self.coverage_dir,
             self.support_dir,
             self.harmonization_log,
+            self.uniformity_residuals,
+            self.uniformity_effects_csv,
+            self.uniformity_joint_csv,
+            self.uniformity_pairs_csv,
+            self.uniformity_distribution_csv,
+            self.uniformity_quantiles_csv,
+            self.uniformity_calibration_csv,
+            self.uniformity_variance_csv,
+            self.driver_leaderboard_csv,
+            self.interaction_country_csv,
+            self.interaction_dpa_csv,
+            self.decomposition_summary_csv,
+            self.policy_estimates_csv,
+            self.policy_placebo_csv,
+            self.policy_plot,
+            self.robustness_summary_csv,
+            self.randomization_csv,
+            self.insights_report,
+            self.playbook_report,
+            self.environment_snapshot,
         ):
             parent = Path(path).expanduser().resolve().parent
             parent.mkdir(parents=True, exist_ok=True)
-        for directory in (self.coverage_dir, self.support_dir):
+        for directory in (
+            self.coverage_dir,
+            self.support_dir,
+            self.uniformity_dir,
+            self.phase3_dir,
+            self.policy_dir,
+        ):
             Path(directory).expanduser().resolve().mkdir(parents=True, exist_ok=True)
 
 

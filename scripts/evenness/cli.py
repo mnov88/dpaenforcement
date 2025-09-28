@@ -25,8 +25,10 @@ from .leniency import compute_leniency_index
 from .matching import perform_matching
 from .modeling import fit_logistic, fit_mixed_effects, fit_ols, model_to_dict
 from .plots import plot_balance, plot_icc_bars, plot_leniency_map, plot_shap_summary
+from .phase_three import run_phase_three
 from .predictive import gradient_boosting_diagnostics
 from .robustness import run_robustness_suite
+from .uniformity import run_phase_two
 from .variance import variance_summary
 
 
@@ -265,6 +267,29 @@ def cmd_phase_one(args: argparse.Namespace) -> None:
         print(f"  - {key}: {value}")
 
 
+def cmd_phase_two(args: argparse.Namespace) -> None:
+    paths = EvennessPaths()
+    outputs = run_phase_two(paths=paths, n_splits=args.n_splits, random_state=args.random_state)
+    print("Phase 2 artefacts generated:")
+    print(f"  - residual rows: {len(outputs.residuals)}")
+    print(f"  - jurisdiction effects: {len(outputs.jurisdiction_effects)}")
+    print(f"  - paired tests: {len(outputs.paired_tests)}")
+    print(f"  - calibration rows: {len(outputs.calibration)}")
+
+
+def cmd_phase_three(args: argparse.Namespace) -> None:
+    paths = EvennessPaths()
+    outputs = run_phase_three(
+        paths=paths,
+        outcome=args.outcome,
+    )
+    print("Phase 3 artefacts generated:")
+    print(f"  - drivers scanned: {len(outputs.driver_leaderboard)}")
+    print(f"  - decomposition rows: {len(outputs.decompositions)}")
+    print(f"  - policy estimates: {len(outputs.policy_estimates)}")
+    print(f"  - robustness scenarios: {len(outputs.robustness_summary)}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="GDPR evenness analysis toolkit")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -273,6 +298,15 @@ def build_parser() -> argparse.ArgumentParser:
     p_phase1.add_argument("--wide-csv", default=EvennessPaths().wide_csv)
     p_phase1.add_argument("--discussed-only", action="store_true")
     p_phase1.set_defaults(func=cmd_phase_one)
+
+    p_phase2 = sub.add_parser("phase-two", help="Run Phase 2 uniformity workflow")
+    p_phase2.add_argument("--n-splits", type=int, default=5)
+    p_phase2.add_argument("--random-state", type=int, default=42)
+    p_phase2.set_defaults(func=cmd_phase_two)
+
+    p_phase3 = sub.add_parser("phase-three", help="Run Phase 3 explanation and policy workflow")
+    p_phase3.add_argument("--outcome", default="fine_log1p")
+    p_phase3.set_defaults(func=cmd_phase_three)
 
     p_prepare = sub.add_parser("prepare-data", help="Build fact matrix")
     p_prepare.add_argument("--wide-csv", default=EvennessPaths().wide_csv)

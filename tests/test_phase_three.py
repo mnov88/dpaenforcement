@@ -1,4 +1,6 @@
-import pandas as pd
+import pytest
+
+pd = pytest.importorskip("pandas")
 
 from scripts.evenness.interaction import interaction_scan
 from scripts.evenness.phase_three import estimate_notification_effect, estimate_timing_effect

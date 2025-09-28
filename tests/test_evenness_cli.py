@@ -1,6 +1,11 @@
-import pandas as pd
+import argparse
+
+import pytest
+
+pd = pytest.importorskip("pandas")
 
 from scripts.evenness import cli
+from scripts.evenness.omniscan import OmniScanOutputs
 
 
 def test_build_formula_includes_fixed_effects():
@@ -40,3 +45,47 @@ def test_indicator_columns_ignore_guardrails():
     cols = cli._indicator_columns(df)
     assert "q46_vuln_CHILDREN" in cols
     assert "q46_vuln_status" not in cols
+
+
+def test_cmd_omniscan_invokes_runner(monkeypatch, capsys):
+    called = {}
+
+    dummy = OmniScanOutputs(
+        feature_universe_json="features.json",
+        coverage_ledger_csv="coverage.csv",
+        coverage_checklist_csv="checklist.csv",
+        importance_heatmap_csv="importance.csv",
+        interaction_map_csv="interactions.csv",
+        block_importance_csv="blocks.csv",
+        shap_country_csv="country.csv",
+        shap_dpa_csv="dpa.csv",
+        sage_importance_csv="sage.csv",
+        specification_curve_csv="spec.csv",
+        stability_selection_csv="stability.csv",
+        knockoff_results_csv="knockoff.csv",
+        robust_driver_csv="drivers.csv",
+        crt_results_csv="crt.csv",
+        jurisdiction_effects_csv="jurisdictions.csv",
+        heterogeneity_csv="heterogeneity.csv",
+        network_edges_csv="network.csv",
+        community_summary_csv="communities.csv",
+        risk_band_parity_csv="risk.csv",
+        distribution_contrasts_csv="dist.csv",
+    )
+
+    def fake_run(paths):
+        called["paths"] = paths
+        return dummy
+
+    monkeypatch.setattr(cli, "run_omniscan", fake_run)
+    cli.cmd_omniscan(argparse.Namespace())
+    out = capsys.readouterr().out
+    assert "Omni-scan artefacts generated" in out
+    assert "coverage.csv" in out
+    assert "paths" in called
+
+
+def test_build_parser_registers_phase_zero():
+    parser = cli.build_parser()
+    subcommands = parser._subparsers._group_actions[0].choices
+    assert "phase-zero" in subcommands

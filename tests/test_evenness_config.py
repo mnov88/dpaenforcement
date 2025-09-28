@@ -1,4 +1,6 @@
-import pandas as pd
+import pytest
+
+pd = pytest.importorskip("pandas")
 
 from scripts.evenness import (
     DEFAULT_MATCHING_CROSS,

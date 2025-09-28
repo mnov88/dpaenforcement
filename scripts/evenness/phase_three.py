@@ -340,12 +340,18 @@ def estimate_notification_effect(
     features = _prepare_features(working, feature_cols)
     design = sm.add_constant(features, has_constant="add")
 
+    propensity_values: pd.Series | np.ndarray
     try:
         propensity_model = sm.Logit(treated, design).fit(disp=False)
+        propensity_values = propensity_model.predict(design)
     except Exception:
-        return pd.DataFrame()
-    propensity = propensity_model.predict(design)
-    propensity = np.clip(propensity, 0.01, 0.99)
+        try:
+            glm_model = sm.GLM(treated, design, family=sm.families.Binomial()).fit()
+            propensity_values = glm_model.predict(design)
+        except Exception:
+            mean_p = float(treated.mean()) if len(treated) else 0.5
+            propensity_values = pd.Series(mean_p, index=treated.index)
+    propensity = pd.Series(np.clip(np.asarray(propensity_values, dtype=float), 0.01, 0.99), index=treated.index)
 
     records: list[dict[str, object]] = []
     for outcome in outcomes:

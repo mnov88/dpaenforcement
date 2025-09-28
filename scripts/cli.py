@@ -10,6 +10,7 @@ from scripts.clean.wide_output import clean_csv_to_wide
 from scripts.clean.long_tables import LongEmitter
 from scripts.clean.consistency import run_consistency_checks
 from scripts.clean.qa_summary import create_qa_summary
+from scripts.analysis.omniscan import OmniScanConfig, OmniScanRunner
 
 
 DEFAULT_PROMPT = Path("analyzed-decisions/data-extraction-prompt-sent-to-ai.md")
@@ -114,6 +115,18 @@ def cmd_run_all(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_omniscan(args: argparse.Namespace) -> int:
+    config = OmniScanConfig(
+        wide_csv=Path(args.wide_csv),
+        long_tables_dir=Path(args.long_tables_dir),
+        output_dir=Path(args.output_dir),
+    )
+    runner = OmniScanRunner(config)
+    runner.run()
+    print(f"Omni-Scan outputs written to {config.output_dir}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="dpa-scripts", description="DPA decisions data utilities")
     sub = p.add_subparsers(dest="command", required=True)
@@ -158,6 +171,12 @@ def build_parser() -> argparse.ArgumentParser:
     s7.add_argument("--consistency-json")
     s7.add_argument("--qa-summary-csv")
     s7.set_defaults(func=cmd_run_all)
+
+    s8 = sub.add_parser("omniscan", help="Run Phase 0 omni-scan analytics")
+    s8.add_argument("--wide-csv", default=str(DEFAULT_WIDE_CSV))
+    s8.add_argument("--long-tables-dir", default=str(DEFAULT_LONG_DIR))
+    s8.add_argument("--output-dir", default=str(Path("outputs/analysis/omniscan")))
+    s8.set_defaults(func=cmd_omniscan)
 
     return p
 

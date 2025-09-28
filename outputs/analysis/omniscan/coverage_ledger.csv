@@ -1,0 +1,1139 @@
+feature,source,kind,origin,dtype,observed_rate,nonzero_rate,variance,min,max
+access_issues__EXCESSIVE_DELAY,long:access_issues,binary,access_issues,float64,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+access_issues__EXCESSIVE_FEES,long:access_issues,binary,access_issues,float64,1.0,0.0,0.0,0.0,0.0
+access_issues__IDENTITY_VERIFICATION_ISSUES,long:access_issues,binary,access_issues,float64,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+access_issues__INADEQUATE_RESPONSE,long:access_issues,binary,access_issues,float64,1.0,0.07963709677419355,0.07336899026724392,0.0,1.0
+access_issues__NOT_APPLICABLE,long:access_issues,binary,access_issues,float64,1.0,0.5282258064516129,0.24945477035252753,0.0,1.0
+access_issues__NO_ISSUES_FOUND,long:access_issues,binary,access_issues,float64,1.0,0.004032258064516129,0.004020051430617493,0.0,1.0
+access_issues__SCOPE_LIMITATIONS,long:access_issues,binary,access_issues,float64,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+adm_issues__INADEQUATE_SAFEGUARDS,long:adm_issues,binary,adm_issues,float64,1.0,0.0,0.0,0.0,0.0
+adm_issues__NOT_APPLICABLE,long:adm_issues,binary,adm_issues,float64,1.0,0.59375,0.24145433905146316,0.0,1.0
+adm_issues__NO_EXPLANATION_PROVIDED,long:adm_issues,binary,adm_issues,float64,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+adm_issues__NO_ISSUES_FOUND,long:adm_issues,binary,adm_issues,float64,1.0,0.0,0.0,0.0,0.0
+adm_issues__PROFILING_WITHOUT_CONSENT,long:adm_issues,binary,adm_issues,float64,1.0,0.0,0.0,0.0,0.0
+aggravating_factors__CODES_CERTIFICATION,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.0,0.0,0.0,0.0
+aggravating_factors__COMPLIANCE_PRIOR_ORDERS,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.0,0.0,0.0,0.0
+aggravating_factors__COOPERATION_WITH_AUTHORITY,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+aggravating_factors__DATA_CATEGORIES_AFFECTED,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.17943548387096775,0.14738696657009864,0.0,1.0
+aggravating_factors__INTENT_NEGLIGENCE,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.3377016129032258,0.2238849239933596,0.0,1.0
+aggravating_factors__MANNER_BECAME_KNOWN,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.015120967741935484,0.014907351648709344,0.0,1.0
+aggravating_factors__MITIGATION_ACTIONS,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.020161290322580645,0.0197747469157905,0.0,1.0
+aggravating_factors__NATURE_GRAVITY_DURATION,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.3467741935483871,0.2267504313010644,0.0,1.0
+aggravating_factors__NONE,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.18346774193548387,0.14995849744474465,0.0,1.0
+aggravating_factors__OTHER_CIRCUMSTANCES,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+aggravating_factors__PREVIOUS_INFRINGEMENTS,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.046370967741935484,0.04426532339442075,0.0,1.0
+aggravating_factors__TECHNICAL_ORGANIZATIONAL_MEASURES,long:aggravating_factors,binary,aggravating_factors,float64,1.0,0.023185483870967742,0.02267077080824192,0.0,1.0
+article_5_discussed__ACCOUNTABILITY,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.18850806451612903,0.15312713616093226,0.0,1.0
+article_5_discussed__ACCURACY,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+article_5_discussed__DATA_MINIMISATION,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.11693548387096774,0.10336577585365059,0.0,1.0
+article_5_discussed__LAWFULNESS_FAIRNESS_TRANSPARENCY,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.24899193548387097,0.187183644738127,0.0,1.0
+article_5_discussed__NONE_DISCUSSED,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.08366935483870967,0.0767461589791999,0.0,1.0
+article_5_discussed__PURPOSE_LIMITATION,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.1461693548387097,0.12492981185508284,0.0,1.0
+article_5_discussed__SECURITY,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.3336693548387097,0.2225584697763745,0.0,1.0
+article_5_discussed__STORAGE_LIMITATION,long:article_5_discussed,binary,article_5_discussed,float64,1.0,0.02721774193548387,0.02650365385241366,0.0,1.0
+article_5_violated__ACCOUNTABILITY,long:article_5_violated,binary,article_5_violated,float64,1.0,0.11995967741935484,0.1056758813189675,0.0,1.0
+article_5_violated__ACCURACY,long:article_5_violated,binary,article_5_violated,float64,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+article_5_violated__DATA_MINIMISATION,long:article_5_violated,binary,article_5_violated,float64,1.0,0.06955645161290322,0.06478365775853649,0.0,1.0
+article_5_violated__LAWFULNESS_FAIRNESS_TRANSPARENCY,long:article_5_violated,binary,article_5_violated,float64,1.0,0.2086693548387097,0.16529308127990627,0.0,1.0
+article_5_violated__NONE_VIOLATED,long:article_5_violated,binary,article_5_violated,float64,1.0,0.12399193548387097,0.10872753979362651,0.0,1.0
+article_5_violated__NOT_DETERMINED,long:article_5_violated,binary,article_5_violated,float64,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+article_5_violated__PURPOSE_LIMITATION,long:article_5_violated,binary,article_5_violated,float64,1.0,0.056451612903225805,0.053318576869242525,0.0,1.0
+article_5_violated__SECURITY,long:article_5_violated,binary,article_5_violated,float64,1.0,0.23387096774193547,0.17935614075062659,0.0,1.0
+article_5_violated__STORAGE_LIMITATION,long:article_5_violated,binary,article_5_violated,float64,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+article_6_discussed__CONSENT,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.24193548387096775,0.1835877738354872,0.0,1.0
+article_6_discussed__CONTRACT,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.17137096774193547,0.14214625174961754,0.0,1.0
+article_6_discussed__LEGAL_OBLIGATION,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.10786290322580645,0.09632559975261222,0.0,1.0
+article_6_discussed__LEGITIMATE_INTERESTS,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.21169354838709678,0.16704778490283517,0.0,1.0
+article_6_discussed__NONE_DISCUSSED,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.10786290322580645,0.09632559975261222,0.0,1.0
+article_6_discussed__PUBLIC_TASK,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.08568548387096774,0.07842253670127924,0.0,1.0
+article_6_discussed__VITAL_INTERESTS,long:article_6_discussed,binary,article_6_discussed,float64,1.0,0.03528225806451613,0.034071766869568046,0.0,1.0
+breach_case,wide,numeric,breach_case,int64,1.0,0.09778225806451613,0.08830991015917451,0.0,1.0
+breach_types__CYBER_ATTACK,long:breach_types,binary,breach_types,float64,1.0,0.023185483870967742,0.02267077080824192,0.0,1.0
+breach_types__HUMAN_ERROR,long:breach_types,binary,breach_types,float64,1.0,0.0655241935483871,0.061292560463526574,0.0,1.0
+breach_types__NOT_APPLICABLE,long:breach_types,binary,breach_types,float64,1.0,0.501008064516129,0.2502512532144135,0.0,1.0
+breach_types__NOT_MENTIONED,long:breach_types,binary,breach_types,float64,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+breach_types__ORGANIZATIONAL_FAILURE,long:breach_types,binary,breach_types,float64,1.0,0.05443548387096774,0.05152420168614301,0.0,1.0
+breach_types__SYSTEM_MALFUNCTION,long:breach_types,binary,breach_types,float64,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+breach_types__TECHNICAL_FAILURE,long:breach_types,binary,breach_types,float64,1.0,0.019153225806451613,0.018805336740340482,0.0,1.0
+breach_types__UNCLEAR,long:breach_types,binary,breach_types,float64,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+consent_issues__CONDITIONAL,long:consent_issues,binary,consent_issues,float64,1.0,0.03528225806451613,0.03407176686956804,0.0,1.0
+consent_issues__NOT_APPLICABLE,long:consent_issues,binary,consent_issues,float64,1.0,0.5171370967741935,0.2499582940008464,0.0,1.0
+consent_issues__NOT_FREELY_GIVEN,long:consent_issues,binary,consent_issues,float64,1.0,0.03024193548387097,0.029356954526219857,0.0,1.0
+consent_issues__NOT_INFORMED,long:consent_issues,binary,consent_issues,float64,1.0,0.08064516129032258,0.07421633410370755,0.0,1.0
+consent_issues__NOT_SPECIFIC,long:consent_issues,binary,consent_issues,float64,1.0,0.03326612903225806,0.03219194524917808,0.0,1.0
+consent_issues__NOT_UNAMBIGUOUS,long:consent_issues,binary,consent_issues,float64,1.0,0.04032258064516129,0.038735718238338615,0.0,1.0
+consent_issues__NO_ISSUES_FOUND,long:consent_issues,binary,consent_issues,float64,1.0,0.007056451612903226,0.0070137283942580024,0.0,1.0
+consent_issues__WITHDRAWAL_PROBLEMS,long:consent_issues,binary,consent_issues,float64,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+corrective_powers__ADMINISTRATIVE_FINE,long:corrective_powers,binary,corrective_powers,float64,1.0,0.42943548387096775,0.2452678949252955,0.0,1.0
+corrective_powers__BRING_PROCESSING_INTO_COMPLIANCE,long:corrective_powers,binary,corrective_powers,float64,1.0,0.2620967741935484,0.19359721363236876,0.0,1.0
+corrective_powers__CERTIFICATION_WITHDRAWAL,long:corrective_powers,binary,corrective_powers,float64,1.0,0.0,0.0,0.0,0.0
+corrective_powers__COMMUNICATE_BREACH_TO_SUBJECTS,long:corrective_powers,binary,corrective_powers,float64,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+corrective_powers__COMPLY_WITH_DATA_SUBJECT_REQUESTS,long:corrective_powers,binary,corrective_powers,float64,1.0,0.27419354838709675,0.19921226522574131,0.0,1.0
+corrective_powers__LIMITATION_PROHIBITION_OF_PROCESSING,long:corrective_powers,binary,corrective_powers,float64,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+corrective_powers__NONE,long:corrective_powers,binary,corrective_powers,float64,1.0,0.09274193548387097,0.08422577390058918,0.0,1.0
+corrective_powers__RECTIFICATION_ERASURE_RESTRICTION,long:corrective_powers,binary,corrective_powers,float64,1.0,0.007056451612903226,0.007013728394258,0.0,1.0
+corrective_powers__REPRIMAND,long:corrective_powers,binary,corrective_powers,float64,1.0,0.09576612903225806,0.0866823589726897,0.0,1.0
+corrective_powers__SUSPENSION_DATA_FLOWS,long:corrective_powers,binary,corrective_powers,float64,1.0,0.0,0.0,0.0,0.0
+corrective_powers__WARNING,long:corrective_powers,binary,corrective_powers,float64,1.0,0.07661290322580645,0.07081475212395427,0.0,1.0
+corrective_scopes__COMPLETE_PROCESSING_BAN,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.0030241935483870967,0.0030180902314377784,0.0,1.0
+corrective_scopes__DATA_CATEGORY_LIMITATION,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+corrective_scopes__GEOGRAPHICAL_LIMITATION,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+corrective_scopes__NOT_APPLICABLE,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.5725806451612904,0.24497900458969435,0.0,1.0
+corrective_scopes__SPECIFIC_PURPOSE_LIMITATION,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+corrective_scopes__TEMPORAL_LIMITATION,long:corrective_scopes,binary,corrective_scopes,float64,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+country_code__ES,wide_categorical,binary,country_code,int8,1.0,0.5977822580645161,0.2406812522378829,0.0,1.0
+country_code__GB,wide_categorical,binary,country_code,int8,1.0,0.04032258064516129,0.038735718238338615,0.0,1.0
+country_code__PL,wide_categorical,binary,country_code,int8,1.0,0.021169354838709676,0.020742122652257416,0.0,1.0
+country_code__PT,wide_categorical,binary,country_code,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+country_code__RO,wide_categorical,binary,country_code,int8,1.0,0.14919354838709678,0.1270629211288695,0.0,1.0
+country_code__SE,wide_categorical,binary,country_code,int8,1.0,0.04838709677419355,0.04609224960124997,0.0,1.0
+country_code__SI,wide_categorical,binary,country_code,int8,1.0,0.06754032258064516,0.06304217798899775,0.0,1.0
+country_code__SK,wide_categorical,binary,country_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+country_code__UNCLEAR,wide_categorical,binary,country_code,int8,1.0,0.024193548387096774,0.023632043227759515,0.0,1.0
+country_group__EU,wide_categorical,binary,country_group,int8,1.0,0.8931451612903226,0.09553318576869238,0.0,1.0
+country_group__NON_EEA,wide_categorical,binary,country_group,int8,1.0,0.06451612903225806,0.060414700042316305,0.0,1.0
+country_group__UNKNOWN,wide_categorical,binary,country_group,int8,1.0,0.04233870967741935,0.04058705771296506,0.0,1.0
+country_mapped_from_uk,wide,numeric,country_mapped_from_uk,int64,1.0,0.018145161290322582,0.01783389212590736,0.0,1.0
+country_status__DISCUSSED,status,binary,country_status,int8,1.0,0.9576612903225806,0.040587057712965086,0.0,1.0
+country_status__NOT_MENTIONED,status,binary,country_status,int8,1.0,0.04233870967741935,0.04058705771296506,0.0,1.0
+country_whitelist_ok,wide,numeric,country_whitelist_ok,int64,1.0,0.9173387096774194,0.07590491845968556,0.0,1.0
+decision_date__2018-10-09T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2019-10-29T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-02-14T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+decision_date__2020-03-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-03-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-04-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-04-14T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-04-23T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+decision_date__2020-06-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-06-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-07-02T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-07-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-07-16T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+decision_date__2020-07-28T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-08-24T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-10-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-11-12T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-11-13T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+decision_date__2020-11-23T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-12-02T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+decision_date__2020-12-03T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2020-12-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2020-12-11T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+decision_date__2021-01-18T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-01-22T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-09T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-15T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-03-19T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-23T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-25T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-03-31T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-04-06T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-04-08T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-04-12T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+decision_date__2021-04-27T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-04-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-05-17T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-05-21T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-05-24T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-06-09T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-07-05T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-07-27T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-08-24T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-09-13T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-09-27T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-10-04T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+decision_date__2021-10-18T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-11-04T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-11-13T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+decision_date__2021-11-15T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2021-11-26T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-12-01T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2021-12-13T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-01-18T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2022-01-26T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-02-14T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2022-02-28T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2022-03-07T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-03-18T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-03-28T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-03-29T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-05-22T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-06-06T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-07-06T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-07-26T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-08-04T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-08-23T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-09-13T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-09-14T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-10-03T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-10-04T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2022-10-10T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-11-09T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2022-11-24T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-01-03T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2023-01-19T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-03-31T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-04-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-06-12T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+decision_date__2023-06-26T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-06-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+decision_date__2023-08-28T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2023-10-11T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2023-10-25T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-01-16T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.012096774193548387,0.011962501220663387,0.0,1.0
+decision_date__2024-01-19T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-01-20T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-01-31T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-03-06T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-03-25T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-05-02T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-06-06T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-06-25T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-07-05T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-07-09T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-10-01T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-12-05T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2024-12-11T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2024-12-19T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2025-03-25T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2025-04-14T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2025-04-28T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2025-04-30T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date__2025-06-05T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2025-06-24T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+decision_date__2025-07-16T00:00:00+00:00,wide_categorical,binary,decision_date,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+decision_date_status__DISCUSSED,status,binary,decision_date_status,int8,1.0,0.1350806451612903,0.11695175938283262,0.0,1.0
+decision_date_status__NOT_DISCUSSED,status,binary,decision_date_status,int8,1.0,0.8649193548387096,0.11695175938283262,0.0,1.0
+decision_quarter__Q1,wide_categorical,binary,decision_quarter,int8,1.0,0.04233870967741935,0.040587057712965065,0.0,1.0
+decision_quarter__Q2,wide_categorical,binary,decision_quarter,int8,1.0,0.034274193548387094,0.03313287327886461,0.0,1.0
+decision_quarter__Q3,wide_categorical,binary,decision_quarter,int8,1.0,0.021169354838709676,0.020742122652257413,0.0,1.0
+decision_quarter__Q4,wide_categorical,binary,decision_quarter,int8,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+decision_year,wide,numeric,decision_year,float64,1.0,0.1350806451612903,478106.3470874971,0.0,2025.0
+dpa_name_canonical__A.N.S.P.D.C.P,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+dpa_name_canonical__A.N.S.P.D.C.P.,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.018145161290322582,0.01783389212590736,0.0,1.0
+dpa_name_canonical__Agencia Española de Protección de Datos,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.023185483870967742,0.02267077080824192,0.0,1.0
+dpa_name_canonical__Agencia Española de Protección de Datos (AEPD),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Agència de Protecció de Dades de Catalunya,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+dpa_name_canonical__Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+dpa_name_canonical__Basque Agency for Data Protection,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Basque Agency for the Protection of Data,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Catalan Data Protection Agency (APDCAT),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Catalan Data Protection Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258,0.0,1.0
+dpa_name_canonical__Catalan Data Protection Authority (APDCAT),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Comissão Nacional de Proteção de Dados,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.006048387096774193,0.006017870512027602,0.0,1.0
+dpa_name_canonical__Comissão Nacional de Proteção de Dados (CNPD),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Council for Transparency and Protection of Data of Andalusia,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Datainspektionen,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+dpa_name_canonical__Informacijski pooblaščenec,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Informacijski pooblaščenec (IP),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpa_name_canonical__Informacijski pooblaščenec (Information Commissioner),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+dpa_name_canonical__Information Commissioner,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.04032258064516129,0.038735718238338594,0.0,1.0
+dpa_name_canonical__Information Commissioner (IP),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+dpa_name_canonical__Information Commissioner (Slovenia),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+dpa_name_canonical__Information Commissioner of Slovenia,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpa_name_canonical__Information Commissioner of the Republic of Slovenia,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+dpa_name_canonical__Information Commissioner's Office,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.036290322580645164,0.035008626021288396,0.0,1.0
+dpa_name_canonical__Integritetsskyddsmyndigheten,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+dpa_name_canonical__Integritetsskyddsmyndigheten (IMY),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.016129032258064516,0.015884899580091795,0.0,1.0
+dpa_name_canonical__Integrity Protection Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+dpa_name_canonical__NOT_DISCUSSED,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+dpa_name_canonical__National Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__National Commission for Data Protection (CNPD),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__National DPA,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__National Supervisory Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.03326612903225806,0.03219194524917809,0.0,1.0
+dpa_name_canonical__National Supervisory Authority for Personal Data Processing,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+dpa_name_canonical__National Supervisory Authority for the Processing of Personal Data,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+dpa_name_canonical__Office for the Protection of Personal Data of the Slovak Republic,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpa_name_canonical__President of the Office for Personal Data Protection,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+dpa_name_canonical__President of the Office for the Protection of Personal Data,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__President of the Personal Data Protection Office,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258,0.0,1.0
+dpa_name_canonical__President of the Personal Data Protection Office (UODO),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+dpa_name_canonical__Romanian Supervisory Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Spanish Agency for Data Protection,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.2701612903225806,0.19737313238501356,0.0,1.0
+dpa_name_canonical__Spanish Agency for Data Protection (AEPD),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Spanish Agency of Data Protection,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Spanish Data Protection Agency,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.2842741935483871,0.20366768659874354,0.0,1.0
+dpa_name_canonical__Spanish Data Protection Agency (AEPD),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+dpa_name_canonical__Swedish Authority for Privacy Protection,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+dpa_name_canonical__Swedish Authority for Privacy Protection (IMY),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+dpa_name_canonical__Swedish Data Protection Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+dpa_name_canonical__The Data Inspectorate,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+dpa_name_canonical__The Information Commissioner,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0030241935483870967,0.00301809023143778,0.0,1.0
+dpa_name_canonical__The Information Commissioner's Office,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpa_name_canonical__The National Supervisory Authority,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+dpa_name_canonical__The National Supervisory Authority for Personal Data Processing,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.010080645161290322,0.009989095407050551,0.0,1.0
+dpa_name_canonical__The National Supervisory Authority for the Processing of Personal Data,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+dpa_name_canonical__The Swedish Privacy Protection Agency (IMY),wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__Transparency and Data Protection Council of Andalusia,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpa_name_canonical__UNCLEAR,wide_categorical,binary,dpa_name_canonical,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpo_issues__CONFLICT_OF_INTEREST,long:dpo_issues,binary,dpo_issues,float64,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+dpo_issues__INADEQUATE_INVOLVEMENT,long:dpo_issues,binary,dpo_issues,float64,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+dpo_issues__INADEQUATE_QUALIFICATIONS,long:dpo_issues,binary,dpo_issues,float64,1.0,0.0,0.0,0.0,0.0
+dpo_issues__INSUFFICIENT_INDEPENDENCE,long:dpo_issues,binary,dpo_issues,float64,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+dpo_issues__LACK_OF_RESOURCES,long:dpo_issues,binary,dpo_issues,float64,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+dpo_issues__NOT_APPLICABLE,long:dpo_issues,binary,dpo_issues,float64,1.0,0.5362903225806451,0.24893395397285245,0.0,1.0
+dpo_issues__NO_DPO_APPOINTED,long:dpo_issues,binary,dpo_issues,float64,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+dpo_issues__NO_ISSUES_FOUND,long:dpo_issues,binary,dpo_issues,float64,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+fine_eur,wide,numeric,fine_eur,float64,1.0,0.4012096774193548,11148194694633.66,0.0,75000000.0
+fine_log1p,wide,numeric,fine_log1p,float64,1.0,0.4012096774193548,25.591810491637734,0.0,18.132999
+fine_numeric_valid,wide,numeric,fine_numeric_valid,int64,1.0,0.6764112903225806,0.21909992350509425,0.0,1.0
+fine_outlier_flag,wide,numeric,fine_outlier_flag,int64,1.0,0.0,0.0,0.0,0.0
+fine_positive,wide,numeric,fine_positive,int64,1.0,0.4012096774193548,0.24048289443703003,0.0,1.0
+fine_status__DISCUSSED,status,binary,fine_status,int8,1.0,0.9576612903225806,0.040587057712965086,0.0,1.0
+fine_status__NOT_MENTIONED,status,binary,fine_status,int8,1.0,0.04233870967741935,0.04058705771296506,0.0,1.0
+fine_to_turnover_ratio,wide,numeric,fine_to_turnover_ratio,float64,1.0,0.06754032258064516,0.00011411136788464094,0.0,0.2825349
+isic_code__1071,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__1102,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__17,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__35,wide_categorical,binary,isic_code,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+isic_code__3510,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__38,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__42,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__4322,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_code__45,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__46,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__47,wide_categorical,binary,isic_code,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+isic_code__4711,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__4772,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__4791,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__51,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__5224,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__5320,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__5510,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__56,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__5610,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__5621,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__58,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__5813,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_code__5914,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__60,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__61,wide_categorical,binary,isic_code,int8,1.0,0.029233870967741934,0.02840788874060089,0.0,1.0
+isic_code__6110,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377784,0.0,1.0
+isic_code__6201,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_code__6209,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__63,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__6311,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__6399,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__64,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_code__6419,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+isic_code__6420,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__6499,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__65,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__6512,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_code__66,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__68,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__6810,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__6820,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__69,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_code__6910,wide_categorical,binary,isic_code,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+isic_code__7310,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__77,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__78,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__7911,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__80,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_code__8130,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__82,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__8230,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__8299,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__84,wide_categorical,binary,isic_code,int8,1.0,0.009072580645161291,0.008999340841769477,0.0,1.0
+isic_code__8411,wide_categorical,binary,isic_code,int8,1.0,0.025201612903225805,0.024591281208294014,0.0,1.0
+isic_code__8422,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__8430,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__85,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+isic_code__8510,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+isic_code__8542,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__86,wide_categorical,binary,isic_code,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+isic_code__8610,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__8620,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__8690,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__88,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__93,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__9311,wide_categorical,binary,isic_code,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+isic_code__9321,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__94,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__9412,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__C10,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__D,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__D351,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_code__D3510,wide_categorical,binary,isic_code,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+isic_code__E3811,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_code__Financial service activities, except insurance and pension funding",wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__G,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__G45,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__G45.1,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__G46,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__G47.11,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__G47.6,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__G47.91,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__H49,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__H49 Land transport and transport via pipelines,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"isic_code__H49,H52",wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__H51,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__H51 (Air transport),wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__H52 (Warehousing and storage),wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__H5229,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__H53,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__Hotels and similar accommodation,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__J,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__J - Information and communication,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_code__J61,wide_categorical,binary,isic_code,int8,1.0,0.010080645161290322,0.00998909540705055,0.0,1.0
+isic_code__J61 Telecommunications,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__J62,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__J62.0,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_code__J6200,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__J6201 Computer programming activities,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__J63,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+isic_code__J63 (Information service activities),wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_code__J63.1,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__J63.1.1,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__J63.11,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__J63.12.1,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__K,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__K64,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__K64.1,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_code__K64.19,wide_categorical,binary,isic_code,int8,1.0,0.023185483870967742,0.022670770808241928,0.0,1.0
+isic_code__K64.99,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__K6419,wide_categorical,binary,isic_code,int8,1.0,0.016129032258064516,0.015884899580091802,0.0,1.0
+isic_code__K6499,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+isic_code__L68 Real estate activities,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__M70.2,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__N,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__NACE Rev. 2: 78.10 (Activities of employment placement agencies),wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__NOT_DISCUSSED,wide_categorical,binary,isic_code,int8,1.0,0.018145161290322582,0.017833892125907365,0.0,1.0
+isic_code__NOT_MENTIONED,wide_categorical,binary,isic_code,int8,1.0,0.17237903225806453,0.14280846163861854,0.0,1.0
+isic_code__O,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_code__O84,wide_categorical,binary,isic_code,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+isic_code__O8411,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+isic_code__O8421,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__P,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__P85,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_code__P85 (Education),wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__P85 Education,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__P8520,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__P8530,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__PUBLIC ADMINISTRATION,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__PUBLIC ADMINISTRATION AND DEFENCE; COMPULSORY SOCIAL SECURITY,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__PUBLIC_SECTOR_BODY,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__Q,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__Q (Human health and social work activities),wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_code__Q (Public administration and defence; compulsory social security),wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__Q86,wide_categorical,binary,isic_code,int8,1.0,0.011088709677419355,0.010976815533348522,0.0,1.0
+isic_code__Q86 Human health activities,wide_categorical,binary,isic_code,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_code__Q861,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__R900,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_code__R93,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__R94 Activities of membership organisations,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__REAL ESTATE ACTIVITIES,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__S,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__S94,wide_categorical,binary,isic_code,int8,1.0,0.004032258064516129,0.004020051430617494,0.0,1.0
+isic_code__S9499,wide_categorical,binary,isic_code,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_code__Telecommunications,wide_categorical,binary,isic_code,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_code__UNCLEAR,wide_categorical,binary,isic_code,int8,1.0,0.006048387096774193,0.006017870512027603,0.0,1.0
+isic_desc__Activities auxiliary to financial service and insurance activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Activities of amusement parks and theme parks,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Activities of holding companies,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Activities of membership organizations,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Activities of professional membership organizations,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Administrative and support service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Advertising,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Air transport,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Cargo handling,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Civil engineering,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Compulsory social security activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Computer programming activities,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_desc__Courier activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Cultural education,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"isic_desc__Data processing, hosting and related activities",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Defence activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Education,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+"isic_desc__Electric power generation, transmission and distribution",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Electricity, gas, steam and air conditioning supply",wide_categorical,binary,isic_desc,int8,1.0,0.008064516129032258,0.008007551837505289,0.0,1.0
+isic_desc__Employment activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Event catering,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Financial and insurance activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Financial service activities, except insurance and pension funding",wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_desc__Food and beverage service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__General public administration activities,wide_categorical,binary,isic_desc,int8,1.0,0.025201612903225805,0.024591281208294014,0.0,1.0
+isic_desc__Hospital activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Human health activities,wide_categorical,binary,isic_desc,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+isic_desc__Human health and social work activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Information and communication,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Information service activities,wide_categorical,binary,isic_desc,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"isic_desc__Insurance, reinsurance and pension funding, except compulsory social security",wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Landscape care and maintenance service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Legal activities,wide_categorical,binary,isic_desc,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+isic_desc__Legal and accounting activities,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+isic_desc__Manufacture of bakery products,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Manufacture of paper and paper products,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Manufacture of wines,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Medical and dental practice activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Motion picture projection activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Non-life insurance,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"isic_desc__Office administrative, office support and other business support activities",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Operation of sports facilities,wide_categorical,binary,isic_desc,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+isic_desc__Organization of conventions and trade shows,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Other business support service activities n.e.c.,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Other financial service activities, except insurance and pension funding activities, n.e.c.",wide_categorical,binary,isic_desc,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_desc__Other human health activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Other information service activities n.e.c.,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Other information technology and computer service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Other monetary intermediation,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+isic_desc__Other service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Plumbing, heat and air-conditioning installation",wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_desc__Pre-primary and primary education,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+isic_desc__Programming and broadcasting activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Public administration and defence; compulsory social security,wide_categorical,binary,isic_desc,int8,1.0,0.012096774193548387,0.011962501220663386,0.0,1.0
+isic_desc__Publishing activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Publishing of newspapers, journals and periodicals",wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_desc__Real estate activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Real estate activities on a fee or contract basis,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Real estate activities with own or leased property,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Rental and leasing activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Restaurants and mobile food service activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"isic_desc__Retail sale in non-specialized stores with food, beverages or tobacco predominating",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles in specialized stores",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Retail sale via mail order houses or via Internet,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Retail trade, except of motor vehicles and motorcycles",wide_categorical,binary,isic_desc,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+isic_desc__Security and investigation activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+isic_desc__Short term accommodation activities,wide_categorical,binary,isic_desc,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+isic_desc__Social work activities without accommodation,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+isic_desc__Sports activities and amusement and recreation activities,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Telecommunications,wide_categorical,binary,isic_desc,int8,1.0,0.029233870967741934,0.02840788874060089,0.0,1.0
+isic_desc__Travel agency activities,wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"isic_desc__Waste collection, treatment and disposal activities; materials recovery",wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Wholesale and retail trade and repair of motor vehicles and motorcycles,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_desc__Wholesale and retail trade; repair of motor vehicles and motorcycles,wide_categorical,binary,isic_desc,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"isic_desc__Wholesale trade, except of motor vehicles and motorcycles",wide_categorical,binary,isic_desc,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+isic_desc__Wired telecommunications activities,wide_categorical,binary,isic_desc,int8,1.0,0.0030241935483870967,0.0030180902314377784,0.0,1.0
+isic_section__C,wide_categorical,binary,isic_section,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_section__D,wide_categorical,binary,isic_section,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+isic_section__E,wide_categorical,binary,isic_section,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+isic_section__F,wide_categorical,binary,isic_section,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+isic_section__G,wide_categorical,binary,isic_section,int8,1.0,0.01310483870967742,0.012946152468995147,0.0,1.0
+isic_section__H,wide_categorical,binary,isic_section,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+isic_section__I,wide_categorical,binary,isic_section,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+isic_section__J,wide_categorical,binary,isic_section,int8,1.0,0.05040322580645161,0.04791103805214673,0.0,1.0
+isic_section__K,wide_categorical,binary,isic_section,int8,1.0,0.018145161290322582,0.017833892125907365,0.0,1.0
+isic_section__L,wide_categorical,binary,isic_section,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+isic_section__M,wide_categorical,binary,isic_section,int8,1.0,0.010080645161290322,0.00998909540705055,0.0,1.0
+isic_section__N,wide_categorical,binary,isic_section,int8,1.0,0.012096774193548387,0.011962501220663386,0.0,1.0
+isic_section__O,wide_categorical,binary,isic_section,int8,1.0,0.03931451612903226,0.0378069968425507,0.0,1.0
+isic_section__P,wide_categorical,binary,isic_section,int8,1.0,0.007056451612903226,0.007013728394258,0.0,1.0
+isic_section__Q,wide_categorical,binary,isic_section,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+isic_section__R,wide_categorical,binary,isic_section,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+isic_section__S,wide_categorical,binary,isic_section,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+legal_basis_relied_on__CONSENT,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.07459677419354839,0.06910175450017902,0.0,1.0
+legal_basis_relied_on__CONTRACT,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.056451612903225805,0.053318576869242525,0.0,1.0
+legal_basis_relied_on__LEGAL_OBLIGATION,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.03528225806451613,0.03407176686956804,0.0,1.0
+legal_basis_relied_on__LEGITIMATE_INTERESTS,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.09475806451612903,0.08586553172097264,0.0,1.0
+legal_basis_relied_on__NO_BASIS_CLAIMED,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.15423387096774194,0.13057741447218515,0.0,1.0
+legal_basis_relied_on__PUBLIC_TASK,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.029233870967741934,0.028407888740600892,0.0,1.0
+legal_basis_relied_on__UNCLEAR,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.03528225806451613,0.03407176686956804,0.0,1.0
+legal_basis_relied_on__VITAL_INTERESTS,long:legal_basis_relied_on,binary,legal_basis_relied_on,float64,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+li_test_outcome__DATA_SUBJECT_INTERESTS_PREVAIL,long:li_test_outcome,binary,li_test_outcome,float64,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+li_test_outcome__LEGITIMATE_INTERESTS_PREVAIL,long:li_test_outcome,binary,li_test_outcome,float64,1.0,0.006048387096774193,0.006017870512027603,0.0,1.0
+li_test_outcome__NOT_APPLICABLE,long:li_test_outcome,binary,li_test_outcome,float64,1.0,0.5493951612903226,0.24780992643468638,0.0,1.0
+mitigating_factors__CODES_CERTIFICATION,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.0,0.0,0.0,0.0
+mitigating_factors__COMPLIANCE_PRIOR_ORDERS,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.0,0.0,0.0,0.0
+mitigating_factors__COOPERATION_WITH_AUTHORITY,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.23588709677419356,0.18042625565574036,0.0,1.0
+mitigating_factors__DATA_CATEGORIES_AFFECTED,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+mitigating_factors__INTENT_NEGLIGENCE,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+mitigating_factors__MANNER_BECAME_KNOWN,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.0,0.0,0.0,0.0
+mitigating_factors__MITIGATION_ACTIONS,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.18044354838709678,0.1480329009472348,0.0,1.0
+mitigating_factors__NATURE_GRAVITY_DURATION,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.010080645161290322,0.00998909540705055,0.0,1.0
+mitigating_factors__NONE,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.3235887096774194,0.2190999235050942,0.0,1.0
+mitigating_factors__OTHER_CIRCUMSTANCES,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+mitigating_factors__PREVIOUS_INFRINGEMENTS,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.012096774193548387,0.011962501220663386,0.0,1.0
+mitigating_factors__TECHNICAL_ORGANIZATIONAL_MEASURES,long:mitigating_factors,binary,mitigating_factors,float64,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+n_corrective_measures,wide,numeric,n_corrective_measures,int64,1.0,0.6461693548387096,1.4094593274958498,0.0,7.0
+n_principles_discussed,wide,numeric,n_principles_discussed,int64,1.0,0.6723790322580645,1.762035741024055,0.0,7.0
+n_principles_violated,wide,numeric,n_principles_violated,int64,1.0,0.5060483870967742,0.830441717392012,0.0,5.0
+q30_discussed_exclusivity_conflict,wide,numeric,q30_discussed_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q30_discussed_known__ACCOUNTABILITY,wide_categorical,binary,q30_discussed_known,int8,1.0,0.03024193548387097,0.029356954526219857,0.0,1.0
+"q30_discussed_known__ACCOUNTABILITY,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q30_discussed_known__ACCURACY,wide_categorical,binary,q30_discussed_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q30_discussed_known__ACCURACY,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+"q30_discussed_known__ACCURACY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+q30_discussed_known__DATA_MINIMISATION,wide_categorical,binary,q30_discussed_known,int8,1.0,0.034274193548387094,0.03313287327886461,0.0,1.0
+"q30_discussed_known__DATA_MINIMISATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__DATA_MINIMISATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+"q30_discussed_known__DATA_MINIMISATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,wide_categorical,binary,q30_discussed_known,int8,1.0,0.13608870967741934,0.1176872090752254,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.014112903225806451,0.013927769278343799,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.020161290322580645,0.0197747469157905,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.02217741935483871,0.021707463949741216,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.017137096774193547,0.016860413072491132,0.0,1.0
+"q30_discussed_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+q30_discussed_known__NONE_DISCUSSED,wide_categorical,binary,q30_discussed_known,int8,1.0,0.08366935483870967,0.0767461589791999,0.0,1.0
+q30_discussed_known__PURPOSE_LIMITATION,wide_categorical,binary,q30_discussed_known,int8,1.0,0.011088709677419355,0.010976815533348526,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.004032258064516129,0.004020051430617494,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.012096774193548387,0.011962501220663384,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,SECURITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0030241935483870967,0.00301809023143778,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+"q30_discussed_known__PURPOSE_LIMITATION,STORAGE_LIMITATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+q30_discussed_known__SECURITY,wide_categorical,binary,q30_discussed_known,int8,1.0,0.1350806451612903,0.1169517593828326,0.0,1.0
+"q30_discussed_known__SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.04939516129032258,0.04700266104618989,0.0,1.0
+"q30_discussed_known__SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q30_discussed_known__SECURITY,STORAGE_LIMITATION,PURPOSE_LIMITATION",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q30_discussed_known__STORAGE_LIMITATION,wide_categorical,binary,q30_discussed_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q30_discussed_known__STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q30_discussed_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q30_discussed_status__DISCUSSED,status,binary,q30_discussed_status,int8,1.0,0.6028225806451613,0.2396691188437877,0.0,1.0
+q30_discussed_status__NONE_DISCUSSED,status,binary,q30_discussed_status,int8,1.0,0.08366935483870967,0.0767461589791999,0.0,1.0
+q30_discussed_status__NOT_MENTIONED,status,binary,q30_discussed_status,int8,1.0,0.31350806451612906,0.21543793333550343,0.0,1.0
+q30_discussed_unknown__ACCESS,wide_categorical,binary,q30_discussed_unknown,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q30_discussed_unknown__INFORMATION_OBLIGATIONS,wide_categorical,binary,q30_discussed_unknown,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q30_discussed_unknown__NO,wide_categorical,binary,q30_discussed_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q30_discussed_unknown__NOT_DISCUSSED,wide_categorical,binary,q30_discussed_unknown,int8,1.0,0.009072580645161291,0.008999340841769477,0.0,1.0
+q31_violated_exclusivity_conflict,wide,numeric,q31_violated_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q31_violated_known__ACCOUNTABILITY,wide_categorical,binary,q31_violated_known,int8,1.0,0.028225806451612902,0.027456788515998833,0.0,1.0
+"q31_violated_known__ACCOUNTABILITY,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q31_violated_known__ACCURACY,wide_categorical,binary,q31_violated_known,int8,1.0,0.006048387096774193,0.006017870512027603,0.0,1.0
+"q31_violated_known__ACCURACY,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q31_violated_known__ACCURACY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+q31_violated_known__DATA_MINIMISATION,wide_categorical,binary,q31_violated_known,int8,1.0,0.036290322580645164,0.03500862602128836,0.0,1.0
+"q31_violated_known__DATA_MINIMISATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q31_violated_known__DATA_MINIMISATION,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q31_violated_known__DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,wide_categorical,binary,q31_violated_known,int8,1.0,0.15423387096774194,0.13057741447218515,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,ACCURACY,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,DATA_MINIMISATION,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION",wide_categorical,binary,q31_violated_known,int8,1.0,0.010080645161290322,0.00998909540705055,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+"q31_violated_known__LAWFULNESS_FAIRNESS_TRANSPARENCY,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+q31_violated_known__NONE_VIOLATED,wide_categorical,binary,q31_violated_known,int8,1.0,0.12399193548387097,0.10872753979362651,0.0,1.0
+q31_violated_known__NOT_DETERMINED,wide_categorical,binary,q31_violated_known,int8,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+q31_violated_known__PURPOSE_LIMITATION,wide_categorical,binary,q31_violated_known,int8,1.0,0.009072580645161291,0.008999340841769477,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,DATA_MINIMISATION",wide_categorical,binary,q31_violated_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,DATA_MINIMISATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,DATA_MINIMISATION,ACCURACY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,DATA_MINIMISATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,DATA_MINIMISATION,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,SECURITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+"q31_violated_known__PURPOSE_LIMITATION,STORAGE_LIMITATION",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q31_violated_known__SECURITY,wide_categorical,binary,q31_violated_known,int8,1.0,0.13205645161290322,0.11473320367175546,0.0,1.0
+"q31_violated_known__SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.04233870967741935,0.04058705771296506,0.0,1.0
+"q31_violated_known__SECURITY,STORAGE_LIMITATION,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q31_violated_known__STORAGE_LIMITATION,wide_categorical,binary,q31_violated_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q31_violated_known__STORAGE_LIMITATION,SECURITY,ACCOUNTABILITY",wide_categorical,binary,q31_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q31_violated_status__DISCUSSED,status,binary,q31_violated_status,int8,1.0,0.5161290322580645,0.2499918622440676,0.0,1.0
+q31_violated_status__NONE_VIOLATED,status,binary,q31_violated_status,int8,1.0,0.12399193548387097,0.10872753979362651,0.0,1.0
+q31_violated_status__NOT_DETERMINED,status,binary,q31_violated_status,int8,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+q31_violated_status__NOT_MENTIONED,status,binary,q31_violated_status,int8,1.0,0.3316532258064516,0.2218830360339833,0.0,1.0
+q31_violated_unknown__ACCESS,wide_categorical,binary,q31_violated_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q31_violated_unknown__INFORMATION_OBLIGATIONS,wide_categorical,binary,q31_violated_unknown,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q31_violated_unknown__NO,wide_categorical,binary,q31_violated_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q31_violated_unknown__NOT_DISCUSSED,wide_categorical,binary,q31_violated_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q32_bases_exclusivity_conflict,wide,numeric,q32_bases_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q32_bases_known__CONSENT,wide_categorical,binary,q32_bases_known,int8,1.0,0.07963709677419355,0.07336899026724392,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT",wide_categorical,binary,q32_bases_known,int8,1.0,0.03225806451612903,0.031248982780508458,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGAL_OBLIGATION",wide_categorical,binary,q32_bases_known,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGAL_OBLIGATION,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGAL_OBLIGATION,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGAL_OBLIGATION,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.009072580645161291,0.008999340841769477,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGAL_OBLIGATION,VITAL_INTERESTS,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.019153225806451613,0.018805336740340482,0.0,1.0
+"q32_bases_known__CONSENT,CONTRACT,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+"q32_bases_known__CONSENT,LEGAL_OBLIGATION",wide_categorical,binary,q32_bases_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q32_bases_known__CONSENT,LEGAL_OBLIGATION,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q32_bases_known__CONSENT,LEGAL_OBLIGATION,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.004032258064516129,0.004020051430617493,0.0,1.0
+"q32_bases_known__CONSENT,LEGAL_OBLIGATION,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q32_bases_known__CONSENT,LEGAL_OBLIGATION,VITAL_INTERESTS,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q32_bases_known__CONSENT,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.04334677419354839,0.04150967579180365,0.0,1.0
+"q32_bases_known__CONSENT,LEGITIMATE_INTERESTS,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q32_bases_known__CONSENT,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q32_bases_known__CONSENT,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q32_bases_known__CONTRACT,wide_categorical,binary,q32_bases_known,int8,1.0,0.024193548387096774,0.023632043227759515,0.0,1.0
+"q32_bases_known__CONTRACT,LEGAL_OBLIGATION",wide_categorical,binary,q32_bases_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q32_bases_known__CONTRACT,LEGAL_OBLIGATION,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.004032258064516129,0.0040200514306174915,0.0,1.0
+"q32_bases_known__CONTRACT,LEGAL_OBLIGATION,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q32_bases_known__CONTRACT,LEGAL_OBLIGATION,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+"q32_bases_known__CONTRACT,LEGAL_OBLIGATION,VITAL_INTERESTS,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.014112903225806451,0.013927769278343799,0.0,1.0
+"q32_bases_known__CONTRACT,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+q32_bases_known__LEGAL_OBLIGATION,wide_categorical,binary,q32_bases_known,int8,1.0,0.012096774193548387,0.011962501220663384,0.0,1.0
+"q32_bases_known__LEGAL_OBLIGATION,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.004032258064516129,0.004020051430617493,0.0,1.0
+"q32_bases_known__LEGAL_OBLIGATION,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.006048387096774193,0.006017870512027603,0.0,1.0
+"q32_bases_known__LEGAL_OBLIGATION,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q32_bases_known__LEGAL_OBLIGATION,VITAL_INTERESTS,PUBLIC_TASK,LEGITIMATE_INTERESTS",wide_categorical,binary,q32_bases_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q32_bases_known__LEGITIMATE_INTERESTS,wide_categorical,binary,q32_bases_known,int8,1.0,0.04939516129032258,0.04700266104618989,0.0,1.0
+"q32_bases_known__LEGITIMATE_INTERESTS,PUBLIC_TASK",wide_categorical,binary,q32_bases_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+q32_bases_known__NONE_DISCUSSED,wide_categorical,binary,q32_bases_known,int8,1.0,0.10786290322580645,0.09632559975261222,0.0,1.0
+q32_bases_known__PUBLIC_TASK,wide_categorical,binary,q32_bases_known,int8,1.0,0.010080645161290322,0.009989095407050551,0.0,1.0
+q32_bases_status__DISCUSSED,status,binary,q32_bases_status,int8,1.0,0.6320564516129032,0.23279576673936395,0.0,1.0
+q32_bases_status__NOT_APPLICABLE,status,binary,q32_bases_status,int8,1.0,0.05241935483870968,0.049721688747111095,0.0,1.0
+q32_bases_status__NOT_MENTIONED,status,binary,q32_bases_status,int8,1.0,0.3155241935483871,0.21618660688128646,0.0,1.0
+q32_bases_unknown__NO,wide_categorical,binary,q32_bases_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q32_bases_unknown__NOT_APPLICABLE,wide_categorical,binary,q32_bases_unknown,int8,1.0,0.05241935483870968,0.049721688747111095,0.0,1.0
+q32_bases_unknown__NOT_DISCUSSED,wide_categorical,binary,q32_bases_unknown,int8,1.0,0.07963709677419355,0.07336899026724392,0.0,1.0
+q32_bases_unknown__NOT_MENTIONED,wide_categorical,binary,q32_bases_unknown,int8,1.0,0.047379032258064516,0.04517980371732691,0.0,1.0
+q36_tokens,wide,numeric,q36_tokens,int64,1.0,0.9576612903225806,190.15779108752972,0.0,65.0
+q41_aggrav_exclusivity_conflict,wide,numeric,q41_aggrav_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q41_aggrav_known__COOPERATION_WITH_AUTHORITY,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q41_aggrav_known__COOPERATION_WITH_AUTHORITY,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__COOPERATION_WITH_AUTHORITY,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_known__DATA_CATEGORIES_AFFECTED,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.023185483870967742,0.022670770808241928,0.0,1.0
+"q41_aggrav_known__DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q41_aggrav_known__DATA_CATEGORIES_AFFECTED,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_known__INTENT_NEGLIGENCE,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.06451612903225806,0.060414700042316326,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,COOPERATION_WITH_AUTHORITY,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.04334677419354839,0.04150967579180365,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,MITIGATION_ACTIONS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.006048387096774193,0.006017870512027603,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES,DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES,PREVIOUS_INFRINGEMENTS,DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_known__MANNER_BECAME_KNOWN,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_known__NATURE_GRAVITY_DURATION,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.12399193548387097,0.10872753979362651,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.017137096774193547,0.016860413072491132,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,DATA_CATEGORIES_AFFECTED,INTENT_NEGLIGENCE",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.06854838709677419,0.06391393509325867,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,COOPERATION_WITH_AUTHORITY,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.06451612903225806,0.060414700042316326,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED,MANNER_BECAME_KNOWN,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,DATA_CATEGORIES_AFFECTED,OTHER_CIRCUMSTANCES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MANNER_BECAME_KNOWN,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS,MANNER_BECAME_KNOWN,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,MANNER_BECAME_KNOWN",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,MITIGATION_ACTIONS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q41_aggrav_known__NATURE_GRAVITY_DURATION,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_known__NONE,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.18346774193548387,0.14995849744474465,0.0,1.0
+q41_aggrav_known__OTHER_CIRCUMSTANCES,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q41_aggrav_known__PREVIOUS_INFRINGEMENTS,wide_categorical,binary,q41_aggrav_known,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+"q41_aggrav_known__PREVIOUS_INFRINGEMENTS,DATA_CATEGORIES_AFFECTED",wide_categorical,binary,q41_aggrav_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+q41_aggrav_status__DISCUSSED,status,binary,q41_aggrav_status,int8,1.0,0.7318548387096774,0.19644135933075096,0.0,1.0
+q41_aggrav_status__NOT_APPLICABLE,status,binary,q41_aggrav_status,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_status__NOT_MENTIONED,status,binary,q41_aggrav_status,int8,1.0,0.26713709677419356,0.19597242114514501,0.0,1.0
+q41_aggrav_unknown__CATEGORIES_AFFECTED,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_unknown__CATEGORIES_OF_DATA_AFFECTED,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_unknown__CONNECTION_ACTIVITY_PROCESSING,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_unknown__LINKING_ACTIVITY_DATA_PROCESSING,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q41_aggrav_unknown__LINKING_OF_ACTIVITY_WITH_DATA_PROCESSING,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_unknown__NO,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_unknown__NOT_APPLICABLE,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q41_aggrav_unknown__NOT_DISCUSSED,wide_categorical,binary,q41_aggrav_unknown,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+q42_mitig_exclusivity_conflict,wide,numeric,q42_mitig_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q42_mitig_known__COOPERATION_WITH_AUTHORITY,wide_categorical,binary,q42_mitig_known,int8,1.0,0.10483870967741936,0.09394225448390352,0.0,1.0
+"q42_mitig_known__COOPERATION_WITH_AUTHORITY,MITIGATION_ACTIONS",wide_categorical,binary,q42_mitig_known,int8,1.0,0.02620967741935484,0.025548484749845377,0.0,1.0
+"q42_mitig_known__COOPERATION_WITH_AUTHORITY,OTHER_CIRCUMSTANCES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q42_mitig_known__COOPERATION_WITH_AUTHORITY,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q42_mitig_known__COOPERATION_WITH_AUTHORITY,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_known__INTENT_NEGLIGENCE,wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__INTENT_NEGLIGENCE,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_known__MITIGATION_ACTIONS,wide_categorical,binary,q42_mitig_known,int8,1.0,0.05241935483870968,0.0497216887471111,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.08870967741935484,0.080921844992025,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY,OTHER_CIRCUMSTANCES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,INTENT_NEGLIGENCE",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,PREVIOUS_INFRINGEMENTS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q42_mitig_known__MITIGATION_ACTIONS,TECHNICAL_ORGANIZATIONAL_MEASURES,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_known__NATURE_GRAVITY_DURATION,wide_categorical,binary,q42_mitig_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,COOPERATION_WITH_AUTHORITY,OTHER_CIRCUMSTANCES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,MITIGATION_ACTIONS,PREVIOUS_INFRINGEMENTS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,INTENT_NEGLIGENCE,PREVIOUS_INFRINGEMENTS,DATA_CATEGORIES_AFFECTED,OTHER_CIRCUMSTANCES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,MITIGATION_ACTIONS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__NATURE_GRAVITY_DURATION,PREVIOUS_INFRINGEMENTS",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_known__NONE,wide_categorical,binary,q42_mitig_known,int8,1.0,0.3235887096774194,0.2190999235050942,0.0,1.0
+q42_mitig_known__OTHER_CIRCUMSTANCES,wide_categorical,binary,q42_mitig_known,int8,1.0,0.006048387096774193,0.006017870512027602,0.0,1.0
+q42_mitig_known__PREVIOUS_INFRINGEMENTS,wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__PREVIOUS_INFRINGEMENTS,COOPERATION_WITH_AUTHORITY",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_known__PREVIOUS_INFRINGEMENTS,OTHER_CIRCUMSTANCES",wide_categorical,binary,q42_mitig_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q42_mitig_status__DISCUSSED,status,binary,q42_mitig_status,int8,1.0,0.6461693548387096,0.22886523062400313,0.0,1.0
+q42_mitig_status__NOT_APPLICABLE,status,binary,q42_mitig_status,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_status__NOT_MENTIONED,status,binary,q42_mitig_status,int8,1.0,0.3528225806451613,0.22856921975196126,0.0,1.0
+q42_mitig_unknown__MERGER_ABSORPTION_AFTER_INFRINGEMENT,wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q42_mitig_unknown__NO,wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_unknown__NOT_APPLICABLE,wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q42_mitig_unknown__NOT_DISCUSSED,wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+q42_mitig_unknown__NOT_MENTIONED,wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_unknown__NO_PREVIOUS_INFRINGEMENTS,NO_DIRECT_BENEFITS,SME_STATUS",wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q42_mitig_unknown__NUMBER_OF_DATA_SUBJECTS_AFFECTED,LEVEL_OF_DAMAGE_SUFFERED",wide_categorical,binary,q42_mitig_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q46_vuln_exclusivity_conflict,wide,numeric,q46_vuln_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q46_vuln_known__CHILDREN,wide_categorical,binary,q46_vuln_known,int8,1.0,0.04334677419354839,0.04150967579180365,0.0,1.0
+"q46_vuln_known__CHILDREN,EMPLOYEES",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q46_vuln_known__CHILDREN,FINANCIALLY_VULNERABLE",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q46_vuln_known__CHILDREN,PATIENTS",wide_categorical,binary,q46_vuln_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q46_vuln_known__CHILDREN,PATIENTS,EMPLOYEES",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q46_vuln_known__ELDERLY,wide_categorical,binary,q46_vuln_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q46_vuln_known__ELDERLY,PATIENTS",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q46_vuln_known__EMPLOYEES,wide_categorical,binary,q46_vuln_known,int8,1.0,0.05846774193548387,0.05510481429640962,0.0,1.0
+q46_vuln_known__FINANCIALLY_VULNERABLE,wide_categorical,binary,q46_vuln_known,int8,1.0,0.010080645161290322,0.00998909540705055,0.0,1.0
+q46_vuln_known__NONE_MENTIONED,wide_categorical,binary,q46_vuln_known,int8,1.0,0.22983870967741934,0.17719149767260184,0.0,1.0
+q46_vuln_known__NOT_DISCUSSED,wide_categorical,binary,q46_vuln_known,int8,1.0,0.21471774193548387,0.1687841785749162,0.0,1.0
+q46_vuln_known__PATIENTS,wide_categorical,binary,q46_vuln_known,int8,1.0,0.03528225806451613,0.034071766869568046,0.0,1.0
+"q46_vuln_known__PATIENTS,CHILDREN",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q46_vuln_known__PATIENTS,EMPLOYEES",wide_categorical,binary,q46_vuln_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q46_vuln_status__DISCUSSED,status,binary,q46_vuln_status,int8,1.0,0.3800403225806452,0.23584742521402302,0.0,1.0
+q46_vuln_status__NONE_MENTIONED,status,binary,q46_vuln_status,int8,1.0,0.22983870967741934,0.17719149767260184,0.0,1.0
+q46_vuln_status__NOT_MENTIONED,status,binary,q46_vuln_status,int8,1.0,0.3901209677419355,0.23816668565476384,0.0,1.0
+q46_vuln_unknown__NO,wide_categorical,binary,q46_vuln_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q46_vuln_unknown__REFUGEES,wide_categorical,binary,q46_vuln_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q46_vuln_unknown__VICTIMS,wide_categorical,binary,q46_vuln_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q46_vuln_unknown__VICTIMS_OF_CRIME,wide_categorical,binary,q46_vuln_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q46_vuln_unknown__VULNERABLE_IMMIGRANTS,wide_categorical,binary,q46_vuln_unknown,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q47_remedial_exclusivity_conflict,wide,numeric,q47_remedial_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q47_remedial_known__DPO_APPOINTMENT,wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q47_remedial_known__DPO_APPOINTMENT,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_known__IMMEDIATE_CESSATION,wide_categorical,binary,q47_remedial_known,int8,1.0,0.09979838709677419,0.08992932358972688,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.010080645161290322,0.009989095407050548,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,POLICY_CHANGES,COMPENSATION_TO_SUBJECTS",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,POLICY_CHANGES,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,POLICY_CHANGES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,POLICY_CHANGES,STAFF_TRAINING,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,STAFF_TRAINING,EXTERNAL_AUDIT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,STAFF_TRAINING,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.021169354838709676,0.020742122652257413,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.004032258064516129,0.004020051430617493,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.02217741935483871,0.021707463949741213,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,EXTERNAL_AUDIT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q47_remedial_known__IMMEDIATE_CESSATION,SYSTEM_UPGRADES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+q47_remedial_known__NONE_MENTIONED,wide_categorical,binary,q47_remedial_known,int8,1.0,0.28024193548387094,0.2019099313173399,0.0,1.0
+q47_remedial_known__POLICY_CHANGES,wide_categorical,binary,q47_remedial_known,int8,1.0,0.034274193548387094,0.03313287327886461,0.0,1.0
+"q47_remedial_known__POLICY_CHANGES,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q47_remedial_known__POLICY_CHANGES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.014112903225806451,0.0139277692783438,0.0,1.0
+"q47_remedial_known__POLICY_CHANGES,STAFF_TRAINING,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+q47_remedial_known__STAFF_TRAINING,wide_categorical,binary,q47_remedial_known,int8,1.0,0.017137096774193547,0.016860413072491132,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,EXTERNAL_AUDIT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,POLICY_CHANGES,COMPENSATION_TO_SUBJECTS",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,POLICY_CHANGES,SYSTEM_UPGRADES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,SYSTEM_UPGRADES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,SYSTEM_UPGRADES,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+"q47_remedial_known__STAFF_TRAINING,SYSTEM_UPGRADES,POLICY_CHANGES,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q47_remedial_known__SYSTEM_UPGRADES,wide_categorical,binary,q47_remedial_known,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES",wide_categorical,binary,q47_remedial_known,int8,1.0,0.01310483870967742,0.012946152468995149,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,EXTERNAL_AUDIT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.016129032258064516,0.015884899580091802,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,COMPENSATION_TO_SUBJECTS",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,EXTERNAL_AUDIT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,POLICY_CHANGES,STAFF_TRAINING,EXTERNAL_AUDIT,DPO_APPOINTMENT",wide_categorical,binary,q47_remedial_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q47_remedial_known__SYSTEM_UPGRADES,STAFF_TRAINING",wide_categorical,binary,q47_remedial_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+q47_remedial_status__DISCUSSED,status,binary,q47_remedial_status,int8,1.0,0.37600806451612906,0.23486275674619966,0.0,1.0
+q47_remedial_status__NONE_MENTIONED,status,binary,q47_remedial_status,int8,1.0,0.28024193548387094,0.2019099313173399,0.0,1.0
+q47_remedial_status__NOT_APPLICABLE,status,binary,q47_remedial_status,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+q47_remedial_status__NOT_MENTIONED,status,binary,q47_remedial_status,int8,1.0,0.34173387096774194,0.225178827186615,0.0,1.0
+q47_remedial_unknown__COOPERATION_WITH_DPA,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_unknown__DATA_DELETION_ORDER,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+q47_remedial_unknown__ECONOMIC_ADJUSTMENTS,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_unknown__LEGAL_ADVICE,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_unknown__NO,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_unknown__NOT_APPLICABLE,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+q47_remedial_unknown__NOT_DISCUSSED,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.012096774193548387,0.011962501220663384,0.0,1.0
+q47_remedial_unknown__NOT_MENTIONED,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+q47_remedial_unknown__SECURITY_IMPROVEMENTS,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+q47_remedial_unknown__SYSTEM_FIXES,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q47_remedial_unknown__VOLUNTARY_PAYMENT,wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q47_remedial_unknown__VOLUNTARY_PAYMENT,ACKNOWLEDGEMENT_OF_RESPONSIBILITY",wide_categorical,binary,q47_remedial_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_exclusivity_conflict,wide,numeric,q50_other_measures_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q50_other_measures_known__AUDIT_REQUIREMENT,wide_categorical,binary,q50_other_measures_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_known__COMPLIANCE_ORDER,wide_categorical,binary,q50_other_measures_known,int8,1.0,0.18649193548387097,0.15186578399140657,0.0,1.0
+"q50_other_measures_known__COMPLIANCE_ORDER,AUDIT_REQUIREMENT",wide_categorical,binary,q50_other_measures_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q50_other_measures_known__COMPLIANCE_ORDER,DATA_DELETION_ORDER",wide_categorical,binary,q50_other_measures_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_known__DATA_DELETION_ORDER,wide_categorical,binary,q50_other_measures_known,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+"q50_other_measures_known__DATA_DELETION_ORDER,COMPLIANCE_ORDER",wide_categorical,binary,q50_other_measures_known,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+q50_other_measures_known__NONE,wide_categorical,binary,q50_other_measures_known,int8,1.0,0.3810483870967742,0.23608850623352104,0.0,1.0
+q50_other_measures_known__PROCESSING_BAN,wide_categorical,binary,q50_other_measures_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q50_other_measures_known__PROCESSING_BAN,COMPLIANCE_ORDER",wide_categorical,binary,q50_other_measures_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q50_other_measures_status__DISCUSSED,status,binary,q50_other_measures_status,int8,1.0,0.6139112903225806,0.23726339474626476,0.0,1.0
+q50_other_measures_status__NOT_MENTIONED,status,binary,q50_other_measures_status,int8,1.0,0.3860887096774194,0.23726339474626476,0.0,1.0
+q50_other_measures_unknown__BRING_PROCESSING_INTO_COMPLIANCE,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+q50_other_measures_unknown__COMPLY_WITH_DATA_SUBJECT_REQUESTS,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q50_other_measures_unknown__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_unknown__LIMITATION_PROHIBITION_OF_PROCESSING,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+"q50_other_measures_unknown__LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS",wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_unknown__NO,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_unknown__NOT_DISCUSSED,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+q50_other_measures_unknown__RECTIFICATION_ERASURE_RESTRICTION,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q50_other_measures_unknown__REPRIMAND,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q50_other_measures_unknown__WARNING,wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q50_other_measures_unknown__WARNING,REPRIMAND",wide_categorical,binary,q50_other_measures_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q52_tokens,wide,numeric,q52_tokens,int64,1.0,0.9576612903225806,224.86516450473616,0.0,69.0
+q53_powers_exclusivity_conflict,wide,numeric,q53_powers_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q53_powers_known__ADMINISTRATIVE_FINE,wide_categorical,binary,q53_powers_known,int8,1.0,0.2288306451612903,0.17664525080563787,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.018145161290322582,0.01783389212590736,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.03225806451612903,0.031248982780508458,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.07762096774193548,0.07166819927736727,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.007056451612903226,0.007013728394258001,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,LIMITATION_PROHIBITION_OF_PROCESSING,COMPLY_WITH_DATA_SUBJECT_REQUESTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q53_powers_known__ADMINISTRATIVE_FINE,WARNING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_known__BRING_PROCESSING_INTO_COMPLIANCE,wide_categorical,binary,q53_powers_known,int8,1.0,0.01310483870967742,0.012946152468995147,0.0,1.0
+"q53_powers_known__BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0030241935483870967,0.00301809023143778,0.0,1.0
+"q53_powers_known__BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q53_powers_known__BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__BRING_PROCESSING_INTO_COMPLIANCE,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,wide_categorical,binary,q53_powers_known,int8,1.0,0.03024193548387097,0.029356954526219857,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.05241935483870968,0.0497216887471111,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.018145161290322582,0.01783389212590736,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q53_powers_known__COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_known__LIMITATION_PROHIBITION_OF_PROCESSING,wide_categorical,binary,q53_powers_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+q53_powers_known__NONE,wide_categorical,binary,q53_powers_known,int8,1.0,0.09274193548387097,0.08422577390058918,0.0,1.0
+q53_powers_known__REPRIMAND,wide_categorical,binary,q53_powers_known,int8,1.0,0.03125,0.030303985872855703,0.0,1.0
+"q53_powers_known__REPRIMAND,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0030241935483870967,0.003018090231437779,0.0,1.0
+"q53_powers_known__REPRIMAND,ADMINISTRATIVE_FINE,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q53_powers_known__REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q53_powers_known__REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q53_powers_known__REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.010080645161290322,0.009989095407050548,0.0,1.0
+"q53_powers_known__REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+"q53_powers_known__REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q53_powers_known__REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,LIMITATION_PROHIBITION_OF_PROCESSING,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__REPRIMAND,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_known__WARNING,wide_categorical,binary,q53_powers_known,int8,1.0,0.02721774193548387,0.02650365385241366,0.0,1.0
+"q53_powers_known__WARNING,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q53_powers_known__WARNING,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q53_powers_known__WARNING,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.002014094593274957,0.0,1.0
+"q53_powers_known__WARNING,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__WARNING,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND",wide_categorical,binary,q53_powers_known,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,ADMINISTRATIVE_FINE,COMPLY_WITH_DATA_SUBJECT_REQUESTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE",wide_categorical,binary,q53_powers_known,int8,1.0,0.006048387096774193,0.006017870512027605,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,ADMINISTRATIVE_FINE",wide_categorical,binary,q53_powers_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q53_powers_known__WARNING,REPRIMAND,COMPLY_WITH_DATA_SUBJECT_REQUESTS,BRING_PROCESSING_INTO_COMPLIANCE,COMMUNICATE_BREACH_TO_SUBJECTS,LIMITATION_PROHIBITION_OF_PROCESSING,RECTIFICATION_ERASURE_RESTRICTION",wide_categorical,binary,q53_powers_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_status__DISCUSSED,status,binary,q53_powers_status,int8,1.0,0.7479838709677419,0.1886942156830832,0.0,1.0
+q53_powers_status__NOT_MENTIONED,status,binary,q53_powers_status,int8,1.0,0.25201612903225806,0.18869421568308317,0.0,1.0
+q53_powers_unknown__COMPLIANCE_ORDER,wide_categorical,binary,q53_powers_unknown,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q53_powers_unknown__DATA_DELETION_ORDER,wide_categorical,binary,q53_powers_unknown,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+q53_powers_unknown__NOT_DISCUSSED,wide_categorical,binary,q53_powers_unknown,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+q54_scopes_exclusivity_conflict,wide,numeric,q54_scopes_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q54_scopes_known__COMPLETE_PROCESSING_BAN,wide_categorical,binary,q54_scopes_known,int8,1.0,0.0030241935483870967,0.0030180902314377784,0.0,1.0
+q54_scopes_known__DATA_CATEGORY_LIMITATION,wide_categorical,binary,q54_scopes_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+q54_scopes_known__NOT_APPLICABLE,wide_categorical,binary,q54_scopes_known,int8,1.0,0.5725806451612904,0.24497900458969435,0.0,1.0
+q54_scopes_known__SPECIFIC_PURPOSE_LIMITATION,wide_categorical,binary,q54_scopes_known,int8,1.0,0.01310483870967742,0.012946152468995147,0.0,1.0
+"q54_scopes_known__SPECIFIC_PURPOSE_LIMITATION,DATA_CATEGORY_LIMITATION",wide_categorical,binary,q54_scopes_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q54_scopes_known__SPECIFIC_PURPOSE_LIMITATION,GEOGRAPHICAL_LIMITATION",wide_categorical,binary,q54_scopes_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q54_scopes_known__TEMPORAL_LIMITATION,wide_categorical,binary,q54_scopes_known,int8,1.0,0.0020161290322580645,0.0020140945932749584,0.0,1.0
+q54_scopes_status__DISCUSSED,status,binary,q54_scopes_status,int8,1.0,0.03024193548387097,0.02935695452621986,0.0,1.0
+q54_scopes_status__NOT_APPLICABLE,status,binary,q54_scopes_status,int8,1.0,0.5725806451612904,0.24497900458969435,0.0,1.0
+q54_scopes_status__NOT_MENTIONED,status,binary,q54_scopes_status,int8,1.0,0.3971774193548387,0.23966911884378764,0.0,1.0
+q54_scopes_unknown__NOT_DISCUSSED,wide_categorical,binary,q54_scopes_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q56_rights_discussed_exclusivity_conflict,wide,numeric,q56_rights_discussed_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q56_rights_discussed_known__ACCESS,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.04435483870967742,0.04243025943165912,0.0,1.0
+"q56_rights_discussed_known__ACCESS,ERASURE",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.006048387096774193,0.006017870512027604,0.0,1.0
+"q56_rights_discussed_known__ACCESS,ERASURE,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q56_rights_discussed_known__ACCESS,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.009072580645161291,0.008999340841769475,0.0,1.0
+"q56_rights_discussed_known__ACCESS,OBJECTION,ERASURE",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__ACCESS,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__ACCESS,RECTIFICATION,ERASURE,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q56_rights_discussed_known__ACCESS,RECTIFICATION,ERASURE,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__ACCESS,RECTIFICATION,ERASURE,RESTRICTION_OF_PROCESSING,DATA_PORTABILITY,OBJECTION,AUTOMATED_DECISION_MAKING,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__ACCESS,RECTIFICATION,ERASURE,RESTRICTION_OF_PROCESSING,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__ACCESS,RECTIFICATION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q56_rights_discussed_known__AUTOMATED_DECISION_MAKING,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q56_rights_discussed_known__ERASURE,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.03024193548387097,0.029356954526219857,0.0,1.0
+"q56_rights_discussed_known__ERASURE,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.019153225806451613,0.01880533674034048,0.0,1.0
+"q56_rights_discussed_known__ERASURE,OBJECTION",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q56_rights_discussed_known__ERASURE,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+q56_rights_discussed_known__INFORMATION_OBLIGATIONS,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.3064516129032258,0.21275349109729505,0.0,1.0
+"q56_rights_discussed_known__INFORMATION_OBLIGATIONS,ERASURE,RESTRICTION_OF_PROCESSING",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q56_rights_discussed_known__NONE_DISCUSSED,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.10181451612903226,0.09154059926434686,0.0,1.0
+q56_rights_discussed_known__OBJECTION,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+"q56_rights_discussed_known__OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+q56_rights_discussed_known__RECTIFICATION,wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__RECTIFICATION,ERASURE,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__RECTIFICATION,ERASURE,RESTRICTION_OF_PROCESSING,DATA_PORTABILITY,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q56_rights_discussed_known__RECTIFICATION,ERASURE,RESTRICTION_OF_PROCESSING,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q56_rights_discussed_known__RECTIFICATION,ERASURE,RESTRICTION_OF_PROCESSING,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q56_rights_discussed_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q56_rights_discussed_status__DISCUSSED,status,binary,q56_rights_discussed_status,int8,1.0,0.6189516129032258,0.236088506233521,0.0,1.0
+q56_rights_discussed_status__NOT_APPLICABLE,status,binary,q56_rights_discussed_status,int8,1.0,0.02217741935483871,0.021707463949741216,0.0,1.0
+q56_rights_discussed_status__NOT_MENTIONED,status,binary,q56_rights_discussed_status,int8,1.0,0.3588709677419355,0.23031476839946616,0.0,1.0
+q56_rights_discussed_unknown__NOT_APPLICABLE,wide_categorical,binary,q56_rights_discussed_unknown,int8,1.0,0.02217741935483871,0.021707463949741216,0.0,1.0
+q56_rights_discussed_unknown__NOT_DISCUSSED,wide_categorical,binary,q56_rights_discussed_unknown,int8,1.0,0.047379032258064516,0.04517980371732691,0.0,1.0
+q56_rights_discussed_unknown__NOT_MENTIONED,wide_categorical,binary,q56_rights_discussed_unknown,int8,1.0,0.021169354838709676,0.020742122652257413,0.0,1.0
+q57_rights_violated_exclusivity_conflict,wide,numeric,q57_rights_violated_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q57_rights_violated_known__ACCESS,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.02620967741935484,0.025548484749845377,0.0,1.0
+"q57_rights_violated_known__ACCESS,ERASURE",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+"q57_rights_violated_known__ACCESS,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.004032258064516129,0.004020051430617493,0.0,1.0
+"q57_rights_violated_known__ACCESS,RECTIFICATION",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+"q57_rights_violated_known__ACCESS,RECTIFICATION,ERASURE,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q57_rights_violated_known__ERASURE,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.028225806451612902,0.02745678851599883,0.0,1.0
+"q57_rights_violated_known__ERASURE,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.016129032258064516,0.0158848995800918,0.0,1.0
+"q57_rights_violated_known__ERASURE,OBJECTION",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q57_rights_violated_known__ERASURE,OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q57_rights_violated_known__INFORMATION_OBLIGATIONS,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.22782258064516128,0.17609696949969075,0.0,1.0
+q57_rights_violated_known__NONE_VIOLATED,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.16028225806451613,0.13472766999772146,0.0,1.0
+q57_rights_violated_known__NOT_DETERMINED,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.055443548387096774,0.052422406497184326,0.0,1.0
+q57_rights_violated_known__OBJECTION,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+"q57_rights_violated_known__OBJECTION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.005040322580645161,0.005019978190814103,0.0,1.0
+q57_rights_violated_known__RECTIFICATION,wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q57_rights_violated_known__RECTIFICATION,INFORMATION_OBLIGATIONS",wide_categorical,binary,q57_rights_violated_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q57_rights_violated_status__DISCUSSED,status,binary,q57_rights_violated_status,int8,1.0,0.3951612903225806,0.2392500244132678,0.0,1.0
+q57_rights_violated_status__NONE_VIOLATED,status,binary,q57_rights_violated_status,int8,1.0,0.16028225806451613,0.13472766999772146,0.0,1.0
+q57_rights_violated_status__NOT_APPLICABLE,status,binary,q57_rights_violated_status,int8,1.0,0.02217741935483871,0.021707463949741216,0.0,1.0
+q57_rights_violated_status__NOT_DETERMINED,status,binary,q57_rights_violated_status,int8,1.0,0.055443548387096774,0.052422406497184326,0.0,1.0
+q57_rights_violated_status__NOT_MENTIONED,status,binary,q57_rights_violated_status,int8,1.0,0.36693548387096775,0.23252823801308553,0.0,1.0
+q57_rights_violated_unknown__NONE_DISCUSSED,wide_categorical,binary,q57_rights_violated_unknown,int8,1.0,0.008064516129032258,0.00800755183750529,0.0,1.0
+q57_rights_violated_unknown__NOT_APPLICABLE,wide_categorical,binary,q57_rights_violated_unknown,int8,1.0,0.02217741935483871,0.021707463949741216,0.0,1.0
+q57_rights_violated_unknown__NOT_DISCUSSED,wide_categorical,binary,q57_rights_violated_unknown,int8,1.0,0.04334677419354839,0.04150967579180365,0.0,1.0
+q57_rights_violated_unknown__NOT_MENTIONED,wide_categorical,binary,q57_rights_violated_unknown,int8,1.0,0.018145161290322582,0.01783389212590736,0.0,1.0
+q58_access_issues_exclusivity_conflict,wide,numeric,q58_access_issues_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q58_access_issues_known__EXCESSIVE_DELAY,wide_categorical,binary,q58_access_issues_known,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+"q58_access_issues_known__EXCESSIVE_DELAY,INADEQUATE_RESPONSE",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.02721774193548387,0.02650365385241366,0.0,1.0
+"q58_access_issues_known__EXCESSIVE_DELAY,INADEQUATE_RESPONSE,NO_ISSUES_FOUND",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q58_access_issues_known__EXCESSIVE_DELAY,INADEQUATE_RESPONSE,SCOPE_LIMITATIONS",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q58_access_issues_known__INADEQUATE_RESPONSE,wide_categorical,binary,q58_access_issues_known,int8,1.0,0.04536290322580645,0.0433488086325315,0.0,1.0
+"q58_access_issues_known__INADEQUATE_RESPONSE,IDENTITY_VERIFICATION_ISSUES",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q58_access_issues_known__INADEQUATE_RESPONSE,IDENTITY_VERIFICATION_ISSUES,SCOPE_LIMITATIONS",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+"q58_access_issues_known__INADEQUATE_RESPONSE,SCOPE_LIMITATIONS",wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q58_access_issues_known__NOT_APPLICABLE,wide_categorical,binary,q58_access_issues_known,int8,1.0,0.5282258064516129,0.24945477035252753,0.0,1.0
+q58_access_issues_known__NO_ISSUES_FOUND,wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+q58_access_issues_known__SCOPE_LIMITATIONS,wide_categorical,binary,q58_access_issues_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q58_access_issues_status__DISCUSSED,status,binary,q58_access_issues_status,int8,1.0,0.09879032258064516,0.08912063409394227,0.0,1.0
+q58_access_issues_status__NOT_APPLICABLE,status,binary,q58_access_issues_status,int8,1.0,0.5282258064516129,0.24945477035252753,0.0,1.0
+q58_access_issues_status__NOT_MENTIONED,status,binary,q58_access_issues_status,int8,1.0,0.37298387096774194,0.23410289378600957,0.0,1.0
+q58_access_issues_unknown__NOT_DISCUSSED,wide_categorical,binary,q58_access_issues_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q59_adm_issues_exclusivity_conflict,wide,numeric,q59_adm_issues_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q59_adm_issues_known__NOT_APPLICABLE,wide_categorical,binary,q59_adm_issues_known,int8,1.0,0.59375,0.24145433905146316,0.0,1.0
+q59_adm_issues_known__NO_EXPLANATION_PROVIDED,wide_categorical,binary,q59_adm_issues_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+q59_adm_issues_status__DISCUSSED,status,binary,q59_adm_issues_status,int8,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+q59_adm_issues_status__NOT_APPLICABLE,status,binary,q59_adm_issues_status,int8,1.0,0.59375,0.24145433905146316,0.0,1.0
+q59_adm_issues_status__NOT_MENTIONED,status,binary,q59_adm_issues_status,int8,1.0,0.39818548387096775,0.23987561440057295,0.0,1.0
+q59_adm_issues_unknown__NOT_DISCUSSED,wide_categorical,binary,q59_adm_issues_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q61_dpo_issues_exclusivity_conflict,wide,numeric,q61_dpo_issues_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+q61_dpo_issues_known__CONFLICT_OF_INTEREST,wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q61_dpo_issues_known__INADEQUATE_INVOLVEMENT,wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+"q61_dpo_issues_known__INSUFFICIENT_INDEPENDENCE,CONFLICT_OF_INTEREST",wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q61_dpo_issues_known__NOT_APPLICABLE,wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.5362903225806451,0.24893395397285245,0.0,1.0
+q61_dpo_issues_known__NO_DPO_APPOINTED,wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.01310483870967742,0.012946152468995147,0.0,1.0
+"q61_dpo_issues_known__NO_DPO_APPOINTED,INADEQUATE_INVOLVEMENT",wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+"q61_dpo_issues_known__NO_DPO_APPOINTED,LACK_OF_RESOURCES",wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.0010080645161290322,0.001008064516129032,0.0,1.0
+q61_dpo_issues_known__NO_ISSUES_FOUND,wide_categorical,binary,q61_dpo_issues_known,int8,1.0,0.037298387096774195,0.03594345073402559,0.0,1.0
+q61_dpo_issues_status__DISCUSSED,status,binary,q61_dpo_issues_status,int8,1.0,0.06451612903225806,0.060414700042316326,0.0,1.0
+q61_dpo_issues_status__NOT_APPLICABLE,status,binary,q61_dpo_issues_status,int8,1.0,0.5362903225806451,0.24893395397285245,0.0,1.0
+q61_dpo_issues_status__NOT_MENTIONED,status,binary,q61_dpo_issues_status,int8,1.0,0.39919354838709675,0.24008007551837512,0.0,1.0
+q61_dpo_issues_unknown__NOT_DISCUSSED,wide_categorical,binary,q61_dpo_issues_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q64_transfer_violations_exclusivity_conflict,wide,numeric,q64_transfer_violations_exclusivity_conflict,int64,1.0,0.0,0.0,0.0,0.0
+"q64_transfer_violations_known__INVALID_TRANSFER_MECHANISM,SCHREMS_II_ISSUES",wide_categorical,binary,q64_transfer_violations_known,int8,1.0,0.0010080645161290322,0.0010080645161290322,0.0,1.0
+q64_transfer_violations_known__NOT_APPLICABLE,wide_categorical,binary,q64_transfer_violations_known,int8,1.0,0.5866935483870968,0.24272891507437908,0.0,1.0
+q64_transfer_violations_known__NO_ADEQUATE_SAFEGUARDS,wide_categorical,binary,q64_transfer_violations_known,int8,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+"q64_transfer_violations_known__NO_ADEQUATE_SAFEGUARDS,INVALID_TRANSFER_MECHANISM,SCHREMS_II_ISSUES",wide_categorical,binary,q64_transfer_violations_known,int8,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+"q64_transfer_violations_known__NO_ADEQUATE_SAFEGUARDS,SCHREMS_II_ISSUES",wide_categorical,binary,q64_transfer_violations_known,int8,1.0,0.0020161290322580645,0.002014094593274958,0.0,1.0
+q64_transfer_violations_status__DISCUSSED,status,binary,q64_transfer_violations_status,int8,1.0,0.015120967741935484,0.014907351648709344,0.0,1.0
+q64_transfer_violations_status__NOT_APPLICABLE,status,binary,q64_transfer_violations_status,int8,1.0,0.5866935483870968,0.24272891507437908,0.0,1.0
+q64_transfer_violations_status__NOT_MENTIONED,status,binary,q64_transfer_violations_status,int8,1.0,0.39818548387096775,0.23987561440057295,0.0,1.0
+q64_transfer_violations_unknown__NOT_DISCUSSED,wide_categorical,binary,q64_transfer_violations_unknown,int8,1.0,0.006048387096774193,0.006017870512027606,0.0,1.0
+q67_tokens,wide,numeric,q67_tokens,int64,1.0,0.7913306451612904,17.243651533153216,0.0,27.0
+q68_tokens,wide,numeric,q68_tokens,int64,1.0,0.9576612903225806,391.1418563441945,0.0,95.0
+remedy_only_case,wide,numeric,remedy_only_case,int64,1.0,0.2530241935483871,0.1891936704534358,0.0,1.0
+rights_discussed__ACCESS,long:rights_discussed,binary,rights_discussed,float64,1.0,0.06854838709677419,0.06391393509325867,0.0,1.0
+rights_discussed__AUTOMATED_DECISION_MAKING,long:rights_discussed,binary,rights_discussed,float64,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+rights_discussed__DATA_PORTABILITY,long:rights_discussed,binary,rights_discussed,float64,1.0,0.0020161290322580645,0.0020140945932749575,0.0,1.0
+rights_discussed__ERASURE,long:rights_discussed,binary,rights_discussed,float64,1.0,0.07258064516129033,0.06738061912047134,0.0,1.0
+rights_discussed__INFORMATION_OBLIGATIONS,long:rights_discussed,binary,rights_discussed,float64,1.0,0.35685483870967744,0.22974105660623026,0.0,1.0
+rights_discussed__NONE_DISCUSSED,long:rights_discussed,binary,rights_discussed,float64,1.0,0.10181451612903226,0.09154059926434686,0.0,1.0
+rights_discussed__OBJECTION,long:rights_discussed,binary,rights_discussed,float64,1.0,0.024193548387096774,0.023632043227759515,0.0,1.0
+rights_discussed__RECTIFICATION,long:rights_discussed,binary,rights_discussed,float64,1.0,0.011088709677419355,0.010976815533348522,0.0,1.0
+rights_discussed__RESTRICTION_OF_PROCESSING,long:rights_discussed,binary,rights_discussed,float64,1.0,0.007056451612903226,0.007013728394258002,0.0,1.0
+rights_violated__ACCESS,long:rights_violated,binary,rights_violated,float64,1.0,0.03528225806451613,0.034071766869568046,0.0,1.0
+rights_violated__AUTOMATED_DECISION_MAKING,long:rights_violated,binary,rights_violated,float64,1.0,0.0,0.0,0.0,0.0
+rights_violated__DATA_PORTABILITY,long:rights_violated,binary,rights_violated,float64,1.0,0.0,0.0,0.0,0.0
+rights_violated__ERASURE,long:rights_violated,binary,rights_violated,float64,1.0,0.05141129032258065,0.048817380619120464,0.0,1.0
+rights_violated__INFORMATION_OBLIGATIONS,long:rights_violated,binary,rights_violated,float64,1.0,0.2560483870967742,0.19067982813059473,0.0,1.0
+rights_violated__NONE_VIOLATED,long:rights_violated,binary,rights_violated,float64,1.0,0.16028225806451613,0.13472766999772146,0.0,1.0
+rights_violated__NOT_DETERMINED,long:rights_violated,binary,rights_violated,float64,1.0,0.055443548387096774,0.052422406497184326,0.0,1.0
+rights_violated__OBJECTION,long:rights_violated,binary,rights_violated,float64,1.0,0.017137096774193547,0.016860413072491132,0.0,1.0
+rights_violated__RECTIFICATION,long:rights_violated,binary,rights_violated,float64,1.0,0.004032258064516129,0.004020051430617492,0.0,1.0
+rights_violated__RESTRICTION_OF_PROCESSING,long:rights_violated,binary,rights_violated,float64,1.0,0.0,0.0,0.0,0.0
+schema_echo_fields__Q12,wide_categorical,binary,schema_echo_fields,int8,1.0,0.32661290322580644,0.22015884899580096,0.0,1.0
+schema_echo_fields__Q12;Q2,wide_categorical,binary,schema_echo_fields,int8,1.0,0.059475806451612906,0.055994881351518526,0.0,1.0
+schema_echo_flag,wide,numeric,schema_echo_flag,int64,1.0,0.3860887096774194,0.2372633947462648,0.0,1.0
+severity_measures_present,wide,numeric,severity_measures_present,int64,1.0,0.5493951612903226,0.24780992643468638,0.0,1.0
+transfer_violations__INADEQUATE_CONTRACTUAL_CLAUSES,long:transfer_violations,binary,transfer_violations,float64,1.0,0.0,0.0,0.0,0.0
+transfer_violations__INVALID_TRANSFER_MECHANISM,long:transfer_violations,binary,transfer_violations,float64,1.0,0.0030241935483870967,0.0030180902314377793,0.0,1.0
+transfer_violations__NOT_APPLICABLE,long:transfer_violations,binary,transfer_violations,float64,1.0,0.5866935483870968,0.24272891507437908,0.0,1.0
+transfer_violations__NO_ADEQUATE_SAFEGUARDS,long:transfer_violations,binary,transfer_violations,float64,1.0,0.008064516129032258,0.008007551837505292,0.0,1.0
+transfer_violations__NO_IMPACT_ASSESSMENT,long:transfer_violations,binary,transfer_violations,float64,1.0,0.0,0.0,0.0,0.0
+transfer_violations__SCHREMS_II_ISSUES,long:transfer_violations,binary,transfer_violations,float64,1.0,0.005040322580645161,0.005019978190814102,0.0,1.0
+turnover_eur,wide,numeric,turnover_eur,float64,1.0,0.06754032258064516,9.784630939486348e+20,0.0,964711000000.0
+turnover_log1p,wide,numeric,turnover_log1p,float64,1.0,0.06754032258064516,23.883084329862804,0.0,27.595094
+turnover_numeric_valid,wide,numeric,turnover_numeric_valid,int64,1.0,0.1159274193548387,0.10259167182057874,0.0,1.0
+turnover_outlier_flag,wide,numeric,turnover_outlier_flag,int64,1.0,0.0,0.0,0.0,0.0
+turnover_status__DISCUSSED,status,binary,turnover_status,int8,1.0,0.9576612903225806,0.040587057712965086,0.0,1.0
+turnover_status__NOT_MENTIONED,status,binary,turnover_status,int8,1.0,0.04233870967741935,0.04058705771296506,0.0,1.0
+vulnerable_groups__CHILDREN,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.05241935483870968,0.049721688747111095,0.0,1.0
+vulnerable_groups__ELDERLY,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.0030241935483870967,0.0030180902314377797,0.0,1.0
+vulnerable_groups__EMPLOYEES,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.0625,0.05865287588294652,0.0,1.0
+vulnerable_groups__FINANCIALLY_VULNERABLE,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.011088709677419355,0.010976815533348524,0.0,1.0
+vulnerable_groups__NONE_MENTIONED,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.22983870967741934,0.17719149767260184,0.0,1.0
+vulnerable_groups__NOT_DISCUSSED,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.21471774193548387,0.1687841785749162,0.0,1.0
+vulnerable_groups__PATIENTS,long:vulnerable_groups,binary,vulnerable_groups,float64,1.0,0.04334677419354839,0.04150967579180365,0.0,1.0

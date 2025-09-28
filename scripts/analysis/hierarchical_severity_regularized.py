@@ -10,6 +10,7 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
+from .build_feature_matrix import META_SUFFIXES
 from .hierarchical_severity_model import (
     SEVERITY_ORDER,
     BASIC_FEATURES,
@@ -73,6 +74,11 @@ def _prepare_dataset(
 
     multi = _build_multi_features(df, column_groups)
     shrink = _dpa_shrinkage_features(df, df["severity_rank"])
+    power_columns = [
+        col
+        for col in column_groups.get("q53_powers", [])
+        if col in df.columns and not any(col.endswith(suffix) for suffix in META_SUFFIXES)
+    ]
 
     base = df[list(BASIC_FEATURES)].fillna(0).astype(float)
     cat = pd.get_dummies(
@@ -82,8 +88,9 @@ def _prepare_dataset(
         dtype=float,
     )
     latent = df[latent_columns].fillna(0) if latent_columns else pd.DataFrame(index=df.index)
+    power_tokens = df[power_columns].fillna(0).astype(float) if power_columns else pd.DataFrame(index=df.index)
 
-    design = pd.concat([base, multi, shrink, cat, latent], axis=1)
+    design = pd.concat([base, multi, shrink, cat, latent, power_tokens], axis=1)
     design = design.loc[:, ~design.columns.duplicated()]
     design = design.fillna(0).astype(float)
 

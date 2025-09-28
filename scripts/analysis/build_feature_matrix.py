@@ -49,6 +49,7 @@ ENUM_COLUMNS: tuple[str, ...] = (
 
 MULTI_BASES: tuple[str, ...] = (
     "q10_org_class",
+    "q15_case_initiation",
     "q21_breach_types",
     "q25_sensitive_data",
     "q28_mitigations",

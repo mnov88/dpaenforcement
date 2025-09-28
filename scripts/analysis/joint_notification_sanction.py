@@ -15,6 +15,7 @@ from .build_feature_matrix import META_SUFFIXES
 
 FEATURE_SETS: tuple[str, ...] = (
     "q10_org_class",
+    "q15_case_initiation",
     "q21_breach_types",
     "q28_mitigations",
     "q46_vuln",
@@ -133,6 +134,11 @@ def _build_feature_frame(
     extra_columns: Sequence[str],
 ) -> pd.DataFrame:
     frame = df[list(BASE_NUMERIC)].copy()
+    power_columns = [
+        col
+        for col in metadata.get("q53_powers", [])
+        if not any(col.endswith(suffix) for suffix in META_SUFFIXES) and col in df.columns
+    ]
     for key in FEATURE_SETS:
         columns = [
             col
@@ -151,6 +157,8 @@ def _build_feature_frame(
             frame[col] = df[col]
     for cat in CATEGORICAL:
         frame[cat] = df[cat]
+    if power_columns:
+        frame = pd.concat([frame, df[power_columns].fillna(0).astype(float)], axis=1)
     return frame
 
 

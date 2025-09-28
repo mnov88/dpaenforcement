@@ -21,6 +21,7 @@ SEVERITY_ORDER = {
 
 MULTI_FEATURE_KEYS: tuple[str, ...] = (
     "q10_org_class",
+    "q15_case_initiation",
     "q21_breach_types",
     "q28_mitigations",
     "q46_vuln",

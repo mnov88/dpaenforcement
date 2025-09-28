@@ -12,6 +12,27 @@ class EvennessPaths:
 
     wide_csv: Path = Path("outputs/cleaned_wide_latest.csv")
     feature_cache: Path = Path("outputs/evenness/fact_matrix.parquet")
+    omniscan_dir: Path = Path("outputs/evenness/omniscan")
+    feature_universe_json: Path = Path("outputs/evenness/omniscan/features_universe.json")
+    coverage_ledger_csv: Path = Path("outputs/evenness/omniscan/coverage_ledger.csv")
+    coverage_checklist_csv: Path = Path("outputs/evenness/omniscan/no_feature_left_behind.csv")
+    importance_heatmap_csv: Path = Path("outputs/evenness/omniscan/importance_heatmap.csv")
+    interaction_map_csv: Path = Path("outputs/evenness/omniscan/interaction_map.csv")
+    block_importance_csv: Path = Path("outputs/evenness/omniscan/block_importance.csv")
+    shap_country_csv: Path = Path("outputs/evenness/omniscan/shap_country_summary.csv")
+    shap_dpa_csv: Path = Path("outputs/evenness/omniscan/shap_dpa_summary.csv")
+    sage_importance_csv: Path = Path("outputs/evenness/omniscan/sage_importance.csv")
+    specification_curve_csv: Path = Path("outputs/evenness/omniscan/specification_curve.csv")
+    stability_selection_csv: Path = Path("outputs/evenness/omniscan/stability_selection.csv")
+    knockoff_results_csv: Path = Path("outputs/evenness/omniscan/knockoff_results.csv")
+    robust_driver_csv: Path = Path("outputs/evenness/omniscan/robust_driver_list.csv")
+    crt_results_csv: Path = Path("outputs/evenness/omniscan/crt_results.csv")
+    jurisdiction_effects_csv: Path = Path("outputs/evenness/omniscan/jurisdiction_effects.csv")
+    heterogeneity_csv: Path = Path("outputs/evenness/omniscan/heterogeneity_map.csv")
+    network_edges_csv: Path = Path("outputs/evenness/omniscan/network_edges.csv")
+    community_summary_csv: Path = Path("outputs/evenness/omniscan/network_communities.csv")
+    risk_band_parity_csv: Path = Path("outputs/evenness/omniscan/risk_band_parity.csv")
+    distribution_contrasts_csv: Path = Path("outputs/evenness/omniscan/risk_band_distribution.csv")
     x_full: Path = Path("outputs/evenness/X_full.parquet")
     x_timeobs: Path = Path("outputs/evenness/X_timeobs.parquet")
     match_within_csv: Path = Path("outputs/evenness/matches_within.csv")
@@ -60,6 +81,26 @@ class EvennessPaths:
 
         for path in (
             self.feature_cache,
+            self.feature_universe_json,
+            self.coverage_ledger_csv,
+            self.coverage_checklist_csv,
+            self.importance_heatmap_csv,
+            self.interaction_map_csv,
+            self.block_importance_csv,
+            self.shap_country_csv,
+            self.shap_dpa_csv,
+            self.sage_importance_csv,
+            self.specification_curve_csv,
+            self.stability_selection_csv,
+            self.knockoff_results_csv,
+            self.robust_driver_csv,
+            self.crt_results_csv,
+            self.jurisdiction_effects_csv,
+            self.heterogeneity_csv,
+            self.network_edges_csv,
+            self.community_summary_csv,
+            self.risk_band_parity_csv,
+            self.distribution_contrasts_csv,
             self.x_full,
             self.x_timeobs,
             self.match_within_csv,
@@ -108,6 +149,7 @@ class EvennessPaths:
             self.uniformity_dir,
             self.phase3_dir,
             self.policy_dir,
+            self.omniscan_dir,
         ):
             Path(directory).expanduser().resolve().mkdir(parents=True, exist_ok=True)
 

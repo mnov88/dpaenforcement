@@ -69,6 +69,9 @@ python3 -m scripts.cli run-all
 High-level orchestration for the disparity study lives under `scripts.evenness.cli`.
 
 ```bash
+# Launch omnibus Phase 0 omni-scan (feature expansion, coverage, global diagnostics)
+python -m scripts.evenness.cli phase-zero
+
 # Build facts-only matrix honouring status flags
 python -m scripts.evenness.cli prepare-data --out outputs/evenness/fact_matrix.parquet
 
@@ -92,6 +95,14 @@ python -m scripts.evenness.cli predictive --outcome fine_positive
 ```
 
 Artefacts land under `outputs/evenness/` by default (configurable via command flags).
+
+The Phase 0 run produces:
+
+- `outputs/evenness/omniscan/features_universe.json` – machine-readable feature catalogue.
+- `outputs/evenness/omniscan/coverage_ledger.csv` – per-feature coverage, variance, and status mix.
+- `outputs/evenness/omniscan/importance_heatmap.csv` – stacked SHAP importances across outcomes.
+- `outputs/evenness/omniscan/specification_curve.csv` – grid of penalised GLM scores.
+- `outputs/evenness/omniscan/crt_results.csv` – conditional randomisation test p-values by jurisdiction level.
 
 ## Outputs
 

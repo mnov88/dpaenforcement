@@ -25,6 +25,7 @@ from .leniency import compute_leniency_index
 from .matching import perform_matching
 from .modeling import fit_logistic, fit_mixed_effects, fit_ols, model_to_dict
 from .plots import plot_balance, plot_icc_bars, plot_leniency_map, plot_shap_summary
+from .omniscan import run_omniscan
 from .phase_three import run_phase_three
 from .predictive import gradient_boosting_diagnostics
 from .robustness import run_robustness_suite
@@ -291,9 +292,21 @@ def cmd_phase_three(args: argparse.Namespace) -> None:
     print(f"  - robustness scenarios: {len(outputs.robustness_summary)}")
 
 
+def cmd_omniscan(args: argparse.Namespace) -> None:
+    paths = EvennessPaths()
+    outputs = run_omniscan(paths=paths)
+    print("Omni-scan artefacts generated:")
+    print(f"  - features: {outputs.feature_universe_json}")
+    print(f"  - coverage ledger: {outputs.coverage_ledger_csv}")
+    print(f"  - importance heatmap: {outputs.importance_heatmap_csv}")
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="GDPR evenness analysis toolkit")
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_phase0 = sub.add_parser("phase-zero", help="Run Phase 0 omni-scan workflow")
+    p_phase0.set_defaults(func=cmd_omniscan)
 
     p_phase1 = sub.add_parser("phase-one", help="Run Phase 1 foundation workflow")
     p_phase1.add_argument("--wide-csv", default=EvennessPaths().wide_csv)

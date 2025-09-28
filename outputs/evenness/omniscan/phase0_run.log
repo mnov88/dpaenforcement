@@ -2040,3 +2040,23 @@ D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\impute\_base.
  'q59_adm_issues_NO_EXPLANATION_PROVIDED' 'q59_adm_issues_NO_ISSUES_FOUND'
  'q59_adm_issues_NOT_APPLICABLE']. At least one non-missing value is needed for imputation with strategy='median'.
   warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+D:\dpaenforcement\dpaenforcement-1\.venv\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(

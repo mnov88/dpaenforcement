@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from typing import Dict, Mapping
 
+import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
 from scipy import stats

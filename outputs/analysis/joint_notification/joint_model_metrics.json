@@ -1,0 +1,12 @@
+{
+  "initial_sample_size": 101,
+  "trimmed_sample_size": 50,
+  "treated_cases": 21,
+  "control_cases": 29,
+  "naive_average_treatment_effect": -0.04759553858784926,
+  "aipw_average_treatment_effect": -0.8993585236560303,
+  "propensity_mean": 0.4136836939447987,
+  "propensity_std": 0.21023857802904064,
+  "trim_lower": 0.1,
+  "trim_upper": 0.9
+}

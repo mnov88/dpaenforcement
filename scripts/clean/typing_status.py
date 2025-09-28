@@ -2,7 +2,12 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from datetime import UTC, datetime
+try:  # Python 3.11+
+    from datetime import UTC, datetime
+except ImportError:  # Python < 3.11 fallback
+    from datetime import datetime, timezone
+
+    UTC = timezone.utc  # type: ignore[assignment]
 from typing import Dict, List, Optional, Tuple
 
 

@@ -1,0 +1,30 @@
+{
+  "power_any_flag": {
+    "1": 945,
+    "0": 54
+  },
+  "power_fine_flag": {
+    "1": 601,
+    "0": 398
+  },
+  "power_warning_flag": {
+    "0": 877,
+    "1": 122
+  },
+  "power_reprimand_flag": {
+    "0": 822,
+    "1": 177
+  },
+  "power_none_flag": {
+    "0": 856,
+    "1": 143
+  },
+  "power_combined_flag": {
+    "0": 644,
+    "1": 355
+  },
+  "power_non_fine_flag": {
+    "0": 533,
+    "1": 466
+  }
+}

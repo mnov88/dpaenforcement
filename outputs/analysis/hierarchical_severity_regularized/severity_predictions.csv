@@ -1,0 +1,1000 @@
+decision_id,dpa_name_canonical,severity_label,severity_rank,severity_expected
+United Kingdom_18,Information Commissioner's Office,FINE_ONLY,3,2.910219392974635
+United Kingdom_20,Information Commissioner's Office,REMEDIAL_ONLY,2,2.9304302649632996
+United Kingdom_10,STRING,NONE,0,0.0250518876260606
+United Kingdom_7,STRING,NONE,0,0.04894455522664849
+United Kingdom_16,Information Commissioner's Office,FINE_ONLY,3,2.977289857699102
+United Kingdom_17,Information Commissioner's Office,FINE_ONLY,3,2.9130285601932346
+United Kingdom_21,Information Commissioner's Office,FINE_ONLY,3,2.9458255010608023
+United Kingdom_19,Information Commissioner's Office,FINE_ONLY,3,2.7910701073514668
+United Kingdom_26,Information Commissioner's Office,REMEDIAL_ONLY,2,2.5417462422218517
+United Kingdom_25,Information Commissioner's Office,REMEDIAL_ONLY,2,2.5630498133698776
+United Kingdom_23,Information Commissioner's Office,FINE_ONLY,3,2.3508630907850847
+United Kingdom_24,Information Commissioner's Office,REMEDIAL_ONLY,2,2.7672507044910866
+United Kingdom_29,Information Commissioner's Office,FINE_ONLY,3,2.9211669858475204
+United Kingdom_27,Information Commissioner's Office,FINE_ONLY,3,2.884882124237625
+United Kingdom_28,Information Commissioner's Office,FINE_ONLY,3,2.566435126170298
+United Kingdom_22,Information Commissioner's Office,FINE_ONLY,3,2.6276068030730935
+United Kingdom_30,Information Commissioner's Office,REMEDIAL_ONLY,2,2.5675833169476903
+United Kingdom_32,Information Commissioner's Office,NONE,0,1.186709976753369
+United Kingdom_33,STRING,REMEDIAL_ONLY,2,1.9714221360607738
+United Kingdom_31,Information Commissioner's Office,REMEDIAL_ONLY,2,2.6395295743218252
+United Kingdom_36,NOT_DISCUSSED,NONE,0,0.00416602679389599
+United Kingdom_34,Information Commissioner's Office,FINE_ONLY,3,2.7261975316215614
+United Kingdom_37,The Information Commissioner's Office,REMEDIAL_ONLY,2,2.2121933836978585
+United Kingdom_35,Information Commissioner's Office,REMEDIAL_ONLY,2,2.347986487778414
+United Kingdom_39,Information Commissioner's Office,REMEDIAL_ONLY,2,2.73672342498342
+United Kingdom_45,Information Commissioner's Office,REMEDIAL_ONLY,2,2.0647524785683213
+United Kingdom_40,Information Commissioner's Office,FINE_ONLY,3,2.624904145796992
+United Kingdom_43,The Information Commissioner,REMEDIAL_ONLY,2,2.3574767860742454
+United Kingdom_44,Information Commissioner's Office,FINE_ONLY,3,2.5314712364558103
+United Kingdom_41,Information Commissioner's Office,FINE_ONLY,3,2.5985302907696615
+United Kingdom_46,Information Commissioner's Office,REMEDIAL_ONLY,2,2.547358524339203
+United Kingdom_48,The Information Commissioner,REMEDIAL_ONLY,2,2.1611807440614546
+United Kingdom_53,Information Commissioner's Office,FINE_PLUS,4,2.3727749187651312
+United Kingdom_52,Information Commissioner's Office,FINE_ONLY,3,2.7462015767961896
+United Kingdom_51,Information Commissioner's Office,FINE_ONLY,3,2.9822065302083045
+United Kingdom_47,Information Commissioner's Office,FINE_PLUS,4,2.663668041499096
+United Kingdom_49,The Information Commissioner,REMEDIAL_ONLY,2,2.00052980654494
+United Kingdom_50,Information Commissioner's Office,REMEDIAL_ONLY,2,2.5743052147834167
+United Kingdom_38,,NONE,0,0.0013160867221117002
+United Kingdom_54,UNCLEAR,NONE,0,0.08374265494440346
+United Kingdom_55,Information Commissioner's Office,REMEDIAL_ONLY,2,2.205884692998159
+United Kingdom_59,Information Commissioner's Office,FINE_ONLY,3,2.8271946090757494
+United Kingdom_56,Information Commissioner's Office,FINE_ONLY,3,2.2848471258611167
+United Kingdom_61,STRING,FINE_ONLY,3,1.8611575580836868
+United Kingdom_60,Information Commissioner's Office,FINE_ONLY,3,2.589471434969576
+United Kingdom_57,Information Commissioner's Office,FINE_ONLY,3,2.7471996643060432
+United Kingdom_63,NOT_DISCUSSED,NONE,0,0.00416602679389599
+United Kingdom_62,Information Commissioner's Office,FINE_ONLY,3,2.2848471258611167
+Sweden_2,Swedish Data Protection Authority,FINE_PLUS,4,3.1245856474254103
+Sweden_3,Datainspektionen,FINE_PLUS,4,3.922749172942761
+Sweden_4,Datainspektionen,FINE_PLUS,4,3.922749172942761
+Sweden_1,Datainspektionen,FINE_PLUS,4,3.985226364700706
+United Kingdom_58,,NONE,0,0.0013160867221117002
+Sweden_5,Datainspektionen,FINE_PLUS,4,3.74997077782565
+Sweden_7,Datainspektionen,FINE_PLUS,4,3.2327106841254603
+Sweden_6,Datainspektionen,REMEDIAL_ONLY,2,3.635578928855109
+Sweden_8,,NONE,0,0.0013160867221117002
+Sweden_9,The Data Inspectorate,FINE_ONLY,3,2.936449041921475
+Sweden_10,The Data Inspectorate,FINE_PLUS,4,3.6637917022455952
+Sweden_11,Datainspektionen,FINE_ONLY,3,2.8871578619869203
+Sweden_12,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.481089125794472
+Sweden_14,Integritetsskyddsmyndigheten (IMY),FINE_PLUS,4,3.7942445948523056
+Sweden_15,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.9389294069133287
+Sweden_18,Integritetsskyddsmyndigheten,FINE_ONLY,3,2.650649335565164
+Sweden_13,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.761181134748443
+Sweden_16,Swedish Authority for Privacy Protection,REMEDIAL_ONLY,2,2.622672022119282
+Sweden_20,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,3.016177437538354
+Sweden_21,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.8873564913220817
+Sweden_22,Integritetsskyddsmyndigheten (IMY),FINE_PLUS,4,3.421566083734461
+Sweden_23,Integrity Protection Authority,FINE_ONLY,3,2.515204827731546
+Sweden_26,Integritetsskyddsmyndigheten,REMEDIAL_ONLY,2,2.2193721076850714
+Sweden_24,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,3.0507493372707533
+Sweden_27,Integrity Protection Authority,NONE,0,0.08794358965440302
+Sweden_30,Integritetsskyddsmyndigheten,REMEDIAL_ONLY,2,2.255756473916091
+Sweden_31,Integritetsskyddsmyndigheten,REMEDIAL_ONLY,2,2.339321718645282
+Sweden_33,The Swedish Privacy Protection Agency (IMY),REMEDIAL_ONLY,2,2.3481019381013777
+Sweden_29,Swedish Authority for Privacy Protection,FINE_PLUS,4,3.9999998789877447
+Sweden_32,Swedish Authority for Privacy Protection,REMEDIAL_ONLY,2,2.8127016131391644
+Sweden_36,Integritetsskyddsmyndigheten (IMY),FINE_PLUS,4,3.662498691285245
+Sweden_34,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,3.361362047956565
+Sweden_35,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,3.010634712301153
+Sweden_37,Integritetsskyddsmyndigheten,FINE_ONLY,3,2.833634405469362
+Sweden_38,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.7190962968650596
+Sweden_40,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.693722719006824
+Sweden_41,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.4351088065612876
+Sweden_39,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,2.982760400191844
+Sweden_44,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.1334782677799824
+Sweden_42,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,2.8740959901636596
+Sweden_43,Integrity Protection Authority,FINE_ONLY,3,2.7136851137678613
+Sweden_46,STRING,NONE,0,0.00571463485416774
+Sweden_45,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.414175167030648
+Sweden_47,Swedish Authority for Privacy Protection (IMY),REMEDIAL_ONLY,2,2.0161183594292234
+Sweden_48,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.6570065016879423
+Sweden_49,Integritetsskyddsmyndigheten (IMY),FINE_ONLY,3,2.6169922326056607
+Sweden_50,Swedish Authority for Privacy Protection,REMEDIAL_ONLY,2,2.283366717522057
+Spain_1,Spanish Agency for Data Protection,NONE,0,0.25838047919459445
+Sweden_54,Integritetsskyddsmyndigheten,REMEDIAL_ONLY,2,2.434259707109295
+Sweden_57,Swedish Data Protection Authority,NONE,0,0.19078763171132776
+Sweden_52,Integritetsskyddsmyndigheten,REMEDIAL_ONLY,2,2.999997845536064
+Sweden_51,Integritetsskyddsmyndigheten (IMY),REMEDIAL_ONLY,2,2.6612311650647062
+Sweden_53,Swedish Authority for Privacy Protection (IMY),FINE_ONLY,3,2.898935280763219
+Spain_3,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.7224340492940513
+Spain_2,Agencia Española de Protección de Datos,REMEDIAL_ONLY,2,2.5976395911292904
+Spain_4,Spanish Data Protection Agency,FINE_PLUS,4,3.7319918384305333
+Spain_6,Spanish Data Protection Agency (AEPD),NONE,0,0.08825556053137826
+Spain_5,Spanish Agency for Data Protection,NONE,0,0.6498784170445903
+Spain_7,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_8,Spanish Agency for Data Protection,NONE,0,0.1814796642919589
+Spain_9,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_10,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.273956026286312
+Spain_12,Spanish Agency for Data Protection,NONE,0,0.35684477487043925
+Spain_11,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.5409285311063505
+Spain_15,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_13,Spanish Agency for Data Protection,NONE,0,0.7546731030043036
+Spain_16,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_14,Spanish Agency for Data Protection,NONE,0,0.4056437496887444
+Spain_17,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_18,Spanish Agency for Data Protection,NONE,0,0.34828042157329303
+Spain_19,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_20,Spanish Agency for Data Protection,NONE,0,0.11146356006794944
+Spain_21,Spanish Data Protection Agency,NONE,0,0.3643144376670069
+Spain_22,Spanish Data Protection Agency,NONE,0,0.4402699488277006
+Spain_23,STRING,NONE,0,0.2594077437729048
+Spain_25,Spanish Agency for Data Protection,NONE,0,0.12554351313934892
+Spain_24,Spanish Data Protection Agency,NONE,0,0.6179066594291592
+Spain_26,Spanish Data Protection Agency,NONE,0,0.4402699488277006
+Spain_27,Spanish Data Protection Agency,NONE,0,0.3889542429328224
+Spain_28,Spanish Agency for Data Protection,NONE,0,0.23113667836489396
+Spain_30,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.353567760963972
+Spain_32,Spanish Data Protection Agency,NONE,0,0.15987216966907056
+Spain_29,Spanish Agency for Data Protection,NONE,0,0.06907164314697756
+Spain_31,Spanish Agency for Data Protection,NONE,0,0.6398096079571728
+Spain_33,Spanish Agency for Data Protection,NONE,0,0.25838047919459445
+Spain_35,Spanish Data Protection Agency,NONE,0,0.27890617927038436
+Spain_34,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.898131432706299
+Spain_36,Spanish Agency for Data Protection,FINE_ONLY,3,2.5322653289447
+Spain_38,Spanish Data Protection Agency,FINE_ONLY,3,3.0127289904555075
+Spain_40,Spanish Data Protection Agency,FINE_PLUS,4,3.4818905932133424
+Spain_41,Spanish Data Protection Agency,FINE_ONLY,3,2.7200907083633443
+Spain_37,Spanish Data Protection Agency,NONE,0,0.22400985598427922
+Spain_42,Spanish Agency for Data Protection,FINE_ONLY,3,2.8511547447098584
+Spain_43,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.6427331208197065
+Spain_45,Spanish Agency for Data Protection,FINE_PLUS,4,3.603846489519641
+Spain_47,Spanish Agency for Data Protection,FINE_ONLY,3,2.861115361928726
+Spain_48,Spanish Data Protection Agency,NONE,0,0.14227851442092954
+Spain_51,Spanish Data Protection Agency,NONE,0,0.17734685470145864
+Spain_49,Spanish Data Protection Agency,FINE_ONLY,3,2.6751242931840564
+Spain_46,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.452657496306393
+Spain_52,Spanish Data Protection Agency,NONE,0,0.12184595315481284
+Spain_50,Spanish Agency for Data Protection,FINE_PLUS,4,3.5539493603165853
+Spain_53,Spanish Data Protection Agency,FINE_PLUS,4,2.911588399747101
+Spain_56,Spanish Data Protection Agency,NONE,0,0.8106631297304866
+Spain_55,Spanish Agency for Data Protection,FINE_ONLY,3,2.903264298532701
+Spain_54,Spanish Data Protection Agency,FINE_ONLY,3,2.5373039937338477
+Spain_57,Spanish Agency for Data Protection,FINE_PLUS,4,3.488693108716006
+Spain_58,Spanish Agency for Data Protection,FINE_ONLY,3,2.8530195822165645
+Spain_59,Spanish Data Protection Agency,FINE_ONLY,3,2.7262694713386546
+Spain_61,Spanish Agency for Data Protection,FINE_ONLY,3,2.863155250168338
+Spain_60,Spanish Data Protection Agency,FINE_ONLY,3,2.8988372098237662
+Spain_62,Spanish Agency for Data Protection,FINE_ONLY,3,2.736228607048085
+Spain_63,Agencia Española de Protección de Datos,FINE_ONLY,3,2.6574427966122234
+Spain_64,Spanish Data Protection Agency,FINE_PLUS,4,3.675478912884305
+Spain_65,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_66,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.3939754283115233
+Spain_67,Spanish Data Protection Agency,FINE_ONLY,3,2.9391333025610415
+Spain_69,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_71,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.8992667160428645
+Spain_70,Spanish Agency for Data Protection,NONE,0,0.41837831334691644
+Spain_68,Spanish Data Protection Agency,FINE_ONLY,3,2.8157732450032062
+Spain_73,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.913167503254837
+Spain_74,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_72,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.943648637045799
+Spain_77,Spanish Data Protection Agency,NONE,0,0.28196279342310215
+Spain_79,,NONE,0,0.0013160867221117002
+Spain_75,Spanish Data Protection Agency,FINE_ONLY,3,2.698996931559964
+Spain_81,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7410329622930365
+Spain_78,Spanish Data Protection Agency,FINE_ONLY,3,2.8288033063659395
+Spain_76,Spanish Agency for Data Protection,FINE_ONLY,3,2.8044057287661905
+Spain_82,Spanish Data Protection Agency,FINE_ONLY,3,2.8457286168931524
+Spain_80,Spanish Data Protection Agency,FINE_ONLY,3,2.252106333373938
+Spain_83,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.743340014433297
+Spain_85,Spanish Agency for Data Protection,FINE_PLUS,4,3.35322475122314
+Spain_84,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.2532810305772553
+Spain_87,Spanish Data Protection Agency,NONE,0,0.08317291284427897
+Spain_86,Spanish Data Protection Agency,FINE_PLUS,4,2.911588399747101
+Spain_88,Spanish Data Protection Agency,FINE_ONLY,3,2.6076468199366536
+Spain_91,Spanish Data Protection Agency,FINE_PLUS,4,2.957279656246336
+Spain_93,Spanish Data Protection Agency,FINE_ONLY,3,2.9291210881653873
+Spain_89,Spanish Data Protection Agency,FINE_ONLY,3,2.8333908902071863
+Spain_90,Spanish Data Protection Agency,FINE_PLUS,4,3.836999570304282
+Spain_94,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.512207734724259
+Spain_95,Spanish Data Protection Agency,NONE,0,0.12184595315481284
+Spain_92,Agencia Española de Protección de Datos,REMEDIAL_ONLY,2,2.8164999508465485
+Spain_96,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.452657496306393
+Spain_98,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.931647525280927
+Spain_99,Spanish Data Protection Agency,NONE,0,1.1967333043455304
+Spain_100,Spanish Data Protection Agency,FINE_PLUS,4,3.7388395790670415
+Spain_97,Spanish Data Protection Agency,FINE_PLUS,4,3.900223454447741
+Spain_103,Spanish Agency for Data Protection,FINE_ONLY,3,2.6313939695568593
+Spain_102,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.3988376466792882
+Spain_101,Spanish Data Protection Agency,FINE_ONLY,3,2.9389511067871177
+Spain_107,Spanish Data Protection Agency,FINE_ONLY,3,2.950070125404173
+Spain_105,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.338496008912325
+Spain_106,Spanish Agency for Data Protection,FINE_ONLY,3,2.736228607048085
+Spain_104,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_108,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.3681553495720324
+Spain_110,Spanish Data Protection Agency,FINE_ONLY,3,2.804498445040571
+Spain_111,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_109,Spanish Data Protection Agency,FINE_ONLY,3,2.1495830425626092
+Spain_112,Spanish Data Protection Agency,FINE_ONLY,3,2.419195061759736
+Spain_116,Spanish Agency for Data Protection,FINE_ONLY,3,2.7410329622930365
+Spain_117,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.4606490651342714
+Spain_115,Spanish Data Protection Agency,FINE_ONLY,3,2.996880459370612
+Spain_114,Spanish Data Protection Agency,FINE_ONLY,3,2.804498445040571
+Spain_119,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7405106596040163
+Spain_113,Spanish Agency for Data Protection,FINE_ONLY,3,2.9883373245451157
+Spain_118,Spanish Agency for Data Protection,FINE_PLUS,4,3.5539493603165853
+Spain_121,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_120,Spanish Data Protection Agency,FINE_ONLY,3,3.0210804223713397
+Spain_122,Spanish Data Protection Agency,FINE_PLUS,4,3.6014554475984872
+Spain_124,Spanish Data Protection Agency,FINE_PLUS,4,3.414552851245421
+Spain_126,Spanish Data Protection Agency,FINE_ONLY,3,2.9212443634864345
+Spain_125,Spanish Data Protection Agency,FINE_PLUS,4,3.3156365418122307
+Spain_127,Spanish Data Protection Agency,FINE_PLUS,4,2.9868953547669514
+Spain_123,Spanish Agency for Data Protection,FINE_PLUS,4,3.7224340492940513
+Spain_130,Spanish Data Protection Agency,NONE,0,0.4514243522571348
+Spain_129,Spanish Data Protection Agency,FINE_PLUS,4,2.911588399747101
+Spain_128,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_133,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.8062443963756527
+Spain_131,Spanish Data Protection Agency,FINE_ONLY,3,2.9016844007733598
+Spain_132,Spanish Agency for Data Protection,FINE_ONLY,3,2.91261718608792
+Spain_134,Spanish Data Protection Agency,FINE_ONLY,3,2.930297793226502
+Spain_137,Spanish Data Protection Agency,FINE_ONLY,3,2.612364032933523
+Spain_135,Spanish Data Protection Agency,FINE_ONLY,3,2.8595675880394467
+Spain_136,Spanish Data Protection Agency,FINE_PLUS,4,3.8056891368413517
+Spain_138,Spanish Data Protection Agency,FINE_PLUS,4,3.6270121492609855
+Spain_139,Spanish Data Protection Agency,FINE_PLUS,4,2.537031185482961
+Spain_141,Spanish Data Protection Agency,NONE,0,0.5250909882461147
+Spain_140,Spanish Data Protection Agency,FINE_PLUS,4,3.866647352793847
+Spain_142,Spanish Data Protection Agency,FINE_ONLY,3,2.911675677839712
+Spain_143,Spanish Data Protection Agency,FINE_PLUS,4,3.452657496306393
+Spain_144,Spanish Agency for Data Protection,NONE,0,0.25838047919459445
+Spain_146,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_147,Spanish Agency for Data Protection,FINE_ONLY,3,2.8669437466723156
+Spain_149,Spanish Data Protection Agency,FINE_PLUS,4,3.8982061305537674
+Spain_151,Agencia Española de Protección de Datos,FINE_PLUS,4,3.913986683622426
+Spain_150,Spanish Data Protection Agency,FINE_PLUS,4,3.5742575850286014
+Spain_152,Spanish Data Protection Agency,FINE_PLUS,4,3.7979424987667616
+Spain_154,Spanish Data Protection Agency,FINE_PLUS,4,2.7684279814451878
+Spain_153,Spanish Data Protection Agency,FINE_PLUS,4,3.9250279261207415
+Spain_155,Spanish Data Protection Agency,FINE_PLUS,4,3.6014554475984872
+Spain_156,Spanish Data Protection Agency,FINE_PLUS,4,3.4370550742151567
+Spain_158,Spanish Data Protection Agency,FINE_PLUS,4,3.145848622973819
+Spain_157,Spanish Data Protection Agency,FINE_PLUS,4,3.8614637439569877
+Spain_160,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_159,Spanish Data Protection Agency,FINE_ONLY,3,2.9003981817693067
+Spain_162,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_161,Spanish Data Protection Agency,FINE_ONLY,3,2.7788628324982687
+Spain_164,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.1917748590620025
+Spain_165,Spanish Data Protection Agency,FINE_ONLY,3,2.6751242931840564
+Spain_167,,NONE,0,0.0013160867221117002
+Spain_163,Spanish Data Protection Agency,FINE_PLUS,4,3.3220612464202963
+Spain_168,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.128965496063159
+Spain_169,Spanish Data Protection Agency,FINE_ONLY,3,2.9749082414868995
+Spain_166,Spanish Data Protection Agency,FINE_PLUS,4,3.3204636335154265
+Spain_174,Spanish Data Protection Agency,FINE_PLUS,4,3.3716738171389466
+Spain_173,Spanish Data Protection Agency,FINE_ONLY,3,2.1495830425626092
+Spain_171,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_172,Spanish Data Protection Agency,FINE_PLUS,4,3.118651115242059
+Spain_170,,NONE,0,0.0013160867221117002
+Spain_179,Spanish Agency for Data Protection,FINE_ONLY,3,2.0942065276222417
+Spain_178,Spanish Data Protection Agency,FINE_ONLY,3,2.7271729348397575
+Spain_177,Spanish Data Protection Agency,FINE_PLUS,4,3.6166029132821325
+Spain_175,Spanish Data Protection Agency,FINE_PLUS,4,3.3022834687749802
+Spain_176,Spanish Data Protection Agency,FINE_ONLY,3,2.8622638506619973
+Spain_181,Spanish Data Protection Agency,FINE_ONLY,3,2.7271729348397575
+Spain_187,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_180,Spanish Data Protection Agency,FINE_PLUS,4,3.2375715356638413
+Spain_182,Agencia Española de Protección de Datos,FINE_ONLY,3,2.891531392320901
+Spain_186,Spanish Data Protection Agency,NONE,0,0.28196279342310215
+Spain_185,Spanish Data Protection Agency,FINE_ONLY,3,3.003719562815406
+Spain_188,Spanish Data Protection Agency,FINE_ONLY,3,2.6467744426579722
+Spain_189,Spanish Data Protection Agency,FINE_PLUS,4,3.7126526459853437
+Spain_183,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.824314234147598
+Spain_190,Spanish Data Protection Agency,FINE_PLUS,4,2.8357791996042456
+Spain_191,Spanish Data Protection Agency,FINE_ONLY,3,3.0312327974296025
+Spain_194,Spanish Data Protection Agency,FINE_PLUS,4,3.074129460774098
+Spain_192,Spanish Data Protection Agency,FINE_PLUS,4,3.130108300732267
+Spain_193,Spanish Data Protection Agency,FINE_PLUS,4,3.3841809220240684
+Spain_196,Spanish Data Protection Agency,NONE,0,1.5266721912722603
+Spain_195,Spanish Data Protection Agency,FINE_ONLY,3,2.926768850869104
+Spain_200,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_199,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_197,Spanish Data Protection Agency,FINE_PLUS,4,3.8167268452308565
+Spain_198,Spanish Data Protection Agency,FINE_ONLY,3,3.0059431608701543
+Spain_202,Spanish Data Protection Agency,NONE,0,0.2595409545268566
+Spain_201,Spanish Data Protection Agency,FINE_ONLY,3,2.859807075646411
+Spain_203,Spanish Data Protection Agency,FINE_PLUS,4,2.9868953547669514
+Spain_206,Spanish Data Protection Agency,FINE_PLUS,4,2.962373823271794
+Spain_205,Spanish Data Protection Agency,FINE_ONLY,3,2.9841055876480285
+Spain_204,Spanish Data Protection Agency,FINE_PLUS,4,3.9917940544458195
+Spain_208,Spanish Data Protection Agency,FINE_PLUS,4,3.3220612464202963
+Spain_207,Spanish Data Protection Agency,FINE_PLUS,4,3.9790433412686386
+Spain_209,Spanish Data Protection Agency,FINE_PLUS,4,3.6323119077633144
+Spain_210,Spanish Data Protection Agency,FINE_PLUS,4,3.9611907622030387
+Spain_212,Spanish Data Protection Agency,FINE_PLUS,4,2.6152587543865944
+Spain_211,Spanish Data Protection Agency,FINE_PLUS,4,3.880653777576486
+Spain_214,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.790343247797755
+Spain_215,Spanish Data Protection Agency,FINE_PLUS,4,3.414552851245421
+Spain_219,Spanish Data Protection Agency,NONE,0,0.003928721199948066
+Spain_216,Spanish Data Protection Agency,FINE_PLUS,4,3.172294443035233
+Spain_217,Spanish Data Protection Agency,FINE_PLUS,4,3.505684778652418
+Spain_220,Spanish Data Protection Agency,FINE_ONLY,3,2.9407484347780155
+Spain_218,Spanish Data Protection Agency,FINE_PLUS,4,3.254627363957623
+Spain_221,Spanish Data Protection Agency,FINE_PLUS,4,3.0557946257626547
+Spain_222,Spanish Data Protection Agency,FINE_PLUS,4,3.414552851245421
+Spain_224,Spanish Data Protection Agency,FINE_PLUS,4,2.957279656246336
+Spain_225,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_228,Spanish Data Protection Agency,FINE_PLUS,4,3.452657496306393
+Spain_227,Spanish Data Protection Agency,FINE_PLUS,4,3.6152959646890896
+Spain_226,Spanish Data Protection Agency,FINE_ONLY,3,2.5614509532485803
+Spain_230,Spanish Data Protection Agency,FINE_PLUS,4,2.6736992708460185
+Spain_231,Agencia Española de Protección de Datos,FINE_ONLY,3,2.7595270874833986
+Spain_232,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_233,Spanish Data Protection Agency,FINE_PLUS,4,3.268101339983339
+Spain_235,Spanish Data Protection Agency,FINE_PLUS,4,3.9783403890886944
+Spain_237,Spanish Data Protection Agency,FINE_PLUS,4,2.9618465932366056
+Spain_240,Spanish Data Protection Agency,NONE,0,0.04491422818055865
+Spain_238,Spanish Data Protection Agency (AEPD),REMEDIAL_ONLY,2,2.831483977668892
+Spain_239,Spanish Data Protection Agency,FINE_ONLY,3,2.9991785980790686
+Spain_236,Spanish Data Protection Agency,FINE_ONLY,3,2.599195224427026
+Spain_241,Spanish Agency for Data Protection,FINE_PLUS,4,3.3939754283115233
+Spain_243,Spanish Agency for Data Protection,FINE_ONLY,3,2.7410329622930365
+Spain_242,Spanish Agency for Data Protection,FINE_ONLY,3,2.7333439548278795
+Spain_244,Spanish Data Protection Agency,NONE,0,0.5510202754434227
+Spain_245,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.9291210881653873
+Spain_247,Spanish Agency for Data Protection,FINE_ONLY,3,2.913167503254837
+Spain_246,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7591638533946847
+Spain_250,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.780441076592655
+Spain_248,Spanish Data Protection Agency,FINE_ONLY,3,2.9061788551049066
+Spain_249,Spanish Data Protection Agency,FINE_ONLY,3,2.9061788551049066
+Spain_252,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.3261008120566404
+Spain_251,Spanish Agency for Data Protection,FINE_ONLY,3,2.9038101428046583
+Spain_253,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.452657496306393
+Spain_254,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.8456573775800855
+Spain_255,Spanish Agency for Data Protection,FINE_PLUS,4,3.957970559107714
+Spain_259,Spanish Agency for Data Protection,FINE_ONLY,3,2.8918987252468584
+Spain_258,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_260,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.6943993509451802
+Spain_256,Spanish Agency for Data Protection,FINE_ONLY,3,2.9689450117967677
+Spain_261,Agencia Española de Protección de Datos,FINE_ONLY,3,2.863626583960634
+Spain_262,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.9810757213916137
+Spain_257,,NONE,0,0.0013160867221117002
+Spain_263,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_264,Spanish Agency for Data Protection,FINE_ONLY,3,2.9689450117967677
+Spain_265,Spanish Data Protection Agency,FINE_ONLY,3,2.886640458560663
+Spain_266,Spanish Data Protection Agency,FINE_ONLY,3,2.7685604354836464
+Spain_267,Spanish Data Protection Agency,FINE_PLUS,4,3.846441284282579
+Spain_269,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.3526571662496245
+Spain_270,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7855714136003407
+Spain_268,Spanish Agency for Data Protection,FINE_PLUS,4,3.106657873398407
+Spain_272,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.890941931854014
+Spain_271,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_273,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.822913842169439
+Spain_274,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7405106596040163
+Spain_275,Spanish Agency for Data Protection,FINE_ONLY,3,3.068316026015652
+Spain_276,Spanish Agency for Data Protection,FINE_ONLY,3,2.6515454493619366
+Spain_278,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.592158874218453
+Spain_280,Spanish Agency for Data Protection,NONE,0,0.7546731030043036
+Spain_281,Agencia Española de Protección de Datos,FINE_ONLY,3,2.5546411831935103
+Spain_279,Spanish Agency for Data Protection,FINE_ONLY,3,2.6677304701811875
+Spain_282,Spanish Agency for Data Protection,FINE_PLUS,4,3.1827497313226245
+Spain_277,Spanish Agency for Data Protection (AEPD),REMEDIAL_ONLY,2,2.9533179822508617
+Spain_288,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7632562835546755
+Spain_284,,NONE,0,0.0013160867221117002
+Spain_286,,NONE,0,0.0013160867221117002
+Spain_289,Agencia Española de Protección de Datos,REMEDIAL_ONLY,2,2.61049599179384
+Spain_283,Spanish Agency for Data Protection,FINE_PLUS,4,3.872239541274147
+Spain_287,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.3551693396603537
+Spain_285,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_296,Agencia Española de Protección de Datos,FINE_PLUS,4,3.6179120917115006
+Spain_290,Spanish Agency for Data Protection,FINE_ONLY,3,2.6313939695568593
+Spain_297,Agencia Española de Protección de Datos,FINE_ONLY,3,2.964674869065892
+Spain_291,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7855714136003407
+Spain_292,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_294,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7855714136003407
+Spain_293,Spanish Agency for Data Protection,FINE_PLUS,4,3.761742316225954
+Spain_295,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7507960479412086
+Spain_298,Spanish Agency for Data Protection,NONE,0,0.5189621209168472
+Spain_300,Spanish Data Protection Agency,FINE_ONLY,3,2.9781315284579173
+Spain_299,Spanish Agency for Data Protection,FINE_PLUS,4,3.1519382296626324
+Spain_303,Spanish Agency for Data Protection,FINE_ONLY,3,2.946025838532461
+Spain_301,Spanish Data Protection Agency,FINE_ONLY,3,3.0566386587631564
+Spain_302,Agencia Española de Protección de Datos,REMEDIAL_ONLY,2,2.744256347375775
+Spain_304,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.172294443035233
+Spain_305,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_309,Spanish Data Protection Agency,FINE_PLUS,4,3.4176997794250794
+Spain_306,Spanish Data Protection Agency,FINE_ONLY,3,2.1495830425626092
+Spain_312,Spanish Data Protection Agency,FINE_PLUS,4,2.990300308409946
+Spain_307,Spanish Data Protection Agency,FINE_PLUS,4,3.917800620895504
+Spain_308,Spanish Data Protection Agency,FINE_ONLY,3,2.9061788551049066
+Spain_311,Spanish Agency for Data Protection,FINE_ONLY,3,2.581908569587847
+Spain_310,STRING,NONE,0,0.2594077437729048
+Spain_313,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.7973498115677775
+Spain_314,Spanish Agency for Data Protection,FINE_ONLY,3,2.6501917496500607
+Spain_315,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_320,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.72183323978137
+Spain_318,Spanish Agency for Data Protection,FINE_PLUS,4,3.019507026564682
+Spain_317,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.681748853595789
+Spain_316,Agencia Española de Protección de Datos,FINE_ONLY,3,2.878317054540746
+Spain_319,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.824625740491095
+Spain_321,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_323,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_325,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.700074768154179
+Spain_322,Spanish Agency for Data Protection,FINE_PLUS,4,3.7973498115677775
+Spain_327,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.3939754283115233
+Spain_324,Spanish Agency for Data Protection,FINE_ONLY,3,2.598190704164562
+Spain_326,Spanish Agency for Data Protection,FINE_PLUS,4,3.6356181848922886
+Spain_328,Spanish Agency for Data Protection,FINE_ONLY,3,2.913167503254837
+Spain_329,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.913167503254837
+Spain_332,Spanish Data Protection Agency,NONE,0,1.221283094614962
+Spain_330,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.35322475122314
+Spain_331,Spanish Agency for Data Protection,NONE,0,0.08677388078838723
+Spain_334,Spanish Data Protection Agency,FINE_ONLY,3,2.9061788551049066
+Spain_335,Agencia Española de Protección de Datos,FINE_ONLY,3,2.8212711921570497
+Spain_333,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.562080705120616
+Spain_336,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.3939754283115233
+Spain_340,Agencia Española de Protección de Datos,FINE_ONLY,3,2.9324231333173456
+Spain_337,Spanish Data Protection Agency,FINE_ONLY,3,3.143159973146684
+Spain_341,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_338,Spanish Agency for Data Protection,FINE_ONLY,3,2.8775006603626156
+Spain_342,Spanish Agency for Data Protection,FINE_PLUS,4,3.8152490407448414
+Spain_343,Spanish Agency for Data Protection,FINE_PLUS,4,3.35322475122314
+Spain_344,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.8580890082304986
+Spain_345,Spanish Agency for Data Protection,NONE,0,1.4541941313430142
+Spain_346,Spanish Agency for Data Protection,FINE_ONLY,3,2.5212101932806092
+Spain_347,Spanish Agency for Data Protection,FINE_PLUS,4,2.9214651843746178
+Spain_349,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.746369518534901
+Spain_350,Spanish Agency for Data Protection,FINE_ONLY,3,2.5212101932806092
+Spain_348,Spanish Agency for Data Protection,FINE_PLUS,4,3.544911162693972
+Spain_351,Spanish Agency for Data Protection,FINE_ONLY,3,2.977536878570561
+Spain_352,Spanish Agency for Data Protection,FINE_ONLY,3,2.8729051851686416
+Spain_353,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.6973479725752614
+Spain_354,Spanish Agency for Data Protection,FINE_ONLY,3,2.7344020241520433
+Spain_355,Spanish Data Protection Agency,FINE_ONLY,3,2.9164461100880663
+Spain_357,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_356,Spanish Agency for Data Protection,FINE_ONLY,3,2.8850864345649443
+Spain_358,Spanish Agency for Data Protection,FINE_ONLY,3,2.623737117870885
+Spain_360,Spanish Data Protection Agency,FINE_PLUS,4,3.633241154266007
+Spain_359,Spanish Agency for Data Protection,FINE_ONLY,3,2.4237420643857406
+Spain_362,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_361,Spanish Agency for Data Protection,FINE_ONLY,3,2.5939899416314978
+Spain_365,STRING,NONE,0,0.00571463485416774
+Spain_364,Spanish Agency for Data Protection,FINE_PLUS,4,3.681748853595789
+Spain_363,Spanish Agency for Data Protection,FINE_ONLY,3,2.421397232044761
+Spain_367,Spanish Data Protection Agency,FINE_ONLY,3,3.0210804223713397
+Spain_366,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.535596730341128
+Spain_368,Spanish Data Protection Agency,FINE_ONLY,3,2.9061788551049066
+Spain_370,Spanish Agency for Data Protection,FINE_ONLY,3,2.641702296105704
+Spain_369,Spanish Agency for Data Protection,FINE_ONLY,3,2.6863286660057866
+Spain_371,Spanish Agency for Data Protection,FINE_ONLY,3,2.7659706967903066
+Spain_372,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.35322475122314
+Spain_373,Spanish Agency for Data Protection,FINE_ONLY,3,2.971470221626016
+Spain_375,Spanish Data Protection Agency,FINE_ONLY,3,2.8557830244465987
+Spain_374,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.8469393692489557
+Spain_376,Spanish Agency for Data Protection,FINE_ONLY,3,2.9745830835144913
+Spain_378,Spanish Agency for Data Protection,FINE_ONLY,3,2.89410287883241
+Spain_377,Spanish Agency for Data Protection,FINE_ONLY,3,2.903264298532701
+Spain_379,Spanish Data Protection Agency,NONE,0,0.3433057629750494
+Spain_381,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.714099146110846
+Spain_380,Spanish Data Protection Agency,FINE_ONLY,3,2.8356935260862093
+Spain_382,Spanish Data Protection Agency,FINE_ONLY,3,2.930297793226502
+Spain_383,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_384,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.030153699697458
+Spain_387,Spanish Data Protection Agency,FINE_ONLY,3,2.9861465685432296
+Spain_389,Spanish Data Protection Agency,FINE_ONLY,3,2.8596525847790675
+Spain_388,Spanish Agency for Data Protection,FINE_PLUS,4,3.824625740491095
+Spain_385,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_386,Spanish Agency for Data Protection,FINE_ONLY,3,2.87523941945579
+Spain_391,Spanish Agency for Data Protection,FINE_ONLY,3,2.7410329622930365
+Spain_390,Spanish Data Protection Agency,FINE_PLUS,4,3.756739974331998
+Spain_392,Spanish Agency for Data Protection,FINE_ONLY,3,2.6576222603092736
+Spain_393,Spanish Agency for Data Protection,FINE_ONLY,3,2.65898000793482
+Spain_394,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7866814543189005
+Spain_396,Spanish Agency for Data Protection,FINE_PLUS,4,3.4247547622325674
+Spain_397,Spanish Data Protection Agency,FINE_ONLY,3,2.741208586435498
+Spain_395,Spanish Agency for Data Protection,FINE_ONLY,3,2.786006615473031
+Spain_398,Spanish Data Protection Agency,FINE_ONLY,3,2.9263278744383396
+Spain_406,Agencia Española de Protección de Datos (AEPD),REMEDIAL_ONLY,2,2.392086126063747
+Spain_401,Spanish Data Protection Agency,FINE_PLUS,4,3.319813921328918
+Spain_400,Spanish Agency for Data Protection,FINE_ONLY,3,3.0288853848940667
+Spain_402,Spanish Data Protection Agency,FINE_ONLY,3,2.9874320837904396
+Spain_399,Spanish Agency for Data Protection,FINE_PLUS,4,3.8332100530213786
+Spain_405,Spanish Agency for Data Protection,FINE_PLUS,4,3.3362660302397673
+Spain_403,Spanish Agency for Data Protection,FINE_ONLY,3,2.8918987252468584
+Spain_404,Agencia Española de Protección de Datos,FINE_PLUS,4,3.9646235531418115
+Spain_408,Spanish Agency for Data Protection,FINE_ONLY,3,2.913167503254837
+Spain_410,Spanish Data Protection Agency,FINE_ONLY,3,2.743340014433297
+Spain_409,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.6901891934326634
+Spain_411,Spanish Agency for Data Protection,FINE_PLUS,4,3.881921746008719
+Spain_417,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.78553590119494
+Spain_412,Spanish Data Protection Agency,FINE_PLUS,4,3.130108300732267
+Spain_415,Spanish Agency for Data Protection,FINE_ONLY,3,2.8395932360219525
+Spain_414,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7405106596040163
+Spain_418,Spanish Data Protection Agency,REMEDIAL_ONLY,2,1.757122892050158
+Spain_416,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_419,Spanish Agency for Data Protection,FINE_ONLY,3,2.787409473003408
+Spain_421,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_420,Spanish Agency for Data Protection,FINE_PLUS,4,3.661845212071304
+Spain_422,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_423,Spanish Agency for Data Protection,FINE_ONLY,3,2.87523941945579
+Spain_424,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_426,Spanish Data Protection Agency,FINE_PLUS,4,3.398690220999876
+Spain_425,Spanish Agency for Data Protection,FINE_PLUS,4,3.744664339922068
+Spain_427,Spanish Data Protection Agency,FINE_ONLY,3,2.9291210881653873
+Spain_428,Spanish Agency for Data Protection,FINE_PLUS,4,3.5539493603165853
+Spain_429,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.5443081369421425
+Spain_430,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7790565128760285
+Spain_431,Spanish Agency for Data Protection,FINE_PLUS,4,3.35322475122314
+Spain_432,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_435,Spanish Agency for Data Protection,FINE_ONLY,3,2.659172081517894
+Spain_433,Spanish Agency for Data Protection,FINE_ONLY,3,2.641702296105704
+Spain_436,Spanish Data Protection Agency,FINE_ONLY,3,2.9016078614082996
+Spain_434,Spanish Agency for Data Protection,FINE_ONLY,3,2.5322653289447
+Spain_438,Spanish Data Protection Agency,FINE_ONLY,3,2.8191751441384456
+Spain_440,Spanish Agency for Data Protection,FINE_ONLY,3,2.9201234049445306
+Spain_437,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_441,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_439,Spanish Agency for Data Protection,FINE_ONLY,3,2.7410329622930365
+Spain_443,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.016781710135898
+Spain_442,Spanish Agency for Data Protection,FINE_PLUS,4,3.7279916972525946
+Spain_446,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.2815788498988963
+Spain_444,Agencia Española de Protección de Datos,FINE_ONLY,3,2.5873939579949523
+Spain_447,STRING,NONE,0,0.36183298890809745
+Spain_445,Spanish Data Protection Agency,FINE_ONLY,3,2.8101204018688613
+Spain_448,STRING,NONE,0,0.07156712758067517
+Spain_449,Spanish Agency for Data Protection,FINE_PLUS,4,3.6027772269941027
+Spain_451,Spanish Agency for Data Protection,FINE_ONLY,3,2.8918987252468584
+Spain_452,Spanish Agency for Data Protection,FINE_ONLY,3,2.913167503254837
+Spain_450,Spanish Agency for Data Protection,FINE_ONLY,3,2.8918987252468584
+Spain_453,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_455,Spanish Data Protection Agency,FINE_PLUS,4,2.9221588301346415
+Spain_454,Spanish Agency for Data Protection,FINE_PLUS,4,2.9687525894664257
+Spain_457,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7790565128760285
+Spain_456,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.2815788498988963
+Spain_459,Spanish Agency for Data Protection,FINE_PLUS,4,2.9268493284717265
+Spain_458,Spanish Agency for Data Protection,FINE_ONLY,3,1.6987769322129402
+Spain_461,Spanish Agency for Data Protection,FINE_ONLY,3,2.8542047444082885
+Spain_466,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.3939754283115233
+Spain_467,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.192654900990243
+Spain_463,Spanish Data Protection Agency,NONE,0,0.6179066594291592
+Spain_462,Spanish Agency for Data Protection,FINE_ONLY,3,2.948801503076247
+Spain_460,Spanish Agency for Data Protection,FINE_ONLY,3,2.9038101428046583
+Spain_464,Spanish Agency for Data Protection,FINE_ONLY,3,2.886320977322451
+Spain_465,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_469,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7199713265391
+Spain_471,Spanish Data Protection Agency,NONE,0,0.7296239926129388
+Spain_470,Spanish Agency for Data Protection,FINE_PLUS,4,2.8469393692489557
+Spain_468,Spanish Data Protection Agency,FINE_ONLY,3,3.01921582772973
+Spain_479,Spanish Agency for Data Protection,FINE_ONLY,3,2.964535604068858
+Spain_472,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7430163954296365
+Spain_473,Spanish Agency for Data Protection,FINE_ONLY,3,2.7855714136003407
+Spain_476,Spanish Data Protection Agency,NONE,0,0.20757600940485754
+Spain_474,Spanish Agency for Data Protection,FINE_PLUS,4,3.272771396909206
+Spain_475,STRING,NONE,0,0.08912600577046471
+Spain_477,,NONE,0,0.0013160867221117002
+Spain_478,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.414929350887518
+Spain_480,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7405106596040163
+Spain_482,Agencia Española de Protección de Datos,FINE_ONLY,3,2.297174209842474
+Spain_481,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_484,Spanish Agency for Data Protection,FINE_PLUS,4,3.7224340492940513
+Spain_485,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.7855714136003407
+Spain_487,Spanish Agency for Data Protection,FINE_ONLY,3,2.786006615473031
+Spain_483,Spanish Agency for Data Protection,FINE_ONLY,3,2.9038101428046583
+Spain_486,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_490,Spanish Agency for Data Protection,FINE_ONLY,3,2.3560754208332977
+Spain_488,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.715670769393552
+Spain_489,STRING,NONE,0,0.2594077437729048
+Spain_492,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_491,Spanish Data Protection Agency,FINE_ONLY,3,3.2058026146773377
+Spain_493,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.924559836614256
+Spain_494,Spanish Data Protection Agency,FINE_ONLY,3,2.8191751441384456
+Spain_496,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.6585838606580854
+Spain_495,Spanish Data Protection Agency,FINE_ONLY,3,2.930297793226502
+Spain_497,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_498,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.71025896765913
+Spain_499,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.9418307871752254
+Spain_501,Spanish Agency for Data Protection,FINE_PLUS,4,2.998727470602491
+Spain_500,Spanish Data Protection Agency,FINE_PLUS,4,3.8727086243284687
+Spain_503,Spanish Data Protection Agency,FINE_PLUS,4,3.6766345631461985
+Spain_506,Spanish Data Protection Agency,FINE_ONLY,3,2.7685604354836464
+Spain_502,Spanish Agency for Data Protection,FINE_PLUS,4,3.8124036481890715
+Spain_504,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7661876979664575
+Spain_505,Spanish Agency for Data Protection,FINE_PLUS,4,3.096790779001732
+Spain_509,Spanish Data Protection Agency,FINE_ONLY,3,2.7804334524281518
+Spain_507,Spanish Agency for Data Protection,FINE_ONLY,3,2.921695927636509
+Spain_508,Spanish Agency of Data Protection,FINE_PLUS,4,3.4653252931173757
+Spain_510,Spanish Data Protection Agency,FINE_ONLY,3,2.9580725983705674
+Spain_511,Spanish Agency for Data Protection,FINE_ONLY,3,2.9038101428046583
+Spain_514,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.441694771129163
+Spain_512,STRING,NONE,0,0.36183298890809745
+Spain_513,Spanish Agency for Data Protection,FINE_ONLY,3,2.96276966022113
+Spain_515,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.35322475122314
+Spain_516,Spanish Agency for Data Protection,FINE_PLUS,4,2.998727470602491
+Spain_522,Spanish Agency for Data Protection,FINE_ONLY,3,1.9223153482715925
+Spain_517,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_518,Spanish Agency for Data Protection,FINE_ONLY,3,2.8862886587791796
+Spain_519,Spanish Data Protection Agency,FINE_ONLY,3,2.8517886529474725
+Spain_524,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_525,Spanish Data Protection Agency,NONE,0,0.3870233778672996
+Spain_521,Spanish Agency for Data Protection,FINE_PLUS,4,3.774142299190358
+Spain_520,Spanish Agency for Data Protection,FINE_ONLY,3,2.943071660326618
+Spain_523,Spanish Data Protection Agency,FINE_ONLY,3,2.767740893616897
+Spain_531,NOT_DISCUSSED,NONE,0,0.04244360654526324
+Spain_526,Spanish Data Protection Agency,FINE_PLUS,4,3.6014554475984872
+Spain_528,STRING,NONE,0,0.2594077437729048
+Spain_527,Agencia Española de Protección de Datos,FINE_ONLY,3,2.856887555664399
+Spain_536,Spanish Data Protection Agency,FINE_ONLY,3,2.80643467566883
+Spain_532,Spanish Agency for Data Protection,NONE,0,0.3558469310152538
+Spain_529,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.736228607048085
+Spain_533,Spanish Agency for Data Protection,FINE_ONLY,3,2.990558888277334
+Spain_530,Spanish Data Protection Agency,FINE_ONLY,3,2.6754008031204846
+Spain_534,Spanish Agency for Data Protection,FINE_PLUS,4,2.606824632913417
+Spain_535,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_537,Spanish Agency for Data Protection,NONE,0,0.5717269031386513
+Spain_539,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.6366608459316296
+Spain_541,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.4577425873618557
+Spain_542,Spanish Agency for Data Protection,FINE_ONLY,3,2.7636450067530953
+Spain_544,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_543,Spanish Agency for Data Protection,FINE_PLUS,4,3.3939754283115233
+Spain_540,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.6794921290683114
+Spain_545,Spanish Data Protection Agency,FINE_PLUS,4,3.9802328691785442
+Spain_546,Spanish Data Protection Agency,FINE_ONLY,3,2.8117328069045215
+Spain_547,Spanish Data Protection Agency,FINE_ONLY,3,2.8134018641350966
+Spain_549,Spanish Agency for Data Protection,FINE_PLUS,4,3.8775468902090027
+Spain_551,Spanish Agency for Data Protection,FINE_ONLY,3,2.9507138004717115
+Spain_550,Spanish Agency for Data Protection,FINE_PLUS,4,3.3939754283115233
+Spain_552,Spanish Agency for Data Protection,FINE_ONLY,3,3.0401691019552377
+Spain_558,Spanish Agency for Data Protection,FINE_PLUS,4,3.804621387772634
+Spain_553,Spanish Agency for Data Protection,FINE_ONLY,3,2.764420800777334
+Spain_554,Spanish Agency for Data Protection,FINE_ONLY,3,2.659172081517894
+Spain_555,Spanish Agency for Data Protection,FINE_ONLY,3,2.377809025737112
+Spain_556,Spanish Agency for Data Protection,FINE_PLUS,4,3.2559750540510897
+Spain_559,Spanish Agency for Data Protection,FINE_PLUS,4,2.711674504529771
+Spain_557,Spanish Agency for Data Protection,FINE_ONLY,3,2.780888129456965
+Spain_562,Spanish Agency for Data Protection,FINE_ONLY,3,2.913167503254837
+Spain_561,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_563,Spanish Agency for Data Protection,FINE_ONLY,3,2.6515454493619366
+Spain_560,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,3.7321647210852
+Spain_564,Spanish Agency for Data Protection,FINE_PLUS,4,3.4032466639403793
+Spain_565,Spanish Agency for Data Protection,FINE_ONLY,3,2.9038101428046583
+Spain_568,Spanish Agency for Data Protection,FINE_ONLY,3,2.8646429636387207
+Spain_566,Spanish Data Protection Agency,FINE_ONLY,3,2.9477619193726916
+Spain_567,Spanish Agency for Data Protection,FINE_PLUS,4,3.890630597695359
+Spain_575,Spanish Data Protection Agency,FINE_ONLY,3,3.0486627507136497
+Spain_572,NOT_DISCUSSED,NONE,0,0.00416602679389599
+Spain_570,Spanish Agency for Data Protection,FINE_ONLY,3,2.7405106596040163
+Spain_569,Spanish Agency for Data Protection,FINE_ONLY,3,2.882048963981042
+Spain_571,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7685604354836464
+Spain_573,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.8697051289566082
+Spain_574,Spanish Agency for Data Protection,FINE_ONLY,3,2.89410287883241
+Spain_578,Spanish Data Protection Agency,NONE,0,0.2595409545268566
+Spain_576,Spanish Data Protection Agency,FINE_PLUS,4,2.957279656246336
+Spain_581,Spanish Data Protection Agency,FINE_PLUS,4,3.8587327536774776
+Spain_577,Spanish Data Protection Agency,FINE_PLUS,4,3.6978622374265866
+Spain_582,Spanish Data Protection Agency,FINE_PLUS,4,3.529381151919054
+Spain_580,Spanish Data Protection Agency (AEPD),REMEDIAL_ONLY,2,2.798614738690727
+Spain_579,Spanish Data Protection Agency,FINE_ONLY,3,2.847394934184518
+Spain_583,Spanish Data Protection Agency,FINE_ONLY,3,2.7271729348397575
+Spain_584,Agencia Española de Protección de Datos,NONE,0,0.48201518642644153
+Spain_586,STRING,NONE,0,0.005803968154740998
+Spain_590,Spanish Data Protection Agency,NONE,0,0.07873129518048222
+Spain_585,Spanish Data Protection Agency,REMEDIAL_ONLY,2,3.611457727828095
+Spain_587,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.5573629860787563
+Spain_588,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.8334481925562427
+Spain_589,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.2568166730589163
+Spain_591,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.4603388092663434
+Spain_592,Agencia Española de Protección de Datos,REMEDIAL_ONLY,2,2.480355324728931
+Spain_593,Agencia Española de Protección de Datos,NONE,0,0.3033000753172782
+Spain_595,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.685338294743189
+Spain_596,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.337097700378411
+Spain_597,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.4545447780074037
+Spain_594,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.393876653715693
+Spain_598,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.3549018183437345
+Spain_599,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.4119218751430127
+Spain_600,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.4015544554206496
+Spain_605,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.5223592037273157
+Spain_603,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.035091384374313
+Spain_601,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.4545447780074037
+Spain_602,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.0141856094462813
+Spain_608,,NONE,0,0.0013160867221117002
+Spain_609,,NONE,0,0.0013160867221117002
+Spain_604,Spanish Data Protection Agency,NONE,0,0.19853956364029252
+Spain_606,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.8347934851610246
+Spain_607,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7797141388952293
+Spain_611,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.7502395759073224
+Spain_612,Agencia Española de Protección de Datos,NONE,0,0.5266022953808382
+Spain_610,Spanish Data Protection Agency,NONE,0,0.6191755979645492
+Spain_615,Catalan Data Protection Authority,NONE,0,0.18975750762771376
+Spain_614,Spanish Data Protection Agency,REMEDIAL_ONLY,2,2.6849365378371752
+Spain_613,Spanish Agency for Data Protection,REMEDIAL_ONLY,2,2.5279937677184168
+Spain_616,Spanish Data Protection Agency,FINE_PLUS,4,2.911588399747101
+Spain_617,Catalan Data Protection Authority (APDCAT),NONE,0,0.012784800376719536
+Spain_619,Catalan Data Protection Agency (APDCAT),NONE,0,0.01141900763686917
+Spain_621,Catalan Data Protection Authority,REMEDIAL_ONLY,2,2.1377323643617787
+Spain_620,Catalan Data Protection Authority,REMEDIAL_ONLY,2,2.1748926981541628
+Spain_624,Catalan Data Protection Authority,REMEDIAL_ONLY,2,2.658107877198632
+Spain_630,Basque Agency for the Protection of Data,NONE,0,0.023426037660712974
+Spain_625,Catalan Data Protection Authority,REMEDIAL_ONLY,2,2.1751631752843745
+Spain_618,Agència de Protecció de Dades de Catalunya,FINE_PLUS,4,3.9507323803201455
+Spain_631,Basque Agency for Data Protection,NONE,0,0.013301248244908343
+Spain_623,STRING,NONE,0,0.005803968154740998
+Slovenia_1,Information Commissioner,REMEDIAL_ONLY,2,2.0136052037032623
+Slovenia_3,Information Commissioner,REMEDIAL_ONLY,2,2.1521012503981924
+Spain_627,Catalan Data Protection Authority,REMEDIAL_ONLY,2,2.12148165416734
+Spain_626,Catalan Data Protection Authority,FINE_ONLY,3,2.230964651003993
+Spain_628,Council for Transparency and Protection of Data of Andalusia,REMEDIAL_ONLY,2,2.288056541527601
+Spain_629,Transparency and Data Protection Council of Andalusia,REMEDIAL_ONLY,2,2.6813844723247273
+Slovenia_4,Information Commissioner,NONE,0,0.01960349354824757
+Slovenia_5,Information Commissioner,REMEDIAL_ONLY,2,2.0030301788133285
+Slovenia_8,Information Commissioner of the Republic of Slovenia,NONE,0,0.013550050525929436
+Slovenia_6,Informacijski pooblaščenec,NONE,0,0.056201782458575225
+Slovenia_9,Information Commissioner of the Republic of Slovenia,NONE,0,0.010747299162158297
+Slovenia_7,Information Commissioner of the Republic of Slovenia,NONE,0,0.0076368969470674885
+Slovenia_10,Information Commissioner of the Republic of Slovenia,NONE,0,0.05931232844220556
+Slovenia_12,Information Commissioner,NONE,0,0.011553162097364216
+Slovenia_11,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_14,Information Commissioner of the Republic of Slovenia,NONE,0,0.016236211228462152
+Slovenia_18,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_13,Information Commissioner,NONE,0,0.01809227100851727
+Slovenia_16,Information Commissioner,NONE,0,0.02688352063317244
+Slovenia_15,Information Commissioner (IP),NONE,0,0.017000565949690252
+Slovenia_17,Information Commissioner (IP),NONE,0,0.014095339645156453
+Slovenia_19,Information Commissioner of the Republic of Slovenia,NONE,0,0.03725523302353942
+Slovenia_21,Information Commissioner,NONE,0,0.01230261644991935
+Slovenia_20,Information Commissioner,NONE,0,0.01505701258787542
+Slovenia_24,Information Commissioner,NONE,0,0.013497520909185854
+Slovenia_23,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_25,Information Commissioner,NONE,0,0.010973960054461784
+Slovenia_22,Information Commissioner (Slovenia),NONE,0,0.035231697669823266
+Slovenia_26,Information Commissioner,NONE,0,0.048366804357800136
+Slovenia_34,Information Commissioner of the Republic of Slovenia,NONE,0,1.108499865847362
+Slovenia_27,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_28,Information Commissioner of the Republic of Slovenia,NONE,0,0.008529419836397921
+Slovenia_29,Information Commissioner (Slovenia),NONE,0,0.04519979893628477
+Slovenia_30,Information Commissioner,NONE,0,0.016217229014547606
+Slovenia_31,Information Commissioner,NONE,0,0.021654073618573216
+Slovenia_32,Information Commissioner of the Republic of Slovenia,NONE,0,0.016236211228462152
+Slovenia_33,Information Commissioner of the Republic of Slovenia,NONE,0,0.008813661233617487
+Slovenia_35,Information Commissioner,REMEDIAL_ONLY,2,1.1221239828180642
+Slovenia_36,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_37,Information Commissioner,NONE,0,0.01505701258787542
+Slovenia_38,Information Commissioner,NONE,0,0.02688352063317244
+Slovenia_40,,NONE,0,0.0013160867221117002
+Slovenia_41,Informacijski pooblaščenec (Information Commissioner),NONE,0,0.056069106167334265
+Slovenia_39,Information Commissioner,NONE,0,0.01103560197953608
+Slovenia_42,Information Commissioner,NONE,0,0.018757403234282002
+Slovenia_43,Information Commissioner (Slovenia),REMEDIAL_ONLY,2,2.097599092282945
+Slovenia_44,Information Commissioner (IP),NONE,0,0.009118918301401515
+Slovenia_45,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_46,Information Commissioner (Slovenia),NONE,0,0.05078625513928494
+Slovenia_47,Information Commissioner (Slovenia),NONE,0,0.022318027944088395
+Slovenia_50,Informacijski pooblaščenec (IP),REMEDIAL_ONLY,2,3.55008835349252
+Slovenia_48,Information Commissioner of the Republic of Slovenia,NONE,0,0.016236211228462152
+Slovenia_51,Information Commissioner,NONE,0,0.043238518191178785
+Slovenia_55,Information Commissioner,NONE,0,0.4640581118686025
+Slovenia_56,Information Commissioner,NONE,0,0.003869719154024399
+Slovenia_53,Information Commissioner,NONE,0,0.13638153513111506
+Slovenia_54,Information Commissioner (Slovenia),FINE_PLUS,4,3.9771556989657744
+Slovenia_52,,NONE,0,0.0013160867221117002
+Slovenia_57,Information Commissioner,REMEDIAL_ONLY,2,1.7571716483834818
+Slovenia_58,Information Commissioner of Slovenia,FINE_ONLY,3,2.929752988740053
+Slovenia_59,STRING,NONE,0,0.004276048516719744
+Slovenia_61,Information Commissioner,FINE_ONLY,3,1.7571716483834818
+Slovenia_62,Information Commissioner,REMEDIAL_ONLY,2,1.7571716483834818
+Slovenia_63,Information Commissioner of the Republic of Slovenia,NONE,0,0.6121445102498029
+Slovenia_65,Information Commissioner,REMEDIAL_ONLY,2,1.994671811630709
+Slovenia_64,Information Commissioner,REMEDIAL_ONLY,2,2.1114410138009077
+Slovenia_60,,NONE,0,0.0013160867221117002
+Slovenia_66,Information Commissioner,REMEDIAL_ONLY,2,2.255504513434225
+Slovenia_67,Information Commissioner,REMEDIAL_ONLY,2,2.006149782823504
+Slovenia_68,Information Commissioner,NONE,0,0.0237376386592929
+Slovenia_69,Information Commissioner (Slovenia),NONE,0,0.24604019262738225
+Slovenia_72,Information Commissioner,REMEDIAL_ONLY,2,1.8270290564841571
+Slovenia_73,Informacijski pooblaščenec (Information Commissioner),NONE,0,0.26111047461978976
+Slovenia_74,Information Commissioner (Slovenia),REMEDIAL_ONLY,2,2.0649372056517583
+Slovenia_75,Information Commissioner,NONE,0,0.012409153469973216
+Slovenia_76,NOT_DISCUSSED,NONE,0,0.00416602679389599
+Slovakia_1,Office for the Protection of Personal Data of the Slovak Republic,REMEDIAL_ONLY,2,2.153506920031405
+Slovenia_77,Information Commissioner,REMEDIAL_ONLY,2,1.8287505584550074
+Romania_1,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.944157033359089
+Slovenia_78,Information Commissioner of the Republic of Slovenia,REMEDIAL_ONLY,2,2.0047056269050545
+Romania_2,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.6232120009528135
+Romania_4,National Supervisory Authority,FINE_ONLY,3,3.096623525206507
+Romania_3,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9904163682365934
+Romania_5,National Supervisory Authority for Personal Data Processing,FINE_ONLY,3,3.004140914310799
+Romania_6,A.N.S.P.D.C.P.,FINE_ONLY,3,3.004895696648101
+Romania_7,STRING,FINE_ONLY,3,2.391973974202901
+Romania_9,The National Supervisory Authority,FINE_PLUS,4,3.969168511363632
+Romania_11,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),FINE_PLUS,4,3.987078962258387
+Romania_10,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.976831699689966
+Romania_13,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,FINE_PLUS,4,3.9773859930552202
+Romania_12,National Supervisory Authority,FINE_ONLY,3,3.150605187648064
+Romania_14,National Supervisory Authority,FINE_ONLY,3,3.100800608524724
+Romania_8,,NONE,0,0.0013160867221117002
+Romania_15,National Supervisory Authority,FINE_PLUS,4,3.7510359959267867
+Romania_16,STRING,FINE_PLUS,4,2.630128374053709
+Romania_17,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9221766964936857
+Romania_20,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.8711950568923004
+Romania_19,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9892869277880636
+Romania_18,National Supervisory Authority,FINE_PLUS,4,3.994274502363327
+Romania_21,STRING,FINE_ONLY,3,2.970473732085984
+Romania_24,National Supervisory Authority,FINE_PLUS,4,3.988010721605874
+Romania_22,,NONE,0,0.0013160867221117002
+Romania_26,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.7662854917015887
+Romania_25,A.N.S.P.D.C.P.,FINE_PLUS,4,3.9722531956251923
+Romania_23,,NONE,0,0.0013160867221117002
+Romania_28,A.N.S.P.D.C.P.,FINE_PLUS,4,3.973842199551616
+Romania_29,National Supervisory Authority,FINE_PLUS,4,3.662832889053055
+Romania_27,STRING,FINE_ONLY,3,2.875762810235843
+Romania_30,The National Supervisory Authority,FINE_PLUS,4,3.9863931689946366
+Romania_34,National Supervisory Authority for Personal Data Processing,FINE_ONLY,3,3.1194199845556456
+Romania_33,National Supervisory Authority,FINE_PLUS,4,3.8329741716043584
+Romania_36,National Supervisory Authority,FINE_ONLY,3,2.9825670680050727
+Romania_32,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),FINE_PLUS,4,3.9157422083955504
+Romania_31,National Supervisory Authority,FINE_PLUS,4,3.999024004281189
+Romania_37,National Supervisory Authority,FINE_ONLY,3,2.9821658505695243
+Romania_38,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.972216361947789
+Romania_35,,NONE,0,0.0013160867221117002
+Romania_43,National Supervisory Authority,FINE_ONLY,3,3.150605187648064
+Romania_40,STRING,FINE_PLUS,4,2.344778416328885
+Romania_42,National Supervisory Authority,FINE_PLUS,4,3.9895579681690694
+Romania_41,A.N.S.P.D.C.P,FINE_PLUS,4,3.93010229163077
+Romania_45,A.N.S.P.D.C.P.,FINE_ONLY,3,2.983219411256397
+Romania_39,,NONE,0,0.0013160867221117002
+Romania_48,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.978551756279216
+Romania_49,National Supervisory Authority for the Processing of Personal Data,FINE_ONLY,3,2.99380626785318
+Romania_47,A.N.S.P.D.C.P.,FINE_PLUS,4,3.9628646391727327
+Romania_44,,NONE,0,0.0013160867221117002
+Romania_50,National Supervisory Authority,FINE_ONLY,3,3.062663482301831
+Romania_46,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9706845519609346
+Romania_52,The National Supervisory Authority for Personal Data Processing,FINE_ONLY,3,3.0327006262298166
+Romania_51,National Supervisory Authority,FINE_PLUS,4,3.9272587530350793
+Romania_53,A.N.S.P.D.C.P.,FINE_ONLY,3,2.993417478351246
+Romania_54,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.961537322063546
+Romania_57,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,FINE_PLUS,4,3.995872147187233
+Romania_56,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),FINE_PLUS,4,3.8071341426695335
+Romania_58,National Supervisory Authority,FINE_PLUS,4,3.9817008715358813
+Romania_59,National Supervisory Authority,FINE_ONLY,3,3.0534007530219482
+Romania_60,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.4342069815858673
+Romania_61,A.N.S.P.D.C.P.,FINE_ONLY,3,3.1342057302548656
+Romania_55,,NONE,0,0.0013160867221117002
+Romania_62,A.N.S.P.D.C.P,FINE_PLUS,4,3.7047915912123957
+Romania_63,National Supervisory Authority,FINE_PLUS,4,3.908772290909927
+Romania_65,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,FINE_PLUS,4,3.9978821980199033
+Romania_67,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9974314536385283
+Romania_68,National Supervisory Authority,FINE_PLUS,4,3.9849374617746784
+Romania_69,National Supervisory Authority,FINE_PLUS,4,3.9607102086434853
+Romania_70,National Supervisory Authority,FINE_PLUS,4,3.998130930006173
+Romania_64,,NONE,0,0.0013160867221117002
+Romania_72,National Supervisory Authority,FINE_PLUS,4,3.9094272922640596
+Romania_66,,NONE,0,0.0013160867221117002
+Romania_71,A.N.S.P.D.C.P.,FINE_PLUS,4,3.6788240533827503
+Romania_74,The National Supervisory Authority,FINE_PLUS,4,3.880325081533749
+Romania_73,National Supervisory Authority,FINE_PLUS,4,3.9725367486734027
+Romania_79,National Supervisory Authority,FINE_PLUS,4,3.966314819723801
+Romania_77,A.N.S.P.D.C.P.,FINE_PLUS,4,3.982081242423925
+Romania_76,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.984798630245048
+Romania_78,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9884578331202274
+Romania_80,A.N.S.P.D.C.P.,FINE_PLUS,4,3.341112954931736
+Romania_75,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9695218670533365
+Romania_82,STRING,FINE_ONLY,3,2.2144695268034438
+Romania_81,A.N.S.P.D.C.P.,FINE_ONLY,3,3.080105470165539
+Romania_84,National Supervisory Authority,FINE_PLUS,4,3.666904613002579
+Romania_87,National DPA,FINE_ONLY,3,2.7594267775679158
+Romania_86,A.N.S.P.D.C.P,FINE_PLUS,4,3.9332390319971973
+Romania_85,STRING,FINE_PLUS,4,2.6627177681483993
+Romania_92,National Supervisory Authority,FINE_PLUS,4,3.7761086102081576
+Romania_83,,NONE,0,0.0013160867221117002
+Romania_88,,NONE,0,0.0013160867221117002
+Romania_91,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.996931747538742
+Romania_89,,NONE,0,0.0013160867221117002
+Romania_93,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.94656580846814
+Romania_94,A.N.S.P.D.C.P,FINE_PLUS,4,3.948935640121283
+Romania_90,,NONE,0,0.0013160867221117002
+Romania_96,STRING,FINE_PLUS,4,2.502722051884247
+Romania_95,STRING,FINE_ONLY,3,2.538133378989244
+Romania_100,A.N.S.P.D.C.P.,FINE_ONLY,3,2.983219411256397
+Romania_99,Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),FINE_ONLY,3,3.0432326111552435
+Romania_102,The National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9442674072595563
+Romania_97,,NONE,0,0.0013160867221117002
+Romania_101,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.998741304504403
+Romania_98,ANSPDCP,FINE_PLUS,4,3.918651198986769
+Romania_103,National Supervisory Authority,FINE_ONLY,3,2.9731179337886977
+Romania_107,National Authority,FINE_PLUS,4,3.2848295670978715
+Romania_108,A.N.S.P.D.C.P.,FINE_PLUS,4,3.935050014640455
+Romania_110,National Supervisory Authority,FINE_PLUS,4,3.886942219905259
+Romania_109,STRING,FINE_PLUS,4,3.3898675075056985
+Romania_104,,NONE,0,0.0013160867221117002
+Romania_105,,NONE,0,0.0013160867221117002
+Romania_106,,NONE,0,0.0013160867221117002
+Romania_113,A.N.S.P.D.C.P,FINE_ONLY,3,3.1205560120390303
+Romania_112,National Supervisory Authority,REMEDIAL_ONLY,2,3.9698583343586873
+Romania_111,,NONE,0,0.0013160867221117002
+Romania_116,National Supervisory Authority,FINE_PLUS,4,3.662832889053055
+Romania_114,A.N.S.P.D.C.P.,FINE_PLUS,4,3.86569298134524
+Romania_117,The National Supervisory Authority,FINE_PLUS,4,3.988785033899199
+Romania_115,,NONE,0,0.0013160867221117002
+Romania_121,National Supervisory Authority,FINE_PLUS,4,3.9226657327793237
+Romania_120,National Supervisory Authority for Personal Data Processing,REMEDIAL_ONLY,2,3.8942855969726153
+Romania_119,National Supervisory Authority for the Processing of Personal Data,FINE_PLUS,4,3.9638923838755726
+Romania_118,,NONE,0,0.0013160867221117002
+Romania_122,National Supervisory Authority,FINE_PLUS,4,3.7939064121423596
+Romania_123,National Supervisory Authority,FINE_PLUS,4,3.998335338428972
+Romania_125,STRING,FINE_ONLY,3,2.851006248236067
+Romania_124,A.N.S.P.D.C.P.,FINE_PLUS,4,3.9491832547338506
+Romania_127,National Supervisory Authority,FINE_ONLY,3,3.096623525206507
+Romania_128,STRING,FINE_ONLY,3,2.867091812945552
+Romania_126,ANSPDCP,FINE_ONLY,3,3.015407310915982
+Romania_130,STRING,FINE_ONLY,3,2.391973974202901
+Romania_131,The National Supervisory Authority for Personal Data Processing,REMEDIAL_ONLY,2,3.9194218112637302
+Romania_129,A.N.S.P.D.C.P.,FINE_PLUS,4,3.6825550465541586
+Romania_132,A.N.S.P.D.C.P,FINE_PLUS,4,3.991932538244973
+Romania_134,A.N.S.P.D.C.P.,FINE_ONLY,3,3.0206682563827254
+Romania_133,National Authority for the Supervision of Personal Data Processing,REMEDIAL_ONLY,2,2.9127474816247316
+Romania_135,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.926456727567218
+Romania_138,STRING,FINE_ONLY,3,2.732361188434482
+Romania_136,A.N.S.P.D.C.P,FINE_PLUS,4,3.661992779328372
+Romania_137,STRING,FINE_PLUS,4,3.34135764043981
+Romania_139,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9582230644357246
+Romania_142,STRING,FINE_PLUS,4,3.5529847170437034
+Romania_143,STRING,FINE_ONLY,3,1.9081362605666166
+Romania_141,STRING The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.999999725458834
+Romania_140,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9897267748447303
+Romania_145,STRING National Supervisory Authority,FINE_PLUS,4,3.9999987553812852
+Romania_144,National Supervisory Authority,FINE_PLUS,4,3.597519071543454
+Romania_146,National Supervisory Authority,FINE_PLUS,4,3.932977385511142
+Romania_148,A.N.S.P.D.C.P.,FINE_ONLY,3,3.0061563615767493
+Romania_153,National Supervisory Authority for Personal Data Processing,FINE_ONLY,3,3.1483647809160797
+Romania_150,Romanian Supervisory Authority,FINE_PLUS,4,3.4654137329573698
+Romania_156,National Supervisory Authority,FINE_PLUS,4,3.8470578832473206
+Romania_151,The National Supervisory Authority,FINE_PLUS,4,3.593620012100869
+Romania_152,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.775719414819702
+Romania_147,,NONE,0,0.0013160867221117002
+Romania_154,STRING,FINE_PLUS,4,2.5344434594801375
+Romania_149,,NONE,0,0.0013160867221117002
+Romania_158,A.N.S.P.D.C.P.,FINE_PLUS,4,3.9798225755027454
+Romania_159,STRING,FINE_PLUS,4,3.6696412481988467
+Romania_157,STRING,FINE_PLUS,4,2.7470634078587124
+Romania_155,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9502770949424426
+Romania_161,A.N.S.P.D.C.P,FINE_ONLY,3,3.0125442217412344
+Romania_162,National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.573815283942525
+Romania_163,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.9695039591712145
+Romania_165,STRING,FINE_PLUS,4,3.810561179789189
+Romania_160,,NONE,0,0.0013160867221117002
+Romania_167,STRING,FINE_PLUS,4,2.870966561478672
+Romania_164,A.N.S.P.D.C.P.,FINE_PLUS,4,3.7914196582536155
+Romania_166,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.7725958034681573
+Romania_170,STRING,FINE_PLUS,4,2.428434706278391
+Romania_171,A.N.S.P.D.C.P,FINE_ONLY,3,3.0696394581808573
+Romania_168,,NONE,0,0.0013160867221117002
+Romania_173,,NONE,0,0.0013160867221117002
+Romania_174,National Supervisory Authority,REMEDIAL_ONLY,2,3.472989893849788
+Romania_169,,NONE,0,0.0013160867221117002
+Romania_175,National Supervisory Authority,REMEDIAL_ONLY,2,3.3320336138742257
+Romania_172,National Supervisory Authority,FINE_PLUS,4,3.9533082679748115
+Romania_176,The National Supervisory Authority for Personal Data Processing,FINE_PLUS,4,3.634942671624832
+Portugal_11,National Commission for Data Protection (CNPD),FINE_ONLY,3,2.601390162142256
+Portugal_1,Comissão Nacional de Proteção de Dados,FINE_ONLY,3,2.9175749108494347
+Romania_177,A.N.S.P.D.C.P,FINE_PLUS,4,3.9514465358164585
+Portugal_3,Comissão Nacional de Proteção de Dados,FINE_ONLY,3,2.805108313590159
+Portugal_5,Comissão Nacional de Proteção de Dados,FINE_ONLY,3,2.8206795258504225
+Portugal_10,Comissão Nacional de Proteção de Dados,FINE_PLUS,4,2.357516575900213
+Poland_1,President of the Office for Personal Data Protection,FINE_ONLY,3,3.0686713869052227
+Portugal_4,Comissão Nacional de Proteção de Dados (CNPD),FINE_ONLY,3,2.884744072533103
+Poland_4,President of the Office for the Protection of Personal Data,FINE_ONLY,3,2.8439269370945306
+Poland_5,President of the Office for Personal Data Protection,FINE_ONLY,3,2.0145665004799618
+Portugal_12,Comissão Nacional de Proteção de Dados,REMEDIAL_ONLY,2,2.2246118959381365
+Portugal_13,Comissão Nacional de Proteção de Dados,REMEDIAL_ONLY,2,2.7081701354936563
+Poland_8,President of the Office for Personal Data Protection,FINE_ONLY,3,2.7115800895566053
+Poland_3,President of the Office for Personal Data Protection,FINE_ONLY,3,2.700311074178828
+Poland_2,President of the Personal Data Protection Office,NONE,0,1.9596368086313671
+Poland_7,President of the Office for Personal Data Protection,FINE_ONLY,3,2.4817564242496366
+Poland_11,,NONE,0,0.0013160867221117002
+Poland_9,President of the Personal Data Protection Office,FINE_ONLY,3,2.858570434255799
+Poland_10,President of the Office for Personal Data Protection,REMEDIAL_ONLY,2,2.6634489956959957
+Poland_6,President of the Office for Personal Data Protection,FINE_ONLY,3,2.95768909763343
+Poland_13,President of the Personal Data Protection Office (UODO),FINE_ONLY,3,3.119982709184261
+Poland_12,President of the Office for Personal Data Protection,FINE_ONLY,3,2.8115390561960347
+Poland_14,President of the Personal Data Protection Office,FINE_PLUS,4,2.0752482990039582
+Poland_15,President of the Personal Data Protection Office,REMEDIAL_ONLY,2,3.4431453249642248
+Poland_16,President of the Office for Personal Data Protection,FINE_ONLY,3,2.953590525055212
+Poland_19,President of the Office for Personal Data Protection,REMEDIAL_ONLY,2,2.816112963763135
+Poland_18,President of the Personal Data Protection Office (UODO),FINE_PLUS,4,3.9222048165137724
+Poland_17,President of the Office for Personal Data Protection,FINE_ONLY,3,2.9284166166367327
+Poland_20,President of the Personal Data Protection Office,FINE_PLUS,4,2.9584747857189484
+Poland_21,President of the Personal Data Protection Office,FINE_ONLY,3,2.8160342844236457
+Poland_24,President of the Personal Data Protection Office,FINE_ONLY,3,2.985543663936918
+Poland_22,President of the Personal Data Protection Office (UODO),FINE_PLUS,4,3.802474343513408

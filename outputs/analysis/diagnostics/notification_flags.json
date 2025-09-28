@@ -1,0 +1,32 @@
+{
+  "art33_required_flag": {
+    "0": 816,
+    "1": 127,
+    "NA": 56
+  },
+  "art33_submitted_flag": {
+    "0": 846,
+    "1": 97,
+    "NA": 56
+  },
+  "art33_timely_flag": {
+    "0": 914,
+    "NA": 57,
+    "1": 28
+  },
+  "art33_late_flag": {
+    "0": 931,
+    "NA": 57,
+    "1": 11
+  },
+  "art34_required_flag": {
+    "0": 896,
+    "NA": 60,
+    "1": 43
+  },
+  "subjects_notified_flag": {
+    "0": 900,
+    "NA": 58,
+    "1": 41
+  }
+}

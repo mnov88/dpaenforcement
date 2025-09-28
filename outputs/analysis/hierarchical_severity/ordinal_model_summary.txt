@@ -1,0 +1,88 @@
+Ordinal logit severity model
+Sample size: 999
+Features: 67
+
+                             OrderedModel Results                             
+==============================================================================
+Dep. Variable:          severity_rank   Log-Likelihood:                -756.75
+Model:                   OrderedModel   AIC:                             1654.
+Method:            Maximum Likelihood   BIC:                             1997.
+Date:                Sun, 28 Sep 2025                                         
+Time:                        12:27:17                                         
+No. Observations:                 999                                         
+Df Residuals:                     929                                         
+Df Model:                          67                                         
+=======================================================================================================================================
+                                                                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------
+art33_required_flag                                                    -0.0558        nan        nan        nan         nan         nan
+art33_submitted_flag                                                   -0.0079        nan        nan        nan         nan         nan
+art33_timely_flag                                                      -0.0904        nan        nan        nan         nan         nan
+art34_required_flag                                                     0.0175        nan        nan        nan         nan         nan
+subjects_notified_flag                                                  0.7731        nan        nan        nan         nan         nan
+breach_case                                                            -0.4407        nan        nan        nan         nan         nan
+n_principles_discussed                                                 -0.1257        nan        nan        nan         nan         nan
+n_principles_violated                                                   0.8127        nan        nan        nan         nan         nan
+n_corrective_measures                                                   1.6916        nan        nan        nan         nan         nan
+q10_org_class_count                                                     0.3307        nan        nan        nan         nan         nan
+q10_org_class_any                                                      -2.4102        nan        nan        nan         nan         nan
+q21_breach_types_count                                                 -0.0441        nan        nan        nan         nan         nan
+q21_breach_types_any                                                    9.5739        nan        nan        nan         nan         nan
+q28_mitigations_count                                                   0.0732        nan        nan        nan         nan         nan
+q28_mitigations_any                                                    -0.8924        nan        nan        nan         nan         nan
+q46_vuln_count                                                         -0.9298        nan        nan        nan         nan         nan
+q46_vuln_any                                                            2.3806        nan        nan        nan         nan         nan
+q47_remedial_count                                                     -0.0082        nan        nan        nan         nan         nan
+q47_remedial_any                                                        0.9753        nan        nan        nan         nan         nan
+dpa_A.N.S.P.D.C.P.                                                     -0.8585        nan        nan        nan         nan         nan
+dpa_Agencia Española de Protección de Datos                             0.2506        nan        nan        nan         nan         nan
+dpa_Information Commissioner                                            3.5228        nan        nan        nan         nan         nan
+dpa_Information Commissioner (Slovenia)                                 1.3983        nan        nan        nan         nan         nan
+dpa_Information Commissioner of the Republic of Slovenia                3.4743        nan        nan        nan         nan         nan
+dpa_Information Commissioner's Office                                   2.1505        nan        nan        nan         nan         nan
+dpa_Integritetsskyddsmyndigheten (IMY)                                 -0.8084        nan        nan        nan         nan         nan
+dpa_National Supervisory Authority                                     -1.5135        nan        nan        nan         nan         nan
+dpa_National Supervisory Authority for Personal Data Processing        -1.6415        nan        nan        nan         nan         nan
+dpa_OTHER                                                               0.0549        nan        nan        nan         nan         nan
+dpa_President of the Office for Personal Data Protection                0.3122        nan        nan        nan         nan         nan
+dpa_STRING                                                              3.0320        nan        nan        nan         nan         nan
+dpa_Spanish Agency for Data Protection                                 -0.4356        nan        nan        nan         nan         nan
+dpa_Spanish Data Protection Agency                                     -0.3596        nan        nan        nan         nan         nan
+dpa_The National Supervisory Authority for Personal Data Processing    -1.6344        nan        nan        nan         nan         nan
+country_group_NON_EEA                                                  -2.0835        nan        nan        nan         nan         nan
+country_group_UNKNOWN                                                  -4.4937        nan        nan        nan         nan         nan
+isic_section_D                                                         -0.7834        nan        nan        nan         nan         nan
+isic_section_E                                                         -7.7892        nan        nan        nan         nan         nan
+isic_section_F                                                          0.0407        nan        nan        nan         nan         nan
+isic_section_G                                                         -0.8840        nan        nan        nan         nan         nan
+isic_section_H                                                          0.0774        nan        nan        nan         nan         nan
+isic_section_I                                                         -1.2027        nan        nan        nan         nan         nan
+isic_section_J                                                         -1.2076        nan        nan        nan         nan         nan
+isic_section_K                                                         -1.0737        nan        nan        nan         nan         nan
+isic_section_L                                                         -0.6922        nan        nan        nan         nan         nan
+isic_section_M                                                         -1.6126        nan        nan        nan         nan         nan
+isic_section_N                                                         -2.0459        nan        nan        nan         nan         nan
+isic_section_O                                                         -3.4290        nan        nan        nan         nan         nan
+isic_section_P                                                         -1.8500        nan        nan        nan         nan         nan
+isic_section_Q                                                         -2.1020        nan        nan        nan         nan         nan
+isic_section_R                                                         -0.6551        nan        nan        nan         nan         nan
+isic_section_S                                                         -2.4745        nan        nan        nan         nan         nan
+isic_section_UNKNOWN                                                   -1.8293        nan        nan        nan         nan         nan
+dpa_severity_shrinkage                                                  2.9810        nan        nan        nan         nan         nan
+dpa_case_count                                                          0.0022        nan        nan        nan         nan         nan
+rights_discussed_pc1                                                   -0.2599        nan        nan        nan         nan         nan
+rights_discussed_pc2                                                   -0.6404        nan        nan        nan         nan         nan
+rights_discussed_pc3                                                    0.5179        nan        nan        nan         nan         nan
+rights_violated_pc1                                                     0.4488        nan        nan        nan         nan         nan
+rights_violated_pc2                                                     0.5879        nan        nan        nan         nan         nan
+rights_violated_pc3                                                     1.0635        nan        nan        nan         nan         nan
+access_issues_pc1                                                      -0.7151        nan        nan        nan         nan         nan
+access_issues_pc2                                                       0.2580        nan        nan        nan         nan         nan
+access_issues_pc3                                                       0.4565        nan        nan        nan         nan         nan
+adm_issues_pc1                                                         -0.3322        nan        nan        nan         nan         nan
+adm_issues_pc2                                                         -2.5285        nan        nan        nan         nan         nan
+adm_issues_pc3                                                         -3.1204        nan        nan        nan         nan         nan
+0/2                                                                    15.0294        nan        nan        nan         nan         nan
+2/3                                                                     0.9017        nan        nan        nan         nan         nan
+3/4                                                                     1.0653        nan        nan        nan         nan         nan
+=======================================================================================================================================

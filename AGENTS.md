@@ -33,3 +33,4 @@
 ## Data Handling Notes
 - Never overwrite files in `raw-data/` or `analyzed-decisions/`; create derived data under `outputs/`.
 - Document new configuration knobs inside `scripts/README.md` and keep `config.yaml` defaults conservative.
+- Preserve `phase3completed.patch` as the audit trail for the phase-three notification estimator outputs; regenerate it via `git diff` after rerunning the pipeline so reviewers can inspect binary artifacts.

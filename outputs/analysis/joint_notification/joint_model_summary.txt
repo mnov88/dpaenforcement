@@ -1,0 +1,132 @@
+Notification timeliness propensity model (logit)
+                           Logit Regression Results                           
+==============================================================================
+Dep. Variable:      art33_timely_flag   No. Observations:                  101
+Model:                          Logit   Df Residuals:                       65
+Method:                           MLE   Df Model:                           35
+Date:                Sun, 28 Sep 2025   Pseudo R-squ.:                  0.6176
+Time:                        12:27:33   Log-Likelihood:                -21.611
+converged:                      False   LL-Null:                       -56.520
+Covariance Type:            nonrobust   LLR p-value:                 0.0004221
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                     -0.4144        nan        nan        nan         nan         nan
+n_principles_discussed    -0.8034        nan        nan        nan         nan         nan
+n_principles_violated      0.6925        nan        nan        nan         nan         nan
+n_corrective_measures     -1.0115        nan        nan        nan         nan         nan
+breach_case                2.5267        nan        nan        nan         nan         nan
+dpa_severity_shrinkage    -2.5948        nan        nan        nan         nan         nan
+dpa_case_count             0.0040        nan        nan        nan         nan         nan
+q10_org_class_count        0.3362        nan        nan        nan         nan         nan
+q10_org_class_any         -0.4144        nan        nan        nan         nan         nan
+q21_breach_types_count     2.4993        nan        nan        nan         nan         nan
+q21_breach_types_any      -0.4144        nan        nan        nan         nan         nan
+q28_mitigations_count      0.2647        nan        nan        nan         nan         nan
+q28_mitigations_any        2.2427        nan        nan        nan         nan         nan
+q46_vuln_count            -2.4946        nan        nan        nan         nan         nan
+q46_vuln_any              -0.4144        nan        nan        nan         nan         nan
+q47_remedial_count         0.7110        nan        nan        nan         nan         nan
+q47_remedial_any          -0.1504        nan        nan        nan         nan         nan
+rights_discussed_pc1       5.0430        nan        nan        nan         nan         nan
+rights_discussed_pc2      -5.8772        nan        nan        nan         nan         nan
+rights_discussed_pc3      -0.1622        nan        nan        nan         nan         nan
+rights_violated_pc1       -4.4339        nan        nan        nan         nan         nan
+rights_violated_pc2        9.5485        nan        nan        nan         nan         nan
+rights_violated_pc3        2.5756        nan        nan        nan         nan         nan
+access_issues_pc1         -4.3055        nan        nan        nan         nan         nan
+access_issues_pc2         -1.0526        nan        nan        nan         nan         nan
+access_issues_pc3         -0.1985        nan        nan        nan         nan         nan
+adm_issues_pc1             0.0225        nan        nan        nan         nan         nan
+adm_issues_pc2             0.0006        nan        nan        nan         nan         nan
+adm_issues_pc3          1.308e-05        nan        nan        nan         nan         nan
+country_group_NON_EEA     -4.6704        nan        nan        nan         nan         nan
+isic_section_G            -3.5734        nan        nan        nan         nan         nan
+isic_section_H            -0.3114        nan        nan        nan         nan         nan
+isic_section_I             1.3306        nan        nan        nan         nan         nan
+isic_section_J            -2.8900        nan        nan        nan         nan         nan
+isic_section_K            -9.7778        nan        nan        nan         nan         nan
+isic_section_L             5.1027        nan        nan        nan         nan         nan
+isic_section_M             6.8991        nan        nan        nan         nan         nan
+isic_section_O             3.0296        nan        nan        nan         nan         nan
+isic_section_P            -5.8612        nan        nan        nan         nan         nan
+isic_section_Q            -1.7436        nan        nan        nan         nan         nan
+isic_section_R             2.5670        nan        nan        nan         nan         nan
+isic_section_S             2.4698        nan        nan        nan         nan         nan
+isic_section_UNKNOWN      -0.5353        nan        nan        nan         nan         nan
+==========================================================================================
+
+Possibly complete quasi-separation: A fraction 0.25 of observations can be
+perfectly predicted. This might indicate that there is complete
+quasi-separation. In this case some parameters will not be identified.
+
+Sanction magnitude model (OLS with treatment)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             fine_log1p   R-squared:                       0.534
+Model:                            OLS   Adj. R-squared:                  0.272
+Method:                 Least Squares   F-statistic:                     2.039
+Date:                Sun, 28 Sep 2025   Prob (F-statistic):            0.00639
+Time:                        12:27:33   Log-Likelihood:                -268.81
+No. Observations:                 101   AIC:                             611.6
+Df Residuals:                      64   BIC:                             708.4
+Df Model:                          36                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                      3.5362      1.918      1.843      0.070      -0.296       7.369
+n_principles_discussed    -0.3674      1.996     -0.184      0.855      -4.354       3.620
+n_principles_violated      1.7582      1.787      0.984      0.329      -1.811       5.328
+n_corrective_measures      0.3712      0.506      0.734      0.466      -0.639       1.382
+breach_case               -2.5252      1.901     -1.328      0.189      -6.323       1.273
+dpa_severity_shrinkage     1.8099      0.971      1.864      0.067      -0.130       3.750
+dpa_case_count            -0.0136      0.005     -2.500      0.015      -0.025      -0.003
+q10_org_class_count        0.4159      0.588      0.707      0.482      -0.758       1.590
+q10_org_class_any          3.5362      1.918      1.843      0.070      -0.296       7.369
+q21_breach_types_count    -0.6494      1.108     -0.586      0.560      -2.864       1.565
+q21_breach_types_any       3.5362      1.918      1.843      0.070      -0.296       7.369
+q28_mitigations_count      0.2127      0.882      0.241      0.810      -1.550       1.975
+q28_mitigations_any       -5.3067      3.570     -1.486      0.142     -12.439       1.826
+q46_vuln_count            -4.3352      2.413     -1.796      0.077      -9.157       0.486
+q46_vuln_any               3.5362      1.918      1.843      0.070      -0.296       7.369
+q47_remedial_count         1.7364      0.919      1.890      0.063      -0.099       3.572
+q47_remedial_any           2.4618      4.750      0.518      0.606      -7.028      11.952
+rights_discussed_pc1       2.7574      2.292      1.203      0.233      -1.821       7.336
+rights_discussed_pc2      -3.6842      2.662     -1.384      0.171      -9.001       1.633
+rights_discussed_pc3      -8.3971      5.552     -1.512      0.135     -19.488       2.694
+rights_violated_pc1        0.3199      1.787      0.179      0.858      -3.250       3.890
+rights_violated_pc2        2.7417      3.648      0.752      0.455      -4.546      10.029
+rights_violated_pc3        2.4075      6.585      0.366      0.716     -10.748      15.563
+access_issues_pc1          6.4295      4.766      1.349      0.182      -3.091      15.950
+access_issues_pc2          8.9482      5.817      1.538      0.129      -2.673      20.570
+access_issues_pc3          6.5352      5.206      1.255      0.214      -3.865      16.936
+adm_issues_pc1            -0.1923      0.104     -1.843      0.070      -0.401       0.016
+adm_issues_pc2            -0.0053      0.003     -1.843      0.070      -0.011       0.000
+adm_issues_pc3            -0.0001   6.06e-05     -1.843      0.070      -0.000    9.35e-06
+country_group_NON_EEA     -3.4492      1.984     -1.739      0.087      -7.413       0.514
+isic_section_G            -4.3139      5.258     -0.820      0.415     -14.818       6.190
+isic_section_H            -6.4135      6.527     -0.983      0.329     -19.453       6.626
+isic_section_I            -1.5784      5.902     -0.267      0.790     -13.369      10.212
+isic_section_J            -2.0126      5.296     -0.380      0.705     -12.593       8.568
+isic_section_K            -5.5599      5.382     -1.033      0.305     -16.311       5.191
+isic_section_L            -6.3868      5.572     -1.146      0.256     -17.518       4.744
+isic_section_M            -0.0588      6.648     -0.009      0.993     -13.340      13.222
+isic_section_O            -7.4869      4.904     -1.527      0.132     -17.285       2.311
+isic_section_P            -2.6300      5.653     -0.465      0.643     -13.923       8.663
+isic_section_Q           -11.7527      5.764     -2.039      0.046     -23.268      -0.237
+isic_section_R            -9.5468      6.757     -1.413      0.163     -23.045       3.951
+isic_section_S           -13.1441      6.334     -2.075      0.042     -25.798      -0.490
+isic_section_UNKNOWN      -5.7015      4.789     -1.191      0.238     -15.268       3.865
+art33_timely_flag          0.1633      1.456      0.112      0.911      -2.745       3.071
+==============================================================================
+Omnibus:                        9.070   Durbin-Watson:                   2.306
+Prob(Omnibus):                  0.011   Jarque-Bera (JB):               16.302
+Skew:                          -0.279   Prob(JB):                     0.000288
+Kurtosis:                       4.887   Cond. No.                     3.85e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.49e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

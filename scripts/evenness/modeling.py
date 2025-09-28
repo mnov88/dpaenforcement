@@ -10,9 +10,21 @@ import statsmodels.formula.api as smf
 
 
 def _fit_with_cov_type(model, cluster_col: str | None, data: pd.DataFrame, **fit_kwargs):
-    if cluster_col:
-        return model.fit(cov_type="cluster", cov_kwds={"groups": data[cluster_col]}, **fit_kwargs)
-    return model.fit(**fit_kwargs)
+    if not cluster_col:
+        return model.fit(**fit_kwargs)
+
+    model_data = getattr(model, "data", None)
+    if model_data is not None and getattr(model_data, "row_labels", None) is not None:
+        try:
+            groups_series = data[cluster_col].reindex(model_data.row_labels)
+        except Exception:
+            groups_series = model_data.frame[cluster_col]
+    else:
+        groups_series = data[cluster_col]
+    groups = np.asarray(pd.Series(groups_series).fillna("missing_cluster"))
+    if len(groups) != getattr(model.exog, "shape", (len(groups),))[0]:
+        groups = groups[: getattr(model.exog, "shape", (len(groups),))[0]]
+    return model.fit(cov_type="cluster", cov_kwds={"groups": groups}, **fit_kwargs)
 
 
 def fit_logistic(

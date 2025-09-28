@@ -23,6 +23,7 @@ from .config import (
 from .decomposition import run_oaxaca_blinder
 from .interaction import interaction_scan
 from .robustness import run_robustness_suite
+from .predictive import gradient_boosting_diagnostics
 
 
 @dataclass
@@ -36,6 +37,7 @@ class PhaseThreeOutputs:
     policy_estimates: pd.DataFrame
     rd_placebos: pd.DataFrame
     robustness_summary: pd.DataFrame
+    shap_attributions: pd.DataFrame
     randomization_inference: pd.DataFrame
     insights_report: Path
     playbook: Path
@@ -62,6 +64,8 @@ def _fact_columns(df: pd.DataFrame) -> list[str]:
         "Q46_SIGNATURE_",
         "Q47_SIGNATURE_",
         "REMEDY_ONLY_CASE_",
+        "q36_summary_emb_",
+        "q52_summary_emb_",
     )
     columns: list[str] = []
     for col in df.columns:
@@ -91,9 +95,7 @@ def _driver_terms(df: pd.DataFrame) -> list[str]:
         "q47_remedial_",
         "q21_breach_types_",
         "BREACH_CASE_",
-        "CASE_ORIGIN_",
         "ORGANIZATION_SIZE_TIER_",
-        "ORGANIZATION_TYPE_",
     )
     candidates = set(LENIENCY_RANDOM_SLOPE_DRIVERS)
     for col in df.columns:
@@ -105,8 +107,13 @@ def _driver_terms(df: pd.DataFrame) -> list[str]:
     return sorted(candidates)
 
 
+def _quote_term(term: str) -> str:
+    escaped = term.replace("\\", "\\\\").replace('"', "\\\"")
+    return f'Q("{escaped}")'
+
+
 def _build_formula(outcome: str, fact_terms: Sequence[str]) -> str:
-    terms = list(fact_terms)
+    terms = [_quote_term(term) for term in fact_terms]
     terms.append("C(country_code)")
     terms.append("C(dpa_name_canonical)")
     rhs = "1"
@@ -424,11 +431,17 @@ def _randomization_inference(
     cem_twins: pd.DataFrame,
     facts: pd.DataFrame,
     outcome: str,
-    n_permutations: int = 200,
+    n_permutations: int = 10,
 ) -> dict[str, float] | None:
     if cem_twins.empty or outcome not in facts.columns:
         return None
     merged = cem_twins.merge(facts[["decision_id", "country_code", outcome]], on="decision_id", how="left")
+    if "country_code_y" in merged.columns:
+        merged["country_code"] = merged["country_code_y"].fillna(merged.get("country_code_x"))
+        merged = merged.drop(columns=[c for c in ("country_code_x", "country_code_y") if c in merged.columns])
+    elif "country_code_x" in merged.columns and "country_code" not in merged.columns:
+        merged["country_code"] = merged["country_code_x"]
+        merged = merged.drop(columns=["country_code_x"])
     merged = merged.dropna(subset=[outcome, "country_code"])
     if merged.empty:
         return None
@@ -523,6 +536,7 @@ def _render_insights(
     decompositions: pd.DataFrame,
     policy_estimates: pd.DataFrame,
     robustness_summary: pd.DataFrame,
+    shap_summary: pd.DataFrame,
     randomization: pd.DataFrame,
     path: Path,
 ) -> None:
@@ -530,6 +544,8 @@ def _render_insights(
         "# Phase 3 – Explanation & Policy Synthesis",
         "## Driver Attribution",
         _to_markdown(driver_leaderboard),
+        "\n## Predictive SHAP Attributions",
+        _to_markdown(shap_summary),
         "\n## Gap Decomposition",
         _to_markdown(decompositions),
         "\n## Policy Lever Estimates",
@@ -604,26 +620,88 @@ def run_phase_three(
     outcome: str = "fine_log1p",
     decomposition_outcomes: Sequence[str] | None = None,
     policy_outcomes: Sequence[str] | None = None,
+    randomization_permutations: int = 10,
 ) -> PhaseThreeOutputs:
     paths = paths or EvennessPaths()
     paths.ensure()
 
     facts = pd.read_parquet(paths.x_full)
     fact_terms = _fact_columns(facts)
+    model_ready = facts.copy()
+    for term in fact_terms:
+        if term in model_ready.columns:
+            model_ready[term] = (
+                pd.to_numeric(model_ready[term], errors="coerce").fillna(0.0).astype(float)
+            )
+    if outcome in model_ready.columns:
+        model_ready[outcome] = pd.to_numeric(model_ready[outcome], errors="coerce")
+    if "country_code" in model_ready.columns:
+        model_ready["country_code"] = model_ready["country_code"].astype(str)
+    if "dpa_name_canonical" in model_ready.columns:
+        model_ready["dpa_name_canonical"] = model_ready["dpa_name_canonical"].astype(str)
+
+    shap_summary = pd.DataFrame()
+    shap_top_terms: set[str] = set()
+    try:
+        shap_features = model_ready[fact_terms]
+        shap_outcome = pd.to_numeric(model_ready[outcome], errors="coerce") if outcome in model_ready else pd.to_numeric(facts[outcome], errors="coerce")
+        shap_data = shap_features.copy()
+        shap_data[outcome] = shap_outcome
+        shap_data = shap_data.dropna(subset=[outcome])
+        if not shap_data.empty and (
+            outcome != "fine_positive" or shap_data[outcome].nunique() > 1
+        ):
+            shap_payload = gradient_boosting_diagnostics(
+                shap_data,
+                outcome=outcome,
+                feature_cols=list(shap_features.columns),
+                classification=outcome == "fine_positive",
+            )
+            shap_summary = shap_payload.get("shap_summary", pd.DataFrame())
+            shap_top_terms = set(shap_summary["feature"].head(15))
+    except Exception:
+        shap_summary = pd.DataFrame()
+    _write_dataframe(shap_summary, paths.shap_summary_csv)
+
     driver_terms = _driver_terms(facts)
+    if shap_top_terms:
+        prioritized = [
+            term
+            for term in driver_terms
+            if term in shap_top_terms
+            or term in LENIENCY_RANDOM_SLOPE_DRIVERS
+        ]
+        if prioritized:
+            driver_terms = prioritized
+    driver_terms = [term for term in driver_terms if term in fact_terms]
+
+    analysis_terms = list(fact_terms)
+    if shap_top_terms:
+        filtered = [term for term in fact_terms if term in shap_top_terms]
+        if filtered:
+            analysis_terms = filtered
+    required_terms = [
+        term for term in ("n_principles_violated", "n_corrective_measures") if term in fact_terms
+    ]
+    analysis_terms = sorted(dict.fromkeys(list(analysis_terms) + required_terms))
+
     decomposition_outcomes = decomposition_outcomes or ("fine_log1p", "enforcement_severity_index")
     policy_outcomes = policy_outcomes or ("fine_positive", "fine_log1p")
 
-    base_formula = _build_formula(outcome, fact_terms)
+    base_formula = _build_formula(outcome, analysis_terms)
+    interaction_data = model_ready
+    if len(interaction_data) > 1200:
+        interaction_data = interaction_data.sample(n=1200, random_state=42)
+
     country_interactions = interaction_scan(
-        facts,
+        interaction_data,
         outcome=outcome,
         base_formula=base_formula,
         interaction_terms=driver_terms,
         group_field="country_code",
     )
     dpa_interactions = interaction_scan(
-        facts,
+        interaction_data,
         outcome=outcome,
         base_formula=base_formula,
         interaction_terms=driver_terms,
@@ -636,19 +714,23 @@ def run_phase_three(
     _write_dataframe(dpa_interactions, paths.interaction_dpa_csv)
     _write_dataframe(driver_leaderboard, paths.driver_leaderboard_csv)
 
-    weight_col = "country_year_weight" if "country_year_weight" in facts.columns else None
+    weight_col = None
+    for candidate in ("country_year_weight", "country_year_weight_orig"):
+        if candidate in facts.columns:
+            weight_col = candidate
+            break
     decomposition_frames: list[pd.DataFrame] = []
     for group_a, group_b in _top_country_pairs(facts):
         for target_outcome in decomposition_outcomes:
             if target_outcome not in facts.columns:
                 continue
             frame = run_oaxaca_blinder(
-                facts,
+                model_ready,
                 outcome=target_outcome,
                 group_col="country_code",
                 group_a=group_a,
                 group_b=group_b,
-                features=fact_terms,
+                features=analysis_terms,
                 weight_col=weight_col,
             )
             if not frame.empty:
@@ -659,36 +741,47 @@ def run_phase_three(
     _write_dataframe(decompositions, paths.decomposition_summary_csv)
 
     timing_effects, placebo_checks = estimate_timing_effect(facts, policy_outcomes)
-    notification_effects = estimate_notification_effect(facts, policy_outcomes, fact_terms)
-    policy_estimates = pd.concat(
-        [frame for frame in (timing_effects, notification_effects) if not frame.empty],
-        ignore_index=True,
-    )
+    notification_effects = estimate_notification_effect(model_ready, policy_outcomes, analysis_terms)
+    policy_frames = [frame for frame in (timing_effects, notification_effects) if not frame.empty]
+    policy_estimates = pd.concat(policy_frames, ignore_index=True) if policy_frames else pd.DataFrame()
     _write_dataframe(policy_estimates, paths.policy_estimates_csv)
     _write_dataframe(placebo_checks, paths.policy_placebo_csv)
 
     cem_twins = pd.read_parquet(paths.twins_cem)
     randomization_records: list[dict[str, float]] = []
     for target_outcome in policy_outcomes:
-        result = _randomization_inference(cem_twins, facts, target_outcome)
+        result = _randomization_inference(
+            cem_twins,
+            facts,
+            target_outcome,
+            n_permutations=randomization_permutations,
+        )
         if result:
             randomization_records.append(result)
     randomization_df = pd.DataFrame(randomization_records)
     _write_dataframe(randomization_df, paths.randomization_csv)
 
     robustness_payload = run_robustness_suite(
-        facts,
+        model_ready,
         ROBUSTNESS_SCENARIOS,
-        _build_formula("fine_positive", fact_terms),
-        _build_formula("fine_log1p", fact_terms),
-        fact_terms,
+        _build_formula("fine_positive", analysis_terms),
+        _build_formula("fine_log1p", analysis_terms),
+        analysis_terms,
     )
     robustness_summary = _summarise_robustness(robustness_payload)
     _write_dataframe(robustness_summary, paths.robustness_summary_csv)
 
     _plot_policy_effects(policy_estimates, paths.policy_plot)
 
-    _render_insights(driver_leaderboard, decompositions, policy_estimates, robustness_summary, randomization_df, paths.insights_report)
+    _render_insights(
+        driver_leaderboard,
+        decompositions,
+        policy_estimates,
+        robustness_summary,
+        shap_summary,
+        randomization_df,
+        paths.insights_report,
+    )
     _render_playbook(driver_leaderboard, policy_estimates, robustness_summary, paths.playbook_report)
     _capture_environment(paths.environment_snapshot)
 
@@ -700,6 +793,7 @@ def run_phase_three(
         policy_estimates=policy_estimates,
         rd_placebos=placebo_checks,
         robustness_summary=robustness_summary,
+        shap_attributions=shap_summary,
         randomization_inference=randomization_df,
         insights_report=paths.insights_report,
         playbook=paths.playbook_report,

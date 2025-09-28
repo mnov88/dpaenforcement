@@ -45,7 +45,6 @@ def gradient_boosting_diagnostics(
         metrics = {"rmse": float(np.sqrt(mean_squared_error(y_test, y_pred)))}
     explainer = shap.TreeExplainer(model)
     shap_values = explainer.shap_values(X_test)
-    interaction_values = explainer.shap_interaction_values(X_test)
     mean_abs_shap = np.mean(np.abs(shap_values), axis=0)
     shap_summary = (
         pd.DataFrame({"feature": X_test.columns, "mean_abs_shap": mean_abs_shap})
@@ -56,7 +55,7 @@ def gradient_boosting_diagnostics(
         "model": model,
         "metrics": metrics,
         "shap_values": shap_values,
-        "interaction_values": interaction_values,
+        "interaction_values": None,
         "shap_summary": shap_summary,
     }
 

@@ -8,6 +8,13 @@ from typing import Sequence
 import numpy as np
 import pandas as pd
 
+try:
+    from sklearn.decomposition import TruncatedSVD
+    from sklearn.feature_extraction.text import TfidfVectorizer
+except ImportError:  # pragma: no cover - optional dependency in tests
+    TruncatedSVD = None
+    TfidfVectorizer = None
+
 from .config import FACTS_CONFIG, EvennessPaths, required_fact_columns
 
 # Use timezone-aware UTC datetime to avoid tz-naive vs tz-aware arithmetic issues
@@ -18,6 +25,38 @@ def _ensure_datetime(series: pd.Series) -> pd.Series:
     if pd.api.types.is_datetime64_any_dtype(series):
         return series
     return pd.to_datetime(series, errors="coerce", utc=True)
+
+
+def _compute_text_embeddings(
+    df: pd.DataFrame,
+    text_col: str,
+    prefix: str,
+    n_components: int = 12,
+) -> pd.DataFrame:
+    """Generate low-dimensional embeddings for narrative text fields."""
+
+    if TfidfVectorizer is None or TruncatedSVD is None:
+        return pd.DataFrame(index=df.index)
+    if text_col not in df:
+        return pd.DataFrame(index=df.index)
+
+    texts = df[text_col].fillna("").astype(str).str.strip()
+    if texts.eq("").all():
+        return pd.DataFrame(index=df.index)
+
+    vectorizer = TfidfVectorizer(max_features=5000, ngram_range=(1, 2))
+    try:
+        tfidf = vectorizer.fit_transform(texts)
+    except ValueError:
+        return pd.DataFrame(index=df.index)
+    if tfidf.shape[1] == 0:
+        return pd.DataFrame(index=df.index)
+
+    n_components = max(1, min(n_components, tfidf.shape[1]))
+    reducer = TruncatedSVD(n_components=n_components, random_state=0)
+    reduced = reducer.fit_transform(tfidf)
+    columns = [f"{prefix}_emb_{i:02d}" for i in range(reduced.shape[1])]
+    return pd.DataFrame(reduced, columns=columns, index=df.index)
 
 
 def load_wide_dataset(path: Path | str | None = None, columns: Sequence[str] | None = None) -> pd.DataFrame:
@@ -155,11 +194,17 @@ def build_fact_matrix(path: Path | str | None = None, discussed_only: bool = Fal
 
     # Derive decision year/quarter if missing
     if "decision_date" in df.columns and df["decision_date"].notna().any():
+        anchor = pd.Timestamp(_GDPR_START)
         if pd.api.types.is_datetime64tz_dtype(df["decision_date"]):
-            df["decision_date"] = df["decision_date"].dt.tz_convert("UTC").dt.tz_localize(None)
+            df["decision_date"] = df["decision_date"].dt.tz_convert("UTC")
+            anchor = anchor.tz_convert("UTC")
+            df["days_since_gdpr"] = (df["decision_date"] - anchor).dt.days
+            df["decision_date"] = df["decision_date"].dt.tz_localize(None)
+        else:
+            anchor = anchor.tz_localize(None)
+            df["days_since_gdpr"] = (df["decision_date"] - anchor).dt.days
         df["decision_year"] = df["decision_year"].fillna(df["decision_date"].dt.year)
         df["decision_quarter"] = df["decision_quarter"].fillna(df["decision_date"].dt.quarter)
-        df["days_since_gdpr"] = (df["decision_date"] - _GDPR_START).dt.days
     else:
         df["days_since_gdpr"] = np.nan
 
@@ -173,6 +218,11 @@ def build_fact_matrix(path: Path | str | None = None, discussed_only: bool = Fal
     df["organization_size_tier"] = _derive_primary_category(df, "q10_org_class", "raw_q10")
     df["organization_type"] = _normalise_categorical(df.get("raw_q8"), df.index)
     df["case_origin"] = _normalise_categorical(df.get("raw_q15"), df.index)
+
+    for text_col, prefix in (("q36_text", "q36_summary"), ("q52_text", "q52_summary")):
+        embeddings = _compute_text_embeddings(df, text_col, prefix)
+        if not embeddings.empty:
+            df = pd.concat([df, embeddings], axis=1)
 
     df["decision_year_bucket"] = pd.cut(
         df["decision_year"].fillna(-1),

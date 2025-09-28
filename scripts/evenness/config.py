@@ -49,6 +49,7 @@ class EvennessPaths:
     policy_placebo_csv: Path = Path("outputs/evenness/phase_three/policy/rd_placebos.csv")
     policy_plot: Path = Path("outputs/evenness/phase_three/policy/lever_effects.png")
     robustness_summary_csv: Path = Path("outputs/evenness/phase_three/robustness_summary.csv")
+    shap_summary_csv: Path = Path("outputs/evenness/phase_three/shap_attributions.csv")
     randomization_csv: Path = Path("outputs/evenness/phase_three/randomization_inference.csv")
     insights_report: Path = Path("outputs/evenness/phase_three/insights_report.md")
     playbook_report: Path = Path("outputs/evenness/phase_three/playbook.md")
@@ -93,6 +94,7 @@ class EvennessPaths:
             self.policy_placebo_csv,
             self.policy_plot,
             self.robustness_summary_csv,
+            self.shap_summary_csv,
             self.randomization_csv,
             self.insights_report,
             self.playbook_report,

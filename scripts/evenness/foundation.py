@@ -271,6 +271,13 @@ def _collect_fact_features(df: pd.DataFrame, status_cols: Sequence[str]) -> tupl
         )
         if col in df.columns
     ]
+    numeric_cols.extend(
+        [
+            col
+            for col in df.columns
+            if col.startswith("q36_summary_emb_") or col.startswith("q52_summary_emb_")
+        ]
+    )
     return indicator_cols, numeric_cols
 
 

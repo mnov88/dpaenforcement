@@ -287,6 +287,7 @@ def cmd_phase_three(args: argparse.Namespace) -> None:
     print(f"  - drivers scanned: {len(outputs.driver_leaderboard)}")
     print(f"  - decomposition rows: {len(outputs.decompositions)}")
     print(f"  - policy estimates: {len(outputs.policy_estimates)}")
+    print(f"  - shap attributions: {len(outputs.shap_attributions)}")
     print(f"  - robustness scenarios: {len(outputs.robustness_summary)}")
 
 

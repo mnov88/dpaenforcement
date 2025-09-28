@@ -85,8 +85,11 @@ def run_robustness_suite(
             }
             continue
         if options.get("selection") == "turnover":
-            working, probit = _apply_selection_correction(working, fact_features)
-            notes.append("Applied turnover control function")
+            if "turnover_log1p" in working.columns:
+                working, probit = _apply_selection_correction(working, fact_features)
+                notes.append("Applied turnover control function")
+            else:
+                notes.append("Skipped turnover correction (turnover_log1p missing)")
         if options.get("weighting") == "country_year":
             counts = working.groupby("country_year").size()
             weights = 1.0 / counts
@@ -95,22 +98,32 @@ def run_robustness_suite(
             weight_col = "robust_weight"
         else:
             weight_col = None
-        logistic = fit_logistic(
-            working,
-            logistic_formula,
-            weight_col=weight_col,
-            cluster_col=cluster_col,
-        )
-        linear = fit_ols(
-            working,
-            linear_formula,
-            weight_col=weight_col,
-            cluster_col=cluster_col,
-        )
+        try:
+            logistic_model = fit_logistic(
+                working,
+                logistic_formula,
+                weight_col=weight_col,
+                cluster_col=cluster_col,
+            )
+            logistic = model_to_dict(logistic_model)
+        except Exception as exc:
+            logistic = {"error": str(exc)}
+            notes.append("Logistic model failed")
+        try:
+            linear_model = fit_ols(
+                working,
+                linear_formula,
+                weight_col=weight_col,
+                cluster_col=cluster_col,
+            )
+            linear = model_to_dict(linear_model)
+        except Exception as exc:
+            linear = {"error": str(exc)}
+            notes.append("Linear model failed")
         outputs[name] = {
             "type": "glm_ols",
-            "logistic": model_to_dict(logistic),
-            "linear": model_to_dict(linear),
+            "logistic": logistic,
+            "linear": linear,
             "notes": notes,
             "nobs": float(len(working)),
         }

@@ -1,0 +1,7 @@
+scenario,type,nobs,logistic_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY,linear_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY,logistic_q46_vuln_CHILDREN,linear_q46_vuln_CHILDREN,notes,quantile
+reweight_country_year,glm_ols,1962.0,,,,,Applied country-year reweighting,
+heckman_turnover,glm_ols,1962.0,,,,,Skipped turnover correction (turnover_log1p missing); Linear model failed,
+discussed_only,glm_ols,1962.0,,,,,Filtered to discussed-only records; Linear model failed,
+winsorize_fines,glm_ols,1962.0,,,,,Winsorized fine_log1p at q=0.99; Linear model failed,
+quantile_75,quantile,1534.0,,,,,,0.75
+quantile_90,quantile,1534.0,,,,,,0.9

@@ -2,19 +2,27 @@
 from __future__ import annotations
 
 import json
+import logging
+from pathlib import Path
 from dataclasses import dataclass
 import re
 from typing import Mapping, Sequence
 
 import numpy as np
 import pandas as pd
-from scipy import stats
+from scipy import sparse, stats
 from sklearn import metrics
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import ElasticNet, LogisticRegression
 from sklearn.model_selection import KFold, StratifiedKFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
+
+try:  # Progress indicator for long CV loops
+    from tqdm.auto import tqdm
+except ImportError:  # pragma: no cover - tqdm optional in CI
+    def tqdm(iterable, **kwargs):  # type: ignore[misc]
+        return iterable
 
 try:  # Optional tree-based models
     import lightgbm as lgb
@@ -39,6 +47,27 @@ import statsmodels.api as sm
 
 from .config import FACTS_CONFIG, EvennessPaths
 from .data import load_wide_dataset
+
+
+logger = logging.getLogger(__name__)
+
+
+_GLM_MAX_ITER = 4000
+_GLM_TOL = 1e-3
+_GLM_CHECK_INTERVAL = 1000
+_GLM_STAGNATION_EPS = 1e-4
+_GLM_STAGNATION_PATIENCE = 2
+_GLM_L1_GRID: tuple[float, ...] = (0.0, 0.1, 0.5)
+_GLM_C_GRID: tuple[float, ...] = (0.25, 0.5, 1.0)
+
+
+def safe_log_loss(y_true: Sequence[float], proba: np.ndarray) -> float:
+    """Binary log loss tolerant to single-class folds."""
+
+    try:
+        return metrics.log_loss(y_true, proba, labels=[0, 1])
+    except ValueError:
+        return float("nan")
 
 
 @dataclass(frozen=True)
@@ -75,6 +104,206 @@ class OmniScanOutputs:
     community_summary_csv: str
     risk_band_parity_csv: str
     distribution_contrasts_csv: str
+
+
+@dataclass
+class _GlmPreprocessResult:
+    X_train: sparse.csr_matrix
+    X_test: sparse.csr_matrix
+    feature_names: np.ndarray
+    base_columns: list[str]
+    features_in: int
+    features_dropped: int
+    imputer: SimpleImputer
+    scaler: StandardScaler
+
+
+def _prepare_glm_design(X_train: pd.DataFrame, X_test: pd.DataFrame) -> _GlmPreprocessResult:
+    """Prepare sparse design matrices with missingness indicators preserved."""
+
+    non_constant = X_train.notna().sum(axis=0) > 0
+    columns = X_train.columns[non_constant]
+    features_in = int(non_constant.sum())
+    features_dropped = int(len(non_constant) - features_in)
+    if features_in == 0:
+        empty = sparse.csr_matrix((X_train.shape[0], 0))
+        return _GlmPreprocessResult(
+            X_train=empty,
+            X_test=sparse.csr_matrix((X_test.shape[0], 0)),
+            feature_names=np.array([], dtype=str),
+            base_columns=[],
+            features_in=0,
+            features_dropped=features_dropped,
+            imputer=SimpleImputer(strategy="mean", add_indicator=True),
+            scaler=StandardScaler(with_mean=False),
+        )
+    trimmed_train = X_train.loc[:, columns]
+    trimmed_test = X_test.loc[:, columns]
+    imputer = SimpleImputer(strategy="mean", add_indicator=True)
+    train_imputed = imputer.fit_transform(trimmed_train)
+    test_imputed = imputer.transform(trimmed_test)
+    feature_names = imputer.get_feature_names_out(columns)
+    scaler = StandardScaler(with_mean=False)
+    train_scaled = scaler.fit_transform(train_imputed)
+    test_scaled = scaler.transform(test_imputed)
+    train_sparse = sparse.csr_matrix(train_scaled)
+    test_sparse = sparse.csr_matrix(test_scaled)
+    return _GlmPreprocessResult(
+        X_train=train_sparse,
+        X_test=test_sparse,
+        feature_names=np.asarray(feature_names, dtype=str),
+        base_columns=list(columns),
+        features_in=features_in,
+        features_dropped=features_dropped,
+        imputer=imputer,
+        scaler=scaler,
+    )
+
+
+def _fit_logistic_glm(X_train: sparse.csr_matrix, y_train: pd.Series, C: float, l1_ratio: float) -> LogisticRegression | None:
+    """Train a SAGA logistic regression with monitoring hooks."""
+
+    classes = np.unique(y_train)
+    if classes.size < 2:
+        return None
+    penalty = "elasticnet" if l1_ratio > 0 else "l2"
+    params: dict[str, object] = {
+        "penalty": penalty,
+        "solver": "saga",
+        "C": C,
+        "tol": _GLM_TOL,
+        "warm_start": True,
+        "max_iter": min(_GLM_CHECK_INTERVAL, _GLM_MAX_ITER),
+        "n_jobs": -1,
+        "class_weight": "balanced",
+        "fit_intercept": True,
+    }
+    if penalty == "elasticnet":
+        params["l1_ratio"] = l1_ratio
+    model = LogisticRegression(**params)
+    total_iter = 0
+    last_gap = np.nan
+    stagnation_checks = 0
+    dual_gap = np.nan
+    soft_not_converged = False
+    while total_iter < _GLM_MAX_ITER:
+        remaining = _GLM_MAX_ITER - total_iter
+        model.max_iter = min(_GLM_CHECK_INTERVAL, remaining)
+        model.fit(X_train, y_train)
+        n_iter = int(np.max(np.asarray(model.n_iter_, dtype=int)))
+        total_iter += n_iter
+        dual_gap = float(getattr(model, "dual_gap_", np.nan))
+        if total_iter >= _GLM_CHECK_INTERVAL:
+            if not np.isnan(dual_gap) and not np.isnan(last_gap):
+                if abs(last_gap - dual_gap) < _GLM_STAGNATION_EPS:
+                    stagnation_checks += 1
+                else:
+                    stagnation_checks = 0
+                if stagnation_checks >= _GLM_STAGNATION_PATIENCE:
+                    soft_not_converged = True
+                    break
+        last_gap = dual_gap
+        if n_iter < model.max_iter:
+            break
+    model.total_iter_ = total_iter  # type: ignore[attr-defined]
+    model.final_dual_gap_ = dual_gap  # type: ignore[attr-defined]
+    model.soft_not_converged_ = soft_not_converged  # type: ignore[attr-defined]
+    model.selected_l1_ratio_ = l1_ratio  # type: ignore[attr-defined]
+    model.selected_C_ = C  # type: ignore[attr-defined]
+    return model
+
+
+def _glm_top_features(coef: np.ndarray, feature_names: np.ndarray, top_k: int = 10) -> list[str]:
+    if coef.size == 0 or feature_names.size == 0:
+        return []
+    abs_coef = np.abs(coef)
+    order = np.argsort(abs_coef)[::-1]
+    labels: list[str] = []
+    for idx in order[:top_k]:
+        weight = abs_coef[idx]
+        if weight <= 0:
+            continue
+        labels.append(f"{feature_names[idx]}:{weight:.4f}")
+    return labels
+
+
+def _record_glm_fold_metrics(
+    *,
+    outcome: str,
+    spec: str,
+    fold: int,
+    preprocess: _GlmPreprocessResult,
+    model: LogisticRegression,
+    y_train: pd.Series,
+    y_test: pd.Series,
+    proba: np.ndarray,
+    paths: EvennessPaths | None,
+) -> None:
+    iterations = int(getattr(model, "total_iter_", int(np.max(np.asarray(model.n_iter_, dtype=int)))))
+    dual_gap = float(getattr(model, "final_dual_gap_", float("nan")))
+    pct_non_zero = 0.0
+    coef = np.asarray(model.coef_)
+    if coef.ndim > 1:
+        coef = coef[0]
+    if coef.size:
+        pct_non_zero = float(np.count_nonzero(np.abs(coef) > 1e-6) / coef.size * 100.0)
+    top_features = _glm_top_features(coef, preprocess.feature_names)
+    y_test_values = y_test.to_numpy()
+    clipped = np.clip(proba, 1e-6, 1 - 1e-6)
+    auc = float("nan")
+    ap = float("nan")
+    brier = float("nan")
+    logloss = safe_log_loss(y_test_values, clipped)
+    if len(np.unique(y_test_values)) > 1:
+        try:
+            auc = metrics.roc_auc_score(y_test_values, clipped)
+        except ValueError:
+            auc = float("nan")
+    try:
+        ap = metrics.average_precision_score(y_test_values, clipped)
+    except ValueError:
+        ap = float("nan")
+    try:
+        brier = metrics.brier_score_loss(y_test_values, clipped)
+    except ValueError:
+        brier = float("nan")
+    record = {
+        "outcome": outcome,
+        "spec": spec,
+        "fold": fold,
+        "iterations": iterations,
+        "duality_gap": dual_gap,
+        "pct_non_zero": pct_non_zero,
+        "top_features": "|".join(top_features),
+        "features_in": preprocess.features_in,
+        "features_dropped": preprocess.features_dropped,
+        "auc": auc,
+        "average_precision": ap,
+        "brier": brier,
+        "log_loss": logloss,
+        "train_samples": int(len(y_train)),
+        "test_samples": int(len(y_test)),
+        "soft_not_converged": bool(getattr(model, "soft_not_converged_", False)),
+        "C": getattr(model, "selected_C_", float("nan")),
+        "l1_ratio": getattr(model, "selected_l1_ratio_", float("nan")),
+    }
+    logger.info(
+        "GLM fold %s spec=%s outcome=%s iter=%s gap=%.4g nz=%.2f auc=%s brier=%s",
+        fold,
+        spec,
+        outcome,
+        record["iterations"],
+        record["duality_gap"],
+        record["pct_non_zero"],
+        f"{auc:.3f}" if not np.isnan(auc) else "nan",
+        f"{brier:.3f}" if not np.isnan(brier) else "nan",
+    )
+    if paths is not None:
+        path = Path(paths.fold_metrics_csv)
+        df = pd.DataFrame([record])
+        mode = "a" if path.exists() else "w"
+        header = not path.exists()
+        df.to_csv(path, mode=mode, header=header, index=False)
 
 
 _COUNTRY_NORMALISATION = {
@@ -336,73 +565,124 @@ def _train_tree_model(
     y: pd.Series,
     classification: bool,
     random_state: int = 42,
-) -> tuple[object, np.ndarray, np.ndarray]:
+) -> tuple[object, np.ndarray, Mapping[str, object] | None]:
     """Fit a gradient boosted model with nested CV and return feature importances."""
 
     if classification:
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state)
     else:
-        splitter = KFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = KFold(n_splits=3, shuffle=True, random_state=random_state)
 
-    params_grid = [
-        {"num_leaves": 31, "learning_rate": 0.05, "n_estimators": 300},
-        {"num_leaves": 15, "learning_rate": 0.1, "n_estimators": 200},
-    ]
-    best_score = np.inf
+    base_params = {
+        "feature_pre_filter": False,
+        "min_gain_to_split": 0.0,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.8,
+        "subsample": 0.8,
+        "max_depth": -1,
+    }
+    params_grid: list[dict[str, object]] = []
+    for min_data in (5, 15):
+        for num_leaves in (15, 31, 63):
+            for n_estimators in (200, 400):
+                for reg_lambda in (0.0, 1.0):
+                    combo = base_params | {
+                        "min_data_in_leaf": min_data,
+                        "num_leaves": num_leaves,
+                        "n_estimators": n_estimators,
+                        "reg_lambda": reg_lambda,
+                    }
+                    params_grid.append(combo)
+
+    best_score = float("inf")
     best_params: Mapping[str, object] | None = None
-    scoring = metrics.log_loss if classification else metrics.mean_squared_error
-
     for params in params_grid:
-        scores: list[float] = []
+        fold_scores: list[float] = []
         for train_idx, test_idx in splitter.split(X, y):
             X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
             y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
-            if lgb is not None:
-                if classification:
-                    model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **params)
+            unique_train = np.unique(y_train)
+            unique_test = np.unique(y_test)
+            if classification and (unique_train.size < 2 or unique_test.size < 2):
+                logger.warning(
+                    "Skipping tree fold due to single-class target (train=%s, test=%s)",
+                    unique_train,
+                    unique_test,
+                )
+                fold_scores.append(float("nan"))
+                continue
+            try:
+                if lgb is not None:
+                    if classification:
+                        model = lgb.LGBMClassifier(
+                            objective="binary",
+                            random_state=random_state,
+                            class_weight="balanced",
+                            n_jobs=-1,
+                            **params,
+                        )
+                    else:
+                        model = lgb.LGBMRegressor(
+                            objective="regression",
+                            random_state=random_state,
+                            n_jobs=-1,
+                            **params,
+                        )
+                elif classification and CatBoostClassifier is not None:
+                    model = CatBoostClassifier(
+                        verbose=False,
+                        random_state=random_state,
+                        iterations=params["n_estimators"],
+                        learning_rate=params["learning_rate"],
+                        depth=6,
+                    )
+                elif not classification and CatBoostRegressor is not None:
+                    model = CatBoostRegressor(
+                        verbose=False,
+                        random_state=random_state,
+                        iterations=params["n_estimators"],
+                        learning_rate=params["learning_rate"],
+                        depth=6,
+                    )
                 else:
-                    model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **params)
-            elif classification and CatBoostClassifier is not None:
-                model = CatBoostClassifier(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            elif not classification and CatBoostRegressor is not None:
-                model = CatBoostRegressor(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            else:
-                from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
+                    from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 
+                    if classification:
+                        model = HistGradientBoostingClassifier(random_state=random_state)
+                    else:
+                        model = HistGradientBoostingRegressor(random_state=random_state)
+                model.fit(X_train, y_train)
                 if classification:
-                    model = HistGradientBoostingClassifier(random_state=random_state)
+                    proba = model.predict_proba(X_test)[:, 1]
+                    score = safe_log_loss(y_test, np.clip(proba, 1e-6, 1 - 1e-6))
                 else:
-                    model = HistGradientBoostingRegressor(random_state=random_state)
-            model.fit(X_train, y_train)
-            if classification:
-                proba = model.predict_proba(X_test)[:, 1]
-                score = scoring(y_test, np.clip(proba, 1e-6, 1 - 1e-6))
-            else:
-                pred = model.predict(X_test)
-                score = scoring(y_test, pred)
-            scores.append(score)
-        mean_score = float(np.mean(scores))
+                    pred = model.predict(X_test)
+                    score = metrics.mean_squared_error(y_test, pred)
+                fold_scores.append(score)
+            except Exception as exc:
+                logger.exception("Tree model fold failed with params %s", params, exc_info=exc)
+                fold_scores.append(float("nan"))
+        mean_score = float(np.nanmean(fold_scores)) if fold_scores else float("inf")
         if mean_score < best_score:
             best_score = mean_score
             best_params = params
 
     if lgb is not None:
         if classification:
-            model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **(best_params or {}))
+            model = lgb.LGBMClassifier(
+                objective="binary",
+                random_state=random_state,
+                class_weight="balanced",
+                n_jobs=-1,
+                **(best_params or {}),
+            )
         else:
-            model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **(best_params or {}))
+            model = lgb.LGBMRegressor(
+                objective="regression",
+                random_state=random_state,
+                n_jobs=-1,
+                **(best_params or {}),
+            )
     elif classification and CatBoostClassifier is not None:
         model = CatBoostClassifier(verbose=False, random_state=random_state, **(best_params or {}))
     elif not classification and CatBoostRegressor is not None:
@@ -422,7 +702,21 @@ def _train_tree_model(
         importance = np.abs(np.asarray(model.coef_))
     else:
         importance = np.zeros(X.shape[1])
-    return model, importance, np.asarray(list(best_params.values())) if best_params else np.array([])
+    return model, importance, best_params
+
+
+def _count_effective_splits(model: object) -> int:
+    if lgb is None or not hasattr(model, "booster_"):
+        return -1
+    try:
+        dump = model.booster_.dump_model()
+        splits = 0
+        for tree in dump.get("tree_info", []):
+            leaves = int(tree.get("num_leaves", 1))
+            splits += max(0, leaves - 1)
+        return splits
+    except Exception:
+        return -1
 
 
 def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -465,6 +759,42 @@ def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.Da
     return shap_summary, interactions_df, pd.DataFrame(shap_matrix, columns=X.columns, index=X.index)
 
 
+def _glm_linear_shap(
+    model: LogisticRegression,
+    preprocess: _GlmPreprocessResult,
+    index: pd.Index,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    design = preprocess.X_train
+    try:
+        explainer = shap.LinearExplainer(model, design, feature_dependence="independent")
+        shap_values = explainer.shap_values(design)
+    except Exception:
+        coef = np.asarray(model.coef_)
+        if coef.ndim > 1:
+            coef = coef[0]
+        dense_design = design.toarray() if sparse.issparse(design) else np.asarray(design)
+        shap_values = dense_design * coef
+    if isinstance(shap_values, list):
+        shap_matrix = shap_values[1] if len(shap_values) > 1 else shap_values[0]
+    else:
+        shap_matrix = shap_values
+    base_count = len(preprocess.base_columns)
+    if base_count == 0:
+        return (
+            pd.DataFrame(columns=["feature", "mean_abs_shap"]),
+            pd.DataFrame(columns=["feature_a", "feature_b", "weight"]),
+            pd.DataFrame(index=index),
+        )
+    shap_matrix = np.asarray(shap_matrix)
+    shap_matrix = shap_matrix[:, :base_count]
+    shap_df = pd.DataFrame(shap_matrix, columns=preprocess.base_columns, index=index)
+    mean_abs = shap_df.abs().mean(axis=0).reset_index()
+    mean_abs.columns = ["feature", "mean_abs_shap"]
+    mean_abs = mean_abs.sort_values("mean_abs_shap", ascending=False).reset_index(drop=True)
+    interactions = pd.DataFrame(columns=["feature_a", "feature_b", "weight"])
+    return mean_abs, interactions, shap_df
+
+
 def _aggregate_block_importance(shap_summary: pd.DataFrame, metadata: Sequence[FeatureMetadata]) -> pd.DataFrame:
     meta_lookup = {meta.feature: meta.block for meta in metadata}
     shap_summary["block"] = shap_summary["feature"].map(meta_lookup).fillna("Other")
@@ -481,7 +811,7 @@ def _sage_importance(model: object, X: pd.DataFrame, y: pd.Series, classificatio
         baseline = model.predict(X)
         if classification and isinstance(baseline, np.ndarray) and baseline.ndim > 1:
             baseline = baseline[:, 1]
-    loss_fn = metrics.log_loss if classification else metrics.mean_squared_error
+    loss_fn = safe_log_loss if classification else metrics.mean_squared_error
     base_loss = loss_fn(y, np.clip(baseline, 1e-6, 1 - 1e-6)) if classification else loss_fn(y, baseline)
     rng = np.random.default_rng(0)
     records: list[dict[str, float]] = []
@@ -507,6 +837,7 @@ def _specification_matrix(
     metadata: Sequence[FeatureMetadata],
     outcome: str,
     classification: bool,
+    paths: EvennessPaths | None = None,
 ) -> pd.DataFrame:
     meta_frame = pd.DataFrame([meta.__dict__ for meta in metadata])
     block_lookup = meta_frame.set_index("feature")["block"].to_dict()
@@ -550,18 +881,7 @@ def _specification_matrix(
         if X_spec.empty:
             continue
         if classification:
-            penalty = "l1" if spec["model"] == "lasso" else "elasticnet"
-            clf_kwargs = {"penalty": penalty, "solver": "saga", "max_iter": 200}
-            if penalty == "elasticnet":
-                clf_kwargs["l1_ratio"] = 0.5
-            model = LogisticRegression(**clf_kwargs)
-            pipeline = Pipeline(
-                steps=[
-                    ("impute", SimpleImputer(strategy="median")),
-                    ("scale", StandardScaler(with_mean=False)),
-                    ("model", model),
-                ]
-            )
+            splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=0)
         else:
             model = ElasticNet(alpha=0.1 if spec["model"] == "lasso" else 0.05, l1_ratio=0.5)
             pipeline = Pipeline(
@@ -579,16 +899,77 @@ def _specification_matrix(
         else:
             y_fit = y
         scores: list[float] = []
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=0) if classification else KFold(n_splits=5, shuffle=True, random_state=0)
-        for train_idx, test_idx in splitter.split(X_values, y_fit):
-            pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
-            if classification:
-                proba = pipeline.predict_proba(X_values.iloc[test_idx])[:, 1]
-                score = metrics.roc_auc_score(y_fit.iloc[test_idx], proba)
-            else:
+        if classification:
+            spec_label = (
+                f"fe={spec['fe']}|sector={spec['sector']}|temporal={spec['temporal']}|winsor={spec['winsor']}"
+            )
+            for fold_idx, (train_idx, test_idx) in enumerate(splitter.split(X_values, y_fit), start=1):
+                X_train = X_values.iloc[train_idx]
+                X_test = X_values.iloc[test_idx]
+                y_train = y_fit.iloc[train_idx]
+                y_test = y_fit.iloc[test_idx]
+                unique_train = np.unique(y_train.dropna())
+                unique_test = np.unique(y_test.dropna())
+                if unique_train.size < 2 or unique_test.size < 2:
+                    logger.warning(
+                        "Skipping fold %s for %s spec=%s: single-class target (train=%s, test=%s)",
+                        fold_idx,
+                        outcome,
+                        spec_label,
+                        unique_train,
+                        unique_test,
+                    )
+                    continue
+                preprocess = _prepare_glm_design(X_train, X_test)
+                best_model: LogisticRegression | None = None
+                best_proba: np.ndarray | None = None
+                best_auc = float("nan")
+                best_score_metric = float("-inf")
+                for C in _GLM_C_GRID:
+                    for l1_ratio in _GLM_L1_GRID:
+                        model_candidate = _fit_logistic_glm(preprocess.X_train, y_train, C, l1_ratio)
+                        if model_candidate is None:
+                            continue
+                        try:
+                            proba_candidate = model_candidate.predict_proba(preprocess.X_test)[:, 1]
+                        except Exception:
+                            continue
+                        auc_candidate = float("nan")
+                        if unique_test.size > 1:
+                            try:
+                                auc_candidate = metrics.roc_auc_score(y_test, proba_candidate)
+                            except ValueError:
+                                auc_candidate = float("nan")
+                        score_metric = auc_candidate
+                        if np.isnan(score_metric):
+                            loss = safe_log_loss(y_test, np.clip(proba_candidate, 1e-6, 1 - 1e-6))
+                            score_metric = -loss if not np.isnan(loss) else float("-inf")
+                        if best_model is None or score_metric > best_score_metric:
+                            best_model = model_candidate
+                            best_proba = proba_candidate
+                            best_auc = auc_candidate
+                            best_score_metric = score_metric
+                if best_model is None or best_proba is None:
+                    continue
+                scores.append(best_auc)
+                _record_glm_fold_metrics(
+                    outcome=outcome,
+                    spec=spec_label,
+                    fold=fold_idx,
+                    preprocess=preprocess,
+                    model=best_model,
+                    y_train=y_train,
+                    y_test=y_test,
+                    proba=best_proba,
+                    paths=paths,
+                )
+        else:
+            splitter = KFold(n_splits=3, shuffle=True, random_state=0)
+            for train_idx, test_idx in splitter.split(X_values, y_fit):
+                pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
                 pred = pipeline.predict(X_values.iloc[test_idx])
                 score = metrics.r2_score(y_fit.iloc[test_idx], pred)
-            scores.append(score)
+                scores.append(score)
         specs.append({
             "outcome": outcome,
             "fe": spec["fe"],
@@ -596,7 +977,7 @@ def _specification_matrix(
             "temporal": spec["temporal"],
             "model": spec["model"],
             "winsor": spec["winsor"],
-            "score": float(np.mean(scores)),
+            "score": float(np.nanmean(scores)) if scores else float("nan"),
         })
     return pd.DataFrame(specs)
 
@@ -616,34 +997,39 @@ def _stability_selection(
         X_sub = X.loc[sample]
         y_sub = y.loc[sample]
         if classification:
-            model = LogisticRegression(penalty="l1", solver="saga", max_iter=200)
+            preprocess = _prepare_glm_design(X_sub, X_sub)
+            model = _fit_logistic_glm(preprocess.X_train, y_sub, C=0.5, l1_ratio=0.1)
+            if model is None or preprocess.features_in == 0:
+                continue
         else:
             model = ElasticNet(alpha=0.1, l1_ratio=0.7)
-        pipeline = Pipeline(
-            steps=[
-                ("impute", SimpleImputer(strategy="median")),
+            pipeline = Pipeline(
+                steps=[
+                    ("impute", SimpleImputer(strategy="median")),
                 ("scale", StandardScaler(with_mean=False)),
                 ("model", model),
             ]
         )
-        pipeline.fit(X_sub, y_sub)
-        coef = pipeline.named_steps["model"].coef_
-        if classification and coef.ndim > 1:
-            coef = coef[0]
-        coef = np.asarray(coef).flatten()
-        # Determine active columns for this subsample (features with at least one observed value)
-        active_mask = X_sub.notna().any(axis=0)
-        active_cols = X_sub.columns[active_mask]
-        # Align selection length to active feature set; if mismatch, skip iteration defensively
-        if len(coef) != len(active_cols):
-            try:
-                # Best-effort truncate to the shorter length to preserve progress
-                use_len = min(len(coef), len(active_cols))
-                active_cols = active_cols[:use_len]
-                coef = coef[:use_len]
-            except Exception:
-                # If alignment still fails, continue to next iteration
-                continue
+        if classification:
+            coef = np.asarray(model.coef_)
+            if coef.ndim > 1:
+                coef = coef[0]
+            base_count = len(preprocess.base_columns)
+            coef = coef[:base_count]
+            active_cols = [col for col in preprocess.base_columns if X_sub[col].notna().any()]
+        else:
+            pipeline.fit(X_sub, y_sub)
+            coef = pipeline.named_steps["model"].coef_
+            if coef.ndim > 1:
+                coef = coef[0]
+            coef = np.asarray(coef).flatten()
+            active_mask = X_sub.notna().any(axis=0)
+            active_cols = X_sub.columns[active_mask]
+        if len(active_cols) == 0:
+            continue
+        use_len = min(len(coef), len(active_cols))
+        coef = coef[:use_len]
+        active_cols = active_cols[:use_len]
         selection = (np.abs(coef) > 1e-6).astype(float)
         sel_series = pd.Series(selection, index=active_cols, dtype=float)
         counts = counts.add(sel_series, fill_value=0.0)
@@ -658,7 +1044,10 @@ def _knockoff_filter(X: pd.DataFrame, y: pd.Series, classification: bool, q: flo
     knockoffs.columns = [f"{col}__knockoff" for col in X.columns]
     augmented = pd.concat([X, knockoffs], axis=1)
     if classification:
-        model = LogisticRegression(penalty="l1", solver="saga", max_iter=300)
+        preprocess = _prepare_glm_design(augmented, augmented)
+        model = _fit_logistic_glm(preprocess.X_train, y, C=0.5, l1_ratio=0.1)
+        if model is None or preprocess.features_in == 0:
+            return pd.DataFrame(columns=["feature", "w_stat", "selected"])
     else:
         model = ElasticNet(alpha=0.05, l1_ratio=0.7)
     pipeline = Pipeline(
@@ -668,13 +1057,24 @@ def _knockoff_filter(X: pd.DataFrame, y: pd.Series, classification: bool, q: flo
             ("model", model),
         ]
     )
-    pipeline.fit(augmented, y)
-    coef = pipeline.named_steps["model"].coef_
-    if classification and coef.ndim > 1:
-        coef = coef[0]
-    coef = np.asarray(coef).flatten()
-    original_coef = coef[: X.shape[1]]
-    knockoff_coef = coef[X.shape[1] :]
+    if classification:
+        pipeline.named_steps["model"] = model
+        coef = np.asarray(model.coef_)
+        if coef.ndim > 1:
+            coef = coef[0]
+        base_cols = preprocess.base_columns
+        coef_series = pd.Series(coef[: len(base_cols)], index=base_cols, dtype=float)
+        original_coef = coef_series.reindex(X.columns, fill_value=0.0).to_numpy()
+        knockoff_cols = [f"{col}__knockoff" for col in X.columns]
+        knockoff_coef = coef_series.reindex(knockoff_cols, fill_value=0.0).to_numpy()
+    else:
+        pipeline.fit(augmented, y)
+        coef = pipeline.named_steps["model"].coef_
+        if coef.ndim > 1:
+            coef = coef[0]
+        coef = np.asarray(coef).flatten()
+        original_coef = coef[: X.shape[1]]
+        knockoff_coef = coef[X.shape[1] :]
     w_stats = np.abs(original_coef) - np.abs(knockoff_coef)
     abs_values = np.sort(np.abs(w_stats))[::-1]
     threshold = np.inf
@@ -817,7 +1217,7 @@ def _distribution_contrasts(df: pd.DataFrame) -> pd.DataFrame:
 
 def _build_network(importance: pd.DataFrame, outcomes: Sequence[str]) -> tuple[pd.DataFrame, pd.DataFrame]:
     edges: list[dict[str, object]] = []
-    for outcome in outcomes:
+    for outcome in tqdm(outcomes, desc="Omniscan outcomes"):
         subset = importance.loc[importance["outcome"] == outcome]
         for _, row in subset.iterrows():
             edges.append({"source": row["feature"], "target": outcome, "weight": row["importance"]})
@@ -843,6 +1243,7 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
 
     paths = paths or EvennessPaths()
     paths.ensure()
+    Path(paths.fold_metrics_csv).unlink(missing_ok=True)
 
     wide_df = load_wide_dataset(paths.wide_csv)
     feature_matrix, metadata, coverage, checklist = _build_feature_matrix(wide_df)
@@ -870,7 +1271,7 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
 
     meta_lookup = {meta.feature: meta for meta in metadata}
 
-    for outcome in outcomes:
+    for outcome in tqdm(outcomes, desc="Omniscan outcomes"):
         if outcome not in wide_df.columns:
             continue
         y_raw = wide_df[outcome]
@@ -889,7 +1290,32 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
             X_outcome = X.loc[decision_ids]
         classification = y.dropna().isin({0, 1, True, False}).all()
         model, importance, _ = _train_tree_model(X_outcome, y, classification)
-        shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
+        fallback_reason: str | None = None
+        if classification and lgb is not None and isinstance(model, lgb.LGBMClassifier):
+            effective_splits = _count_effective_splits(model)
+            train_auc = float("nan")
+            if len(np.unique(y)) > 1:
+                try:
+                    train_auc = metrics.roc_auc_score(y, model.predict_proba(X_outcome)[:, 1])
+                except Exception:
+                    train_auc = float("nan")
+            if 0 <= effective_splits < 5:
+                fallback_reason = f"effective_splits={effective_splits}"
+            elif not np.isnan(train_auc) and abs(train_auc - 0.5) <= 0.02:
+                fallback_reason = f"train_auc={train_auc:.3f}"
+        else:
+            effective_splits = -1
+            train_auc = float("nan")
+        if fallback_reason:
+            logger.warning("LightGBM fallback for %s due to %s", outcome, fallback_reason)
+            preprocess_full = _prepare_glm_design(X_outcome, X_outcome)
+            glm_model = _fit_logistic_glm(preprocess_full.X_train, y, C=0.5, l1_ratio=0.1)
+            if glm_model is not None:
+                shap_summary, interactions, shap_matrix = _glm_linear_shap(glm_model, preprocess_full, X_outcome.index)
+            else:
+                shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
+        else:
+            shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
         shap_summary["outcome"] = outcome
         interactions["outcome"] = outcome
         block_importance = _aggregate_block_importance(shap_summary, metadata)
@@ -932,7 +1358,9 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
                 grouped.reset_index(drop=True).melt(id_vars=["dpa", "outcome"], var_name="feature", value_name="mean_shap").to_dict("records")
             )
 
-        spec_frames.append(_specification_matrix(X_outcome, wide_df.loc[mask], metadata, outcome, classification))
+        spec_frames.append(
+            _specification_matrix(X_outcome, wide_df.loc[mask], metadata, outcome, classification, paths)
+        )
         stability = _stability_selection(X_outcome, y, classification)
         stability["outcome"] = outcome
         stability_frames.append(stability)
@@ -960,7 +1388,7 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
                 )
 
         # DML residuals
-        splitter = KFold(n_splits=5, shuffle=True, random_state=0)
+        splitter = KFold(n_splits=3, shuffle=True, random_state=0)
         residuals = pd.Series(index=y.index, dtype=float)
         for train_idx, test_idx in splitter.split(X_outcome, y):
             model_fold, _, _ = _train_tree_model(X_outcome.iloc[train_idx], y.iloc[train_idx], classification)

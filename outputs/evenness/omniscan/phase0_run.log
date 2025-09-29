@@ -13780,3 +13780,4 @@ TypeError: '<' not supported between instances of 'int' and 'str'
 [LightGBM] [Warning] No further splits with positive gain, best gain: -inf
 [LightGBM] [Warning] No further splits with positive gain, best gain: -inf
 [LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+nmb

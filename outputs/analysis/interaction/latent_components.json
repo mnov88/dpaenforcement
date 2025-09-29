@@ -4,50 +4,50 @@
       {
         "component": 1,
         "loadings": {
-          "q56_rights_discussed_INFORMATION_OBLIGATIONS": 0.7263398187382589,
-          "q56_rights_discussed_NONE_DISCUSSED": -0.6716787284621278,
-          "q56_rights_discussed_ACCESS": 0.09989252009781795,
-          "q56_rights_discussed_ERASURE": 0.08935604344633878,
-          "q56_rights_discussed_OBJECTION": 0.04182232011433508,
-          "q56_rights_discussed_RECTIFICATION": 0.02996325327621896,
-          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": 0.022238331476756294,
-          "q56_rights_discussed_DATA_PORTABILITY": 0.010605542156531911,
-          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": 0.007823775108617252
+          "q56_rights_discussed_INFORMATION_OBLIGATIONS": 0.7423454891962333,
+          "q56_rights_discussed_NONE_DISCUSSED": -0.6291783921842306,
+          "q56_rights_discussed_ACCESS": 0.17971789566467264,
+          "q56_rights_discussed_ERASURE": 0.10952482457318116,
+          "q56_rights_discussed_OBJECTION": 0.07209633381741641,
+          "q56_rights_discussed_RECTIFICATION": 0.04628497958181055,
+          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": 0.03329626866349995,
+          "q56_rights_discussed_DATA_PORTABILITY": 0.014415156695027177,
+          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": 0.01033911622399409
         }
       },
       {
         "component": 2,
         "loadings": {
-          "q56_rights_discussed_ACCESS": 0.6243812116849818,
-          "q56_rights_discussed_INFORMATION_OBLIGATIONS": -0.4895863045026833,
-          "q56_rights_discussed_ERASURE": 0.45289290313609665,
-          "q56_rights_discussed_NONE_DISCUSSED": -0.36015870457615695,
-          "q56_rights_discussed_OBJECTION": 0.1402806011106229,
-          "q56_rights_discussed_RECTIFICATION": 0.09488213563574299,
-          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": 0.06783030233227486,
-          "q56_rights_discussed_DATA_PORTABILITY": 0.03721639061713126,
-          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": 0.030980677677716863
+          "q56_rights_discussed_ACCESS": 0.7473952426587506,
+          "q56_rights_discussed_ERASURE": 0.4175579703617291,
+          "q56_rights_discussed_INFORMATION_OBLIGATIONS": -0.4067915291651121,
+          "q56_rights_discussed_OBJECTION": 0.1943242000408308,
+          "q56_rights_discussed_RECTIFICATION": 0.16270893624677085,
+          "q56_rights_discussed_NONE_DISCUSSED": -0.15244170846424582,
+          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": 0.10662177208184277,
+          "q56_rights_discussed_DATA_PORTABILITY": 0.0448491042117151,
+          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": 0.026685817805395546
         }
       },
       {
         "component": 3,
         "loadings": {
-          "q56_rights_discussed_ERASURE": -0.7841110918771882,
-          "q56_rights_discussed_ACCESS": 0.5968006478387843,
-          "q56_rights_discussed_OBJECTION": -0.14181740948786198,
-          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": -0.05907785832618075,
-          "q56_rights_discussed_RECTIFICATION": -0.05344495285739598,
-          "q56_rights_discussed_NONE_DISCUSSED": -0.032785954485238356,
-          "q56_rights_discussed_DATA_PORTABILITY": -0.029647514975639208,
-          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": -0.02401625069762233,
-          "q56_rights_discussed_INFORMATION_OBLIGATIONS": -0.0030617179615919786
+          "q56_rights_discussed_ERASURE": -0.7910007597953096,
+          "q56_rights_discussed_ACCESS": 0.5078588861470127,
+          "q56_rights_discussed_OBJECTION": -0.23679747412243082,
+          "q56_rights_discussed_RECTIFICATION": -0.16687071530229414,
+          "q56_rights_discussed_RESTRICTION_OF_PROCESSING": -0.11927438916337459,
+          "q56_rights_discussed_NONE_DISCUSSED": -0.10744625379026422,
+          "q56_rights_discussed_INFORMATION_OBLIGATIONS": -0.05716189845806405,
+          "q56_rights_discussed_DATA_PORTABILITY": -0.04572407439592823,
+          "q56_rights_discussed_AUTOMATED_DECISION_MAKING": -0.03672899957720869
         }
       }
     ],
     "explained_variance_ratio": [
-      0.5018485927501697,
-      0.19833977330666724,
-      0.11027625629641466
+      0.47390720540388515,
+      0.20614928854081818,
+      0.11042045140377267
     ]
   },
   "rights_violated": {
@@ -55,53 +55,53 @@
       {
         "component": 1,
         "loadings": {
-          "q57_rights_violated_NONE_VIOLATED": -0.727432826911422,
-          "q57_rights_violated_INFORMATION_OBLIGATIONS": 0.6773172897550556,
-          "q57_rights_violated_ACCESS": 0.07536472702132457,
-          "q57_rights_violated_ERASURE": 0.0730929364751163,
-          "q57_rights_violated_OBJECTION": 0.031102543800651156,
-          "q57_rights_violated_RECTIFICATION": 0.008829563731283407,
-          "q57_rights_violated_NOT_DETERMINED": 0.003460336618028906,
-          "q57_rights_violated_AUTOMATED_DECISION_MAKING": 0.0010080563647227154,
-          "q57_rights_violated_DATA_PORTABILITY": 0.0010080563647227154,
-          "q57_rights_violated_RESTRICTION_OF_PROCESSING": 0.0010080563647227015
+          "q57_rights_violated_INFORMATION_OBLIGATIONS": 0.7232293469685431,
+          "q57_rights_violated_NONE_VIOLATED": -0.6685402217847926,
+          "q57_rights_violated_ACCESS": 0.14037680800896415,
+          "q57_rights_violated_ERASURE": 0.08327956317666667,
+          "q57_rights_violated_OBJECTION": 0.04967179013196585,
+          "q57_rights_violated_RECTIFICATION": 0.02134280225806029,
+          "q57_rights_violated_NOT_DETERMINED": -0.017984968320300825,
+          "q57_rights_violated_RESTRICTION_OF_PROCESSING": 0.008831829098642732,
+          "q57_rights_violated_DATA_PORTABILITY": 0.004388671839893268,
+          "q57_rights_violated_AUTOMATED_DECISION_MAKING": 0.0029371747213299618
         }
       },
       {
         "component": 2,
         "loadings": {
-          "q57_rights_violated_INFORMATION_OBLIGATIONS": -0.67764049061155,
-          "q57_rights_violated_NONE_VIOLATED": -0.5825365747132961,
-          "q57_rights_violated_NOT_DETERMINED": 0.3199906248569129,
-          "q57_rights_violated_ERASURE": 0.2222154118920025,
-          "q57_rights_violated_ACCESS": 0.21764785655781416,
-          "q57_rights_violated_OBJECTION": 0.04648560162210587,
-          "q57_rights_violated_DATA_PORTABILITY": -0.006482961859602356,
-          "q57_rights_violated_AUTOMATED_DECISION_MAKING": -0.006482961859602328,
-          "q57_rights_violated_RESTRICTION_OF_PROCESSING": -0.006482961859602238,
-          "q57_rights_violated_RECTIFICATION": 0.004819576806013082
+          "q57_rights_violated_INFORMATION_OBLIGATIONS": -0.6297870359270854,
+          "q57_rights_violated_NONE_VIOLATED": -0.570492204116174,
+          "q57_rights_violated_ACCESS": 0.3741932962745994,
+          "q57_rights_violated_ERASURE": 0.2591036151591029,
+          "q57_rights_violated_NOT_DETERMINED": 0.2527294794853215,
+          "q57_rights_violated_OBJECTION": 0.07098205014261597,
+          "q57_rights_violated_RECTIFICATION": 0.040929652463028654,
+          "q57_rights_violated_RESTRICTION_OF_PROCESSING": 0.012697882976900478,
+          "q57_rights_violated_DATA_PORTABILITY": 0.0017224597891116907,
+          "q57_rights_violated_AUTOMATED_DECISION_MAKING": 0.0012438896830910904
         }
       },
       {
         "component": 3,
         "loadings": {
-          "q57_rights_violated_ERASURE": 0.6019021482846652,
-          "q57_rights_violated_ACCESS": 0.5873295345572619,
-          "q57_rights_violated_NOT_DETERMINED": -0.48317100226648335,
-          "q57_rights_violated_NONE_VIOLATED": 0.15709897582164933,
-          "q57_rights_violated_OBJECTION": 0.15432941016769924,
-          "q57_rights_violated_RECTIFICATION": 0.06894673064078774,
-          "q57_rights_violated_DATA_PORTABILITY": 0.04075072138580738,
-          "q57_rights_violated_AUTOMATED_DECISION_MAKING": 0.04075072138580731,
-          "q57_rights_violated_RESTRICTION_OF_PROCESSING": 0.04075072138580718,
-          "q57_rights_violated_INFORMATION_OBLIGATIONS": 0.03271748313198218
+          "q57_rights_violated_ACCESS": 0.7550108695076054,
+          "q57_rights_violated_NONE_VIOLATED": 0.3752779905403121,
+          "q57_rights_violated_NOT_DETERMINED": -0.3363026618877979,
+          "q57_rights_violated_ERASURE": 0.3288943784945694,
+          "q57_rights_violated_OBJECTION": 0.18197998193450277,
+          "q57_rights_violated_INFORMATION_OBLIGATIONS": 0.13755681591095803,
+          "q57_rights_violated_RECTIFICATION": 0.10293217308254193,
+          "q57_rights_violated_RESTRICTION_OF_PROCESSING": 0.06029954543310373,
+          "q57_rights_violated_DATA_PORTABILITY": 0.0321588115871919,
+          "q57_rights_violated_AUTOMATED_DECISION_MAKING": 0.023455833329252107
         }
       }
     ],
     "explained_variance_ratio": [
-      0.48820193889777364,
-      0.1913567732460794,
-      0.11453230957808996
+      0.4807180106680128,
+      0.17312294398146674,
+      0.1325771220353336
     ]
   },
   "access_issues": {
@@ -109,44 +109,44 @@
       {
         "component": 1,
         "loadings": {
-          "q58_access_issues_NOT_APPLICABLE": -0.731855844334951,
-          "q58_access_issues_INADEQUATE_RESPONSE": 0.5599785003012092,
-          "q58_access_issues_EXCESSIVE_DELAY": 0.3829410395302043,
-          "q58_access_issues_SCOPE_LIMITATIONS": 0.04386119565388147,
-          "q58_access_issues_NO_ISSUES_FOUND": 0.03397208579884364,
-          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": 0.030137937188072377,
-          "q58_access_issues_EXCESSIVE_FEES": 0.013455861215349807
+          "q58_access_issues_NOT_APPLICABLE": -0.7223112766863692,
+          "q58_access_issues_INADEQUATE_RESPONSE": 0.5755223305591012,
+          "q58_access_issues_EXCESSIVE_DELAY": 0.37642672415686246,
+          "q58_access_issues_SCOPE_LIMITATIONS": 0.058711720641476846,
+          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": 0.03597583235467715,
+          "q58_access_issues_NO_ISSUES_FOUND": 0.022076376853966954,
+          "q58_access_issues_EXCESSIVE_FEES": 0.010709569121546414
         }
       },
       {
         "component": 2,
         "loadings": {
-          "q58_access_issues_EXCESSIVE_DELAY": 0.7241273034310681,
-          "q58_access_issues_NOT_APPLICABLE": 0.6102695082656214,
-          "q58_access_issues_INADEQUATE_RESPONSE": 0.30880485001784613,
-          "q58_access_issues_NO_ISSUES_FOUND": -0.08285562325610363,
-          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": -0.022673009998556228,
-          "q58_access_issues_EXCESSIVE_FEES": 0.020053246791782914,
-          "q58_access_issues_SCOPE_LIMITATIONS": -0.008311914213847707
+          "q58_access_issues_EXCESSIVE_DELAY": -0.7024373549359608,
+          "q58_access_issues_NOT_APPLICABLE": -0.6204766548642827,
+          "q58_access_issues_INADEQUATE_RESPONSE": -0.3238308522124467,
+          "q58_access_issues_NO_ISSUES_FOUND": 0.12550967874118324,
+          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": -0.02127149749873858,
+          "q58_access_issues_EXCESSIVE_FEES": -0.0182464130680855,
+          "q58_access_issues_SCOPE_LIMITATIONS": 0.013637252690885
         }
       },
       {
         "component": 3,
         "loadings": {
-          "q58_access_issues_INADEQUATE_RESPONSE": -0.7548214095024685,
-          "q58_access_issues_EXCESSIVE_DELAY": 0.5692570396322898,
-          "q58_access_issues_NOT_APPLICABLE": -0.2846260858997978,
-          "q58_access_issues_SCOPE_LIMITATIONS": -0.11574841728064555,
-          "q58_access_issues_NO_ISSUES_FOUND": 0.09273354043555465,
-          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": -0.05639972905289567,
-          "q58_access_issues_EXCESSIVE_FEES": 0.0009585140700499872
+          "q58_access_issues_INADEQUATE_RESPONSE": -0.7196101646331909,
+          "q58_access_issues_EXCESSIVE_DELAY": 0.5944584739357103,
+          "q58_access_issues_NOT_APPLICABLE": -0.27801313511622533,
+          "q58_access_issues_SCOPE_LIMITATIONS": -0.19408471168466446,
+          "q58_access_issues_NO_ISSUES_FOUND": 0.11016189371497065,
+          "q58_access_issues_IDENTITY_VERIFICATION_ISSUES": -0.041034291561939315,
+          "q58_access_issues_EXCESSIVE_FEES": 0.0008361847205416439
         }
       }
     ],
     "explained_variance_ratio": [
-      0.7358478565913297,
-      0.1103130281929728,
-      0.08155806189943501
+      0.7271222788245294,
+      0.11460289550438475,
+      0.07975662261654279
     ]
   },
   "adm_issues": {
@@ -154,41 +154,41 @@
       {
         "component": 1,
         "loadings": {
-          "q59_adm_issues_NOT_APPLICABLE": -0.9902770994492248,
-          "q59_adm_issues_NO_EXPLANATION_PROVIDED": 0.08844534645940952,
-          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": 0.06870419919596216,
-          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": 0.04763898966514279,
-          "q59_adm_issues_NO_ISSUES_FOUND": 0.04763898966514258,
-          "q59_adm_issues_INADEQUATE_SAFEGUARDS": 0.04763898966514246
+          "q59_adm_issues_NOT_APPLICABLE": -0.996423766899659,
+          "q59_adm_issues_NO_EXPLANATION_PROVIDED": 0.05960480053530823,
+          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": 0.043314591035098965,
+          "q59_adm_issues_INADEQUATE_SAFEGUARDS": 0.026533664929575318,
+          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": 0.02617917127914164,
+          "q59_adm_issues_NO_ISSUES_FOUND": 0.017927808863472408
         }
       },
       {
         "component": 2,
         "loadings": {
-          "q59_adm_issues_NO_EXPLANATION_PROVIDED": -0.5199250038168164,
-          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": -0.48281150845904186,
-          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": -0.3990234598697771,
-          "q59_adm_issues_NO_ISSUES_FOUND": -0.39902345986977633,
-          "q59_adm_issues_INADEQUATE_SAFEGUARDS": -0.39902345986977616,
-          "q59_adm_issues_NOT_APPLICABLE": -0.13752044621163273
+          "q59_adm_issues_NO_EXPLANATION_PROVIDED": 0.6186462614372691,
+          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": 0.5224680845622981,
+          "q59_adm_issues_INADEQUATE_SAFEGUARDS": 0.37824473839796,
+          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": 0.3400295737178505,
+          "q59_adm_issues_NO_ISSUES_FOUND": 0.2803525823304443,
+          "q59_adm_issues_NOT_APPLICABLE": 0.08376837276479378
         }
       },
       {
         "component": 3,
         "loadings": {
-          "q59_adm_issues_NO_EXPLANATION_PROVIDED": -0.6926337591666102,
-          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": 0.39498777628123444,
-          "q59_adm_issues_NO_ISSUES_FOUND": 0.3949877762812338,
-          "q59_adm_issues_INADEQUATE_SAFEGUARDS": 0.39498777628123366,
-          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": -0.2275658576096268,
-          "q59_adm_issues_NOT_APPLICABLE": -0.020645238636133822
+          "q59_adm_issues_PROFILING_WITHOUT_CONSENT": -0.5536044071787283,
+          "q59_adm_issues_NO_ISSUES_FOUND": -0.5146950736008109,
+          "q59_adm_issues_NO_EXPLANATION_PROVIDED": 0.469213291347006,
+          "q59_adm_issues_INADEQUATE_SAFEGUARDS": -0.32834368468381997,
+          "q59_adm_issues_LACK_OF_HUMAN_INTERVENTION": 0.31710235060077735,
+          "q59_adm_issues_NOT_APPLICABLE": 0.009303373493980662
         }
       }
     ],
     "explained_variance_ratio": [
-      0.8102072498965748,
-      0.16151716995038395,
-      0.02256249600023401
+      0.8653044068844363,
+      0.10305881230093711,
+      0.016912504579207264
     ]
   }
 }

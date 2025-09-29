@@ -6,7 +6,7 @@
       "country_group",
       "decision_year"
     ],
-    "source_file": "outputs/cleaned_wide_latest.csv",
+    "source_file": "outputs/cleaned_wide.csv",
     "row_count": 1998,
     "column_count": 426
   },

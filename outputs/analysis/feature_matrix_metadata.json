@@ -54,6 +54,7 @@
     "q15_case_initiation_BREACH_NOTIFICATION",
     "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE",
     "q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY",
+    "q15_case_initiation_MEDIA_PUBLIC_ATTENTION",
     "q15_case_initiation_NOT_MENTIONED",
     "q21_breach_types_coverage_status",
     "q21_breach_types_known",
@@ -385,6 +386,7 @@
       "q15_case_initiation_BREACH_NOTIFICATION",
       "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE",
       "q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY",
+      "q15_case_initiation_MEDIA_PUBLIC_ATTENTION",
       "q15_case_initiation_NOT_MENTIONED",
       "q15_case_initiation_LOW_FREQUENCY"
     ],
@@ -697,5 +699,5 @@
       "power_non_fine_flag"
     ]
   },
-  "record_count": 999
+  "record_count": 1998
 }

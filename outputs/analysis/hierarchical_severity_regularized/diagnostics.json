@@ -5,7 +5,7 @@
     3,
     4
   ],
-  "C": 0.5,
-  "n_features": 65,
-  "n_samples": 999
+  "C": 1.0,
+  "n_features": 67,
+  "n_samples": 1998
 }

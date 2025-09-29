@@ -15,17 +15,17 @@
       {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
         "target": "q21_breach_types_HUMAN_ERROR",
-        "weight": 38
+        "weight": 59
       },
       {
         "source": "q21_breach_types_TECHNICAL_FAILURE",
         "target": "q21_breach_types_ORGANIZATIONAL_FAILURE",
-        "weight": 28
+        "weight": 56
       },
       {
         "source": "q21_breach_types_TECHNICAL_FAILURE",
         "target": "q21_breach_types_HUMAN_ERROR",
-        "weight": 8
+        "weight": 19
       },
       {
         "source": "q21_breach_types_HUMAN_ERROR",
@@ -35,27 +35,17 @@
       {
         "source": "q21_breach_types_TECHNICAL_FAILURE",
         "target": "q21_breach_types_CYBER_ATTACK",
-        "weight": 5
-      },
-      {
-        "source": "q21_breach_types_TECHNICAL_FAILURE",
-        "target": "q21_breach_types_SYSTEM_MALFUNCTION",
-        "weight": 5
-      },
-      {
-        "source": "q21_breach_types_TECHNICAL_FAILURE",
-        "target": "q21_breach_types_NOT_APPLICABLE",
-        "weight": 5
+        "weight": 7
       },
       {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
         "target": "q21_breach_types_CYBER_ATTACK",
-        "weight": 5
+        "weight": 7
       },
       {
         "source": "q21_breach_types_CYBER_ATTACK",
         "target": "q21_breach_types_HUMAN_ERROR",
-        "weight": 5
+        "weight": 7
       },
       {
         "source": "q21_breach_types_NOT_APPLICABLE",
@@ -63,13 +53,28 @@
         "weight": 5
       },
       {
-        "source": "q21_breach_types_HUMAN_ERROR",
+        "source": "q21_breach_types_TECHNICAL_FAILURE",
         "target": "q21_breach_types_SYSTEM_MALFUNCTION",
+        "weight": 5
+      },
+      {
+        "source": "q21_breach_types_TECHNICAL_FAILURE",
+        "target": "q21_breach_types_NOT_APPLICABLE",
+        "weight": 5
+      },
+      {
+        "source": "q21_breach_types_HUMAN_ERROR",
+        "target": "q21_breach_types_NOT_MENTIONED",
         "weight": 4
       },
       {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
-        "target": "q21_breach_types_NOT_APPLICABLE",
+        "target": "q21_breach_types_NOT_MENTIONED",
+        "weight": 4
+      },
+      {
+        "source": "q21_breach_types_TECHNICAL_FAILURE",
+        "target": "q21_breach_types_NOT_MENTIONED",
         "weight": 4
       },
       {
@@ -83,23 +88,13 @@
         "weight": 4
       },
       {
-        "source": "q21_breach_types_TECHNICAL_FAILURE",
-        "target": "q21_breach_types_NOT_MENTIONED",
-        "weight": 4
-      },
-      {
-        "source": "q21_breach_types_HUMAN_ERROR",
-        "target": "q21_breach_types_NOT_MENTIONED",
-        "weight": 4
-      },
-      {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
         "target": "q21_breach_types_SYSTEM_MALFUNCTION",
         "weight": 4
       },
       {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
-        "target": "q21_breach_types_NOT_MENTIONED",
+        "target": "q21_breach_types_NOT_APPLICABLE",
         "weight": 4
       },
       {
@@ -118,6 +113,11 @@
         "weight": 4
       },
       {
+        "source": "q21_breach_types_HUMAN_ERROR",
+        "target": "q21_breach_types_SYSTEM_MALFUNCTION",
+        "weight": 4
+      },
+      {
         "source": "q21_breach_types_ORGANIZATIONAL_FAILURE",
         "target": "q21_breach_types_UNCLEAR",
         "weight": 3
@@ -128,17 +128,17 @@
         "weight": 3
       },
       {
-        "source": "q21_breach_types_CYBER_ATTACK",
-        "target": "q21_breach_types_UNCLEAR",
-        "weight": 2
-      },
-      {
         "source": "q21_breach_types_HUMAN_ERROR",
         "target": "q21_breach_types_UNCLEAR",
         "weight": 2
       },
       {
         "source": "q21_breach_types_NOT_APPLICABLE",
+        "target": "q21_breach_types_UNCLEAR",
+        "weight": 2
+      },
+      {
+        "source": "q21_breach_types_CYBER_ATTACK",
         "target": "q21_breach_types_UNCLEAR",
         "weight": 2
       },
@@ -169,81 +169,81 @@
       {
         "source": "q46_vuln_CHILDREN",
         "target": "q46_vuln_PATIENTS",
-        "weight": 11
+        "weight": 27
       },
       {
         "source": "q46_vuln_PATIENTS",
         "target": "q46_vuln_EMPLOYEES",
-        "weight": 6
-      },
-      {
-        "source": "q46_vuln_CHILDREN",
-        "target": "q46_vuln_EMPLOYEES",
-        "weight": 5
+        "weight": 11
       },
       {
         "source": "q46_vuln_ELDERLY",
         "target": "q46_vuln_PATIENTS",
-        "weight": 4
+        "weight": 10
       },
       {
         "source": "q46_vuln_CHILDREN",
-        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
-        "weight": 3
+        "target": "q46_vuln_ELDERLY",
+        "weight": 8
+      },
+      {
+        "source": "q46_vuln_CHILDREN",
+        "target": "q46_vuln_EMPLOYEES",
+        "weight": 7
       },
       {
         "source": "q46_vuln_PATIENTS",
         "target": "q46_vuln_NONE_MENTIONED",
-        "weight": 3
+        "weight": 7
       },
       {
         "source": "q46_vuln_PATIENTS",
         "target": "q46_vuln_FINANCIALLY_VULNERABLE",
+        "weight": 7
+      },
+      {
+        "source": "q46_vuln_CHILDREN",
+        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
+        "weight": 6
+      },
+      {
+        "source": "q46_vuln_EMPLOYEES",
+        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
+        "weight": 5
+      },
+      {
+        "source": "q46_vuln_EMPLOYEES",
+        "target": "q46_vuln_NONE_MENTIONED",
+        "weight": 4
+      },
+      {
+        "source": "q46_vuln_ELDERLY",
+        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
+        "weight": 4
+      },
+      {
+        "source": "q46_vuln_CHILDREN",
+        "target": "q46_vuln_NONE_MENTIONED",
+        "weight": 3
+      },
+      {
+        "source": "q46_vuln_FINANCIALLY_VULNERABLE",
+        "target": "q46_vuln_NONE_MENTIONED",
+        "weight": 3
+      },
+      {
+        "source": "q46_vuln_ELDERLY",
+        "target": "q46_vuln_NONE_MENTIONED",
+        "weight": 3
+      },
+      {
+        "source": "q46_vuln_ELDERLY",
+        "target": "q46_vuln_EMPLOYEES",
         "weight": 3
       },
       {
         "source": "q46_vuln_NONE_MENTIONED",
         "target": "q46_vuln_NOT_DISCUSSED",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_ELDERLY",
-        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_CHILDREN",
-        "target": "q46_vuln_NONE_MENTIONED",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_ELDERLY",
-        "target": "q46_vuln_EMPLOYEES",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_CHILDREN",
-        "target": "q46_vuln_ELDERLY",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_ELDERLY",
-        "target": "q46_vuln_NONE_MENTIONED",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_EMPLOYEES",
-        "target": "q46_vuln_FINANCIALLY_VULNERABLE",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_EMPLOYEES",
-        "target": "q46_vuln_NONE_MENTIONED",
-        "weight": 2
-      },
-      {
-        "source": "q46_vuln_FINANCIALLY_VULNERABLE",
-        "target": "q46_vuln_NONE_MENTIONED",
         "weight": 2
       }
     ]
@@ -262,142 +262,142 @@
     "edge_count": 28,
     "edges": [
       {
-        "source": "q47_remedial_POLICY_CHANGES",
-        "target": "q47_remedial_STAFF_TRAINING",
-        "weight": 105
-      },
-      {
         "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_POLICY_CHANGES",
-        "weight": 95
+        "weight": 267
+      },
+      {
+        "source": "q47_remedial_POLICY_CHANGES",
+        "target": "q47_remedial_STAFF_TRAINING",
+        "weight": 266
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_SYSTEM_UPGRADES",
-        "weight": 94
+        "weight": 239
       },
       {
         "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_STAFF_TRAINING",
-        "weight": 91
+        "weight": 218
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_POLICY_CHANGES",
-        "weight": 85
+        "weight": 215
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_STAFF_TRAINING",
-        "weight": 82
-      },
-      {
-        "source": "q47_remedial_POLICY_CHANGES",
-        "target": "q47_remedial_DPO_APPOINTMENT",
-        "weight": 21
+        "weight": 192
       },
       {
         "source": "q47_remedial_POLICY_CHANGES",
         "target": "q47_remedial_EXTERNAL_AUDIT",
-        "weight": 21
-      },
-      {
-        "source": "q47_remedial_STAFF_TRAINING",
-        "target": "q47_remedial_EXTERNAL_AUDIT",
-        "weight": 21
+        "weight": 48
       },
       {
         "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_EXTERNAL_AUDIT",
-        "weight": 20
+        "weight": 47
+      },
+      {
+        "source": "q47_remedial_STAFF_TRAINING",
+        "target": "q47_remedial_EXTERNAL_AUDIT",
+        "weight": 47
+      },
+      {
+        "source": "q47_remedial_POLICY_CHANGES",
+        "target": "q47_remedial_DPO_APPOINTMENT",
+        "weight": 41
       },
       {
         "source": "q47_remedial_STAFF_TRAINING",
         "target": "q47_remedial_DPO_APPOINTMENT",
-        "weight": 19
+        "weight": 37
       },
       {
         "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_DPO_APPOINTMENT",
-        "weight": 15
+        "weight": 34
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_DPO_APPOINTMENT",
-        "weight": 15
+        "weight": 33
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_EXTERNAL_AUDIT",
-        "weight": 12
-      },
-      {
-        "source": "q47_remedial_POLICY_CHANGES",
-        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
-        "weight": 7
+        "weight": 24
       },
       {
         "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
-        "weight": 6
+        "weight": 10
+      },
+      {
+        "source": "q47_remedial_EXTERNAL_AUDIT",
+        "target": "q47_remedial_DPO_APPOINTMENT",
+        "weight": 10
+      },
+      {
+        "source": "q47_remedial_POLICY_CHANGES",
+        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
+        "weight": 9
+      },
+      {
+        "source": "q47_remedial_SYSTEM_UPGRADES",
+        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
+        "weight": 8
       },
       {
         "source": "q47_remedial_STAFF_TRAINING",
+        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
+        "weight": 8
+      },
+      {
+        "source": "q47_remedial_DPO_APPOINTMENT",
         "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
         "weight": 6
       },
       {
         "source": "q47_remedial_EXTERNAL_AUDIT",
-        "target": "q47_remedial_DPO_APPOINTMENT",
-        "weight": 6
-      },
-      {
-        "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
         "weight": 5
       },
       {
         "source": "q47_remedial_EXTERNAL_AUDIT",
-        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
-        "weight": 4
-      },
-      {
-        "source": "q47_remedial_DPO_APPOINTMENT",
-        "target": "q47_remedial_COMPENSATION_TO_SUBJECTS",
-        "weight": 4
-      },
-      {
-        "source": "q47_remedial_EXTERNAL_AUDIT",
         "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "q47_remedial_SYSTEM_UPGRADES",
         "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
-      },
-      {
-        "source": "q47_remedial_IMMEDIATE_CESSATION",
-        "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "q47_remedial_DPO_APPOINTMENT",
         "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "q47_remedial_POLICY_CHANGES",
         "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "q47_remedial_STAFF_TRAINING",
         "target": "q47_remedial_NONE_MENTIONED",
-        "weight": 1
+        "weight": 2
       },
       {
         "source": "q47_remedial_COMPENSATION_TO_SUBJECTS",
+        "target": "q47_remedial_NONE_MENTIONED",
+        "weight": 2
+      },
+      {
+        "source": "q47_remedial_IMMEDIATE_CESSATION",
         "target": "q47_remedial_NONE_MENTIONED",
         "weight": 1
       }
@@ -417,157 +417,207 @@
       "q53_powers_SUSPENSION_DATA_FLOWS",
       "q53_powers_NONE"
     ],
-    "edge_count": 30,
+    "edge_count": 40,
     "edges": [
       {
         "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
         "target": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
-        "weight": 215
-      },
-      {
-        "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
-        "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 206
+        "weight": 403
       },
       {
         "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
         "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 186
+        "weight": 352
+      },
+      {
+        "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
+        "target": "q53_powers_ADMINISTRATIVE_FINE",
+        "weight": 341
       },
       {
         "source": "q53_powers_REPRIMAND",
         "target": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
-        "weight": 105
-      },
-      {
-        "source": "q53_powers_REPRIMAND",
-        "target": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
-        "weight": 85
+        "weight": 293
       },
       {
         "source": "q53_powers_REPRIMAND",
         "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 81
+        "weight": 277
       },
       {
-        "source": "q53_powers_WARNING",
-        "target": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
-        "weight": 56
-      },
-      {
-        "source": "q53_powers_WARNING",
+        "source": "q53_powers_REPRIMAND",
         "target": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
-        "weight": 47
+        "weight": 205
+      },
+      {
+        "source": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
+        "target": "q53_powers_ADMINISTRATIVE_FINE",
+        "weight": 92
       },
       {
         "source": "q53_powers_WARNING",
         "target": "q53_powers_REPRIMAND",
-        "weight": 42
-      },
-      {
-        "source": "q53_powers_WARNING",
-        "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 30
-      },
-      {
-        "source": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 22
+        "weight": 79
       },
       {
         "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
         "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "weight": 19
+        "weight": 78
       },
       {
-        "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
-        "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "weight": 16
+        "source": "q53_powers_WARNING",
+        "target": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
+        "weight": 75
       },
       {
         "source": "q53_powers_REPRIMAND",
         "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "weight": 12
+        "weight": 75
+      },
+      {
+        "source": "q53_powers_WARNING",
+        "target": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
+        "weight": 62
       },
       {
         "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
         "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 9
+        "weight": 57
+      },
+      {
+        "source": "q53_powers_REPRIMAND",
+        "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
+        "weight": 53
       },
       {
         "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
-        "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "weight": 8
+        "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
+        "weight": 50
       },
       {
-        "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
-        "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "weight": 8
+        "source": "q53_powers_WARNING",
+        "target": "q53_powers_ADMINISTRATIVE_FINE",
+        "weight": 46
       },
       {
         "source": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
         "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 8
+        "weight": 45
       },
       {
         "source": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
         "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 8
-      },
-      {
-        "source": "q53_powers_REPRIMAND",
-        "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 7
+        "weight": 40
       },
       {
         "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
         "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 7
+        "weight": 31
       },
       {
         "source": "q53_powers_WARNING",
         "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "weight": 7
+        "weight": 26
       },
       {
         "source": "q53_powers_REPRIMAND",
         "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "weight": 7
+        "weight": 14
       },
       {
-        "source": "q53_powers_WARNING",
+        "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
         "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "weight": 6
+        "weight": 13
+      },
+      {
+        "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
+        "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
+        "weight": 13
       },
       {
         "source": "q53_powers_WARNING",
         "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 6
-      },
-      {
-        "source": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
-        "weight": 5
-      },
-      {
-        "source": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
-        "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
-        "weight": 5
+        "weight": 12
       },
       {
         "source": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
         "target": "q53_powers_ADMINISTRATIVE_FINE",
-        "weight": 5
+        "weight": 12
+      },
+      {
+        "source": "q53_powers_WARNING",
+        "target": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
+        "weight": 9
+      },
+      {
+        "source": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
+        "target": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
+        "weight": 8
+      },
+      {
+        "source": "q53_powers_COMMUNICATE_BREACH_TO_SUBJECTS",
+        "target": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
+        "weight": 8
+      },
+      {
+        "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
+        "target": "q53_powers_SUSPENSION_DATA_FLOWS",
+        "weight": 7
+      },
+      {
+        "source": "q53_powers_ADMINISTRATIVE_FINE",
+        "target": "q53_powers_SUSPENSION_DATA_FLOWS",
+        "weight": 7
+      },
+      {
+        "source": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
+        "target": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "target": "q53_powers_SUSPENSION_DATA_FLOWS",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "target": "q53_powers_ADMINISTRATIVE_FINE",
+        "weight": 6
       },
       {
         "source": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
         "target": "q53_powers_SUSPENSION_DATA_FLOWS",
-        "weight": 4
+        "weight": 6
       },
       {
         "source": "q53_powers_RECTIFICATION_ERASURE_RESTRICTION",
         "target": "q53_powers_CERTIFICATION_WITHDRAWAL",
-        "weight": 4
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_LIMITATION_PROHIBITION_OF_PROCESSING",
+        "target": "q53_powers_SUSPENSION_DATA_FLOWS",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_BRING_PROCESSING_INTO_COMPLIANCE",
+        "target": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_REPRIMAND",
+        "target": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_REPRIMAND",
+        "target": "q53_powers_SUSPENSION_DATA_FLOWS",
+        "weight": 6
+      },
+      {
+        "source": "q53_powers_COMPLY_WITH_DATA_SUBJECT_REQUESTS",
+        "target": "q53_powers_CERTIFICATION_WITHDRAWAL",
+        "weight": 6
       }
     ]
   }

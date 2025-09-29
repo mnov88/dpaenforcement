@@ -10,8 +10,8 @@
       "q10_org_class_NOT_MENTIONED",
       "q10_org_class_UNCLEAR"
     ],
-    "coverage_count": 945,
-    "coverage_ratio": 0.9459459459459459
+    "coverage_count": 1864,
+    "coverage_ratio": 0.9329329329329329
   },
   "breach_types": {
     "columns": [
@@ -24,8 +24,8 @@
       "q21_breach_types_NOT_MENTIONED",
       "q21_breach_types_UNCLEAR"
     ],
-    "coverage_count": 942,
-    "coverage_ratio": 0.9429429429429429
+    "coverage_count": 1846,
+    "coverage_ratio": 0.923923923923924
   },
   "mitigations": {
     "columns": [
@@ -40,8 +40,8 @@
       "q28_mitigations_NOT_APPLICABLE",
       "q28_mitigations_UNCLEAR"
     ],
-    "coverage_count": 934,
-    "coverage_ratio": 0.934934934934935
+    "coverage_count": 1832,
+    "coverage_ratio": 0.9169169169169169
   },
   "vulnerabilities": {
     "columns": [
@@ -53,7 +53,7 @@
       "q46_vuln_NONE_MENTIONED",
       "q46_vuln_NOT_DISCUSSED"
     ],
-    "coverage_count": 951,
-    "coverage_ratio": 0.9519519519519519
+    "coverage_count": 1906,
+    "coverage_ratio": 0.953953953953954
   }
 }

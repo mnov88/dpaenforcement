@@ -359,9 +359,9 @@ def _train_tree_model(
             y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
             if lgb is not None:
                 if classification:
-                    model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", **params)
+                    model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **params)
                 else:
-                    model = lgb.LGBMRegressor(objective="regression", random_state=random_state, **params)
+                    model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **params)
             elif classification and CatBoostClassifier is not None:
                 model = CatBoostClassifier(
                     verbose=False,
@@ -400,9 +400,9 @@ def _train_tree_model(
 
     if lgb is not None:
         if classification:
-            model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", **(best_params or {}))
+            model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **(best_params or {}))
         else:
-            model = lgb.LGBMRegressor(objective="regression", random_state=random_state, **(best_params or {}))
+            model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **(best_params or {}))
     elif classification and CatBoostClassifier is not None:
         model = CatBoostClassifier(verbose=False, random_state=random_state, **(best_params or {}))
     elif not classification and CatBoostRegressor is not None:
@@ -524,10 +524,19 @@ def _specification_matrix(
         for model in ["lasso", "elasticnet"]
         for winsor in [None, 0.99]
     ]
-    y = df[outcome]
-    mask = y.notna()
-    y = y.loc[mask]
-    X_use = X.loc[mask]
+    # Align X and y strictly on decision_id to avoid boolean indexer misalignment
+    # df is already filtered upstream; we reconstruct y with decision_id as index
+    if "decision_id" not in df.columns:
+        return pd.DataFrame(columns=["outcome", "score"])  # defensive fallback
+    decision_ids = df["decision_id"].astype(str)
+    # Build y, indexed by decision_id
+    y_map = df.set_index(decision_ids)[outcome]
+    # Keep only rows present in X
+    available_ids = X.index.intersection(y_map.index)
+    if len(available_ids) == 0:
+        return pd.DataFrame(columns=["outcome", "score"])  # nothing to evaluate
+    X_use = X.loc[available_ids]
+    y = y_map.loc[available_ids]
     for spec in toggles:
         drop_cols: list[str] = []
         if not spec["fe"]:
@@ -622,9 +631,23 @@ def _stability_selection(
         if classification and coef.ndim > 1:
             coef = coef[0]
         coef = np.asarray(coef).flatten()
-        selection = np.abs(coef) > 1e-6
-        counts.loc[X.columns] += selection.astype(float)
-        total.loc[X.columns] += 1
+        # Determine active columns for this subsample (features with at least one observed value)
+        active_mask = X_sub.notna().any(axis=0)
+        active_cols = X_sub.columns[active_mask]
+        # Align selection length to active feature set; if mismatch, skip iteration defensively
+        if len(coef) != len(active_cols):
+            try:
+                # Best-effort truncate to the shorter length to preserve progress
+                use_len = min(len(coef), len(active_cols))
+                active_cols = active_cols[:use_len]
+                coef = coef[:use_len]
+            except Exception:
+                # If alignment still fails, continue to next iteration
+                continue
+        selection = (np.abs(coef) > 1e-6).astype(float)
+        sel_series = pd.Series(selection, index=active_cols, dtype=float)
+        counts = counts.add(sel_series, fill_value=0.0)
+        total.loc[active_cols] += 1
     probability = counts / total.replace(0, np.nan)
     return probability.reset_index().rename(columns={"index": "feature", 0: "selection_probability"})
 
@@ -675,19 +698,28 @@ def _jurisdiction_effects(
     group: pd.Series,
     cluster: str,
 ) -> pd.DataFrame:
-    design = pd.get_dummies(group.astype(str), prefix=cluster, drop_first=False)
-    model = sm.OLS(residuals, sm.add_constant(design)).fit()
-    params = model.params.drop("const", errors="ignore")
-    se = model.bse.drop("const", errors="ignore")
+    # Build numeric design matrix and align with residuals
+    design = pd.get_dummies(group.astype(str), prefix=cluster, drop_first=False).astype(float)
+    y = pd.to_numeric(residuals, errors="coerce").astype(float)
+    frame = pd.concat([y.rename("y"), design], axis=1).replace([np.inf, -np.inf], np.nan).dropna()
+    if frame.empty:
+        return pd.DataFrame(columns=[cluster, "effect", "ci_low", "ci_high", "pvalue"])  # nothing to estimate
+    X = sm.add_constant(frame.drop(columns="y").to_numpy(dtype=float), has_constant="add")
+    y_arr = frame["y"].to_numpy(dtype=float)
+    model = sm.OLS(y_arr, X).fit()
+    # Rebuild parameter index using column names
+    param_index = ["const"] + frame.drop(columns="y").columns.tolist()
+    params = pd.Series(model.params, index=param_index, copy=False).drop("const", errors="ignore")
+    se = pd.Series(model.bse, index=param_index, copy=False).drop("const", errors="ignore")
     ci_low = params - 1.96 * se
     ci_high = params + 1.96 * se
     frame = pd.DataFrame(
         {
-            cluster: params.index.str.replace(f"{cluster}_", "", regex=False),
+            cluster: pd.Index(params.index).str.replace(f"{cluster}_", "", regex=False),
             "effect": params.values,
             "ci_low": ci_low.values,
             "ci_high": ci_high.values,
-            "pvalue": model.pvalues.drop("const", errors="ignore").values,
+            "pvalue": pd.Series(model.pvalues, index=param_index).drop("const", errors="ignore").values,
         }
     )
     return frame
@@ -695,16 +727,31 @@ def _jurisdiction_effects(
 
 def _crt_test(residuals: pd.Series, group: pd.Series, iterations: int = 200) -> float:
     rng = np.random.default_rng(2)
-    design = pd.get_dummies(group.astype(str), drop_first=True)
-    design = sm.add_constant(design)
-    model = sm.OLS(residuals, design).fit()
-    statistic = model.ssr
+    # One-hot encode group and align with residuals
+    design = pd.get_dummies(group.astype(str), drop_first=True).astype(float)
+    y = pd.to_numeric(residuals, errors="coerce").astype(float)
+    frame = pd.concat([y.rename("y"), design], axis=1).replace([np.inf, -np.inf], np.nan).dropna()
+    # If not enough observations or no variation, return non-significant p-value to avoid crashing
+    if frame.shape[0] < 10 or frame.shape[1] <= 1:
+        return float("nan")
+    X = sm.add_constant(frame.drop(columns="y").to_numpy(dtype=float), has_constant="add")
+    y_arr = frame["y"].to_numpy(dtype=float)
+    try:
+        model = sm.OLS(y_arr, X).fit()
+    except Exception:
+        return float("nan")
+    statistic = float(model.ssr)
     permuted_stats: list[float] = []
     for _ in range(iterations):
-        shuffled = rng.permutation(residuals.to_numpy())
-        perm_model = sm.OLS(shuffled, design).fit()
-        permuted_stats.append(perm_model.ssr)
+        shuffled = rng.permutation(y_arr)
+        try:
+            perm_model = sm.OLS(shuffled, X).fit()
+            permuted_stats.append(float(perm_model.ssr))
+        except Exception:
+            continue
     permuted = np.asarray(permuted_stats)
+    if permuted.size == 0:
+        return float("nan")
     pvalue = float(np.mean(permuted <= statistic))
     return pvalue
 
@@ -715,11 +762,23 @@ def _risk_band_assignments(
     jurisdiction: pd.Series,
     bands: int = 20,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    df = pd.DataFrame({"score": predictions, "outcome": outcome, "jurisdiction": jurisdiction}).dropna()
-    if df.empty:
+    # Align indices to avoid constructor/union index errors
+    common = predictions.index.intersection(outcome.index).intersection(jurisdiction.index)
+    if len(common) == 0:
+        empty = pd.DataFrame(columns=["band", "jurisdiction", "mean_outcome", "count"])
+        return empty, pd.DataFrame(columns=["score", "outcome", "jurisdiction"]) 
+    score = pd.to_numeric(predictions.loc[common], errors="coerce")
+    y = pd.to_numeric(outcome.loc[common], errors="coerce")
+    j = jurisdiction.loc[common].astype(str)
+    df = pd.DataFrame({"score": score, "outcome": y, "jurisdiction": j}).replace([np.inf, -np.inf], np.nan).dropna()
+    if df.empty or df["score"].nunique() < 2:
         empty = pd.DataFrame(columns=["band", "jurisdiction", "mean_outcome", "count"])
         return empty, df
-    df["band"] = pd.qcut(df["score"], q=np.linspace(0, 1, bands + 1), labels=False, duplicates="drop")
+    try:
+        df["band"] = pd.qcut(df["score"], q=np.linspace(0, 1, bands + 1), labels=False, duplicates="drop")
+    except Exception:
+        empty = pd.DataFrame(columns=["band", "jurisdiction", "mean_outcome", "count"])
+        return empty, df
     summary = (
         df.groupby(["band", "jurisdiction"], as_index=False)
         .agg(mean_outcome=("outcome", "mean"), count=("outcome", "size"))

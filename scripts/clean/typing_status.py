@@ -54,6 +54,30 @@ def normalize_country(raw: str) -> Tuple[Optional[str], str]:
 
 
 _NUM_ALLOWED = re.compile(r"[^0-9eE+\-\., ]+")
+_SCHEMA_TOKEN_RE = re.compile(
+    r"\b(?P<prefix>TYPE|ENUM|MULTI_SELECT):(?P<body>[A-Z0-9_,./\-]*)"
+)
+
+
+def _strip_schema_tokens(raw: str) -> tuple[str, bool]:
+    """Remove schema echo tokens while keeping TYPE payloads."""
+
+    had_schema = False
+
+    def _repl(match: re.Match[str]) -> str:
+        nonlocal had_schema
+        had_schema = True
+        prefix = match.group("prefix")
+        body = match.group("body") or ""
+        if prefix == "TYPE":
+            numeric_fragments = re.findall(r"[+-]?\d+(?:[.,]\d+)?(?:[eE][+-]?\d+)?", body)
+            if numeric_fragments:
+                return " ".join(numeric_fragments)
+            return ""
+        return ""
+
+    stripped = _SCHEMA_TOKEN_RE.sub(_repl, raw)
+    return stripped, had_schema
 
 
 def _sanitize_numeric_string(raw: str) -> str:
@@ -91,14 +115,20 @@ def parse_number(raw: str) -> NumericParseResult:
         return NumericParseResult(raw="", value=None, status="NOT_MENTIONED", valid=True)
     if raw_norm in _NUMERIC_STATUS_TOKENS:
         return NumericParseResult(raw=raw_norm, value=None, status=raw_norm, valid=True)
-    s = _sanitize_numeric_string(raw_norm)
-    if not s:
+    stripped, had_schema = _strip_schema_tokens(raw_norm)
+    s = _sanitize_numeric_string(stripped)
+    has_digit = any(ch.isdigit() for ch in s)
+    if not s or not has_digit:
+        status = "NOT_MENTIONED" if had_schema else "PARSE_ERROR"
+        error = None if status == "NOT_MENTIONED" else (
+            "sanitized_numeric_string_empty" if not s else "numeric_string_no_digits"
+        )
         return NumericParseResult(
             raw=raw_norm,
             value=None,
-            status="PARSE_ERROR",
-            valid=False,
-            error="sanitized_numeric_string_empty",
+            status=status,
+            valid=status == "NOT_MENTIONED",
+            error=error,
         )
     try:
         val = float(s)

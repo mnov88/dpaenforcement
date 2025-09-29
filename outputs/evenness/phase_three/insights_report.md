@@ -1,49 +1,44 @@
-# Phase 3 â€“ Explanation & Policy Synthesis
+# Phase 3 – Explanation & Policy Synthesis
 
 ## Driver Attribution
 
-```
-                                   term  delta_aic    lr_stat       pvalue        group_field   pvalue_fdr
-  ORGANIZATION_SIZE_TIER_NOT_APPLICABLE -36.256513  56.256513 1.837831e-08       country_code 9.189155e-08
-       q47_remedial_coverage__DISCUSSED -21.852208  55.852208 4.996442e-06       country_code 1.249110e-05
-ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE -14.710374  38.710374 1.174414e-04       country_code 2.348828e-04
-                  n_corrective_measures -11.617415  49.617415 1.491695e-04       country_code 2.486159e-04
-                  n_principles_violated   2.602966  37.397034 1.048273e-02       country_code 1.310341e-02
-       q47_remedial_coverage__DISCUSSED -29.163010 115.163010 1.655722e-08 dpa_name_canonical 9.189155e-08
-  ORGANIZATION_SIZE_TIER_NOT_APPLICABLE -28.039624  60.039624 5.153895e-07 dpa_name_canonical 1.717965e-06
-ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE  -6.101422  58.101422 3.001950e-04 dpa_name_canonical 4.288500e-04
-                  n_corrective_measures  25.782976  74.217024 1.469320e-02 dpa_name_canonical 1.632578e-02
-                  n_principles_violated  46.423272  67.576728 1.594327e-01 dpa_name_canonical 1.594327e-01
-```
+| term                                    |   delta_aic |   lr_stat |      pvalue | group_field        |   pvalue_fdr |
+|:----------------------------------------|------------:|----------:|------------:|:-------------------|-------------:|
+| q47_remedial_coverage__DISCUSSED        |   -10.5554  |   46.5554 | 0.00024606  | country_code       |  0.000984239 |
+| n_corrective_measures                   |    -7.26651 |   45.2665 | 0.00062889  | country_code       |  0.00167704  |
+| ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE |    -2.82648 |   30.8265 | 0.00586192  | country_code       |  0.0117238   |
+| n_principles_violated                   |     3.18693 |   36.8131 | 0.0123207   | country_code       |  0.0155538   |
+| q47_remedial_coverage__DISCUSSED        |   -26.2947  |  116.295  | 3.17206e-08 | dpa_name_canonical |  2.53765e-07 |
+| ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE |     9.42409 |   54.5759 | 0.00769626  | dpa_name_canonical |  0.012314    |
+| n_corrective_measures                   |    27.7371  |   78.2629 | 0.0136096   | dpa_name_canonical |  0.0155538   |
+| n_principles_violated                   |    46.5818  |   69.4182 | 0.144887    | dpa_name_canonical |  0.144887    |
 
 
 ## Predictive SHAP Attributions
 
-```
-                                              feature  mean_abs_shap
-                                 REMEDY_ONLY_CASE_YES       1.917784
-                                  REMEDY_ONLY_CASE_NO       1.360648
-                          N_CORRECTIVE_MEASURES_BIN_0       1.075239
-                                n_corrective_measures       0.854009
-                                n_principles_violated       0.418716
-              ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE       0.246710
-ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE,MULTINATIONAL       0.228760
-                                CASE_ORIGIN_COMPLAINT       0.220090
-                                   Q47_SIGNATURE_NONE       0.212775
-                                      days_since_gdpr       0.091599
-```
+| feature                                                |   mean_abs_shap |
+|:-------------------------------------------------------|----------------:|
+| REMEDY_ONLY_CASE_YES                                   |        1.79218  |
+| REMEDY_ONLY_CASE_NO                                    |        1.41431  |
+| N_CORRECTIVE_MEASURES_BIN_0                            |        1.13485  |
+| n_corrective_measures                                  |        0.709549 |
+| n_principles_violated                                  |        0.337927 |
+| CASE_ORIGIN_COMPLAINT                                  |        0.214012 |
+| ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE                |        0.208784 |
+| ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE,MULTINATIONAL  |        0.145574 |
+| ORGANIZATION_TYPE_NATURAL_PERSON                       |        0.130878 |
+| ORGANIZATION_SIZE_TIER_LARGE_ENTERPRISE, MULTINATIONAL |        0.129029 |
 
 
 ## Gap Decomposition
 
-```
- explained  unexplained  overall  explained_se  unexplained_se  overall_se group_a group_b    outcome  n_obs
-  2.693593    -0.455183 2.238410           NaN             NaN         NaN      ES      IT fine_log1p    767
-  3.104737    -1.989918 1.114818           NaN             NaN         NaN      ES      RO fine_log1p    652
-  4.304937    -1.931327 2.373610           NaN             NaN         NaN      ES      IS fine_log1p    635
-  1.987129    -0.594479 1.392650           NaN             NaN         NaN      ES      GR fine_log1p    618
-  1.077732     1.345933 2.423665           NaN             NaN         NaN      ES      NO fine_log1p    625
-```
+|   explained |   unexplained |   overall |   explained_se |   unexplained_se |   overall_se | group_a   | group_b   | outcome    |   n_obs |
+|------------:|--------------:|----------:|---------------:|-----------------:|-------------:|:----------|:----------|:-----------|--------:|
+|     2.71348 |     -0.504831 |   2.20865 |            nan |              nan |          nan | ES        | IT        | fine_log1p |     843 |
+|     3.20896 |     -2.02413  |   1.18483 |            nan |              nan |          nan | ES        | RO        | fine_log1p |     700 |
+|     4.33958 |     -1.81574  |   2.52384 |            nan |              nan |          nan | ES        | IS        | fine_log1p |     656 |
+|     1.9904  |     -0.562702 |   1.42769 |            nan |              nan |          nan | ES        | GR        | fine_log1p |     633 |
+|     1.06507 |      1.32463  |   2.38969 |            nan |              nan |          nan | ES        | NO        | fine_log1p |     639 |
 
 
 ## Policy Lever Estimates
@@ -53,21 +48,19 @@ _No data available._
 
 ## Randomisation Inference
 
-```
-      outcome  observed_stat  perm_mean  perm_std   pvalue
-fine_positive       2.574179   2.127920  0.169260 0.090909
-   fine_log1p     125.664198 103.211665  4.671151 0.090909
-```
+| outcome       |   observed_stat |   perm_mean |   perm_std |    pvalue |
+|:--------------|----------------:|------------:|-----------:|----------:|
+| fine_positive |        0.347251 |    0.342132 |   0.077213 | 0.545455  |
+| fine_log1p    |      141.627    |  114.121    |   5.50567  | 0.0909091 |
 
 
 ## Robustness Summary
 
-```
-             scenario     type   nobs  logistic_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY  linear_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY  logistic_q46_vuln_CHILDREN  linear_q46_vuln_CHILDREN                                                                     notes  quantile
-reweight_country_year  glm_ols 1962.0                                                     NaN                                                   NaN                         NaN                       NaN                                          Applied country-year reweighting       NaN
-     heckman_turnover  glm_ols 1962.0                                                     NaN                                                   NaN                         NaN                       NaN Skipped turnover correction (turnover_log1p missing); Linear model failed       NaN
-       discussed_only  glm_ols 1962.0                                                     NaN                                                   NaN                         NaN                       NaN                   Filtered to discussed-only records; Linear model failed       NaN
-      winsorize_fines  glm_ols 1962.0                                                     NaN                                                   NaN                         NaN                       NaN                      Winsorized fine_log1p at q=0.99; Linear model failed       NaN
-          quantile_75 quantile 1534.0                                                     NaN                                                   NaN                         NaN                       NaN                                                                                0.75
-          quantile_90 quantile 1534.0                                                     NaN                                                   NaN                         NaN                       NaN                                                                                0.90
-```
+| scenario              | type     |   nobs |   logistic_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY |   linear_q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY |   logistic_q46_vuln_CHILDREN |   linear_q46_vuln_CHILDREN | notes                                                                     |   quantile |
+|:----------------------|:---------|-------:|---------------------------------------------------------:|-------------------------------------------------------:|-----------------------------:|---------------------------:|:--------------------------------------------------------------------------|-----------:|
+| reweight_country_year | glm_ols  |   1962 |                                                      nan |                                                    nan |                          nan |                        nan | Applied country-year reweighting                                          |     nan    |
+| heckman_turnover      | glm_ols  |   1962 |                                                      nan |                                                    nan |                          nan |                        nan | Skipped turnover correction (turnover_log1p missing); Linear model failed |     nan    |
+| discussed_only        | glm_ols  |   1962 |                                                      nan |                                                    nan |                          nan |                        nan | Filtered to discussed-only records; Linear model failed                   |     nan    |
+| winsorize_fines       | glm_ols  |   1962 |                                                      nan |                                                    nan |                          nan |                        nan | Winsorized fine_log1p at q=0.99; Linear model failed                      |     nan    |
+| quantile_75           | quantile |   1719 |                                                      nan |                                                    nan |                          nan |                        nan |                                                                           |       0.75 |
+| quantile_90           | quantile |   1719 |                                                      nan |                                                    nan |                          nan |                        nan |                                                                           |       0.9  |

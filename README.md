@@ -34,8 +34,11 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
    ```bash
    cp outputs/cleaned_wide.csv outputs/cleaned_wide_latest.csv
    python -m scripts.evenness.cli phase-zero
+   # Optional GPU acceleration for supported learners (LightGBM/CatBoost):
+   python -m scripts.evenness.cli phase-zero --gpu
    ```
    This produces feature coverage ledgers, baseline drivers, knockoff/stability results, and fairness diagnostics under `outputs/evenness/omniscan/`.
+   A rotating log is written to `outputs/evenness/omniscan/phase0_run.log`.
 4. **Emit long tables / run targeted analyses**
    ```bash
    python -m scripts.cli emit-long \

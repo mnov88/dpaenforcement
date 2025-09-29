@@ -38,6 +38,8 @@ import shap
 import statsmodels.api as sm
 
 from .config import FACTS_CONFIG, EvennessPaths
+import logging
+from logging.handlers import RotatingFileHandler
 from .data import load_wide_dataset
 
 
@@ -331,69 +333,130 @@ def _outcome_columns(df: pd.DataFrame) -> list[str]:
     return cols + sorted(power_cols)
 
 
+def _safe_log_loss(y_true: pd.Series | np.ndarray, proba: np.ndarray) -> float:
+    """Compute log loss robustly, tolerating single-class folds.
+
+    For single-class y_true, sklearn requires labels to be specified. If an
+    exception still occurs (e.g., degenerate probabilities), return NaN.
+    """
+    try:
+        return metrics.log_loss(y_true, proba, labels=[0, 1])
+    except ValueError:
+        return float("nan")
+
+
 def _train_tree_model(
     X: pd.DataFrame,
     y: pd.Series,
     classification: bool,
     random_state: int = 42,
+    use_gpu: bool = False,
 ) -> tuple[object, np.ndarray, np.ndarray]:
     """Fit a gradient boosted model with nested CV and return feature importances."""
 
     if classification:
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state)
     else:
-        splitter = KFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = KFold(n_splits=3, shuffle=True, random_state=random_state)
 
-    params_grid = [
-        {"num_leaves": 31, "learning_rate": 0.05, "n_estimators": 300},
-        {"num_leaves": 15, "learning_rate": 0.1, "n_estimators": 200},
-    ]
+    # Tiny but robust grid geared for sparse folds
+    params_grid: list[Mapping[str, object]] = []
+    for min_data in (5, 15):
+        for leaves in (15, 31, 63):
+            for estimators in (200, 400):
+                for reg_lambda in (0.0, 1.0):
+                    params_grid.append(
+                        {
+                            "num_leaves": leaves,
+                            "n_estimators": estimators,
+                            "learning_rate": 0.05,
+                            "feature_pre_filter": False,
+                            "min_gain_to_split": 0.0,
+                            "min_data_in_leaf": min_data,
+                            "colsample_bytree": 0.8,
+                            "subsample": 0.8,
+                            "max_depth": -1,
+                            "reg_lambda": reg_lambda,
+                        }
+                    )
+    if not params_grid:
+        params_grid = [{"num_leaves": 31, "learning_rate": 0.05, "n_estimators": 300}]
     best_score = np.inf
     best_params: Mapping[str, object] | None = None
-    scoring = metrics.log_loss if classification else metrics.mean_squared_error
+    scoring = _safe_log_loss if classification else metrics.mean_squared_error
 
     for params in params_grid:
-        scores: list[float] = []
+        fold_scores: list[float] = []
         for train_idx, test_idx in splitter.split(X, y):
-            X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
-            y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
-            if lgb is not None:
-                if classification:
-                    model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **params)
+            try:
+                X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
+                y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
+                if classification and (len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2):
+                    fold_scores.append(float("nan"))
+                    continue
+                if lgb is not None:
+                    if classification:
+                        model = lgb.LGBMClassifier(
+                            objective="binary",
+                            random_state=random_state,
+                            class_weight="balanced",
+                            n_jobs=-1,
+                            **params,
+                        )
+                        if use_gpu:
+                            # Safe GPU hints; LightGBM falls back if unavailable
+                            try:
+                                model.set_params(device_type="gpu")
+                            except Exception:
+                                pass
+                    else:
+                        model = lgb.LGBMRegressor(
+                            objective="regression",
+                            random_state=random_state,
+                            n_jobs=-1,
+                            **params,
+                        )
+                        if use_gpu:
+                            try:
+                                model.set_params(device_type="gpu")
+                            except Exception:
+                                pass
+                elif classification and CatBoostClassifier is not None:
+                    model = CatBoostClassifier(
+                        verbose=False,
+                        random_state=random_state,
+                        depth=6,
+                        learning_rate=float(params.get("learning_rate", 0.05)),
+                        iterations=int(params.get("n_estimators", 300)),
+                        task_type="GPU" if use_gpu else "CPU",
+                    )
+                elif not classification and CatBoostRegressor is not None:
+                    model = CatBoostRegressor(
+                        verbose=False,
+                        random_state=random_state,
+                        depth=6,
+                        learning_rate=float(params.get("learning_rate", 0.05)),
+                        iterations=int(params.get("n_estimators", 300)),
+                        task_type="GPU" if use_gpu else "CPU",
+                    )
                 else:
-                    model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **params)
-            elif classification and CatBoostClassifier is not None:
-                model = CatBoostClassifier(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            elif not classification and CatBoostRegressor is not None:
-                model = CatBoostRegressor(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            else:
-                from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
+                    from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 
+                    if classification:
+                        model = HistGradientBoostingClassifier(random_state=random_state)
+                    else:
+                        model = HistGradientBoostingRegressor(random_state=random_state)
+                model.fit(X_train, y_train)
                 if classification:
-                    model = HistGradientBoostingClassifier(random_state=random_state)
+                    proba = model.predict_proba(X_test)[:, 1]
+                    score = scoring(y_test, np.clip(proba, 1e-6, 1 - 1e-6))
                 else:
-                    model = HistGradientBoostingRegressor(random_state=random_state)
-            model.fit(X_train, y_train)
-            if classification:
-                proba = model.predict_proba(X_test)[:, 1]
-                score = scoring(y_test, np.clip(proba, 1e-6, 1 - 1e-6))
-            else:
-                pred = model.predict(X_test)
-                score = scoring(y_test, pred)
-            scores.append(score)
-        mean_score = float(np.mean(scores))
+                    pred = model.predict(X_test)
+                    score = scoring(y_test, pred)
+                fold_scores.append(float(score))
+            except Exception:
+                fold_scores.append(float("nan"))
+        mean_score = float(np.nanmean(fold_scores))
         if mean_score < best_score:
             best_score = mean_score
             best_params = params
@@ -401,12 +464,22 @@ def _train_tree_model(
     if lgb is not None:
         if classification:
             model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **(best_params or {}))
+            if use_gpu:
+                try:
+                    model.set_params(device_type="gpu")
+                except Exception:
+                    pass
         else:
             model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **(best_params or {}))
+            if use_gpu:
+                try:
+                    model.set_params(device_type="gpu")
+                except Exception:
+                    pass
     elif classification and CatBoostClassifier is not None:
-        model = CatBoostClassifier(verbose=False, random_state=random_state, **(best_params or {}))
+        model = CatBoostClassifier(verbose=False, random_state=random_state, task_type="GPU" if use_gpu else "CPU", **(best_params or {}))
     elif not classification and CatBoostRegressor is not None:
-        model = CatBoostRegressor(verbose=False, random_state=random_state, **(best_params or {}))
+        model = CatBoostRegressor(verbose=False, random_state=random_state, task_type="GPU" if use_gpu else "CPU", **(best_params or {}))
     else:
         from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 
@@ -462,6 +535,26 @@ def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.Da
             interactions_df = pd.DataFrame(columns=["feature_a", "feature_b", "weight"])
     else:
         interactions_df = pd.DataFrame(columns=["feature_a", "feature_b", "weight"])
+    return shap_summary, interactions_df, pd.DataFrame(shap_matrix, columns=X.columns, index=X.index)
+
+
+def _linear_shap_summaries(model: object, X: pd.DataFrame, classification: bool) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Compute SHAP summaries for linear models as a fallback.
+
+    Interactions are not computed for linear models; an empty frame is returned.
+    """
+    try:
+        explainer = shap.LinearExplainer(model, X, feature_perturbation="interventional")
+    except Exception:
+        explainer = shap.LinearExplainer(model, X)
+    shap_values = explainer.shap_values(X)
+    if isinstance(shap_values, list):
+        shap_matrix = shap_values[1] if len(shap_values) > 1 else shap_values[0]
+    else:
+        shap_matrix = shap_values
+    mean_abs = np.mean(np.abs(shap_matrix), axis=0)
+    shap_summary = pd.DataFrame({"feature": X.columns, "mean_abs_shap": mean_abs}).sort_values("mean_abs_shap", ascending=False).reset_index(drop=True)
+    interactions_df = pd.DataFrame(columns=["feature_a", "feature_b", "weight"])
     return shap_summary, interactions_df, pd.DataFrame(shap_matrix, columns=X.columns, index=X.index)
 
 
@@ -549,29 +642,69 @@ def _specification_matrix(
         X_spec = X_use.drop(columns=drop_cols) if drop_cols else X_use
         if X_spec.empty:
             continue
+        X_values = X_spec
         if classification:
-            penalty = "l1" if spec["model"] == "lasso" else "elasticnet"
-            clf_kwargs = {"penalty": penalty, "solver": "saga", "max_iter": 200}
-            if penalty == "elasticnet":
-                clf_kwargs["l1_ratio"] = 0.5
-            model = LogisticRegression(**clf_kwargs)
-            pipeline = Pipeline(
+            # Elastic-net logistic with robust iterations and missingness indicators
+            penalty = "elasticnet" if spec["model"] == "elasticnet" else "l1"
+            # Define small grid per spec (C, l1_ratio)
+            c_grid = [0.25, 0.5, 1.0]
+            l1_grid = [0.0, 0.1, 0.5] if penalty == "elasticnet" else [1.0]
+            best_auc = -np.inf
+            best_pipeline = None
+            splitter_inner = StratifiedKFold(n_splits=3, shuffle=True, random_state=0)
+            for C in c_grid:
+                for l1_ratio in l1_grid:
+                    clf_kwargs = {
+                        "penalty": penalty,
+                        "solver": "saga",
+                        "max_iter": 3000,
+                        "tol": 1e-3,
+                        "C": C,
+                        "l1_ratio": l1_ratio if penalty == "elasticnet" else None,
+                        "warm_start": True,
+                    }
+                    # Remove None to avoid sklearn warnings
+                    clf_kwargs = {k: v for k, v in clf_kwargs.items() if v is not None}
+                    model = LogisticRegression(**clf_kwargs)
+                    pipeline = Pipeline(
+                        steps=[
+                            ("impute", SimpleImputer(strategy="median", add_indicator=True)),
+                            ("scale", StandardScaler(with_mean=False)),
+                            ("model", model),
+                        ]
+                    )
+                    aucs: list[float] = []
+                    for tr_idx, te_idx in splitter_inner.split(X_values, y):
+                        try:
+                            pipeline.fit(X_values.iloc[tr_idx], y.iloc[tr_idx])
+                            if len(np.unique(y.iloc[te_idx])) < 2:
+                                aucs.append(float("nan"))
+                                continue
+                            proba = pipeline.predict_proba(X_values.iloc[te_idx])[:, 1]
+                            aucs.append(metrics.roc_auc_score(y.iloc[te_idx], proba))
+                        except Exception:
+                            aucs.append(float("nan"))
+                    mean_auc = float(np.nanmean(aucs))
+                    if mean_auc > best_auc:
+                        best_auc = mean_auc
+                        best_pipeline = pipeline
+            # Use best_pipeline for outer evaluation
+            pipeline = best_pipeline if best_pipeline is not None else Pipeline(
                 steps=[
-                    ("impute", SimpleImputer(strategy="median")),
+                    ("impute", SimpleImputer(strategy="median", add_indicator=True)),
                     ("scale", StandardScaler(with_mean=False)),
-                    ("model", model),
+                    ("model", LogisticRegression(penalty=penalty, solver="saga", max_iter=3000, tol=1e-3)),
                 ]
             )
         else:
             model = ElasticNet(alpha=0.1 if spec["model"] == "lasso" else 0.05, l1_ratio=0.5)
             pipeline = Pipeline(
                 steps=[
-                    ("impute", SimpleImputer(strategy="median")),
+                    ("impute", SimpleImputer(strategy="median", add_indicator=True)),
                     ("scale", StandardScaler(with_mean=False)),
                     ("model", model),
                 ]
             )
-        X_values = X_spec
         if spec["winsor"] and not classification:
             upper = y.quantile(spec["winsor"])
             lower = y.quantile(1 - spec["winsor"])
@@ -579,7 +712,7 @@ def _specification_matrix(
         else:
             y_fit = y
         scores: list[float] = []
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=0) if classification else KFold(n_splits=5, shuffle=True, random_state=0)
+        splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=0) if classification else KFold(n_splits=3, shuffle=True, random_state=0)
         for train_idx, test_idx in splitter.split(X_values, y_fit):
             pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
             if classification:
@@ -616,12 +749,12 @@ def _stability_selection(
         X_sub = X.loc[sample]
         y_sub = y.loc[sample]
         if classification:
-            model = LogisticRegression(penalty="l1", solver="saga", max_iter=200)
+            model = LogisticRegression(penalty="elasticnet", l1_ratio=0.5, solver="saga", max_iter=3000, tol=1e-3)
         else:
             model = ElasticNet(alpha=0.1, l1_ratio=0.7)
         pipeline = Pipeline(
             steps=[
-                ("impute", SimpleImputer(strategy="median")),
+                ("impute", SimpleImputer(strategy="median", add_indicator=False)),
                 ("scale", StandardScaler(with_mean=False)),
                 ("model", model),
             ]
@@ -658,12 +791,12 @@ def _knockoff_filter(X: pd.DataFrame, y: pd.Series, classification: bool, q: flo
     knockoffs.columns = [f"{col}__knockoff" for col in X.columns]
     augmented = pd.concat([X, knockoffs], axis=1)
     if classification:
-        model = LogisticRegression(penalty="l1", solver="saga", max_iter=300)
+        model = LogisticRegression(penalty="elasticnet", l1_ratio=0.5, solver="saga", max_iter=3000, tol=1e-3)
     else:
         model = ElasticNet(alpha=0.05, l1_ratio=0.7)
     pipeline = Pipeline(
         steps=[
-            ("impute", SimpleImputer(strategy="median")),
+            ("impute", SimpleImputer(strategy="median", add_indicator=False)),
             ("scale", StandardScaler(with_mean=False)),
             ("model", model),
         ]
@@ -838,11 +971,29 @@ def _build_network(importance: pd.DataFrame, outcomes: Sequence[str]) -> tuple[p
     return edge_df, pd.DataFrame(community_records)
 
 
-def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
+def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> OmniScanOutputs:
     """Execute the omni-scan workflow and persist artefacts to disk."""
 
     paths = paths or EvennessPaths()
     paths.ensure()
+
+    # Setup rotating file logger (idempotent) under omniscan dir
+    logger = logging.getLogger("evenness.omniscan")
+    if not logger.handlers:
+        logger.setLevel(logging.INFO)
+        log_path = str((pd.Path(paths.omniscan_dir) if hasattr(pd, 'Path') else None) or paths.omniscan_dir / "phase0_run.log")
+        try:
+            handler = RotatingFileHandler(log_path, maxBytes=10_000_000, backupCount=3, encoding="utf-8")
+            formatter = logging.Formatter(fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
+            handler.setFormatter(formatter)
+            logger.addHandler(handler)
+        except Exception:
+            # Fallback to console if file handler fails
+            stream = logging.StreamHandler()
+            formatter = logging.Formatter(fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
+            stream.setFormatter(formatter)
+            logger.addHandler(stream)
+    logger.info("Phase 0 omni-scan started (use_gpu=%s)", use_gpu)
 
     wide_df = load_wide_dataset(paths.wide_csv)
     feature_matrix, metadata, coverage, checklist = _build_feature_matrix(wide_df)
@@ -888,8 +1039,47 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
             decision_ids = available
             X_outcome = X.loc[decision_ids]
         classification = y.dropna().isin({0, 1, True, False}).all()
-        model, importance, _ = _train_tree_model(X_outcome, y, classification)
-        shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
+        logger.info("Training outcome=%s (n=%d, features=%d, classification=%s)", outcome, X_outcome.shape[0], X_outcome.shape[1], classification)
+        model, importance, _ = _train_tree_model(X_outcome, y, classification, use_gpu=use_gpu)
+        # Determine if LightGBM model is informative; if not, fallback to GLM + Linear SHAP
+        use_linear_fallback = False
+        if classification:
+            try:
+                train_proba = model.predict_proba(X_outcome)[:, 1]
+                train_auc = float(metrics.roc_auc_score(y, train_proba))
+            except Exception:
+                train_auc = float("nan")
+            # Approximate effective splits by counting non-zero importances
+            try:
+                non_zero_splits = int(np.sum(np.asarray(getattr(model, "feature_importances_", np.zeros(X_outcome.shape[1]))) > 0))
+            except Exception:
+                non_zero_splits = 0
+            if (not np.isfinite(train_auc) or train_auc <= 0.52) or (non_zero_splits < 5):
+                use_linear_fallback = True
+        if use_linear_fallback:
+            # Build elastic-net logistic pipeline for fallback explanations
+            fallback_pipeline = Pipeline(
+                steps=[
+                    ("impute", SimpleImputer(strategy="median", add_indicator=False)),
+                    ("scale", StandardScaler(with_mean=False)),
+                    ("model", LogisticRegression(penalty="elasticnet", l1_ratio=0.5, solver="saga", max_iter=3000, tol=1e-3)),
+                ]
+            )
+            try:
+                fallback_pipeline.fit(X_outcome, y)
+                X_lin = fallback_pipeline.named_steps["impute"].transform(X_outcome)
+                X_lin = fallback_pipeline.named_steps["scale"].transform(X_lin)
+                # Preserve original column names (dims unchanged without indicators)
+                X_lin = pd.DataFrame(X_lin, index=X_outcome.index, columns=X_outcome.columns)
+                shap_summary, interactions, shap_matrix = _linear_shap_summaries(fallback_pipeline.named_steps["model"], X_lin, classification)
+                model = fallback_pipeline
+                logger.info("Fallback to GLM+Linear SHAP for %s (tree ineffective)", outcome)
+            except Exception:
+                # If fallback fails, proceed with tree SHAP as last resort
+                shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
+                logger.warning("Fallback failed; using TreeSHAP for %s", outcome)
+        else:
+            shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
         shap_summary["outcome"] = outcome
         interactions["outcome"] = outcome
         block_importance = _aggregate_block_importance(shap_summary, metadata)
@@ -960,17 +1150,37 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
                 )
 
         # DML residuals
-        splitter = KFold(n_splits=5, shuffle=True, random_state=0)
+        splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=0) if classification else KFold(n_splits=3, shuffle=True, random_state=0)
         residuals = pd.Series(index=y.index, dtype=float)
         for train_idx, test_idx in splitter.split(X_outcome, y):
-            model_fold, _, _ = _train_tree_model(X_outcome.iloc[train_idx], y.iloc[train_idx], classification)
-            if classification and hasattr(model_fold, "predict_proba"):
-                preds = model_fold.predict_proba(X_outcome.iloc[test_idx])[:, 1]
+            try:
+                if classification and (len(np.unique(y.iloc[train_idx])) < 2 or len(np.unique(y.iloc[test_idx])) < 2):
+                    logger.warning("Skipping fold with single-class target for %s", outcome)
+                    continue
+                model_fold, _, _ = _train_tree_model(X_outcome.iloc[train_idx], y.iloc[train_idx], classification, use_gpu=use_gpu)
+                if classification and hasattr(model_fold, "predict_proba"):
+                    preds = model_fold.predict_proba(X_outcome.iloc[test_idx])[:, 1]
+                else:
+                    preds = model_fold.predict(X_outcome.iloc[test_idx])
+                    if classification and isinstance(preds, np.ndarray) and preds.ndim > 1:
+                        preds = preds[:, 1]
+                residuals.iloc[test_idx] = y.iloc[test_idx] - preds
+            except Exception:
+                logger.exception("Fold failure during DML residuals for %s; continuing", outcome)
+                continue
+        # Backfill any missing residuals with predictions from full model
+        try:
+            if classification and hasattr(model, "predict_proba"):
+                full_preds = model.predict_proba(X_outcome)[:, 1]
             else:
-                preds = model_fold.predict(X_outcome.iloc[test_idx])
-                if classification and isinstance(preds, np.ndarray) and preds.ndim > 1:
-                    preds = preds[:, 1]
-            residuals.iloc[test_idx] = y.iloc[test_idx] - preds
+                full_preds = model.predict(X_outcome)
+                if classification and isinstance(full_preds, np.ndarray) and full_preds.ndim > 1:
+                    full_preds = full_preds[:, 1]
+            missing = residuals.isna()
+            if missing.any():
+                residuals.loc[missing] = y.loc[missing] - pd.Series(full_preds, index=y.index).loc[missing]
+        except Exception:
+            pass
 
         if not country.empty:
             country_effects = _jurisdiction_effects(residuals, country, "country")
@@ -1053,6 +1263,7 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
     network_edges.to_csv(paths.network_edges_csv, index=False)
     community_summary.to_csv(paths.community_summary_csv, index=False)
 
+    logger.info("Phase 0 omni-scan completed")
     return OmniScanOutputs(
         feature_universe_json=str(paths.feature_universe_json),
         coverage_ledger_csv=str(paths.coverage_ledger_csv),

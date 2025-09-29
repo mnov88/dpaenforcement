@@ -57508,3 +57508,5 @@ ValueError: y_true contains only one label (0.0). Please provide the list of all
 [LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
 [LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
 [LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+2025-09-29 16:47:04 [INFO] Phase 0 omni-scan started (use_gpu=True)
+2025-09-29 16:47:11 [INFO] Training outcome=fine_positive (n=1922, features=16840, classification=True)

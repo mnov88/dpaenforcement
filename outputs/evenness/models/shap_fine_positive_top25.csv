@@ -1,0 +1,26 @@
+feature,mean_abs_shap
+n_corrective_measures,1.1039514143329239
+organization_size_tier_PUBLIC_SECTOR_BODY,0.5103797440116544
+n_principles_violated,0.23091800092836592
+country_code_ES,0.15162548038651089
+dpa_name_canonical_STRING,0.09742107757970059
+country_code_SI,0.08384796997041503
+days_since_gdpr,0.07681215757804916
+organization_size_tier_SME,0.061403354493609875
+"organization_size_tier_LARGE_ENTERPRISE,MULTINATIONAL",0.057303247305271324
+decision_year_bucket_nan,0.05302921295067947
+dpa_name_canonical_National Supervisory Authority,0.05074328067439853
+organization_size_tier_NOT_MENTIONED,0.050269425219427545
+country_code_SE,0.04577086326135847
+organization_size_tier_LARGE_ENTERPRISE,0.043425086900854656
+case_origin_COMPLAINT,0.042690283426995455
+dpa_name_canonical_Swedish Authority for Privacy Protection (IMY),0.035680312237176895
+country_code_PL,0.03165505702275328
+dpa_name_canonical_National Supervisory Authority for the Processing of Personal Data,0.02399680937412211
+"organization_size_tier_LARGE_ENTERPRISE, NOT_MENTIONED",0.0237455801021445
+dpa_name_canonical_Spanish Agency for Data Protection,0.015227842100628533
+organization_size_tier_NON_PROFIT,0.011450294155437359
+dpa_name_canonical_Integritetsskyddsmyndigheten,0.010419439667234713
+dpa_name_canonical_Swedish Authority for Privacy Protection,0.010025706120346412
+dpa_name_canonical_Comissão Nacional de Proteção de Dados,0.008678692953610687
+dpa_name_canonical_ANSPDCP,0.008505875158239322

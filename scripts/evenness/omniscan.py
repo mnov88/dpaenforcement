@@ -2,14 +2,17 @@
 from __future__ import annotations
 
 import json
+import logging
 from dataclasses import dataclass
 import re
-from typing import Mapping, Sequence
+from typing import Iterable, Mapping, Sequence
+import warnings
 
 import numpy as np
 import pandas as pd
 from scipy import stats
 from sklearn import metrics
+from sklearn.exceptions import ConvergenceWarning
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import ElasticNet, LogisticRegression
 from sklearn.model_selection import KFold, StratifiedKFold
@@ -39,6 +42,93 @@ import statsmodels.api as sm
 
 from .config import FACTS_CONFIG, EvennessPaths
 from .data import load_wide_dataset
+
+try:  # progress indicator for long CV sweeps
+    from tqdm.auto import tqdm
+except Exception:  # pragma: no cover - fallback when tqdm absent
+    def tqdm(iterable: Iterable, **_: object) -> Iterable:
+        return iterable
+
+
+logger = logging.getLogger(__name__)
+
+
+def safe_log_loss(y_true: Sequence[int] | pd.Series, proba: np.ndarray) -> float:
+    """Compute log-loss while tolerating single-class folds."""
+
+    try:
+        clipped = np.clip(proba, 1e-6, 1 - 1e-6)
+        return float(metrics.log_loss(y_true, clipped, labels=[0, 1]))
+    except ValueError:
+        return float("nan")
+
+
+class MonitoredLogisticRegression(LogisticRegression):
+    """Logistic regression with simple progress monitoring for SAGA."""
+
+    def __init__(
+        self,
+        *args: object,
+        monitor_start: int = 1000,
+        monitor_step: int = 250,
+        monitor_eps: float = 1e-4,
+        monitor_patience: int = 3,
+        **kwargs: object,
+    ) -> None:
+        super().__init__(*args, **kwargs)
+        self.monitor_start = monitor_start
+        self.monitor_step = monitor_step
+        self.monitor_eps = monitor_eps
+        self.monitor_patience = monitor_patience
+        self.monitor_history_: list[dict[str, float]] = []
+        self.soft_not_converged_: bool = False
+
+    def fit(self, X: np.ndarray, y: Sequence[int], sample_weight: Sequence[float] | None = None) -> "MonitoredLogisticRegression":
+        original_max_iter = self.max_iter
+        current_limit = min(original_max_iter, self.monitor_start)
+        best_gap = np.inf
+        stagnation = 0
+        history: list[dict[str, float]] = []
+        warm_start_original = self.warm_start
+        self.warm_start = True
+        self.soft_not_converged_ = False
+
+        while True:
+            self.max_iter = current_limit
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore", ConvergenceWarning)
+                super().fit(X, y, sample_weight=sample_weight)
+            iterations_used = int(np.max(np.atleast_1d(self.n_iter_)))
+            duality_gap = float(getattr(self, "dual_gap_", np.nan))
+            history.append({"iterations": float(iterations_used), "duality_gap": duality_gap})
+            logger.debug(
+                "logreg step: iters=%s gap=%s limit=%s", iterations_used, duality_gap, current_limit
+            )
+            if iterations_used < current_limit or current_limit >= original_max_iter:
+                break
+            if iterations_used >= self.monitor_start:
+                if np.isfinite(duality_gap):
+                    improvement = best_gap - duality_gap
+                    if np.isinf(best_gap) or improvement >= self.monitor_eps:
+                        best_gap = duality_gap
+                        stagnation = 0
+                    else:
+                        stagnation += 1
+                else:
+                    stagnation += 1
+                if stagnation >= self.monitor_patience:
+                    self.soft_not_converged_ = True
+                    logger.info("logreg early stop triggered after %s iterations", iterations_used)
+                    break
+            next_limit = min(original_max_iter, current_limit + self.monitor_step)
+            if next_limit == current_limit:
+                break
+            current_limit = next_limit
+
+        self.monitor_history_ = history
+        self.max_iter = original_max_iter
+        self.warm_start = warm_start_original
+        return self
 
 
 @dataclass(frozen=True)
@@ -340,69 +430,126 @@ def _train_tree_model(
     """Fit a gradient boosted model with nested CV and return feature importances."""
 
     if classification:
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = StratifiedKFold(n_splits=3, shuffle=True, random_state=random_state)
     else:
-        splitter = KFold(n_splits=5, shuffle=True, random_state=random_state)
+        splitter = KFold(n_splits=3, shuffle=True, random_state=random_state)
 
-    params_grid = [
-        {"num_leaves": 31, "learning_rate": 0.05, "n_estimators": 300},
-        {"num_leaves": 15, "learning_rate": 0.1, "n_estimators": 200},
-    ]
+    params_grid: list[dict[str, object]] = []
+    if lgb is not None:
+        for num_leaves in [15, 31, 63]:
+            for min_data_in_leaf in [5, 15]:
+                for n_estimators in [200, 400]:
+                    for reg_lambda in [0.0, 1.0]:
+                        params_grid.append(
+                            {
+                                "num_leaves": num_leaves,
+                                "min_data_in_leaf": min_data_in_leaf,
+                                "n_estimators": n_estimators,
+                                "learning_rate": 0.05,
+                                "feature_pre_filter": False,
+                                "min_gain_to_split": 0.0,
+                                "colsample_bytree": 0.8,
+                                "subsample": 0.8,
+                                "max_depth": -1,
+                                "reg_lambda": reg_lambda,
+                            }
+                        )
+    else:
+        params_grid = [{}]
     best_score = np.inf
     best_params: Mapping[str, object] | None = None
-    scoring = metrics.log_loss if classification else metrics.mean_squared_error
+    scoring = safe_log_loss if classification else metrics.mean_squared_error
 
     for params in params_grid:
         scores: list[float] = []
-        for train_idx, test_idx in splitter.split(X, y):
+        for fold, (train_idx, test_idx) in enumerate(splitter.split(X, y), start=1):
             X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
             y_train, y_test = y.iloc[train_idx], y.iloc[test_idx]
-            if lgb is not None:
-                if classification:
-                    model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **params)
+            if classification and (len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2):
+                logger.warning("Skipping tree fold %s due to single-class target", fold)
+                continue
+            try:
+                if lgb is not None:
+                    if classification:
+                        model = lgb.LGBMClassifier(
+                            objective="binary",
+                            random_state=random_state,
+                            class_weight="balanced",
+                            n_jobs=-1,
+                            **params,
+                        )
+                    else:
+                        model = lgb.LGBMRegressor(
+                            objective="regression",
+                            random_state=random_state,
+                            n_jobs=-1,
+                            **params,
+                        )
+                elif classification and CatBoostClassifier is not None:
+                    model = CatBoostClassifier(
+                        verbose=False,
+                        random_state=random_state,
+                        depth=6,
+                        learning_rate=0.05,
+                        iterations=200,
+                    )
+                elif not classification and CatBoostRegressor is not None:
+                    model = CatBoostRegressor(
+                        verbose=False,
+                        random_state=random_state,
+                        depth=6,
+                        learning_rate=0.05,
+                        iterations=200,
+                    )
                 else:
-                    model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **params)
-            elif classification and CatBoostClassifier is not None:
-                model = CatBoostClassifier(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            elif not classification and CatBoostRegressor is not None:
-                model = CatBoostRegressor(
-                    verbose=False,
-                    random_state=random_state,
-                    depth=6,
-                    learning_rate=params["learning_rate"],
-                    iterations=params["n_estimators"],
-                )
-            else:
-                from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
+                    from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 
+                    if classification:
+                        model = HistGradientBoostingClassifier(random_state=random_state)
+                    else:
+                        model = HistGradientBoostingRegressor(random_state=random_state)
+                model.fit(X_train, y_train)
                 if classification:
-                    model = HistGradientBoostingClassifier(random_state=random_state)
+                    proba = model.predict_proba(X_test)[:, 1]
+                    score = scoring(y_test, proba)
                 else:
-                    model = HistGradientBoostingRegressor(random_state=random_state)
-            model.fit(X_train, y_train)
-            if classification:
-                proba = model.predict_proba(X_test)[:, 1]
-                score = scoring(y_test, np.clip(proba, 1e-6, 1 - 1e-6))
-            else:
-                pred = model.predict(X_test)
-                score = scoring(y_test, pred)
-            scores.append(score)
-        mean_score = float(np.mean(scores))
+                    pred = model.predict(X_test)
+                    score = scoring(y_test, pred)
+                scores.append(score)
+                logger.info(
+                    "Tree fold %s params=%s score=%.4f n_train=%s n_test=%s",
+                    fold,
+                    {k: params[k] for k in sorted(params.keys())},
+                    score,
+                    X_train.shape[0],
+                    X_test.shape[0],
+                )
+            except Exception as exc:
+                logger.exception("Tree fold %s failed: %s", fold, exc)
+                continue
+        if not scores:
+            continue
+        mean_score = float(np.nanmean(scores))
         if mean_score < best_score:
             best_score = mean_score
             best_params = params
 
     if lgb is not None:
         if classification:
-            model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **(best_params or {}))
+            model = lgb.LGBMClassifier(
+                objective="binary",
+                random_state=random_state,
+                class_weight="balanced",
+                n_jobs=-1,
+                **(best_params or {}),
+            )
         else:
-            model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **(best_params or {}))
+            model = lgb.LGBMRegressor(
+                objective="regression",
+                random_state=random_state,
+                n_jobs=-1,
+                **(best_params or {}),
+            )
     elif classification and CatBoostClassifier is not None:
         model = CatBoostClassifier(verbose=False, random_state=random_state, **(best_params or {}))
     elif not classification and CatBoostRegressor is not None:
@@ -416,13 +563,47 @@ def _train_tree_model(
             model = HistGradientBoostingRegressor(random_state=random_state)
     model.fit(X, y)
 
+    train_proba = None
+    if classification and hasattr(model, "predict_proba"):
+        train_proba = model.predict_proba(X)[:, 1]
+    effective_splits = None
+    if lgb is not None and hasattr(model, "booster_"):
+        try:
+            tree_df = model.booster_.trees_to_dataframe()
+            effective_splits = int(tree_df["split_index"].notna().sum())
+        except Exception:
+            effective_splits = None
+    training_auc = None
+    if classification and train_proba is not None:
+        try:
+            training_auc = metrics.roc_auc_score(y, train_proba)
+        except ValueError:
+            training_auc = None
+
+    fit_info = {
+        "best_params": best_params or {},
+        "effective_splits": effective_splits,
+        "training_auc": training_auc,
+    }
+    skip_tree_shap = False
+    reason: str | None = None
+    if classification:
+        if effective_splits is not None and effective_splits < 5:
+            skip_tree_shap = True
+            reason = f"effective_splits={effective_splits}"
+        if training_auc is not None and abs(training_auc - 0.5) <= 0.02:
+            skip_tree_shap = True
+            reason = (reason + "; " if reason else "") + f"training_auc={training_auc:.3f}"
+    fit_info["skip_tree_shap"] = skip_tree_shap
+    fit_info["skip_reason"] = reason
+
     if hasattr(model, "feature_importances_"):
         importance = np.asarray(model.feature_importances_, dtype=float)
     elif hasattr(model, "coef_"):
         importance = np.abs(np.asarray(model.coef_))
     else:
         importance = np.zeros(X.shape[1])
-    return model, importance, np.asarray(list(best_params.values())) if best_params else np.array([])
+    return model, importance, fit_info
 
 
 def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -465,6 +646,40 @@ def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.Da
     return shap_summary, interactions_df, pd.DataFrame(shap_matrix, columns=X.columns, index=X.index)
 
 
+def _linear_shap_fallback(
+    X: pd.DataFrame, y: pd.Series, classification: bool
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    X_filled = X.fillna(-1.0)
+    scaler = StandardScaler(with_mean=False)
+    X_scaled = scaler.fit_transform(X_filled)
+    if classification:
+        model = MonitoredLogisticRegression(
+            penalty="elasticnet",
+            solver="saga",
+            C=0.5,
+            l1_ratio=0.1,
+            max_iter=5000,
+            tol=1e-3,
+        )
+    else:
+        model = ElasticNet(alpha=0.05, l1_ratio=0.5)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", ConvergenceWarning)
+        model.fit(X_scaled, y)
+    explainer = shap.LinearExplainer(model, X_scaled, feature_perturbation="independent")
+    shap_values = explainer.shap_values(X_scaled)
+    if isinstance(shap_values, list):
+        shap_matrix = shap_values[1] if len(shap_values) > 1 else shap_values[0]
+    else:
+        shap_matrix = shap_values
+    mean_abs = np.mean(np.abs(shap_matrix), axis=0)
+    shap_summary = pd.DataFrame({"feature": X.columns, "mean_abs_shap": mean_abs})
+    shap_summary = shap_summary.sort_values("mean_abs_shap", ascending=False).reset_index(drop=True)
+    interactions_df = pd.DataFrame(columns=["feature_a", "feature_b", "weight"])
+    shap_frame = pd.DataFrame(shap_matrix, columns=X.columns, index=X.index)
+    return shap_summary, interactions_df, shap_frame
+
+
 def _aggregate_block_importance(shap_summary: pd.DataFrame, metadata: Sequence[FeatureMetadata]) -> pd.DataFrame:
     meta_lookup = {meta.feature: meta.block for meta in metadata}
     shap_summary["block"] = shap_summary["feature"].map(meta_lookup).fillna("Other")
@@ -481,8 +696,8 @@ def _sage_importance(model: object, X: pd.DataFrame, y: pd.Series, classificatio
         baseline = model.predict(X)
         if classification and isinstance(baseline, np.ndarray) and baseline.ndim > 1:
             baseline = baseline[:, 1]
-    loss_fn = metrics.log_loss if classification else metrics.mean_squared_error
-    base_loss = loss_fn(y, np.clip(baseline, 1e-6, 1 - 1e-6)) if classification else loss_fn(y, baseline)
+    loss_fn = safe_log_loss if classification else metrics.mean_squared_error
+    base_loss = loss_fn(y, baseline) if classification else loss_fn(y, baseline)
     rng = np.random.default_rng(0)
     records: list[dict[str, float]] = []
     for col in X.columns:
@@ -495,7 +710,7 @@ def _sage_importance(model: object, X: pd.DataFrame, y: pd.Series, classificatio
             preds = model.predict(perturbed)
             if classification and isinstance(preds, np.ndarray) and preds.ndim > 1:
                 preds = preds[:, 1]
-        loss = loss_fn(y, np.clip(preds, 1e-6, 1 - 1e-6)) if classification else loss_fn(y, preds)
+        loss = loss_fn(y, preds) if classification else loss_fn(y, preds)
         records.append({"feature": col, "sage": float(loss - base_loss)})
     importance = pd.DataFrame(records).sort_values("sage", ascending=False).reset_index(drop=True)
     return importance
@@ -517,7 +732,7 @@ def _specification_matrix(
 
     specs: list[dict[str, object]] = []
     toggles = [
-        {"fe": fe, "sector": sector, "temporal": temporal, "model": model, "winsor": winsor}
+        {"fe": fe, "sector": sector, "temporal": temporal, "winsor": winsor, "model": model}
         for fe in [True, False]
         for sector in [True, False]
         for temporal in [True, False]
@@ -550,18 +765,32 @@ def _specification_matrix(
         if X_spec.empty:
             continue
         if classification:
-            penalty = "l1" if spec["model"] == "lasso" else "elasticnet"
-            clf_kwargs = {"penalty": penalty, "solver": "saga", "max_iter": 200}
-            if penalty == "elasticnet":
-                clf_kwargs["l1_ratio"] = 0.5
-            model = LogisticRegression(**clf_kwargs)
-            pipeline = Pipeline(
-                steps=[
-                    ("impute", SimpleImputer(strategy="median")),
-                    ("scale", StandardScaler(with_mean=False)),
-                    ("model", model),
-                ]
-            )
+            c_grid = [0.25, 0.5, 1.0]
+            l1_grid = [0.0, 0.1, 0.5]
+            models = [
+                Pipeline(
+                    steps=[
+                        (
+                            "impute",
+                            SimpleImputer(strategy="constant", fill_value=-1.0, add_indicator=True),
+                        ),
+                        ("scale", StandardScaler(with_mean=False)),
+                        (
+                            "model",
+                            MonitoredLogisticRegression(
+                                penalty="elasticnet",
+                                solver="saga",
+                                C=C,
+                                l1_ratio=l1_ratio,
+                                max_iter=5000,
+                                tol=1e-3,
+                            ),
+                        ),
+                    ]
+                )
+                for C in c_grid
+                for l1_ratio in l1_grid
+            ]
         else:
             model = ElasticNet(alpha=0.1 if spec["model"] == "lasso" else 0.05, l1_ratio=0.5)
             pipeline = Pipeline(
@@ -579,25 +808,89 @@ def _specification_matrix(
         else:
             y_fit = y
         scores: list[float] = []
-        splitter = StratifiedKFold(n_splits=5, shuffle=True, random_state=0) if classification else KFold(n_splits=5, shuffle=True, random_state=0)
-        for train_idx, test_idx in splitter.split(X_values, y_fit):
-            pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
-            if classification:
-                proba = pipeline.predict_proba(X_values.iloc[test_idx])[:, 1]
-                score = metrics.roc_auc_score(y_fit.iloc[test_idx], proba)
-            else:
+        splitter = (
+            StratifiedKFold(n_splits=3, shuffle=True, random_state=0)
+            if classification
+            else KFold(n_splits=3, shuffle=True, random_state=0)
+        )
+        if classification:
+            for pipe in models:
+                model_scores: list[float] = []
+                l1_ratio = pipe.named_steps["model"].l1_ratio
+                C = pipe.named_steps["model"].C
+                for fold, (train_idx, test_idx) in enumerate(splitter.split(X_values, y_fit), start=1):
+                    X_train = X_values.iloc[train_idx]
+                    X_test = X_values.iloc[test_idx]
+                    y_train = y_fit.iloc[train_idx]
+                    y_test = y_fit.iloc[test_idx]
+                    if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2:
+                        logger.warning(
+                            "Skipping fold %s for outcome %s (spec curve): single-class target", fold, outcome
+                        )
+                        continue
+                    pipe.fit(X_train, y_train)
+                    model = pipe.named_steps["model"]
+                    proba = pipe.predict_proba(X_test)[:, 1]
+                    auc = metrics.roc_auc_score(y_test, proba) if len(np.unique(y_test)) > 1 else np.nan
+                    pr = (
+                        metrics.average_precision_score(y_test, proba)
+                        if len(np.unique(y_test)) > 1
+                        else np.nan
+                    )
+                    brier = metrics.brier_score_loss(y_test, proba)
+                    feature_names = pipe.named_steps["impute"].get_feature_names_out(X_values.columns)
+                    coefs = np.asarray(model.coef_).ravel()
+                    non_zero = float(np.count_nonzero(coefs) / max(len(coefs), 1))
+                    top_idx = np.argsort(np.abs(coefs))[-10:][::-1]
+                    top_features = [feature_names[i] for i in top_idx if i < len(feature_names)]
+                    train_nunique = X_train.nunique(dropna=False)
+                    entering = int((train_nunique > 1).sum())
+                    dropped = int((train_nunique <= 1).sum())
+                    logger.info(
+                        "Spec fold %s %s: C=%s l1=%s auc=%.3f pr=%.3f brier=%.3f nz=%.3f top=%s entering=%s dropped=%s",
+                        fold,
+                        outcome,
+                        C,
+                        l1_ratio,
+                        auc,
+                        pr,
+                        brier,
+                        non_zero,
+                        ",".join(top_features),
+                        entering,
+                        dropped,
+                    )
+                    model_scores.append(auc)
+                if not model_scores:
+                    continue
+                specs.append(
+                    {
+                        "outcome": outcome,
+                        "fe": spec["fe"],
+                        "sector": spec["sector"],
+                        "temporal": spec["temporal"],
+                        "model": "elasticnet",
+                        "winsor": spec["winsor"],
+                        "C": C,
+                        "l1_ratio": l1_ratio,
+                        "score": float(np.nanmean(model_scores)),
+                    }
+                )
+        else:
+            for train_idx, test_idx in splitter.split(X_values, y_fit):
+                pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
                 pred = pipeline.predict(X_values.iloc[test_idx])
                 score = metrics.r2_score(y_fit.iloc[test_idx], pred)
-            scores.append(score)
-        specs.append({
-            "outcome": outcome,
-            "fe": spec["fe"],
-            "sector": spec["sector"],
-            "temporal": spec["temporal"],
-            "model": spec["model"],
-            "winsor": spec["winsor"],
-            "score": float(np.mean(scores)),
-        })
+                scores.append(score)
+            specs.append({
+                "outcome": outcome,
+                "fe": spec["fe"],
+                "sector": spec["sector"],
+                "temporal": spec["temporal"],
+                "model": "elasticnet" if spec["model"] == "elasticnet" else "lasso",
+                "winsor": spec["winsor"],
+                "score": float(np.nanmean(scores) if scores else float("nan")),
+            })
     return pd.DataFrame(specs)
 
 
@@ -616,16 +909,30 @@ def _stability_selection(
         X_sub = X.loc[sample]
         y_sub = y.loc[sample]
         if classification:
-            model = LogisticRegression(penalty="l1", solver="saga", max_iter=200)
+            model = MonitoredLogisticRegression(
+                penalty="elasticnet",
+                solver="saga",
+                C=0.5,
+                l1_ratio=0.1,
+                max_iter=5000,
+                tol=1e-3,
+            )
+            pipeline = Pipeline(
+                steps=[
+                    ("impute", SimpleImputer(strategy="constant", fill_value=-1.0, add_indicator=True)),
+                    ("scale", StandardScaler(with_mean=False)),
+                    ("model", model),
+                ]
+            )
         else:
             model = ElasticNet(alpha=0.1, l1_ratio=0.7)
-        pipeline = Pipeline(
-            steps=[
-                ("impute", SimpleImputer(strategy="median")),
-                ("scale", StandardScaler(with_mean=False)),
-                ("model", model),
-            ]
-        )
+            pipeline = Pipeline(
+                steps=[
+                    ("impute", SimpleImputer(strategy="median")),
+                    ("scale", StandardScaler(with_mean=False)),
+                    ("model", model),
+                ]
+            )
         pipeline.fit(X_sub, y_sub)
         coef = pipeline.named_steps["model"].coef_
         if classification and coef.ndim > 1:
@@ -658,16 +965,30 @@ def _knockoff_filter(X: pd.DataFrame, y: pd.Series, classification: bool, q: flo
     knockoffs.columns = [f"{col}__knockoff" for col in X.columns]
     augmented = pd.concat([X, knockoffs], axis=1)
     if classification:
-        model = LogisticRegression(penalty="l1", solver="saga", max_iter=300)
+        model = MonitoredLogisticRegression(
+            penalty="elasticnet",
+            solver="saga",
+            C=0.5,
+            l1_ratio=0.1,
+            max_iter=5000,
+            tol=1e-3,
+        )
+        pipeline = Pipeline(
+            steps=[
+                ("impute", SimpleImputer(strategy="constant", fill_value=-1.0, add_indicator=True)),
+                ("scale", StandardScaler(with_mean=False)),
+                ("model", model),
+            ]
+        )
     else:
         model = ElasticNet(alpha=0.05, l1_ratio=0.7)
-    pipeline = Pipeline(
-        steps=[
-            ("impute", SimpleImputer(strategy="median")),
-            ("scale", StandardScaler(with_mean=False)),
-            ("model", model),
-        ]
-    )
+        pipeline = Pipeline(
+            steps=[
+                ("impute", SimpleImputer(strategy="median")),
+                ("scale", StandardScaler(with_mean=False)),
+                ("model", model),
+            ]
+        )
     pipeline.fit(augmented, y)
     coef = pipeline.named_steps["model"].coef_
     if classification and coef.ndim > 1:
@@ -817,7 +1138,7 @@ def _distribution_contrasts(df: pd.DataFrame) -> pd.DataFrame:
 
 def _build_network(importance: pd.DataFrame, outcomes: Sequence[str]) -> tuple[pd.DataFrame, pd.DataFrame]:
     edges: list[dict[str, object]] = []
-    for outcome in outcomes:
+    for outcome in tqdm(outcomes, desc="omniscan outcomes"):
         subset = importance.loc[importance["outcome"] == outcome]
         for _, row in subset.iterrows():
             edges.append({"source": row["feature"], "target": outcome, "weight": row["importance"]})
@@ -888,8 +1209,16 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
             decision_ids = available
             X_outcome = X.loc[decision_ids]
         classification = y.dropna().isin({0, 1, True, False}).all()
-        model, importance, _ = _train_tree_model(X_outcome, y, classification)
-        shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
+        model, importance, fit_info = _train_tree_model(X_outcome, y, classification)
+        if fit_info.get("skip_tree_shap"):
+            logger.warning(
+                "Using linear SHAP fallback for %s due to %s",
+                outcome,
+                fit_info.get("skip_reason", "diagnostics"),
+            )
+            shap_summary, interactions, shap_matrix = _linear_shap_fallback(X_outcome, y, classification)
+        else:
+            shap_summary, interactions, shap_matrix = _shap_summaries(model, X_outcome)
         shap_summary["outcome"] = outcome
         interactions["outcome"] = outcome
         block_importance = _aggregate_block_importance(shap_summary, metadata)
@@ -960,17 +1289,28 @@ def run_omniscan(paths: EvennessPaths | None = None) -> OmniScanOutputs:
                 )
 
         # DML residuals
-        splitter = KFold(n_splits=5, shuffle=True, random_state=0)
+        splitter = (
+            StratifiedKFold(n_splits=3, shuffle=True, random_state=0)
+            if classification
+            else KFold(n_splits=3, shuffle=True, random_state=0)
+        )
         residuals = pd.Series(index=y.index, dtype=float)
         for train_idx, test_idx in splitter.split(X_outcome, y):
-            model_fold, _, _ = _train_tree_model(X_outcome.iloc[train_idx], y.iloc[train_idx], classification)
+            y_train = y.iloc[train_idx]
+            y_test = y.iloc[test_idx]
+            if classification and (len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2):
+                logger.warning("Skipping residual fold due to single-class target")
+                continue
+            model_fold, _, _ = _train_tree_model(
+                X_outcome.iloc[train_idx], y_train, classification
+            )
             if classification and hasattr(model_fold, "predict_proba"):
                 preds = model_fold.predict_proba(X_outcome.iloc[test_idx])[:, 1]
             else:
                 preds = model_fold.predict(X_outcome.iloc[test_idx])
                 if classification and isinstance(preds, np.ndarray) and preds.ndim > 1:
                     preds = preds[:, 1]
-            residuals.iloc[test_idx] = y.iloc[test_idx] - preds
+            residuals.iloc[test_idx] = y_test - preds
 
         if not country.empty:
             country_effects = _jurisdiction_effects(residuals, country, "country")

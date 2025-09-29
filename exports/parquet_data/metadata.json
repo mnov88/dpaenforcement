@@ -8,7 +8,7 @@
     ],
     "source_file": "outputs/cleaned_wide_latest.csv",
     "row_count": 1998,
-    "column_count": 393
+    "column_count": 426
   },
   "legal_semantics": {
     "typed_missingness": {
@@ -80,7 +80,7 @@
   "data_quality": {
     "schema_echo_cases": 861,
     "missing_dates": 1504,
-    "zero_fines": 590
+    "zero_fines": 656
   },
   "usage_notes": [
     "Use country_group and decision_year for efficient filtering",

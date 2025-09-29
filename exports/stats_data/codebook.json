@@ -3,7 +3,7 @@
     "title": "GDPR DPA Decisions Analysis Dataset",
     "description": "Structured dataset of GDPR enforcement decisions with 68-field questionnaire responses",
     "observations": 1998,
-    "variables": 409,
+    "variables": 442,
     "legal_framework": "EU GDPR (Regulation 2016/679)",
     "data_collection_period": "2018.0 - 2025.0"
   },
@@ -194,12 +194,12 @@
     "fine_eur": {
       "label": "Administrative fine amount (EUR)",
       "type": "numeric",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922,
+      "missing_count": 247,
+      "missing_rate": 0.12362362362362363,
       "min": 0.0,
       "max": 530000000.0,
-      "mean": 1629599.8076858972,
-      "std": 17037947.841786917
+      "mean": 1820368.7629868644,
+      "std": 17993123.707858905
     },
     "fine_numeric_valid": {
       "label": "Fine Numeric Valid",
@@ -213,15 +213,15 @@
       "missing_count": 0,
       "missing_rate": 0.0,
       "value_counts": {
-        "0": 1028,
-        "1": 970
+        "1": 1095,
+        "0": 903
       }
     },
     "fine_log1p": {
       "label": "Fine Log1P",
       "type": "unknown",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922
+      "missing_count": 247,
+      "missing_rate": 0.12362362362362363
     },
     "fine_outlier_flag": {
       "label": "Fine Outlier Flag",
@@ -241,8 +241,8 @@
       "missing_count": 22,
       "missing_rate": 0.011011011011011011,
       "value_counts": {
-        "DISCUSSED": 1560,
-        "NOT_MENTIONED": 416,
+        "DISCUSSED": 1751,
+        "NOT_MENTIONED": 225,
         "PARSE_ERROR": 0
       }
     },
@@ -255,12 +255,12 @@
     "turnover_eur": {
       "label": "Annual turnover mentioned (EUR)",
       "type": "numeric",
-      "missing_count": 1802,
-      "missing_rate": 0.9019019019019019,
+      "missing_count": 1791,
+      "missing_rate": 0.8963963963963963,
       "min": 0.0,
       "max": 964711000000.0,
-      "mean": 18222044243.52209,
-      "std": 85240360205.29376
+      "mean": 18605829665.648937,
+      "std": 83776676689.86234
     },
     "turnover_numeric_valid": {
       "label": "Turnover Numeric Valid",
@@ -277,8 +277,8 @@
     "turnover_log1p": {
       "label": "Turnover Log1P",
       "type": "unknown",
-      "missing_count": 1802,
-      "missing_rate": 0.9019019019019019
+      "missing_count": 1791,
+      "missing_rate": 0.8963963963963963
     },
     "turnover_outlier_flag": {
       "label": "Turnover Outlier Flag",
@@ -298,8 +298,8 @@
       "missing_count": 56,
       "missing_rate": 0.028028028028028028,
       "value_counts": {
-        "NOT_MENTIONED": 1743,
-        "DISCUSSED": 196,
+        "NOT_MENTIONED": 1732,
+        "DISCUSSED": 207,
         "PARSE_ERROR": 3
       }
     },
@@ -312,8 +312,8 @@
     "fine_to_turnover_ratio": {
       "label": "Fine To Turnover Ratio",
       "type": "unknown",
-      "missing_count": 1810,
-      "missing_rate": 0.9059059059059059
+      "missing_count": 1799,
+      "missing_rate": 0.9004004004004004
     },
     "isic_code": {
       "label": "Isic Code",
@@ -460,6 +460,159 @@
       "type": "unknown",
       "missing_count": 1137,
       "missing_rate": 0.5690690690690691
+    },
+    "art33_notification_required": {
+      "label": "Art33 Notification Required",
+      "type": "unknown",
+      "missing_count": 151,
+      "missing_rate": 0.07557557557557558
+    },
+    "art33_notification_required_status": {
+      "label": "Status of art33_notification_required information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1521,
+        "DISCUSSED": 301,
+        "NOT_MENTIONED": 98,
+        "UNPARSEABLE": 70,
+        "UNCLEAR": 8
+      }
+    },
+    "art33_notification_required_note": {
+      "label": "Art33 Notification Required Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "art33_notification_submitted": {
+      "label": "Art33 Notification Submitted",
+      "type": "unknown",
+      "missing_count": 151,
+      "missing_rate": 0.07557557557557558
+    },
+    "art33_notification_submitted_status": {
+      "label": "Status of art33_notification_submitted information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1525,
+        "DISCUSSED": 281,
+        "NOT_MENTIONED": 114,
+        "UNPARSEABLE": 70,
+        "UNCLEAR": 8
+      }
+    },
+    "art33_notification_submitted_note": {
+      "label": "Art33 Notification Submitted Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "art33_notification_timeliness": {
+      "label": "Art33 Notification Timeliness",
+      "type": "unknown",
+      "missing_count": 153,
+      "missing_rate": 0.07657657657657657
+    },
+    "art33_notification_timeliness_status": {
+      "label": "Status of art33_notification_timeliness information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1598,
+        "NOT_MENTIONED": 197,
+        "DISCUSSED": 120,
+        "UNPARSEABLE": 72,
+        "UNCLEAR": 10,
+        "MIXED_CONTRADICTORY": 1
+      }
+    },
+    "art33_notification_timeliness_note": {
+      "label": "Art33 Notification Timeliness Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "art33_notification_delay_band": {
+      "label": "Art33 Notification Delay Band",
+      "type": "unknown",
+      "missing_count": 153,
+      "missing_rate": 0.07657657657657657
+    },
+    "art33_notification_delay_band_status": {
+      "label": "Status of art33_notification_delay_band information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1801,
+        "NOT_MENTIONED": 91,
+        "UNPARSEABLE": 72,
+        "DISCUSSED": 26,
+        "UNCLEAR": 8
+      }
+    },
+    "art33_notification_delay_band_note": {
+      "label": "Art33 Notification Delay Band Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "data_subjects_notified": {
+      "label": "Data Subjects Notified",
+      "type": "unknown",
+      "missing_count": 156,
+      "missing_rate": 0.07807807807807808
+    },
+    "data_subjects_notified_status": {
+      "label": "Status of data_subjects_notified information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1525,
+        "NOT_MENTIONED": 204,
+        "DISCUSSED": 185,
+        "UNPARSEABLE": 75,
+        "UNCLEAR": 8,
+        "MIXED_CONTRADICTORY": 1
+      }
+    },
+    "data_subjects_notified_note": {
+      "label": "Data Subjects Notified Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "art34_notification_required": {
+      "label": "Art34 Notification Required",
+      "type": "unknown",
+      "missing_count": 160,
+      "missing_rate": 0.08008008008008008
+    },
+    "art34_notification_required_status": {
+      "label": "Status of art34_notification_required information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "NOT_APPLICABLE": 1541,
+        "NOT_MENTIONED": 197,
+        "DISCUSSED": 172,
+        "UNPARSEABLE": 79,
+        "UNCLEAR": 8,
+        "MIXED_CONTRADICTORY": 1
+      }
+    },
+    "art34_notification_required_note": {
+      "label": "Art34 Notification Required Note",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
     },
     "raw_q1": {
       "label": "Raw Q1",
@@ -954,6 +1107,105 @@
     },
     "q10_org_class_UNCLEAR": {
       "label": "Q10 Org Class Unclear",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_coverage_status": {
+      "label": "Status of q15_case_initiation_coverage information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "DISCUSSED": 1917,
+        "NOT_MENTIONED": 81
+      }
+    },
+    "q15_case_initiation_known": {
+      "label": "Q15 Case Initiation Known",
+      "type": "unknown",
+      "missing_count": 141,
+      "missing_rate": 0.07057057057057058
+    },
+    "q15_case_initiation_unknown": {
+      "label": "Q15 Case Initiation Unknown",
+      "type": "unknown",
+      "missing_count": 1936,
+      "missing_rate": 0.968968968968969
+    },
+    "q15_case_initiation_status": {
+      "label": "Status of q15_case_initiation information",
+      "type": "categorical",
+      "missing_count": 0,
+      "missing_rate": 0.0,
+      "value_counts": {
+        "DISCUSSED": 1860,
+        "NOT_MENTIONED": 81,
+        "NOT_DISCUSSED": 57
+      }
+    },
+    "q15_case_initiation_exclusivity_conflict": {
+      "label": "Q15 Case Initiation Exclusivity Conflict",
+      "type": "unknown",
+      "missing_count": 0,
+      "missing_rate": 0.0
+    },
+    "q15_case_initiation_COMPLAINT": {
+      "label": "Q15 Case Initiation Complaint",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_BREACH_NOTIFICATION": {
+      "label": "Q15 Case Initiation Breach Notification",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE": {
+      "label": "Q15 Case Initiation Ex Officio Dpa Initiative",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY": {
+      "label": "Q15 Case Initiation Referral From Other Authority",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_MEDIA_PUBLIC_ATTENTION": {
+      "label": "Q15 Case Initiation Media Public Attention",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_JOINT_INVESTIGATION": {
+      "label": "Q15 Case Initiation Joint Investigation",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_FOLLOW_UP_PRIOR_CASE": {
+      "label": "Q15 Case Initiation Follow Up Prior Case",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_OTHER": {
+      "label": "Q15 Case Initiation Other",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_NOT_MENTIONED": {
+      "label": "Q15 Case Initiation Not Mentioned",
+      "type": "unknown",
+      "missing_count": 81,
+      "missing_rate": 0.04054054054054054
+    },
+    "q15_case_initiation_UNCLEAR": {
+      "label": "Q15 Case Initiation Unclear",
       "type": "unknown",
       "missing_count": 81,
       "missing_rate": 0.04054054054054054
@@ -3158,14 +3410,14 @@
     "fine_log": {
       "label": "Fine Log",
       "type": "unknown",
-      "missing_count": 1028,
-      "missing_rate": 0.5145145145145145
+      "missing_count": 903,
+      "missing_rate": 0.4519519519519519
     },
     "fine_sqrt": {
       "label": "Fine Sqrt",
       "type": "unknown",
-      "missing_count": 438,
-      "missing_rate": 0.21921921921921922
+      "missing_count": 247,
+      "missing_rate": 0.12362362362362363
     },
     "fine_category": {
       "label": "Fine Category",

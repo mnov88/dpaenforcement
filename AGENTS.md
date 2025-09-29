@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 - `analyzed-decisions/` holds AI-extracted answers plus the authoritative `master-analyzed-data-unclean.csv`.
-- `raw-data/` contains source CSVs and machine translations; treat as append-only.
+- `raw-data/` contains source CSVs and machine translations; treat as append-only. Use `raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv` as the canonical merged feed whenever it contains the most complete decision set.
 - `scripts/` provides the Python pipeline (`cli.py`, `parser/`, `clean/`) configured via `scripts/config.yaml`.
 - `outputs/` captures generated artifacts (cleaned CSVs, reports, long tables); never edit these manually.
 - `resources/` stores lookup tables (e.g., ISIC descriptors) consumed by cleaning jobs.
@@ -10,7 +10,7 @@
 
 ## Build, Test, and Development Commands
 - Pipeline entrypoint: `python3 -m scripts.cli run-all` (runs parsing, cleaning, consistency checks with config defaults).
-- Focused cleans: `python3 -m scripts.cli clean-wide --input-csv analyzed-decisions/master-analyzed-data-unclean.csv --out-csv outputs/cleaned_wide.csv --validation-report outputs/validation_report.json`.
+- Focused cleans: `python3 -m scripts.cli clean-wide --input-csv raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv --out-csv outputs/cleaned_wide.csv --validation-report outputs/validation_report.json` (swap `--input-csv` to the analyzed decisions file if you need the legacy subset).
 - Long tables: `python3 -m scripts.cli emit-long --input-csv analyzed-decisions/master-analyzed-data-unclean.csv --out-dir outputs/long_tables`.
 - Tests: `pytest` (auto-discovers unit tests under `tests/`).
 

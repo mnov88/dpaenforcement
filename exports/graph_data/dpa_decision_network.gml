@@ -6,8 +6,8 @@ graph [
     country "GB"
     country_group "NON_EEA"
     total_decisions 36
-    total_fines_eur 25003500.0
-    avg_fine_eur 781359.375
+    total_fines_eur 25223500.0
+    avg_fine_eur 720671.4285714285
     breach_cases 16
   ]
   node [
@@ -17,8 +17,8 @@ graph [
     country "UNCLEAR"
     country_group "NON_EEA"
     total_decisions 111
-    total_fines_eur 6213300.0
-    avg_fine_eur 365488.23529411765
+    total_fines_eur 6237300.0
+    avg_fine_eur 259887.5
     breach_cases 0
   ]
   node [
@@ -83,8 +83,8 @@ graph [
     country "SE"
     country_group "EU"
     total_decisions 7
-    total_fines_eur 85300000.0
-    avg_fine_eur 17060000.0
+    total_fines_eur 100300000.0
+    avg_fine_eur 14328571.42857143
     breach_cases 1
   ]
   node [
@@ -105,8 +105,8 @@ graph [
     country "SE"
     country_group "EU"
     total_decisions 16
-    total_fines_eur 106500000.0
-    avg_fine_eur 7607142.857142857
+    total_fines_eur 106700000.0
+    avg_fine_eur 6668750.0
     breach_cases 0
   ]
   node [
@@ -138,8 +138,8 @@ graph [
     country "SE"
     country_group "EU"
     total_decisions 3
-    total_fines_eur 300000.0
-    avg_fine_eur 150000.0
+    total_fines_eur 1900000.0
+    avg_fine_eur 633333.3333333334
     breach_cases 1
   ]
   node [
@@ -160,8 +160,8 @@ graph [
     country "SE"
     country_group "EU"
     total_decisions 7
-    total_fines_eur 0.0
-    avg_fine_eur 0.0
+    total_fines_eur 37000000.0
+    avg_fine_eur 6166666.666666667
     breach_cases 0
   ]
   node [
@@ -171,8 +171,8 @@ graph [
     country "ES"
     country_group "EU"
     total_decisions 269
-    total_fines_eur 27582500.0
-    avg_fine_eur 107324.9027237354
+    total_fines_eur 33596500.0
+    avg_fine_eur 126779.24528301887
     breach_cases 17
   ]
   node [
@@ -193,8 +193,8 @@ graph [
     country "ES"
     country_group "EU"
     total_decisions 282
-    total_fines_eur 27526580.0
-    avg_fine_eur 100461.9708029197
+    total_fines_eur 27596580.0
+    avg_fine_eur 100351.2
     breach_cases 28
   ]
   node [
@@ -304,7 +304,7 @@ graph [
     country_group "EU"
     total_decisions 1
     total_fines_eur 0.0
-    avg_fine_eur NAN
+    avg_fine_eur 0.0
     breach_cases 0
   ]
   node [
@@ -315,7 +315,7 @@ graph [
     country_group "EU"
     total_decisions 40
     total_fines_eur 6255.0
-    avg_fine_eur 208.5
+    avg_fine_eur 178.71428571428572
     breach_cases 1
   ]
   node [
@@ -435,8 +435,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 13
-    total_fines_eur 124000.0
-    avg_fine_eur 13777.777777777777
+    total_fines_eur 151500.0
+    avg_fine_eur 11653.846153846154
     breach_cases 3
   ]
   node [
@@ -446,8 +446,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 7
-    total_fines_eur 28000.0
-    avg_fine_eur 4666.666666666667
+    total_fines_eur 30000.0
+    avg_fine_eur 4285.714285714285
     breach_cases 0
   ]
   node [
@@ -457,8 +457,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 40
-    total_fines_eur 181700.0
-    avg_fine_eur 7268.0
+    total_fines_eur 414200.0
+    avg_fine_eur 10355.0
     breach_cases 4
   ]
   node [
@@ -468,8 +468,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 8
-    total_fines_eur 35000.0
-    avg_fine_eur 7000.0
+    total_fines_eur 48000.0
+    avg_fine_eur 6000.0
     breach_cases 0
   ]
   node [
@@ -479,8 +479,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 20
-    total_fines_eur 58650.0
-    avg_fine_eur 3910.0
+    total_fines_eur 61650.0
+    avg_fine_eur 3626.470588235294
     breach_cases 3
   ]
   node [
@@ -490,8 +490,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 5
-    total_fines_eur 18000.0
-    avg_fine_eur 4500.0
+    total_fines_eur 20000.0
+    avg_fine_eur 4000.0
     breach_cases 0
   ]
   node [
@@ -512,8 +512,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 3
-    total_fines_eur 20000.0
-    avg_fine_eur 10000.0
+    total_fines_eur 24000.0
+    avg_fine_eur 8000.0
     breach_cases 0
   ]
   node [
@@ -523,8 +523,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 10
-    total_fines_eur 93000.0
-    avg_fine_eur 11625.0
+    total_fines_eur 97000.0
+    avg_fine_eur 9700.0
     breach_cases 2
   ]
   node [
@@ -534,8 +534,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 10
-    total_fines_eur 63500.0
-    avg_fine_eur 7937.5
+    total_fines_eur 68500.0
+    avg_fine_eur 6850.0
     breach_cases 3
   ]
   node [
@@ -556,8 +556,8 @@ graph [
     country "RO"
     country_group "EU"
     total_decisions 2
-    total_fines_eur 0.0
-    avg_fine_eur NAN
+    total_fines_eur 4000.0
+    avg_fine_eur 2000.0
     breach_cases 0
   ]
   node [
@@ -579,7 +579,7 @@ graph [
     country_group "EU"
     total_decisions 1
     total_fines_eur 0.0
-    avg_fine_eur NAN
+    avg_fine_eur 0.0
     breach_cases 0
   ]
   node [
@@ -622,8 +622,8 @@ graph [
     country "PT"
     country_group "EU"
     total_decisions 2
-    total_fines_eur 0.0
-    avg_fine_eur NAN
+    total_fines_eur 4300000.0
+    avg_fine_eur 2150000.0
     breach_cases 0
   ]
   node [
@@ -644,8 +644,8 @@ graph [
     country "PL"
     country_group "EU"
     total_decisions 26
-    total_fines_eur 3522771.2
-    avg_fine_eur 146782.13333333333
+    total_fines_eur 5122166.2
+    avg_fine_eur 197006.39230769232
     breach_cases 12
   ]
   node [
@@ -677,8 +677,8 @@ graph [
     country "PL"
     country_group "EU"
     total_decisions 20
-    total_fines_eur 7187780.0
-    avg_fine_eur 399321.1111111111
+    total_fines_eur 7205780.0
+    avg_fine_eur 360289.0
     breach_cases 14
   ]
   node [
@@ -722,7 +722,7 @@ graph [
     country_group "nan"
     total_decisions 44
     total_fines_eur 131740000.0
-    avg_fine_eur 3136666.6666666665
+    avg_fine_eur 2994090.909090909
     breach_cases 12
   ]
   node [
@@ -743,8 +743,8 @@ graph [
     country "NO"
     country_group "nan"
     total_decisions 15
-    total_fines_eur 30900000.0
-    avg_fine_eur 2575000.0
+    total_fines_eur 32200000.0
+    avg_fine_eur 2300000.0
     breach_cases 1
   ]
   node [
@@ -766,7 +766,7 @@ graph [
     country_group "nan"
     total_decisions 1
     total_fines_eur 0.0
-    avg_fine_eur NAN
+    avg_fine_eur 0.0
     breach_cases 0
   ]
   node [
@@ -776,8 +776,8 @@ graph [
     country "NO"
     country_group "nan"
     total_decisions 2
-    total_fines_eur 0.0
-    avg_fine_eur 0.0
+    total_fines_eur 300000.0
+    avg_fine_eur 150000.0
     breach_cases 1
   ]
   node [
@@ -842,8 +842,8 @@ graph [
     country "NL"
     country_group "EU"
     total_decisions 10
-    total_fines_eur 2772500.0
-    avg_fine_eur 346562.5
+    total_fines_eur 2814500.0
+    avg_fine_eur 281450.0
     breach_cases 1
   ]
   node [
@@ -853,8 +853,8 @@ graph [
     country "NL"
     country_group "EU"
     total_decisions 23
-    total_fines_eur 21104500.0
-    avg_fine_eur 1004976.1904761905
+    total_fines_eur 311104500.0
+    avg_fine_eur 13526282.608695652
     breach_cases 5
   ]
   node [
@@ -952,8 +952,8 @@ graph [
     country "LU"
     country_group "EU"
     total_decisions 19
-    total_fines_eur 79100.0
-    avg_fine_eur 5650.0
+    total_fines_eur 116200.0
+    avg_fine_eur 6455.555555555556
     breach_cases 0
   ]
   node [
@@ -963,8 +963,8 @@ graph [
     country "LT"
     country_group "EU"
     total_decisions 7
-    total_fines_eur 2432276.0
-    avg_fine_eur 405379.3333333333
+    total_fines_eur 2542276.0
+    avg_fine_eur 363182.28571428574
     breach_cases 0
   ]
   node [
@@ -1040,8 +1040,8 @@ graph [
     country "IT"
     country_group "EU"
     total_decisions 280
-    total_fines_eur 116505610.0
-    avg_fine_eur 565561.213592233
+    total_fines_eur 249986619.0
+    avg_fine_eur 912359.9233576643
     breach_cases 19
   ]
   node [
@@ -1095,8 +1095,8 @@ graph [
     country "IE"
     country_group "EU"
     total_decisions 15
-    total_fines_eur 268200000.0
-    avg_fine_eur 26820000.0
+    total_fines_eur 268842500.0
+    avg_fine_eur 19203035.714285713
     breach_cases 5
   ]
   node [
@@ -1140,7 +1140,7 @@ graph [
     country_group "nan"
     total_decisions 67
     total_fines_eur 71356900.0
-    avg_fine_eur 1297398.1818181819
+    avg_fine_eur 1114951.5625
     breach_cases 1
   ]
   node [
@@ -1260,8 +1260,8 @@ graph [
     country "GR"
     country_group "EU"
     total_decisions 9
-    total_fines_eur 66000.0
-    avg_fine_eur 8250.0
+    total_fines_eur 71000.0
+    avg_fine_eur 7888.888888888889
     breach_cases 0
   ]
   node [
@@ -1271,8 +1271,8 @@ graph [
     country "GR"
     country_group "EU"
     total_decisions 51
-    total_fines_eur 3710849.0
-    avg_fine_eur 92771.225
+    total_fines_eur 3765849.0
+    avg_fine_eur 83685.53333333334
     breach_cases 7
   ]
   node [
@@ -1316,7 +1316,7 @@ graph [
     country_group "EU"
     total_decisions 1
     total_fines_eur 0.0
-    avg_fine_eur NAN
+    avg_fine_eur 0.0
     breach_cases 0
   ]
   node [
@@ -1348,8 +1348,8 @@ graph [
     country "GR"
     country_group "EU"
     total_decisions 1
-    total_fines_eur 0.0
-    avg_fine_eur NAN
+    total_fines_eur 25000.0
+    avg_fine_eur 25000.0
     breach_cases 0
   ]
   node [
@@ -1579,8 +1579,8 @@ graph [
     country "DE"
     country_group "EU"
     total_decisions 1
-    total_fines_eur 0.0
-    avg_fine_eur NAN
+    total_fines_eur 1900000.0
+    avg_fine_eur 1900000.0
     breach_cases 0
   ]
   node [
@@ -1601,8 +1601,8 @@ graph [
     country "FR"
     country_group "EU"
     total_decisions 9
-    total_fines_eur 245000.0
-    avg_fine_eur 40833.333333333336
+    total_fines_eur 495000.0
+    avg_fine_eur 70714.28571428571
     breach_cases 1
   ]
   node [
@@ -1668,7 +1668,7 @@ graph [
     country_group "EU"
     total_decisions 4
     total_fines_eur 6000.0
-    avg_fine_eur 2000.0
+    avg_fine_eur 1500.0
     breach_cases 2
   ]
   node [
@@ -1678,8 +1678,8 @@ graph [
     country "FR"
     country_group "EU"
     total_decisions 9
-    total_fines_eur 60696000.0
-    avg_fine_eur 7587000.0
+    total_fines_eur 61496000.0
+    avg_fine_eur 6832888.888888889
     breach_cases 1
   ]
   node [
@@ -1689,8 +1689,8 @@ graph [
     country "FR"
     country_group "EU"
     total_decisions 13
-    total_fines_eur 80680000.0
-    avg_fine_eur 6723333.333333333
+    total_fines_eur 230680000.0
+    avg_fine_eur 17744615.384615384
     breach_cases 3
   ]
   node [

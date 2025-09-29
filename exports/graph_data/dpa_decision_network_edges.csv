@@ -10,7 +10,7 @@ Information Commissioner's Office,United Kingdom_25,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_23,decided_by,2021-11-15 00:00:00+00:00,500000.0
 Information Commissioner's Office,United Kingdom_24,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_29,decided_by,2024-05-02 00:00:00+00:00,130000.0
-Information Commissioner's Office,United Kingdom_27,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_27,decided_by,,150000.0
 Information Commissioner's Office,United Kingdom_28,decided_by,2025-04-14 00:00:00+00:00,60000.0
 Information Commissioner's Office,United Kingdom_22,decided_by,,200000.0
 Information Commissioner's Office,United Kingdom_30,decided_by,,0.0
@@ -26,8 +26,8 @@ Information Commissioner's Office,United Kingdom_41,decided_by,2021-07-05 00:00:
 Information Commissioner's Office,United Kingdom_46,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_53,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_52,decided_by,,75000.0
-Information Commissioner's Office,United Kingdom_51,decided_by,,0.0
-Information Commissioner's Office,United Kingdom_47,decided_by,,0.0
+Information Commissioner's Office,United Kingdom_51,decided_by,,20000.0
+Information Commissioner's Office,United Kingdom_47,decided_by,,50000.0
 Information Commissioner's Office,United Kingdom_50,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_55,decided_by,,0.0
 Information Commissioner's Office,United Kingdom_59,decided_by,2022-02-14 00:00:00+00:00,50000.0
@@ -52,16 +52,16 @@ STRING,Spain_528,decided_by,,0.0
 STRING,Spain_586,decided_by,,0.0
 STRING,Spain_623,decided_by,,0.0
 STRING,Slovenia_59,decided_by,,0.0
-STRING,Romania_7,decided_by,,0.0
+STRING,Romania_7,decided_by,,3000.0
 STRING,Romania_16,decided_by,,0.0
 STRING,Romania_21,decided_by,,0.0
 STRING,Romania_27,decided_by,,0.0
 STRING,Romania_40,decided_by,,0.0
-STRING,Romania_82,decided_by,,0.0
-STRING,Romania_85,decided_by,,0.0
+STRING,Romania_82,decided_by,,3000.0
+STRING,Romania_85,decided_by,,11000.0
 STRING,Romania_96,decided_by,,0.0
-STRING,Romania_95,decided_by,,0.0
-STRING,Romania_109,decided_by,,0.0
+STRING,Romania_95,decided_by,,3000.0
+STRING,Romania_109,decided_by,,3000.0
 STRING,Romania_125,decided_by,,1000.0
 STRING,Romania_128,decided_by,,0.0
 STRING,Romania_130,decided_by,,0.0
@@ -69,7 +69,7 @@ STRING,Romania_138,decided_by,,0.0
 STRING,Romania_137,decided_by,,1000.0
 STRING,Romania_142,decided_by,,0.0
 STRING,Romania_143,decided_by,,300.0
-STRING,Romania_154,decided_by,,0.0
+STRING,Romania_154,decided_by,,1000.0
 STRING,Romania_159,decided_by,,0.0
 STRING,Romania_157,decided_by,,0.0
 STRING,Romania_165,decided_by,,5000.0
@@ -189,7 +189,7 @@ Swedish Data Protection Authority,Sweden_57,decided_by,2023-06-12 00:00:00+00:00
 Datainspektionen,Sweden_3,decided_by,2020-12-02 00:00:00+00:00,3500000.0
 Datainspektionen,Sweden_4,decided_by,2020-12-02 00:00:00+00:00,2500000.0
 Datainspektionen,Sweden_1,decided_by,2020-03-10 00:00:00+00:00,75000000.0
-Datainspektionen,Sweden_5,decided_by,,0.0
+Datainspektionen,Sweden_5,decided_by,,15000000.0
 Datainspektionen,Sweden_7,decided_by,2020-11-23 00:00:00+00:00,4000000.0
 Datainspektionen,Sweden_6,decided_by,,0.0
 Datainspektionen,Sweden_11,decided_by,,300000.0
@@ -210,7 +210,7 @@ Integritetsskyddsmyndigheten (IMY),Sweden_35,decided_by,2023-06-30 00:00:00+00:0
 Integritetsskyddsmyndigheten (IMY),Sweden_39,decided_by,,500000.0
 Integritetsskyddsmyndigheten (IMY),Sweden_42,decided_by,,15000000.0
 Integritetsskyddsmyndigheten (IMY),Sweden_48,decided_by,2022-07-26 00:00:00+00:00,0.0
-Integritetsskyddsmyndigheten (IMY),Sweden_49,decided_by,,0.0
+Integritetsskyddsmyndigheten (IMY),Sweden_49,decided_by,,200000.0
 Integritetsskyddsmyndigheten (IMY),Sweden_51,decided_by,,0.0
 Integritetsskyddsmyndigheten,Sweden_18,decided_by,2021-06-09 00:00:00+00:00,350000.0
 Integritetsskyddsmyndigheten,Sweden_26,decided_by,2021-03-31 00:00:00+00:00,0.0
@@ -225,7 +225,7 @@ Swedish Authority for Privacy Protection,Sweden_32,decided_by,,0.0
 Swedish Authority for Privacy Protection,Sweden_50,decided_by,,0.0
 Integrity Protection Authority,Sweden_23,decided_by,2022-01-26 00:00:00+00:00,300000.0
 Integrity Protection Authority,Sweden_27,decided_by,2021-01-22 00:00:00+00:00,0.0
-Integrity Protection Authority,Sweden_43,decided_by,,0.0
+Integrity Protection Authority,Sweden_43,decided_by,,1600000.0
 The Swedish Privacy Protection Agency (IMY),Sweden_33,decided_by,2023-06-30 00:00:00+00:00,0.0
 Swedish Authority for Privacy Protection (IMY),Sweden_38,decided_by,2022-10-10 00:00:00+00:00,0.0
 Swedish Authority for Privacy Protection (IMY),Sweden_40,decided_by,,0.0
@@ -233,7 +233,7 @@ Swedish Authority for Privacy Protection (IMY),Sweden_41,decided_by,2022-03-29 0
 Swedish Authority for Privacy Protection (IMY),Sweden_44,decided_by,,0.0
 Swedish Authority for Privacy Protection (IMY),Sweden_45,decided_by,,0.0
 Swedish Authority for Privacy Protection (IMY),Sweden_47,decided_by,2022-03-18 00:00:00+00:00,0.0
-Swedish Authority for Privacy Protection (IMY),Sweden_53,decided_by,,0.0
+Swedish Authority for Privacy Protection (IMY),Sweden_53,decided_by,,37000000.0
 Spanish Agency for Data Protection,Spain_1,decided_by,,0.0
 Spanish Agency for Data Protection,Spain_3,decided_by,,0.0
 Spanish Agency for Data Protection,Spain_5,decided_by,,0.0
@@ -418,7 +418,7 @@ Spanish Agency for Data Protection,Spain_446,decided_by,,0.0
 Spanish Agency for Data Protection,Spain_449,decided_by,,30000.0
 Spanish Agency for Data Protection,Spain_451,decided_by,,36000.0
 Spanish Agency for Data Protection,Spain_452,decided_by,,2000.0
-Spanish Agency for Data Protection,Spain_450,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_450,decided_by,,10000.0
 Spanish Agency for Data Protection,Spain_453,decided_by,,36000.0
 Spanish Agency for Data Protection,Spain_454,decided_by,,30000.0
 Spanish Agency for Data Protection,Spain_456,decided_by,,0.0
@@ -472,11 +472,11 @@ Spanish Agency for Data Protection,Spain_541,decided_by,,0.0
 Spanish Agency for Data Protection,Spain_542,decided_by,,90000.0
 Spanish Agency for Data Protection,Spain_543,decided_by,,3000.0
 Spanish Agency for Data Protection,Spain_540,decided_by,,0.0
-Spanish Agency for Data Protection,Spain_549,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_549,decided_by,,4000.0
 Spanish Agency for Data Protection,Spain_551,decided_by,,3000.0
 Spanish Agency for Data Protection,Spain_550,decided_by,,3000.0
 Spanish Agency for Data Protection,Spain_552,decided_by,,60000.0
-Spanish Agency for Data Protection,Spain_558,decided_by,,0.0
+Spanish Agency for Data Protection,Spain_558,decided_by,,6000000.0
 Spanish Agency for Data Protection,Spain_553,decided_by,,1500.0
 Spanish Agency for Data Protection,Spain_554,decided_by,,50000.0
 Spanish Agency for Data Protection,Spain_555,decided_by,,4000.0
@@ -789,7 +789,7 @@ Spanish Data Protection Agency,Spain_576,decided_by,,480.0
 Spanish Data Protection Agency,Spain_581,decided_by,,10000.0
 Spanish Data Protection Agency,Spain_577,decided_by,,80000.0
 Spanish Data Protection Agency,Spain_582,decided_by,2024-01-16 00:00:00+00:00,1200.0
-Spanish Data Protection Agency,Spain_579,decided_by,,0.0
+Spanish Data Protection Agency,Spain_579,decided_by,,70000.0
 Spanish Data Protection Agency,Spain_583,decided_by,,70000.0
 Spanish Data Protection Agency,Spain_590,decided_by,,0.0
 Spanish Data Protection Agency,Spain_585,decided_by,,0.0
@@ -899,19 +899,19 @@ Informacijski pooblaščenec (IP),Slovenia_50,decided_by,2021-03-15 00:00:00+00:
 Information Commissioner of Slovenia,Slovenia_58,decided_by,,500.0
 Office for the Protection of Personal Data of the Slovak Republic,Slovakia_1,decided_by,,0.0
 National Supervisory Authority for Personal Data Processing,Romania_1,decided_by,2023-01-03 00:00:00+00:00,500.0
-National Supervisory Authority for Personal Data Processing,Romania_5,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_5,decided_by,,500.0
 National Supervisory Authority for Personal Data Processing,Romania_17,decided_by,,70000.0
 National Supervisory Authority for Personal Data Processing,Romania_20,decided_by,,1000.0
 National Supervisory Authority for Personal Data Processing,Romania_34,decided_by,,25000.0
 National Supervisory Authority for Personal Data Processing,Romania_48,decided_by,2023-04-30 00:00:00+00:00,1500.0
 National Supervisory Authority for Personal Data Processing,Romania_46,decided_by,,12000.0
 National Supervisory Authority for Personal Data Processing,Romania_120,decided_by,,0.0
-National Supervisory Authority for Personal Data Processing,Romania_139,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_139,decided_by,,2000.0
 National Supervisory Authority for Personal Data Processing,Romania_153,decided_by,,2000.0
-National Supervisory Authority for Personal Data Processing,Romania_152,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_152,decided_by,,15000.0
 National Supervisory Authority for Personal Data Processing,Romania_155,decided_by,,12000.0
-National Supervisory Authority for Personal Data Processing,Romania_162,decided_by,,0.0
-The National Supervisory Authority for the Processing of Personal Data,Romania_2,decided_by,,0.0
+National Supervisory Authority for Personal Data Processing,Romania_162,decided_by,,10000.0
+The National Supervisory Authority for the Processing of Personal Data,Romania_2,decided_by,,2000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_60,decided_by,,1000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_67,decided_by,,2000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_76,decided_by,,2000.0
@@ -919,53 +919,53 @@ The National Supervisory Authority for the Processing of Personal Data,Romania_7
 The National Supervisory Authority for the Processing of Personal Data,Romania_93,decided_by,,20000.0
 The National Supervisory Authority for the Processing of Personal Data,Romania_102,decided_by,2023-10-25 00:00:00+00:00,1000.0
 National Supervisory Authority,Romania_4,decided_by,,3000.0
-National Supervisory Authority,Romania_12,decided_by,,0.0
+National Supervisory Authority,Romania_12,decided_by,,110000.0
 National Supervisory Authority,Romania_14,decided_by,,10000.0
 National Supervisory Authority,Romania_15,decided_by,,1000.0
-National Supervisory Authority,Romania_18,decided_by,,0.0
+National Supervisory Authority,Romania_18,decided_by,,5000.0
 National Supervisory Authority,Romania_24,decided_by,,3000.0
 National Supervisory Authority,Romania_29,decided_by,,1000.0
 National Supervisory Authority,Romania_33,decided_by,,2000.0
 National Supervisory Authority,Romania_36,decided_by,2020-04-14 00:00:00+00:00,5000.0
-National Supervisory Authority,Romania_31,decided_by,,0.0
-National Supervisory Authority,Romania_37,decided_by,,0.0
+National Supervisory Authority,Romania_31,decided_by,,7000.0
+National Supervisory Authority,Romania_37,decided_by,,2000.0
 National Supervisory Authority,Romania_43,decided_by,,2000.0
-National Supervisory Authority,Romania_42,decided_by,,0.0
+National Supervisory Authority,Romania_42,decided_by,,2000.0
 National Supervisory Authority,Romania_50,decided_by,,200.0
 National Supervisory Authority,Romania_51,decided_by,,500.0
 National Supervisory Authority,Romania_58,decided_by,,2000.0
 National Supervisory Authority,Romania_59,decided_by,,100000.0
 National Supervisory Authority,Romania_63,decided_by,,7000.0
-National Supervisory Authority,Romania_68,decided_by,,0.0
-National Supervisory Authority,Romania_69,decided_by,,0.0
-National Supervisory Authority,Romania_70,decided_by,,0.0
+National Supervisory Authority,Romania_68,decided_by,,5000.0
+National Supervisory Authority,Romania_69,decided_by,,40000.0
+National Supervisory Authority,Romania_70,decided_by,,2500.0
 National Supervisory Authority,Romania_72,decided_by,,10000.0
 National Supervisory Authority,Romania_73,decided_by,,4000.0
-National Supervisory Authority,Romania_79,decided_by,,0.0
+National Supervisory Authority,Romania_79,decided_by,,3000.0
 National Supervisory Authority,Romania_84,decided_by,,2000.0
-National Supervisory Authority,Romania_92,decided_by,,0.0
+National Supervisory Authority,Romania_92,decided_by,,15000.0
 National Supervisory Authority,Romania_103,decided_by,,1000.0
 National Supervisory Authority,Romania_110,decided_by,,10000.0
-National Supervisory Authority,Romania_112,decided_by,,0.0
+National Supervisory Authority,Romania_112,decided_by,,2000.0
 National Supervisory Authority,Romania_116,decided_by,2021-04-30 00:00:00+00:00,2000.0
 National Supervisory Authority,Romania_121,decided_by,,5000.0
-National Supervisory Authority,Romania_122,decided_by,,0.0
+National Supervisory Authority,Romania_122,decided_by,,3000.0
 National Supervisory Authority,Romania_123,decided_by,,3000.0
 National Supervisory Authority,Romania_127,decided_by,,3000.0
-National Supervisory Authority,Romania_144,decided_by,,0.0
-National Supervisory Authority,Romania_146,decided_by,,0.0
+National Supervisory Authority,Romania_144,decided_by,,5000.0
+National Supervisory Authority,Romania_146,decided_by,,28000.0
 National Supervisory Authority,Romania_156,decided_by,,5000.0
 National Supervisory Authority,Romania_174,decided_by,2020-12-11 00:00:00+00:00,0.0
 National Supervisory Authority,Romania_175,decided_by,2020-12-11 00:00:00+00:00,0.0
-National Supervisory Authority,Romania_172,decided_by,,0.0
+National Supervisory Authority,Romania_172,decided_by,,3000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_3,decided_by,,3000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_10,decided_by,,17000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_19,decided_by,,10000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_26,decided_by,,2000.0
 National Supervisory Authority for the Processing of Personal Data,Romania_49,decided_by,,3000.0
-National Supervisory Authority for the Processing of Personal Data,Romania_75,decided_by,,0.0
-National Supervisory Authority for the Processing of Personal Data,Romania_91,decided_by,,0.0
-National Supervisory Authority for the Processing of Personal Data,Romania_119,decided_by,,0.0
+National Supervisory Authority for the Processing of Personal Data,Romania_75,decided_by,,1000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_91,decided_by,,10000.0
+National Supervisory Authority for the Processing of Personal Data,Romania_119,decided_by,,2000.0
 A.N.S.P.D.C.P.,Romania_6,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_25,decided_by,,0.0
 A.N.S.P.D.C.P.,Romania_28,decided_by,2021-08-24 00:00:00+00:00,3000.0
@@ -975,7 +975,7 @@ A.N.S.P.D.C.P.,Romania_53,decided_by,2025-04-30 00:00:00+00:00,5000.0
 A.N.S.P.D.C.P.,Romania_61,decided_by,,2000.0
 A.N.S.P.D.C.P.,Romania_71,decided_by,,4000.0
 A.N.S.P.D.C.P.,Romania_77,decided_by,,5000.0
-A.N.S.P.D.C.P.,Romania_80,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_80,decided_by,,1000.0
 A.N.S.P.D.C.P.,Romania_81,decided_by,,1000.0
 A.N.S.P.D.C.P.,Romania_100,decided_by,2021-12-13 00:00:00+00:00,2000.0
 A.N.S.P.D.C.P.,Romania_108,decided_by,,6000.0
@@ -984,9 +984,9 @@ A.N.S.P.D.C.P.,Romania_124,decided_by,,2500.0
 A.N.S.P.D.C.P.,Romania_129,decided_by,,5000.0
 A.N.S.P.D.C.P.,Romania_134,decided_by,2022-10-03 00:00:00+00:00,150.0
 A.N.S.P.D.C.P.,Romania_148,decided_by,,5000.0
-A.N.S.P.D.C.P.,Romania_158,decided_by,,0.0
+A.N.S.P.D.C.P.,Romania_158,decided_by,,2000.0
 A.N.S.P.D.C.P.,Romania_164,decided_by,,15000.0
-The National Supervisory Authority,Romania_9,decided_by,,0.0
+The National Supervisory Authority,Romania_9,decided_by,,2000.0
 The National Supervisory Authority,Romania_30,decided_by,,10000.0
 The National Supervisory Authority,Romania_74,decided_by,2020-04-10 00:00:00+00:00,3000.0
 The National Supervisory Authority,Romania_117,decided_by,,3000.0
@@ -995,22 +995,22 @@ Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Perso
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_32,decided_by,,500.0
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_56,decided_by,,7000.0
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),Romania_99,decided_by,,1000.0
-Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_13,decided_by,,0.0
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_13,decided_by,,4000.0
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_57,decided_by,,18000.0
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,Romania_65,decided_by,,2000.0
 The National Supervisory Authority for Personal Data Processing,Romania_38,decided_by,,5000.0
 The National Supervisory Authority for Personal Data Processing,Romania_52,decided_by,2025-07-16 00:00:00+00:00,4000.0
 The National Supervisory Authority for Personal Data Processing,Romania_54,decided_by,,5000.0
-The National Supervisory Authority for Personal Data Processing,Romania_101,decided_by,,0.0
+The National Supervisory Authority for Personal Data Processing,Romania_101,decided_by,,3000.0
 The National Supervisory Authority for Personal Data Processing,Romania_131,decided_by,,2000.0
-The National Supervisory Authority for Personal Data Processing,Romania_135,decided_by,,0.0
+The National Supervisory Authority for Personal Data Processing,Romania_135,decided_by,,1000.0
 The National Supervisory Authority for Personal Data Processing,Romania_140,decided_by,,40000.0
 The National Supervisory Authority for Personal Data Processing,Romania_163,decided_by,,2000.0
 The National Supervisory Authority for Personal Data Processing,Romania_166,decided_by,,15000.0
 The National Supervisory Authority for Personal Data Processing,Romania_176,decided_by,,20000.0
-A.N.S.P.D.C.P,Romania_41,decided_by,,0.0
+A.N.S.P.D.C.P,Romania_41,decided_by,,4000.0
 A.N.S.P.D.C.P,Romania_62,decided_by,,1000.0
-A.N.S.P.D.C.P,Romania_86,decided_by,,0.0
+A.N.S.P.D.C.P,Romania_86,decided_by,,1000.0
 A.N.S.P.D.C.P,Romania_94,decided_by,2024-06-25 00:00:00+00:00,4000.0
 A.N.S.P.D.C.P,Romania_113,decided_by,,1500.0
 A.N.S.P.D.C.P,Romania_132,decided_by,,2000.0
@@ -1019,14 +1019,14 @@ A.N.S.P.D.C.P,Romania_161,decided_by,,5000.0
 A.N.S.P.D.C.P,Romania_171,decided_by,,15000.0
 A.N.S.P.D.C.P,Romania_177,decided_by,,10000.0
 National DPA,Romania_87,decided_by,,1500.0
-ANSPDCP,Romania_98,decided_by,,0.0
-ANSPDCP,Romania_126,decided_by,,0.0
+ANSPDCP,Romania_98,decided_by,,1000.0
+ANSPDCP,Romania_126,decided_by,,3000.0
 National Authority,Romania_107,decided_by,,2000.0
 National Authority for the Supervision of Personal Data Processing,Romania_133,decided_by,,0.0
 STRING The National Supervisory Authority for Personal Data Processing,Romania_141,decided_by,,3000.0
 STRING National Supervisory Authority,Romania_145,decided_by,,1000.0
 Romanian Supervisory Authority,Romania_150,decided_by,,5000.0
-National Commission for Data Protection (CNPD),Portugal_11,decided_by,,0.0
+National Commission for Data Protection (CNPD),Portugal_11,decided_by,,4300000.0
 National Commission for Data Protection (CNPD),Luxembourg_24,decided_by,,0.0
 Comissão Nacional de Proteção de Dados,Portugal_1,decided_by,2018-10-09 00:00:00+00:00,400000.0
 Comissão Nacional de Proteção de Dados,Portugal_3,decided_by,,2000.0
@@ -1044,7 +1044,7 @@ President of the Office for Personal Data Protection,Poland_6,decided_by,,85588.
 President of the Office for Personal Data Protection,Poland_12,decided_by,2021-04-27 00:00:00+00:00,5000.0
 President of the Office for Personal Data Protection,Poland_16,decided_by,2022-06-06 00:00:00+00:00,15994.0
 President of the Office for Personal Data Protection,Poland_19,decided_by,2020-06-30 00:00:00+00:00,0.0
-President of the Office for Personal Data Protection,Poland_17,decided_by,,0.0
+President of the Office for Personal Data Protection,Poland_17,decided_by,,1599395.0
 President of the Office for Personal Data Protection,Poland_29,decided_by,,1136975.0
 President of the Office for Personal Data Protection,Poland_31,decided_by,2024-10-09 00:00:00+00:00,353589.0
 President of the Office for Personal Data Protection,Poland_28,decided_by,,0.0
@@ -1075,7 +1075,7 @@ President of the Personal Data Protection Office,Poland_34,decided_by,2021-06-21
 President of the Personal Data Protection Office,Poland_39,decided_by,2021-01-11 00:00:00+00:00,136437.0
 President of the Personal Data Protection Office,Poland_43,decided_by,2021-10-14 00:00:00+00:00,80000.0
 President of the Personal Data Protection Office,Poland_47,decided_by,,238345.0
-President of the Personal Data Protection Office,Poland_45,decided_by,,0.0
+President of the Personal Data Protection Office,Poland_45,decided_by,,18000.0
 President of the Personal Data Protection Office,Poland_49,decided_by,,23580.0
 President of the Personal Data Protection Office,Poland_53,decided_by,,10000.0
 President of the Personal Data Protection Office,Poland_52,decided_by,2022-07-06 00:00:00+00:00,10000.0
@@ -1150,11 +1150,11 @@ Norwegian Data Protection Authority,Norway_10,decided_by,,250000.0
 Norwegian Data Protection Authority,Norway_14,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_18,decided_by,2024-10-28 00:00:00+00:00,0.0
 Norwegian Data Protection Authority,Norway_27,decided_by,,250000.0
-Norwegian Data Protection Authority,Norway_30,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_30,decided_by,,1000000.0
 Norwegian Data Protection Authority,Norway_41,decided_by,,400000.0
 Norwegian Data Protection Authority,Norway_47,decided_by,,0.0
 Norwegian Data Protection Authority,Norway_64,decided_by,,0.0
-Norwegian Data Protection Authority,Norway_68,decided_by,,0.0
+Norwegian Data Protection Authority,Norway_68,decided_by,,300000.0
 Norwegian Data Protection Authority,Norway_69,decided_by,2023-07-14 00:00:00+00:00,0.0
 Norwegian Data Protection Authority,Norway_74,decided_by,2023-11-27 00:00:00+00:00,20000000.0
 Norwegian Data Protection Authority,Norway_76,decided_by,2024-08-30 00:00:00+00:00,0.0
@@ -1165,7 +1165,7 @@ The Norwegian Data Protection Authority,Norway_29,decided_by,,200000.0
 The Norwegian Data Protection Authority,Norway_33,decided_by,,300000.0
 Personvernnemnda (Privacy Board),Norway_23,decided_by,,0.0
 Norwegian Data Inspectorate,Norway_36,decided_by,,0.0
-Norwegian Data Inspectorate,Norway_43,decided_by,,0.0
+Norwegian Data Inspectorate,Norway_43,decided_by,,300000.0
 Estonian Data Protection Inspectorate,Norway_66,decided_by,,0.0
 Oslo District Court,Norway_77,decided_by,2023-09-06 00:00:00+00:00,0.0
 Norwegian Privacy Board,Norway_79,decided_by,,0.0
@@ -1173,10 +1173,10 @@ Norwegian Privacy Board,Norway_80,decided_by,2023-04-25 00:00:00+00:00,0.0
 The Privacy Board,Norway_82,decided_by,2021-06-22 00:00:00+00:00,250000.0
 The Norwegian Privacy Board,Norway_83,decided_by,,0.0
 Dutch Data Protection Authority,Netherlands_3,decided_by,2021-07-22 00:00:00+00:00,750000.0
-Dutch Data Protection Authority,Netherlands_17,decided_by,,0.0
+Dutch Data Protection Authority,Netherlands_17,decided_by,,12000.0
 Dutch Data Protection Authority,Netherlands_21,decided_by,2020-06-16 00:00:00+00:00,7500.0
 Dutch Data Protection Authority,Netherlands_20,decided_by,,15000.0
-Dutch Data Protection Authority,Netherlands_25,decided_by,,0.0
+Dutch Data Protection Authority,Netherlands_25,decided_by,,30000.0
 Dutch Data Protection Authority,Netherlands_24,decided_by,2019-12-04 00:00:00+00:00,725000.0
 Dutch Data Protection Authority,Netherlands_26,decided_by,2019-12-20 00:00:00+00:00,525000.0
 Dutch Data Protection Authority,Netherlands_27,decided_by,2021-03-11 00:00:00+00:00,600000.0
@@ -1199,7 +1199,7 @@ Autoriteit Persoonsgegevens,Netherlands_23,decided_by,2023-12-18 00:00:00+00:00,
 Autoriteit Persoonsgegevens,Netherlands_28,decided_by,,0.0
 Autoriteit Persoonsgegevens,Netherlands_29,decided_by,2023-12-11 00:00:00+00:00,10000000.0
 Autoriteit Persoonsgegevens,Netherlands_34,decided_by,2024-05-02 00:00:00+00:00,600000.0
-Autoriteit Persoonsgegevens,Netherlands_33,decided_by,,0.0
+Autoriteit Persoonsgegevens,Netherlands_33,decided_by,,290000000.0
 Autoriteit Persoonsgegevens,Netherlands_37,decided_by,,0.0
 Autoriteit Persoonsgegevens,Netherlands_35,decided_by,2018-07-31 00:00:00+00:00,0.0
 Autoriteit Persoonsgegevens,Netherlands_36,decided_by,,0.0
@@ -1219,15 +1219,15 @@ The Commissioner,Malta_12,decided_by,,20000.0
 National Commission for Data Protection,Luxembourg_1,decided_by,,0.0
 National Commission for Data Protection,Luxembourg_3,decided_by,,2500.0
 National Commission for Data Protection,Luxembourg_4,decided_by,,2800.0
-National Commission for Data Protection,Luxembourg_7,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_7,decided_by,,1900.0
 National Commission for Data Protection,Luxembourg_5,decided_by,2023-09-21 00:00:00+00:00,2500.0
-National Commission for Data Protection,Luxembourg_8,decided_by,,0.0
-National Commission for Data Protection,Luxembourg_9,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_8,decided_by,,1500.0
+National Commission for Data Protection,Luxembourg_9,decided_by,,15000.0
 National Commission for Data Protection,Luxembourg_10,decided_by,,7600.0
 National Commission for Data Protection,Luxembourg_12,decided_by,,5300.0
 National Commission for Data Protection,Luxembourg_11,decided_by,2022-12-13 00:00:00+00:00,2100.0
 National Commission for Data Protection,Luxembourg_14,decided_by,2021-10-15 00:00:00+00:00,18000.0
-National Commission for Data Protection,Luxembourg_15,decided_by,,0.0
+National Commission for Data Protection,Luxembourg_15,decided_by,,18700.0
 National Commission for Data Protection,Luxembourg_16,decided_by,,0.0
 National Commission for Data Protection,Luxembourg_21,decided_by,,1000.0
 National Commission for Data Protection,Luxembourg_20,decided_by,,0.0
@@ -1240,7 +1240,7 @@ State Data Protection Inspectorate,Lithuania_9,decided_by,,0.0
 State Data Protection Inspectorate,Lithuania_3,decided_by,,12000.0
 State Data Protection Inspectorate,Lithuania_10,decided_by,,20000.0
 State Data Protection Inspectorate,Lithuania_8,decided_by,,0.0
-State Data Protection Inspectorate,Lithuania_11,decided_by,,0.0
+State Data Protection Inspectorate,Lithuania_11,decided_by,,110000.0
 State Data Protection Inspectorate,Lithuania_12,decided_by,,2385276.0
 State Data Protection Inspectorate (SDPI),Lithuania_4,decided_by,,15000.0
 Valstybinė duomenų apsaugos inspekcija (VDAI),Lithuania_7,decided_by,,2000.0
@@ -1261,7 +1261,7 @@ Garante per la protezione dei dati personali,Italy_9,decided_by,2020-03-19 00:00
 Garante per la protezione dei dati personali,Italy_2,decided_by,2020-01-15 00:00:00+00:00,27802946.0
 Garante per la protezione dei dati personali,Italy_12,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_14,decided_by,2020-06-10 00:00:00+00:00,600000.0
-Garante per la protezione dei dati personali,Italy_17,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_17,decided_by,,2000.0
 Garante per la protezione dei dati personali,Italy_13,decided_by,2020-03-05 00:00:00+00:00,3000.0
 Garante per la protezione dei dati personali,Italy_16,decided_by,2020-07-09 00:00:00+00:00,800000.0
 Garante per la protezione dei dati personali,Italy_18,decided_by,,4000.0
@@ -1279,7 +1279,7 @@ Garante per la protezione dei dati personali,Italy_34,decided_by,2021-01-22 00:0
 Garante per la protezione dei dati personali,Italy_37,decided_by,2021-01-14 00:00:00+00:00,8000.0
 Garante per la protezione dei dati personali,Italy_36,decided_by,2020-12-17 00:00:00+00:00,100000.0
 Garante per la protezione dei dati personali,Italy_38,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_40,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_40,decided_by,,18000.0
 Garante per la protezione dei dati personali,Italy_43,decided_by,,75000.0
 Garante per la protezione dei dati personali,Italy_42,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_46,decided_by,2021-03-25 00:00:00+00:00,0.0
@@ -1292,11 +1292,11 @@ Garante per la protezione dei dati personali,Italy_51,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_53,decided_by,,50000.0
 Garante per la protezione dei dati personali,Italy_54,decided_by,,2600000.0
 Garante per la protezione dei dati personali,Italy_56,decided_by,,120000.0
-Garante per la protezione dei dati personali,Italy_57,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_57,decided_by,,150000.0
 Garante per la protezione dei dati personali,Italy_59,decided_by,2021-06-10 00:00:00+00:00,20000.0
-Garante per la protezione dei dati personali,Italy_55,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_61,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_58,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_55,decided_by,,20000.0
+Garante per la protezione dei dati personali,Italy_61,decided_by,,200000.0
+Garante per la protezione dei dati personali,Italy_58,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_60,decided_by,2021-07-22 00:00:00+00:00,2500000.0
 Garante per la protezione dei dati personali,Italy_62,decided_by,2021-07-22 00:00:00+00:00,800000.0
 Garante per la protezione dei dati personali,Italy_63,decided_by,2021-09-16 00:00:00+00:00,200000.0
@@ -1306,18 +1306,18 @@ Garante per la protezione dei dati personali,Italy_67,decided_by,,400000.0
 Garante per la protezione dei dati personali,Italy_68,decided_by,2022-01-13 00:00:00+00:00,4000.0
 Garante per la protezione dei dati personali,Italy_69,decided_by,2022-01-27 00:00:00+00:00,2000.0
 Garante per la protezione dei dati personali,Italy_70,decided_by,2022-01-27 00:00:00+00:00,40000.0
-Garante per la protezione dei dati personali,Italy_66,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_66,decided_by,,26513977.0
 Garante per la protezione dei dati personali,Italy_71,decided_by,2022-01-27 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_72,decided_by,,10000.0
-Garante per la protezione dei dati personali,Italy_73,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_74,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_73,decided_by,,20000000.0
+Garante per la protezione dei dati personali,Italy_74,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_76,decided_by,2022-02-10 00:00:00+00:00,5000.0
 Garante per la protezione dei dati personali,Italy_75,decided_by,2022-02-10 00:00:00+00:00,3500.0
 Garante per la protezione dei dati personali,Italy_77,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_79,decided_by,2022-03-10 00:00:00+00:00,8000.0
 Garante per la protezione dei dati personali,Italy_78,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_81,decided_by,2022-04-07 00:00:00+00:00,40000.0
-Garante per la protezione dei dati personali,Italy_80,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_80,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_82,decided_by,,50000.0
 Garante per la protezione dei dati personali,Italy_84,decided_by,2022-04-28 00:00:00+00:00,1000.0
 Garante per la protezione dei dati personali,Italy_86,decided_by,,0.0
@@ -1325,8 +1325,8 @@ Garante per la protezione dei dati personali,Italy_87,decided_by,2022-04-28 00:0
 Garante per la protezione dei dati personali,Italy_90,decided_by,2022-06-09 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_92,decided_by,2022-06-09 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_89,decided_by,2022-05-26 00:00:00+00:00,50000.0
-Garante per la protezione dei dati personali,Italy_91,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_88,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_91,decided_by,,100000.0
+Garante per la protezione dei dati personali,Italy_88,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_93,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_94,decided_by,2022-06-30 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_96,decided_by,2022-06-16 00:00:00+00:00,20000.0
@@ -1340,11 +1340,11 @@ Garante per la protezione dei dati personali,Italy_102,decided_by,2022-09-15 00:
 Garante per la protezione dei dati personali,Italy_106,decided_by,2022-09-15 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_105,decided_by,2022-08-05 00:00:00+00:00,1000.0
 Garante per la protezione dei dati personali,Italy_103,decided_by,,10000.0
-Garante per la protezione dei dati personali,Italy_104,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_104,decided_by,,15000.0
 Garante per la protezione dei dati personali,Italy_108,decided_by,2022-10-20 00:00:00+00:00,1400000.0
-Garante per la protezione dei dati personali,Italy_107,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_107,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_109,decided_by,2022-11-10 00:00:00+00:00,500000.0
-Garante per la protezione dei dati personali,Italy_110,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_110,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_111,decided_by,2022-10-06 00:00:00+00:00,10000.0
 Garante per la protezione dei dati personali,Italy_113,decided_by,2022-10-20 00:00:00+00:00,900.0
 Garante per la protezione dei dati personali,Italy_112,decided_by,2022-10-20 00:00:00+00:00,30000.0
@@ -1352,15 +1352,15 @@ Garante per la protezione dei dati personali,Italy_114,decided_by,2022-10-06 00:
 Garante per la protezione dei dati personali,Italy_116,decided_by,2022-10-06 00:00:00+00:00,100000.0
 Garante per la protezione dei dati personali,Italy_115,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_119,decided_by,2022-11-10 00:00:00+00:00,10000.0
-Garante per la protezione dei dati personali,Italy_117,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_117,decided_by,,20000.0
 Garante per la protezione dei dati personali,Italy_118,decided_by,2022-11-24 00:00:00+00:00,1000000.0
 Garante per la protezione dei dati personali,Italy_120,decided_by,2022-12-01 00:00:00+00:00,6000.0
 Garante per la protezione dei dati personali,Italy_122,decided_by,2022-12-01 00:00:00+00:00,20000.0
 Garante per la protezione dei dati personali,Italy_121,decided_by,,6000.0
 Garante per la protezione dei dati personali,Italy_124,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_125,decided_by,2022-09-23 00:00:00+00:00,0.0
-Garante per la protezione dei dati personali,Italy_123,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_126,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_123,decided_by,,55000.0
+Garante per la protezione dei dati personali,Italy_126,decided_by,,2500.0
 Garante per la protezione dei dati personali,Italy_127,decided_by,2022-12-15 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_131,decided_by,2023-01-18 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_130,decided_by,,0.0
@@ -1374,19 +1374,19 @@ Garante per la protezione dei dati personali,Italy_134,decided_by,2022-12-15 00:
 Garante per la protezione dei dati personali,Italy_136,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_140,decided_by,,80000.0
 Garante per la protezione dei dati personali,Italy_141,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_137,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_137,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_143,decided_by,2023-01-11 00:00:00+00:00,5000.0
 Garante per la protezione dei dati personali,Italy_144,decided_by,2023-02-23 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_142,decided_by,2023-01-26 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_146,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_148,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_148,decided_by,,3000.0
 Garante per la protezione dei dati personali,Italy_147,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_145,decided_by,2023-02-23 00:00:00+00:00,300000.0
 Garante per la protezione dei dati personali,Italy_150,decided_by,2023-03-02 00:00:00+00:00,1000.0
 Garante per la protezione dei dati personali,Italy_149,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_151,decided_by,2023-04-11 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_152,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_153,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_153,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_157,decided_by,2023-03-23 00:00:00+00:00,2000.0
 Garante per la protezione dei dati personali,Italy_154,decided_by,,3000.0
 Garante per la protezione dei dati personali,Italy_156,decided_by,2023-03-23 00:00:00+00:00,0.0
@@ -1400,11 +1400,11 @@ Garante per la protezione dei dati personali,Italy_162,decided_by,,7631175.0
 Garante per la protezione dei dati personali,Italy_165,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_167,decided_by,2023-04-27 00:00:00+00:00,240000.0
 Garante per la protezione dei dati personali,Italy_163,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_166,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_166,decided_by,,239000.0
 Garante per la protezione dei dati personali,Italy_168,decided_by,2023-06-08 00:00:00+00:00,40660.0
 Garante per la protezione dei dati personali,Italy_170,decided_by,2023-06-22 00:00:00+00:00,1000000.0
 Garante per la protezione dei dati personali,Italy_171,decided_by,,300000.0
-Garante per la protezione dei dati personali,Italy_176,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_176,decided_by,,45000.0
 Garante per la protezione dei dati personali,Italy_172,decided_by,,20000.0
 Garante per la protezione dei dati personali,Italy_178,decided_by,2023-07-18 00:00:00+00:00,100000.0
 Garante per la protezione dei dati personali,Italy_177,decided_by,2023-07-18 00:00:00+00:00,10000.0
@@ -1413,7 +1413,7 @@ Garante per la protezione dei dati personali,Italy_180,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_184,decided_by,2023-08-31 00:00:00+00:00,10000.0
 Garante per la protezione dei dati personali,Italy_182,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_183,decided_by,2023-07-18 00:00:00+00:00,1000.0
-Garante per la protezione dei dati personali,Italy_189,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_189,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_186,decided_by,2023-09-14 00:00:00+00:00,90000.0
 Garante per la protezione dei dati personali,Italy_191,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_193,decided_by,,0.0
@@ -1430,14 +1430,14 @@ Garante per la protezione dei dati personali,Italy_203,decided_by,2023-12-07 00:
 Garante per la protezione dei dati personali,Italy_204,decided_by,,500.0
 Garante per la protezione dei dati personali,Italy_202,decided_by,,60000.0
 Garante per la protezione dei dati personali,Italy_205,decided_by,2023-11-30 00:00:00+00:00,0.0
-Garante per la protezione dei dati personali,Italy_207,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_207,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_210,decided_by,2024-01-11 00:00:00+00:00,20000.0
-Garante per la protezione dei dati personali,Italy_209,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_206,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_208,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_209,decided_by,,8000.0
+Garante per la protezione dei dati personali,Italy_206,decided_by,,50000.0
+Garante per la protezione dei dati personali,Italy_208,decided_by,,18000.0
 Garante per la protezione dei dati personali,Italy_211,decided_by,,2000.0
 Garante per la protezione dei dati personali,Italy_212,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_213,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_213,decided_by,,79107101.0
 Garante per la protezione dei dati personali,Italy_215,decided_by,2024-02-08 00:00:00+00:00,2800000.0
 Garante per la protezione dei dati personali,Italy_214,decided_by,2024-01-24 00:00:00+00:00,8000.0
 Garante per la protezione dei dati personali,Italy_216,decided_by,2024-02-08 00:00:00+00:00,800000.0
@@ -1447,12 +1447,12 @@ Garante per la protezione dei dati personali,Italy_219,decided_by,2024-01-24 00:
 Garante per la protezione dei dati personali,Italy_220,decided_by,2024-01-11 00:00:00+00:00,5000.0
 Garante per la protezione dei dati personali,Italy_224,decided_by,2024-02-22 00:00:00+00:00,50000.0
 Garante per la protezione dei dati personali,Italy_223,decided_by,,70000.0
-Garante per la protezione dei dati personali,Italy_225,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_225,decided_by,,5000.0
 Garante per la protezione dei dati personali,Italy_226,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_221,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_222,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_221,decided_by,,6000.0
+Garante per la protezione dei dati personali,Italy_222,decided_by,,18000.0
 Garante per la protezione dei dati personali,Italy_227,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_228,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_228,decided_by,,75000.0
 Garante per la protezione dei dati personali,Italy_231,decided_by,,150000.0
 Garante per la protezione dei dati personali,Italy_234,decided_by,2024-04-11 00:00:00+00:00,25000.0
 Garante per la protezione dei dati personali,Italy_230,decided_by,2024-03-07 00:00:00+00:00,20000.0
@@ -1462,35 +1462,35 @@ Garante per la protezione dei dati personali,Italy_229,decided_by,,271000.0
 Garante per la protezione dei dati personali,Italy_232,decided_by,,100000.0
 Garante per la protezione dei dati personali,Italy_236,decided_by,2024-04-11 00:00:00+00:00,6000.0
 Garante per la protezione dei dati personali,Italy_240,decided_by,2024-05-09 00:00:00+00:00,0.0
-Garante per la protezione dei dati personali,Italy_239,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_239,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_238,decided_by,2024-04-11 00:00:00+00:00,20000.0
 Garante per la protezione dei dati personali,Italy_242,decided_by,2024-05-09 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_237,decided_by,,30000.0
 Garante per la protezione dei dati personali,Italy_241,decided_by,,30000.0
 Garante per la protezione dei dati personali,Italy_243,decided_by,2024-05-09 00:00:00+00:00,75000.0
-Garante per la protezione dei dati personali,Italy_244,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_244,decided_by,,15000.0
 Garante per la protezione dei dati personali,Italy_247,decided_by,2024-05-23 00:00:00+00:00,4500.0
-Garante per la protezione dei dati personali,Italy_245,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_245,decided_by,,6419631.0
 Garante per la protezione dei dati personali,Italy_246,decided_by,,120000.0
 Garante per la protezione dei dati personali,Italy_250,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_251,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_251,decided_by,,24000.0
 Garante per la protezione dei dati personali,Italy_249,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_248,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_252,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_248,decided_by,,8400.0
+Garante per la protezione dei dati personali,Italy_252,decided_by,,20000.0
 Garante per la protezione dei dati personali,Italy_258,decided_by,2024-07-04 00:00:00+00:00,4000.0
 Garante per la protezione dei dati personali,Italy_257,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_255,decided_by,2024-06-20 00:00:00+00:00,1000000.0
 Garante per la protezione dei dati personali,Italy_254,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_253,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_256,decided_by,,250000.0
-Garante per la protezione dei dati personali,Italy_259,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_259,decided_by,,7000.0
 Garante per la protezione dei dati personali,Italy_262,decided_by,2024-07-17 00:00:00+00:00,80000.0
 Garante per la protezione dei dati personali,Italy_261,decided_by,2024-07-17 00:00:00+00:00,5000000.0
 Garante per la protezione dei dati personali,Italy_266,decided_by,2024-07-17 00:00:00+00:00,22000.0
 Garante per la protezione dei dati personali,Italy_265,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_264,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_264,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_271,decided_by,2024-09-26 00:00:00+00:00,4000.0
-Garante per la protezione dei dati personali,Italy_269,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_269,decided_by,,400.0
 Garante per la protezione dei dati personali,Italy_267,decided_by,,900000.0
 Garante per la protezione dei dati personali,Italy_270,decided_by,2024-09-26 00:00:00+00:00,0.0
 Garante per la protezione dei dati personali,Italy_274,decided_by,,4000.0
@@ -1502,10 +1502,10 @@ Garante per la protezione dei dati personali,Italy_281,decided_by,2024-11-13 00:
 Garante per la protezione dei dati personali,Italy_283,decided_by,2024-09-26 00:00:00+00:00,17000.0
 Garante per la protezione dei dati personali,Italy_278,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_282,decided_by,,0.0
-Garante per la protezione dei dati personali,Italy_279,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_279,decided_by,,20000.0
 Garante per la protezione dei dati personali,Italy_285,decided_by,2024-10-17 00:00:00+00:00,60000.0
 Garante per la protezione dei dati personali,Italy_280,decided_by,2024-11-13 00:00:00+00:00,5000000.0
-Garante per la protezione dei dati personali,Italy_286,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_286,decided_by,,8000.0
 Garante per la protezione dei dati personali,Italy_284,decided_by,2024-10-17 00:00:00+00:00,5000.0
 Garante per la protezione dei dati personali,Italy_288,decided_by,2024-10-17 00:00:00+00:00,25000.0
 Garante per la protezione dei dati personali,Italy_289,decided_by,2024-11-13 00:00:00+00:00,678897.0
@@ -1518,17 +1518,17 @@ Garante per la protezione dei dati personali,Italy_292,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_297,decided_by,2024-12-12 00:00:00+00:00,6000.0
 Garante per la protezione dei dati personali,Italy_298,decided_by,2024-12-12 00:00:00+00:00,6000.0
 Garante per la protezione dei dati personali,Italy_299,decided_by,2024-12-12 00:00:00+00:00,5000.0
-Garante per la protezione dei dati personali,Italy_295,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_295,decided_by,,20000.0
 Garante per la protezione dei dati personali,Italy_300,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_296,decided_by,,892738.0
 Garante per la protezione dei dati personali,Italy_301,decided_by,,20000.0
-Garante per la protezione dei dati personali,Italy_302,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_302,decided_by,,40000.0
 Garante per la protezione dei dati personali,Italy_304,decided_by,,70000.0
 Garante per la protezione dei dati personali,Italy_303,decided_by,,10000.0
 Garante per la protezione dei dati personali,Italy_307,decided_by,2025-01-16 00:00:00+00:00,50000.0
 Garante per la protezione dei dati personali,Italy_310,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_306,decided_by,2025-01-16 00:00:00+00:00,8000.0
-Garante per la protezione dei dati personali,Italy_309,decided_by,,0.0
+Garante per la protezione dei dati personali,Italy_309,decided_by,,3000.0
 Garante per la protezione dei dati personali,Italy_305,decided_by,,100000.0
 Garante per la protezione dei dati personali,Italy_312,decided_by,,0.0
 Garante per la protezione dei dati personali,Italy_314,decided_by,,0.0
@@ -1540,13 +1540,13 @@ Guarantor for the Protection of Personal Data,Italy_268,decided_by,2024-09-12 00
 STRING Garante per la protezione dei dati personali,Italy_308,decided_by,,6000.0
 Data Protection Commission of Ireland,Ireland_1,decided_by,,0.0
 Data Protection Commission of Ireland,Ireland_19,decided_by,2024-03-08 00:00:00+00:00,0.0
-Data Protection Commission,Ireland_6,decided_by,,0.0
+Data Protection Commission,Ireland_6,decided_by,,70000.0
 Data Protection Commission,Ireland_7,decided_by,,75000.0
 Data Protection Commission,Ireland_13,decided_by,,125000.0
 Data Protection Commission,Ireland_10,decided_by,,0.0
 Data Protection Commission,Ireland_16,decided_by,,0.0
-Data Protection Commission,Ireland_14,decided_by,,0.0
-Data Protection Commission,Ireland_17,decided_by,,0.0
+Data Protection Commission,Ireland_14,decided_by,,550000.0
+Data Protection Commission,Ireland_17,decided_by,,22500.0
 Data Protection Commission,Ireland_24,decided_by,,0.0
 Data Protection Commission,Ireland_21,decided_by,,0.0
 Data Protection Commission,Ireland_29,decided_by,,0.0
@@ -1715,7 +1715,7 @@ National Authority for Data Protection and Freedom of Information,Hungary_60,dec
 Hungarian National Authority for Data Protection and Freedom of Information,Hungary_18,decided_by,2023-06-22 00:00:00+00:00,80000000.0
 Hellenic Data Protection Authority,Greece_3,decided_by,,5000.0
 Hellenic Data Protection Authority,Greece_8,decided_by,,25000.0
-Hellenic Data Protection Authority,Greece_9,decided_by,,0.0
+Hellenic Data Protection Authority,Greece_9,decided_by,,5000.0
 Hellenic Data Protection Authority,Greece_16,decided_by,,10000.0
 Hellenic Data Protection Authority,Greece_13,decided_by,2020-03-12 00:00:00+00:00,8000.0
 Hellenic Data Protection Authority,Greece_22,decided_by,,0.0
@@ -1741,7 +1741,7 @@ Personal Data Protection Authority,Greece_42,decided_by,2024-07-05 00:00:00+00:0
 Personal Data Protection Authority,Greece_40,decided_by,,40000.0
 Personal Data Protection Authority,Greece_41,decided_by,,5000.0
 Personal Data Protection Authority,Greece_46,decided_by,2021-05-12 00:00:00+00:00,5000.0
-Personal Data Protection Authority,Greece_47,decided_by,,0.0
+Personal Data Protection Authority,Greece_47,decided_by,,5000.0
 Personal Data Protection Authority,Greece_53,decided_by,2022-04-29 00:00:00+00:00,0.0
 Personal Data Protection Authority,Greece_54,decided_by,,0.0
 Personal Data Protection Authority,Greece_59,decided_by,2023-06-26 00:00:00+00:00,0.0
@@ -1749,14 +1749,14 @@ Personal Data Protection Authority,Greece_56,decided_by,2022-07-19 00:00:00+00:0
 Personal Data Protection Authority,Greece_60,decided_by,,25000.0
 Personal Data Protection Authority,Greece_63,decided_by,,0.0
 Personal Data Protection Authority,Greece_72,decided_by,,0.0
-Personal Data Protection Authority,Greece_73,decided_by,,0.0
+Personal Data Protection Authority,Greece_73,decided_by,,10000.0
 Personal Data Protection Authority,Greece_80,decided_by,,0.0
 Personal Data Protection Authority,Greece_78,decided_by,2023-11-08 00:00:00+00:00,60000.0
 Personal Data Protection Authority,Greece_82,decided_by,2024-10-11 00:00:00+00:00,15000.0
-Personal Data Protection Authority,Greece_84,decided_by,,0.0
+Personal Data Protection Authority,Greece_84,decided_by,,2000.0
 Personal Data Protection Authority,Greece_85,decided_by,2022-07-21 00:00:00+00:00,0.0
 Personal Data Protection Authority,Greece_86,decided_by,,0.0
-Personal Data Protection Authority,Greece_89,decided_by,,0.0
+Personal Data Protection Authority,Greece_89,decided_by,,8000.0
 Personal Data Protection Authority,Greece_91,decided_by,2024-10-31 00:00:00+00:00,5000.0
 Personal Data Protection Authority,Greece_95,decided_by,,0.0
 Personal Data Protection Authority,Greece_99,decided_by,,50000.0
@@ -1768,7 +1768,7 @@ Personal Data Protection Authority,Greece_111,decided_by,2022-09-14 00:00:00+00:
 Personal Data Protection Authority,Greece_113,decided_by,2024-12-18 00:00:00+00:00,10000.0
 Personal Data Protection Authority,Greece_114,decided_by,,20000.0
 Personal Data Protection Authority,Greece_115,decided_by,2024-12-27 00:00:00+00:00,0.0
-Personal Data Protection Authority,Greece_117,decided_by,,0.0
+Personal Data Protection Authority,Greece_117,decided_by,,30000.0
 Personal Data Protection Authority,Greece_116,decided_by,2021-12-29 00:00:00+00:00,75000.0
 Personal Data Protection Authority,Greece_122,decided_by,2024-07-05 00:00:00+00:00,15000.0
 Personal Data Protection Authority,Greece_123,decided_by,,150000.0
@@ -1783,7 +1783,7 @@ The President of the Authority,Greece_23,decided_by,,3000.0
 Hellenic Republic Authority for the Protection of Personal Data,Greece_45,decided_by,,0.0
 The Authority,Greece_51,decided_by,,15000.0
 Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα,Greece_88,decided_by,2020-10-12 00:00:00+00:00,0.0
-Authority for the Protection of Personal Data,Greece_118,decided_by,,0.0
+Authority for the Protection of Personal Data,Greece_118,decided_by,,25000.0
 Bayerisches Landesamt für Datenschutzaufsicht,Germany_1,decided_by,2023-12-21 00:00:00+00:00,0.0
 Bavarian State Office for Data Protection Supervision,Germany_3,decided_by,,0.0
 Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI),Germany_8,decided_by,,45000000.0
@@ -1822,7 +1822,7 @@ Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-W�
 Der Landesbeauftragte für den Datenschutz Niedersachsen (LfD Lower Saxony),Germany_37,decided_by,,10400000.0
 The State Commissioner for Data Protection and Freedom of Information Baden-Württemberg,Germany_41,decided_by,2018-11-21 00:00:00+00:00,20000.0
 Bremen State Commissioner for Data Protection and Freedom of Information (LfDI),Germany_43,decided_by,,0.0
-The State Commissioner for Data Protection and Freedom of Information Bremen,Germany_42,decided_by,,0.0
+The State Commissioner for Data Protection and Freedom of Information Bremen,Germany_42,decided_by,,1900000.0
 National Commission for Information Technology and Liberties,France_2,decided_by,,0.0
 National Commission for Information Technology and Liberties,France_5,decided_by,2023-07-20 00:00:00+00:00,0.0
 National Commission for Information Technology and Liberties,France_30,decided_by,,400000.0
@@ -1834,7 +1834,7 @@ Commission Nationale de l'Informatique et des Libertés (CNIL),France_1,decided_
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_19,decided_by,,0.0
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_24,decided_by,2020-12-08 00:00:00+00:00,20000.0
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_27,decided_by,,0.0
-Commission Nationale de l'Informatique et des Libertés (CNIL),France_40,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés (CNIL),France_40,decided_by,,250000.0
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_49,decided_by,,0.0
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_57,decided_by,2023-06-15 00:00:00+00:00,0.0
 Commission Nationale de l'Informatique et des Libertés (CNIL),France_69,decided_by,,225000.0
@@ -1864,7 +1864,7 @@ Commission nationale de l'informatique et des libertés,France_29,decided_by,202
 Commission nationale de l'informatique et des libertés,France_44,decided_by,2022-12-20 00:00:00+00:00,0.0
 Commission nationale de l'informatique et des libertés,France_45,decided_by,2022-12-29 00:00:00+00:00,8000000.0
 Commission nationale de l'informatique et des libertés,France_43,decided_by,2022-11-30 00:00:00+00:00,300000.0
-Commission nationale de l'informatique et des libertés,France_42,decided_by,,0.0
+Commission nationale de l'informatique et des libertés,France_42,decided_by,,800000.0
 Commission nationale de l'informatique et des libertés,France_66,decided_by,,240000.0
 Commission Nationale de l'Informatique et des Libertés,France_18,decided_by,2020-11-18 00:00:00+00:00,800000.0
 Commission Nationale de l'Informatique et des Libertés,France_20,decided_by,2020-12-07 00:00:00+00:00,35000000.0
@@ -1872,7 +1872,7 @@ Commission Nationale de l'Informatique et des Libertés,France_25,decided_by,202
 Commission Nationale de l'Informatique et des Libertés,France_32,decided_by,2021-10-29 00:00:00+00:00,400000.0
 Commission Nationale de l'Informatique et des Libertés,France_33,decided_by,2021-12-28 00:00:00+00:00,180000.0
 Commission Nationale de l'Informatique et des Libertés,France_34,decided_by,,300000.0
-Commission Nationale de l'Informatique et des Libertés,France_36,decided_by,,0.0
+Commission Nationale de l'Informatique et des Libertés,France_36,decided_by,,150000000.0
 Commission Nationale de l'Informatique et des Libertés,France_39,decided_by,2022-08-03 00:00:00+00:00,600000.0
 Commission Nationale de l'Informatique et des Libertés,France_50,decided_by,2023-10-12 00:00:00+00:00,600000.0
 Commission Nationale de l'Informatique et des Libertés,France_53,decided_by,2023-12-27 00:00:00+00:00,32000000.0

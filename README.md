@@ -6,7 +6,7 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
 - **Phase 1–3** – matching, uniformity checks, and notification/policy modelling (see `scripts/evenness/cli.py`).
 
 ## Repository layout
-- `raw-data/` – source CSVs and machine translations; treat as append-only inputs.
+- `raw-data/` – source CSVs and machine translations; treat as append-only inputs. The merged canonical feed currently lives at `raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv` and supersedes older analyzed extracts when its record count is higher.
 - `analyzed-decisions/` – AI-extracted responses including the authoritative `master-analyzed-data-unclean.csv`.
 - `scripts/` – CLI entry points and cleaning/analysis modules configured via `scripts/config.yaml` and described in `scripts-readme.md`.
 - `outputs/` – generated artifacts (cleaned tables, validation reports, long tables, analysis reports); never edit by hand.
@@ -25,10 +25,11 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
 2. **Clean the wide dataset**
    ```bash
    python -m scripts.cli clean-wide \
-     --input-csv analyzed-decisions/master-analyzed-data-unclean.csv \
+     --input-csv raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv \
      --out-csv outputs/cleaned_wide.csv \
      --validation-report outputs/validation_report.json
    ```
+   > When the merged source shrinks or older analyzed decisions need inspection, you can still point `--input-csv` at `analyzed-decisions/master-analyzed-data-unclean.csv`. By default, prefer the merged file whenever its decision count is larger.
 3. **Phase 0 omni-scan (optional but recommended with a beefy machine)**
    ```bash
    cp outputs/cleaned_wide.csv outputs/cleaned_wide_latest.csv

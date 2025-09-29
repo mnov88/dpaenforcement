@@ -1,22 +1,22 @@
 node,node_type,country,country_group,total_decisions,total_fines_eur,avg_fine_eur,breach_cases,year,quarter,fine_eur,breach_case,severity_measures,n_principles_violated,cross_border
-Information Commissioner's Office,dpa,GB,NON_EEA,36.0,25003500.0,781359.375,16.0,,,,,,,
-STRING,dpa,UNCLEAR,NON_EEA,111.0,6213300.0,365488.23529411765,0.0,,,,,,,
+Information Commissioner's Office,dpa,GB,NON_EEA,36.0,25223500.0,720671.4285714285,16.0,,,,,,,
+STRING,dpa,UNCLEAR,NON_EEA,111.0,6237300.0,259887.5,0.0,,,,,,,
 NOT_DISCUSSED,dpa,UNCLEAR,NON_EEA,33.0,0.0,0.0,0.0,,,,,,,
 The Information Commissioner's Office,dpa,GB,NON_EEA,1.0,0.0,0.0,1.0,,,,,,,
 The Information Commissioner,dpa,GB,NON_EEA,3.0,0.0,0.0,1.0,,,,,,,
 UNCLEAR,dpa,UNCLEAR,NON_EEA,1.0,0.0,0.0,0.0,,,,,,,
 Swedish Data Protection Authority,dpa,SE,EU,2.0,4000000.0,2000000.0,0.0,,,,,,,
-Datainspektionen,dpa,SE,EU,7.0,85300000.0,17060000.0,1.0,,,,,,,
+Datainspektionen,dpa,SE,EU,7.0,100300000.0,14328571.42857143,1.0,,,,,,,
 The Data Inspectorate,dpa,SE,EU,3.0,870000.0,290000.0,1.0,,,,,,,
-Integritetsskyddsmyndigheten (IMY),dpa,SE,EU,16.0,106500000.0,7607142.857142857,0.0,,,,,,,
+Integritetsskyddsmyndigheten (IMY),dpa,SE,EU,16.0,106700000.0,6668750.0,0.0,,,,,,,
 Integritetsskyddsmyndigheten,dpa,SE,EU,7.0,35350000.0,5050000.0,1.0,,,,,,,
 Swedish Authority for Privacy Protection,dpa,SE,EU,4.0,0.0,0.0,0.0,,,,,,,
-Integrity Protection Authority,dpa,SE,EU,3.0,300000.0,150000.0,1.0,,,,,,,
+Integrity Protection Authority,dpa,SE,EU,3.0,1900000.0,633333.3333333334,1.0,,,,,,,
 The Swedish Privacy Protection Agency (IMY),dpa,SE,EU,1.0,0.0,0.0,0.0,,,,,,,
-Swedish Authority for Privacy Protection (IMY),dpa,SE,EU,7.0,0.0,0.0,0.0,,,,,,,
-Spanish Agency for Data Protection,dpa,ES,EU,269.0,27582500.0,107324.9027237354,17.0,,,,,,,
+Swedish Authority for Privacy Protection (IMY),dpa,SE,EU,7.0,37000000.0,6166666.666666667,0.0,,,,,,,
+Spanish Agency for Data Protection,dpa,ES,EU,269.0,33596500.0,126779.24528301887,17.0,,,,,,,
 Agencia Española de Protección de Datos,dpa,ES,EU,23.0,4842800.0,210556.52173913043,3.0,,,,,,,
-Spanish Data Protection Agency,dpa,ES,EU,282.0,27526580.0,100461.9708029197,28.0,,,,,,,
+Spanish Data Protection Agency,dpa,ES,EU,282.0,27596580.0,100351.2,28.0,,,,,,,
 Spanish Data Protection Agency (AEPD),dpa,ES,EU,3.0,0.0,0.0,0.0,,,,,,,
 Spanish Agency for Data Protection (AEPD),dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Agencia Española de Protección de Datos (AEPD),dpa,ES,EU,1.0,0.0,,0.0,,,,,,,
@@ -26,8 +26,8 @@ Catalan Data Protection Authority (APDCAT),dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Catalan Data Protection Agency (APDCAT),dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Basque Agency for the Protection of Data,dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Agència de Protecció de Dades de Catalunya,dpa,ES,EU,1.0,0.0,,0.0,,,,,,,
-Basque Agency for Data Protection,dpa,ES,EU,1.0,0.0,,0.0,,,,,,,
-Information Commissioner,dpa,SI,EU,40.0,6255.0,208.5,1.0,,,,,,,
+Basque Agency for Data Protection,dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
+Information Commissioner,dpa,SI,EU,40.0,6255.0,178.71428571428572,1.0,,,,,,,
 Council for Transparency and Protection of Data of Andalusia,dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Transparency and Data Protection Council of Andalusia,dpa,ES,EU,1.0,0.0,0.0,0.0,,,,,,,
 Information Commissioner of the Republic of Slovenia,dpa,SI,EU,13.0,0.0,0.0,0.0,,,,,,,
@@ -38,45 +38,45 @@ Informacijski pooblaščenec (Information Commissioner),dpa,SI,EU,2.0,0.0,0.0,0.
 Informacijski pooblaščenec (IP),dpa,SI,EU,1.0,0.0,0.0,0.0,,,,,,,
 Information Commissioner of Slovenia,dpa,SI,EU,1.0,500.0,500.0,0.0,,,,,,,
 Office for the Protection of Personal Data of the Slovak Republic,dpa,SK,EU,1.0,0.0,0.0,0.0,,,,,,,
-National Supervisory Authority for Personal Data Processing,dpa,RO,EU,13.0,124000.0,13777.777777777777,3.0,,,,,,,
-The National Supervisory Authority for the Processing of Personal Data,dpa,RO,EU,7.0,28000.0,4666.666666666667,0.0,,,,,,,
-National Supervisory Authority,dpa,RO,EU,40.0,181700.0,7268.0,4.0,,,,,,,
-National Supervisory Authority for the Processing of Personal Data,dpa,RO,EU,8.0,35000.0,7000.0,0.0,,,,,,,
-A.N.S.P.D.C.P.,dpa,RO,EU,20.0,58650.0,3910.0,3.0,,,,,,,
-The National Supervisory Authority,dpa,RO,EU,5.0,18000.0,4500.0,0.0,,,,,,,
+National Supervisory Authority for Personal Data Processing,dpa,RO,EU,13.0,151500.0,11653.846153846154,3.0,,,,,,,
+The National Supervisory Authority for the Processing of Personal Data,dpa,RO,EU,7.0,30000.0,4285.714285714285,0.0,,,,,,,
+National Supervisory Authority,dpa,RO,EU,40.0,414200.0,10355.0,4.0,,,,,,,
+National Supervisory Authority for the Processing of Personal Data,dpa,RO,EU,8.0,48000.0,6000.0,0.0,,,,,,,
+A.N.S.P.D.C.P.,dpa,RO,EU,20.0,61650.0,3626.470588235294,3.0,,,,,,,
+The National Supervisory Authority,dpa,RO,EU,5.0,20000.0,4000.0,0.0,,,,,,,
 Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),dpa,RO,EU,4.0,10500.0,2625.0,0.0,,,,,,,
-Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,dpa,RO,EU,3.0,20000.0,10000.0,0.0,,,,,,,
-The National Supervisory Authority for Personal Data Processing,dpa,RO,EU,10.0,93000.0,11625.0,2.0,,,,,,,
-A.N.S.P.D.C.P,dpa,RO,EU,10.0,63500.0,7937.5,3.0,,,,,,,
+Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,dpa,RO,EU,3.0,24000.0,8000.0,0.0,,,,,,,
+The National Supervisory Authority for Personal Data Processing,dpa,RO,EU,10.0,97000.0,9700.0,2.0,,,,,,,
+A.N.S.P.D.C.P,dpa,RO,EU,10.0,68500.0,6850.0,3.0,,,,,,,
 National DPA,dpa,RO,EU,1.0,1500.0,1500.0,1.0,,,,,,,
-ANSPDCP,dpa,RO,EU,2.0,0.0,,0.0,,,,,,,
+ANSPDCP,dpa,RO,EU,2.0,4000.0,2000.0,0.0,,,,,,,
 National Authority,dpa,RO,EU,1.0,2000.0,2000.0,0.0,,,,,,,
-National Authority for the Supervision of Personal Data Processing,dpa,RO,EU,1.0,0.0,,0.0,,,,,,,
+National Authority for the Supervision of Personal Data Processing,dpa,RO,EU,1.0,0.0,0.0,0.0,,,,,,,
 STRING The National Supervisory Authority for Personal Data Processing,dpa,RO,EU,1.0,3000.0,3000.0,0.0,,,,,,,
 STRING National Supervisory Authority,dpa,RO,EU,1.0,1000.0,1000.0,0.0,,,,,,,
 Romanian Supervisory Authority,dpa,RO,EU,1.0,5000.0,5000.0,0.0,,,,,,,
-National Commission for Data Protection (CNPD),dpa,PT,EU,2.0,0.0,,0.0,,,,,,,
+National Commission for Data Protection (CNPD),dpa,PT,EU,2.0,4300000.0,2150000.0,0.0,,,,,,,
 Comissão Nacional de Proteção de Dados,dpa,PT,EU,6.0,679000.0,113166.66666666667,0.0,,,,,,,
-President of the Office for Personal Data Protection,dpa,PL,EU,26.0,3522771.2,146782.13333333333,12.0,,,,,,,
+President of the Office for Personal Data Protection,dpa,PL,EU,26.0,5122166.2,197006.39230769232,12.0,,,,,,,
 Comissão Nacional de Proteção de Dados (CNPD),dpa,PT,EU,1.0,2000.0,2000.0,0.0,,,,,,,
 President of the Office for the Protection of Personal Data,dpa,PL,EU,1.0,1168.0,1168.0,1.0,,,,,,,
-President of the Personal Data Protection Office,dpa,PL,EU,20.0,7187780.0,399321.1111111111,14.0,,,,,,,
+President of the Personal Data Protection Office,dpa,PL,EU,20.0,7205780.0,360289.0,14.0,,,,,,,
 President of the Personal Data Protection Office (UODO),dpa,PL,EU,12.0,25047828.0,2087319.0,8.0,,,,,,,
 STRING President of the Personal Data Protection Office,dpa,PL,EU,1.0,1145891.0,1145891.0,0.0,,,,,,,
 President of the Office for Personal Data Protection (UODO),dpa,PL,EU,3.0,32500.0,10833.333333333334,2.0,,,,,,,
-Datatilsynet,dpa,NO,nan,44.0,131740000.0,3136666.6666666665,12.0,,,,,,,
+Datatilsynet,dpa,NO,nan,44.0,131740000.0,2994090.909090909,12.0,,,,,,,
 Privacy Board,dpa,NO,nan,3.0,0.0,0.0,0.0,,,,,,,
-Norwegian Data Protection Authority,dpa,NO,nan,15.0,30900000.0,2575000.0,1.0,,,,,,,
+Norwegian Data Protection Authority,dpa,NO,nan,15.0,32200000.0,2300000.0,1.0,,,,,,,
 The Norwegian Data Protection Authority,dpa,NO,nan,3.0,503500.0,167833.33333333334,1.0,,,,,,,
-Personvernnemnda (Privacy Board),dpa,NO,nan,1.0,0.0,,0.0,,,,,,,
-Norwegian Data Inspectorate,dpa,NO,nan,2.0,0.0,0.0,1.0,,,,,,,
+Personvernnemnda (Privacy Board),dpa,NO,nan,1.0,0.0,0.0,0.0,,,,,,,
+Norwegian Data Inspectorate,dpa,NO,nan,2.0,300000.0,150000.0,1.0,,,,,,,
 Estonian Data Protection Inspectorate,dpa,EE,EU,1.0,0.0,0.0,0.0,,,,,,,
 Oslo District Court,dpa,NO,nan,1.0,0.0,0.0,0.0,,,,,,,
 Norwegian Privacy Board,dpa,NO,nan,2.0,0.0,0.0,0.0,,,,,,,
 The Privacy Board,dpa,NO,nan,1.0,250000.0,250000.0,0.0,,,,,,,
 The Norwegian Privacy Board,dpa,NO,nan,1.0,0.0,0.0,0.0,,,,,,,
-Dutch Data Protection Authority,dpa,NL,EU,10.0,2772500.0,346562.5,1.0,,,,,,,
-Autoriteit Persoonsgegevens,dpa,NL,EU,23.0,21104500.0,1004976.1904761905,5.0,,,,,,,
+Dutch Data Protection Authority,dpa,NL,EU,10.0,2814500.0,281450.0,1.0,,,,,,,
+Autoriteit Persoonsgegevens,dpa,NL,EU,23.0,311104500.0,13526282.608695652,5.0,,,,,,,
 Autoriteit Persoonsgegevens (AP),dpa,NL,EU,1.0,150000.0,150000.0,0.0,,,,,,,
 Autoriteit Persoonsgege,dpa,NL,EU,1.0,725000.0,725000.0,0.0,,,,,,,
 Rechtbank Zeeland-West-Brabant,dpa,NL,EU,1.0,0.0,0.0,0.0,,,,,,,
@@ -85,24 +85,24 @@ Information and Data Protection Commissioner,dpa,MT,EU,4.0,8000.0,2000.0,1.0,,,,
 Commissioner for Information and Data Protection,dpa,MT,EU,1.0,0.0,0.0,0.0,,,,,,,
 Office of the Information and Data Protection Commissioner,dpa,MT,EU,1.0,65000.0,65000.0,0.0,,,,,,,
 The Commissioner,dpa,UNCLEAR,NON_EEA,1.0,20000.0,20000.0,0.0,,,,,,,
-National Commission for Data Protection,dpa,LU,EU,19.0,79100.0,5650.0,0.0,,,,,,,
-State Data Protection Inspectorate,dpa,LT,EU,7.0,2432276.0,405379.3333333333,0.0,,,,,,,
+National Commission for Data Protection,dpa,LU,EU,19.0,116200.0,6455.555555555556,0.0,,,,,,,
+State Data Protection Inspectorate,dpa,LT,EU,7.0,2542276.0,363182.28571428574,0.0,,,,,,,
 State Data Protection Inspectorate (SDPI),dpa,LT,EU,1.0,15000.0,15000.0,0.0,,,,,,,
 Valstybinė duomenų apsaugos inspekcija (VDAI),dpa,LT,EU,1.0,2000.0,2000.0,0.0,,,,,,,
 Data State Inspectorate,dpa,UNCLEAR,NON_EEA,5.0,39745.0,7949.0,0.0,,,,,,,
 Data State Inspections,dpa,LV,EU,2.0,2000.0,1000.0,0.0,,,,,,,
 Data State Inspection,dpa,LV,EU,1.0,0.0,0.0,0.0,,,,,,,
 State Data Inspectorate,dpa,LV,EU,2.0,1265000.0,632500.0,0.0,,,,,,,
-Garante per la protezione dei dati personali,dpa,IT,EU,280.0,116505610.0,565561.213592233,19.0,,,,,,,
+Garante per la protezione dei dati personali,dpa,IT,EU,280.0,249986619.0,912359.9233576643,19.0,,,,,,,
 Garante per la Protezione dei Dati Personali,dpa,IT,EU,1.0,2000.0,2000.0,0.0,,,,,,,
 Guarantor for the Protection of Personal Data,dpa,IT,EU,2.0,10000.0,5000.0,0.0,,,,,,,
 STRING Garante per la protezione dei dati personali,dpa,IT,EU,1.0,6000.0,6000.0,0.0,,,,,,,
 Data Protection Commission of Ireland,dpa,IE,EU,2.0,0.0,0.0,0.0,,,,,,,
-Data Protection Commission,dpa,IE,EU,15.0,268200000.0,26820000.0,5.0,,,,,,,
+Data Protection Commission,dpa,IE,EU,15.0,268842500.0,19203035.714285713,5.0,,,,,,,
 NOT_MENTIONED,dpa,UNCLEAR,NON_EEA,9.0,0.0,0.0,0.0,,,,,,,
 Irish Data Protection Commission,dpa,IE,EU,1.0,530000000.0,530000000.0,0.0,,,,,,,
 Official name of the deciding Data Protection Authority (DPA): Data Protection Commission,dpa,COUNTRY OF THE DECIDING AUTHORITY: IRELAND (IE),NON_EEA,1.0,225000000.0,225000000.0,0.0,,,,,,,
-Persónuvernd,dpa,IS,nan,67.0,71356900.0,1297398.1818181819,1.0,,,,,,,
+Persónuvernd,dpa,IS,nan,67.0,71356900.0,1114951.5625,1.0,,,,,,,
 Privacy Policy Board,dpa,IS,nan,2.0,3008500.0,1504250.0,2.0,,,,,,,
 The Data Protection Authority,dpa,IS,nan,11.0,0.0,0.0,0.0,,,,,,,
 Data Protection Authority,dpa,IS,nan,6.0,5001400.0,833566.6666666666,0.0,,,,,,,
@@ -113,15 +113,15 @@ National Data Protection and Freedom of Information Authority,dpa,HU,EU,33.0,253
 Nemzeti Adatvédelmi és Információszabadság Hatóság,dpa,HU,EU,5.0,10000000.0,3333333.3333333335,1.0,,,,,,,
 National Authority for Data Protection and Freedom of Information,dpa,HU,EU,13.0,72500000.0,6590909.090909091,0.0,,,,,,,
 Hungarian National Authority for Data Protection and Freedom of Information,dpa,HU,EU,1.0,80000000.0,80000000.0,1.0,,,,,,,
-Hellenic Data Protection Authority,dpa,GR,EU,9.0,66000.0,8250.0,0.0,,,,,,,
-Personal Data Protection Authority,dpa,GR,EU,51.0,3710849.0,92771.225,7.0,,,,,,,
+Hellenic Data Protection Authority,dpa,GR,EU,9.0,71000.0,7888.888888888889,0.0,,,,,,,
+Personal Data Protection Authority,dpa,GR,EU,51.0,3765849.0,83685.53333333334,7.0,,,,,,,
 Greek Data Protection Authority,dpa,GR,EU,3.0,150000.0,50000.0,1.0,,,,,,,
 The Personal Data Protection Authority,dpa,GR,EU,3.0,4000.0,1333.3333333333333,0.0,,,,,,,
 The President of the Authority,dpa,GR,EU,1.0,3000.0,3000.0,0.0,,,,,,,
-Hellenic Republic Authority for the Protection of Personal Data,dpa,GR,EU,1.0,0.0,,0.0,,,,,,,
+Hellenic Republic Authority for the Protection of Personal Data,dpa,GR,EU,1.0,0.0,0.0,0.0,,,,,,,
 The Authority,dpa,UNCLEAR,NON_EEA,1.0,15000.0,15000.0,0.0,,,,,,,
 Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα,dpa,GR,EU,1.0,0.0,,0.0,,,,,,,
-Authority for the Protection of Personal Data,dpa,GR,EU,1.0,0.0,,0.0,,,,,,,
+Authority for the Protection of Personal Data,dpa,GR,EU,1.0,25000.0,25000.0,0.0,,,,,,,
 Bayerisches Landesamt für Datenschutzaufsicht,dpa,DE,EU,1.0,0.0,0.0,0.0,,,,,,,
 Bavarian State Office for Data Protection Supervision,dpa,DE,EU,1.0,0.0,0.0,0.0,,,,,,,
 Der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI),dpa,DE,EU,1.0,45000000.0,45000000.0,0.0,,,,,,,
@@ -142,17 +142,17 @@ Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-W�
 Der Landesbeauftragte für den Datenschutz Niedersachsen (LfD Lower Saxony),dpa,DE,EU,1.0,10400000.0,10400000.0,0.0,,,,,,,
 The State Commissioner for Data Protection and Freedom of Information Baden-Württemberg,dpa,DE,EU,1.0,20000.0,20000.0,1.0,,,,,,,
 Bremen State Commissioner for Data Protection and Freedom of Information (LfDI),dpa,DE,EU,1.0,0.0,0.0,0.0,,,,,,,
-The State Commissioner for Data Protection and Freedom of Information Bremen,dpa,DE,EU,1.0,0.0,,0.0,,,,,,,
+The State Commissioner for Data Protection and Freedom of Information Bremen,dpa,DE,EU,1.0,1900000.0,1900000.0,0.0,,,,,,,
 National Commission for Information Technology and Liberties,dpa,FR,EU,6.0,475000.0,79166.66666666667,0.0,,,,,,,
-Commission Nationale de l'Informatique et des Libertés (CNIL),dpa,FR,EU,9.0,245000.0,40833.333333333336,1.0,,,,,,,
+Commission Nationale de l'Informatique et des Libertés (CNIL),dpa,FR,EU,9.0,495000.0,70714.28571428571,1.0,,,,,,,
 National Commission for Information Technology and Freedoms,dpa,FR,EU,7.0,3145000.0,449285.71428571426,1.0,,,,,,,
 National Commission for Computing and Liberties,dpa,FR,EU,4.0,101000000.0,25250000.0,0.0,,,,,,,
 National Commission for Information Technology and Civil Liberties,dpa,FR,EU,2.0,80000.0,40000.0,0.0,,,,,,,
 Commission nationale de l'informatique et des libertés (CNIL),dpa,FR,EU,1.0,0.0,0.0,0.0,,,,,,,
 National Commission for Informatics and Freedoms (CNIL),dpa,FR,EU,1.0,0.0,0.0,0.0,,,,,,,
-National Commission for Informatics and Freedoms,dpa,FR,EU,4.0,6000.0,2000.0,2.0,,,,,,,
-Commission nationale de l'informatique et des libertés,dpa,FR,EU,9.0,60696000.0,7587000.0,1.0,,,,,,,
-Commission Nationale de l'Informatique et des Libertés,dpa,FR,EU,13.0,80680000.0,6723333.333333333,3.0,,,,,,,
+National Commission for Informatics and Freedoms,dpa,FR,EU,4.0,6000.0,1500.0,2.0,,,,,,,
+Commission nationale de l'informatique et des libertés,dpa,FR,EU,9.0,61496000.0,6832888.888888889,1.0,,,,,,,
+Commission Nationale de l'Informatique et des Libertés,dpa,FR,EU,13.0,230680000.0,17744615.384615384,3.0,,,,,,,
 Commission Nationale de l’Informatique et des Libertés (CNIL),dpa,FR,EU,1.0,120000.0,120000.0,0.0,,,,,,,
 Deputy Data Protection Commissioner,dpa,FI,EU,6.0,0.0,0.0,1.0,,,,,,,
 Office of the Data Protection Supervisor,dpa,FI,EU,1.0,0.0,0.0,0.0,,,,,,,
@@ -184,7 +184,7 @@ United Kingdom_25,decision,,,,,,,,,0.0,True,True,1.0,False
 United Kingdom_23,decision,,,,,,,2021.0,Q4,500000.0,True,True,1.0,False
 United Kingdom_24,decision,,,,,,,,,0.0,True,True,3.0,False
 United Kingdom_29,decision,,,,,,,2024.0,Q2,130000.0,False,True,2.0,False
-United Kingdom_27,decision,,,,,,,,,0.0,False,True,1.0,False
+United Kingdom_27,decision,,,,,,,,,150000.0,False,True,1.0,False
 United Kingdom_28,decision,,,,,,,2025.0,Q2,60000.0,True,True,2.0,False
 United Kingdom_22,decision,,,,,,,,,200000.0,False,True,0.0,False
 United Kingdom_30,decision,,,,,,,,,0.0,False,True,1.0,False
@@ -205,8 +205,8 @@ United Kingdom_46,decision,,,,,,,,,0.0,False,True,1.0,False
 United Kingdom_48,decision,,,,,,,,,0.0,True,True,1.0,False
 United Kingdom_53,decision,,,,,,,,,0.0,False,True,1.0,False
 United Kingdom_52,decision,,,,,,,,,75000.0,False,True,1.0,False
-United Kingdom_51,decision,,,,,,,,,0.0,False,True,0.0,False
-United Kingdom_47,decision,,,,,,,,,0.0,False,True,1.0,False
+United Kingdom_51,decision,,,,,,,,,20000.0,False,True,0.0,False
+United Kingdom_47,decision,,,,,,,,,50000.0,False,True,1.0,False
 United Kingdom_49,decision,,,,,,,,,0.0,False,True,0.0,False
 United Kingdom_50,decision,,,,,,,,,0.0,False,True,1.0,False
 United Kingdom_54,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -222,7 +222,7 @@ Sweden_2,decision,,,,,,,2020.0,Q4,4000000.0,False,True,2.0,False
 Sweden_3,decision,,,,,,,2020.0,Q4,3500000.0,False,True,2.0,False
 Sweden_4,decision,,,,,,,2020.0,Q4,2500000.0,False,True,2.0,False
 Sweden_1,decision,,,,,,,2020.0,Q1,75000000.0,False,True,4.0,False
-Sweden_5,decision,,,,,,,,,0.0,False,True,2.0,False
+Sweden_5,decision,,,,,,,,,15000000.0,False,True,2.0,False
 Sweden_7,decision,,,,,,,2020.0,Q4,4000000.0,True,True,1.0,False
 Sweden_6,decision,,,,,,,,,0.0,False,True,2.0,False
 Sweden_9,decision,,,,,,,2020.0,Q4,550000.0,True,True,1.0,False
@@ -256,19 +256,19 @@ Sweden_41,decision,,,,,,,2022.0,Q1,0.0,False,True,1.0,False
 Sweden_39,decision,,,,,,,,,500000.0,False,True,1.0,False
 Sweden_44,decision,,,,,,,,,0.0,False,True,0.0,False
 Sweden_42,decision,,,,,,,,,15000000.0,False,True,2.0,False
-Sweden_43,decision,,,,,,,,,0.0,False,True,1.0,False
+Sweden_43,decision,,,,,,,,,1600000.0,False,True,1.0,False
 Sweden_46,decision,,,,,,,,,0.0,False,False,0.0,False
 Sweden_45,decision,,,,,,,,,0.0,False,True,0.0,False
 Sweden_47,decision,,,,,,,2022.0,Q1,0.0,False,True,0.0,False
 Sweden_48,decision,,,,,,,2022.0,Q3,0.0,False,True,1.0,False
-Sweden_49,decision,,,,,,,,,0.0,False,True,1.0,False
+Sweden_49,decision,,,,,,,,,200000.0,False,True,1.0,False
 Sweden_50,decision,,,,,,,,,0.0,False,True,0.0,False
 Spain_1,decision,,,,,,,,,0.0,False,False,0.0,False
 Sweden_54,decision,,,,,,,,,0.0,False,True,0.0,False
 Sweden_57,decision,,,,,,,2023.0,Q2,0.0,False,False,0.0,False
 Sweden_52,decision,,,,,,,2022.0,Q3,0.0,False,True,1.0,False
 Sweden_51,decision,,,,,,,,,0.0,False,True,1.0,False
-Sweden_53,decision,,,,,,,,,0.0,False,True,1.0,False
+Sweden_53,decision,,,,,,,,,37000000.0,False,True,1.0,False
 Spain_3,decision,,,,,,,,,0.0,False,True,1.0,False
 Spain_2,decision,,,,,,,,,0.0,False,True,1.0,False
 Spain_4,decision,,,,,,,,,21000.0,True,True,1.0,False
@@ -701,7 +701,7 @@ Spain_448,decision,,,,,,,,,0.0,False,False,0.0,False
 Spain_449,decision,,,,,,,,,30000.0,False,True,0.0,False
 Spain_451,decision,,,,,,,,,36000.0,False,True,1.0,False
 Spain_452,decision,,,,,,,,,2000.0,False,True,1.0,False
-Spain_450,decision,,,,,,,,,0.0,False,True,1.0,False
+Spain_450,decision,,,,,,,,,10000.0,False,True,1.0,False
 Spain_453,decision,,,,,,,,,36000.0,False,True,1.0,False
 Spain_455,decision,,,,,,,,,30000.0,False,True,1.0,False
 Spain_454,decision,,,,,,,,,30000.0,False,True,1.0,False
@@ -795,11 +795,11 @@ Spain_540,decision,,,,,,,,,0.0,False,True,1.0,False
 Spain_545,decision,,,,,,,,,70000.0,False,True,1.0,False
 Spain_546,decision,,,,,,,,,75000.0,False,True,1.0,False
 Spain_547,decision,,,,,,,,,80000.0,False,True,1.0,False
-Spain_549,decision,,,,,,,,,0.0,False,True,2.0,False
+Spain_549,decision,,,,,,,,,4000.0,False,True,2.0,False
 Spain_551,decision,,,,,,,,,3000.0,False,True,1.0,False
 Spain_550,decision,,,,,,,,,3000.0,False,True,1.0,False
 Spain_552,decision,,,,,,,,,60000.0,False,True,2.0,False
-Spain_558,decision,,,,,,,,,0.0,False,True,5.0,False
+Spain_558,decision,,,,,,,,,6000000.0,False,True,5.0,False
 Spain_553,decision,,,,,,,,,1500.0,False,True,0.0,False
 Spain_554,decision,,,,,,,,,50000.0,False,True,0.0,False
 Spain_555,decision,,,,,,,,,4000.0,False,True,0.0,False
@@ -828,7 +828,7 @@ Spain_581,decision,,,,,,,,,10000.0,False,True,1.0,False
 Spain_577,decision,,,,,,,,,80000.0,False,True,1.0,False
 Spain_582,decision,,,,,,,2024.0,Q1,1200.0,False,True,1.0,False
 Spain_580,decision,,,,,,,,,0.0,False,True,2.0,False
-Spain_579,decision,,,,,,,,,0.0,False,True,1.0,False
+Spain_579,decision,,,,,,,,,70000.0,False,True,1.0,False
 Spain_583,decision,,,,,,,,,70000.0,False,True,1.0,False
 Spain_584,decision,,,,,,,,,0.0,False,False,0.0,False
 Spain_586,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -948,24 +948,24 @@ Slovakia_1,decision,,,,,,,,,0.0,False,True,0.0,False
 Slovenia_77,decision,,,,,,,,,0.0,False,True,0.0,False
 Romania_1,decision,,,,,,,2023.0,Q1,500.0,False,True,1.0,False
 Slovenia_78,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_2,decision,,,,,,,,,0.0,False,True,0.0,False
+Romania_2,decision,,,,,,,,,2000.0,False,True,0.0,False
 Romania_4,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_3,decision,,,,,,,,,3000.0,False,True,1.0,False
-Romania_5,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_5,decision,,,,,,,,,500.0,False,True,1.0,False
 Romania_6,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_7,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_9,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_7,decision,,,,,,,,,3000.0,False,True,0.0,False
+Romania_9,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_11,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_10,decision,,,,,,,,,17000.0,False,True,2.0,False
-Romania_13,decision,,,,,,,,,0.0,False,True,3.0,False
-Romania_12,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_13,decision,,,,,,,,,4000.0,False,True,3.0,False
+Romania_12,decision,,,,,,,,,110000.0,False,True,1.0,False
 Romania_14,decision,,,,,,,,,10000.0,False,True,2.0,False
 Romania_15,decision,,,,,,,,,1000.0,False,True,1.0,False
 Romania_16,decision,,,,,,,,,0.0,False,True,2.0,False
 Romania_17,decision,,,,,,,,,70000.0,True,True,1.0,False
 Romania_20,decision,,,,,,,,,1000.0,False,True,0.0,False
 Romania_19,decision,,,,,,,,,10000.0,False,True,2.0,False
-Romania_18,decision,,,,,,,,,0.0,False,True,5.0,False
+Romania_18,decision,,,,,,,,,5000.0,False,True,5.0,False
 Romania_21,decision,,,,,,,,,0.0,False,True,1.0,False
 Romania_24,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_26,decision,,,,,,,,,2000.0,False,True,1.0,False
@@ -978,13 +978,13 @@ Romania_34,decision,,,,,,,,,25000.0,True,True,4.0,False
 Romania_33,decision,,,,,,,,,2000.0,False,True,0.0,False
 Romania_36,decision,,,,,,,2020.0,Q2,5000.0,False,True,1.0,False
 Romania_32,decision,,,,,,,,,500.0,False,True,2.0,False
-Romania_31,decision,,,,,,,,,0.0,False,True,4.0,False
-Romania_37,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_31,decision,,,,,,,,,7000.0,False,True,4.0,False
+Romania_37,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_38,decision,,,,,,,,,5000.0,False,True,1.0,False
 Romania_43,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_40,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_42,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_41,decision,,,,,,,,,0.0,False,True,5.0,False
+Romania_42,decision,,,,,,,,,2000.0,False,True,1.0,False
+Romania_41,decision,,,,,,,,,4000.0,False,True,5.0,False
 Romania_45,decision,,,,,,,2022.0,Q4,1000.0,False,True,0.0,False
 Romania_48,decision,,,,,,,2023.0,Q2,1500.0,True,True,1.0,False
 Romania_49,decision,,,,,,,,,3000.0,False,True,1.0,False
@@ -1005,87 +1005,87 @@ Romania_62,decision,,,,,,,,,1000.0,False,True,0.0,False
 Romania_63,decision,,,,,,,,,7000.0,False,True,1.0,False
 Romania_65,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_67,decision,,,,,,,,,2000.0,False,True,4.0,False
-Romania_68,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_69,decision,,,,,,,,,0.0,False,True,3.0,False
-Romania_70,decision,,,,,,,,,0.0,False,True,5.0,False
+Romania_68,decision,,,,,,,,,5000.0,False,True,1.0,False
+Romania_69,decision,,,,,,,,,40000.0,False,True,3.0,False
+Romania_70,decision,,,,,,,,,2500.0,False,True,5.0,False
 Romania_72,decision,,,,,,,,,10000.0,True,True,1.0,False
 Romania_71,decision,,,,,,,,,4000.0,False,True,1.0,False
 Romania_74,decision,,,,,,,2020.0,Q2,3000.0,False,True,1.0,False
 Romania_73,decision,,,,,,,,,4000.0,False,True,1.0,False
-Romania_79,decision,,,,,,,,,0.0,False,True,2.0,False
+Romania_79,decision,,,,,,,,,3000.0,False,True,2.0,False
 Romania_77,decision,,,,,,,,,5000.0,False,True,1.0,False
 Romania_76,decision,,,,,,,,,2000.0,False,True,5.0,False
 Romania_78,decision,,,,,,,,,2000.0,False,True,3.0,False
-Romania_80,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_75,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_82,decision,,,,,,,,,0.0,False,True,0.0,False
+Romania_80,decision,,,,,,,,,1000.0,False,True,0.0,False
+Romania_75,decision,,,,,,,,,1000.0,False,True,1.0,False
+Romania_82,decision,,,,,,,,,3000.0,False,True,0.0,False
 Romania_81,decision,,,,,,,,,1000.0,False,True,1.0,False
 Romania_84,decision,,,,,,,,,2000.0,False,True,0.0,False
 Romania_87,decision,,,,,,,,,1500.0,True,True,1.0,False
-Romania_86,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_85,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_92,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_91,decision,,,,,,,,,0.0,False,True,3.0,False
+Romania_86,decision,,,,,,,,,1000.0,False,True,1.0,False
+Romania_85,decision,,,,,,,,,11000.0,False,True,0.0,False
+Romania_92,decision,,,,,,,,,15000.0,False,True,1.0,False
+Romania_91,decision,,,,,,,,,10000.0,False,True,3.0,False
 Romania_93,decision,,,,,,,,,20000.0,False,True,1.0,False
 Romania_94,decision,,,,,,,2024.0,Q2,4000.0,True,True,1.0,False
 Romania_96,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_95,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_95,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_100,decision,,,,,,,2021.0,Q4,2000.0,False,True,0.0,False
 Romania_99,decision,,,,,,,,,1000.0,False,True,1.0,False
 Romania_102,decision,,,,,,,2023.0,Q4,1000.0,False,True,2.0,False
-Romania_101,decision,,,,,,,,,0.0,False,True,2.0,False
-Romania_98,decision,,,,,,,,,0.0,False,True,5.0,False
+Romania_101,decision,,,,,,,,,3000.0,False,True,2.0,False
+Romania_98,decision,,,,,,,,,1000.0,False,True,5.0,False
 Romania_103,decision,,,,,,,,,1000.0,False,True,2.0,False
 Romania_107,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_108,decision,,,,,,,,,6000.0,False,True,3.0,False
 Romania_110,decision,,,,,,,,,10000.0,False,True,1.0,False
-Romania_109,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_109,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_113,decision,,,,,,,,,1500.0,False,True,1.0,False
-Romania_112,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_112,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_116,decision,,,,,,,2021.0,Q2,2000.0,True,True,1.0,False
 Romania_114,decision,,,,,,,,,0.0,False,True,0.0,False
 Romania_117,decision,,,,,,,,,3000.0,False,True,2.0,False
 Romania_121,decision,,,,,,,,,5000.0,True,True,1.0,False
 Romania_120,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_119,decision,,,,,,,,,0.0,False,True,2.0,False
-Romania_122,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_119,decision,,,,,,,,,2000.0,False,True,2.0,False
+Romania_122,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_123,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_125,decision,,,,,,,,,1000.0,False,True,1.0,False
 Romania_124,decision,,,,,,,,,2500.0,False,True,1.0,False
 Romania_127,decision,,,,,,,,,3000.0,False,True,1.0,False
 Romania_128,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_126,decision,,,,,,,,,0.0,False,True,4.0,False
+Romania_126,decision,,,,,,,,,3000.0,False,True,4.0,False
 Romania_130,decision,,,,,,,,,0.0,False,True,0.0,False
 Romania_131,decision,,,,,,,,,2000.0,True,True,1.0,False
 Romania_129,decision,,,,,,,,,5000.0,False,True,4.0,False
 Romania_132,decision,,,,,,,,,2000.0,False,True,4.0,False
 Romania_134,decision,,,,,,,2022.0,Q4,150.0,True,True,2.0,False
 Romania_133,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_135,decision,,,,,,,,,0.0,False,True,0.0,False
+Romania_135,decision,,,,,,,,,1000.0,False,True,0.0,False
 Romania_138,decision,,,,,,,,,0.0,False,True,1.0,False
 Romania_136,decision,,,,,,,2025.0,Q1,25000.0,True,True,1.0,False
 Romania_137,decision,,,,,,,,,1000.0,False,True,0.0,False
-Romania_139,decision,,,,,,,,,0.0,False,True,2.0,False
+Romania_139,decision,,,,,,,,,2000.0,False,True,2.0,False
 Romania_142,decision,,,,,,,,,0.0,False,True,2.0,False
 Romania_143,decision,,,,,,,,,300.0,False,True,0.0,False
 Romania_141,decision,,,,,,,,,3000.0,False,True,8.0,False
 Romania_140,decision,,,,,,,,,40000.0,False,True,4.0,False
 Romania_145,decision,,,,,,,,,1000.0,False,True,7.0,False
-Romania_144,decision,,,,,,,,,0.0,False,True,3.0,False
-Romania_146,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_144,decision,,,,,,,,,5000.0,False,True,3.0,False
+Romania_146,decision,,,,,,,,,28000.0,False,True,1.0,False
 Romania_148,decision,,,,,,,,,5000.0,False,True,1.0,False
 Romania_153,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_150,decision,,,,,,,,,5000.0,False,True,3.0,False
 Romania_156,decision,,,,,,,,,5000.0,False,True,1.0,False
 Romania_151,decision,,,,,,,,,2000.0,False,True,0.0,False
-Romania_152,decision,,,,,,,,,0.0,False,True,1.0,False
-Romania_154,decision,,,,,,,,,0.0,False,True,0.0,False
-Romania_158,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_152,decision,,,,,,,,,15000.0,False,True,1.0,False
+Romania_154,decision,,,,,,,,,1000.0,False,True,0.0,False
+Romania_158,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_159,decision,,,,,,,,,0.0,False,True,1.0,False
 Romania_157,decision,,,,,,,,,0.0,False,True,0.0,False
 Romania_155,decision,,,,,,,,,12000.0,False,True,3.0,False
 Romania_161,decision,,,,,,,,,5000.0,False,True,1.0,False
-Romania_162,decision,,,,,,,,,0.0,False,True,1.0,False
+Romania_162,decision,,,,,,,,,10000.0,False,True,1.0,False
 Romania_163,decision,,,,,,,,,2000.0,False,True,1.0,False
 Romania_165,decision,,,,,,,,,5000.0,False,True,2.0,False
 Romania_167,decision,,,,,,,,,0.0,False,True,1.0,False
@@ -1095,9 +1095,9 @@ Romania_170,decision,,,,,,,,,4000.0,False,True,0.0,False
 Romania_171,decision,,,,,,,,,15000.0,True,True,1.0,False
 Romania_174,decision,,,,,,,2020.0,Q4,0.0,False,True,1.0,False
 Romania_175,decision,,,,,,,2020.0,Q4,0.0,False,True,1.0,False
-Romania_172,decision,,,,,,,,,0.0,False,True,3.0,False
+Romania_172,decision,,,,,,,,,3000.0,False,True,3.0,False
 Romania_176,decision,,,,,,,,,20000.0,True,True,1.0,False
-Portugal_11,decision,,,,,,,,,0.0,False,True,3.0,False
+Portugal_11,decision,,,,,,,,,4300000.0,False,True,3.0,False
 Portugal_1,decision,,,,,,,2018.0,Q4,400000.0,False,True,2.0,False
 Romania_177,decision,,,,,,,,,10000.0,False,True,1.0,False
 Portugal_3,decision,,,,,,,,,2000.0,False,True,1.0,False
@@ -1123,7 +1123,7 @@ Poland_15,decision,,,,,,,2020.0,Q4,0.0,True,True,2.0,False
 Poland_16,decision,,,,,,,2022.0,Q2,15994.0,True,True,1.0,False
 Poland_19,decision,,,,,,,2020.0,Q2,0.0,False,True,1.0,False
 Poland_18,decision,,,,,,,2022.0,Q4,45697.0,False,True,1.0,False
-Poland_17,decision,,,,,,,,,0.0,False,True,2.0,False
+Poland_17,decision,,,,,,,,,1599395.0,False,True,2.0,False
 Poland_20,decision,,,,,,,2020.0,Q3,100000.0,False,True,1.0,False
 Poland_21,decision,,,,,,,,,576220.0,False,True,1.0,False
 Poland_24,decision,,,,,,,,,100000.0,True,True,2.0,False
@@ -1151,7 +1151,7 @@ Poland_46,decision,,,,,,,2022.0,Q3,2500.0,True,True,2.0,False
 Poland_44,decision,,,,,,,,,10000.0,False,True,2.0,False
 Poland_47,decision,,,,,,,,,238345.0,True,True,2.0,False
 Poland_48,decision,,,,,,,,,1556.0,True,True,3.0,False
-Poland_45,decision,,,,,,,,,0.0,False,True,1.0,False
+Poland_45,decision,,,,,,,,,18000.0,False,True,1.0,False
 Poland_51,decision,,,,,,,,,85000.0,True,True,1.0,False
 Poland_49,decision,,,,,,,,,23580.0,True,True,2.0,False
 Poland_53,decision,,,,,,,,,10000.0,True,True,1.0,False
@@ -1194,7 +1194,7 @@ Norway_24,decision,,,,,,,2021.0,Q3,400000.0,True,True,1.0,False
 Norway_29,decision,,,,,,,,,200000.0,True,True,1.0,False
 Norway_27,decision,,,,,,,,,250000.0,False,True,2.0,False
 Norway_26,decision,,,,,,,,,75000.0,False,True,2.0,False
-Norway_30,decision,,,,,,,,,0.0,False,True,1.0,False
+Norway_30,decision,,,,,,,,,1000000.0,False,True,1.0,False
 Norway_33,decision,,,,,,,,,300000.0,False,True,1.0,False
 Norway_34,decision,,,,,,,,,100000000.0,False,True,3.0,False
 Norway_28,decision,,,,,,,,,0.0,False,True,4.0,False
@@ -1203,7 +1203,7 @@ Norway_37,decision,,,,,,,2023.0,Q1,0.0,True,False,1.0,False
 Norway_38,decision,,,,,,,2021.0,Q1,50000.0,True,True,2.0,False
 Norway_41,decision,,,,,,,,,400000.0,False,True,1.0,False
 Norway_39,decision,,,,,,,,,200000.0,False,True,4.0,False
-Norway_43,decision,,,,,,,,,0.0,False,True,1.0,False
+Norway_43,decision,,,,,,,,,300000.0,False,True,1.0,False
 Norway_42,decision,,,,,,,,,500000.0,False,True,2.0,False
 Norway_44,decision,,,,,,,,,100000.0,False,True,1.0,False
 Norway_40,decision,,,,,,,,,500000.0,False,True,1.0,False
@@ -1228,7 +1228,7 @@ Norway_57,decision,,,,,,,,,200000.0,False,True,2.0,False
 Norway_64,decision,,,,,,,,,0.0,False,True,1.0,False
 Norway_63,decision,,,,,,,,,200000.0,False,True,3.0,False
 Norway_66,decision,,,,,,,,,0.0,False,False,0.0,False
-Norway_68,decision,,,,,,,,,0.0,False,True,1.0,False
+Norway_68,decision,,,,,,,,,300000.0,False,True,1.0,False
 Norway_65,decision,,,,,,,2022.0,Q1,50000.0,False,True,1.0,False
 Norway_67,decision,,,,,,,2023.0,Q1,2500000.0,True,True,1.0,False
 Norway_69,decision,,,,,,,2023.0,Q3,0.0,False,True,1.0,False
@@ -1263,12 +1263,12 @@ Netherlands_14,decision,,,,,,,,,440000.0,False,True,1.0,False
 Netherlands_15,decision,,,,,,,,,725000.0,False,True,1.0,False
 Netherlands_16,decision,,,,,,,2021.0,Q2,450000.0,True,True,1.0,False
 Netherlands_22,decision,,,,,,,2019.0,Q2,460000.0,True,True,1.0,False
-Netherlands_17,decision,,,,,,,,,0.0,False,True,1.0,False
+Netherlands_17,decision,,,,,,,,,12000.0,False,True,1.0,False
 Netherlands_19,decision,,,,,,,2022.0,Q4,0.0,False,False,0.0,False
 Netherlands_21,decision,,,,,,,2020.0,Q2,7500.0,True,True,1.0,False
 Netherlands_23,decision,,,,,,,2023.0,Q4,150000.0,False,True,1.0,False
 Netherlands_20,decision,,,,,,,,,15000.0,False,True,2.0,False
-Netherlands_25,decision,,,,,,,,,0.0,False,True,1.0,False
+Netherlands_25,decision,,,,,,,,,30000.0,False,True,1.0,False
 Netherlands_24,decision,,,,,,,2019.0,Q4,725000.0,False,True,1.0,False
 Netherlands_26,decision,,,,,,,2019.0,Q4,525000.0,False,True,2.0,False
 Netherlands_28,decision,,,,,,,,,0.0,False,False,1.0,False
@@ -1278,7 +1278,7 @@ Netherlands_29,decision,,,,,,,2023.0,Q4,10000000.0,False,True,1.0,False
 Netherlands_31,decision,,,,,,,,,4750000.0,False,True,1.0,False
 Netherlands_32,decision,,,,,,,2024.0,Q3,0.0,False,True,1.0,False
 Netherlands_34,decision,,,,,,,2024.0,Q2,600000.0,False,True,1.0,False
-Netherlands_33,decision,,,,,,,,,0.0,False,True,0.0,False
+Netherlands_33,decision,,,,,,,,,290000000.0,False,True,0.0,False
 Netherlands_37,decision,,,,,,,,,0.0,False,True,0.0,False
 Netherlands_35,decision,,,,,,,2018.0,Q3,0.0,False,False,1.0,False
 Netherlands_36,decision,,,,,,,,,0.0,False,True,1.0,False
@@ -1295,16 +1295,16 @@ Luxembourg_1,decision,,,,,,,,,0.0,False,True,0.0,False
 Malta_13,decision,,,,,,,,,8000.0,False,True,0.0,False
 Luxembourg_3,decision,,,,,,,,,2500.0,False,True,1.0,False
 Luxembourg_4,decision,,,,,,,,,2800.0,False,True,3.0,False
-Luxembourg_7,decision,,,,,,,,,0.0,False,True,2.0,False
+Luxembourg_7,decision,,,,,,,,,1900.0,False,True,2.0,False
 Luxembourg_5,decision,,,,,,,2023.0,Q3,2500.0,False,True,3.0,False
-Luxembourg_8,decision,,,,,,,,,0.0,False,True,1.0,False
-Luxembourg_9,decision,,,,,,,,,0.0,False,True,0.0,False
+Luxembourg_8,decision,,,,,,,,,1500.0,False,True,1.0,False
+Luxembourg_9,decision,,,,,,,,,15000.0,False,True,0.0,False
 Luxembourg_13,decision,,,,,,,,,0.0,False,False,0.0,False
 Luxembourg_10,decision,,,,,,,,,7600.0,False,True,1.0,False
 Luxembourg_12,decision,,,,,,,,,5300.0,False,True,2.0,False
 Luxembourg_11,decision,,,,,,,2022.0,Q4,2100.0,False,True,1.0,False
 Luxembourg_14,decision,,,,,,,2021.0,Q4,18000.0,False,True,1.0,False
-Luxembourg_15,decision,,,,,,,,,0.0,False,True,0.0,False
+Luxembourg_15,decision,,,,,,,,,18700.0,False,True,0.0,False
 Luxembourg_16,decision,,,,,,,,,0.0,False,False,0.0,False
 Luxembourg_17,decision,,,,,,,,,0.0,False,True,1.0,False
 Luxembourg_21,decision,,,,,,,,,1000.0,False,True,2.0,False
@@ -1321,7 +1321,7 @@ Lithuania_9,decision,,,,,,,,,0.0,False,False,0.0,False
 Lithuania_3,decision,,,,,,,,,12000.0,False,True,3.0,False
 Lithuania_10,decision,,,,,,,,,20000.0,False,True,5.0,False
 Lithuania_8,decision,,,,,,,,,0.0,False,True,1.0,False
-Lithuania_11,decision,,,,,,,,,0.0,False,True,1.0,False
+Lithuania_11,decision,,,,,,,,,110000.0,False,True,1.0,False
 Lithuania_12,decision,,,,,,,,,2385276.0,False,True,2.0,False
 Latvia_3,decision,,,,,,,,,6250.0,False,True,2.0,False
 Latvia_1,decision,,,,,,,2024.0,Q1,1000.0,False,True,1.0,False
@@ -1340,7 +1340,7 @@ Italy_9,decision,,,,,,,2020.0,Q1,0.0,False,False,0.0,False
 Italy_2,decision,,,,,,,2020.0,Q1,27802946.0,True,True,7.0,False
 Italy_12,decision,,,,,,,,,0.0,False,False,0.0,False
 Italy_14,decision,,,,,,,2020.0,Q2,600000.0,True,True,1.0,False
-Italy_17,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_17,decision,,,,,,,,,2000.0,False,True,1.0,False
 Italy_13,decision,,,,,,,2020.0,Q1,3000.0,False,True,2.0,False
 Italy_16,decision,,,,,,,2020.0,Q3,800000.0,False,True,2.0,False
 Italy_18,decision,,,,,,,,,4000.0,False,True,2.0,False
@@ -1360,7 +1360,7 @@ Italy_34,decision,,,,,,,2021.0,Q1,0.0,False,True,5.0,False
 Italy_37,decision,,,,,,,2021.0,Q1,8000.0,True,True,1.0,False
 Italy_36,decision,,,,,,,2020.0,Q4,100000.0,False,True,3.0,False
 Italy_38,decision,,,,,,,,,0.0,False,True,1.0,False
-Italy_40,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_40,decision,,,,,,,,,18000.0,False,True,1.0,False
 Italy_43,decision,,,,,,,,,75000.0,False,True,3.0,False
 Italy_42,decision,,,,,,,,,0.0,False,True,2.0,False
 Italy_46,decision,,,,,,,2021.0,Q1,0.0,False,True,3.0,False
@@ -1373,11 +1373,11 @@ Italy_51,decision,,,,,,,,,0.0,False,True,4.0,False
 Italy_53,decision,,,,,,,,,50000.0,False,True,2.0,False
 Italy_54,decision,,,,,,,,,2600000.0,False,True,6.0,False
 Italy_56,decision,,,,,,,,,120000.0,False,True,2.0,False
-Italy_57,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_57,decision,,,,,,,,,150000.0,False,True,2.0,False
 Italy_59,decision,,,,,,,2021.0,Q2,20000.0,False,True,2.0,False
-Italy_55,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_61,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_58,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_55,decision,,,,,,,,,20000.0,False,True,3.0,False
+Italy_61,decision,,,,,,,,,200000.0,False,True,3.0,False
+Italy_58,decision,,,,,,,,,40000.0,False,True,2.0,False
 Italy_60,decision,,,,,,,2021.0,Q3,2500000.0,False,True,6.0,False
 Italy_62,decision,,,,,,,2021.0,Q3,800000.0,False,True,6.0,False
 Italy_63,decision,,,,,,,2021.0,Q3,200000.0,False,True,6.0,False
@@ -1387,18 +1387,18 @@ Italy_67,decision,,,,,,,,,400000.0,False,True,3.0,False
 Italy_68,decision,,,,,,,2022.0,Q1,4000.0,False,True,0.0,False
 Italy_69,decision,,,,,,,2022.0,Q1,2000.0,False,True,2.0,False
 Italy_70,decision,,,,,,,2022.0,Q1,40000.0,False,True,3.0,False
-Italy_66,decision,,,,,,,,,0.0,False,True,6.0,False
+Italy_66,decision,,,,,,,,,26513977.0,False,True,6.0,False
 Italy_71,decision,,,,,,,2022.0,Q1,0.0,False,False,3.0,False
 Italy_72,decision,,,,,,,,,10000.0,False,True,1.0,False
-Italy_73,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_74,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_73,decision,,,,,,,,,20000000.0,False,True,3.0,False
+Italy_74,decision,,,,,,,,,10000.0,False,True,1.0,False
 Italy_76,decision,,,,,,,2022.0,Q1,5000.0,False,True,2.0,False
 Italy_75,decision,,,,,,,2022.0,Q1,3500.0,True,True,1.0,False
 Italy_77,decision,,,,,,,,,5000.0,False,True,4.0,False
 Italy_79,decision,,,,,,,2022.0,Q1,8000.0,False,True,2.0,False
 Italy_78,decision,,,,,,,,,0.0,False,True,2.0,False
 Italy_81,decision,,,,,,,2022.0,Q2,40000.0,False,True,1.0,False
-Italy_80,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_80,decision,,,,,,,,,10000.0,False,True,2.0,False
 Italy_82,decision,,,,,,,,,50000.0,False,True,2.0,False
 Italy_84,decision,,,,,,,2022.0,Q2,1000.0,False,True,2.0,False
 Italy_86,decision,,,,,,,,,0.0,False,True,1.0,False
@@ -1406,8 +1406,8 @@ Italy_87,decision,,,,,,,2022.0,Q2,70000.0,True,True,1.0,False
 Italy_90,decision,,,,,,,2022.0,Q2,0.0,False,True,3.0,False
 Italy_92,decision,,,,,,,2022.0,Q2,0.0,False,True,1.0,False
 Italy_89,decision,,,,,,,2022.0,Q2,50000.0,False,True,4.0,False
-Italy_91,decision,,,,,,,,,0.0,False,True,2.0,False
-Italy_88,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_91,decision,,,,,,,,,100000.0,False,True,2.0,False
+Italy_88,decision,,,,,,,,,40000.0,False,True,1.0,False
 Italy_93,decision,,,,,,,,,0.0,False,False,0.0,False
 Italy_94,decision,,,,,,,2022.0,Q2,0.0,False,False,1.0,False
 Italy_96,decision,,,,,,,2022.0,Q2,20000.0,False,True,1.0,False
@@ -1421,11 +1421,11 @@ Italy_102,decision,,,,,,,2022.0,Q3,2000.0,False,True,0.0,False
 Italy_106,decision,,,,,,,2022.0,Q3,0.0,False,True,2.0,False
 Italy_105,decision,,,,,,,2022.0,Q3,1000.0,False,True,3.0,False
 Italy_103,decision,,,,,,,,,10000.0,False,True,0.0,False
-Italy_104,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_104,decision,,,,,,,,,15000.0,False,True,1.0,False
 Italy_108,decision,,,,,,,2022.0,Q4,1400000.0,False,True,4.0,False
-Italy_107,decision,,,,,,,,,0.0,False,True,3.0,False
+Italy_107,decision,,,,,,,,,40000.0,False,True,3.0,False
 Italy_109,decision,,,,,,,2022.0,Q4,500000.0,False,True,4.0,False
-Italy_110,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_110,decision,,,,,,,,,40000.0,False,True,0.0,False
 Italy_111,decision,,,,,,,2022.0,Q4,10000.0,False,True,0.0,False
 Italy_113,decision,,,,,,,2022.0,Q4,900.0,False,True,2.0,False
 Italy_112,decision,,,,,,,2022.0,Q4,30000.0,False,True,2.0,False
@@ -1433,15 +1433,15 @@ Italy_114,decision,,,,,,,2022.0,Q4,2000000.0,False,True,4.0,False
 Italy_116,decision,,,,,,,2022.0,Q4,100000.0,False,True,2.0,False
 Italy_115,decision,,,,,,,,,5000.0,False,True,4.0,False
 Italy_119,decision,,,,,,,2022.0,Q4,10000.0,False,True,2.0,False
-Italy_117,decision,,,,,,,,,0.0,False,True,5.0,False
+Italy_117,decision,,,,,,,,,20000.0,False,True,5.0,False
 Italy_118,decision,,,,,,,2022.0,Q4,1000000.0,False,True,3.0,False
 Italy_120,decision,,,,,,,2022.0,Q4,6000.0,False,True,3.0,False
 Italy_122,decision,,,,,,,2022.0,Q4,20000.0,False,True,1.0,False
 Italy_121,decision,,,,,,,,,6000.0,False,True,5.0,False
 Italy_124,decision,,,,,,,,,0.0,False,True,2.0,False
 Italy_125,decision,,,,,,,2022.0,Q3,0.0,False,True,4.0,False
-Italy_123,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_126,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_123,decision,,,,,,,,,55000.0,False,True,3.0,False
+Italy_126,decision,,,,,,,,,2500.0,False,True,0.0,False
 Italy_127,decision,,,,,,,2022.0,Q4,0.0,False,True,1.0,False
 Italy_131,decision,,,,,,,2023.0,Q1,0.0,False,True,2.0,False
 Italy_130,decision,,,,,,,,,0.0,False,True,2.0,False
@@ -1456,19 +1456,19 @@ Italy_134,decision,,,,,,,2022.0,Q4,120000.0,False,True,6.0,False
 Italy_136,decision,,,,,,,,,0.0,False,True,1.0,False
 Italy_140,decision,,,,,,,,,80000.0,False,True,4.0,False
 Italy_141,decision,,,,,,,,,0.0,False,True,0.0,False
-Italy_137,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_137,decision,,,,,,,,,5000.0,False,True,1.0,False
 Italy_143,decision,,,,,,,2023.0,Q1,5000.0,False,True,1.0,False
 Italy_144,decision,,,,,,,2023.0,Q1,0.0,True,True,1.0,False
 Italy_142,decision,,,,,,,2023.0,Q1,0.0,False,True,1.0,False
 Italy_146,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_148,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_148,decision,,,,,,,,,3000.0,False,True,1.0,False
 Italy_147,decision,,,,,,,,,0.0,False,True,4.0,False
 Italy_145,decision,,,,,,,2023.0,Q1,300000.0,False,True,5.0,False
 Italy_150,decision,,,,,,,2023.0,Q1,1000.0,False,True,3.0,False
 Italy_149,decision,,,,,,,,,0.0,False,True,1.0,False
 Italy_151,decision,,,,,,,2023.0,Q2,0.0,False,True,3.0,False
 Italy_152,decision,,,,,,,,,0.0,False,True,0.0,False
-Italy_153,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_153,decision,,,,,,,,,5000.0,False,True,1.0,False
 Italy_157,decision,,,,,,,2023.0,Q1,2000.0,False,True,1.0,False
 Italy_154,decision,,,,,,,,,3000.0,False,True,4.0,False
 Italy_156,decision,,,,,,,2023.0,Q1,0.0,False,False,1.0,False
@@ -1482,11 +1482,11 @@ Italy_162,decision,,,,,,,,,7631175.0,False,True,4.0,False
 Italy_165,decision,,,,,,,,,40000.0,False,True,3.0,False
 Italy_167,decision,,,,,,,2023.0,Q2,240000.0,False,True,4.0,False
 Italy_163,decision,,,,,,,,,0.0,False,True,4.0,False
-Italy_166,decision,,,,,,,,,0.0,False,True,4.0,False
+Italy_166,decision,,,,,,,,,239000.0,False,True,4.0,False
 Italy_168,decision,,,,,,,2023.0,Q2,40660.0,False,True,2.0,False
 Italy_170,decision,,,,,,,2023.0,Q2,1000000.0,False,True,1.0,False
 Italy_171,decision,,,,,,,,,300000.0,False,True,6.0,False
-Italy_176,decision,,,,,,,,,0.0,False,True,5.0,False
+Italy_176,decision,,,,,,,,,45000.0,False,True,5.0,False
 Italy_172,decision,,,,,,,,,20000.0,False,True,4.0,False
 Italy_178,decision,,,,,,,2023.0,Q3,100000.0,False,True,5.0,False
 Italy_177,decision,,,,,,,2023.0,Q3,10000.0,False,True,1.0,False
@@ -1495,7 +1495,7 @@ Italy_180,decision,,,,,,,,,40000.0,False,True,4.0,False
 Italy_184,decision,,,,,,,2023.0,Q3,10000.0,False,True,1.0,False
 Italy_182,decision,,,,,,,,,5000.0,False,True,3.0,False
 Italy_183,decision,,,,,,,2023.0,Q3,1000.0,False,True,2.0,False
-Italy_189,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_189,decision,,,,,,,,,10000.0,False,True,2.0,False
 Italy_186,decision,,,,,,,2023.0,Q3,90000.0,False,True,2.0,False
 Italy_191,decision,,,,,,,,,0.0,False,True,2.0,False
 Italy_193,decision,,,,,,,,,0.0,False,True,4.0,False
@@ -1512,14 +1512,14 @@ Italy_203,decision,,,,,,,2023.0,Q4,1000.0,False,True,2.0,False
 Italy_204,decision,,,,,,,,,500.0,False,True,1.0,False
 Italy_202,decision,,,,,,,,,60000.0,False,True,3.0,False
 Italy_205,decision,,,,,,,2023.0,Q4,0.0,True,True,1.0,False
-Italy_207,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_207,decision,,,,,,,,,5000.0,False,True,0.0,False
 Italy_210,decision,,,,,,,2024.0,Q1,20000.0,False,True,1.0,False
-Italy_209,decision,,,,,,,,,0.0,False,True,4.0,False
-Italy_206,decision,,,,,,,,,0.0,False,True,4.0,False
-Italy_208,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_209,decision,,,,,,,,,8000.0,False,True,4.0,False
+Italy_206,decision,,,,,,,,,50000.0,False,True,4.0,False
+Italy_208,decision,,,,,,,,,18000.0,False,True,2.0,False
 Italy_211,decision,,,,,,,,,2000.0,False,True,1.0,False
 Italy_212,decision,,,,,,,,,0.0,False,True,0.0,False
-Italy_213,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_213,decision,,,,,,,,,79107101.0,False,True,2.0,False
 Italy_215,decision,,,,,,,2024.0,Q1,2800000.0,True,True,1.0,False
 Italy_214,decision,,,,,,,2024.0,Q1,8000.0,True,True,2.0,False
 Italy_216,decision,,,,,,,2024.0,Q1,800000.0,True,True,2.0,False
@@ -1529,12 +1529,12 @@ Italy_219,decision,,,,,,,2024.0,Q1,2000.0,False,True,1.0,False
 Italy_220,decision,,,,,,,2024.0,Q1,5000.0,False,True,1.0,False
 Italy_224,decision,,,,,,,2024.0,Q1,50000.0,False,True,3.0,False
 Italy_223,decision,,,,,,,,,70000.0,False,True,5.0,False
-Italy_225,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_225,decision,,,,,,,,,5000.0,False,True,0.0,False
 Italy_226,decision,,,,,,,,,0.0,False,True,1.0,False
-Italy_221,decision,,,,,,,,,0.0,False,True,0.0,False
-Italy_222,decision,,,,,,,,,0.0,False,True,1.0,False
+Italy_221,decision,,,,,,,,,6000.0,False,True,0.0,False
+Italy_222,decision,,,,,,,,,18000.0,False,True,1.0,False
 Italy_227,decision,,,,,,,,,0.0,False,True,1.0,False
-Italy_228,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_228,decision,,,,,,,,,75000.0,False,True,2.0,False
 Italy_231,decision,,,,,,,,,150000.0,False,True,3.0,False
 Italy_234,decision,,,,,,,2024.0,Q2,25000.0,True,True,2.0,False
 Italy_230,decision,,,,,,,2024.0,Q1,20000.0,False,True,1.0,False
@@ -1544,37 +1544,37 @@ Italy_229,decision,,,,,,,,,271000.0,False,True,1.0,False
 Italy_232,decision,,,,,,,,,100000.0,False,True,3.0,False
 Italy_236,decision,,,,,,,2024.0,Q2,6000.0,False,True,1.0,False
 Italy_240,decision,,,,,,,2024.0,Q2,0.0,False,False,0.0,False
-Italy_239,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_239,decision,,,,,,,,,10000.0,False,True,0.0,False
 Italy_238,decision,,,,,,,2024.0,Q2,20000.0,False,True,5.0,False
 Italy_242,decision,,,,,,,2024.0,Q2,0.0,False,True,2.0,False
 Italy_237,decision,,,,,,,,,30000.0,False,True,0.0,False
 Italy_241,decision,,,,,,,,,30000.0,False,True,2.0,False
 Italy_243,decision,,,,,,,2024.0,Q2,75000.0,True,True,5.0,False
-Italy_244,decision,,,,,,,,,0.0,False,True,4.0,False
+Italy_244,decision,,,,,,,,,15000.0,False,True,4.0,False
 Italy_247,decision,,,,,,,2024.0,Q2,4500.0,False,True,1.0,False
-Italy_245,decision,,,,,,,,,0.0,False,True,6.0,False
+Italy_245,decision,,,,,,,,,6419631.0,False,True,6.0,False
 Italy_246,decision,,,,,,,,,120000.0,False,True,6.0,False
 Italy_250,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_251,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_251,decision,,,,,,,,,24000.0,False,True,2.0,False
 Italy_249,decision,,,,,,,,,0.0,False,True,1.0,False
-Italy_248,decision,,,,,,,,,0.0,False,True,1.0,False
-Italy_252,decision,,,,,,,,,0.0,False,True,5.0,False
+Italy_248,decision,,,,,,,,,8400.0,False,True,1.0,False
+Italy_252,decision,,,,,,,,,20000.0,False,True,5.0,False
 Italy_258,decision,,,,,,,2024.0,Q3,4000.0,False,True,3.0,False
 Italy_257,decision,,,,,,,,,10000.0,False,True,0.0,False
 Italy_255,decision,,,,,,,2024.0,Q2,1000000.0,False,True,6.0,False
 Italy_254,decision,,,,,,,,,0.0,False,True,1.0,False
 Italy_253,decision,,,,,,,,,0.0,False,True,2.0,False
 Italy_256,decision,,,,,,,,,250000.0,False,True,3.0,False
-Italy_259,decision,,,,,,,,,0.0,False,True,5.0,False
+Italy_259,decision,,,,,,,,,7000.0,False,True,5.0,False
 Italy_263,decision,,,,,,,,,0.0,False,False,0.0,False
 Italy_262,decision,,,,,,,2024.0,Q3,80000.0,False,True,4.0,False
 Italy_261,decision,,,,,,,2024.0,Q3,5000000.0,False,True,7.0,False
 Italy_266,decision,,,,,,,2024.0,Q3,22000.0,True,True,1.0,False
 Italy_265,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_264,decision,,,,,,,,,0.0,False,True,3.0,False
+Italy_264,decision,,,,,,,,,10000.0,False,True,3.0,False
 Italy_268,decision,,,,,,,2024.0,Q3,8000.0,False,True,5.0,False
 Italy_271,decision,,,,,,,2024.0,Q3,4000.0,False,True,2.0,False
-Italy_269,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_269,decision,,,,,,,,,400.0,False,True,2.0,False
 Italy_267,decision,,,,,,,,,900000.0,False,True,2.0,False
 Italy_270,decision,,,,,,,2024.0,Q3,0.0,False,True,1.0,False
 Italy_274,decision,,,,,,,,,4000.0,False,True,0.0,False
@@ -1586,10 +1586,10 @@ Italy_281,decision,,,,,,,2024.0,Q4,0.0,False,True,1.0,False
 Italy_283,decision,,,,,,,2024.0,Q3,17000.0,False,True,3.0,False
 Italy_278,decision,,,,,,,,,0.0,False,True,4.0,False
 Italy_282,decision,,,,,,,,,0.0,False,True,3.0,False
-Italy_279,decision,,,,,,,,,0.0,False,True,3.0,False
+Italy_279,decision,,,,,,,,,20000.0,False,True,3.0,False
 Italy_285,decision,,,,,,,2024.0,Q4,60000.0,False,True,2.0,False
 Italy_280,decision,,,,,,,2024.0,Q4,5000000.0,False,True,7.0,False
-Italy_286,decision,,,,,,,,,0.0,False,True,4.0,False
+Italy_286,decision,,,,,,,,,8000.0,False,True,4.0,False
 Italy_284,decision,,,,,,,2024.0,Q4,5000.0,False,True,3.0,False
 Italy_288,decision,,,,,,,2024.0,Q4,25000.0,True,True,2.0,False
 Italy_289,decision,,,,,,,2024.0,Q4,678897.0,False,True,3.0,False
@@ -1602,17 +1602,17 @@ Italy_292,decision,,,,,,,,,0.0,False,True,1.0,False
 Italy_297,decision,,,,,,,2024.0,Q4,6000.0,False,True,2.0,False
 Italy_298,decision,,,,,,,2024.0,Q4,6000.0,False,True,4.0,False
 Italy_299,decision,,,,,,,2024.0,Q4,5000.0,True,True,2.0,False
-Italy_295,decision,,,,,,,,,0.0,False,True,4.0,False
+Italy_295,decision,,,,,,,,,20000.0,False,True,4.0,False
 Italy_300,decision,,,,,,,,,10000.0,False,True,2.0,False
 Italy_296,decision,,,,,,,,,892738.0,False,True,4.0,False
 Italy_301,decision,,,,,,,,,20000.0,False,True,2.0,False
-Italy_302,decision,,,,,,,,,0.0,False,True,2.0,False
+Italy_302,decision,,,,,,,,,40000.0,False,True,2.0,False
 Italy_304,decision,,,,,,,,,70000.0,False,True,3.0,False
 Italy_303,decision,,,,,,,,,10000.0,False,True,4.0,False
 Italy_307,decision,,,,,,,2025.0,Q1,50000.0,False,True,4.0,False
 Italy_310,decision,,,,,,,,,0.0,False,True,4.0,False
 Italy_306,decision,,,,,,,2025.0,Q1,8000.0,False,True,6.0,False
-Italy_309,decision,,,,,,,,,0.0,False,True,0.0,False
+Italy_309,decision,,,,,,,,,3000.0,False,True,0.0,False
 Italy_308,decision,,,,,,,,,6000.0,False,True,2.0,False
 Italy_305,decision,,,,,,,,,100000.0,False,True,7.0,False
 Italy_312,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1623,7 +1623,7 @@ Ireland_2,decision,,,,,,,,,0.0,False,False,0.0,False
 Ireland_5,decision,,,,,,,,,0.0,False,False,0.0,False
 Ireland_1,decision,,,,,,,,,0.0,False,True,2.0,False
 Ireland_4,decision,,,,,,,,,0.0,False,False,0.0,False
-Ireland_6,decision,,,,,,,,,0.0,False,True,2.0,False
+Ireland_6,decision,,,,,,,,,70000.0,False,True,2.0,False
 Ireland_7,decision,,,,,,,,,75000.0,True,True,1.0,False
 Ireland_13,decision,,,,,,,,,125000.0,True,True,1.0,False
 Ireland_11,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1631,9 +1631,9 @@ Ireland_10,decision,,,,,,,,,0.0,False,True,3.0,False
 Ireland_12,decision,,,,,,,,,0.0,False,False,0.0,False
 Ireland_16,decision,,,,,,,,,0.0,True,False,0.0,False
 Ireland_18,decision,,,,,,,,,0.0,False,False,0.0,False
-Ireland_14,decision,,,,,,,,,0.0,False,True,2.0,False
+Ireland_14,decision,,,,,,,,,550000.0,False,True,2.0,False
 Ireland_15,decision,,,,,,,,,0.0,False,False,0.0,False
-Ireland_17,decision,,,,,,,,,0.0,False,True,2.0,False
+Ireland_17,decision,,,,,,,,,22500.0,False,True,2.0,False
 Ireland_19,decision,,,,,,,2024.0,Q1,0.0,False,True,1.0,False
 Ireland_20,decision,,,,,,,,,0.0,False,False,0.0,False
 Ireland_22,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1825,7 +1825,7 @@ Greece_6,decision,,,,,,,2022.0,Q1,0.0,False,False,2.0,False
 Greece_8,decision,,,,,,,,,25000.0,False,True,1.0,False
 Greece_10,decision,,,,,,,,,0.0,False,True,0.0,False
 Greece_11,decision,,,,,,,,,0.0,False,False,0.0,False
-Greece_9,decision,,,,,,,,,0.0,False,True,0.0,False
+Greece_9,decision,,,,,,,,,5000.0,False,True,0.0,False
 Greece_12,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_7,decision,,,,,,,,,0.0,False,True,1.0,False
 Greece_15,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1863,7 +1863,7 @@ Greece_46,decision,,,,,,,2021.0,Q2,5000.0,False,True,2.0,False
 Greece_48,decision,,,,,,,,,0.0,False,True,0.0,False
 Greece_49,decision,,,,,,,,,0.0,False,True,0.0,False
 Greece_45,decision,,,,,,,,,0.0,False,False,0.0,False
-Greece_47,decision,,,,,,,,,0.0,False,True,2.0,False
+Greece_47,decision,,,,,,,,,5000.0,False,True,2.0,False
 Greece_50,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_51,decision,,,,,,,,,15000.0,False,True,3.0,False
 Greece_52,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1885,7 +1885,7 @@ Greece_72,decision,,,,,,,,,0.0,False,True,2.0,False
 Greece_71,decision,,,,,,,,,1000.0,False,True,1.0,False
 Greece_74,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_75,decision,,,,,,,,,0.0,False,False,0.0,False
-Greece_73,decision,,,,,,,,,0.0,False,True,7.0,False
+Greece_73,decision,,,,,,,,,10000.0,False,True,7.0,False
 Greece_79,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_80,decision,,,,,,,,,0.0,False,True,2.0,False
 Greece_76,decision,,,,,,,,,0.0,False,False,0.0,False
@@ -1894,10 +1894,10 @@ Greece_77,decision,,,,,,,,,20000.0,False,True,2.0,False
 Greece_81,decision,,,,,,,,,1000.0,False,True,2.0,False
 Greece_83,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_82,decision,,,,,,,2024.0,Q4,15000.0,True,True,4.0,False
-Greece_84,decision,,,,,,,,,0.0,False,True,2.0,False
+Greece_84,decision,,,,,,,,,2000.0,False,True,2.0,False
 Greece_85,decision,,,,,,,2022.0,Q3,0.0,True,True,1.0,False
 Greece_86,decision,,,,,,,,,0.0,False,False,1.0,False
-Greece_89,decision,,,,,,,,,0.0,False,True,1.0,False
+Greece_89,decision,,,,,,,,,8000.0,False,True,1.0,False
 Greece_87,decision,,,,,,,,,0.0,False,False,0.0,False
 Greece_88,decision,,,,,,,2020.0,Q4,0.0,False,True,1.0,False
 Greece_91,decision,,,,,,,2024.0,Q4,5000.0,False,True,1.0,False
@@ -1926,8 +1926,8 @@ Greece_113,decision,,,,,,,2024.0,Q4,10000.0,False,True,1.0,False
 Greece_114,decision,,,,,,,,,20000.0,False,True,1.0,False
 Greece_115,decision,,,,,,,2024.0,Q4,0.0,False,True,2.0,False
 Greece_120,decision,,,,,,,,,0.0,False,False,0.0,False
-Greece_117,decision,,,,,,,,,0.0,False,True,3.0,False
-Greece_118,decision,,,,,,,,,0.0,False,True,3.0,False
+Greece_117,decision,,,,,,,,,30000.0,False,True,3.0,False
+Greece_118,decision,,,,,,,,,25000.0,False,True,3.0,False
 Greece_119,decision,,,,,,,,,0.0,False,True,0.0,False
 Greece_116,decision,,,,,,,2021.0,Q4,75000.0,True,True,3.0,False
 Greece_121,decision,,,,,,,,,0.0,False,True,0.0,False
@@ -1977,7 +1977,7 @@ Germany_41,decision,,,,,,,2018.0,Q4,20000.0,True,True,1.0,False
 Germany_39,decision,,,,,,,,,55000.0,False,True,3.0,False
 Germany_43,decision,,,,,,,,,0.0,False,True,1.0,False
 Germany_44,decision,,,,,,,,,1100000.0,False,True,2.0,False
-Germany_42,decision,,,,,,,,,0.0,False,True,3.0,False
+Germany_42,decision,,,,,,,,,1900000.0,False,True,3.0,False
 France_2,decision,,,,,,,,,0.0,False,True,0.0,False
 France_3,decision,,,,,,,2023.0,Q3,0.0,False,False,0.0,False
 France_1,decision,,,,,,,,,0.0,False,True,1.0,False
@@ -2011,15 +2011,15 @@ France_33,decision,,,,,,,2021.0,Q4,180000.0,True,True,1.0,False
 France_35,decision,,,,,,,2021.0,Q4,120000.0,False,True,3.0,False
 France_37,decision,,,,,,,2022.0,Q2,1500000.0,True,True,2.0,False
 France_34,decision,,,,,,,,,300000.0,False,True,2.0,False
-France_36,decision,,,,,,,,,0.0,False,True,1.0,False
+France_36,decision,,,,,,,,,150000000.0,False,True,1.0,False
 France_39,decision,,,,,,,2022.0,Q3,600000.0,False,True,2.0,False
 France_41,decision,,,,,,,,,0.0,False,False,0.0,False
 France_38,decision,,,,,,,,,1000000.0,False,True,4.0,False
 France_44,decision,,,,,,,2022.0,Q4,0.0,False,False,0.0,False
-France_40,decision,,,,,,,,,0.0,False,True,2.0,False
+France_40,decision,,,,,,,,,250000.0,False,True,2.0,False
 France_45,decision,,,,,,,2022.0,Q4,8000000.0,False,True,1.0,False
 France_43,decision,,,,,,,2022.0,Q4,300000.0,True,True,2.0,False
-France_42,decision,,,,,,,,,0.0,False,True,3.0,False
+France_42,decision,,,,,,,,,800000.0,False,True,3.0,False
 France_46,decision,,,,,,,,,0.0,False,False,0.0,False
 France_47,decision,,,,,,,,,0.0,False,False,0.0,False
 France_49,decision,,,,,,,,,0.0,False,True,0.0,False

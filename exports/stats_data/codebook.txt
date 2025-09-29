@@ -5,7 +5,7 @@ GDPR DPA DECISIONS ANALYSIS DATASET - CODEBOOK
 Dataset Information:
 - Title: GDPR DPA Decisions Analysis Dataset
 - Observations: 1,998
-- Variables: 409
+- Variables: 442
 - Legal Framework: EU GDPR (Regulation 2016/679)
 - Data Period: 2018.0 - 2025.0
 
@@ -163,9 +163,9 @@ Monetary Variables:
 fine_eur
   Label: Administrative fine amount (EUR)
   Type: numeric
-  Missing: 438 (21.9%)
+  Missing: 247 (12.4%)
   Range: 0.0 - 530000000.0
-  Mean: 1629599.81, Std: 17037947.84
+  Mean: 1820368.76, Std: 17993123.71
 
 fine_numeric_valid
   Label: Fine Numeric Valid
@@ -177,13 +177,13 @@ fine_positive
   Type: binary
   Missing: 0 (0.0%)
   Values:
-    0: 1028
-    1: 970
+    0: 903
+    1: 1095
 
 fine_log1p
   Label: Fine Log1P
   Type: unknown
-  Missing: 438 (21.9%)
+  Missing: 247 (12.4%)
 
 fine_outlier_flag
   Label: Fine Outlier Flag
@@ -200,8 +200,8 @@ fine_status
   Type: categorical
   Missing: 22 (1.1%)
   Values:
-    DISCUSSED: 1560
-    NOT_MENTIONED: 416
+    DISCUSSED: 1751
+    NOT_MENTIONED: 225
     PARSE_ERROR: 0
 
 fine_error
@@ -212,9 +212,9 @@ fine_error
 turnover_eur
   Label: Annual turnover mentioned (EUR)
   Type: numeric
-  Missing: 1802 (90.2%)
+  Missing: 1791 (89.6%)
   Range: 0.0 - 964711000000.0
-  Mean: 18222044243.52, Std: 85240360205.29
+  Mean: 18605829665.65, Std: 83776676689.86
 
 turnover_numeric_valid
   Label: Turnover Numeric Valid
@@ -229,7 +229,7 @@ turnover_positive
 turnover_log1p
   Label: Turnover Log1P
   Type: unknown
-  Missing: 1802 (90.2%)
+  Missing: 1791 (89.6%)
 
 turnover_outlier_flag
   Label: Turnover Outlier Flag
@@ -246,8 +246,8 @@ turnover_status
   Type: categorical
   Missing: 56 (2.8%)
   Values:
-    DISCUSSED: 196
-    NOT_MENTIONED: 1743
+    DISCUSSED: 207
+    NOT_MENTIONED: 1732
     PARSE_ERROR: 3
 
 turnover_error
@@ -258,7 +258,7 @@ turnover_error
 fine_to_turnover_ratio
   Label: Fine To Turnover Ratio
   Type: unknown
-  Missing: 1810 (90.6%)
+  Missing: 1799 (90.0%)
 
 fine_eur_missing
   Label: Fine Eur Missing
@@ -278,12 +278,12 @@ fine_positive_flag
 fine_log
   Label: Fine Log
   Type: unknown
-  Missing: 1028 (51.5%)
+  Missing: 903 (45.2%)
 
 fine_sqrt
   Label: Fine Sqrt
   Type: unknown
-  Missing: 438 (21.9%)
+  Missing: 247 (12.4%)
 
 fine_category
   Label: Fine Category
@@ -1177,6 +1177,75 @@ q53_powers_NONE
 Status Variables:
 ----------------
 
+art33_notification_required_status
+  Label: Status of art33_notification_required information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 301
+    NOT_APPLICABLE: 1521
+    NOT_MENTIONED: 98
+    UNCLEAR: 8
+    UNPARSEABLE: 70
+
+art33_notification_submitted_status
+  Label: Status of art33_notification_submitted information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 281
+    NOT_APPLICABLE: 1525
+    NOT_MENTIONED: 114
+    UNCLEAR: 8
+    UNPARSEABLE: 70
+
+art33_notification_timeliness_status
+  Label: Status of art33_notification_timeliness information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 120
+    MIXED_CONTRADICTORY: 1
+    NOT_APPLICABLE: 1598
+    NOT_MENTIONED: 197
+    UNCLEAR: 10
+    UNPARSEABLE: 72
+
+art33_notification_delay_band_status
+  Label: Status of art33_notification_delay_band information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 26
+    NOT_APPLICABLE: 1801
+    NOT_MENTIONED: 91
+    UNCLEAR: 8
+    UNPARSEABLE: 72
+
+data_subjects_notified_status
+  Label: Status of data_subjects_notified information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 185
+    MIXED_CONTRADICTORY: 1
+    NOT_APPLICABLE: 1525
+    NOT_MENTIONED: 204
+    UNCLEAR: 8
+    UNPARSEABLE: 75
+
+art34_notification_required_status
+  Label: Status of art34_notification_required information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 172
+    MIXED_CONTRADICTORY: 1
+    NOT_APPLICABLE: 1541
+    NOT_MENTIONED: 197
+    UNCLEAR: 8
+    UNPARSEABLE: 79
+
 q10_org_class_coverage_status
   Label: Status of q10_org_class_coverage information
   Type: categorical
@@ -1194,6 +1263,23 @@ q10_org_class_status
     MIXED_CONTRADICTORY: 18
     NOT_APPLICABLE: 129
     NOT_DISCUSSED: 52
+    NOT_MENTIONED: 81
+
+q15_case_initiation_coverage_status
+  Label: Status of q15_case_initiation_coverage information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 1917
+    NOT_MENTIONED: 81
+
+q15_case_initiation_status
+  Label: Status of q15_case_initiation information
+  Type: categorical
+  Missing: 0 (0.0%)
+  Values:
+    DISCUSSED: 1860
+    NOT_DISCUSSED: 57
     NOT_MENTIONED: 81
 
 q21_breach_types_coverage_status
@@ -1594,6 +1680,66 @@ schema_echo_fields
   Type: unknown
   Missing: 1137 (56.9%)
 
+art33_notification_required
+  Label: Art33 Notification Required
+  Type: unknown
+  Missing: 151 (7.6%)
+
+art33_notification_required_note
+  Label: Art33 Notification Required Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
+art33_notification_submitted
+  Label: Art33 Notification Submitted
+  Type: unknown
+  Missing: 151 (7.6%)
+
+art33_notification_submitted_note
+  Label: Art33 Notification Submitted Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
+art33_notification_timeliness
+  Label: Art33 Notification Timeliness
+  Type: unknown
+  Missing: 153 (7.7%)
+
+art33_notification_timeliness_note
+  Label: Art33 Notification Timeliness Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
+art33_notification_delay_band
+  Label: Art33 Notification Delay Band
+  Type: unknown
+  Missing: 153 (7.7%)
+
+art33_notification_delay_band_note
+  Label: Art33 Notification Delay Band Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
+data_subjects_notified
+  Label: Data Subjects Notified
+  Type: unknown
+  Missing: 156 (7.8%)
+
+data_subjects_notified_note
+  Label: Data Subjects Notified Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
+art34_notification_required
+  Label: Art34 Notification Required
+  Type: unknown
+  Missing: 160 (8.0%)
+
+art34_notification_required_note
+  Label: Art34 Notification Required Note
+  Type: unknown
+  Missing: 0 (0.0%)
+
 raw_q1
   Label: Raw Q1
   Type: unknown
@@ -1986,6 +2132,71 @@ q10_org_class_NOT_MENTIONED
 
 q10_org_class_UNCLEAR
   Label: Q10 Org Class Unclear
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_known
+  Label: Q15 Case Initiation Known
+  Type: unknown
+  Missing: 141 (7.1%)
+
+q15_case_initiation_unknown
+  Label: Q15 Case Initiation Unknown
+  Type: unknown
+  Missing: 1936 (96.9%)
+
+q15_case_initiation_exclusivity_conflict
+  Label: Q15 Case Initiation Exclusivity Conflict
+  Type: unknown
+  Missing: 0 (0.0%)
+
+q15_case_initiation_COMPLAINT
+  Label: Q15 Case Initiation Complaint
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_BREACH_NOTIFICATION
+  Label: Q15 Case Initiation Breach Notification
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE
+  Label: Q15 Case Initiation Ex Officio Dpa Initiative
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_REFERRAL_FROM_OTHER_AUTHORITY
+  Label: Q15 Case Initiation Referral From Other Authority
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_MEDIA_PUBLIC_ATTENTION
+  Label: Q15 Case Initiation Media Public Attention
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_JOINT_INVESTIGATION
+  Label: Q15 Case Initiation Joint Investigation
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_FOLLOW_UP_PRIOR_CASE
+  Label: Q15 Case Initiation Follow Up Prior Case
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_OTHER
+  Label: Q15 Case Initiation Other
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_NOT_MENTIONED
+  Label: Q15 Case Initiation Not Mentioned
+  Type: unknown
+  Missing: 81 (4.1%)
+
+q15_case_initiation_UNCLEAR
+  Label: Q15 Case Initiation Unclear
   Type: unknown
   Missing: 81 (4.1%)
 

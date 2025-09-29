@@ -1,0 +1,59 @@
+{
+  "org_class": {
+    "columns": [
+      "q10_org_class_SME",
+      "q10_org_class_LARGE_ENTERPRISE",
+      "q10_org_class_MULTINATIONAL",
+      "q10_org_class_NON_PROFIT",
+      "q10_org_class_PUBLIC_SECTOR_BODY",
+      "q10_org_class_NOT_APPLICABLE",
+      "q10_org_class_NOT_MENTIONED",
+      "q10_org_class_UNCLEAR"
+    ],
+    "coverage_count": 1864,
+    "coverage_ratio": 0.9329329329329329
+  },
+  "breach_types": {
+    "columns": [
+      "q21_breach_types_TECHNICAL_FAILURE",
+      "q21_breach_types_ORGANIZATIONAL_FAILURE",
+      "q21_breach_types_CYBER_ATTACK",
+      "q21_breach_types_HUMAN_ERROR",
+      "q21_breach_types_SYSTEM_MALFUNCTION",
+      "q21_breach_types_NOT_APPLICABLE",
+      "q21_breach_types_NOT_MENTIONED",
+      "q21_breach_types_UNCLEAR"
+    ],
+    "coverage_count": 1846,
+    "coverage_ratio": 0.923923923923924
+  },
+  "mitigations": {
+    "columns": [
+      "q28_mitigations_IMMEDIATE_CONTAINMENT",
+      "q28_mitigations_SYSTEM_FIXES",
+      "q28_mitigations_SECURITY_IMPROVEMENTS",
+      "q28_mitigations_STAFF_TRAINING",
+      "q28_mitigations_EXTERNAL_AUDIT",
+      "q28_mitigations_LEGAL_ADVICE",
+      "q28_mitigations_COOPERATION_WITH_DPA",
+      "q28_mitigations_NONE_MENTIONED",
+      "q28_mitigations_NOT_APPLICABLE",
+      "q28_mitigations_UNCLEAR"
+    ],
+    "coverage_count": 1832,
+    "coverage_ratio": 0.9169169169169169
+  },
+  "vulnerabilities": {
+    "columns": [
+      "q46_vuln_CHILDREN",
+      "q46_vuln_ELDERLY",
+      "q46_vuln_PATIENTS",
+      "q46_vuln_EMPLOYEES",
+      "q46_vuln_FINANCIALLY_VULNERABLE",
+      "q46_vuln_NONE_MENTIONED",
+      "q46_vuln_NOT_DISCUSSED"
+    ],
+    "coverage_count": 1906,
+    "coverage_ratio": 0.953953953953954
+  }
+}

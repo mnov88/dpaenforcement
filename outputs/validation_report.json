@@ -67,9 +67,7 @@
   },
   {
     "decision_id": "United Kingdom_27",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "United Kingdom_28",
@@ -162,15 +160,11 @@
   },
   {
     "decision_id": "United Kingdom_51",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "United Kingdom_47",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "United Kingdom_49",
@@ -251,9 +245,7 @@
   },
   {
     "decision_id": "Sweden_5",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Sweden_7",
@@ -395,9 +387,7 @@
   },
   {
     "decision_id": "Sweden_43",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Sweden_46",
@@ -424,9 +414,7 @@
   },
   {
     "decision_id": "Sweden_49",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Sweden_50",
@@ -454,9 +442,7 @@
   },
   {
     "decision_id": "Sweden_53",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Spain_3",
@@ -2246,9 +2232,7 @@
   },
   {
     "decision_id": "Spain_450",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Spain_453",
@@ -2630,9 +2614,7 @@
   },
   {
     "decision_id": "Spain_549",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Spain_551",
@@ -2648,9 +2630,7 @@
   },
   {
     "decision_id": "Spain_558",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Spain_553",
@@ -2776,9 +2756,7 @@
   },
   {
     "decision_id": "Spain_579",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Spain_583",
@@ -3319,9 +3297,7 @@
   },
   {
     "decision_id": "Romania_2",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_4",
@@ -3333,9 +3309,7 @@
   },
   {
     "decision_id": "Romania_5",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_6",
@@ -3345,15 +3319,11 @@
   },
   {
     "decision_id": "Romania_7",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_9",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_11",
@@ -3365,15 +3335,11 @@
   },
   {
     "decision_id": "Romania_13",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_12",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_14",
@@ -3407,9 +3373,7 @@
   },
   {
     "decision_id": "Romania_18",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_21",
@@ -3478,15 +3442,11 @@
   },
   {
     "decision_id": "Romania_31",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_37",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_38",
@@ -3508,15 +3468,11 @@
   },
   {
     "decision_id": "Romania_42",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_41",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_45",
@@ -3612,21 +3568,15 @@
   },
   {
     "decision_id": "Romania_68",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_69",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_70",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_64",
@@ -3654,9 +3604,7 @@
   },
   {
     "decision_id": "Romania_79",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_77",
@@ -3672,21 +3620,15 @@
   },
   {
     "decision_id": "Romania_80",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_75",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_82",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_81",
@@ -3702,21 +3644,15 @@
   },
   {
     "decision_id": "Romania_86",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_85",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_92",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_83",
@@ -3728,9 +3664,7 @@
   },
   {
     "decision_id": "Romania_91",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_89",
@@ -3756,9 +3690,7 @@
   },
   {
     "decision_id": "Romania_95",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_100",
@@ -3778,15 +3710,11 @@
   },
   {
     "decision_id": "Romania_101",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_98",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_103",
@@ -3806,9 +3734,7 @@
   },
   {
     "decision_id": "Romania_109",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_104",
@@ -3862,9 +3788,7 @@
   },
   {
     "decision_id": "Romania_119",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_118",
@@ -3872,9 +3796,7 @@
   },
   {
     "decision_id": "Romania_122",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_123",
@@ -3900,9 +3822,7 @@
   },
   {
     "decision_id": "Romania_126",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_130",
@@ -3932,9 +3852,7 @@
   },
   {
     "decision_id": "Romania_135",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_138",
@@ -3952,9 +3870,7 @@
   },
   {
     "decision_id": "Romania_139",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_142",
@@ -3980,15 +3896,11 @@
   },
   {
     "decision_id": "Romania_144",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_146",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_148",
@@ -4012,9 +3924,7 @@
   },
   {
     "decision_id": "Romania_152",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_147",
@@ -4022,9 +3932,7 @@
   },
   {
     "decision_id": "Romania_154",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_149",
@@ -4032,9 +3940,7 @@
   },
   {
     "decision_id": "Romania_158",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_159",
@@ -4059,9 +3965,7 @@
   },
   {
     "decision_id": "Romania_162",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_163",
@@ -4119,9 +4023,7 @@
   },
   {
     "decision_id": "Romania_172",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Romania_176",
@@ -4129,9 +4031,7 @@
   },
   {
     "decision_id": "Portugal_11",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Portugal_1",
@@ -4239,9 +4139,7 @@
   },
   {
     "decision_id": "Poland_17",
-    "flags": [
-      "admin_fine_but_zero_amount"
-    ]
+    "flags": []
   },
   {
     "decision_id": "Poland_20",

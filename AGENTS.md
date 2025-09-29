@@ -34,3 +34,4 @@
 - Never overwrite files in `raw-data/` or `analyzed-decisions/`; create derived data under `outputs/`.
 - Document new configuration knobs inside `scripts/README.md` and keep `config.yaml` defaults conservative.
 - Preserve `phase3completed.patch` as the audit trail for the phase-three notification estimator outputs; regenerate it via `git diff` after rerunning the pipeline so reviewers can inspect binary artifacts.
+- **Omni-scan runs**: When you (or collaborators) execute `python -m scripts.evenness.cli phase-zero`, expect large feature universes and long runtimes. Save the CSV/JSON outputs under `outputs/evenness/omniscan/` so others can review coverage ledgers, driver diagnostics, and parity tests without re-running the heavy workflow.

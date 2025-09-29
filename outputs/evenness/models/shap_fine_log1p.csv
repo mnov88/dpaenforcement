@@ -1,0 +1,152 @@
+feature,mean_abs_shap
+n_principles_violated,1.1119059977983696
+organization_size_tier_PUBLIC_SECTOR_BODY,1.0648465167518115
+n_corrective_measures,0.835303053260791
+organization_size_tier_LARGE_ENTERPRISE,0.5399035286064229
+"organization_size_tier_LARGE_ENTERPRISE,MULTINATIONAL",0.28667009926578974
+organization_size_tier_NOT_MENTIONED,0.21459077605164986
+country_code_SE,0.16615018454682867
+days_since_gdpr,0.12315554935387088
+decision_year_bucket_nan,0.11352687134686514
+organization_size_tier_SME,0.09903073603275558
+country_code_SI,0.09387500104159013
+organization_type_ORGANIZATION,0.07990675422731537
+organization_size_tier_NOT_APPLICABLE,0.06646234116076974
+"organization_size_tier_SME, NOT_MENTIONED",0.06536071195505071
+"organization_size_tier_LARGE_ENTERPRISE, MULTINATIONAL",0.06395717880419934
+dpa_name_canonical_Information Commissioner,0.05631184312757183
+organization_size_tier_NON_PROFIT,0.05155789199628741
+"organization_size_tier_LARGE_ENTERPRISE, NOT_MENTIONED",0.04997820890968027
+dpa_name_canonical_Integritetsskyddsmyndigheten,0.046790420392202346
+dpa_name_canonical_Swedish Authority for Privacy Protection (IMY),0.04445913363218636
+dpa_name_canonical_Spanish Data Protection Agency,0.04335275452840262
+dpa_name_canonical_Spanish Data Protection Agency (AEPD),0.04194839252634248
+dpa_name_canonical_Integritetsskyddsmyndigheten (IMY),0.03648239920520858
+country_code_RO,0.0351985560968335
+"organization_size_tier_SME,NOT_MENTIONED",0.02960015867556834
+country_code_ES,0.025590121848517472
+dpa_name_canonical_President of the Personal Data Protection Office,0.023175514180002812
+dpa_name_canonical_Datainspektionen,0.020318076702389373
+dpa_name_canonical_Swedish Authority for Privacy Protection,0.017418301661363243
+dpa_name_canonical_Agencia Española de Protección de Datos,0.014542216880703644
+country_code_PL,0.014418903641722049
+dpa_name_canonical_Comissão Nacional de Proteção de Dados,0.014327177492886436
+dpa_name_canonical_Information Commissioner's Office,0.013247298285027225
+case_origin_EX_OFFICIO_DPA_INITIATIVE,0.011032568550033338
+organization_size_tier_MULTINATIONAL,0.009567524493094089
+dpa_name_canonical_National Supervisory Authority for the Processing of Personal Data,0.008726771695777553
+"organization_size_tier_PUBLIC_SECTOR_BODY,NON_PROFIT",0.008529384509339108
+"organization_size_tier_SME,NON_PROFIT",0.008516089631561809
+dpa_name_canonical_Catalan Data Protection Authority,0.008297644576449619
+dpa_name_canonical_Spanish Agency for Data Protection,0.0071069135800203645
+breach_case_0,0.006674444220325833
+dpa_name_canonical_Swedish Data Protection Authority,0.005498341960788631
+"organization_size_tier_SME,LARGE_ENTERPRISE,NOT_MENTIONED",0.005407300954643585
+case_origin_BREACH_NOTIFICATION,0.004362872310208171
+breach_case_1,0.004251491098916938
+"organization_size_tier_LARGE_ENTERPRISE,NOT_MENTIONED",0.004199231532372917
+"organization_size_tier_LARGE_ENTERPRISE, MULTINATIONAL, NOT_APPLICABLE",0.00414903595616577
+country_code_GB,0.00391174323470114
+"organization_size_tier_SME,LARGE_ENTERPRISE",0.0036055757347502547
+decision_year_bucket_2020-2021,0.0035793261426268204
+"organization_size_tier_MULTINATIONAL,NOT_MENTIONED",0.0031477592643268494
+case_origin_MEDIA_PUBLIC_ATTENTION,0.0019661518783287914
+dpa_name_canonical_President of the Office for Personal Data Protection,0.0016339249302770845
+"organization_size_tier_LARGE_ENTERPRISE, NOT_MENTIONED, UNCLEAR",0.0016176362624782895
+country_code_PT,0.0014034582927828366
+dpa_name_canonical_Information Commissioner of the Republic of Slovenia,0.001317447476604635
+decision_year_bucket_2022-2023,0.0007071624465951081
+dpa_name_canonical_STRING,0.0006840705765303131
+case_origin_COMPLAINT,0.0006149249755206016
+decision_year_bucket_2018-2019,0.0003141854912892237
+"organization_size_tier_SME, LARGE_ENTERPRISE, MULTINATIONAL, NON_PROFIT, PUBLIC_SECTOR_BODY, NOT_APPLICABLE, NOT_MENTIONED, UNCLEAR",0.0001916070482256641
+decision_year_bucket_2024-2025,9.880669283497013e-05
+case_origin_REFERRAL_FROM_OTHER_AUTHORITY,6.295252674736493e-05
+"organization_size_tier_LARGE_ENTERPRISE, MULTINATIONAL, NOT_MENTIONED",4.798332065927898e-05
+"organization_size_tier_NON_PROFIT, NOT_MENTIONED",0.0
+"organization_size_tier_MULTINATIONAL,LARGE_ENTERPRISE",0.0
+"organization_size_tier_MULTINATIONAL,NOT_APPLICABLE",0.0
+"organization_size_tier_LARGE_ENTERPRISE, NOT_APPLICABLE, NOT_APPLICABLE, NOT_APPLICABLE, NOT_APPLICABLE, NOT_APPLICABLE, NOT_APPLICABLE",0.0
+"organization_size_tier_BANKING_SECTOR, NOT_MENTIONED",0.0
+breach_case_<NA>,0.0
+"organization_size_tier_LARGE_ENTERPRISE, PUBLIC_SECTOR_BODY",0.0
+organization_type_UNCLEAR,0.0
+organization_type_PUBLIC_SECTOR_BODY,0.0
+"organization_type_ORGANIZATION, NATURAL_PERSON, NOT_MENTIONED, UNCLEAR ORGANIZATION",0.0
+organization_type_NOT_MENTIONED,0.0
+organization_type_NATURAL_PERSON,0.0
+organization_type_NOT_DISCUSSED,0.0
+organization_size_tier_nan,0.0
+organization_size_tier_UNCLEAR,0.0
+"organization_size_tier_SME,LARGE_ENTERPRISE,MULTINATIONAL,NOT_MENTIONED",0.0
+"organization_size_tier_SME, NOT_MENTIONED, UNCLEAR",0.0
+"organization_size_tier_PUBLIC_SECTOR_BODY,NOT_MENTIONED",0.0
+"organization_size_tier_SME, NOT_APPLICABLE",0.0
+organization_size_tier_NOT_DISCUSSED,0.0
+"organization_size_tier_NON_PROFIT, SME",0.0
+"organization_size_tier_NOT_APPLICABLE, NOT_MENTIONED",0.0
+"organization_size_tier_NOT_APPLICABLE, NOT_MENTIONED, UNCLEAR",0.0
+dpa_name_canonical_Agència de Protecció de Dades de Catalunya,0.0
+dpa_name_canonical_Agencia Española de Protección de Datos (AEPD),0.0
+dpa_name_canonical_ANSPDCP,0.0
+dpa_name_canonical_A.N.S.P.D.C.P.,0.0
+country_code_nan,0.0
+dpa_name_canonical_A.N.S.P.D.C.P,0.0
+country_code_UNCLEAR,0.0
+country_code_SK,0.0
+"case_origin_COMPLAINT,EX_OFFICIO_DPA_INITIATIVE",0.0
+"case_origin_COMPLAINT,BREACH_NOTIFICATION",0.0
+case_origin_NOT_MENTIONED,0.0
+case_origin_NOT_DISCUSSED,0.0
+case_origin_OTHER,0.0
+case_origin_UNCLEAR,0.0
+case_origin_UNKNOWN,0.0
+case_origin_<NA>,0.0
+organization_type_<NA>,0.0
+organization_type_UNKNOWN,0.0
+"case_origin_COMPLAINT, BREACH_NOTIFICATION, EX_OFFICIO_DPA_INITIATIVE, REFERRAL_FROM_OTHER_AUTHORITY, MEDIA_PUBLIC_ATTENTION, JOINT_INVESTIGATION, FOLLOW_UP_PRIOR_CASE, OTHER, NOT_MENTIONED, UNCLEAR COMPLAINT",0.0
+"organization_size_tier_SME, LARGE_ENTERPRISE, MULTINATIONAL, NON_PROFIT, PUBLIC_SECTOR_BODY, NOT_APPLICABLE, NOT_MENTIONED, UNCLEAR NOT_MENTIONED",0.0
+"organization_size_tier_SME,LARGE_ENTERPRISE,NOT_MENTIONED,UNCLEAR",0.0
+"organization_size_tier_SME,NOT_MENTIONED,NOT_MENTIONED,NOT_MENTIONED,NOT_MENTIONED",0.0
+"organization_size_tier_SME,NOT_MENTIONED,UNCLEAR",0.0
+dpa_name_canonical_Informacijski pooblaščenec (Information Commissioner),0.0
+dpa_name_canonical_Information Commissioner (IP),0.0
+dpa_name_canonical_Catalan Data Protection Authority (APDCAT),0.0
+dpa_name_canonical_Council for Transparency and Protection of Data of Andalusia,0.0
+dpa_name_canonical_Catalan Data Protection Agency (APDCAT),0.0
+dpa_name_canonical_Basque Agency for the Protection of Data,0.0
+dpa_name_canonical_Basque Agency for Data Protection,0.0
+dpa_name_canonical_Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal,0.0
+dpa_name_canonical_Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP),0.0
+dpa_name_canonical_Office for the Protection of Personal Data of the Slovak Republic,0.0
+dpa_name_canonical_National Supervisory Authority for Personal Data Processing,0.0
+dpa_name_canonical_National Supervisory Authority,0.0
+dpa_name_canonical_National DPA,0.0
+dpa_name_canonical_National Authority for the Supervision of Personal Data Processing,0.0
+dpa_name_canonical_National Commission for Data Protection (CNPD),0.0
+dpa_name_canonical_National Authority,0.0
+dpa_name_canonical_NOT_DISCUSSED,0.0
+dpa_name_canonical_Information Commissioner of Slovenia,0.0
+dpa_name_canonical_Integrity Protection Authority,0.0
+dpa_name_canonical_Information Commissioner (Slovenia),0.0
+dpa_name_canonical_Comissão Nacional de Proteção de Dados (CNPD),0.0
+dpa_name_canonical_Informacijski pooblaščenec,0.0
+dpa_name_canonical_Informacijski pooblaščenec (IP),0.0
+dpa_name_canonical_Romanian Supervisory Authority,0.0
+dpa_name_canonical_STRING The National Supervisory Authority for Personal Data Processing,0.0
+dpa_name_canonical_Spanish Agency for Data Protection (AEPD),0.0
+dpa_name_canonical_Spanish Agency of Data Protection,0.0
+dpa_name_canonical_STRING National Supervisory Authority,0.0
+dpa_name_canonical_President of the Office for the Protection of Personal Data,0.0
+dpa_name_canonical_President of the Personal Data Protection Office (UODO),0.0
+dpa_name_canonical_The Data Inspectorate,0.0
+dpa_name_canonical_The Information Commissioner's Office,0.0
+dpa_name_canonical_The Information Commissioner,0.0
+dpa_name_canonical_Transparency and Data Protection Council of Andalusia,0.0
+dpa_name_canonical_The Swedish Privacy Protection Agency (IMY),0.0
+dpa_name_canonical_The National Supervisory Authority for the Processing of Personal Data,0.0
+dpa_name_canonical_The National Supervisory Authority for Personal Data Processing,0.0
+dpa_name_canonical_The National Supervisory Authority,0.0
+dpa_name_canonical_nan,0.0
+dpa_name_canonical_UNCLEAR,0.0
+decision_year_bucket_nan,0.0

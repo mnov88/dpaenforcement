@@ -1,0 +1,26 @@
+feature,mean_abs_shap
+n_principles_violated,1.1119059977983696
+organization_size_tier_PUBLIC_SECTOR_BODY,1.0648465167518115
+n_corrective_measures,0.835303053260791
+organization_size_tier_LARGE_ENTERPRISE,0.5399035286064229
+"organization_size_tier_LARGE_ENTERPRISE,MULTINATIONAL",0.28667009926578974
+organization_size_tier_NOT_MENTIONED,0.21459077605164986
+country_code_SE,0.16615018454682867
+days_since_gdpr,0.12315554935387088
+decision_year_bucket_nan,0.11352687134686514
+organization_size_tier_SME,0.09903073603275558
+country_code_SI,0.09387500104159013
+organization_type_ORGANIZATION,0.07990675422731537
+organization_size_tier_NOT_APPLICABLE,0.06646234116076974
+"organization_size_tier_SME, NOT_MENTIONED",0.06536071195505071
+"organization_size_tier_LARGE_ENTERPRISE, MULTINATIONAL",0.06395717880419934
+dpa_name_canonical_Information Commissioner,0.05631184312757183
+organization_size_tier_NON_PROFIT,0.05155789199628741
+"organization_size_tier_LARGE_ENTERPRISE, NOT_MENTIONED",0.04997820890968027
+dpa_name_canonical_Integritetsskyddsmyndigheten,0.046790420392202346
+dpa_name_canonical_Swedish Authority for Privacy Protection (IMY),0.04445913363218636
+dpa_name_canonical_Spanish Data Protection Agency,0.04335275452840262
+dpa_name_canonical_Spanish Data Protection Agency (AEPD),0.04194839252634248
+dpa_name_canonical_Integritetsskyddsmyndigheten (IMY),0.03648239920520858
+country_code_RO,0.0351985560968335
+"organization_size_tier_SME,NOT_MENTIONED",0.02960015867556834

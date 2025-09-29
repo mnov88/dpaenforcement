@@ -68,6 +68,12 @@ class TestTypingAndCountry(unittest.TestCase):
         schema = parse_number("TYPE:NUMBER 150000")
         self.assertTrue(schema.valid)
         self.assertEqual(schema.value, 150000)
+        schema_compact = parse_number("TYPE:150000")
+        self.assertTrue(schema_compact.valid)
+        self.assertEqual(schema_compact.value, 150000)
+        schema_number_zero = parse_number("TYPE:NUMBER 0")
+        self.assertTrue(schema_number_zero.valid)
+        self.assertEqual(schema_number_zero.value, 0)
         schema_only = parse_number("TYPE:NUMBER")
         self.assertEqual(schema_only.status, "NOT_MENTIONED")
 

@@ -59,17 +59,29 @@ def normalize_country(raw: str) -> Tuple[Optional[str], str]:
 
 
 _NUM_ALLOWED = re.compile(r"[^0-9eE+\-\., ]+")
-_SCHEMA_TOKEN_RE = re.compile(r"(?:^|\s)(?:TYPE|ENUM|MULTI_SELECT):[A-Z0-9_]+", re.IGNORECASE)
+_SCHEMA_TOKEN_RE = re.compile(
+    r"(?:(^|\s))(?:TYPE|ENUM|MULTI_SELECT):([A-Z0-9_]+)", re.IGNORECASE
+)
 
 
 def _strip_schema_tokens(raw: str) -> str:
-    """Remove schema-echo artefacts like ``TYPE:NUMBER`` before sanitizing.
+    """Remove schema-echo artefacts like ``TYPE:NUMBER`` while keeping digits.
 
-    These tokens are emitted by the questionnaire schema and should not be
-    interpreted as part of the numeric value.
+    Older questionnaire exports occasionally echoed the schema token (e.g.
+    ``TYPE:150000`` or ``TYPE:NUMBER``).  We strip the token prefix but retain
+    any trailing digits so that ``TYPE:150000`` is interpreted as ``150000``
+    instead of disappearing during sanitisation.
     """
 
-    return _SCHEMA_TOKEN_RE.sub(" ", raw)
+    def repl(match: re.Match[str]) -> str:
+        prefix = match.group(1) or ""
+        value = match.group(2) or ""
+        numeric = re.search(r"[-+]?\d[0-9_]*", value)
+        if numeric:
+            return f"{prefix}{numeric.group(0)}"
+        return prefix
+
+    return _SCHEMA_TOKEN_RE.sub(repl, raw)
 
 
 def _sanitize_numeric_string(raw: str) -> str:

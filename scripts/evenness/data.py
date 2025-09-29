@@ -190,7 +190,17 @@ def build_fact_matrix(path: Path | str | None = None, discussed_only: bool = Fal
         "decision_date",
         "n_principles_discussed",
     })
-    df = load_wide_dataset(path, columns=base_cols)
+    # Expand requested columns to include all multi-select indicator columns present in the header
+    try:
+        header = pd.read_csv(Path(path or EvennessPaths().wide_csv), nrows=0).columns.tolist()
+    except Exception:
+        header = None
+    extra_cols: set[str] = set()
+    if header is not None:
+        for prefix in FACTS_CONFIG.multi_value_prefixes:
+            extra_cols.update([c for c in header if c.startswith(f"{prefix}_")])
+    requested_cols = base_cols.union(extra_cols)
+    df = load_wide_dataset(path, columns=requested_cols)
 
     # Derive decision year/quarter if missing
     if "decision_date" in df.columns and df["decision_date"].notna().any():

@@ -40,6 +40,9 @@ import statsmodels.api as sm
 from .config import FACTS_CONFIG, EvennessPaths
 import logging
 from logging.handlers import RotatingFileHandler
+from pathlib import Path
+import threading
+import time
 from .data import load_wide_dataset
 
 
@@ -406,9 +409,12 @@ def _train_tree_model(
                         if use_gpu:
                             # Safe GPU hints; LightGBM falls back if unavailable
                             try:
-                                model.set_params(device_type="gpu")
+                                model.set_params(device="gpu")
                             except Exception:
-                                pass
+                                try:
+                                    model.set_params(device_type="gpu")
+                                except Exception:
+                                    pass
                     else:
                         model = lgb.LGBMRegressor(
                             objective="regression",
@@ -418,9 +424,12 @@ def _train_tree_model(
                         )
                         if use_gpu:
                             try:
-                                model.set_params(device_type="gpu")
+                                model.set_params(device="gpu")
                             except Exception:
-                                pass
+                                try:
+                                    model.set_params(device_type="gpu")
+                                except Exception:
+                                    pass
                 elif classification and CatBoostClassifier is not None:
                     model = CatBoostClassifier(
                         verbose=False,
@@ -466,16 +475,22 @@ def _train_tree_model(
             model = lgb.LGBMClassifier(objective="binary", random_state=random_state, class_weight="balanced", n_jobs=-1, **(best_params or {}))
             if use_gpu:
                 try:
-                    model.set_params(device_type="gpu")
+                    model.set_params(device="gpu")
                 except Exception:
-                    pass
+                    try:
+                        model.set_params(device_type="gpu")
+                    except Exception:
+                        pass
         else:
             model = lgb.LGBMRegressor(objective="regression", random_state=random_state, n_jobs=-1, **(best_params or {}))
             if use_gpu:
                 try:
-                    model.set_params(device_type="gpu")
+                    model.set_params(device="gpu")
                 except Exception:
-                    pass
+                    try:
+                        model.set_params(device_type="gpu")
+                    except Exception:
+                        pass
     elif classification and CatBoostClassifier is not None:
         model = CatBoostClassifier(verbose=False, random_state=random_state, task_type="GPU" if use_gpu else "CPU", **(best_params or {}))
     elif not classification and CatBoostRegressor is not None:
@@ -495,7 +510,7 @@ def _train_tree_model(
         importance = np.abs(np.asarray(model.coef_))
     else:
         importance = np.zeros(X.shape[1])
-    return model, importance, np.asarray(list(best_params.values())) if best_params else np.array([])
+    return model, importance, (best_params or {})
 
 
 def _shap_summaries(model: object, X: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
@@ -716,6 +731,9 @@ def _specification_matrix(
         for train_idx, test_idx in splitter.split(X_values, y_fit):
             pipeline.fit(X_values.iloc[train_idx], y_fit.iloc[train_idx])
             if classification:
+                if len(np.unique(y_fit.iloc[test_idx])) < 2:
+                    scores.append(float("nan"))
+                    continue
                 proba = pipeline.predict_proba(X_values.iloc[test_idx])[:, 1]
                 score = metrics.roc_auc_score(y_fit.iloc[test_idx], proba)
             else:
@@ -741,6 +759,7 @@ def _stability_selection(
     iterations: int = 50,
     sample_frac: float = 0.75,
 ) -> pd.DataFrame:
+    logger = logging.getLogger("evenness.omniscan")
     rng = np.random.default_rng(0)
     counts = pd.Series(0, index=X.columns, dtype=float)
     total = pd.Series(0, index=X.columns, dtype=float)
@@ -776,6 +795,7 @@ def _stability_selection(
                 coef = coef[:use_len]
             except Exception:
                 # If alignment still fails, continue to next iteration
+                logger.warning("Stability selection: coef/feature length mismatch; skipping iteration")
                 continue
         selection = (np.abs(coef) > 1e-6).astype(float)
         sel_series = pd.Series(selection, index=active_cols, dtype=float)
@@ -981,7 +1001,7 @@ def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> O
     logger = logging.getLogger("evenness.omniscan")
     if not logger.handlers:
         logger.setLevel(logging.INFO)
-        log_path = str((pd.Path(paths.omniscan_dir) if hasattr(pd, 'Path') else None) or paths.omniscan_dir / "phase0_run.log")
+        log_path = str(Path(paths.omniscan_dir) / "phase0_run.log")
         try:
             handler = RotatingFileHandler(log_path, maxBytes=10_000_000, backupCount=3, encoding="utf-8")
             formatter = logging.Formatter(fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
@@ -1021,9 +1041,23 @@ def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> O
 
     meta_lookup = {meta.feature: meta for meta in metadata}
 
-    for outcome in outcomes:
+    # Start a background heartbeat logger to emit periodic progress pings
+    logger = logging.getLogger("evenness.omniscan")
+    _stop_heartbeat = False
+    def _heartbeat():
+        while not _stop_heartbeat:
+            try:
+                logger.info("Heartbeat: Phase 0 still running")
+            except Exception:
+                pass
+            time.sleep(60)
+    thread = threading.Thread(target=_heartbeat, daemon=True)
+    thread.start()
+
+    for idx, outcome in enumerate(outcomes, start=1):
         if outcome not in wide_df.columns:
             continue
+        logger.info("Outcome %d/%d: %s", idx, len(outcomes), outcome)
         y_raw = wide_df[outcome]
         mask = y_raw.notna()
         if mask.sum() < 50:
@@ -1263,6 +1297,11 @@ def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> O
     network_edges.to_csv(paths.network_edges_csv, index=False)
     community_summary.to_csv(paths.community_summary_csv, index=False)
 
+    _stop_heartbeat = True
+    try:
+        thread.join(timeout=2)
+    except Exception:
+        pass
     logger.info("Phase 0 omni-scan completed")
     return OmniScanOutputs(
         feature_universe_json=str(paths.feature_universe_json),

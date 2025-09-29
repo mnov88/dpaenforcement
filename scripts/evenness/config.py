@@ -23,6 +23,7 @@ class EvennessPaths:
     shap_dpa_csv: Path = Path("outputs/evenness/omniscan/shap_dpa_summary.csv")
     sage_importance_csv: Path = Path("outputs/evenness/omniscan/sage_importance.csv")
     specification_curve_csv: Path = Path("outputs/evenness/omniscan/specification_curve.csv")
+    fold_metrics_csv: Path = Path("outputs/evenness/omniscan/fold_metrics.csv")
     stability_selection_csv: Path = Path("outputs/evenness/omniscan/stability_selection.csv")
     knockoff_results_csv: Path = Path("outputs/evenness/omniscan/knockoff_results.csv")
     robust_driver_csv: Path = Path("outputs/evenness/omniscan/robust_driver_list.csv")
@@ -101,6 +102,7 @@ class EvennessPaths:
             self.community_summary_csv,
             self.risk_band_parity_csv,
             self.distribution_contrasts_csv,
+            self.fold_metrics_csv,
             self.x_full,
             self.x_timeobs,
             self.match_within_csv,

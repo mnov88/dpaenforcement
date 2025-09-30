@@ -18,7 +18,7 @@
         "confidence": "HIGH",
         "expected_outcomes": {
           "fine_probability": 1.0,
-          "severity_index": 2.3623263574244038,
+          "severity_index": 2.3380997351756823,
           "cluster_match_probability": 0.8
         },
         "risk_factors": [
@@ -46,8 +46,8 @@
         "recommendation": "INITIAL_NOTICE",
         "confidence": "MEDIUM",
         "expected_outcomes": {
-          "fine_probability": 0.6031746031746031,
-          "severity_index": 1.492063492063492,
+          "fine_probability": 0.6507936507936508,
+          "severity_index": 1.5396825396825398,
           "cluster_match_probability": 0.8
         },
         "risk_factors": [],
@@ -75,8 +75,8 @@
         "recommendation": "INITIAL_NOTICE",
         "confidence": "MEDIUM",
         "expected_outcomes": {
-          "fine_probability": 0.7722222222222223,
-          "severity_index": 1.7405555555555556,
+          "fine_probability": 0.7861111111111112,
+          "severity_index": 1.7544444444444445,
           "cluster_match_probability": 0.8
         },
         "risk_factors": [

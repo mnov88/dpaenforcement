@@ -15,7 +15,7 @@
 
 ## Enhanced Timing Analysis (Fuzzy RD)
 
-- fuzzy_rd_enforcement_severity_index: 0.3023 (95% CI 0.2152, 0.3499)
+- fuzzy_rd_enforcement_severity_index: 0.2781 (95% CI 0.1808, 0.3144)
 
 ## Heterogeneous Effects
 

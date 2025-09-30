@@ -75,7 +75,7 @@ Based on cluster analysis:
 **Confidence**: HIGH
 **Cluster Match**: Cluster_5: Country Ro, Channel Breach Notification, Breach Type Organizational Failure
 **Fine Probability**: 100.0%
-**Severity Index**: 2.36
+**Severity Index**: 2.34
 
 **Risk Factors**:
 - Late notification (>72 hours)
@@ -89,8 +89,8 @@ Based on cluster analysis:
 **Recommendation**: INITIAL_NOTICE
 **Confidence**: MEDIUM
 **Cluster Match**: Cluster_2: Channel Complaint, Breach Type Human Error, Country Es
-**Fine Probability**: 60.3%
-**Severity Index**: 1.49
+**Fine Probability**: 65.1%
+**Severity Index**: 1.54
 
 **Risk Factors**:
 
@@ -104,8 +104,8 @@ Based on cluster analysis:
 **Recommendation**: INITIAL_NOTICE
 **Confidence**: MEDIUM
 **Cluster Match**: Cluster_1: Channel Breach Notification, Vulnerable Subjects, Subjects Notified
-**Fine Probability**: 77.2%
-**Severity Index**: 1.74
+**Fine Probability**: 78.6%
+**Severity Index**: 1.75
 
 **Risk Factors**:
 - Vulnerable subjects affected
@@ -138,6 +138,6 @@ Based on cluster analysis:
 
 ---
 
-**Generated**: 2025-09-27 19:56:23
+**Generated**: 2025-09-30 12:40:29
 **Academic Standards**: Highest rigor applied throughout analysis
 **Zero Unsubstantiated Claims**: All estimates backed by empirical evidence

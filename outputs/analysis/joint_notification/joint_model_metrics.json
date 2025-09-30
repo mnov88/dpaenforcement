@@ -1,12 +1,12 @@
 {
-  "initial_sample_size": 274,
-  "trimmed_sample_size": 217,
-  "treated_cases": 82,
-  "control_cases": 135,
-  "naive_average_treatment_effect": 0.8867172499548328,
-  "aipw_average_treatment_effect": 0.0329942268491104,
-  "propensity_mean": 0.3778827774401599,
-  "propensity_std": 0.2403415574900741,
+  "initial_sample_size": 284,
+  "trimmed_sample_size": 221,
+  "treated_cases": 84,
+  "control_cases": 137,
+  "naive_average_treatment_effect": 0.25800019299617816,
+  "aipw_average_treatment_effect": -0.3794021293087463,
+  "propensity_mean": 0.3795787944045869,
+  "propensity_std": 0.24678398963447304,
   "trim_lower": 0.05,
   "trim_upper": 0.95
 }

@@ -9,7 +9,7 @@ and potential confounding, following academic best practices for policy analysis
 
 | Test | Original | Robust | Difference | Rel Change | Passes |
 |------|--------:|-------:|-----------:|-----------:|-------:|
-| Time Fixed Effects | 0.1000 | 0.0242 | -0.0758 | -75.84% | ⚠️ |
+| Time Fixed Effects | 0.1000 | 0.0198 | -0.0802 | -80.23% | ⚠️ |
 
 **Time Fixed Effects**: Compares time-FE with IPW vs full sample specification
 
@@ -19,7 +19,7 @@ and potential confounding, following academic best practices for policy analysis
 
 ## Time Controls Sensitivity
 
-- **Time-FE specification**: 0.0242
+- **Time-FE specification**: 0.0198
 - **No time-FE specification**: 0.1000
 
 - **Robust to time controls**: No

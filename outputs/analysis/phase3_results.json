@@ -38,7 +38,7 @@
   },
   "time_fe_sensitivity": {
     "time_fe_spec": {
-      "timing_effect": 0.024160229814706002,
+      "timing_effect": 0.019766910135989746,
       "n_cases": 51,
       "uses_ipw": true
     },
@@ -48,8 +48,8 @@
       "uses_ipw": false
     },
     "comparison": {
-      "difference": -0.07583977018529398,
-      "relative_change": -0.75839770185294,
+      "difference": -0.08023308986401023,
+      "relative_change": -0.8023308986401025,
       "robust_to_time_controls": "False"
     }
   },
@@ -57,9 +57,9 @@
     {
       "test_name": "Time Fixed Effects",
       "original_estimate": 0.09999999999999998,
-      "robust_estimate": 0.024160229814706002,
-      "difference": -0.07583977018529398,
-      "relative_change": -0.75839770185294,
+      "robust_estimate": 0.019766910135989746,
+      "difference": -0.08023308986401023,
+      "relative_change": -0.8023308986401025,
       "passes_check": "False",
       "notes": "Compares time-FE with IPW vs full sample specification"
     }

@@ -23,7 +23,10 @@ from scripts.analysis import build_feature_matrix as feature_matrix_module
 
 DEFAULT_PROMPT = Path("analyzed-decisions/data-extraction-prompt-sent-to-ai.md")
 DEFAULT_ENUM_OUT = Path("resources/enum_whitelist.json")
-DEFAULT_INPUT_CSV = Path("analyzed-decisions/master-analyzed-data-unclean.csv")
+DEFAULT_INPUT_CANDIDATES: tuple[Path, ...] = (
+    Path("raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv"),
+    Path("analyzed-decisions/master-analyzed-data-unclean.csv"),
+)
 DEFAULT_WIDE_CSV = Path("outputs/cleaned_wide.csv")
 DEFAULT_VALIDATION_JSON = Path("outputs/validation_report.json")
 DEFAULT_LONG_DIR = Path("outputs/long_tables")
@@ -201,6 +204,17 @@ def cmd_qa_summary(args: argparse.Namespace) -> int:
     return 0
 
 
+def _resolve_input_csv(arg_value: Optional[str]) -> Path:
+    if arg_value:
+        return Path(arg_value)
+    for candidate in DEFAULT_INPUT_CANDIDATES:
+        if candidate.exists():
+            return candidate
+    raise FileNotFoundError(
+        "Unable to locate an input CSV automatically. Specify --input-csv explicitly."
+    )
+
+
 def cmd_run_all(args: argparse.Namespace) -> int:
     prompt = Path(args.prompt_path) if args.prompt_path else DEFAULT_PROMPT
     enum_out = Path(args.enum_out) if args.enum_out else DEFAULT_ENUM_OUT
@@ -209,7 +223,7 @@ def cmd_run_all(args: argparse.Namespace) -> int:
     enum_out.write_text(json.dumps(whitelist, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Wrote enum whitelist to {enum_out}")
 
-    input_csv = Path(args.input_csv) if args.input_csv else DEFAULT_INPUT_CSV
+    input_csv = _resolve_input_csv(args.input_csv)
     out_csv = Path(args.out_csv) if args.out_csv else DEFAULT_WIDE_CSV
     validation_json = Path(args.validation_json) if args.validation_json else DEFAULT_VALIDATION_JSON
     clean_csv_to_wide(input_csv, out_csv, validation_json)

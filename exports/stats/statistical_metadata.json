@@ -1,0 +1,58 @@
+{
+  "statistical_formats": {
+    "r_rds": "R data serialization format with factor levels preserved",
+    "stata_dta": "Stata dataset with variable and value labels",
+    "spss_sav": "SPSS dataset with comprehensive metadata"
+  },
+  "legal_data_considerations": {
+    "typed_missingness": "NOT_DISCUSSED != NOT_MENTIONED != NOT_APPLICABLE",
+    "violation_analysis": "Filter by status variables before analyzing violations",
+    "fine_analysis": "Zero fines may be meaningful (no fine imposed)",
+    "temporal_analysis": "Account for GDPR implementation date (2018-05-25)"
+  },
+  "variable_categories": {
+    "identifiers": [
+      "decision_id"
+    ],
+    "geographic": [
+      "country_code",
+      "country_group"
+    ],
+    "temporal": [
+      "decision_date",
+      "decision_year",
+      "decision_quarter"
+    ],
+    "monetary": [
+      "fine_eur",
+      "turnover_eur",
+      "fine_log",
+      "fine_sqrt"
+    ],
+    "legal_outcomes": [
+      "breach_case",
+      "severity_measures_present",
+      "remedy_only_case"
+    ],
+    "violation_indicators": "Variables starting with q30_, q31_, q53_, q56_, q57_",
+    "status_variables": "Variables ending with _status"
+  },
+  "analysis_recommendations": {
+    "regression_analysis": [
+      "Use robust standard errors for fine analysis",
+      "Consider log transformation for monetary variables",
+      "Account for country-level clustering",
+      "Filter by status variables to avoid bias"
+    ],
+    "categorical_analysis": [
+      "Use chi-square tests with Bonferroni correction",
+      "Account for legal exclusivity in multi-select variables",
+      "Consider ordinal nature of severity measures"
+    ],
+    "time_series_analysis": [
+      "Account for GDPR learning curve effects",
+      "Consider seasonal patterns in enforcement",
+      "Use appropriate trend tests for legal data"
+    ]
+  }
+}

@@ -25,7 +25,7 @@
 
 **Expected Outcomes**:
 - Fine Probability: 0.867
-- Avg Log Fine: 11.257
+- Avg Log Fine: 9.116
 - Severity Index: 1.800
 
 ### Cluster_1: Channel Breach Notification, Vulnerable Subjects, Subjects Notified
@@ -43,9 +43,9 @@
 - Subjects Notified: 0.583
 
 **Expected Outcomes**:
-- Fine Probability: 0.722
-- Avg Log Fine: 8.687
-- Severity Index: 1.681
+- Fine Probability: 0.736
+- Avg Log Fine: 7.787
+- Severity Index: 1.694
 
 ### Cluster_2: Channel Complaint, Breach Type Human Error, Country Es
 **Size**: 63 cases
@@ -58,9 +58,9 @@
 - Country Gr: 0.095
 
 **Expected Outcomes**:
-- Fine Probability: 0.603
-- Avg Log Fine: 6.614
-- Severity Index: 1.492
+- Fine Probability: 0.651
+- Avg Log Fine: 6.466
+- Severity Index: 1.540
 
 ### Cluster_3: Breach Type Human Error, Channel Ex Officio Dpa Initiative, Country Pl
 **Size**: 32 cases
@@ -74,7 +74,7 @@
 
 **Expected Outcomes**:
 - Fine Probability: 0.875
-- Avg Log Fine: 10.223
+- Avg Log Fine: 8.656
 - Severity Index: 1.844
 
 ### Cluster_4: Remedial Actions, Country Fr, Breach Type Organizational Failure
@@ -91,7 +91,7 @@
 
 **Expected Outcomes**:
 - Fine Probability: 0.875
-- Avg Log Fine: 10.683
+- Avg Log Fine: 10.633
 - Severity Index: 1.750
 
 ### Cluster_5: Country Ro, Channel Breach Notification, Breach Type Organizational Failure
@@ -105,7 +105,7 @@
 
 **Expected Outcomes**:
 - Fine Probability: 1.000
-- Avg Log Fine: 9.061
+- Avg Log Fine: 8.679
 - Severity Index: 2.000
 
 ## Notes

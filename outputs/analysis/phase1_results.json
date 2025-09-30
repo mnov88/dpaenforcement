@@ -2,9 +2,9 @@
   "channel_effects": [],
   "fuzzy_rd_timing": {
     "fuzzy_rd_enforcement_severity_index": {
-      "estimate": 0.3023263574244035,
-      "ci_lower": 0.21522208736052048,
-      "ci_upper": 0.34992586900480305
+      "estimate": 0.2780997351756823,
+      "ci_lower": 0.18084214162956183,
+      "ci_upper": 0.31436970821214905
     }
   },
   "heterogeneous_effects": [

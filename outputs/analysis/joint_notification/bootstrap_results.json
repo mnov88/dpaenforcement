@@ -1,24 +1,13 @@
 {
   "0.1-0.9": {
-    "trimmed_sample_size": 192,
+    "trimmed_sample_size": 188,
     "treated_cases": 81,
-    "control_cases": 111,
-    "naive_effect": 0.5783851081081082,
-    "aipw_effect": 0.03248494828307282,
-    "bootstrap_mean": 0.011366817567746466,
-    "bootstrap_std": 0.41953969454356926,
-    "ci_lower": -0.7563635454918493,
-    "ci_upper": 0.804396577351753
-  },
-  "0.2-0.8": {
-    "trimmed_sample_size": 138,
-    "treated_cases": 64,
-    "control_cases": 74,
-    "naive_effect": 0.1583700899493259,
-    "aipw_effect": 0.11928962772182991,
-    "bootstrap_mean": 0.21461226480519296,
-    "bootstrap_std": 0.4810992303173803,
-    "ci_lower": -0.6484855991971427,
-    "ci_upper": 1.1861786300926431
+    "control_cases": 107,
+    "naive_effect": 0.06549995004038145,
+    "aipw_effect": -0.21106863691145378,
+    "bootstrap_mean": -0.255312196234116,
+    "bootstrap_std": 0.4717349529288632,
+    "ci_lower": -1.150408370210673,
+    "ci_upper": 0.6749527741560765
   }
 }

@@ -67,7 +67,7 @@
       },
       "expected_outcomes": {
         "fine_probability": 0.8666666666666667,
-        "avg_log_fine": 11.257258333333333,
+        "avg_log_fine": 9.116348466666667,
         "severity_index": 1.8
       }
     },
@@ -87,9 +87,9 @@
         "subjects_notified": 0.5833333333333334
       },
       "expected_outcomes": {
-        "fine_probability": 0.7222222222222222,
-        "avg_log_fine": 8.687297944444445,
-        "severity_index": 1.6805555555555556
+        "fine_probability": 0.7361111111111112,
+        "avg_log_fine": 7.7865593749999995,
+        "severity_index": 1.6944444444444444
       }
     },
     {
@@ -104,9 +104,9 @@
         "country_gr": 0.09523809523809523
       },
       "expected_outcomes": {
-        "fine_probability": 0.6031746031746031,
-        "avg_log_fine": 6.6139321129032265,
-        "severity_index": 1.492063492063492
+        "fine_probability": 0.6507936507936508,
+        "avg_log_fine": 6.46609656451613,
+        "severity_index": 1.5396825396825398
       }
     },
     {
@@ -122,7 +122,7 @@
       },
       "expected_outcomes": {
         "fine_probability": 0.875,
-        "avg_log_fine": 10.22286858064516,
+        "avg_log_fine": 8.655881419354838,
         "severity_index": 1.84375
       }
     },
@@ -141,7 +141,7 @@
       },
       "expected_outcomes": {
         "fine_probability": 0.875,
-        "avg_log_fine": 10.683463125,
+        "avg_log_fine": 10.63278025,
         "severity_index": 1.75
       }
     },
@@ -157,7 +157,7 @@
       },
       "expected_outcomes": {
         "fine_probability": 1.0,
-        "avg_log_fine": 9.061435444444445,
+        "avg_log_fine": 8.678706111111113,
         "severity_index": 2.0
       }
     }

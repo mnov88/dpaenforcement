@@ -4,1252 +4,1252 @@
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.9999999211
+    "expected_rank":3.9999997724
   },
   {
     "dpa_name_canonical":"National Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.3787045548
+    "expected_rank":3.3781817253
   },
   {
     "dpa_name_canonical":"Office of the Information and Data Protection Commissioner",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.6836100754
+    "expected_rank":3.6585605325
   },
   {
     "dpa_name_canonical":"Official name of the deciding Data Protection Authority (DPA): Data Protection Commission",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.694319579
+    "expected_rank":3.6522278825
   },
   {
     "dpa_name_canonical":"Irish Data Protection Commission",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.9148873631
+    "expected_rank":3.8887587443
   },
   {
     "dpa_name_canonical":"Romanian Supervisory Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.6271478525
+    "expected_rank":3.8816855002
   },
   {
     "dpa_name_canonical":"STRING National Supervisory Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.9999995025
+    "expected_rank":3.9999985461
   },
   {
     "dpa_name_canonical":"Data Protection Commissioner and Sanctions Board",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.9702327346
+    "expected_rank":3.9560479352
   },
   {
     "dpa_name_canonical":"Spanish Agency of Data Protection",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.6996894036
+    "expected_rank":3.7048275746
   },
   {
     "dpa_name_canonical":"State Data Inspectorate",
     "country_group":"EU",
     "cases":2,
     "average_rank":4.0,
-    "expected_rank":3.9112938137
+    "expected_rank":3.9181085142
   },
   {
     "dpa_name_canonical":"The Authority",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":2.9124570366
+    "expected_rank":2.9555401884
   },
   {
     "dpa_name_canonical":"The Commissioner",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.7538458258
+    "expected_rank":3.756977749
   },
   {
     "dpa_name_canonical":"The Data Inspectorate",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.98661086
+    "expected_rank":3.9873080102
   },
   {
     "dpa_name_canonical":"Hungarian National Authority for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.8074398401
+    "expected_rank":3.7607156855
   },
   {
     "dpa_name_canonical":"The National Supervisory Authority",
     "country_group":"EU",
     "cases":5,
     "average_rank":4.0,
-    "expected_rank":3.8334765299
+    "expected_rank":3.8455747564
   },
   {
     "dpa_name_canonical":"Finnish Data Protection Ombudsman",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.8662710681
+    "expected_rank":3.8855163196
   },
   {
     "dpa_name_canonical":"Autoritatea Na\u021bional\u0103 de Supraveghere a Prelucr\u0103rii Datelor cu Caracter Personal",
     "country_group":"EU",
     "cases":3,
     "average_rank":4.0,
-    "expected_rank":3.967143435
+    "expected_rank":3.9526681498
   },
   {
     "dpa_name_canonical":"The National Supervisory Authority for the Processing of Personal Data",
     "country_group":"EU",
     "cases":7,
     "average_rank":4.0,
-    "expected_rank":3.8446966364
+    "expected_rank":3.8410431192
   },
   {
     "dpa_name_canonical":"Ag\u00e8ncia de Protecci\u00f3 de Dades de Catalunya",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.988163838
+    "expected_rank":3.9879819299
   },
   {
     "dpa_name_canonical":"Der Bundesbeauftragte f\u00fcr den Datenschutz und die Informationsfreiheit (BfDI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.7264486621
+    "expected_rank":3.6573913576
   },
   {
     "dpa_name_canonical":"The Privacy Board",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.972429622
+    "expected_rank":3.9731943575
   },
   {
     "dpa_name_canonical":"Valstybin\u0117 duomen\u0173 apsaugos inspekcija (VDAI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":4.0,
-    "expected_rank":3.9860109678
+    "expected_rank":3.9845452406
   },
   {
     "dpa_name_canonical":"National Supervisory Authority for the Processing of Personal Data",
     "country_group":"EU",
     "cases":8,
     "average_rank":3.875,
-    "expected_rank":3.8563897363
+    "expected_rank":3.8566862281
   },
   {
     "dpa_name_canonical":"Autoritatea Na\u021bional\u0103 de Supraveghere a Prelucr\u0103rii Datelor cu Caracter Personal (ANSPDCP)",
     "country_group":"EU",
     "cases":4,
     "average_rank":3.75,
-    "expected_rank":3.7204153913
+    "expected_rank":3.7245869748
   },
   {
     "dpa_name_canonical":"A.N.S.P.D.C.P",
     "country_group":"EU",
     "cases":10,
     "average_rank":3.7,
-    "expected_rank":3.6880809906
+    "expected_rank":3.6629083467
   },
   {
     "dpa_name_canonical":"The National Supervisory Authority for Personal Data Processing",
     "country_group":"EU",
     "cases":10,
     "average_rank":3.7,
-    "expected_rank":3.8553197187
+    "expected_rank":3.8612350094
   },
   {
     "dpa_name_canonical":"The Personal Data Protection Authority",
     "country_group":"EU",
     "cases":3,
     "average_rank":3.6666666667,
-    "expected_rank":3.4336882554
+    "expected_rank":3.4320881529
   },
   {
     "dpa_name_canonical":"National Supervisory Authority for Personal Data Processing",
     "country_group":"EU",
     "cases":13,
     "average_rank":3.6153846154,
-    "expected_rank":3.7552328953
+    "expected_rank":3.7544627319
   },
   {
     "dpa_name_canonical":"National Supervisory Authority",
     "country_group":"EU",
     "cases":40,
     "average_rank":3.6,
-    "expected_rank":3.6459230046
+    "expected_rank":3.6442882872
   },
   {
     "dpa_name_canonical":"A.N.S.P.D.C.P.",
     "country_group":"EU",
     "cases":20,
     "average_rank":3.6,
-    "expected_rank":3.6480332955
+    "expected_rank":3.6523566153
   },
   {
     "dpa_name_canonical":"Datainspektionen",
     "country_group":"EU",
     "cases":7,
     "average_rank":3.5714285714,
-    "expected_rank":3.6845540888
+    "expected_rank":3.7152158762
   },
   {
     "dpa_name_canonical":"President of the Personal Data Protection Office (UODO)",
     "country_group":"EU",
     "cases":12,
     "average_rank":3.5,
-    "expected_rank":3.5434544148
+    "expected_rank":3.5515604907
   },
   {
     "dpa_name_canonical":"The Data Inspectorate",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.5,
-    "expected_rank":3.4217278726
+    "expected_rank":3.4167554827
   },
   {
     "dpa_name_canonical":"Data State Inspections",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.5,
-    "expected_rank":3.1438653071
+    "expected_rank":3.1423876343
   },
   {
     "dpa_name_canonical":"National Commission for Computing and Liberties",
     "country_group":"EU",
     "cases":4,
     "average_rank":3.5,
-    "expected_rank":3.6954093307
+    "expected_rank":3.7019682702
   },
   {
     "dpa_name_canonical":"ANSPDCP",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.5,
-    "expected_rank":3.4855691975
+    "expected_rank":3.5939299639
   },
   {
     "dpa_name_canonical":"National Commission for Information Technology and Freedoms",
     "country_group":"EU",
     "cases":7,
     "average_rank":3.4285714286,
-    "expected_rank":3.3182470875
+    "expected_rank":3.3106368168
   },
   {
     "dpa_name_canonical":"Greek Data Protection Authority",
     "country_group":"EU",
     "cases":3,
     "average_rank":3.3333333333,
-    "expected_rank":3.421560105
+    "expected_rank":3.4002559039
   },
   {
     "dpa_name_canonical":"The Norwegian Data Protection Authority",
     "country_group":"EEA_NON_EU",
     "cases":3,
     "average_rank":3.3333333333,
-    "expected_rank":3.1660549604
+    "expected_rank":3.1745359091
   },
   {
     "dpa_name_canonical":"President of the Personal Data Protection Office",
     "country_group":"EU",
     "cases":20,
     "average_rank":3.3,
-    "expected_rank":3.3648286788
+    "expected_rank":3.3685585198
   },
   {
     "dpa_name_canonical":"Data State Inspectorate",
     "country_group":"EU",
     "cases":4,
     "average_rank":3.25,
-    "expected_rank":3.1849643573
+    "expected_rank":3.2340975352
   },
   {
     "dpa_name_canonical":"National Commission for Data Protection",
     "country_group":"EU",
     "cases":19,
     "average_rank":3.2105263158,
-    "expected_rank":3.2719749404
+    "expected_rank":3.2573142049
   },
   {
     "dpa_name_canonical":"Nemzeti Adatv\u00e9delmi \u00e9s Inform\u00e1ci\u00f3szabads\u00e1g Hat\u00f3s\u00e1g",
     "country_group":"EU",
     "cases":5,
     "average_rank":3.2,
-    "expected_rank":3.6737057741
+    "expected_rank":3.672434302
   },
   {
     "dpa_name_canonical":"National Authority for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":13,
     "average_rank":3.1538461538,
-    "expected_rank":3.523823216
+    "expected_rank":3.5191905289
   },
   {
     "dpa_name_canonical":"Commission nationale de l'informatique et des libert\u00e9s",
     "country_group":"EU",
     "cases":9,
     "average_rank":3.1111111111,
-    "expected_rank":3.1987296979
+    "expected_rank":3.181474456
   },
   {
     "dpa_name_canonical":"Hellenic Data Protection Authority",
     "country_group":"EU",
     "cases":9,
     "average_rank":3.1111111111,
-    "expected_rank":3.1412419839
+    "expected_rank":3.1254393562
   },
   {
     "dpa_name_canonical":"Garante per la protezione dei dati personali",
     "country_group":"EU",
     "cases":280,
     "average_rank":3.0928571429,
-    "expected_rank":3.1297181727
+    "expected_rank":3.1277477339
   },
   {
     "dpa_name_canonical":"STRING",
     "country_group":"EU",
     "cases":36,
     "average_rank":3.0833333333,
-    "expected_rank":2.9656851088
+    "expected_rank":2.9419908815
   },
   {
     "dpa_name_canonical":"President of the Office for Personal Data Protection",
     "country_group":"EU",
     "cases":26,
     "average_rank":3.0769230769,
-    "expected_rank":3.0410926954
+    "expected_rank":3.0421416903
   },
   {
     "dpa_name_canonical":"National Data Protection and Freedom of Information Authority",
     "country_group":"EU",
     "cases":33,
     "average_rank":3.0606060606,
-    "expected_rank":3.0737171093
+    "expected_rank":3.077272452
   },
   {
     "dpa_name_canonical":"STRING President of the Personal Data Protection Office",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":3.0106300517
+    "expected_rank":3.0752351489
   },
   {
     "dpa_name_canonical":"STRING Garante per la protezione dei dati personali",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.5486969805
+    "expected_rank":2.7077434632
   },
   {
     "dpa_name_canonical":"HmbBfDI",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.0881627369
+    "expected_rank":2.115278568
   },
   {
     "dpa_name_canonical":"\u0391\u03c1\u03c7\u03ae \u03a0\u03c1\u03bf\u03c3\u03c4\u03b1\u03c3\u03af\u03b1\u03c2 \u0394\u03b5\u03b4\u03bf\u03bc\u03ad\u03bd\u03c9\u03bd \u03a0\u03c1\u03bf\u03c3\u03c9\u03c0\u03b9\u03ba\u03bf\u03cd \u03a7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b1",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.1397717485
+    "expected_rank":2.1425952364
   },
   {
     "dpa_name_canonical":"Privacy Policy Board",
     "country_group":"EEA_NON_EU",
     "cases":2,
     "average_rank":3.0,
-    "expected_rank":2.5017780365
+    "expected_rank":2.5788514451
   },
   {
     "dpa_name_canonical":"President of the Office for the Protection of Personal Data",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.0768379204
+    "expected_rank":2.1195369499
   },
   {
     "dpa_name_canonical":"Personal Data Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.4861218501
+    "expected_rank":2.4745433817
   },
   {
     "dpa_name_canonical":"Comiss\u00e3o Nacional de Prote\u00e7\u00e3o de Dados (CNPD)",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.4662032344
+    "expected_rank":2.4631208401
   },
   {
     "dpa_name_canonical":"Commission Nationale de l'Informatique et des Libert\u00e9s",
     "country_group":"EU",
     "cases":13,
     "average_rank":3.0,
-    "expected_rank":2.9508015972
+    "expected_rank":2.9256615811
   },
   {
     "dpa_name_canonical":"National DPA",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.3085759395
+    "expected_rank":2.2846385657
   },
   {
     "dpa_name_canonical":"Information Commissioner of Slovenia",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.4997566837
+    "expected_rank":2.5016590936
   },
   {
     "dpa_name_canonical":"Hamburg Commissioner for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":3,
     "average_rank":3.0,
-    "expected_rank":2.5753775602
+    "expected_rank":2.5424478903
   },
   {
     "dpa_name_canonical":"Guarantor for the Protection of Personal Data",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.0,
-    "expected_rank":2.9281591782
+    "expected_rank":2.8925068688
   },
   {
     "dpa_name_canonical":"Autoriteit Persoonsgegevens (AP)",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.7114365588
+    "expected_rank":2.730191773
   },
   {
     "dpa_name_canonical":"The State Commissioner for Data Protection and Freedom of Information Bremen",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.8753360099
+    "expected_rank":2.8698614484
   },
   {
     "dpa_name_canonical":"The State Commissioner for Data Protection and Freedom of Information Baden-W\u00fcrttemberg",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.6683527715
+    "expected_rank":2.6925999522
   },
   {
     "dpa_name_canonical":"The State Commissioner for Data Protection Lower Saxony",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.0,
-    "expected_rank":2.5155606194
+    "expected_rank":2.5116690716
   },
   {
     "dpa_name_canonical":"Data Protection Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":1.5287481941
+    "expected_rank":1.5319639319
   },
   {
     "dpa_name_canonical":"Data State Inspectorate",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":1.7339266682
+    "expected_rank":1.7909258135
   },
   {
     "dpa_name_canonical":"The President of the Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.6767342104
+    "expected_rank":2.6422146658
   },
   {
     "dpa_name_canonical":"Authority for the Protection of Personal Data",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.8024619173
+    "expected_rank":2.8444866364
   },
   {
     "dpa_name_canonical":"Autoriteit Persoonsgege",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.3234972429
+    "expected_rank":2.3216934405
   },
   {
     "dpa_name_canonical":"Commission Nationale de l\u2019Informatique et des Libert\u00e9s (CNIL)",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.9721661221
+    "expected_rank":2.6589519736
   },
   {
     "dpa_name_canonical":"Dutch Data Protection Authority",
     "country_group":"EU",
     "cases":10,
     "average_rank":3.0,
-    "expected_rank":2.6892711699
+    "expected_rank":2.7716102767
   },
   {
     "dpa_name_canonical":"Garante per la Protezione dei Dati Personali",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":1.909934719
+    "expected_rank":1.8911582836
   },
   {
     "dpa_name_canonical":"Finnish Data Protection Commissioner",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.0,
-    "expected_rank":3.7396635626
+    "expected_rank":3.7719686669
   },
   {
     "dpa_name_canonical":"State Data Protection Inspectorate (SDPI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.2791823293
+    "expected_rank":2.3141984183
   },
   {
     "dpa_name_canonical":"Der Landesbeauftragte f\u00fcr den Datenschutz und die Informationsfreiheit Baden-W\u00fcrttemberg",
     "country_group":"EU",
     "cases":2,
     "average_rank":3.0,
-    "expected_rank":2.6798138749
+    "expected_rank":2.6803482759
   },
   {
     "dpa_name_canonical":"Der Landesbeauftragte f\u00fcr den Datenschutz Niedersachsen (LfD Lower Saxony)",
     "country_group":"EU",
     "cases":1,
     "average_rank":3.0,
-    "expected_rank":2.9386422023
+    "expected_rank":2.9403140143
   },
   {
     "dpa_name_canonical":"Autoriteit Persoonsgegevens",
     "country_group":"EU",
     "cases":23,
     "average_rank":2.9130434783,
-    "expected_rank":2.9448132396
+    "expected_rank":2.939137758
   },
   {
     "dpa_name_canonical":"Datatilsynet",
     "country_group":"EEA_NON_EU",
     "cases":44,
     "average_rank":2.8636363636,
-    "expected_rank":2.9204627137
+    "expected_rank":2.9313382606
   },
   {
     "dpa_name_canonical":"Comiss\u00e3o Nacional de Prote\u00e7\u00e3o de Dados",
     "country_group":"EU",
     "cases":6,
     "average_rank":2.8333333333,
-    "expected_rank":2.4453964889
+    "expected_rank":2.4661135186
   },
   {
     "dpa_name_canonical":"Norwegian Data Protection Authority",
     "country_group":"EEA_NON_EU",
     "cases":15,
     "average_rank":2.8,
-    "expected_rank":3.0091116603
+    "expected_rank":2.9797032911
   },
   {
     "dpa_name_canonical":"Integritetsskyddsmyndigheten (IMY)",
     "country_group":"EU",
     "cases":16,
     "average_rank":2.75,
-    "expected_rank":2.7398687017
+    "expected_rank":2.7236057092
   },
   {
     "dpa_name_canonical":"Hamburg Commissioner for Data Protection and Freedom of Information (HmbBfDI)",
     "country_group":"EU",
     "cases":8,
     "average_rank":2.75,
-    "expected_rank":2.5331864431
+    "expected_rank":2.5449867651
   },
   {
     "dpa_name_canonical":"Spanish Data Protection Agency",
     "country_group":"EU",
     "cases":282,
     "average_rank":2.6808510638,
-    "expected_rank":2.7760233231
+    "expected_rank":2.7725426635
   },
   {
     "dpa_name_canonical":"Data Protection Commissioner",
     "country_group":"EU",
     "cases":3,
     "average_rank":2.6666666667,
-    "expected_rank":3.4263865098
+    "expected_rank":3.4155380935
   },
   {
     "dpa_name_canonical":"President of the Office for Personal Data Protection (UODO)",
     "country_group":"EU",
     "cases":3,
     "average_rank":2.6666666667,
-    "expected_rank":2.6038874463
+    "expected_rank":2.5513292397
   },
   {
     "dpa_name_canonical":"Information Commissioner's Office",
     "country_group":"NON_EEA",
     "cases":36,
     "average_rank":2.6388888889,
-    "expected_rank":2.6293001218
+    "expected_rank":2.6349455819
   },
   {
     "dpa_name_canonical":"Spanish Agency for Data Protection",
     "country_group":"EU",
     "cases":269,
     "average_rank":2.6171003717,
-    "expected_rank":2.6958170195
+    "expected_rank":2.6961006
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Commissioner",
     "country_group":"EU",
     "cases":10,
     "average_rank":2.6,
-    "expected_rank":2.8737701963
+    "expected_rank":2.8612502437
   },
   {
     "dpa_name_canonical":"Personal Data Protection Authority",
     "country_group":"EU",
     "cases":51,
     "average_rank":2.5882352941,
-    "expected_rank":2.5989060058
+    "expected_rank":2.5898661375
   },
   {
     "dpa_name_canonical":"State Data Protection Inspectorate",
     "country_group":"EU",
     "cases":7,
     "average_rank":2.5714285714,
-    "expected_rank":2.5361909025
+    "expected_rank":2.4895337243
   },
   {
     "dpa_name_canonical":"Agencia Espa\u00f1ola de Protecci\u00f3n de Datos",
     "country_group":"EU",
     "cases":23,
     "average_rank":2.5217391304,
-    "expected_rank":2.5815097428
+    "expected_rank":2.5974541105
   },
   {
     "dpa_name_canonical":"National Commission for Data Protection (CNPD)",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.5,
-    "expected_rank":2.2942077997
+    "expected_rank":2.2470127205
   },
   {
     "dpa_name_canonical":"Swedish Authority for Privacy Protection",
     "country_group":"EU",
     "cases":4,
     "average_rank":2.5,
-    "expected_rank":2.7249057132
+    "expected_rank":2.7635689751
   },
   {
     "dpa_name_canonical":"Information and Data Protection Commissioner",
     "country_group":"EU",
     "cases":4,
     "average_rank":2.5,
-    "expected_rank":2.9709625686
+    "expected_rank":2.9467983761
   },
   {
     "dpa_name_canonical":"Norwegian Data Inspectorate",
     "country_group":"EEA_NON_EU",
     "cases":2,
     "average_rank":2.5,
-    "expected_rank":2.2183956128
+    "expected_rank":2.2137302561
   },
   {
     "dpa_name_canonical":"National Commission for Informatics and Freedoms",
     "country_group":"EU",
     "cases":4,
     "average_rank":2.5,
-    "expected_rank":2.5683901969
+    "expected_rank":2.5910201905
   },
   {
     "dpa_name_canonical":"National Commission for Information Technology and Civil Liberties",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.5,
-    "expected_rank":2.5867968263
+    "expected_rank":2.5834228134
   },
   {
     "dpa_name_canonical":"Data Protection Commission",
     "country_group":"EU",
     "cases":15,
     "average_rank":2.4666666667,
-    "expected_rank":2.3956386179
+    "expected_rank":2.4088783029
   },
   {
     "dpa_name_canonical":"Commission Nationale de l'Informatique et des Libert\u00e9s (CNIL)",
     "country_group":"EU",
     "cases":9,
     "average_rank":2.4444444444,
-    "expected_rank":2.4694058369
+    "expected_rank":2.4509690249
   },
   {
     "dpa_name_canonical":"Integritetsskyddsmyndigheten",
     "country_group":"EU",
     "cases":7,
     "average_rank":2.2857142857,
-    "expected_rank":2.0118849577
+    "expected_rank":2.0591237234
   },
   {
     "dpa_name_canonical":"Berlin Commissioner for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":8,
     "average_rank":2.25,
-    "expected_rank":2.2629500937
+    "expected_rank":2.200434749
   },
   {
     "dpa_name_canonical":"Swedish Authority for Privacy Protection (IMY)",
     "country_group":"EU",
     "cases":7,
     "average_rank":2.1428571429,
-    "expected_rank":1.8207762484
+    "expected_rank":1.8166056785
   },
   {
     "dpa_name_canonical":"Hellenic Republic Authority for the Protection of Personal Data",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.9942799845
+    "expected_rank":2.1216262076
   },
   {
     "dpa_name_canonical":"Bremen State Commissioner for Data Protection and Freedom of Information (LfDI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.0896909703
+    "expected_rank":2.0992567821
   },
   {
     "dpa_name_canonical":"Swedish Data Protection Authority",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.0,
-    "expected_rank":2.0100610693
+    "expected_rank":2.163403629
   },
   {
     "dpa_name_canonical":"Spanish Agency for Data Protection (AEPD)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.5940299398
+    "expected_rank":2.5991969724
   },
   {
     "dpa_name_canonical":"Bundesbeauftragter f\u00fcr den Datenschutz und die Informationsfreiheit (BfDI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.4736740935
+    "expected_rank":3.4806343031
   },
   {
     "dpa_name_canonical":"Bayerisches Landesamt f\u00fcr Datenschutzaufsicht",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.8490232782
+    "expected_rank":3.9059036755
   },
   {
     "dpa_name_canonical":"Data Protection Commissioner (Finland)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.8226572551
+    "expected_rank":1.788219537
   },
   {
     "dpa_name_canonical":"Suomen tietosuojavaltuutettu",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.903250994
+    "expected_rank":3.1067946792
   },
   {
     "dpa_name_canonical":"Hessian Commissioner for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.3693885714
+    "expected_rank":2.3451003187
   },
   {
     "dpa_name_canonical":"Transparency and Data Protection Council of Andalusia",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.9097764709
+    "expected_rank":2.8536909831
   },
   {
     "dpa_name_canonical":"Conference of the Independent Data Protection Authorities of Bund and the L\u00e4nder",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.7062710206
+    "expected_rank":1.7042958792
   },
   {
     "dpa_name_canonical":"Bavarian State Office for Data Protection Supervision",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.7878448981
+    "expected_rank":1.78015136
   },
   {
     "dpa_name_canonical":"Data State Inspection",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.1278908383
+    "expected_rank":3.0202422831
   },
   {
     "dpa_name_canonical":"Der Landesbeauftragte f\u00fcr den Datenschutz Niedersachsen",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.9840377674
+    "expected_rank":1.8282262942
   },
   {
     "dpa_name_canonical":"The Hessian Commissioner for Data Protection and Freedom of Information",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.7145601275
+    "expected_rank":1.7337326912
   },
   {
     "dpa_name_canonical":"The Icelandic Data Protection Authority",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.0297167639
+    "expected_rank":2.0727974321
   },
   {
     "dpa_name_canonical":"Commissioner for Information and Data Protection",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.7818621314
+    "expected_rank":1.7775600042
   },
   {
     "dpa_name_canonical":"The Information Commissioner's Office",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":0.9191706677
+    "expected_rank":0.8658094121
   },
   {
     "dpa_name_canonical":"Der Hamburgische Beauftragte f\u00fcr Datenschutz und Informationsfreiheit (HmbBfDI)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.5176571492
+    "expected_rank":1.5383667039
   },
   {
     "dpa_name_canonical":"Council for Transparency and Protection of Data of Andalusia",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.5704443963
+    "expected_rank":2.4989680641
   },
   {
     "dpa_name_canonical":"Deputy Data Protection Commissioner's Office",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.5094592122
+    "expected_rank":2.6095711163
   },
   {
     "dpa_name_canonical":"Deputy Data Protection Commissioner",
     "country_group":"EU",
     "cases":6,
     "average_rank":2.0,
-    "expected_rank":2.5709971783
+    "expected_rank":2.5735906695
   },
   {
     "dpa_name_canonical":"Agencia Espa\u00f1ola de Protecci\u00f3n de Datos (AEPD)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.3002725902
+    "expected_rank":2.329110643
   },
   {
     "dpa_name_canonical":"The Swedish Privacy Protection Agency (IMY)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.4651643022
+    "expected_rank":2.5904616259
   },
   {
     "dpa_name_canonical":"Data Protection Supervisor",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.5192804521
+    "expected_rank":1.444790278
   },
   {
     "dpa_name_canonical":"The Information Commissioner",
     "country_group":"NON_EEA",
     "cases":3,
     "average_rank":2.0,
-    "expected_rank":1.2871467675
+    "expected_rank":1.2534366398
   },
   {
     "dpa_name_canonical":"Data Protection Commission of Ireland",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.0,
-    "expected_rank":1.9474343436
+    "expected_rank":2.1331764699
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Officer",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.0,
-    "expected_rank":2.0418171092
+    "expected_rank":2.0279417637
   },
   {
     "dpa_name_canonical":"National Commission for Informatics and Freedoms (CNIL)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.6036512804
+    "expected_rank":2.651879922
   },
   {
     "dpa_name_canonical":"National Authority for the Supervision of Personal Data Processing",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.0446490234
+    "expected_rank":2.9964348369
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Supervisor",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.4347454052
+    "expected_rank":2.6632725296
   },
   {
     "dpa_name_canonical":"Informacijski poobla\u0161\u010denec (IP)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.6902087888
+    "expected_rank":3.659328778
   },
   {
     "dpa_name_canonical":"Commission nationale de l'informatique et des libert\u00e9s (CNIL)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.8567207848
+    "expected_rank":2.8077776435
   },
   {
     "dpa_name_canonical":"Oslo District Court",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.1807697193
+    "expected_rank":2.0438774938
   },
   {
     "dpa_name_canonical":"Integrity Protection Authority",
     "country_group":"EU",
     "cases":3,
     "average_rank":2.0,
-    "expected_rank":1.3353214383
+    "expected_rank":1.4270240862
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Ombudsman (Finland)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":2.6523540947
+    "expected_rank":2.6005274237
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Ombudsman",
     "country_group":"EU",
     "cases":2,
     "average_rank":2.0,
-    "expected_rank":2.1997163185
+    "expected_rank":2.2883448563
   },
   {
     "dpa_name_canonical":"Office for the Protection of Personal Data of the Slovak Republic",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":1.7369985567
+    "expected_rank":1.6975845695
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Commissioner (Finland)",
     "country_group":"EU",
     "cases":1,
     "average_rank":2.0,
-    "expected_rank":3.8597773609
+    "expected_rank":3.829778211
   },
   {
     "dpa_name_canonical":"Catalan Data Protection Authority",
     "country_group":"EU",
     "cases":7,
     "average_rank":1.8571428571,
-    "expected_rank":2.0300044797
+    "expected_rank":2.0163975324
   },
   {
     "dpa_name_canonical":"National Commission for Information Technology and Liberties",
     "country_group":"EU",
     "cases":6,
     "average_rank":1.8333333333,
-    "expected_rank":1.2419253495
+    "expected_rank":1.2407168272
   },
   {
     "dpa_name_canonical":"Pers\u00f3nuvernd",
     "country_group":"EEA_NON_EU",
     "cases":67,
     "average_rank":1.4179104478,
-    "expected_rank":1.3209948067
+    "expected_rank":1.3284657821
   },
   {
     "dpa_name_canonical":"Data Protection Authority",
     "country_group":"EEA_NON_EU",
     "cases":5,
     "average_rank":1.4,
-    "expected_rank":0.9875074791
+    "expected_rank":1.0267224446
   },
   {
     "dpa_name_canonical":"STRING",
     "country_group":"EEA_NON_EU",
     "cases":3,
     "average_rank":1.3333333333,
-    "expected_rank":2.2701945563
+    "expected_rank":2.2549653959
   },
   {
     "dpa_name_canonical":"Spanish Data Protection Agency (AEPD)",
     "country_group":"EU",
     "cases":3,
     "average_rank":1.3333333333,
-    "expected_rank":1.6005116219
+    "expected_rank":1.6185649652
   },
   {
     "dpa_name_canonical":"The Data Protection Authority",
     "country_group":"EEA_NON_EU",
     "cases":11,
     "average_rank":1.2727272727,
-    "expected_rank":0.9315875257
+    "expected_rank":0.9512891873
   },
   {
     "dpa_name_canonical":"Information Commissioner (Slovenia)",
     "country_group":"EU",
     "cases":8,
     "average_rank":1.0,
-    "expected_rank":0.8117575535
+    "expected_rank":0.7953984801
   },
   {
     "dpa_name_canonical":"Information Commissioner",
     "country_group":"EU",
     "cases":39,
     "average_rank":0.6923076923,
-    "expected_rank":0.6395758159
+    "expected_rank":0.6285587043
   },
   {
     "dpa_name_canonical":"Privacy Board",
     "country_group":"EEA_NON_EU",
     "cases":3,
     "average_rank":0.6666666667,
-    "expected_rank":0.1927607141
+    "expected_rank":0.1960610679
   },
   {
     "dpa_name_canonical":"Personal Protection Agency",
     "country_group":"EEA_NON_EU",
     "cases":4,
     "average_rank":0.5,
-    "expected_rank":0.0925206782
+    "expected_rank":0.0823195534
   },
   {
     "dpa_name_canonical":"STRING",
     "country_group":"NON_EEA",
     "cases":71,
     "average_rank":0.4366197183,
-    "expected_rank":0.546384371
+    "expected_rank":0.5480087722
   },
   {
     "dpa_name_canonical":"Information Commissioner of the Republic of Slovenia",
     "country_group":"EU",
     "cases":13,
     "average_rank":0.1538461538,
-    "expected_rank":0.0331592035
+    "expected_rank":0.0287479179
   },
   {
     "dpa_name_canonical":"Catalan Data Protection Agency (APDCAT)",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0627821901
+    "expected_rank":0.0507479919
   },
   {
     "dpa_name_canonical":"Norwegian Privacy Board",
     "country_group":"EEA_NON_EU",
     "cases":2,
     "average_rank":0.0,
-    "expected_rank":0.0912977609
+    "expected_rank":0.0920616677
   },
   {
     "dpa_name_canonical":"STRING",
     "country_group":"EU_INSTITUTION",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.2136057968
+    "expected_rank":0.2047805202
   },
   {
     "dpa_name_canonical":"UNCLEAR",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0176372783
+    "expected_rank":0.0191013017
   },
   {
     "dpa_name_canonical":"Rechtbank Zeeland-West-Brabant",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0955884781
+    "expected_rank":0.0765577753
   },
   {
     "dpa_name_canonical":"Informacijski poobla\u0161\u010denec",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.1018777302
+    "expected_rank":0.099013463
   },
   {
     "dpa_name_canonical":"NOT_MENTIONED",
     "country_group":"NON_EEA",
     "cases":9,
     "average_rank":0.0,
-    "expected_rank":0.0020664998
+    "expected_rank":0.0022022259
   },
   {
     "dpa_name_canonical":"NOT_DISCUSSED",
     "country_group":"NON_EEA",
     "cases":33,
     "average_rank":0.0,
-    "expected_rank":0.0000299245
+    "expected_rank":0.000035657
   },
   {
     "dpa_name_canonical":"Informacijski poobla\u0161\u010denec (Information Commissioner)",
     "country_group":"EU",
     "cases":2,
     "average_rank":0.0,
-    "expected_rank":0.108898098
+    "expected_rank":0.1040541227
   },
   {
     "dpa_name_canonical":"Information Commissioner",
     "country_group":"NON_EEA",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0000367906
+    "expected_rank":0.0000482825
   },
   {
     "dpa_name_canonical":"Finnish Data Protection Authority",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0452836275
+    "expected_rank":0.041064492
   },
   {
     "dpa_name_canonical":"The Norwegian Privacy Board",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0475233424
+    "expected_rank":0.0461025832
   },
   {
     "dpa_name_canonical":"Basque Agency for the Protection of Data",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0751129153
+    "expected_rank":0.0671150563
   },
   {
     "dpa_name_canonical":"Pers\u00f3nuvernd (Icelandic Data Protection Authority)",
     "country_group":"EEA_NON_EU",
     "cases":4,
     "average_rank":0.0,
-    "expected_rank":0.025972715
+    "expected_rank":0.0239941447
   },
   {
     "dpa_name_canonical":"Estonian Data Protection Inspectorate",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.1018777302
+    "expected_rank":0.099013463
   },
   {
     "dpa_name_canonical":"State Labor Court of Baden-W\u00fcrttemberg",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.1957985065
+    "expected_rank":0.189323044
   },
   {
     "dpa_name_canonical":"Personvernnemnda (Privacy Board)",
     "country_group":"EEA_NON_EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0900747613
+    "expected_rank":0.1490254673
   },
   {
     "dpa_name_canonical":"Information Commissioner (IP)",
     "country_group":"EU",
     "cases":3,
     "average_rank":0.0,
-    "expected_rank":0.0434965739
+    "expected_rank":0.0489247615
   },
   {
     "dpa_name_canonical":"Catalan Data Protection Authority (APDCAT)",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0483235101
+    "expected_rank":0.0397785798
   },
   {
     "dpa_name_canonical":"Office of the Data Protection Supervisor (EDPS)",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.1149471073
+    "expected_rank":0.1019629851
   },
   {
     "dpa_name_canonical":"The Hamburg representative for Data protection and freedom of information",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.1055814705
+    "expected_rank":0.1115249311
   },
   {
     "dpa_name_canonical":"Basque Agency for Data Protection",
     "country_group":"EU",
     "cases":1,
     "average_rank":0.0,
-    "expected_rank":0.0366229137
+    "expected_rank":0.068943838
   }
 ]

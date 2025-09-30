@@ -178,6 +178,15 @@ def inverse_probability_weighting(
     treated = df["art33_notified_flag"].values
     outcome = df[outcome_col].values
 
+    valid_mask = np.isfinite(outcome)
+    if valid_mask.sum() == 0:
+        raise ValueError("Outcome column is entirely missing")
+
+    if not np.all(valid_mask):
+        treated = treated[valid_mask]
+        outcome = outcome[valid_mask]
+        features = features.iloc[valid_mask].reset_index(drop=True)
+
     if treated.sum() == 0 or treated.sum() == len(treated):
         raise ValueError("Treatment indicator lacks variation")
 
@@ -185,6 +194,8 @@ def inverse_probability_weighting(
     clf.fit(features.values, treated)
     propensity = clf.predict_proba(features.values)[:, 1]
     propensity = np.clip(propensity, 0.05, 0.95)
+
+    n_obs = len(outcome)
 
     def _weighted_difference(idx: np.ndarray) -> float:
         t = treated[idx]
@@ -196,12 +207,12 @@ def inverse_probability_weighting(
         mu_c = np.sum(w_c * y) / np.sum(w_c)
         return mu_t - mu_c
 
-    ate = _weighted_difference(np.arange(len(df)))
+    ate = _weighted_difference(np.arange(n_obs))
 
     rng = np.random.default_rng(seed)
     boot = []
     for _ in range(n_bootstrap):
-        sample_idx = rng.integers(0, len(df), len(df))
+        sample_idx = rng.integers(0, n_obs, n_obs)
         boot.append(_weighted_difference(sample_idx))
 
     boot = np.array(boot)
@@ -210,7 +221,7 @@ def inverse_probability_weighting(
         "bootstrap_mean": float(boot.mean()),
         "ci_lower": float(np.percentile(boot, 2.5)),
         "ci_upper": float(np.percentile(boot, 97.5)),
-        "n_obs": int(len(df)),
+        "n_obs": int(len(outcome)),
     }
 
 

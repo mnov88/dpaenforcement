@@ -9,7 +9,7 @@
 - `tests/` contains regression coverage for parser and cleaning behaviors.
 
 ## Build, Test, and Development Commands
-- Pipeline entrypoint: `python3 -m scripts.cli run-all` (runs parsing, cleaning, consistency checks with config defaults; add `--build-feature-matrix` / `--run-evenness` to materialise analytics and Evenness Phases 0–3 in the same pass).
+- Pipeline entrypoint: `python3 -m scripts.cli run-all` (runs parsing, cleaning, consistency checks with config defaults; add `--build-feature-matrix` / `--run-evenness` to materialise analytics and Evenness Phases 0–3 in the same pass, and `--evenness-light` for laptop-friendly Phase 0 runs).
 - Focused cleans: `python3 -m scripts.cli clean-wide --input-csv raw-data/LATEST_MASTER_ONLY_USE_THIS_MERGED.csv --out-csv outputs/cleaned_wide.csv --validation-report outputs/validation_report.json` (swap `--input-csv` to the analyzed decisions file if you need the legacy subset).
 - Long tables: `python3 -m scripts.cli emit-long --input-csv analyzed-decisions/master-analyzed-data-unclean.csv --out-dir outputs/long_tables`.
 - Tests: `pytest` (auto-discovers unit tests under `tests/`).

@@ -1,4 +1,8 @@
 import argparse
+import sys
+import types
+
+sys.modules.setdefault("shap", types.ModuleType("shap"))
 
 import pytest
 
@@ -73,7 +77,7 @@ def test_cmd_omniscan_invokes_runner(monkeypatch, capsys):
         distribution_contrasts_csv="dist.csv",
     )
 
-    def fake_run(paths):
+    def fake_run(paths, **kwargs):
         called["paths"] = paths
         return dummy
 

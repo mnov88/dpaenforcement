@@ -294,7 +294,11 @@ def cmd_phase_three(args: argparse.Namespace) -> None:
 
 def cmd_omniscan(args: argparse.Namespace) -> None:
     paths = EvennessPaths()
-    outputs = run_omniscan(paths=paths, use_gpu=getattr(args, "gpu", False))
+    outputs = run_omniscan(
+        paths=paths,
+        use_gpu=getattr(args, "gpu", False),
+        light=getattr(args, "light", False),
+    )
     print("Omni-scan artefacts generated:")
     print(f"  - features: {outputs.feature_universe_json}")
     print(f"  - coverage ledger: {outputs.coverage_ledger_csv}")
@@ -307,6 +311,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     p_phase0 = sub.add_parser("phase-zero", help="Run Phase 0 omni-scan workflow")
     p_phase0.add_argument("--gpu", action="store_true", help="Enable GPU for supported learners (LightGBM/CatBoost)")
+    p_phase0.add_argument("--light", action="store_true", help="Skip heavy SHAP/SAGE/knockoff passes for a lightweight diagnostic run")
     p_phase0.set_defaults(func=cmd_omniscan)
 
     p_phase1 = sub.add_parser("phase-one", help="Run Phase 1 foundation workflow")

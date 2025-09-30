@@ -994,8 +994,61 @@ def _build_network(importance: pd.DataFrame, outcomes: Sequence[str]) -> tuple[p
     return edge_df, pd.DataFrame(community_records)
 
 
-def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> OmniScanOutputs:
-    """Execute the omni-scan workflow and persist artefacts to disk."""
+def _linear_importance(
+    X: pd.DataFrame, y: pd.Series, classification: bool
+) -> pd.DataFrame:
+    pipeline_steps = [
+        ("impute", SimpleImputer(strategy="median", add_indicator=False)),
+        ("scale", StandardScaler(with_mean=False)),
+    ]
+    if classification:
+        model = LogisticRegression(max_iter=500, solver="lbfgs")
+    else:
+        model = ElasticNet(alpha=0.1, l1_ratio=0.5, max_iter=2000)
+    pipeline_steps.append(("model", model))
+    pipeline = Pipeline(steps=pipeline_steps)
+    pipeline.fit(X, y)
+    model = pipeline.named_steps["model"]
+    coef = getattr(model, "coef_", None)
+    if coef is None:
+        coef = getattr(model, "feature_importances_", None)
+    if coef is None:
+        return pd.DataFrame(columns=["feature", "importance"])
+    coef = np.asarray(coef)
+    if coef.ndim == 2:
+        if coef.shape[0] == 1:
+            coef = coef[0]
+        else:
+            coef = np.mean(np.abs(coef), axis=0)
+    coef = coef.reshape(-1)
+    n_features = X.shape[1]
+    if coef.size < n_features:
+        coef = np.pad(coef, (0, n_features - coef.size))
+    elif coef.size > n_features:
+        coef = coef[:n_features]
+    importance = pd.DataFrame({
+        "feature": X.columns,
+        "importance": np.abs(coef),
+    })
+    importance = importance.sort_values("importance", ascending=False).reset_index(drop=True)
+    return importance
+
+
+def run_omniscan(
+    paths: EvennessPaths | None = None,
+    use_gpu: bool = False,
+    light: bool = False,
+) -> OmniScanOutputs:
+    """Execute the omni-scan workflow and persist artefacts to disk.
+
+    Parameters
+    ----------
+    light:
+        When ``True`` the routine skips the heaviest diagnostics (SHAP, SAGE,
+        knockoffs, stability selection) and relies on lightweight linear models
+        with capped sample sizes so laptops can produce directional insights in
+        minutes rather than hours.
+    """
 
     paths = paths or EvennessPaths()
     paths.ensure()
@@ -1026,6 +1079,9 @@ def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> O
 
     X = _prepare_model_matrix(feature_matrix)
     outcomes = _outcome_columns(wide_df)
+    if light:
+        preferred = ["fine_log1p", "fine_positive"]
+        outcomes = [col for col in preferred if col in outcomes] or outcomes[:1]
 
     importance_records: list[dict[str, object]] = []
     interaction_records: list[dict[str, object]] = []
@@ -1076,7 +1132,33 @@ def run_omniscan(paths: EvennessPaths | None = None, use_gpu: bool = False) -> O
             decision_ids = available
             X_outcome = X.loc[decision_ids]
         classification = y.dropna().isin({0, 1, True, False}).all()
-        logger.info("Training outcome=%s (n=%d, features=%d, classification=%s)", outcome, X_outcome.shape[0], X_outcome.shape[1], classification)
+        if light and X_outcome.shape[0] > 1200:
+            rng = np.random.default_rng(42)
+            keep = rng.choice(X_outcome.index.to_numpy(), size=1200, replace=False)
+            X_outcome = X_outcome.loc[keep]
+            y = y.loc[keep]
+
+        logger.info(
+            "Training outcome=%s (n=%d, features=%d, classification=%s, light=%s)",
+            outcome,
+            X_outcome.shape[0],
+            X_outcome.shape[1],
+            classification,
+            light,
+        )
+
+        if light:
+            linear_importance = _linear_importance(X_outcome, y, classification).head(50)
+            for _, row in linear_importance.iterrows():
+                importance_records.append(
+                    {
+                        "outcome": outcome,
+                        "feature": row["feature"],
+                        "importance": float(row["importance"]),
+                    }
+                )
+            continue
+
         model, importance, _ = _train_tree_model(X_outcome, y, classification, use_gpu=use_gpu)
         # Determine if LightGBM model is informative; if not, fallback to GLM + Linear SHAP
         use_linear_fallback = False

@@ -1,14 +1,1 @@
 block,mean_abs_shap,outcome
-Other,7.6798342624759615,fine_log1p
-Mitigations,0.40445566938706684,fine_log1p
-Procedural,0.15215031680561358,fine_log1p
-Jurisdiction,0.130492632260778,fine_log1p
-Vulnerable Groups,0.11940794869973038,fine_log1p
-Economic Sector,0.1003041846769847,fine_log1p
-Sensitive Data,0.09960682929553592,fine_log1p
-Breach Facts,0.05284080631864174,fine_log1p
-Temporal,0.04581463074833011,fine_log1p
-Breach Case,0.006429604421679845,fine_log1p
-Corrective Powers,0.00572760048151213,fine_log1p
-Article 33,0.002012406435128358,fine_log1p
-Article 34,0.0,fine_log1p

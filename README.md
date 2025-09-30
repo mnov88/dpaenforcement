@@ -31,13 +31,15 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
    ```
    > When the merged source shrinks or older analyzed decisions need inspection, you can still point `--input-csv` at `analyzed-decisions/master-analyzed-data-unclean.csv`. By default, prefer the merged file whenever its decision count is larger.
    > The `run-all` orchestration now applies human-annotated fine overrides immediately after this step. You can opt out with `--skip-fine-reconciliation`, or capture the comparison artefacts via `--fine-comparison-csv` / `--fine-summary-json`.
-   > Add `--build-feature-matrix` (optionally overriding destinations via `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis datasets, and `--run-evenness` to trigger Phases 0–3 automatically. Use `--evenness-wide-csv` to control the working copy (defaults to `outputs/cleaned_wide_latest.csv`) and `--evenness-use-gpu` when hardware is available.
+   > Add `--build-feature-matrix` (optionally overriding destinations via `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis datasets, and `--run-evenness` to trigger Phases 0–3 automatically. Use `--evenness-wide-csv` to control the working copy (defaults to `outputs/cleaned_wide_latest.csv`), `--evenness-light` to skip SHAP/SAGE/knockoffs for quicker laptop runs, and `--evenness-use-gpu` when hardware is available.
 3. **Phase 0 omni-scan (optional but recommended with a beefy machine)**
    ```bash
    cp outputs/cleaned_wide.csv outputs/cleaned_wide_latest.csv
    python -m scripts.evenness.cli phase-zero
    # Optional GPU acceleration for supported learners (LightGBM/CatBoost):
    python -m scripts.evenness.cli phase-zero --gpu
+   # Lightweight laptop run (skips SHAP/SAGE/knockoffs):
+   python -m scripts.evenness.cli phase-zero --light
    ```
    This produces feature coverage ledgers, baseline drivers, knockoff/stability results, and fairness diagnostics under `outputs/evenness/omniscan/`.
    A rotating log is written to `outputs/evenness/omniscan/phase0_run.log`.

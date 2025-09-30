@@ -31,6 +31,9 @@ decision_quarter,True
 decision_year,True
 dpa_name_canonical,True
 dpa_name_raw,True
+fine_amount_human_eur,True
+fine_amount_human_native,True
+fine_currency_human,True
 fine_error,True
 fine_numeric_valid,True
 fine_outlier_flag,True
@@ -44,8 +47,17 @@ ingest_question_count,True
 ingest_warning_count,True
 ingest_warnings,True
 isic_code,True
+isic_codes_all,True
 isic_desc,True
+isic_division_code,True
+isic_division_desc,True
+isic_group_code,True
+isic_group_desc,True
+isic_multi_sector,True
+isic_reference_version,True
 isic_section,True
+isic_section_desc,True
+isic_unparsed_tokens,True
 n_corrective_measures,True
 n_principles_discussed,True
 n_principles_violated,True

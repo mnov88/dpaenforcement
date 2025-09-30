@@ -116,7 +116,11 @@ def _run_evenness_pipeline(effective_wide_csv: Path, args: argparse.Namespace) -
     paths = EvennessPaths(wide_csv=evenness_wide_path)
 
     print("Starting evenness Phase 0 (omni-scan)...")
-    run_omniscan(paths=paths, use_gpu=getattr(args, "evenness_use_gpu", False))
+    run_omniscan(
+        paths=paths,
+        use_gpu=getattr(args, "evenness_use_gpu", False),
+        light=getattr(args, "evenness_light", False),
+    )
 
     print("Starting evenness Phase 1 (matching & twins)...")
     fact_df = build_fact_matrix(evenness_wide_path, discussed_only=getattr(args, "evenness_discussed_only", False))
@@ -447,6 +451,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--run-evenness",
         action="store_true",
         help="Run evenness Phases 0-3 after cleaning",
+    )
+    s7.add_argument(
+        "--evenness-light",
+        action="store_true",
+        help="Use the lightweight Phase 0 configuration (skips SHAP/SAGE/knockoffs)",
     )
     s7.add_argument(
         "--evenness-wide-csv",

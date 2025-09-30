@@ -41,7 +41,7 @@ This document summarises the ingestion, cleaning, and analysis scripts in this r
    python -m scripts.cli qa-summary --wide-csv outputs/cleaned_wide.csv --out-csv outputs/qa_summary.csv
    ```
 6. **One-shot orchestration** – `python -m scripts.cli run-all` performs steps 1–5 using defaults from within the repo.
-   - Extend the workflow with `--build-feature-matrix` (plus optional `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis artefacts, and `--run-evenness` to launch Phases 0–3 in sequence. Control the evenness working copy with `--evenness-wide-csv` (default `outputs/cleaned_wide_latest.csv`) and enable GPU acceleration via `--evenness-use-gpu` when drivers are available.
+   - Extend the workflow with `--build-feature-matrix` (plus optional `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis artefacts, and `--run-evenness` to launch Phases 0–3 in sequence. Control the evenness working copy with `--evenness-wide-csv` (default `outputs/cleaned_wide_latest.csv`), set `--evenness-light` to skip SHAP/SAGE/knockoffs for laptop-friendly Phase 0 runs, and enable GPU acceleration via `--evenness-use-gpu` when drivers are available.
 
 Configuration defaults are in `scripts/config.yaml`; see code comments for optional parameters.
 

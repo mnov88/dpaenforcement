@@ -76,6 +76,7 @@ def test_run_all_triggers_optional_analysis(monkeypatch, tmp_files):
         "--feature-matrix-metadata",
         str(tmp_files["feature_meta"]),
         "--run-evenness",
+        "--evenness-light",
         "--evenness-wide-csv",
         str(tmp_files["evenness_wide"]),
         "--evenness-phase-three-outcome",

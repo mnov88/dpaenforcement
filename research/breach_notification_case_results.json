@@ -1,0 +1,108 @@
+{
+  "descriptives": {
+    "counts": {
+      "breach_cases": 208,
+      "art33_known_required": 177,
+      "art33_required_yes": 176,
+      "art33_required_no": 1
+    },
+    "required_stats": {
+      "not_notified": {
+        "cases": 38,
+        "fine_positive_rate": 0.868421052631579,
+        "median_fine_eur": 6625.0,
+        "mean_fine_log1p": 8.116138921052633,
+        "mean_corrective_count": 1.8421052631578947,
+        "severity_index_mean": 1.8421052631578947,
+        "initiation_by_notification_rate": 0.02631578947368421
+      },
+      "notified": {
+        "cases": 128,
+        "fine_positive_rate": 0.796875,
+        "median_fine_eur": 19794.42,
+        "mean_fine_log1p": 8.413354703125,
+        "mean_corrective_count": 1.5,
+        "severity_index_mean": 1.7421875,
+        "initiation_by_notification_rate": 0.8125
+      }
+    },
+    "timing_stats": {
+      "late": {
+        "cases": 20,
+        "fine_positive_rate": 0.9,
+        "median_fine_eur": 47543.25,
+        "mean_fine_log1p": 9.763985700000003,
+        "mean_corrective_count": 1.7,
+        "severity_index_mean": 1.9
+      },
+      "timely": {
+        "cases": 60,
+        "fine_positive_rate": 0.8,
+        "median_fine_eur": 20200.0,
+        "mean_fine_log1p": 8.528385783333334,
+        "mean_corrective_count": 1.2833333333333334,
+        "severity_index_mean": 1.7166666666666666
+      }
+    }
+  },
+  "ipw_fine_log1p": {
+    "ate": 0.7109883776973742,
+    "bootstrap_mean": 0.7287549486725614,
+    "ci_lower": -1.9088564074071406,
+    "ci_upper": 3.507541363372337,
+    "n_obs": 166
+  },
+  "feature_columns": [
+    "q21_breach_types_TECHNICAL_FAILURE",
+    "q21_breach_types_ORGANIZATIONAL_FAILURE",
+    "q21_breach_types_CYBER_ATTACK",
+    "q21_breach_types_HUMAN_ERROR",
+    "q21_breach_types_SYSTEM_MALFUNCTION",
+    "q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY",
+    "q25_sensitive_data_ARTICLE_10_CRIMINAL",
+    "q25_sensitive_data_NEITHER",
+    "n_principles_discussed",
+    "n_principles_violated",
+    "country_code_ES",
+    "country_code_FI",
+    "country_code_FR",
+    "country_code_GB",
+    "country_code_GR",
+    "country_code_HU",
+    "country_code_IE",
+    "country_code_IS",
+    "country_code_IT",
+    "country_code_NL",
+    "country_code_NO",
+    "country_code_PL",
+    "country_code_RO",
+    "country_code_SE",
+    "country_code_nan",
+    "isic_section_desc_Administrative and support service activities",
+    "isic_section_desc_Arts, entertainment and recreation",
+    "isic_section_desc_Construction",
+    "isic_section_desc_Education",
+    "isic_section_desc_Electricity, gas, steam and air conditioning supply",
+    "isic_section_desc_Financial and insurance activities",
+    "isic_section_desc_Human health and social work activities",
+    "isic_section_desc_Information and communication",
+    "isic_section_desc_Manufacturing",
+    "isic_section_desc_Other service activities",
+    "isic_section_desc_Professional, scientific and technical activities",
+    "isic_section_desc_Public administration and defence; compulsory social security",
+    "isic_section_desc_Real estate activities",
+    "isic_section_desc_Transportation and storage",
+    "isic_section_desc_Water supply; sewerage, waste management and remediation activities",
+    "isic_section_desc_Wholesale and retail trade; repair of motor vehicles and motorcycles",
+    "isic_section_desc_nan",
+    "decision_year_cat_2019",
+    "decision_year_cat_2020",
+    "decision_year_cat_2021",
+    "decision_year_cat_2022",
+    "decision_year_cat_2023",
+    "decision_year_cat_2024",
+    "decision_year_cat_2025",
+    "decision_year_cat_Missing",
+    "decision_year_cat_nan"
+  ]
+}

@@ -1,8 +1,10 @@
 import argparse
 import json
+import shutil
 import sys
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+from typing import Optional, Tuple
 
 from scripts.parser.ingest import segment_records, parse_record
 from scripts.parser.enums import build_enum_whitelist
@@ -15,6 +17,8 @@ from scripts.export.arrow_export import ArrowExporter
 from scripts.export.graph_export import GraphExporter
 from scripts.export.stats_export import StatisticalPackageExporter
 from scripts.export.ml_export import MLFeatureExporter
+from scripts.analysis import fine_reconciliation
+from scripts.analysis import build_feature_matrix as feature_matrix_module
 
 
 DEFAULT_PROMPT = Path("analyzed-decisions/data-extraction-prompt-sent-to-ai.md")
@@ -25,6 +29,110 @@ DEFAULT_VALIDATION_JSON = Path("outputs/validation_report.json")
 DEFAULT_LONG_DIR = Path("outputs/long_tables")
 DEFAULT_CONSISTENCY_JSON = Path("outputs/consistency_report.json")
 DEFAULT_QA_SUMMARY_CSV = Path("outputs/qa_summary.csv")
+DEFAULT_HUMAN_FINES_CSV = Path("raw-data/all_gdpr_fines_raw_human_annotations.csv")
+DEFAULT_FEATURE_MATRIX_PARQUET = Path("outputs/analysis/feature_matrix.parquet")
+DEFAULT_FEATURE_MATRIX_METADATA = Path("outputs/analysis/feature_matrix_metadata.json")
+
+
+def run_fine_reconciliation(
+    *,
+    ai_csv: Path,
+    human_csv: Path,
+    out_csv: Path,
+    tolerance: float,
+    comparison_csv: Optional[Path] = None,
+    summary_json: Optional[Path] = None,
+) -> Tuple[fine_reconciliation.ComparisonSummary, int]:
+    rows = fine_reconciliation.load_ai_dataset(ai_csv)
+    ai_fines = fine_reconciliation.load_ai_fines(rows)
+    human_fines = fine_reconciliation.load_human_fines(human_csv)
+    comparisons = fine_reconciliation.compare_fines(
+        ai_fines, human_fines, tolerance=tolerance
+    )
+    summary = fine_reconciliation.summarise_comparisons(comparisons)
+
+    updated_rows, overrides = fine_reconciliation.apply_human_overrides(
+        rows, human_fines
+    )
+    fine_reconciliation.write_csv(updated_rows, out_csv)
+
+    if comparison_csv:
+        fine_reconciliation.write_comparison_csv(comparisons, comparison_csv)
+    if summary_json:
+        summary_json.write_text(
+            json.dumps(summary.to_dict(), indent=2, sort_keys=True),
+            encoding="utf-8",
+        )
+
+    return summary, len(overrides)
+
+
+def cmd_reconcile_fines(args: argparse.Namespace) -> int:
+    summary, overrides = run_fine_reconciliation(
+        ai_csv=Path(args.wide_csv),
+        human_csv=Path(args.human_csv),
+        out_csv=Path(args.out_csv),
+        tolerance=args.tolerance,
+        comparison_csv=Path(args.comparison_csv) if args.comparison_csv else None,
+        summary_json=Path(args.summary_json) if args.summary_json else None,
+    )
+
+    print(
+        json.dumps(
+            {
+                "updated_records": overrides,
+                "summary": summary.to_dict(),
+            },
+            indent=2,
+            sort_keys=True,
+        )
+    )
+    return 0
+
+
+def _run_feature_matrix(effective_wide_csv: Path, args: argparse.Namespace) -> None:
+    feature_out = Path(args.feature_matrix_parquet) if args.feature_matrix_parquet else DEFAULT_FEATURE_MATRIX_PARQUET
+    metadata_out = Path(args.feature_matrix_metadata) if args.feature_matrix_metadata else DEFAULT_FEATURE_MATRIX_METADATA
+    artifacts = feature_matrix_module.build_feature_matrix(effective_wide_csv)
+    feature_matrix_module._save_outputs(artifacts, feature_out, metadata_out)
+    print(f"Wrote feature matrix to {feature_out}\nWrote feature metadata to {metadata_out}")
+
+
+def _run_evenness_pipeline(effective_wide_csv: Path, args: argparse.Namespace) -> None:
+    from scripts.evenness.config import EvennessPaths
+    from scripts.evenness.data import build_fact_matrix
+    from scripts.evenness.omniscan import run_omniscan
+    from scripts.evenness.foundation import run_phase_one
+    from scripts.evenness.uniformity import run_phase_two
+    from scripts.evenness.phase_three import run_phase_three
+
+    default_paths = EvennessPaths()
+    evenness_wide_path = Path(args.evenness_wide_csv) if args.evenness_wide_csv else default_paths.wide_csv
+    evenness_wide_path.parent.mkdir(parents=True, exist_ok=True)
+    if evenness_wide_path.resolve() != effective_wide_csv.resolve():
+        shutil.copy2(effective_wide_csv, evenness_wide_path)
+        print(f"Copied cleaned wide CSV to {evenness_wide_path} for evenness analyses")
+
+    paths = EvennessPaths(wide_csv=evenness_wide_path)
+
+    print("Starting evenness Phase 0 (omni-scan)...")
+    run_omniscan(paths=paths, use_gpu=getattr(args, "evenness_use_gpu", False))
+
+    print("Starting evenness Phase 1 (matching & twins)...")
+    fact_df = build_fact_matrix(evenness_wide_path, discussed_only=getattr(args, "evenness_discussed_only", False))
+    run_phase_one(fact_df, paths=paths)
+
+    print("Starting evenness Phase 2 (uniformity tests)...")
+    run_phase_two(paths=paths)
+
+    print("Starting evenness Phase 3 (drivers & policy)...")
+    run_phase_three(
+        paths=paths,
+        outcome=getattr(args, "evenness_phase_three_outcome", "fine_log1p"),
+        randomization_permutations=getattr(args, "evenness_phase_three_permutations", 10),
+    )
+
+    print("Completed evenness Phases 0-3")
 
 
 def cmd_build_enum_whitelist(args: argparse.Namespace) -> int:
@@ -103,14 +211,55 @@ def cmd_run_all(args: argparse.Namespace) -> int:
     clean_csv_to_wide(input_csv, out_csv, validation_json)
     print(f"Wrote cleaned wide CSV to {out_csv}\nWrote validation report to {validation_json}")
 
+    effective_wide_csv = out_csv
+    if not getattr(args, "skip_fine_reconciliation", False):
+        human_csv = (
+            Path(args.human_fines_csv)
+            if args.human_fines_csv
+            else DEFAULT_HUMAN_FINES_CSV
+        )
+        reconciled_out_csv = (
+            Path(args.reconciled_out_csv)
+            if args.reconciled_out_csv
+            else out_csv
+        )
+        comparison_csv = (
+            Path(args.fine_comparison_csv)
+            if args.fine_comparison_csv
+            else None
+        )
+        summary_json = (
+            Path(args.fine_summary_json)
+            if args.fine_summary_json
+            else None
+        )
+        tolerance = getattr(args, "fine_tolerance", 1.0)
+        summary, overrides = run_fine_reconciliation(
+            ai_csv=out_csv,
+            human_csv=human_csv,
+            out_csv=reconciled_out_csv,
+            tolerance=tolerance,
+            comparison_csv=comparison_csv,
+            summary_json=summary_json,
+        )
+        effective_wide_csv = reconciled_out_csv
+        print(
+            "Applied human fine overrides to "
+            f"{effective_wide_csv} (updated {overrides} records)"
+        )
+        if summary_json is None and comparison_csv is None:
+            print(json.dumps(summary.to_dict(), indent=2, sort_keys=True))
+
     long_dir = Path(args.long_dir) if args.long_dir else DEFAULT_LONG_DIR
     if args.long_input_csv:
         long_input_csv = Path(args.long_input_csv)
     elif args.long_input_format == "raw":
         long_input_csv = input_csv
     else:
-        long_input_csv = out_csv
-    long_input_format = args.long_input_format or ("wide" if long_input_csv == out_csv else "auto")
+        long_input_csv = effective_wide_csv
+    long_input_format = args.long_input_format or (
+        "wide" if long_input_csv == effective_wide_csv else "auto"
+    )
     emitter = LongEmitter(long_dir)
     emitter.emit_from_csv(long_input_csv, input_format=long_input_format)
     print(f"Wrote long tables under {long_dir}")
@@ -121,14 +270,22 @@ def cmd_run_all(args: argparse.Namespace) -> int:
     elif args.consistency_input_format == "raw":
         consistency_input_csv = input_csv
     else:
-        consistency_input_csv = out_csv
-    consistency_input_format = args.consistency_input_format or ("wide" if consistency_input_csv == out_csv else "auto")
+        consistency_input_csv = effective_wide_csv
+    consistency_input_format = args.consistency_input_format or (
+        "wide" if consistency_input_csv == effective_wide_csv else "auto"
+    )
     run_consistency_checks(consistency_input_csv, consistency_json, input_format=consistency_input_format)
     print(f"Wrote consistency report to {consistency_json}")
 
     qa_csv = Path(args.qa_summary_csv) if args.qa_summary_csv else DEFAULT_QA_SUMMARY_CSV
-    create_qa_summary(out_csv, qa_csv, top_k=5)
+    create_qa_summary(effective_wide_csv, qa_csv, top_k=5)
     print(f"Wrote QA summary to {qa_csv}")
+
+    if getattr(args, "build_feature_matrix", False):
+        _run_feature_matrix(effective_wide_csv, args)
+
+    if getattr(args, "run_evenness", False):
+        _run_evenness_pipeline(effective_wide_csv, args)
 
     return 0
 
@@ -246,7 +403,108 @@ def build_parser() -> argparse.ArgumentParser:
     s7.add_argument("--consistency-input-csv")
     s7.add_argument("--consistency-input-format", choices=["auto", "raw", "wide"])
     s7.add_argument("--qa-summary-csv")
+    s7.add_argument(
+        "--skip-fine-reconciliation",
+        action="store_true",
+        help="Disable human fine overrides during run-all",
+    )
+    s7.add_argument(
+        "--human-fines-csv",
+        help="Override path to human-annotated fines CSV",
+    )
+    s7.add_argument(
+        "--reconciled-out-csv",
+        help="Output path for human-reconciled wide CSV (defaults to --out-csv)",
+    )
+    s7.add_argument(
+        "--fine-comparison-csv",
+        help="Optional path for detailed AI vs human fine comparison",
+    )
+    s7.add_argument(
+        "--fine-summary-json",
+        help="Optional path for reconciliation summary JSON",
+    )
+    s7.add_argument(
+        "--fine-tolerance",
+        type=float,
+        default=1.0,
+        help="Treat EUR differences below this threshold as matches when summarising",
+    )
+    s7.add_argument(
+        "--build-feature-matrix",
+        action="store_true",
+        help="Materialise the analysis feature matrix after cleaning",
+    )
+    s7.add_argument(
+        "--feature-matrix-parquet",
+        help="Override path for the feature matrix parquet output",
+    )
+    s7.add_argument(
+        "--feature-matrix-metadata",
+        help="Override path for the feature matrix metadata JSON",
+    )
+    s7.add_argument(
+        "--run-evenness",
+        action="store_true",
+        help="Run evenness Phases 0-3 after cleaning",
+    )
+    s7.add_argument(
+        "--evenness-wide-csv",
+        help="Path to write/read the wide CSV for evenness runs (default: outputs/cleaned_wide_latest.csv)",
+    )
+    s7.add_argument(
+        "--evenness-discussed-only",
+        action="store_true",
+        help="Limit fact matrix to discussed-only responses when running evenness phases",
+    )
+    s7.add_argument(
+        "--evenness-use-gpu",
+        action="store_true",
+        help="Enable GPU acceleration for Phase 0 tree models (if available)",
+    )
+    s7.add_argument(
+        "--evenness-phase-three-outcome",
+        default="fine_log1p",
+        help="Outcome column to model during Phase 3",
+    )
+    s7.add_argument(
+        "--evenness-phase-three-permutations",
+        type=int,
+        default=10,
+        help="Permutation count for Phase 3 randomization inference",
+    )
     s7.set_defaults(func=cmd_run_all)
+
+    s7b = sub.add_parser(
+        "reconcile-fines",
+        help="Override AI fine amounts with human annotations and emit comparison artefacts",
+    )
+    s7b.add_argument("--wide-csv", default=DEFAULT_WIDE_CSV, help="Path to AI wide CSV")
+    s7b.add_argument(
+        "--human-csv",
+        default="raw-data/all_gdpr_fines_raw_human_annotations.csv",
+        help="Path to human annotated fines CSV",
+    )
+    s7b.add_argument(
+        "--out-csv",
+        default="outputs/cleaned_wide_with_human_overrides.csv",
+        help="Destination for reconciled wide CSV",
+    )
+    s7b.add_argument(
+        "--comparison-csv",
+        help="Optional path to write detailed comparison table",
+    )
+    s7b.add_argument(
+        "--summary-json",
+        help="Optional path to write comparison summary JSON",
+    )
+    s7b.add_argument(
+        "--tolerance",
+        type=float,
+        default=1.0,
+        help="Treat differences below this EUR threshold as matches",
+    )
+    s7b.set_defaults(func=cmd_reconcile_fines)
 
     # Export commands
     s8 = sub.add_parser("export-parquet", help="Export data to Parquet format with partitioning")

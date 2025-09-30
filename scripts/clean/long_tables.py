@@ -9,6 +9,25 @@ from scripts.clean.enum_validate import EnumWhitelist
 from scripts.clean.schema_echo import strip_schema_echo
 from scripts.parser.validators import dedupe_preserve_order
 from scripts.parser.ingest import parse_record
+from scripts.clean.isic_map import IsicIndex, IsicEntry
+
+ISIC_ASSIGNMENT_FIELDS = [
+    "decision_id",
+    "assignment_rank",
+    "is_primary",
+    "parse_status",
+    "isic_code",
+    "isic_level",
+    "description",
+    "section",
+    "section_description",
+    "division",
+    "division_description",
+    "group",
+    "group_description",
+    "reference_version",
+    "source_token",
+]
 
 LONG_TABLE_QUESTIONS = {
     "Q10",
@@ -52,6 +71,8 @@ class LongEmitter:
         self.base_dir.mkdir(parents=True, exist_ok=True)
         wl_path = Path("resources/enum_whitelist.json")
         self.whitelist = EnumWhitelist.load(wl_path) if wl_path.exists() else EnumWhitelist({})
+        isic_path = Path("resources/ISIC_Rev_4_english_structure.txt")
+        self.isic_index = IsicIndex.load_from_file(isic_path) if isic_path.exists() else None
 
     def _emit(self, filename: str, rows: List[Dict[str, str]], fieldnames: List[str]) -> None:
         path = self.base_dir / filename
@@ -97,6 +118,7 @@ class LongEmitter:
                 "aggravating_factors.csv": [],
                 "mitigating_factors.csv": [],
             }
+            isic_rows: List[Dict[str, str]] = []
 
             for row in r:
                 decision_id = row.get("decision_id") or row.get("ID")
@@ -166,5 +188,152 @@ class LongEmitter:
                 add_multiselect("Q41", "aggravating_factors.csv")
                 add_multiselect("Q42", "mitigating_factors.csv")
 
+                if self.isic_index is not None:
+                    isic_rows.extend(
+                        self._collect_isic_assignments(
+                            fmt=fmt,
+                            decision_id=decision_id or "",
+                            row=row,
+                            answers=answers,
+                        )
+                    )
+
             for filename, rows in tables.items():
-                self._emit(filename, rows, ["decision_id", "option", "status", "token_status"]) 
+                self._emit(filename, rows, ["decision_id", "option", "status", "token_status"])
+            if self.isic_index is not None:
+                self._emit("isic_assignments.csv", isic_rows, ISIC_ASSIGNMENT_FIELDS)
+
+    def _collect_isic_assignments(
+        self,
+        fmt: str,
+        decision_id: str,
+        row: Dict[str, str],
+        answers: Dict[str, str],
+    ) -> List[Dict[str, str]]:
+        reference_version = ""
+        entries: List[IsicEntry] = []
+        invalid_tokens: List[str] = []
+        if fmt == "wide":
+            codes_field = (row.get("isic_codes_all", "") or "").split(";")
+            codes = [code.strip() for code in codes_field if code.strip()]
+            if not codes:
+                primary = (row.get("isic_code", "") or "").strip()
+                if primary:
+                    codes = [primary]
+            for code in codes:
+                entry, ok = self.isic_index.lookup(code)
+                if ok and entry is not None:
+                    entries.append(entry)
+                else:
+                    invalid_tokens.append(code)
+            reference_version = (row.get("isic_reference_version") or "")
+            if not reference_version:
+                reference_version = self.isic_index.reference_version or ""
+        else:
+            raw_val = (answers.get("Q12", "") or "").strip()
+            raw_clean, _ = strip_schema_echo(raw_val)
+            entries, invalid_tokens = self.isic_index.parse_codes(raw_clean)
+            reference_version = self.isic_index.reference_version or ""
+
+        rows: List[Dict[str, str]] = []
+        dedup_entries: List[IsicEntry] = []
+        seen_codes: set[str] = set()
+        for entry in entries:
+            code = entry.code or ""
+            if code and code not in seen_codes:
+                dedup_entries.append(entry)
+                seen_codes.add(code)
+        entries = dedup_entries
+        seen_invalid: set[str] = set()
+        dedup_invalid: List[str] = []
+        for token in invalid_tokens:
+            token = (token or "").strip()
+            if not token:
+                continue
+            if token in seen_invalid:
+                continue
+            seen_invalid.add(token)
+            dedup_invalid.append(token)
+        invalid_tokens = dedup_invalid
+        for idx, entry in enumerate(entries):
+            rows.append(
+                self._serialize_isic_entry(
+                    decision_id=decision_id,
+                    entry=entry,
+                    rank=idx,
+                    reference_version=reference_version,
+                )
+            )
+        for token in invalid_tokens:
+            rows.append(
+                self._serialize_unrecognized_isic(
+                    decision_id=decision_id,
+                    token=token,
+                    reference_version=reference_version,
+                )
+            )
+        return rows
+
+    @staticmethod
+    def _isic_level(code: str) -> str:
+        if not code:
+            return ""
+        if code.isalpha() and len(code) == 1:
+            return "SECTION"
+        if code.isdigit():
+            if len(code) == 2:
+                return "DIVISION"
+            if len(code) == 3:
+                return "GROUP"
+            return "CLASS"
+        return ""
+
+    def _serialize_isic_entry(
+        self,
+        decision_id: str,
+        entry: IsicEntry,
+        rank: int,
+        reference_version: str,
+    ) -> Dict[str, str]:
+        level = self._isic_level(entry.code)
+        return {
+            "decision_id": decision_id,
+            "assignment_rank": str(rank + 1),
+            "is_primary": "1" if rank == 0 else "0",
+            "parse_status": "MATCHED",
+            "isic_code": entry.code,
+            "isic_level": level,
+            "description": entry.description,
+            "section": entry.section or "",
+            "section_description": entry.section_description or "",
+            "division": entry.division or "",
+            "division_description": entry.division_description or "",
+            "group": entry.group or "",
+            "group_description": entry.group_description or "",
+            "reference_version": reference_version,
+            "source_token": entry.code,
+        }
+
+    @staticmethod
+    def _serialize_unrecognized_isic(
+        decision_id: str,
+        token: str,
+        reference_version: str,
+    ) -> Dict[str, str]:
+        return {
+            "decision_id": decision_id,
+            "assignment_rank": "",
+            "is_primary": "0",
+            "parse_status": "UNRECOGNIZED",
+            "isic_code": token,
+            "isic_level": "UNKNOWN",
+            "description": "",
+            "section": "",
+            "section_description": "",
+            "division": "",
+            "division_description": "",
+            "group": "",
+            "group_description": "",
+            "reference_version": reference_version,
+            "source_token": token,
+        }

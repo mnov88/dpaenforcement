@@ -27,6 +27,15 @@ BASE_COLUMNS: tuple[str, ...] = (
     "turnover_log1p",
     "turnover_status",
     "isic_section",
+    "isic_section_desc",
+    "isic_code",
+    "isic_desc",
+    "isic_division_code",
+    "isic_division_desc",
+    "isic_group_code",
+    "isic_group_desc",
+    "isic_multi_sector",
+    "isic_codes_all",
     "n_principles_discussed",
     "n_principles_violated",
     "n_corrective_measures",
@@ -171,6 +180,58 @@ def _derive_power_features(matrix: pd.DataFrame) -> None:
     ).astype(int)
 
 
+def _derive_isic_features(
+    matrix: pd.DataFrame,
+    column_groups: dict[str, list[str]],
+    division_threshold: int = 5,
+) -> None:
+    section_series = matrix.get("isic_section")
+    section_columns: list[str] = []
+    if section_series is not None:
+        normalized_sections = (
+            section_series.fillna("")
+            .astype(str)
+            .str.strip()
+            .str.upper()
+        )
+        for letter in [chr(code) for code in range(ord("A"), ord("U") + 1)]:
+            col_name = f"ISIC_SECTION_{letter}"
+            matrix[col_name] = (normalized_sections == letter).astype(int)
+            section_columns.append(col_name)
+        matrix["ISIC_SECTION_MISSING"] = (normalized_sections == "").astype(int)
+        section_columns.append("ISIC_SECTION_MISSING")
+        column_groups["isic_sections"] = section_columns
+
+    if "isic_multi_sector" in matrix.columns:
+        matrix["isic_multi_sector"] = (
+            pd.to_numeric(matrix["isic_multi_sector"], errors="coerce")
+            .fillna(0)
+            .astype(int)
+        )
+
+    division_series = matrix.get("isic_division_code")
+    division_columns: list[str] = []
+    if division_series is not None:
+        normalized_divisions = (
+            division_series.fillna("")
+            .astype(str)
+            .str.strip()
+        )
+        freq = (
+            normalized_divisions[normalized_divisions != ""]
+            .value_counts()
+            .to_dict()
+        )
+        for code, count in sorted(freq.items()):
+            if count < division_threshold:
+                continue
+            col_name = f"ISIC_DIVISION_{code}"
+            matrix[col_name] = (normalized_divisions == code).astype(int)
+            division_columns.append(col_name)
+        if division_columns:
+            column_groups["isic_divisions"] = division_columns
+
+
 def _pool_case_initiation(matrix: pd.DataFrame, column_groups: dict[str, list[str]], threshold: int = 10) -> None:
     columns = column_groups.get("q15_case_initiation")
     if not columns:
@@ -215,6 +276,7 @@ def build_feature_matrix(wide_csv: Path) -> FeatureMatrixArtifacts:
 
     matrix = df.loc[:, ordered_columns].copy()
     _convert_indicator_columns(matrix, column_groups)
+    _derive_isic_features(matrix, column_groups)
     _derive_notification_flags(matrix)
     _derive_power_features(matrix)
     _pool_case_initiation(matrix, column_groups)

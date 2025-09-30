@@ -1,8 +1,11 @@
 import csv
 import json
+import math
 import shutil
 import unittest
 from pathlib import Path
+
+import pandas as pd
 
 from scripts.parser.ingest import segment_records, parse_record
 from scripts.clean.typing_status import (
@@ -17,6 +20,7 @@ from scripts.clean.isic_map import IsicIndex
 from scripts.clean.consistency import run_consistency_checks
 from scripts.clean.wide_output import clean_csv_to_wide
 from scripts.clean.long_tables import LongEmitter
+from scripts.analysis.build_feature_matrix import build_feature_matrix
 
 
 class TestParserAndSegmentation(unittest.TestCase):
@@ -179,6 +183,22 @@ class TestISICAndConsistency(unittest.TestCase):
         self.assertTrue(ok)
         self.assertIsNotNone(entry)
         self.assertEqual(entry.section, "J")
+        self.assertEqual(entry.section_description, "Information and communication")
+        self.assertEqual(entry.division, "62")
+        self.assertEqual(entry.division_description, "Computer programming, consultancy")
+        self.assertEqual(entry.group, None)
+        self.assertEqual(entry.group_description, None)
+        division_entry, ok_div = idx.lookup("62")
+        self.assertTrue(ok_div)
+        self.assertEqual(division_entry.code, "62")
+        self.assertEqual(division_entry.division, "62")
+        self.assertEqual(division_entry.group, None)
+        parsed, invalid = idx.parse_codes("J;62;6209;9999")
+        self.assertEqual([p.code for p in parsed], ["J", "62", "6209"])
+        self.assertEqual(invalid, ["9999"])
+        combo_parsed, combo_invalid = idx.parse_codes("J62")
+        self.assertEqual([p.code for p in combo_parsed], ["62"])
+        self.assertFalse(combo_invalid)
 
     def test_consistency_checks(self):
         tmpdir = Path(".tmp_test_consistency")
@@ -265,6 +285,14 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         self.assertIn("Q25", flagged)
         self.assertIn("Q28", flagged)
         self.assertIn("Q30", flagged)
+        self.assertEqual(row["isic_code"], "6209")
+        self.assertEqual(row["isic_section"], "J")
+        self.assertEqual(row["isic_division_code"], "62")
+        self.assertEqual(row["isic_group_code"], "620")
+        self.assertEqual(row["isic_codes_all"], "6209")
+        self.assertEqual(row["isic_multi_sector"], "0")
+        self.assertEqual(row["isic_unparsed_tokens"], "")
+        self.assertTrue(row["isic_reference_version"])
 
     def test_long_tables_emit_clean_tokens(self):
         raw_csv = self.tmpdir / "raw.csv"
@@ -272,6 +300,7 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
             {
                 "Q1": "ISO_3166-1_ALPHA-2: FR",
                 "Q10": "ENUM:SME, ENUM:PUBLIC_SECTOR_BODY",
+                "Q12": "J, 62, 63",
                 "Q21": "ENUM:SECURITY_INCIDENT, ENUM:OTHER",
                 "Q25": "ENUM:ARTICLE_9_SPECIAL_CATEGORY",
                 "Q28": "ENUM:STAFF_TRAINING, ENUM:LEGAL_ADVICE",
@@ -300,6 +329,10 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         mitig_rows = list(csv.DictReader((out_dir_raw / "mitigating_actions.csv").open(encoding="utf-8")))
         self.assertTrue(any(r["option"] == "STAFF_TRAINING" for r in mitig_rows))
         self.assertTrue(any(r["option"] == "LEGAL_ADVICE" for r in mitig_rows))
+        isic_rows_raw = list(csv.DictReader((out_dir_raw / "isic_assignments.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["isic_code"] == "62" for r in isic_rows_raw))
+        self.assertTrue(any(r["isic_code"] == "63" for r in isic_rows_raw))
+        self.assertTrue(any(r["parse_status"] == "MATCHED" for r in isic_rows_raw))
 
         wide_csv = self.tmpdir / "wide.csv"
         report = self.tmpdir / "report.json"
@@ -317,6 +350,101 @@ class TestSchemaEchoNormalisation(unittest.TestCase):
         self.assertTrue(any(r["option"] == "ACCOUNTABILITY" for r in rights_rows))
         li_rows = list(csv.DictReader((out_dir_wide / "li_test_outcome.csv").open(encoding="utf-8")))
         self.assertTrue(any(r["option"] == "APPROVED" for r in li_rows))
+        isic_rows_wide = list(csv.DictReader((out_dir_wide / "isic_assignments.csv").open(encoding="utf-8")))
+        self.assertTrue(any(r["isic_code"] == "62" for r in isic_rows_wide))
+        self.assertTrue(any(r["isic_code"] == "63" for r in isic_rows_wide))
+        self.assertTrue(any(r["is_primary"] == "1" for r in isic_rows_wide))
+
+    def test_feature_matrix_derives_isic_indicators(self):
+        records: list[dict[str, object]] = []
+        for idx in range(5):
+            records.append(
+                {
+                    "decision_id": f"J-{idx}",
+                    "country_code": "FR",
+                    "country_group": "EU",
+                    "dpa_name_canonical": "CNIL",
+                    "decision_year": 2023,
+                    "decision_quarter": "Q1",
+                    "breach_case": 1,
+                    "severity_measures_present": 1,
+                    "remedy_only_case": 0,
+                    "fine_eur": 1000.0,
+                    "fine_log1p": math.log1p(1000.0),
+                    "fine_status": "DISCUSSED",
+                    "fine_to_turnover_ratio": 0.1,
+                    "turnover_eur": 10000.0,
+                    "turnover_log1p": math.log1p(10000.0),
+                    "turnover_status": "DISCUSSED",
+                    "isic_section": "J",
+                    "isic_section_desc": "Information and communication",
+                    "isic_code": "6209",
+                    "isic_desc": "Other information technology and computer service activities",
+                    "isic_division_code": "62",
+                    "isic_division_desc": "Computer programming, consultancy and related activities",
+                    "isic_group_code": "620",
+                    "isic_group_desc": "Computer programming, consultancy and related activities",
+                    "isic_multi_sector": 0,
+                    "isic_codes_all": "6209",
+                    "n_principles_discussed": 1,
+                    "n_principles_violated": 1,
+                    "n_corrective_measures": 1,
+                }
+            )
+        for idx in range(5):
+            records.append(
+                {
+                    "decision_id": f"G-{idx}",
+                    "country_code": "DE",
+                    "country_group": "EU",
+                    "dpa_name_canonical": "BfDI",
+                    "decision_year": 2022,
+                    "decision_quarter": "Q2",
+                    "breach_case": 1,
+                    "severity_measures_present": 0,
+                    "remedy_only_case": 0,
+                    "fine_eur": 500.0,
+                    "fine_log1p": math.log1p(500.0),
+                    "fine_status": "DISCUSSED",
+                    "fine_to_turnover_ratio": 0.05,
+                    "turnover_eur": 8000.0,
+                    "turnover_log1p": math.log1p(8000.0),
+                    "turnover_status": "DISCUSSED",
+                    "isic_section": "G",
+                    "isic_section_desc": "Wholesale and retail trade; repair of motor vehicles and motorcycles",
+                    "isic_code": "4711",
+                    "isic_desc": "Retail sale in non-specialized stores with food, beverages or tobacco predominating",
+                    "isic_division_code": "47",
+                    "isic_division_desc": "Retail trade, except of motor vehicles and motorcycles",
+                    "isic_group_code": "471",
+                    "isic_group_desc": "Retail sale in non-specialized stores",
+                    "isic_multi_sector": 0,
+                    "isic_codes_all": "4711",
+                    "n_principles_discussed": 0,
+                    "n_principles_violated": 0,
+                    "n_corrective_measures": 0,
+                }
+            )
+
+        df = pd.DataFrame(records)
+        wide_path = self.tmpdir / "wide_isic.csv"
+        df.to_csv(wide_path, index=False)
+        artifacts = build_feature_matrix(wide_path)
+        matrix = artifacts.dataframe
+        self.assertIn("ISIC_SECTION_J", matrix.columns)
+        self.assertIn("ISIC_SECTION_G", matrix.columns)
+        self.assertIn("ISIC_SECTION_MISSING", matrix.columns)
+        self.assertIn("ISIC_DIVISION_62", matrix.columns)
+        self.assertIn("ISIC_DIVISION_47", matrix.columns)
+        j_mask = matrix["decision_id"].str.startswith("J-")
+        g_mask = matrix["decision_id"].str.startswith("G-")
+        self.assertTrue(bool((matrix.loc[j_mask, "ISIC_SECTION_J"] == 1).all()))
+        self.assertTrue(bool((matrix.loc[g_mask, "ISIC_SECTION_G"] == 1).all()))
+        self.assertTrue(bool((matrix.loc[:, "isic_multi_sector"] == 0).all()))
+        sections_group = artifacts.column_groups.get("isic_sections", [])
+        self.assertIn("ISIC_SECTION_J", sections_group)
+        divisions_group = artifacts.column_groups.get("isic_divisions", [])
+        self.assertIn("ISIC_DIVISION_62", divisions_group)
 
 
 if __name__ == "__main__":

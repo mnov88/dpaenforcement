@@ -680,6 +680,10 @@ def run_phase_one(df: pd.DataFrame, paths: EvennessPaths | None = None) -> Phase
     harmonised, country_log = _harmonise_country(df["country_code"])
     df = df.copy()
     df["country_code"] = harmonised
+    if "isic_section" in df.columns:
+        df["isic_section"] = df["isic_section"].fillna("MISSING").replace({"": "MISSING"}).astype("string")
+    if "isic_division_code" in df.columns:
+        df["isic_division_code"] = df["isic_division_code"].fillna("MISSING").replace({"": "MISSING"}).astype("string")
 
     df, status_cols = _apply_status_gating(df)
     indicator_cols, numeric_cols = _collect_fact_features(df, status_cols)
@@ -707,6 +711,7 @@ def run_phase_one(df: pd.DataFrame, paths: EvennessPaths | None = None) -> Phase
         "case_origin",
         "decision_year_bucket",
         "isic_section",
+        "isic_division_code",
         "n_principles_discussed_bin",
         "n_principles_violated_bin",
         "n_corrective_measures_bin",

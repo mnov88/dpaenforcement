@@ -30,6 +30,8 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
      --validation-report outputs/validation_report.json
    ```
    > When the merged source shrinks or older analyzed decisions need inspection, you can still point `--input-csv` at `analyzed-decisions/master-analyzed-data-unclean.csv`. By default, prefer the merged file whenever its decision count is larger.
+   > The `run-all` orchestration now applies human-annotated fine overrides immediately after this step. You can opt out with `--skip-fine-reconciliation`, or capture the comparison artefacts via `--fine-comparison-csv` / `--fine-summary-json`.
+   > Add `--build-feature-matrix` (optionally overriding destinations via `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis datasets, and `--run-evenness` to trigger Phases 0–3 automatically. Use `--evenness-wide-csv` to control the working copy (defaults to `outputs/cleaned_wide_latest.csv`) and `--evenness-use-gpu` when hardware is available.
 3. **Phase 0 omni-scan (optional but recommended with a beefy machine)**
    ```bash
    cp outputs/cleaned_wide.csv outputs/cleaned_wide_latest.csv
@@ -45,6 +47,13 @@ This repository organizes raw and AI-annotated GDPR enforcement decisions, provi
      --input-csv outputs/cleaned_wide.csv \
      --out-dir outputs/long_tables
    ```
+   For a dedicated reconciliation pass (outside `run-all`), call:
+   ```bash
+   python -m scripts.cli reconcile-fines \
+     --wide-csv outputs/cleaned_wide.csv \
+     --out-csv outputs/cleaned_wide_with_human_overrides.csv
+   ```
+   Add `--comparison-csv` / `--summary-json` to persist diagnostics for review.
 5. **Breach-notification analysis & reporting**
    - Feature matrix + latent components: `outputs/analysis/feature_matrix.parquet`, `latent_scores.parquet`.
    - Report generator: `python -m scripts.analysis.generate_notification_report` → `outputs/analysis/report/breach_notification_report.html`.

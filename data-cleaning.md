@@ -153,6 +153,9 @@ E. Normalization, mapping, and enrichment
 13) Sector mapping:
 
 - Q12 ISIC Rev.4 code: validate format, attach 2-digit section and high-level sector. If multiple codes appear, keep the first as primary and list others in a secondary field; flag multi-sector.
+- Normalised fields written to the wide table: `isic_section`, `isic_section_desc`, `isic_code`, `isic_desc`, `isic_division_code`, `isic_division_desc`, `isic_group_code`, `isic_group_desc`, `isic_codes_all`, `isic_multi_sector`, `isic_unparsed_tokens`, and `isic_reference_version` (short hash of the lookup file used).
+- Emitted validation flags capture unresolved tokens (`isic_unresolved`), missing section metadata, multi-sector splits, and tokens that failed lookup (`isic_unparsed_tokens`).
+- The long-table emitter now produces `outputs/long_tables/isic_assignments.csv` with one row per recognised (or unrecognised) ISIC token so analysts can plot sector mixes without re-parsing the raw feed.
 
 14) Financial normalization:
 
@@ -189,6 +192,7 @@ F. Granular structuring for tidy and relational use
 - multi_select tables:
 
 - article_5_discussed, article_5_violated, article_6_discussed, legal_basis_relied_on, consent_issues, li_test_outcome (single), breach_types, vulnerable_groups, corrective_powers, corrective_scopes, rights_discussed, rights_violated, access_issues, adm_issues, dpo_issues, transfer_violations, aggravating_factors, mitigating_factors, other_measures.
+- isic_assignments: sector hierarchy rows with `decision_id`, normalised codes (section/division/group/class), match status, and reference version for reproducible joins.
 
 - text_summaries: Q36, Q52, Q67, Q68, with fields raw_text, normalized_text, token_count, language.
 

@@ -202,6 +202,9 @@ def _build_feature_matrix(df: pd.DataFrame) -> tuple[pd.DataFrame, list[FeatureM
     df = _drop_conflicts(df)
     if "country_code" in df:
         df["country_code"] = _harmonise_country(df["country_code"])
+    for col in ("isic_section", "isic_division_code"):
+        if col in df:
+            df[col] = df[col].fillna("MISSING").replace({"": "MISSING"}).astype(str)
 
     status_frames, status_mix = _status_dummy_frames(df)
 

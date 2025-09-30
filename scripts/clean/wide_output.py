@@ -165,7 +165,10 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
             "turnover_eur", "turnover_numeric_valid", "turnover_positive", "turnover_log1p", "turnover_outlier_flag", "turnover_raw", "turnover_status", "turnover_error",
             "fine_to_turnover_ratio",
             # ISIC
-            "isic_code", "isic_desc", "isic_section",
+            "isic_code", "isic_desc", "isic_section", "isic_section_desc",
+            "isic_division_code", "isic_division_desc",
+            "isic_group_code", "isic_group_desc",
+            "isic_codes_all", "isic_multi_sector", "isic_unparsed_tokens", "isic_reference_version",
             # Derived counts and flags
             "n_principles_discussed", "n_principles_violated", "n_corrective_measures",
             "severity_measures_present", "remedy_only_case", "breach_case",
@@ -273,12 +276,62 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 schema_echo_fields.append("Q12")
             isic_desc = ""
             isic_section = ""
+            isic_section_desc = ""
+            isic_division_code = ""
+            isic_division_desc = ""
+            isic_group_code = ""
+            isic_group_desc = ""
+            isic_codes_all = ""
+            isic_multi_sector = 0
+            isic_unparsed_tokens: List[str] = []
             if isic_idx is not None and isic_code:
-                entry, ok = isic_idx.lookup(isic_code)
-                if ok and entry is not None:
-                    isic_code = entry.code
-                    isic_desc = entry.description
-                    isic_section = entry.section or ""
+                entries, invalid_codes = isic_idx.parse_codes(isic_code)
+                if not entries:
+                    fallback_entry, ok = isic_idx.lookup(isic_code)
+                    if ok and fallback_entry is not None:
+                        entries = [fallback_entry]
+                if entries:
+                    primary_entry = entries[0]
+                    isic_code = primary_entry.code
+                    isic_desc = primary_entry.description
+                    isic_section = primary_entry.section or ""
+                    isic_section_desc = primary_entry.section_description or ""
+                    isic_division_code = primary_entry.division or ""
+                    isic_division_desc = primary_entry.division_description or ""
+                    isic_group_code = primary_entry.group or ""
+                    isic_group_desc = primary_entry.group_description or ""
+                    dedup_codes: List[str] = []
+                    seen_codes: set[str] = set()
+                    for entry in entries:
+                        if entry.code and entry.code not in seen_codes:
+                            dedup_codes.append(entry.code)
+                            seen_codes.add(entry.code)
+                    isic_codes_all = ";".join(dedup_codes)
+
+                    section_with_numeric = {
+                        e.section
+                        for e in entries
+                        if e.code and not e.code.isalpha() and e.section
+                    }
+                    branch_ids: set[str] = set()
+                    for entry in entries:
+                        if entry.code and entry.code.isalpha() and entry.section in section_with_numeric:
+                            continue
+                        branch_id = entry.division or entry.code
+                        if branch_id:
+                            branch_ids.add(branch_id)
+                    isic_multi_sector = 1 if len(branch_ids) > 1 else 0
+                    if (primary_entry.section or "") == "":
+                        flags.append("isic_missing_section")
+                if not entries and isic_code:
+                    flags.append("isic_unresolved")
+                if isic_multi_sector:
+                    flags.append("isic_multi_sector")
+                if invalid_codes:
+                    isic_unparsed_tokens = invalid_codes
+                    flags.append("isic_unparsed_tokens")
+            elif isic_code:
+                flags.append("isic_unresolved")
 
             # Text normalization
             q36_norm, q36_tok, _ = normalize_text(answers.get("Q36", "") or "")
@@ -331,6 +384,15 @@ def clean_csv_to_wide(input_csv: Path, out_csv: Path, validation_report: Path) -
                 "isic_code": isic_code,
                 "isic_desc": isic_desc,
                 "isic_section": isic_section,
+                "isic_section_desc": isic_section_desc,
+                "isic_division_code": isic_division_code,
+                "isic_division_desc": isic_division_desc,
+                "isic_group_code": isic_group_code,
+                "isic_group_desc": isic_group_desc,
+                "isic_codes_all": isic_codes_all,
+                "isic_multi_sector": isic_multi_sector,
+                "isic_unparsed_tokens": ";".join(isic_unparsed_tokens),
+                "isic_reference_version": isic_idx.reference_version if isic_idx and isic_idx.reference_version else "",
                 "n_principles_discussed": n_principles_discussed,
                 "n_principles_violated": n_principles_violated,
                 "n_corrective_measures": n_corrective_measures,

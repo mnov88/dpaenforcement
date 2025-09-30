@@ -17,18 +17,31 @@ This document summarises the ingestion, cleaning, and analysis scripts in this r
      --out-csv outputs/cleaned_wide.csv \
      --validation-report outputs/validation_report.json
    ```
-3. **Emit long tables**
+3. **Reconcile fines with human annotations (default in `run-all`)**
+   ```bash
+   python -m scripts.cli reconcile-fines \
+     --wide-csv outputs/cleaned_wide.csv \
+     --out-csv outputs/cleaned_wide_with_human_overrides.csv
+   ```
+   The command writes the reconciled dataset and can emit diagnostics with
+   `--comparison-csv` / `--summary-json`. `run-all` executes this step automatically;
+   add `--skip-fine-reconciliation` to opt out or `--reconciled-out-csv` to control
+   the destination file.
+4. **Emit long tables**
    ```bash
    python -m scripts.cli emit-long \
      --input-csv outputs/cleaned_wide.csv \
      --out-dir outputs/long_tables
    ```
-4. **Run consistency checks / QA summaries**
+   The emitter now writes `isic_assignments.csv`, capturing every parsed sector code (section/division/group/class) plus unmatched tokens alongside the reference version hash for downstream joins.
+   Adjust `--input-csv` if you wrote the reconciled data to a separate path.
+5. **Run consistency checks / QA summaries**
    ```bash
    python -m scripts.cli consistency --input-csv outputs/cleaned_wide.csv --report-json outputs/consistency_report.json
    python -m scripts.cli qa-summary --wide-csv outputs/cleaned_wide.csv --out-csv outputs/qa_summary.csv
    ```
-5. **One-shot orchestration** – `python -m scripts.cli run-all` performs steps 1–4 using defaults from within the repo.
+6. **One-shot orchestration** – `python -m scripts.cli run-all` performs steps 1–5 using defaults from within the repo.
+   - Extend the workflow with `--build-feature-matrix` (plus optional `--feature-matrix-parquet` / `--feature-matrix-metadata`) to materialise analysis artefacts, and `--run-evenness` to launch Phases 0–3 in sequence. Control the evenness working copy with `--evenness-wide-csv` (default `outputs/cleaned_wide_latest.csv`) and enable GPU acceleration via `--evenness-use-gpu` when drivers are available.
 
 Configuration defaults are in `scripts/config.yaml`; see code comments for optional parameters.
 
@@ -67,6 +80,7 @@ If the full run is impractical locally, coordinate with a collaborator to execut
 ## Breach-notification analysis (`scripts/analysis/`)
 
 - `build_feature_matrix.py` – materialises ML-ready features (aggregated counts + latent components + per-token powers). Output: `outputs/analysis/feature_matrix.parquet` and `feature_matrix_metadata.json`.
+  - Expands `isic_section` into `ISIC_SECTION_*` binaries (including a missingness flag) and adds high-frequency `ISIC_DIVISION_*` indicators so the evenness toolkit can consume sector hierarchy information directly.
 - `run_diagnostics.py` – summarises notification flags, power bundles, and coverage statistics (`outputs/analysis/diagnostics/`).
 - `hierarchical_severity_model.py` / `hierarchical_severity_regularized.py` – severity classification models.
 - `joint_notification_sanction.py` / `joint_notification_bootstrap.py` – propensity/AIPW estimation with trimming & bootstrapping.

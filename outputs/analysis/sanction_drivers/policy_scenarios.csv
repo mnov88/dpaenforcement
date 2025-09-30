@@ -1,0 +1,8 @@
+scenario,predicted_prob
+late_notification,0.9927908729967986
+timely_notification,0.9921353954561573
+ex_officio,0.9896509122607735
+breach_notification,0.9927908729967986
+mitigation_heavy,0.9927908729967986
+sensitive_data,0.9927908729967986
+aggravating,0.9981615679734459

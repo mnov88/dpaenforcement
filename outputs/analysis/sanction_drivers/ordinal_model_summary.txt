@@ -1,0 +1,71 @@
+                             OrderedModel Results                             
+==============================================================================
+Dep. Variable:          severity_rank   Log-Likelihood:                -1540.5
+Model:                   OrderedModel   AIC:                             3195.
+Method:            Maximum Likelihood   BIC:                             3514.
+Date:                Tue, 30 Sep 2025                                         
+Time:                        13:29:52                                         
+No. Observations:                1998                                         
+Df Residuals:                    1941                                         
+Df Model:                          54                                         
+=================================================================================================================
+                                                    coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+breach_case                                      -0.0089      0.070     -0.127      0.899      -0.146       0.128
+n_principles_discussed                           -0.5676      0.080     -7.138      0.000      -0.724      -0.412
+n_principles_violated                             0.5882      0.087      6.768      0.000       0.418       0.759
+n_corrective_measures                             2.3168      0.096     24.259      0.000       2.130       2.504
+turnover_log1p                                    0.2092      0.061      3.410      0.001       0.089       0.330
+decision_year_centered                            0.0215      0.050      0.429      0.668      -0.077       0.120
+art33_required_flag                               0.2204      0.354      0.623      0.533      -0.473       0.913
+art33_submitted_flag                              0.2146      0.433      0.496      0.620      -0.634       1.063
+art33_timely_flag                                -0.3087      0.314     -0.983      0.326      -0.924       0.307
+art34_required_flag                              -0.2412      0.375     -0.644      0.520      -0.975       0.493
+subjects_notified_flag                            0.3169      0.398      0.795      0.426      -0.464       1.098
+q15_case_initiation_BREACH_NOTIFICATION           0.7827      0.341      2.297      0.022       0.115       1.451
+q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE    -0.1404      0.159     -0.881      0.378      -0.453       0.172
+q15_case_initiation_MEDIA_PUBLIC_ATTENTION        0.5131      0.444      1.154      0.248      -0.358       1.384
+q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY    -0.0623      0.171     -0.364      0.716      -0.398       0.273
+q25_sensitive_data_ARTICLE_10_CRIMINAL           -1.9146      0.596     -3.213      0.001      -3.083      -0.747
+q28_mitigations_IMMEDIATE_CONTAINMENT            -0.0482      0.276     -0.175      0.861      -0.589       0.493
+q28_mitigations_SECURITY_IMPROVEMENTS            -0.4608      0.310     -1.487      0.137      -1.068       0.147
+q28_mitigations_COOPERATION_WITH_DPA              0.0414      0.304      0.136      0.892      -0.555       0.638
+q41_aggrav_PREVIOUS_INFRINGEMENTS                 0.5801      0.234      2.483      0.013       0.122       1.038
+q41_aggrav_INTENT_NEGLIGENCE                      1.2747      0.172      7.392      0.000       0.937       1.613
+q42_mitig_COOPERATION_WITH_AUTHORITY              0.7984      0.157      5.091      0.000       0.491       1.106
+q46_vuln_CHILDREN                                 0.0848      0.202      0.420      0.675      -0.311       0.481
+q46_vuln_EMPLOYEES                                0.3672      0.162      2.260      0.024       0.049       0.686
+q46_vuln_FINANCIALLY_VULNERABLE                   0.2620      0.333      0.787      0.431      -0.391       0.915
+q21_breach_types_count                            0.2032      0.080      2.553      0.011       0.047       0.359
+q25_sensitive_data_count                          0.3401      0.116      2.942      0.003       0.113       0.567
+q28_mitigations_count                            -0.2737      0.140     -1.952      0.051      -0.548       0.001
+q41_aggrav_count                                  0.4639      0.113      4.112      0.000       0.243       0.685
+q42_mitig_count                                  -0.0207      0.100     -0.207      0.836      -0.216       0.175
+q46_vuln_count                                    0.0650      0.097      0.670      0.503      -0.125       0.255
+q47_remedial_count                                0.0468      0.078      0.597      0.551      -0.107       0.200
+country_group_EU                                  1.1293      0.186      6.061      0.000       0.764       1.494
+country_group_EU_INSTITUTION                     -2.4337      7.055     -0.345      0.730     -16.260      11.393
+country_group_NON_EEA                            -0.1400      0.296     -0.474      0.636      -0.719       0.439
+country_group_UNKNOWN                           -10.3645     80.833     -0.128      0.898    -168.793     148.064
+isic_section_C                                    1.6175      2.221      0.728      0.466      -2.736       5.971
+isic_section_D                                    0.5964      2.178      0.274      0.784      -3.673       4.866
+isic_section_E                                    0.9645      2.266      0.426      0.670      -3.477       5.406
+isic_section_F                                   -0.2894      2.538     -0.114      0.909      -5.264       4.685
+isic_section_G                                    0.7088      2.158      0.329      0.743      -3.520       4.938
+isic_section_H                                    0.8330      2.159      0.386      0.700      -3.399       5.065
+isic_section_I                                    1.2454      2.200      0.566      0.571      -3.067       5.558
+isic_section_J                                    0.1944      2.139      0.091      0.928      -3.998       4.387
+isic_section_K                                    0.5327      2.142      0.249      0.804      -3.666       4.732
+isic_section_L                                    2.7182      2.259      1.203      0.229      -1.709       7.146
+isic_section_M                                    0.9406      2.186      0.430      0.667      -3.343       5.224
+isic_section_N                                    1.3261      2.175      0.610      0.542      -2.937       5.589
+isic_section_O                                    0.0057      2.138      0.003      0.998      -4.185       4.197
+isic_section_P                                    0.0268      2.171      0.012      0.990      -4.229       4.282
+isic_section_Q                                    0.5617      2.145      0.262      0.793      -3.643       4.766
+isic_section_R                                    0.3193      2.192      0.146      0.884      -3.977       4.616
+isic_section_S                                    0.6400      2.175      0.294      0.769      -3.623       4.903
+isic_section_UNKNOWN                              0.3862      2.136      0.181      0.857      -3.800       4.573
+0/2                                              -1.2093      2.129     -0.568      0.570      -5.382       2.963
+2/3                                               0.9956      0.044     22.630      0.000       0.909       1.082
+3/4                                               0.9769      0.038     26.011      0.000       0.903       1.051
+=================================================================================================================

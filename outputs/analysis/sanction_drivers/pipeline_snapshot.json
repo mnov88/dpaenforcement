@@ -1,0 +1,57 @@
+{
+  "logit_targets": [
+    "power_fine_flag",
+    "power_warning_flag",
+    "power_reprimand_flag",
+    "power_none_flag"
+  ],
+  "ordinal_available": true,
+  "conditional_fine_available": true,
+  "gradient_boosting_targets": [
+    "power_fine_flag",
+    "power_warning_flag",
+    "fine_log1p",
+    "severity_rank"
+  ],
+  "causal_forest_treatments": [
+    "q15_case_initiation_BREACH_NOTIFICATION",
+    "q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE",
+    "q28_mitigations_IMMEDIATE_CONTAINMENT",
+    "q28_mitigations_COOPERATION_WITH_DPA",
+    "q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY"
+  ],
+  "fairness_axes": [
+    "country_group",
+    "isic_section"
+  ],
+  "scenarios": [
+    {
+      "scenario": "late_notification",
+      "predicted_prob": 0.9927908729967986
+    },
+    {
+      "scenario": "timely_notification",
+      "predicted_prob": 0.9921353954561573
+    },
+    {
+      "scenario": "ex_officio",
+      "predicted_prob": 0.9896509122607735
+    },
+    {
+      "scenario": "breach_notification",
+      "predicted_prob": 0.9927908729967986
+    },
+    {
+      "scenario": "mitigation_heavy",
+      "predicted_prob": 0.9927908729967986
+    },
+    {
+      "scenario": "sensitive_data",
+      "predicted_prob": 0.9927908729967986
+    },
+    {
+      "scenario": "aggravating",
+      "predicted_prob": 0.9981615679734459
+    }
+  ]
+}

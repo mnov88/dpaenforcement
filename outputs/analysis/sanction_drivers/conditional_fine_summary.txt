@@ -1,0 +1,75 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             fine_log1p   R-squared:                       0.310
+Model:                            OLS   Adj. R-squared:                  0.278
+Method:                 Least Squares   F-statistic:                     9.548
+Date:                Tue, 30 Sep 2025   Prob (F-statistic):           1.03e-57
+Time:                        13:29:52   Log-Likelihood:                -2642.8
+No. Observations:                1134   AIC:                             5390.
+Df Residuals:                    1082   BIC:                             5651.
+Df Model:                          51                                         
+Covariance Type:            nonrobust                                         
+=================================================================================================================
+                                                    coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------
+const                                             9.1576      0.874     10.478      0.000       7.443      10.872
+breach_case                                      -0.2124      0.099     -2.144      0.032      -0.407      -0.018
+n_principles_discussed                            0.0048      0.136      0.035      0.972      -0.262       0.271
+n_principles_violated                             0.4105      0.133      3.093      0.002       0.150       0.671
+n_corrective_measures                            -0.2689      0.092     -2.919      0.004      -0.450      -0.088
+turnover_log1p                                    0.5280      0.070      7.570      0.000       0.391       0.665
+decision_year_centered                           -0.0534      0.072     -0.747      0.455      -0.194       0.087
+art33_required_flag                               0.1668      0.471      0.354      0.723      -0.758       1.091
+art33_submitted_flag                              0.4728      0.610      0.775      0.438      -0.724       1.669
+art33_timely_flag                                 0.1521      0.439      0.347      0.729      -0.708       1.013
+art34_required_flag                              -0.1944      0.522     -0.373      0.709      -1.218       0.829
+subjects_notified_flag                            0.0938      0.551      0.170      0.865      -0.988       1.176
+q15_case_initiation_BREACH_NOTIFICATION           0.1269      0.498      0.255      0.799      -0.850       1.103
+q15_case_initiation_EX_OFFICIO_DPA_INITIATIVE     0.8628      0.241      3.574      0.000       0.389       1.337
+q15_case_initiation_MEDIA_PUBLIC_ATTENTION        1.2950      0.678      1.911      0.056      -0.035       2.625
+q25_sensitive_data_ARTICLE_9_SPECIAL_CATEGORY     0.3592      0.264      1.358      0.175      -0.160       0.878
+q25_sensitive_data_ARTICLE_10_CRIMINAL            2.0679      0.989      2.091      0.037       0.127       4.009
+q28_mitigations_IMMEDIATE_CONTAINMENT             0.0730      0.392      0.186      0.852      -0.696       0.842
+q28_mitigations_SECURITY_IMPROVEMENTS             0.1284      0.460      0.279      0.780      -0.775       1.032
+q28_mitigations_COOPERATION_WITH_DPA             -0.0098      0.419     -0.023      0.981      -0.832       0.813
+q41_aggrav_PREVIOUS_INFRINGEMENTS                 0.1572      0.281      0.560      0.576      -0.394       0.709
+q41_aggrav_INTENT_NEGLIGENCE                      0.1672      0.220      0.761      0.447      -0.264       0.598
+q42_mitig_COOPERATION_WITH_AUTHORITY              0.6215      0.204      3.041      0.002       0.220       1.022
+q46_vuln_CHILDREN                                -0.6141      0.316     -1.943      0.052      -1.234       0.006
+q46_vuln_EMPLOYEES                               -0.0458      0.226     -0.203      0.839      -0.489       0.397
+q46_vuln_FINANCIALLY_VULNERABLE                   1.4820      0.436      3.400      0.001       0.627       2.337
+q21_breach_types_count                           -0.2356      0.090     -2.608      0.009      -0.413      -0.058
+q25_sensitive_data_count                         -0.1901      0.188     -1.014      0.311      -0.558       0.178
+q28_mitigations_count                            -0.0634      0.199     -0.319      0.750      -0.454       0.327
+q41_aggrav_count                                  0.3916      0.128      3.060      0.002       0.141       0.643
+q42_mitig_count                                  -0.3503      0.100     -3.492      0.000      -0.547      -0.153
+q46_vuln_count                                   -0.0849      0.112     -0.760      0.447      -0.304       0.134
+q47_remedial_count                                0.2377      0.102      2.336      0.020       0.038       0.437
+country_group_EU                                 -0.0470      0.384     -0.122      0.903      -0.801       0.707
+country_group_NON_EEA                             1.3323      0.597      2.230      0.026       0.160       2.505
+isic_section_D                                    0.8078      0.919      0.879      0.380      -0.995       2.611
+isic_section_E                                    0.3026      1.308      0.231      0.817      -2.264       2.869
+isic_section_F                                   -2.5507      1.512     -1.687      0.092      -5.517       0.416
+isic_section_G                                    0.3258      0.873      0.373      0.709      -1.387       2.038
+isic_section_H                                    0.7330      0.895      0.819      0.413      -1.022       2.489
+isic_section_I                                   -0.2867      0.997     -0.288      0.774      -2.243       1.669
+isic_section_J                                    0.5082      0.817      0.622      0.534      -1.095       2.111
+isic_section_K                                   -0.3097      0.839     -0.369      0.712      -1.955       1.336
+isic_section_L                                   -1.0047      1.068     -0.940      0.347      -3.101       1.092
+isic_section_M                                   -0.9977      1.066     -0.936      0.349      -3.089       1.093
+isic_section_N                                   -0.8206      0.966     -0.850      0.396      -2.715       1.074
+isic_section_O                                   -0.6108      0.844     -0.723      0.470      -2.268       1.046
+isic_section_P                                   -1.7415      0.980     -1.776      0.076      -3.665       0.182
+isic_section_Q                                   -0.5387      0.863     -0.624      0.533      -2.232       1.155
+isic_section_R                                   -0.3089      1.022     -0.302      0.762      -2.314       1.696
+isic_section_S                                   -1.1658      1.040     -1.122      0.262      -3.205       0.874
+isic_section_UNKNOWN                             -0.8935      0.795     -1.124      0.261      -2.453       0.666
+==============================================================================
+Omnibus:                       90.202   Durbin-Watson:                   1.671
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              255.751
+Skew:                          -0.401   Prob(JB):                     2.91e-56
+Kurtosis:                       5.184   Cond. No.                         110.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

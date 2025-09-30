@@ -57523,3 +57523,10 @@ ValueError: y_true contains only one label (0.0). Please provide the list of all
 2025-09-30 12:03:04 [INFO] Outcome 2/2: fine_positive
 2025-09-30 12:03:05 [INFO] Training outcome=fine_positive (n=1200, features=17440, classification=True, light=True)
 2025-09-30 12:03:11 [INFO] Phase 0 omni-scan completed
+2025-09-30 12:50:55 [INFO] Phase 0 omni-scan started (use_gpu=False)
+2025-09-30 12:51:00 [INFO] Heartbeat: Phase 0 still running
+2025-09-30 12:51:00 [INFO] Outcome 1/2: fine_log1p
+2025-09-30 12:51:00 [INFO] Training outcome=fine_log1p (n=1200, features=17440, classification=False, light=True)
+2025-09-30 12:51:04 [INFO] Outcome 2/2: fine_positive
+2025-09-30 12:51:04 [INFO] Training outcome=fine_positive (n=1200, features=17440, classification=True, light=True)
+2025-09-30 12:51:11 [INFO] Phase 0 omni-scan completed

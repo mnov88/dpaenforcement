@@ -39,6 +39,7 @@ B. Canonical typing and categorical harmonization
 - TYPE:STRING fields (Q2, Q12, Q36, Q52, Q67, Q68): store both raw and normalized (Unicode NFC; trim; collapse internal runs of whitespace to single space; preserve punctuation; detect and keep language if possible). Do not lemmatize or casefold by default; retain original capitalization for legal citations.
 
 - TYPE:NUMBER fields (Q37 fine, Q38 turnover): cast to decimal EUR; allow 0 for “no fine” (Q37) but store a boolean no_fine = (Q37 == 0). For Q38, null allowed (not mentioned). Store an additional numeric_valid flag and raw_value if parsing fails.
+- Strip schema-echo scaffolding before numeric parsing. Keep the payload of TYPE tokens (e.g., "TYPE:NUMBER 200000" → "200000"), but drop ENUM/MULTI_SELECT echoes entirely so option codes like "ENUM:OPTION_2" do not masquerade as real amounts; treat schema-only remnants as NOT_MENTIONED rather than parse errors.
 
 - Dates (Q3): parse YYYY-MM-DD, else leave as null and set date_status = NOT_DISCUSSED (distinct from null); create derived year, quarter, and ISO week. Validate plausible ranges (2018+ for GDPR decisions, unless legacy). If NOT_DISCUSSED, do not coerce to null without noting status.
 

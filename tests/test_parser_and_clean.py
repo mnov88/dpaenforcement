@@ -47,6 +47,19 @@ class TestTypingAndCountry(unittest.TestCase):
         self.assertEqual(neg.status, "NEGATIVE_VALUE")
         missing = parse_number("")
         self.assertEqual(missing.status, "NOT_MENTIONED")
+        enum = parse_number("ENUM:OPTION_2")
+        self.assertEqual(enum.status, "NOT_MENTIONED")
+        self.assertTrue(enum.valid)
+        self.assertIsNone(enum.value)
+        ms = parse_number("MULTI_SELECT:CHOICE_1")
+        self.assertEqual(ms.status, "NOT_MENTIONED")
+        type_only = parse_number("TYPE:NUMBER")
+        self.assertEqual(type_only.status, "NOT_MENTIONED")
+        self.assertTrue(type_only.valid)
+        typed_value = parse_number("TYPE:NUMBER 200000")
+        self.assertTrue(typed_value.valid)
+        self.assertEqual(typed_value.status, "DISCUSSED")
+        self.assertEqual(typed_value.value, 200000.0)
 
 
 class TestISICAndConsistency(unittest.TestCase):
